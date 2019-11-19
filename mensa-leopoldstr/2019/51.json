@@ -9,30 +9,32 @@
                     "name": "Gnocchi mit Schafskäse und frischem Basilikum",
                     "price": "individual",
                     "ingredients": [
-                        "GlW",
-                        "Sl",
-                        "Mi",
                         "Ei",
+                        "Gl",
+                        "GlW",
                         "Kn",
-                        "Gl"
-                    ]
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Mensa Spezial"
                 },
                 {
                     "name": "Schweinerahmgeschnetzeltes mit Pfifferlingen, Steinpilzen und Knöpfle",
                     "price": "N/A",
                     "ingredients": [
                         "5",
-                        "GlW",
-                        "Sw",
-                        "S",
                         "99",
-                        "Mi",
                         "Ei",
-                        "GlD",
-                        "Kn",
                         "Gl",
-                        "GlG"
-                    ]
+                        "GlD",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S",
+                        "Sw"
+                    ],
+                    "dish_type": "Mensa Klassiker"
                 },
                 {
                     "name": "Putensteak mit Kräuterbutter und Rosmarinkartoffeln",
@@ -40,17 +42,19 @@
                     "ingredients": [
                         "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Länder-Mensa"
                 },
                 {
                     "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
                     "price": "N/A",
                     "ingredients": [
                         "Ei",
+                        "Gl",
                         "GlW",
-                        "Mi",
-                        "Gl"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Blumenkohl-Kartoffel-Curry",
@@ -58,7 +62,8 @@
                     "ingredients": [
                         "Kn",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Self-Service Grüne Mensa"
                 }
             ]
         },
@@ -69,69 +74,74 @@
                     "name": "Schinkennudeln (Vorderschinken) mit Zwiebeln , Ei und Tomatensauce",
                     "price": "individual",
                     "ingredients": [
-                        "GlW",
-                        "S",
-                        "8",
                         "2",
-                        "Mi",
-                        "Ei",
                         "3",
+                        "8",
+                        "Ei",
+                        "Gl",
+                        "GlW",
                         "Kn",
-                        "Gl"
-                    ]
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Mensa Spezial"
                 },
                 {
                     "name": "Seelachsfilet (MSC) Florentiner Art mit Blattspinat und Hollandaise überbacken",
                     "price": "N/A",
                     "ingredients": [
                         "5",
-                        "GlW",
-                        "Sl",
-                        "Fi",
-                        "Sw",
                         "99",
-                        "Mi",
                         "Ei",
+                        "Fi",
+                        "Gl",
+                        "GlW",
                         "Kn",
-                        "Gl"
-                    ]
+                        "Mi",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Mensa Klassiker"
                 },
                 {
                     "name": "Kartoffel-Pilz-Auflauf mit frischem Lauch und Dip",
                     "price": "0.75€ / 100g",
                     "ingredients": [
-                        "GlW",
-                        "Mi",
+                        "1",
                         "2",
                         "Ei",
-                        "Kn",
-                        "Sf",
                         "Gl",
-                        "1"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sf"
+                    ],
+                    "dish_type": "Länder-Mensa"
                 },
                 {
                     "name": "Schweineschnitzel, natur mit Jägersauce und Kroketten",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "S",
-                        "Mi",
                         "2",
                         "3",
-                        "Kn",
                         "Gl",
-                        "GlG"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Kräuterpolenta mit Tomatenragout",
                     "price": "0.33€ / 100g",
                     "ingredients": [
+                        "Gl",
                         "GlW",
-                        "Kn",
-                        "Gl"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "Self-Service Grüne Mensa"
                 }
             ]
         },
@@ -142,56 +152,61 @@
                     "name": "Mediterrane Gnocchi-Gemüse-Pfanne in Tomatensauce",
                     "price": "individual",
                     "ingredients": [
+                        "Gl",
                         "GlW",
                         "Kn",
-                        "Gl",
                         "So"
-                    ]
+                    ],
+                    "dish_type": "Mensa Spezial"
                 },
                 {
                     "name": "Boeuf à la mode aus dem Rinderbug (GQB) mit Kartoffelknödel",
                     "price": "N/A",
                     "ingredients": [
-                        "5",
-                        "GlW",
-                        "Sl",
-                        "Sw",
-                        "R",
-                        "99",
-                        "Mi",
+                        "1",
                         "2",
                         "3",
-                        "Kn",
+                        "5",
+                        "99",
                         "Gl",
-                        "1",
-                        "GlG"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Mensa Klassiker"
                 },
                 {
                     "name": "Hähnchenbrustfilet mit warmer Gemüsesalsa (scharf) und Röstkartoffeln",
                     "price": "0.75€ / 100g",
                     "ingredients": [
-                        "Kn",
+                        "2",
                         "4",
-                        "2"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "Länder-Mensa"
                 },
                 {
                     "name": "Apfelkücherl mit Vanillesauce",
                     "price": "N/A",
                     "ingredients": [
                         "Ei",
+                        "Gl",
                         "GlW",
-                        "Mi",
-                        "Gl"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Pikantes Kartoffelchili",
                     "price": "0.33€ / 100g",
                     "ingredients": [
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Self-Service Grüne Mensa"
                 }
             ]
         },
@@ -202,31 +217,34 @@
                     "name": "Bio-Linsen mit Bio-Spätzle",
                     "price": "0.75€ / 100g",
                     "ingredients": [
+                        "Gl",
                         "GlW",
-                        "Sl",
-                        "So",
                         "Kn",
-                        "Gl"
-                    ]
+                        "Sl",
+                        "So"
+                    ],
+                    "dish_type": "Länder-Mensa"
                 },
                 {
                     "name": "Pfannengyros vom Schwein mit Tsatsiki und Reis",
                     "price": "N/A",
                     "ingredients": [
+                        "3",
                         "5",
-                        "Sw",
-                        "S",
-                        "Mi",
                         "Kn",
-                        "3"
-                    ]
+                        "Mi",
+                        "S",
+                        "Sw"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Gemüseeintopf Pichelsteiner Art",
                     "price": "0.33€ / 100g",
                     "ingredients": [
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Self-Service Grüne Mensa"
                 }
             ]
         },
@@ -237,34 +255,37 @@
                     "name": "Schweineschnitzel Wiener Art mit Röstkartoffeln",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "Sl",
-                        "S",
-                        "Mi",
-                        "Kn",
-                        "Sf",
                         "Gl",
-                        "GlG"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S",
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "Mensa Klassiker"
                 },
                 {
                     "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
                     "price": "0.75€ / 100g",
                     "ingredients": [
                         "Ei",
+                        "Gl",
                         "GlW",
-                        "Mi",
-                        "Gl"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Länder-Mensa"
                 },
                 {
                     "name": "Zartweizen mit Gemüse",
                     "price": "0.33€ / 100g",
                     "ingredients": [
+                        "Gl",
                         "GlW",
-                        "Kn",
-                        "Gl"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "Self-Service Grüne Mensa"
                 }
             ]
         }

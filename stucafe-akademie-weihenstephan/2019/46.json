@@ -9,14 +9,15 @@
                     "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
                     "price": 2.6,
                     "ingredients": [
-                        "Gl",
-                        "Kn",
-                        "Sl",
-                        "GlW",
-                        "Ei",
                         "1",
-                        "Mi"
-                    ]
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 },
                 {
                     "name": "Esterhazygulasch vom Rind",
@@ -24,12 +25,13 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
-                        "Kn",
-                        "Sl",
                         "GlW",
+                        "Kn",
+                        "Mi",
                         "R",
-                        "Mi"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         },
@@ -42,7 +44,8 @@
                     "ingredients": [
                         "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -54,25 +57,27 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
+                        "GlW",
                         "Kn",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Münchner Schnitzel (Senf-Meerrettichkruste)",
                     "price": 2.4,
                     "ingredients": [
+                        "3",
                         "Gl",
                         "GlG",
-                        "Kn",
-                        "Sf",
-                        "Sw",
-                        "S",
                         "GlW",
-                        "3",
-                        "Mi"
-                    ]
+                        "Kn",
+                        "Mi",
+                        "S",
+                        "Sf",
+                        "Sw"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         },
@@ -84,23 +89,25 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
-                        "Kn",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Aktionsessen 2"
                 },
                 {
                     "name": "Arista al fiorentina - Schweinebraten toskanische Art",
                     "price": 2.8,
                     "ingredients": [
+                        "5",
+                        "99",
                         "Gl",
                         "GlG",
-                        "Kn",
-                        "Sw",
                         "GlW",
-                        "99",
-                        "5",
-                        "Mi"
-                    ]
+                        "Kn",
+                        "Mi",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         },
@@ -113,21 +120,23 @@
                     "ingredients": [
                         "Ei",
                         "Gl",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Kabeljaufilet (MSC) mit Sauce Hollandaise",
                     "price": 3.5,
                     "ingredients": [
-                        "Gl",
-                        "Sl",
-                        "GlW",
                         "Ei",
                         "Fi",
-                        "Mi"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 8"
                 }
             ]
         }

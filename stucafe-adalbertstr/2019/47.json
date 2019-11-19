@@ -11,23 +11,25 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
-                        "Kn",
                         "GlW",
+                        "Kn",
                         "Mi",
                         "S"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Ravioli mit Pilzfüllung in pikanter Kräutersauce",
                     "price": 2.4,
                     "ingredients": [
-                        "Gl",
                         "Ei",
-                        "Kn",
+                        "Gl",
                         "GlW",
-                        "Sl",
-                        "Mi"
-                    ]
+                        "Kn",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         },
@@ -38,26 +40,28 @@
                     "name": "Libanesischer Gemüseauflauf",
                     "price": 2.8,
                     "ingredients": [
+                        "Ei",
                         "En",
                         "Mi",
-                        "Ei",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 },
                 {
                     "name": "Rinderbraten mit Rotweinsauce",
                     "price": 3.2,
                     "ingredients": [
-                        "GlG",
-                        "Gl",
-                        "Kn",
-                        "GlW",
-                        "Sl",
-                        "Mi",
-                        "Sw",
                         "99",
-                        "R"
-                    ]
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 7"
                 }
             ]
         },
@@ -68,22 +72,24 @@
                     "name": "Afrikanischer Süßkartoffeltopf mit Blumenkohl und Erdnüssen",
                     "price": 2.4,
                     "ingredients": [
-                        "En",
                         "2",
+                        "En",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 },
                 {
                     "name": "Schweinesteak Strindberg (Senf-Zwiebelkruste)",
                     "price": 2.6,
                     "ingredients": [
-                        "Gl",
                         "Ei",
+                        "Gl",
                         "GlW",
-                        "Sl",
                         "Mi",
-                        "Sf"
-                    ]
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -94,11 +100,12 @@
                     "name": "Pasta mit Gemüsebolognese",
                     "price": 1.9,
                     "ingredients": [
-                        "Sl",
                         "Gl",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Hähnchenkeule mexikanische Art",
@@ -108,7 +115,8 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 2"
                 }
             ]
         },
@@ -120,20 +128,22 @@
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Wildlachs (MSC) auf Blattspinat",
                     "price": 4.0,
                     "ingredients": [
-                        "Gl",
-                        "Kn",
                         "Fi",
+                        "Gl",
                         "GlW",
+                        "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 }
             ]
         }

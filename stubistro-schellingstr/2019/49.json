@@ -9,21 +9,23 @@
                     "name": "Falafel mit Joghurt-Gurken-Minz Dip",
                     "price": "N/A",
                     "ingredients": [
-                        "Mi",
-                        "Kn",
+                        "Gl",
                         "GlW",
-                        "Gl"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 },
                 {
                     "name": "Wildschweingulasch mit frischen Champignons",
                     "price": "N/A",
                     "ingredients": [
                         "99",
-                        "Sw",
+                        "Gl",
                         "GlW",
-                        "Gl"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 }
             ]
         },
@@ -34,22 +36,24 @@
                     "name": "Pasta mit Tomaten-Zucchini-Sauce",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
+                        "Gl",
                         "GlW",
-                        "Gl"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 },
                 {
                     "name": "Kalbshüftsteak vom Grill mit Pilzrahmsauce",
                     "price": "N/A",
                     "ingredients": [
+                        "5",
                         "99",
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Mi",
-                        "Sw",
-                        "5"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 }
             ]
         },
@@ -60,18 +64,20 @@
                     "name": "Gefüllte Paprikaschote mit Tomatensauce",
                     "price": "N/A",
                     "ingredients": [
+                        "2",
+                        "Gl",
                         "GlD",
                         "GlW",
-                        "Gl",
-                        "Mi",
-                        "2",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 },
                 {
                     "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "StuBistro Self-Service"
                 }
             ]
         },
@@ -82,26 +88,28 @@
                     "name": "Tortelloni all'arrabiata",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
+                        "Gl",
                         "GlW",
-                        "Gl"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 },
                 {
                     "name": "Geschmorter Rinderbraten (GQB) mit weihnachtlicher Sauce",
                     "price": "N/A",
                     "ingredients": [
+                        "5",
                         "99",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
                         "R",
                         "Sl",
-                        "GlW",
-                        "Gl",
-                        "Mi",
-                        "GlG",
-                        "Sw",
-                        "5",
-                        "Kn"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 }
             ]
         },
@@ -112,18 +120,20 @@
                     "name": "Pfannkuchen mit Heidelbeerfüllung und Vanillesauce",
                     "price": "N/A",
                     "ingredients": [
-                        "Mi",
                         "Ei",
+                        "Gl",
                         "GlW",
-                        "Gl"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 },
                 {
                     "name": "Hähnchenkeule mit Mole-Sauce (scharf)",
                     "price": "N/A",
                     "ingredients": [
                         "2"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 }
             ]
         }

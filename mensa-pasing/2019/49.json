@@ -12,41 +12,46 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Rotes Curry vom Rind (GQB) mit Wokgemüse",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
-                        "Sl",
-                        "R",
+                        "Gl",
                         "GlW",
-                        "So",
-                        "Gl"
-                    ]
+                        "Kn",
+                        "R",
+                        "Sl",
+                        "So"
+                    ],
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Kartoffelgulasch mit Paprika",
                     "price": "N/A",
                     "ingredients": [
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Wildschweingulasch mit frischen Champignons",
                     "price": "N/A",
                     "ingredients": [
+                        "99",
                         "Gl",
                         "GlW",
-                        "99",
                         "Sw"
-                    ]
+                    ],
+                    "dish_type": "Fleisch"
                 }
             ]
         },
@@ -60,45 +65,50 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Kalbshüftsteak vom Grill mit Pilzrahmsauce",
                     "price": "N/A",
                     "ingredients": [
-                        "Sw",
-                        "GlW",
                         "5",
-                        "Gl",
                         "99",
-                        "Mi"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sw"
+                    ],
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Grüner Erbseneintopf",
                     "price": "N/A",
                     "ingredients": [
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Moussaka mit Gemüse und Schafskäse",
                     "price": "N/A",
                     "ingredients": [
-                        "11",
-                        "Kn",
                         "1",
-                        "GlW",
+                        "11",
                         "Ei",
                         "Gl",
-                        "Sf",
-                        "Mi"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sf"
+                    ],
+                    "dish_type": "Vegetarisch"
                 }
             ]
         },
@@ -111,7 +121,8 @@
                     "ingredients": [
                         "Gl",
                         "GlW"
-                    ]
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Gelbes Fischcurry (MSC) mit Gemüse",
@@ -119,7 +130,8 @@
                     "ingredients": [
                         "Fi",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Buntes Gemüse in scharfer Kokosmilch",
@@ -128,24 +140,27 @@
                         "2",
                         "Kn",
                         "Sf"
-                    ]
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Gefüllte Paprikaschote mit Tomatensauce",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
-                        "GlW",
-                        "GlD",
-                        "Gl",
                         "2",
+                        "Gl",
+                        "GlD",
+                        "GlW",
+                        "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Vegetarisch"
                 }
             ]
         },
@@ -159,16 +174,18 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Fränkische Bratwurst",
                     "price": "N/A",
                     "ingredients": [
-                        "R",
                         "8",
+                        "R",
                         "S"
-                    ]
+                    ],
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Bulgur mit Zucchini und Tomaten",
@@ -177,28 +194,31 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Geschmorter Rinderbraten (GQB) mit weihnachtlicher Sauce",
                     "price": "N/A",
                     "ingredients": [
-                        "Sw",
-                        "Kn",
-                        "Sl",
-                        "R",
-                        "GlW",
-                        "GlG",
-                        "Mi",
-                        "Gl",
+                        "5",
                         "99",
-                        "5"
-                    ]
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Fleisch"
                 }
             ]
         },
@@ -212,41 +232,46 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Forelle Müllerin Art mit Zitronenbutter",
                     "price": "N/A",
                     "ingredients": [
                         "1",
-                        "GlW",
                         "Fi",
                         "Gl",
-                        "Sf",
-                        "Mi"
-                    ]
+                        "GlW",
+                        "Mi",
+                        "Sf"
+                    ],
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Polenta mit frischem Wurzelgemüse",
                     "price": "N/A",
                     "ingredients": [
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Pfannkuchen mit Heidelbeerfüllung und Vanillesauce",
                     "price": "N/A",
                     "ingredients": [
+                        "Ei",
                         "Gl",
                         "GlW",
-                        "Ei",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Süßspeise"
                 }
             ]
         }

@@ -9,45 +9,49 @@
                     "name": "Karotten-Kürbisragout",
                     "price": 1.0,
                     "ingredients": [
-                        "Sf",
                         "Gl",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Sf"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Penne all'arrabiata",
                     "price": 1.55,
                     "ingredients": [
-                        "Kn",
+                        "2",
                         "Gl",
                         "GlW",
-                        "2"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "Tagesgericht 2"
                 },
                 {
                     "name": "Schweinehalssteak mit Kräuterbutter",
                     "price": 2.6,
                     "ingredients": [
-                        "S",
+                        "Kn",
                         "Mi",
-                        "Kn"
-                    ]
+                        "S"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 },
                 {
                     "name": "Rindergeschnetzeltes (GQB) Stroganoff",
                     "price": 3.2,
                     "ingredients": [
-                        "R",
+                        "2",
                         "9",
                         "Gl",
                         "GlG",
-                        "2",
                         "GlW",
-                        "Sf",
+                        "Kn",
                         "Mi",
-                        "Kn"
-                    ]
+                        "R",
+                        "Sf"
+                    ],
+                    "dish_type": "Aktionsessen 7"
                 }
             ]
         },
@@ -58,38 +62,41 @@
                     "name": "Arabischer Couscous mit Karotten und Kichererbsen",
                     "price": 1.0,
                     "ingredients": [
-                        "Kn",
+                        "2",
                         "Gl",
                         "GlW",
-                        "2"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
                     "price": 2.4,
                     "ingredients": [
-                        "Gl",
+                        "1",
+                        "11",
                         "2",
                         "Ei",
+                        "Gl",
                         "GlW",
-                        "Sf",
                         "Mi",
-                        "11",
-                        "1"
-                    ]
+                        "Sf"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
                     "price": 2.4,
                     "ingredients": [
-                        "Gl",
+                        "1",
                         "2",
-                        "GlD",
                         "Ei",
+                        "Gl",
+                        "GlD",
                         "GlW",
-                        "Mi",
-                        "1"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 },
                 {
                     "name": "Pizza mit grünem Spargel, Cocktailtomaten und Mozzarella",
@@ -97,10 +104,11 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
-                        "So",
                         "GlW",
-                        "Mi"
-                    ]
+                        "Mi",
+                        "So"
+                    ],
+                    "dish_type": "Aktionsessen 8"
                 }
             ]
         },
@@ -110,39 +118,43 @@
                 {
                     "name": "Kürbistopf mit Paprika und Bohnen",
                     "price": 1.0,
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pasta mit Gorgonzolasauce",
                     "price": 1.9,
                     "ingredients": [
-                        "Mi",
                         "Gl",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Millirahmstrudel mit Äpfeln und Vanillesauce",
                     "price": 3.0,
                     "ingredients": [
-                        "Mi",
+                        "1",
                         "Gl",
                         "GlW",
-                        "1"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 },
                 {
                     "name": "Halbe Schweinshaxe mit Biersauce",
                     "price": 3.0,
                     "ingredients": [
+                        "99",
                         "Gl",
                         "GlG",
-                        "S",
                         "GlW",
+                        "Kn",
                         "Mi",
-                        "99",
-                        "Kn"
-                    ]
+                        "S"
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 }
             ]
         },
@@ -153,48 +165,52 @@
                     "name": "Kürbis-Linsen-Curry",
                     "price": 1.0,
                     "ingredients": [
-                        "Sf",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Sf"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Spenden - Currywurst",
                     "price": 1.9,
                     "ingredients": [
+                        "11",
+                        "8",
                         "R",
                         "S",
-                        "Sf",
-                        "11",
-                        "8"
-                    ]
+                        "Sf"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Pizza Quattro Stagioni mit (Vorder-)Schinken, Paprika, Champignons und Oliven",
                     "price": 3.5,
                     "ingredients": [
+                        "1",
+                        "2",
                         "3",
+                        "8",
                         "Gl",
                         "GlG",
-                        "2",
-                        "S",
-                        "So",
                         "GlW",
                         "Mi",
-                        "1",
-                        "8"
-                    ]
+                        "S",
+                        "So"
+                    ],
+                    "dish_type": "Aktionsessen 8"
                 },
                 {
                     "name": "Bio-Spaghetti bolognese",
                     "price": 3.2,
                     "ingredients": [
-                        "R",
                         "Gl",
-                        "S",
                         "GlW",
+                        "Kn",
                         "Mi",
-                        "Kn"
-                    ]
+                        "R",
+                        "S"
+                    ],
+                    "dish_type": "Biogericht 7"
                 }
             ]
         },
@@ -208,33 +224,36 @@
                         "Gl",
                         "GlW",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Kaiserschmarrn mit Apfelmus",
                     "price": 2.6,
                     "ingredients": [
-                        "Gl",
+                        "3",
                         "Ei",
+                        "Gl",
                         "GlW",
-                        "Mi",
-                        "3"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 },
                 {
                     "name": "Schollenfilet (MSC) paniert mit Remouladensauce",
                     "price": 2.6,
                     "ingredients": [
-                        "9",
-                        "Gl",
+                        "11",
                         "2",
+                        "9",
                         "Ei",
-                        "GlW",
-                        "Sf",
                         "Fi",
+                        "Gl",
+                        "GlW",
                         "Mi",
-                        "11"
-                    ]
+                        "Sf"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         }

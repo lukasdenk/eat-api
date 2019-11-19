@@ -10,24 +10,26 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
-                        "Mi",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Holzfällersteak vom Schwein",
                     "price": 2.6,
                     "ingredients": [
+                        "2",
                         "3",
                         "Gl",
                         "GlG",
-                        "Kn",
-                        "2",
                         "GlW",
+                        "Kn",
                         "Mi",
                         "S"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -41,21 +43,23 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Chop Suey vom Schweinefleisch",
                     "price": 2.4,
                     "ingredients": [
                         "3",
-                        "Gl",
-                        "Kn",
-                        "GlW",
-                        "So",
                         "5",
-                        "Sw",
-                        "S"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "S",
+                        "So",
+                        "Sw"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         },
@@ -66,17 +70,19 @@
                     "name": "Kartoffel-Sauerkrautgratin mit Kräuterdip",
                     "price": 2.4,
                     "ingredients": [
-                        "Mi",
                         "Ei",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Green Thai Curry von der Hühnerbrust",
                     "price": 2.8,
                     "ingredients": [
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         },
@@ -89,21 +95,23 @@
                     "ingredients": [
                         "2",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 },
                 {
                     "name": "Hirschgulasch in Preiselbeersauce",
                     "price": 4.0,
                     "ingredients": [
-                        "GlG",
+                        "99",
                         "Gl",
-                        "Kn",
+                        "GlG",
                         "GlW",
-                        "Sl",
+                        "Kn",
                         "Mi",
-                        "Sw",
-                        "99"
-                    ]
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 }
             ]
         },
@@ -115,22 +123,24 @@
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Kabeljaufilet (MSC) mit einer Gurken-Senfsauce",
                     "price": 3.5,
                     "ingredients": [
-                        "Gl",
                         "Ei",
                         "Fi",
+                        "Gl",
                         "GlW",
-                        "Sl",
                         "Mi",
-                        "Sf"
-                    ]
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 8"
                 }
             ]
         }

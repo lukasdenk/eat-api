@@ -9,25 +9,27 @@
                     "name": "Fleischpflanzerl mit Kümmelsauce",
                     "price": 1.9,
                     "ingredients": [
+                        "Ei",
                         "Gl",
                         "GlG",
-                        "Kn",
-                        "S",
                         "GlW",
-                        "Ei",
+                        "Kn",
+                        "Mi",
                         "R",
-                        "Mi"
-                    ]
+                        "S"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Falafel mit Joghurt-Gurken-Minz Dip",
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
+                        "GlW",
                         "Kn",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         },
@@ -39,9 +41,10 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
-                        "Kn",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 }
             ]
         },
@@ -51,19 +54,21 @@
                 {
                     "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
                     "price": 2.4,
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Aktionsessen 3"
                 },
                 {
                     "name": "Gefüllte Paprikaschote mit Tomatensauce",
                     "price": 2.6,
                     "ingredients": [
-                        "Gl",
-                        "Kn",
-                        "GlW",
-                        "GlD",
                         "2",
+                        "Gl",
+                        "GlD",
+                        "GlW",
+                        "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -74,26 +79,28 @@
                     "name": "Geschmorter Rinderbraten (GQB) mit weihnachtlicher Sauce",
                     "price": 3.0,
                     "ingredients": [
+                        "5",
+                        "99",
                         "Gl",
                         "GlG",
-                        "Kn",
-                        "Sw",
-                        "Sl",
                         "GlW",
-                        "99",
-                        "5",
+                        "Kn",
+                        "Mi",
                         "R",
-                        "Mi"
-                    ]
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 },
                 {
                     "name": "Tortelloni all'arrabiata",
                     "price": 2.6,
                     "ingredients": [
                         "Gl",
-                        "Kn",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Biogericht 4"
                 }
             ]
         },
@@ -106,18 +113,20 @@
                     "ingredients": [
                         "Ei",
                         "Gl",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Penne mit Austernpilzen und Babyspinat",
                     "price": 2.6,
                     "ingredients": [
                         "Gl",
-                        "Kn",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         }

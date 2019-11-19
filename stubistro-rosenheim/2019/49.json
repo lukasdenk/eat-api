@@ -9,62 +9,70 @@
                     "name": "Schaschlik-Pfanne",
                     "price": "0.68€ / 100g",
                     "ingredients": [
-                        "S",
                         "2",
-                        "9"
-                    ]
+                        "9",
+                        "S"
+                    ],
+                    "dish_type": "Self-Service"
                 },
                 {
                     "name": "Chickenwings mit Barbecuesauce",
                     "price": "N/A",
                     "ingredients": [
-                        "Sl",
                         "10",
                         "11",
                         "2",
                         "4",
                         "Kn",
-                        "Sf"
-                    ]
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Blätterteigtasche mit Spinat, Hirtenkäse und Kräuterdip",
                     "price": "N/A",
                     "ingredients": [
-                        "Se",
+                        "Ei",
                         "Gl",
                         "GlW",
+                        "Kn",
                         "Mi",
-                        "Ei",
                         "Sc",
-                        "Sl",
-                        "Kn"
-                    ]
+                        "Se",
+                        "Sl"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagesgemüse",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Rosmarinkartoffeln",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Aktionsdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 },
                 {
                     "name": "Tagesdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
                 }
             ]
         },
@@ -75,77 +83,86 @@
                     "name": "Hähnchen-Cordon bleu (G)",
                     "price": "0.68€ / 100g",
                     "ingredients": [
-                        "8",
+                        "2",
                         "3",
-                        "Gl",
-                        "Mi",
+                        "8",
                         "Ei",
-                        "2"
-                    ]
+                        "Gl",
+                        "Mi"
+                    ],
+                    "dish_type": "Self-Service"
                 },
                 {
                     "name": "Currywurst mit Honig-Ingwer-Ketchup",
                     "price": "N/A",
                     "ingredients": [
-                        "8",
-                        "3",
-                        "R",
                         "11",
-                        "S",
                         "2",
+                        "3",
+                        "8",
+                        "R",
+                        "S",
                         "Sf"
-                    ]
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Spinatknödel Tiroler Art mit Bergkäse und Salbeibutter",
                     "price": "N/A",
                     "ingredients": [
-                        "Sl",
+                        "2",
+                        "Ei",
                         "Gl",
                         "GlW",
                         "Mi",
-                        "Ei",
-                        "2"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagesgemüse",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Kartoffel-Endivien-Salat",
                     "price": "N/A",
                     "ingredients": [
-                        "Sw",
-                        "5",
                         "3",
-                        "Sf"
-                    ]
+                        "5",
+                        "Sf",
+                        "Sw"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Countrykartoffeln",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
                         "Gl",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Aktionsdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 },
                 {
                     "name": "Tagesdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
                 }
             ]
         },
@@ -155,55 +172,63 @@
                 {
                     "name": "Hähnchenkeule mit Paprikasauce",
                     "price": "0.68€ / 100g",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Self-Service"
                 },
                 {
                     "name": "Pasta mit Sojabolognese",
                     "price": "N/A",
                     "ingredients": [
-                        "Sl",
                         "Gl",
-                        "So",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Sl",
+                        "So"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
                     "price": "N/A",
                     "ingredients": [
-                        "GlD",
                         "1",
-                        "Gl",
-                        "GlW",
-                        "Mi",
+                        "2",
                         "Ei",
-                        "2"
-                    ]
+                        "Gl",
+                        "GlD",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagesgemüse",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Reis",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Aktionsdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 },
                 {
                     "name": "Tagesdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
                 }
             ]
         },
@@ -214,13 +239,14 @@
                     "name": "Schweinebraten mit Biersauce",
                     "price": "0.68€ / 100g",
                     "ingredients": [
-                        "GlG",
                         "Gl",
+                        "GlG",
                         "GlW",
-                        "Mi",
                         "Kn",
+                        "Mi",
                         "S"
-                    ]
+                    ],
+                    "dish_type": "Self-Service"
                 },
                 {
                     "name": "Indisches Putengeschnetzeltes mit Früchten und Curry",
@@ -229,55 +255,63 @@
                         "3",
                         "Gl",
                         "GlW",
-                        "Mi",
                         "Kn",
+                        "Mi",
                         "Sf"
-                    ]
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Pasta all'arrabiata",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
                         "Gl",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagesgemüse",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Semmelknödel",
                     "price": "N/A",
                     "ingredients": [
                         "1",
+                        "Ei",
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "Ei"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Basmatireis",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Aktionsdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 },
                 {
                     "name": "Tagesdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
                 }
             ]
         },
@@ -288,43 +322,48 @@
                     "name": "Lachsforellen-Filet mit Zitronen-Buttersauce (F)",
                     "price": "0.68€ / 100g",
                     "ingredients": [
-                        "Gl",
                         "Fi",
+                        "Gl",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Self-Service"
                 },
                 {
                     "name": "Hähnchenbrust ungarische Art",
                     "price": "N/A",
                     "ingredients": [
-                        "GlG",
                         "Gl",
+                        "GlG",
                         "GlW",
+                        "Kn",
                         "Mi",
-                        "Sl",
-                        "Kn"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Kaiserschmarrn mit Apfelmus",
                     "price": "N/A",
                     "ingredients": [
                         "3",
+                        "Ei",
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "Ei"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagesgemüse",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Farfalle",
@@ -332,7 +371,8 @@
                     "ingredients": [
                         "Gl",
                         "GlW"
-                    ]
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Kartoffelgratin",
@@ -341,17 +381,20 @@
                         "Ei",
                         "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Aktionsdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 },
                 {
                     "name": "Tagesdessert",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
                 }
             ]
         }

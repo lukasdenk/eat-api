@@ -9,25 +9,27 @@
                     "name": "Ravioli mit Pilzfüllung in pikanter Kräutersauce",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "Sl",
                         "Ei",
+                        "Gl",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "Gl"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Gulasch vom Schwein",
                     "price": "N/A",
                     "ingredients": [
-                        "S",
-                        "GlW",
+                        "Gl",
                         "GlG",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "Gl"
-                    ]
+                        "S"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -39,25 +41,27 @@
                     "price": "N/A",
                     "ingredients": [
                         "Ei",
-                        "Mi",
                         "En",
+                        "Mi",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Rinderbraten mit Rotweinsauce",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
+                        "99",
+                        "Gl",
                         "GlG",
-                        "R",
-                        "Sl",
-                        "Sw",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "Gl",
-                        "99"
-                    ]
+                        "R",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -69,21 +73,23 @@
                     "price": "N/A",
                     "ingredients": [
                         "2",
-                        "Kn",
-                        "En"
-                    ]
+                        "En",
+                        "Kn"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Schweinesteak Strindberg (Senf-Zwiebelkruste)",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "Sl",
                         "Ei",
-                        "Mi",
                         "Gl",
-                        "Sf"
-                    ]
+                        "GlW",
+                        "Mi",
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -94,21 +100,23 @@
                     "name": "Pasta mit Gemüsebolognese",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
-                        "GlW",
                         "Gl",
+                        "GlW",
+                        "Kn",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Hähnchenkeule mexikanische Art",
                     "price": "N/A",
                     "ingredients": [
                         "2",
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -119,21 +127,23 @@
                     "name": "Apfelstrudel mit Vanillesauce",
                     "price": "N/A",
                     "ingredients": [
+                        "Gl",
                         "GlW",
-                        "Mi",
-                        "Gl"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Wildlachs (MSC) auf Blattspinat",
                     "price": "N/A",
                     "ingredients": [
+                        "Fi",
+                        "Gl",
                         "GlW",
                         "Kn",
-                        "Mi",
-                        "Fi",
-                        "Gl"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         }

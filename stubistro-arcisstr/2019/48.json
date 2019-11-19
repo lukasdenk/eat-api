@@ -10,25 +10,27 @@
                     "price": "N/A",
                     "ingredients": [
                         "2",
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Rindergeschnetzeltes Stroganoff",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "GlG",
-                        "R",
-                        "9",
                         "2",
+                        "9",
+                        "Gl",
+                        "GlG",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "Gl",
+                        "R",
                         "Sf"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -39,28 +41,30 @@
                     "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
                     "price": "N/A",
                     "ingredients": [
-                        "Ei",
-                        "GlW",
                         "1",
-                        "GlD",
                         "2",
-                        "Mi",
-                        "Gl"
-                    ]
+                        "Ei",
+                        "Gl",
+                        "GlD",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
                     "price": "N/A",
                     "ingredients": [
-                        "Ei",
-                        "GlW",
                         "1",
                         "11",
                         "2",
-                        "Mi",
+                        "Ei",
                         "Gl",
+                        "GlW",
+                        "Mi",
                         "Sf"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -71,30 +75,32 @@
                     "name": "Frühlingsrolle mit süßsaurer Sauce",
                     "price": "N/A",
                     "ingredients": [
-                        "3",
-                        "So",
-                        "GlW",
-                        "5",
-                        "Sw",
-                        "Sl",
                         "11",
+                        "3",
+                        "5",
                         "Ei",
+                        "Gl",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "Gl"
-                    ]
+                        "Sl",
+                        "So",
+                        "Sw"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Halbe Schweinshaxe mit Biersauce",
                     "price": "N/A",
                     "ingredients": [
-                        "S",
-                        "GlW",
+                        "Gl",
                         "GlG",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "Gl"
-                    ]
+                        "S"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -105,22 +111,24 @@
                     "name": "Frische Rahmschwammerl",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
+                        "Gl",
                         "GlW",
-                        "Mi",
-                        "Gl"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Currywurst mit Honig-Ingwer-Ketchup",
                     "price": "N/A",
                     "ingredients": [
-                        "R",
-                        "8",
                         "11",
+                        "8",
+                        "R",
                         "S",
                         "Sf"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -132,26 +140,28 @@
                     "price": "N/A",
                     "ingredients": [
                         "3",
-                        "GlW",
                         "Ei",
-                        "Mi",
-                        "Gl"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Schollenfilet (MSC) paniert mit Remouladensauce",
                     "price": "N/A",
                     "ingredients": [
-                        "Ei",
-                        "GlW",
-                        "9",
                         "11",
                         "2",
-                        "Mi",
+                        "9",
+                        "Ei",
                         "Fi",
-                        "Sf",
-                        "Gl"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sf"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         }

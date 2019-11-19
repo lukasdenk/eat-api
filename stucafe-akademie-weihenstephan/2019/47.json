@@ -11,11 +11,12 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
-                        "Kn",
-                        "S",
                         "GlW",
-                        "Mi"
-                    ]
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Rougaille Soja von Mauritius (Soja in würziger Tomatensauce)",
@@ -24,7 +25,8 @@
                         "Kn",
                         "Sf",
                         "So"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 }
             ]
         },
@@ -35,15 +37,16 @@
                     "name": "Pasta mit Kürbis-Carbonara-Sauce",
                     "price": 1.9,
                     "ingredients": [
-                        "Gl",
-                        "Kn",
-                        "S",
-                        "GlW",
-                        "Ei",
-                        "3",
                         "2",
-                        "Mi"
-                    ]
+                        "3",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 }
             ]
         },
@@ -54,24 +57,26 @@
                     "name": "Pasta di Manzo mit Rindfleischstreifen in Balsamico",
                     "price": 2.4,
                     "ingredients": [
-                        "Gl",
-                        "Kn",
-                        "Sw",
-                        "GlW",
                         "1",
-                        "5",
                         "3",
-                        "R"
-                    ]
+                        "5",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "R",
+                        "Sw"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Afrikanischer Süßkartoffeltopf mit Blumenkohl und Erdnüssen",
                     "price": 2.4,
                     "ingredients": [
-                        "Kn",
+                        "2",
                         "En",
-                        "2"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 }
             ]
         },
@@ -83,24 +88,26 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
+                        "GlW",
                         "Kn",
-                        "Sl",
-                        "GlW"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Surbraten vom Schweinehals mit Rosmarinjus",
                     "price": 2.8,
                     "ingredients": [
-                        "Gl",
-                        "8",
-                        "GlG",
-                        "Kn",
-                        "S",
-                        "GlW",
                         "2",
-                        "Mi"
-                    ]
+                        "8",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         },
@@ -112,16 +119,18 @@
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Hähnchenschnitzel mit Tomate und Mozzarella überbacken",
                     "price": 2.8,
                     "ingredients": [
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         }

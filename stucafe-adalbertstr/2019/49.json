@@ -10,20 +10,22 @@
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
-                        "Mi",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Wildschweingulasch mit frischen Champignons",
                     "price": 3.5,
                     "ingredients": [
                         "99",
-                        "Sw",
+                        "Gl",
                         "GlW",
-                        "Gl"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 8"
                 }
             ]
         },
@@ -37,19 +39,21 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Kalbshüftsteak vom Grill mit Pilzrahmsauce",
                     "price": 4.0,
                     "ingredients": [
+                        "5",
+                        "99",
                         "Gl",
                         "GlW",
-                        "5",
                         "Mi",
-                        "Sw",
-                        "99"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 }
             ]
         },
@@ -59,19 +63,21 @@
                 {
                     "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
                     "price": 2.4,
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Aktionsessen 3"
                 },
                 {
                     "name": "Gefüllte Paprikaschote mit Tomatensauce",
                     "price": 2.6,
                     "ingredients": [
-                        "Gl",
-                        "Kn",
                         "2",
+                        "Gl",
+                        "GlD",
                         "GlW",
-                        "Mi",
-                        "GlD"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -82,17 +88,18 @@
                     "name": "Geschmorter Rinderbraten (GQB) mit weihnachtlicher Sauce",
                     "price": 3.0,
                     "ingredients": [
-                        "GlG",
-                        "Gl",
-                        "Kn",
-                        "GlW",
-                        "Sl",
                         "5",
-                        "Mi",
-                        "Sw",
                         "99",
-                        "R"
-                    ]
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 },
                 {
                     "name": "Tortelloni all'arrabiata",
@@ -101,7 +108,8 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Biogericht 4"
                 }
             ]
         },
@@ -113,17 +121,19 @@
                     "price": 1.9,
                     "ingredients": [
                         "2"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Pfannkuchen mit Heidelbeerfüllung und Vanillesauce",
                     "price": 2.4,
                     "ingredients": [
-                        "Gl",
-                        "Mi",
                         "Ei",
-                        "GlW"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         }

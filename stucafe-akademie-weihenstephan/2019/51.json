@@ -9,12 +9,13 @@
                     "name": "Chili con Carne",
                     "price": 1.9,
                     "ingredients": [
+                        "2",
                         "Gl",
-                        "Kn",
                         "GlW",
-                        "R",
-                        "2"
-                    ]
+                        "Kn",
+                        "R"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
@@ -22,9 +23,10 @@
                     "ingredients": [
                         "Ei",
                         "Gl",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -35,15 +37,16 @@
                     "name": "Kartoffel-Pilz-Auflauf mit frischem Lauch und Dip",
                     "price": 2.4,
                     "ingredients": [
-                        "Gl",
-                        "Kn",
-                        "Sf",
-                        "GlW",
-                        "Ei",
                         "1",
                         "2",
-                        "Mi"
-                    ]
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sf"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         },
@@ -55,10 +58,11 @@
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
+                        "GlW",
                         "Kn",
-                        "Sl",
-                        "GlW"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         },
@@ -70,11 +74,12 @@
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
-                        "So",
+                        "GlW",
                         "Kn",
                         "Sl",
-                        "GlW"
-                    ]
+                        "So"
+                    ],
+                    "dish_type": "Biogericht 3"
                 }
             ]
         },
@@ -86,10 +91,11 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
-                        "Kn",
                         "GlW",
+                        "Kn",
                         "So"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 }
             ]
         }

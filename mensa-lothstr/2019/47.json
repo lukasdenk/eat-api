@@ -9,44 +9,48 @@
                     "name": "Couscous mit Kürbis",
                     "price": 1.0,
                     "ingredients": [
-                        "GlW",
-                        "Gl"
-                    ]
+                        "Gl",
+                        "GlW"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Gulasch vom Schwein",
                     "price": 1.9,
                     "ingredients": [
-                        "GlW",
                         "Gl",
-                        "Mi",
                         "GlG",
-                        "S",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Ravioli mit Pilzfüllung in pikanter Kräutersauce",
                     "price": 2.4,
                     "ingredients": [
-                        "Sl",
-                        "Gl",
                         "Ei",
-                        "Mi",
+                        "Gl",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Pikante Chickenwings mit Barbecuesauce",
                     "price": 2.6,
                     "ingredients": [
-                        "Sl",
-                        "Sf",
                         "10",
                         "11",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -56,43 +60,47 @@
                 {
                     "name": "Frisches Gemüse aus der Pfanne mit Reis",
                     "price": 1.0,
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Gebratenes Schweinefleisch HoiSin Art in Sojasauce mit Gemüse",
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
-                        "So",
                         "GlW",
+                        "Kn",
                         "S",
-                        "Kn"
-                    ]
+                        "So"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Libanesischer Gemüseauflauf",
                     "price": 2.8,
                     "ingredients": [
-                        "Sl",
+                        "Ei",
                         "En",
                         "Mi",
-                        "Ei"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 },
                 {
                     "name": "Rinderbraten (GQB) mit Rotweinsauce",
                     "price": 3.2,
                     "ingredients": [
-                        "Sw",
-                        "GlW",
-                        "Sl",
-                        "Gl",
                         "99",
-                        "Mi",
+                        "Gl",
                         "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
                         "R",
-                        "Kn"
-                    ]
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 7"
                 }
             ]
         },
@@ -103,25 +111,27 @@
                     "name": "Gemüsecurry mit roten Linsen, Spinat und Kokosmilch",
                     "price": 1.0,
                     "ingredients": [
-                        "So",
-                        "GlW",
                         "Gl",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "So"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pasta di Manzo mit Rindfleischstreifen (GQB) in Balsamico",
                     "price": 2.4,
                     "ingredients": [
-                        "Sw",
+                        "1",
                         "3",
-                        "R",
-                        "Gl",
-                        "Kn",
-                        "GlW",
                         "5",
-                        "1"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "R",
+                        "Sw"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Afrikanischer Süßkartoffeltopf mit Blumenkohl und Erdnüssen",
@@ -130,19 +140,21 @@
                         "2",
                         "En",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 },
                 {
                     "name": "Schweinesteak Strindberg (Senf-Zwiebelkruste)",
                     "price": 2.6,
                     "ingredients": [
-                        "Sf",
-                        "Sl",
+                        "Ei",
                         "Gl",
-                        "Mi",
                         "GlW",
-                        "Ei"
-                    ]
+                        "Mi",
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -155,41 +167,45 @@
                     "ingredients": [
                         "2",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pasta mit Gemüsebolognese",
                     "price": 1.9,
                     "ingredients": [
-                        "GlW",
                         "Gl",
-                        "Sl",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Hähnchenkeule mexikanische Art",
                     "price": 1.9,
                     "ingredients": [
                         "2",
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 2"
                 },
                 {
                     "name": "Surbraten vom Schweinehals mit Rosmarinjus",
                     "price": 2.8,
                     "ingredients": [
-                        "GlW",
-                        "Gl",
-                        "8",
-                        "Mi",
                         "2",
+                        "8",
+                        "Gl",
                         "GlG",
-                        "S",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         },
@@ -200,29 +216,32 @@
                     "name": "Italienischer Bohneneintopf",
                     "price": 1.0,
                     "ingredients": [
-                        "Sl",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Apfelstrudel mit Vanillesauce",
                     "price": 2.4,
                     "ingredients": [
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Wildlachs (MSC) auf Blattspinat",
                     "price": 4.0,
                     "ingredients": [
-                        "Gl",
                         "Fi",
-                        "Mi",
+                        "Gl",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 }
             ]
         }

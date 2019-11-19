@@ -9,27 +9,29 @@
                     "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
                         "1",
-                        "Sl",
                         "Ei",
+                        "Gl",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "Gl"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Esterhazygulasch vom Rind",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
+                        "Gl",
                         "GlG",
-                        "R",
-                        "Sl",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "Gl"
-                    ]
+                        "R",
+                        "Sl"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -40,19 +42,21 @@
                     "name": "Pasta mit würzigem Kürbis",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
+                        "Gl",
                         "GlW",
-                        "Gl"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Bratwurstschnecke",
                     "price": "N/A",
                     "ingredients": [
-                        "S",
                         "8",
+                        "S",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -63,21 +67,23 @@
                     "name": "Farfalle mit Tomaten-Frischkäse-Sauce",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
+                        "Gl",
                         "GlW",
-                        "Mi",
-                        "Gl"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Hähnchenspieß mit fruchtiger Sauce",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
-                        "GlW",
                         "Gl",
+                        "GlW",
+                        "Kn",
                         "So"
-                    ]
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -88,24 +94,26 @@
                     "name": "Senner Rösti mit Tomate und Käse überbacken",
                     "price": "N/A",
                     "ingredients": [
+                        "1",
                         "2",
-                        "Mi",
-                        "1"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Arista al fiorentina - Schweinebraten toskanische Art",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "GlG",
                         "5",
-                        "Sw",
+                        "99",
+                        "Gl",
+                        "GlG",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "Gl",
-                        "99"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -117,22 +125,24 @@
                     "price": "N/A",
                     "ingredients": [
                         "Ei",
+                        "Gl",
                         "GlW",
-                        "Mi",
-                        "Gl"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
                 },
                 {
                     "name": "Kabeljaufilet (MSC) mit Sauce Hollandaise",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "Sl",
                         "Ei",
-                        "Mi",
                         "Fi",
-                        "Gl"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         }

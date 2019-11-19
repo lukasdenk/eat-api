@@ -9,45 +9,49 @@
                     "name": "Blumenkohl-Kartoffel-Curry",
                     "price": 1.0,
                     "ingredients": [
-                        "Sl",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Chili con Carne",
                     "price": 1.9,
                     "ingredients": [
-                        "Gl",
                         "2",
+                        "Gl",
                         "GlW",
-                        "R",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "R"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
                     "price": 2.6,
                     "ingredients": [
-                        "GlW",
+                        "Ei",
                         "Gl",
-                        "Mi",
-                        "Ei"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 },
                 {
                     "name": "Schweinerahmgeschnetzeltes mit Pfifferlingen und Steinpilzen",
                     "price": 3.2,
                     "ingredients": [
-                        "Sw",
-                        "GlW",
-                        "Gl",
-                        "99",
-                        "Mi",
-                        "GlG",
                         "5",
+                        "99",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
                         "S",
-                        "Kn"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 7"
                 }
             ]
         },
@@ -58,53 +62,57 @@
                     "name": "Kräuterpolenta mit Tomatenragout",
                     "price": 1.0,
                     "ingredients": [
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Schinkennudeln (Vorderschinken) mit Zwiebeln und Ei",
                     "price": 1.9,
                     "ingredients": [
+                        "2",
                         "3",
-                        "Gl",
                         "8",
+                        "Ei",
+                        "Gl",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "2",
-                        "GlW",
-                        "S",
-                        "Ei"
-                    ]
+                        "S"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Kartoffel-Pilz-Auflauf mit frischem Lauch und Dip",
                     "price": 2.4,
                     "ingredients": [
                         "1",
-                        "Sf",
+                        "2",
+                        "Ei",
                         "Gl",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "2",
-                        "GlW",
-                        "Ei"
-                    ]
+                        "Sf"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Zwiebelrostbraten mit Rotweinsauce",
                     "price": 4.0,
                     "ingredients": [
-                        "Sw",
-                        "GlW",
-                        "Gl",
                         "99",
-                        "Mi",
+                        "Gl",
                         "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
                         "R",
-                        "Kn"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 }
             ]
         },
@@ -116,49 +124,53 @@
                     "price": 1.0,
                     "ingredients": [
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pasta mit Putenbolognese",
                     "price": 2.4,
                     "ingredients": [
-                        "GlW",
                         "Gl",
-                        "Sl",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Spinatknödel Tiroler Art mit Bergkäse und knackigem Beilagensalat",
                     "price": 2.6,
                     "ingredients": [
-                        "Sw",
+                        "11",
                         "3",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
                         "Sf",
                         "Sl",
-                        "11",
-                        "Gl",
-                        "Mi",
-                        "GlW",
-                        "Ei"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 },
                 {
                     "name": "Boeuf à la mode aus dem Rinderbug (GQB)",
                     "price": 3.2,
                     "ingredients": [
-                        "Sw",
                         "3",
-                        "GlW",
-                        "Sl",
-                        "R",
-                        "Gl",
-                        "99",
-                        "Mi",
-                        "GlG",
                         "5",
-                        "Kn"
-                    ]
+                        "99",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 7"
                 }
             ]
         },
@@ -170,53 +182,58 @@
                     "price": 1.0,
                     "ingredients": [
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
                     "price": 1.9,
                     "ingredients": [
-                        "GlD",
                         "3",
-                        "Gl",
                         "6",
-                        "Mi",
-                        "Kn"
-                    ]
+                        "Gl",
+                        "GlD",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Hähnchenbrust Thai-Style mit Gemüse",
                     "price": 2.8,
                     "ingredients": [
-                        "Gl",
-                        "So",
                         "2",
+                        "Gl",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "So"
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 },
                 {
                     "name": "Pfannengyros vom Schwein mit Tsatsiki",
                     "price": 3.0,
                     "ingredients": [
-                        "Sw",
                         "3",
-                        "Mi",
                         "5",
+                        "Kn",
+                        "Mi",
                         "S",
-                        "Kn"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 },
                 {
                     "name": "Bio-Linsen mit Bio-Spätzle",
                     "price": 2.4,
                     "ingredients": [
-                        "Sl",
                         "Gl",
-                        "So",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Sl",
+                        "So"
+                    ],
+                    "dish_type": "Biogericht 3"
                 }
             ]
         },
@@ -227,35 +244,38 @@
                     "name": "Zartweizen mit Gemüse",
                     "price": 1.0,
                     "ingredients": [
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
                     "price": 2.4,
                     "ingredients": [
-                        "GlW",
+                        "Ei",
                         "Gl",
-                        "Mi",
-                        "Ei"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Gedünstetes Seelachsfilet (MSC) mit Gemüse und Weißweinsauce",
                     "price": 2.8,
                     "ingredients": [
-                        "Sw",
-                        "Sl",
-                        "Gl",
+                        "5",
                         "99",
                         "Fi",
-                        "Mi",
+                        "Gl",
                         "GlW",
-                        "5",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         }

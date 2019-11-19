@@ -9,14 +9,15 @@
                     "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
                     "price": 2.6,
                     "ingredients": [
-                        "Mi",
-                        "Kn",
-                        "Gl",
-                        "Ei",
-                        "GlW",
                         "1",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -28,9 +29,10 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
-                        "Kn",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 }
             ]
         },
@@ -42,10 +44,11 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
-                        "Mi",
+                        "GlW",
                         "Kn",
-                        "GlW"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 }
             ]
         },
@@ -59,7 +62,8 @@
                         "1",
                         "2",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         },
@@ -70,11 +74,12 @@
                     "name": "Kleine Dampfnudel mit Vanillesauce",
                     "price": 2.4,
                     "ingredients": [
-                        "Gl",
-                        "Mi",
                         "Ei",
-                        "GlW"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         }

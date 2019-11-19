@@ -10,49 +10,53 @@
                     "price": 1.0,
                     "ingredients": [
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pasta mit Broccoli-Sahne-Sauce",
                     "price": 1.9,
                     "ingredients": [
-                        "Mi",
                         "Gl",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Paniertes Truthahnschnitzel mit Salsa",
                     "price": 2.4,
                     "ingredients": [
+                        "11",
+                        "2",
                         "En",
                         "Gl",
-                        "2",
-                        "So",
                         "GlW",
                         "Se",
-                        "11"
-                    ]
+                        "So"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Klassische Rinderroulade mit Senf-Gemüse-Sauce",
                     "price": 3.5,
                     "ingredients": [
-                        "R",
-                        "Gl",
-                        "Sw",
-                        "GlG",
                         "2",
-                        "S",
-                        "GlW",
-                        "Sf",
-                        "Mi",
                         "3",
-                        "Sl",
                         "99",
-                        "Kn"
-                    ]
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "S",
+                        "Sf",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 8"
                 }
             ]
         },
@@ -63,11 +67,12 @@
                     "name": "Linseneintopf mit Gemüse",
                     "price": 1.0,
                     "ingredients": [
-                        "5",
-                        "Sw",
                         "3",
-                        "Sl"
-                    ]
+                        "5",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pasta Pomodoro mit Tomaten und Basilikum",
@@ -76,7 +81,8 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Pizza Contadina mit Tomate, Spinat und Ricotta",
@@ -84,30 +90,32 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
-                        "So",
                         "GlW",
+                        "Kn",
                         "Mi",
-                        "Kn"
-                    ]
+                        "So"
+                    ],
+                    "dish_type": "Aktionsessen 8"
                 },
                 {
                     "name": "Entenkeule mit Glühwein-Orangensauce, Blaukraut, Kartoffelknödel",
                     "price": "N/A",
                     "ingredients": [
-                        "Gl",
-                        "Sw",
-                        "GlG",
+                        "1",
+                        "11",
                         "2",
-                        "GlW",
+                        "3",
                         "5",
+                        "99",
+                        "Gl",
+                        "GlG",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "11",
-                        "1",
                         "Sl",
-                        "3",
-                        "99"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "Weihnachtsaktion"
                 }
             ]
         },
@@ -119,43 +127,47 @@
                     "price": 1.0,
                     "ingredients": [
                         "2",
-                        "So",
+                        "Kn",
                         "Sf",
                         "Sl",
-                        "Kn"
-                    ]
+                        "So"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Kartoffel-Sauerkrautgratin mit Kräuterdip",
                     "price": 2.4,
                     "ingredients": [
-                        "Mi",
                         "Ei",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Pasta Casalinga mit Schweinegeschnetzeltem und Pilzen",
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
-                        "S",
                         "GlW",
+                        "Kn",
                         "Mi",
-                        "Kn"
-                    ]
+                        "S"
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 },
                 {
                     "name": "Münchner Gulasch vom Rind (GQB)",
                     "price": 3.2,
                     "ingredients": [
-                        "R",
                         "Gl",
                         "GlG",
                         "GlW",
+                        "Kn",
                         "Mi",
-                        "Kn"
-                    ]
+                        "R"
+                    ],
+                    "dish_type": "Aktionsessen 7"
                 }
             ]
         },
@@ -169,7 +181,8 @@
                         "Gl",
                         "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pizza Margherita mit Mozzarella und frischem Basilikum",
@@ -177,34 +190,37 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
-                        "So",
                         "GlW",
-                        "Mi"
-                    ]
+                        "Mi",
+                        "So"
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 },
                 {
                     "name": "Hirschgulasch in Preiselbeersauce",
                     "price": 4.0,
                     "ingredients": [
+                        "99",
                         "Gl",
-                        "Sw",
                         "GlG",
                         "GlW",
+                        "Kn",
                         "Mi",
                         "Sl",
-                        "99",
-                        "Kn"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 },
                 {
                     "name": "Bio-Penne mit Bio-Tomaten-Frischkäse-Sauce",
                     "price": 1.9,
                     "ingredients": [
-                        "Mi",
                         "Gl",
                         "GlW",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Biogericht 2"
                 }
             ]
         },
@@ -217,29 +233,32 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
-                        "Sl",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Bunte Farfalle mit Räucherlachssauce",
                     "price": 1.9,
                     "ingredients": [
+                        "Fi",
                         "Gl",
                         "GlW",
-                        "Fi",
-                        "Mi",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Apfelstrudel mit Vanillesauce",
                     "price": 2.4,
                     "ingredients": [
-                        "Mi",
                         "Gl",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         }

@@ -9,13 +9,14 @@
                     "name": "Ravioli mit Pilzfüllung in pikanter Kräutersauce",
                     "price": 2.4,
                     "ingredients": [
-                        "Mi",
-                        "Kn",
                         "Ei",
-                        "GlW",
                         "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         },
@@ -26,11 +27,12 @@
                     "name": "Libanesischer Gemüseauflauf",
                     "price": 2.8,
                     "ingredients": [
-                        "Mi",
                         "Ei",
-                        "Sl",
-                        "En"
-                    ]
+                        "En",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         },
@@ -42,9 +44,10 @@
                     "price": 2.4,
                     "ingredients": [
                         "2",
-                        "Kn",
-                        "En"
-                    ]
+                        "En",
+                        "Kn"
+                    ],
+                    "dish_type": "Aktionsessen 3"
                 }
             ]
         },
@@ -56,10 +59,11 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
+                        "GlW",
                         "Kn",
-                        "Sl",
-                        "GlW"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 }
             ]
         },
@@ -71,9 +75,10 @@
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         }

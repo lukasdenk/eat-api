@@ -9,95 +9,104 @@
                     "name": "Penne all'arrabiata",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
                         "2",
-                        "Kn",
-                        "Gl"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Pizza Mexiko mit Vorderschinken, Mais, Paprikawürfeln und Mozzarella",
                     "price": "N/A",
                     "ingredients": [
                         "2",
-                        "8",
-                        "GlW",
-                        "GlG",
-                        "So",
                         "3",
+                        "8",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "So"
+                    ],
+                    "dish_type": "Pizza"
                 },
                 {
                     "name": "Schweinehalssteak mit Kräuterbutter",
                     "price": "N/A",
                     "ingredients": [
                         "Kn",
-                        "S",
-                        "Mi"
-                    ]
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Gebratene Hähnchenbruststreifen in scharfem Gemüse",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
                         "2",
-                        "Kn",
-                        "Gl"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Karotten-Kürbisragout",
                     "price": "N/A",
                     "ingredients": [
+                        "Gl",
                         "GlW",
                         "Kn",
-                        "Sf",
-                        "Gl"
-                    ]
+                        "Sf"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Spinatknödel Tiroler Art mit Bergkäse",
                     "price": "N/A",
                     "ingredients": [
                         "Ei",
-                        "GlW",
-                        "Sl",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Vegetarisch"
                 },
                 {
                     "name": "Rindergeschnetzeltes (GQB) Stroganoff",
                     "price": "N/A",
                     "ingredients": [
                         "2",
-                        "R",
-                        "GlW",
-                        "GlG",
                         "9",
-                        "Sf",
-                        "Kn",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "Sf"
+                    ],
+                    "dish_type": "Fleisch"
                 },
                 {
                     "name": "Pfannkuchen mit Kirschfüllung dazu Vanillesauce",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
                         "Ei",
                         "Gl",
+                        "GlW",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Süßspeise"
                 }
             ]
         },
@@ -108,52 +117,57 @@
                     "name": "Farfalle mit Kürbis",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "Gl"
-                    ]
+                        "Gl",
+                        "GlW"
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Pizza Vegetariana mit Mozzarella und Grillgemüse",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "GlG",
-                        "So",
-                        "Sl",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "Sl",
+                        "So"
+                    ],
+                    "dish_type": "Pizza"
                 },
                 {
                     "name": "Rumpsteak mit Schmorzwiebeln",
                     "price": "N/A",
                     "ingredients": [
                         "Kn",
-                        "R",
-                        "Mi"
-                    ]
+                        "Mi",
+                        "R"
+                    ],
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Asia-Pfanne mit Schweinefleisch",
                     "price": "N/A",
                     "ingredients": [
-                        "S",
+                        "Gl",
                         "GlW",
-                        "Sf",
-                        "So",
                         "Kn",
-                        "Gl"
-                    ]
+                        "S",
+                        "Sf",
+                        "So"
+                    ],
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Arabischer Couscous mit Karotten und Kichererbsen",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
                         "2",
-                        "Kn",
-                        "Gl"
-                    ]
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Pikante Kürbiscremesuppe mit Ingwer",
@@ -161,51 +175,56 @@
                     "ingredients": [
                         "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
                     "price": "N/A",
                     "ingredients": [
-                        "GlD",
+                        "1",
                         "2",
                         "Ei",
-                        "GlW",
-                        "1",
                         "Gl",
+                        "GlD",
+                        "GlW",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Vegetarisch"
                 },
                 {
                     "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
                     "price": "N/A",
                     "ingredients": [
-                        "2",
-                        "11",
-                        "Ei",
-                        "GlW",
                         "1",
-                        "Sf",
+                        "11",
+                        "2",
+                        "Ei",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlW",
+                        "Mi",
+                        "Sf"
+                    ],
+                    "dish_type": "Fleisch"
                 },
                 {
                     "name": "Gebratenes Zanderfilet mit Mandelbutter",
                     "price": "N/A",
                     "ingredients": [
-                        "ScM",
-                        "GlW",
-                        "Gl",
                         "Fi",
+                        "Gl",
+                        "GlW",
+                        "Mi",
                         "Sc",
-                        "Mi"
-                    ]
+                        "ScM"
+                    ],
+                    "dish_type": "Fisch"
                 }
             ]
         },
@@ -216,90 +235,99 @@
                     "name": "Pasta mit Gorgonzolasauce",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Pizza Verdura mit gebratenem Gemüse und Mozzarella",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "GlG",
-                        "So",
-                        "Kn",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "So"
+                    ],
+                    "dish_type": "Pizza"
                 },
                 {
                     "name": "Gebratenes Truthahnsteak",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "GlG",
-                        "Sl",
-                        "Kn",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Reispfanne mit Kürbis und Rosinen",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Grüner Erbseneintopf",
                     "price": "N/A",
                     "ingredients": [
                         "Sl"
-                    ]
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Frühlingsrolle mit süßsaurer Sauce",
                     "price": "N/A",
                     "ingredients": [
                         "11",
+                        "3",
+                        "5",
                         "Ei",
+                        "Gl",
                         "GlW",
-                        "Sw",
+                        "Mi",
                         "Sl",
                         "So",
-                        "5",
-                        "3",
-                        "Gl",
-                        "Mi"
-                    ]
+                        "Sw"
+                    ],
+                    "dish_type": "Vegetarisch"
                 },
                 {
                     "name": "Halbe Schweinshaxe mit Biersauce",
                     "price": "N/A",
                     "ingredients": [
-                        "S",
-                        "GlW",
-                        "GlG",
                         "99",
-                        "Kn",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Fleisch"
                 },
                 {
                     "name": "Kleine Dampfnudel mit Vanillesauce",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
                         "Ei",
                         "Gl",
+                        "GlW",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Süßspeise"
                 }
             ]
         },
@@ -310,52 +338,56 @@
                     "name": "Bio-Spaghetti bolognese",
                     "price": "N/A",
                     "ingredients": [
-                        "S",
-                        "R",
+                        "Gl",
                         "GlW",
                         "Kn",
-                        "Gl",
-                        "Mi"
-                    ]
+                        "Mi",
+                        "R",
+                        "S"
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Pizza Quattro Stagioni mit (Vorder-)Schinken, Paprika, Champignons und Oliven",
                     "price": "N/A",
                     "ingredients": [
-                        "2",
-                        "S",
-                        "8",
-                        "GlW",
-                        "GlG",
                         "1",
-                        "So",
+                        "2",
                         "3",
+                        "8",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "S",
+                        "So"
+                    ],
+                    "dish_type": "Pizza"
                 },
                 {
                     "name": "Spenden - Currywurst",
                     "price": "N/A",
                     "ingredients": [
                         "11",
-                        "S",
-                        "R",
                         "8",
+                        "R",
+                        "S",
                         "Sf"
-                    ]
+                    ],
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Ente mit Ananas, Sprossen und Pilzen in Teriyakisauce",
                     "price": "N/A",
                     "ingredients": [
+                        "Gl",
                         "GlW",
+                        "Kn",
                         "Se",
                         "Sf",
-                        "So",
-                        "Kn",
-                        "Gl"
-                    ]
+                        "So"
+                    ],
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Kürbis-Linsen-Curry",
@@ -363,48 +395,53 @@
                     "ingredients": [
                         "Kn",
                         "Sf"
-                    ]
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Frische Rahmschwammerl",
                     "price": "N/A",
                     "ingredients": [
+                        "Gl",
                         "GlW",
                         "Kn",
-                        "Gl",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Vegetarisch"
                 },
                 {
                     "name": "Überbackenes Putenschnitzel Toskana",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
                         "1",
-                        "Kn",
                         "Gl",
+                        "GlW",
+                        "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Fleisch"
                 },
                 {
                     "name": "Cevapcici mit Ajvar",
                     "price": "N/A",
                     "ingredients": [
                         "Ei",
+                        "Gl",
+                        "Kn",
+                        "Mi",
                         "S",
                         "Se",
                         "Sf",
-                        "So",
                         "Sl",
-                        "Kn",
-                        "Gl",
-                        "Mi"
-                    ]
+                        "So"
+                    ],
+                    "dish_type": "Fleisch"
                 }
             ]
         },
@@ -415,35 +452,38 @@
                     "name": "Tortellini mit Ricotta-Spinat-Füllung in Kräutersauce",
                     "price": "N/A",
                     "ingredients": [
+                        "Gl",
                         "GlW",
                         "Kn",
-                        "Gl",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Pasta"
                 },
                 {
                     "name": "Pizza mit Thunfisch, Oliven und roten Zwiebeln",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "GlG",
                         "6",
-                        "So",
                         "Fi",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "So"
+                    ],
+                    "dish_type": "Pizza"
                 },
                 {
                     "name": "Wildlachs (MSC) auf Blattspinat",
                     "price": "N/A",
                     "ingredients": [
-                        "Kn",
-                        "GlW",
                         "Fi",
                         "Gl",
+                        "GlW",
+                        "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Gebratene Chinanudeln mit Wokgemüse und Ei",
@@ -451,26 +491,29 @@
                     "ingredients": [
                         "2",
                         "Ei",
+                        "Gl",
                         "GlW",
                         "Se",
-                        "So",
                         "Sf",
-                        "Gl"
-                    ]
+                        "So"
+                    ],
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Bauerneintopf",
                     "price": "N/A",
                     "ingredients": [
+                        "Gl",
                         "GlW",
-                        "Sl",
-                        "Gl"
-                    ]
+                        "Sl"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
                     "name": "Tagessuppe",
                     "price": "N/A",
-                    "ingredients": []
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
                     "name": "Tofugeschnetzeltes China-Town",
@@ -479,28 +522,31 @@
                         "2",
                         "Kn",
                         "So"
-                    ]
+                    ],
+                    "dish_type": "Vegetarisch"
                 },
                 {
                     "name": "Schweinerückensteak mit Pfifferlingen und Steinpilzen in Rahm",
                     "price": "N/A",
                     "ingredients": [
-                        "GlW",
-                        "S",
                         "Gl",
-                        "Mi"
-                    ]
+                        "GlW",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Fleisch"
                 },
                 {
                     "name": "Kaiserschmarrn mit Apfelmus",
                     "price": "N/A",
                     "ingredients": [
-                        "Ei",
-                        "GlW",
                         "3",
+                        "Ei",
                         "Gl",
+                        "GlW",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Süßspeise"
                 }
             ]
         }

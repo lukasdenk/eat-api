@@ -10,29 +10,31 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
+                        "GlW",
                         "Kn",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Klassische Rinderroulade mit Senf-Gemüse-Sauce",
                     "price": 3.5,
                     "ingredients": [
+                        "2",
+                        "3",
+                        "99",
                         "Gl",
                         "GlG",
-                        "Kn",
-                        "Sf",
-                        "Sw",
-                        "Sl",
                         "GlW",
-                        "S",
-                        "99",
-                        "3",
+                        "Kn",
+                        "Mi",
                         "R",
-                        "2",
-                        "Mi"
-                    ]
+                        "S",
+                        "Sf",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 8"
                 }
             ]
         },
@@ -44,9 +46,10 @@
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
-                        "Kn",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 }
             ]
         },
@@ -60,7 +63,8 @@
                         "Ei",
                         "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Münchner Gulasch vom Rind (GQB)",
@@ -68,11 +72,12 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
-                        "Kn",
                         "GlW",
-                        "R",
-                        "Mi"
-                    ]
+                        "Kn",
+                        "Mi",
+                        "R"
+                    ],
+                    "dish_type": "Aktionsessen 7"
                 }
             ]
         },
@@ -83,25 +88,27 @@
                     "name": "Hirschgulasch in Preiselbeersauce",
                     "price": 4.0,
                     "ingredients": [
+                        "99",
                         "Gl",
                         "GlG",
-                        "Kn",
-                        "Sw",
-                        "Sl",
                         "GlW",
-                        "99",
-                        "Mi"
-                    ]
+                        "Kn",
+                        "Mi",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 },
                 {
                     "name": "Penne mit Tomaten-Frischkäse-Sauce",
                     "price": 1.9,
                     "ingredients": [
                         "Gl",
+                        "GlW",
                         "Kn",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Biogericht 2"
                 }
             ]
         },
@@ -112,21 +119,23 @@
                     "name": "Bunte Farfalle mit Räucherlachssauce",
                     "price": 1.9,
                     "ingredients": [
-                        "Gl",
-                        "Kn",
-                        "GlW",
                         "Fi",
+                        "Gl",
+                        "GlW",
+                        "Kn",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Apfelstrudel mit Vanillesauce",
                     "price": 2.4,
                     "ingredients": [
                         "Gl",
-                        "Mi",
-                        "GlW"
-                    ]
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 }
             ]
         }

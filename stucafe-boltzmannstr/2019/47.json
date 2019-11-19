@@ -9,13 +9,14 @@
                     "name": "Gulasch vom Schwein",
                     "price": 2.6,
                     "ingredients": [
-                        "S",
-                        "GlW",
-                        "Kn",
                         "Gl",
                         "GlG",
-                        "Mi"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -34,11 +35,12 @@
                     "name": "Hähnchenkeule mexikanische Art",
                     "price": 1.9,
                     "ingredients": [
-                        "Kn",
                         "2",
+                        "Gl",
                         "GlW",
-                        "Gl"
-                    ]
+                        "Kn"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 }
             ]
         },
@@ -50,11 +52,12 @@
                     "price": 4.0,
                     "ingredients": [
                         "Fi",
+                        "Gl",
                         "GlW",
                         "Kn",
-                        "Gl",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 }
             ]
         }

@@ -10,44 +10,48 @@
                     "price": 1.0,
                     "ingredients": [
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pasta mit Broccoli-Sahne-Sauce",
                     "price": 1.9,
                     "ingredients": [
-                        "GlW",
                         "Gl",
-                        "Mi",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Paniertes Truthahnschnitzel mit Salsa",
                     "price": 2.4,
                     "ingredients": [
                         "11",
-                        "Gl",
-                        "Se",
-                        "So",
-                        "En",
                         "2",
-                        "GlW"
-                    ]
+                        "En",
+                        "Gl",
+                        "GlW",
+                        "Se",
+                        "So"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Holzfällersteak vom Schwein",
                     "price": 2.6,
                     "ingredients": [
-                        "3",
-                        "GlW",
-                        "Gl",
-                        "Mi",
                         "2",
+                        "3",
+                        "Gl",
                         "GlG",
-                        "S",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
@@ -58,53 +62,57 @@
                     "name": "Linseneintopf mit Gemüse",
                     "price": 1.0,
                     "ingredients": [
-                        "Sw",
-                        "5",
                         "3",
-                        "Sl"
-                    ]
+                        "5",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Pasta Pomodoro mit Tomaten und Basilikum",
                     "price": 1.9,
                     "ingredients": [
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
                     "name": "Chop Suey vom Schweinefleisch",
                     "price": 2.4,
                     "ingredients": [
-                        "Sw",
                         "3",
-                        "Gl",
-                        "So",
-                        "GlW",
                         "5",
+                        "Gl",
+                        "GlW",
+                        "Kn",
                         "S",
-                        "Kn"
-                    ]
+                        "So",
+                        "Sw"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Entenkeule mit Glühwein-Orangensauce, Blaukraut, Kartoffelknödel",
                     "price": "N/A",
                     "ingredients": [
-                        "Sw",
-                        "3",
-                        "GlW",
-                        "Sl",
+                        "1",
                         "11",
-                        "Gl",
+                        "2",
+                        "3",
+                        "5",
                         "99",
+                        "Gl",
+                        "GlG",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "2",
-                        "GlG",
-                        "5",
-                        "1"
-                    ]
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Weihnachtsaktion"
                 }
             ]
         },
@@ -115,47 +123,51 @@
                     "name": "Reis mit asiatischem Gemüse und Koriander",
                     "price": 1.0,
                     "ingredients": [
-                        "Sl",
-                        "Sf",
-                        "So",
                         "2",
-                        "Kn"
-                    ]
+                        "Kn",
+                        "Sf",
+                        "Sl",
+                        "So"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Kartoffel-Sauerkrautgratin mit Kräuterdip",
                     "price": 2.4,
                     "ingredients": [
+                        "Ei",
                         "Kn",
-                        "Mi",
-                        "Ei"
-                    ]
+                        "Mi"
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Pulled Pork Burger",
                     "price": 2.6,
                     "ingredients": [
-                        "Sw",
-                        "3",
-                        "Sf",
                         "11",
+                        "3",
+                        "5",
+                        "Ei",
                         "Gl",
-                        "Sc",
-                        "So",
+                        "GlW",
                         "Kn",
                         "Mi",
-                        "GlW",
-                        "5",
                         "S",
-                        "Ei"
-                    ]
+                        "Sc",
+                        "Sf",
+                        "So",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 },
                 {
                     "name": "Green Thai Curry von der Hühnerbrust",
                     "price": 2.8,
                     "ingredients": [
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         },
@@ -166,22 +178,24 @@
                     "name": "Couscous mit Pilzen, Tomaten und Mangold",
                     "price": 1.0,
                     "ingredients": [
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Schweinerückensteak mit grünem Pfeffer",
                     "price": 2.6,
                     "ingredients": [
-                        "GlW",
                         "Gl",
-                        "Mi",
                         "GlG",
-                        "S",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Aktionsessen 4"
                 },
                 {
                     "name": "Rotes Gemüsecurry",
@@ -189,31 +203,34 @@
                     "ingredients": [
                         "2",
                         "Kn"
-                    ]
+                    ],
+                    "dish_type": "Aktionsessen 5"
                 },
                 {
                     "name": "Hirschgulasch in Preiselbeersauce",
                     "price": 4.0,
                     "ingredients": [
-                        "Sw",
-                        "GlW",
-                        "Sl",
-                        "Gl",
                         "99",
-                        "Mi",
+                        "Gl",
                         "GlG",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 },
                 {
                     "name": "Bio-Penne mit Bio-Tomaten-Frischkäse-Sauce",
                     "price": 1.9,
                     "ingredients": [
-                        "GlW",
                         "Gl",
-                        "Mi",
-                        "Kn"
-                    ]
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Biogericht 2"
                 }
             ]
         },
@@ -224,33 +241,36 @@
                     "name": "Graupen-Gemüse-Pfanne",
                     "price": 1.0,
                     "ingredients": [
-                        "GlG",
                         "Gl",
-                        "Sl",
-                        "Kn"
-                    ]
+                        "GlG",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
                     "name": "Apfelstrudel mit Vanillesauce",
                     "price": 2.4,
                     "ingredients": [
-                        "GlW",
                         "Gl",
+                        "GlW",
                         "Mi"
-                    ]
+                    ],
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
                     "name": "Kabeljaufilet (MSC) mit einer Gurken-Senfsauce",
                     "price": 3.5,
                     "ingredients": [
-                        "Sf",
-                        "Sl",
-                        "Gl",
+                        "Ei",
                         "Fi",
-                        "Mi",
+                        "Gl",
                         "GlW",
-                        "Ei"
-                    ]
+                        "Mi",
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 8"
                 }
             ]
         }
