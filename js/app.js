@@ -5,7 +5,7 @@ var locations = ["fmi-bistro", "ipp-bistro", "mensa-arcisstr", "mensa-garching",
                  "stucafe-karlstr", "stucafe-pasing", "mediziner-mensa"];
 
 var root = document.getElementById("app");
-var currentLocation = locations[0];
+var currentLocation = locations[3]; // Default to "mensa-garching"
 var currentWeek = moment(new Date()).week();
 
 var MenuData = {
@@ -21,7 +21,7 @@ var MenuData = {
                 MenuData.menu = menu;
             })
             .catch(function(e) {
-                MenuData.error = "Could not load menu."
+                MenuData.error = "No menu found for calendar week " + currentWeek + ". ¯\\_(ツ)_/¯"
             })
         }
 }
@@ -48,7 +48,7 @@ var Day = {
         return [vnode.attrs.dishes.map(function(dish) {
             return m("tr", [
                 m("td", dish.name),
-                m("td", (!isNaN(parseFloat(dish.price)) && isFinite(dish.price)) ? dish.price.toFixed(2) + "€" : dish.price)
+                m("td", getPrice(dish.prices, "students"))
             ])
         })]
     }
@@ -61,12 +61,12 @@ var Menu = {
             m("div", MenuData.error)
         ] : MenuData.menu ? m("div", 
                               m("table", {class: "table is-hoverable", style: "margin: 0 auto;"}, [
-                                m("thead", m("tr", [m("th", "Dish"), m("th", "Price")])),
+                                m("thead", m("tr", [m("th", "Dish"), m("th", "Price (students)")])),
                                 m("tbody", MenuData.menu.days.map(function(day) {
                                     return [
                                         // add id 'today' to today's menu (if exists)
                                         moment(new Date(day.date)).isSame(new Date(), "day") ?
-                                            m("tr", {id: "today"}, m("td", {class: "is-light", colspan: "2", style: ""}, m("b", getWeekday(new Date(day.date)) + ", " + day.date))) :
+                                            m("tr", {id: "today"}, m("td", {class: "is-light", colspan: "2", style: ""}, m("b", getWeekday(new Date(day.date)) + ", " + day.date.toLocaleDateString(dateOptions)))) :
                                             // else
                                             m("tr", m("td", {class: "is-light", colspan: "2", style: ""}, m("b", getWeekday(new Date(day.date)) + ", " + day.date))),
                                         m(Day, {dishes: day.dishes})
@@ -93,6 +93,33 @@ m.mount(root, App);
 function setLocation(loc) {
     currentLocation = loc;
     MenuData.fetch();
+}
+
+function getPrice(prices, type) {
+    if (prices.hasOwnProperty(type)) {
+        var price = prices[type];
+        var priceStr = null;
+        
+        // Base price:
+        var basePrice = parseFloat(price.base_price)
+        if(!isNaN(basePrice) && basePrice > 0.0) {
+            priceStr = basePrice.toFixed(2) + "€";
+        }
+
+        // Unit per price:
+        var pricePerUnit = parseFloat(price.price_per_unit);
+        if(!isNaN(pricePerUnit) && pricePerUnit > 0.0 && price.unit != null) {
+            if(priceStr) {
+                priceStr += " + ";
+            }
+            else {
+                priceStr = "";
+            }
+            priceStr += pricePerUnit.toFixed(2) + "€/" + price.unit;
+        }
+        return priceStr;
+    }
+    return "";
 }
 
 function getWeekday(date) {
