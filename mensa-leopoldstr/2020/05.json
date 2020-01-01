@@ -7,7 +7,23 @@
             "dishes": [
                 {
                     "name": "Schinken-Käse-Pasta (mit Vorderschinken)",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "3",
@@ -21,7 +37,23 @@
                 },
                 {
                     "name": "Rotes Curry vom Rind (GQB) mit Wokgemüse",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -34,7 +66,23 @@
                 },
                 {
                     "name": "Kartoffelgulasch mit Paprika",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Kn"
                     ],
@@ -42,13 +90,45 @@
                 },
                 {
                     "name": "Tagessuppe",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [],
                     "dish_type": ""
                 },
                 {
                     "name": "Falafel mit Joghurt-Gurken-Minz Dip",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -59,7 +139,23 @@
                 },
                 {
                     "name": "Fleischpflanzerl mit Kümmelsauce und Kartoffelpüree",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -79,7 +175,23 @@
             "dishes": [
                 {
                     "name": "Pasta mit Tomaten-Zucchini-Sauce",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -89,7 +201,23 @@
                 },
                 {
                     "name": "Grüner Erbseneintopf",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Sl"
                     ],
@@ -97,13 +225,45 @@
                 },
                 {
                     "name": "Tagessuppe",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [],
                     "dish_type": ""
                 },
                 {
                     "name": "Moussaka mit Gemüse und Schafskäse",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "1",
                         "11",
@@ -118,7 +278,23 @@
                 },
                 {
                     "name": "Schweineschnitzel Wiener Art",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlG",
@@ -133,7 +309,23 @@
                 },
                 {
                     "name": "Seelachsfilet (MSC) nach Müllerin Art",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "1",
                         "Fi",
@@ -151,7 +343,23 @@
             "dishes": [
                 {
                     "name": "Pasta mit grünem Spargel, Petersilie und Kirschtomaten",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW"
@@ -160,13 +368,45 @@
                 },
                 {
                     "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [],
                     "dish_type": "Grill"
                 },
                 {
                     "name": "Buntes Gemüse in scharfer Kokosmilch",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "Kn",
@@ -176,13 +416,45 @@
                 },
                 {
                     "name": "Tagessuppe",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [],
                     "dish_type": ""
                 },
                 {
                     "name": "Gefüllte Paprikaschote mit Tomatensauce",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "Gl",
@@ -195,7 +467,23 @@
                 },
                 {
                     "name": "Barbacoa - Scharfes Lammfleisch mit Mais",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Kn"
                     ],
@@ -208,7 +496,23 @@
             "dishes": [
                 {
                     "name": "Bio-Tortelloni all'arrabiata",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -218,7 +522,23 @@
                 },
                 {
                     "name": "Gebratene Hähnchenbruststreifen kantonesische Art (süß-sauer)",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "3",
                         "5",
@@ -231,7 +551,23 @@
                 },
                 {
                     "name": "Bulgur mit Zucchini und Tomaten",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -241,13 +577,45 @@
                 },
                 {
                     "name": "Tagessuppe",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [],
                     "dish_type": ""
                 },
                 {
                     "name": "Hausgemachte Gemüsequiche mit Schnittlauchdip",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "1",
                         "2",
@@ -260,7 +628,23 @@
                 },
                 {
                     "name": "Spanferkelrollbraten mit Biersauce",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "99",
                         "Gl",
@@ -279,7 +663,23 @@
             "dishes": [
                 {
                     "name": "Pasta mit Austernpilzen und Babyspinat",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -289,7 +689,23 @@
                 },
                 {
                     "name": "Forelle Müllerin Art mit Mandelbutter",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Fi",
                         "Gl",
@@ -302,7 +718,23 @@
                 },
                 {
                     "name": "Kichererbsencurry mit Gemüse und Chili",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "Kn"
@@ -311,13 +743,45 @@
                 },
                 {
                     "name": "Tagessuppe",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [],
                     "dish_type": ""
                 },
                 {
                     "name": "Gebratene Hähnchenkeule mit Barbecuesauce",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "10",
                         "11",
@@ -329,7 +793,23 @@
                 },
                 {
                     "name": "Pfannkuchen mit Heidelbeerfüllung und Vanillesauce",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",

@@ -7,7 +7,23 @@
             "dishes": [
                 {
                     "name": "Pasta Emiliana mit (Vorder-)Schinken und Erbsen",
-                    "price": 1.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "3",
@@ -22,7 +38,23 @@
                 },
                 {
                     "name": "Falafel mit Joghurt-Gurken-Minz Dip",
-                    "price": 2.4,
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -38,7 +70,23 @@
             "dishes": [
                 {
                     "name": "Pasta mit Tomaten-Zucchini-Sauce",
-                    "price": 1.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -48,7 +96,23 @@
                 },
                 {
                     "name": "Sweet & Sour mit Schweinefleisch",
-                    "price": 2.4,
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "3",
@@ -67,7 +131,23 @@
             "dishes": [
                 {
                     "name": "Pasta mit grünem Spargel, Petersilie und Kirschtomaten",
-                    "price": 2.4,
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW"
@@ -76,7 +156,23 @@
                 },
                 {
                     "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
-                    "price": 2.4,
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [],
                     "dish_type": "Aktionsessen 3"
                 }
@@ -87,7 +183,23 @@
             "dishes": [
                 {
                     "name": "Fränkische Bratwurst",
-                    "price": 1.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "8",
                         "R",
@@ -97,7 +209,23 @@
                 },
                 {
                     "name": "Tortelloni all'arrabiata",
-                    "price": 2.6,
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -112,7 +240,23 @@
             "dishes": [
                 {
                     "name": "Gebratene Hähnchenkeule mit Barbecuesauce",
-                    "price": 1.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "10",
                         "11",
@@ -124,7 +268,23 @@
                 },
                 {
                     "name": "Penne mit Austernpilzen und Spinat",
-                    "price": 2.6,
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",

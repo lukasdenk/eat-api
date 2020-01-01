@@ -7,7 +7,23 @@
             "dishes": [
                 {
                     "name": "Grüne Bohnen-Kartoffel-Gemüse in Kokos-Zitronensauce",
-                    "price": 1.0,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -18,7 +34,23 @@
                 },
                 {
                     "name": "Kartoffeltaschen mit Kräuterfrischkäse",
-                    "price": 2.4,
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -29,7 +61,23 @@
                 },
                 {
                     "name": "Bratwurstschnecke",
-                    "price": 2.4,
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "8",
                         "S",
@@ -39,7 +87,23 @@
                 },
                 {
                     "name": "Kalbsrahmgulasch mit Champignons und Weißwein",
-                    "price": 3.0,
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "5",
                         "99",
@@ -57,7 +121,23 @@
             "dishes": [
                 {
                     "name": "Mexikanisches Soja-Chili",
-                    "price": 1.0,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Kn",
                         "So"
@@ -66,7 +146,23 @@
                 },
                 {
                     "name": "Pasta mit Champignonrahmsauce",
-                    "price": 1.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -77,7 +173,23 @@
                 },
                 {
                     "name": "Schweinesteak Strindberg (mit Senf-Zwiebelschmelze)",
-                    "price": 2.4,
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -91,7 +203,23 @@
                 },
                 {
                     "name": "Pizza Regina mit (Vorder-)Schinken und Champignons",
-                    "price": 3.5,
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "3",
@@ -112,7 +240,23 @@
             "dishes": [
                 {
                     "name": "Bunte Gemüsepaella",
-                    "price": 1.0,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Kn"
                     ],
@@ -120,7 +264,23 @@
                 },
                 {
                     "name": "Schaschlik",
-                    "price": 2.6,
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "S",
                         "Sf"
@@ -129,7 +289,23 @@
                 },
                 {
                     "name": "Rendang - Indonesisches Rindfleisch (GQB)",
-                    "price": 3.2,
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "R"
@@ -138,7 +314,23 @@
                 },
                 {
                     "name": "Bio-Pasta Napoli (Bio-Tomaten-Basilikumsauce)",
-                    "price": 1.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -153,7 +345,23 @@
             "dishes": [
                 {
                     "name": "Kartoffeleintopf mit Majoran",
-                    "price": 1.0,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Sl"
                     ],
@@ -161,7 +369,23 @@
                 },
                 {
                     "name": "Kartoffeleintopf mit ein Paar Wiener",
-                    "price": 2.4,
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "3",
@@ -174,7 +398,23 @@
                 },
                 {
                     "name": "Kleine Dampfnudel mit Vanillesauce",
-                    "price": 2.4,
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -185,7 +425,23 @@
                 },
                 {
                     "name": "Zanderfilet mit Sauce Hollandaise",
-                    "price": 4.0,
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Fi",

@@ -7,7 +7,23 @@
             "dishes": [
                 {
                     "name": "Rindergeschnetzeltes Stroganoff",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "9",
@@ -23,7 +39,23 @@
                 },
                 {
                     "name": "Pasta all'arrabiata",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.33,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.55,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.66,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "2",
                         "Gl",
@@ -39,7 +71,23 @@
             "dishes": [
                 {
                     "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "1",
                         "2",
@@ -53,7 +101,23 @@
                 },
                 {
                     "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "1",
                         "11",
@@ -73,7 +137,23 @@
             "dishes": [
                 {
                     "name": "Pasta mit Tomaten-Frischkäse-Sauce",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -84,7 +164,23 @@
                 },
                 {
                     "name": "Halbe Schweinshaxe mit Biersauce",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlG",
@@ -102,7 +198,23 @@
             "dishes": [
                 {
                     "name": "Currywurst mit Honig-Ingwer-Ketchup",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "8",
                         "R",
@@ -113,7 +225,23 @@
                 },
                 {
                     "name": "Frische Rahmschwammerl",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "GlW",
@@ -129,7 +257,23 @@
             "dishes": [
                 {
                     "name": "Schollenfilet (MSC) paniert mit Remouladensauce",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "11",
                         "2",
@@ -145,7 +289,23 @@
                 },
                 {
                     "name": "Kaiserschmarrn mit Apfelmus",
-                    "price": "N/A",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
                     "ingredients": [
                         "3",
                         "Ei",

@@ -7,7 +7,23 @@
             "dishes": [
                 {
                     "name": "Tagessuppe",
-                    "price": 1.0,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -17,7 +33,23 @@
                 },
                 {
                     "name": "Veg. Frühlingsrolle auf Asiareis mit Sweet- Chilli- Soße",
-                    "price": 4.5,
+                    "prices": {
+                        "students": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "Sl"
@@ -26,7 +58,23 @@
                 },
                 {
                     "name": "Pasta Front-Cooking (*) Pasta alla Siciliana",
-                    "price": 4.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 4.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 4.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 4.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "Sl"
@@ -40,7 +88,23 @@
             "dishes": [
                 {
                     "name": "Tagessuppe",
-                    "price": 1.0,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "Sl"
@@ -49,7 +113,23 @@
                 },
                 {
                     "name": "(*) Rote Linsencurry mit Broccoli dazu Ebly-Weizen",
-                    "price": 4.5,
+                    "prices": {
+                        "students": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Sl"
@@ -58,7 +138,23 @@
                 },
                 {
                     "name": "Frisch vom Grill Leberkäse mit Spiegelei und Kartoffelsalat",
-                    "price": 4.6,
+                    "prices": {
+                        "students": {
+                            "base_price": 4.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 4.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 4.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "Mi",
@@ -73,7 +169,23 @@
             "dishes": [
                 {
                     "name": "Tagessuppe",
-                    "price": 1.0,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "Sl"
@@ -82,7 +194,23 @@
                 },
                 {
                     "name": "(*) Gemüsespieß auf Wildreis mit Kurkuma-Sojasahne",
-                    "price": 4.5,
+                    "prices": {
+                        "students": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "Mi",
@@ -92,7 +220,23 @@
                 },
                 {
                     "name": "Pasta Front-Cooking Pasta mit Kürbissugo",
-                    "price": 4.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 4.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 4.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 4.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -103,7 +247,23 @@
                 },
                 {
                     "name": "Rinderschmorbraten mit Butterspätzle und Rosenkohl",
-                    "price": 6.6,
+                    "prices": {
+                        "students": {
+                            "base_price": 6.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 6.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 6.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl"
                     ],
@@ -116,7 +276,23 @@
             "dishes": [
                 {
                     "name": "Tagessuppe",
-                    "price": 1.0,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "Sl"
@@ -125,7 +301,23 @@
                 },
                 {
                     "name": "(*) Kichererbseneintopf mit Gemüse und Kartoffeln",
-                    "price": 4.5,
+                    "prices": {
+                        "students": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 4.5,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Sl"
                     ],
@@ -133,7 +325,23 @@
                 },
                 {
                     "name": "Frisch vom Grill Currywurst mit Pommes Frites",
-                    "price": 4.95,
+                    "prices": {
+                        "students": {
+                            "base_price": 4.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 4.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 4.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -153,7 +361,23 @@
             "dishes": [
                 {
                     "name": "Tagessuppe",
-                    "price": 1.0,
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Gl",
                         "Mi"
@@ -162,7 +386,23 @@
                 },
                 {
                     "name": "Milchreis mit Zimt und Zucker",
-                    "price": 3.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 3.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 3.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "Gl",
@@ -173,7 +413,23 @@
                 },
                 {
                     "name": "Pasta Front-Cooking Käsespätzle mit Röstzwiebeln",
-                    "price": 4.9,
+                    "prices": {
+                        "students": {
+                            "base_price": 4.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 4.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 4.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
                     "ingredients": [
                         "Ei",
                         "En",
