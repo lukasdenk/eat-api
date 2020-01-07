@@ -21,7 +21,7 @@ var MenuData = {
                 MenuData.menu = menu;
             })
             .catch(function(e) {
-                MenuData.error = "No menu found for calendar week " + currentWeek + ". ¯\\_(ツ)_/¯"
+                MenuData.error = "No menu found for calendar week " + currentWeek + ". ¯\\_(ツ)_/¯" + currentLocation + "/" + (new Date()).getFullYear() + "/" + pad(currentWeek) + ".json"
             })
         }
 }
@@ -66,7 +66,7 @@ var Menu = {
                                     return [
                                         // add id 'today' to today's menu (if exists)
                                         moment(new Date(day.date)).isSame(new Date(), "day") ?
-                                            m("tr", {id: "today"}, m("td", {class: "is-light", colspan: "2", style: ""}, m("b", getWeekday(new Date(day.date)) + ", " + day.date.toLocaleDateString(dateOptions)))) :
+                                            m("tr", {id: "today"}, m("td", {class: "is-light", colspan: "2", style: ""}, m("b", getWeekday(new Date(day.date)) + ", " + new Date(day.date).toLocaleDateString()))) :
                                             // else
                                             m("tr", m("td", {class: "is-light", colspan: "2", style: ""}, m("b", getWeekday(new Date(day.date)) + ", " + day.date))),
                                         m(Day, {dishes: day.dishes})
