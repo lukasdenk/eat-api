@@ -84,29 +84,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Südtiroler Schlutzkrapfen auf Schwarzwurzeln mit Grana Padano",
+                    "name": "Backerbsensuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -127,7 +105,35 @@
                     "ingredients": [
                         "Ei",
                         "Gl",
-                        "GlR",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Gefüllte Paprikaschote mit Tomatensauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "Gl",
+                        "GlD",
                         "GlW",
                         "Kn",
                         "Mi"

@@ -62,7 +62,7 @@
                         "R",
                         "Sf"
                     ],
-                    "dish_type": "StuBistro Gericht 1"
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -128,13 +128,40 @@
                         "Mi",
                         "Sf"
                     ],
-                    "dish_type": "StuBistro Gericht 1"
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
         {
             "date": "2020-01-22",
             "dishes": [
+                {
+                    "name": "Pasta mit Tomaten-Frischkäse-Sauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
+                },
                 {
                     "name": "Halbe Schweinshaxe mit Biersauce",
                     "prices": {
@@ -162,67 +189,13 @@
                         "Mi",
                         "S"
                     ],
-                    "dish_type": "StuBistro Gericht 1"
-                },
-                {
-                    "name": "Pasta mit Tomaten-Frischkäse-Sauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ],
-                    "dish_type": "StuBistro Gericht 1"
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
         {
             "date": "2020-01-23",
             "dishes": [
-                {
-                    "name": "Currywurst mit Honig-Ingwer-Ketchup",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "8",
-                        "R",
-                        "S",
-                        "Sf"
-                    ],
-                    "dish_type": "StuBistro Gericht 1"
-                },
                 {
                     "name": "Frische Rahmschwammerl",
                     "prices": {
@@ -249,6 +222,33 @@
                         "Mi"
                     ],
                     "dish_type": "StuBistro Gericht 1"
+                },
+                {
+                    "name": "Currywurst mit Honig-Ingwer-Ketchup",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "8",
+                        "R",
+                        "S",
+                        "Sf"
+                    ],
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -313,7 +313,7 @@
                         "Mi",
                         "Sf"
                     ],
-                    "dish_type": "StuBistro Gericht 1"
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         }

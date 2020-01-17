@@ -6,38 +6,6 @@
             "date": "2020-01-20",
             "dishes": [
                 {
-                    "name": "Rindergeschnetzeltes Stroganoff",
-                    "prices": {
-                        "students": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.9,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 1.0,
-                            "price_per_unit": 1.05,
-                            "unit": "100g"
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "9",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "R",
-                        "Sf"
-                    ],
-                    "dish_type": "StuBistro Self-Service"
-                },
-                {
                     "name": "Pasta all'arrabiata",
                     "prices": {
                         "students": {
@@ -63,6 +31,38 @@
                         "Kn"
                     ],
                     "dish_type": "StuBistro Self-Service"
+                },
+                {
+                    "name": "Rindergeschnetzeltes Stroganoff",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "9",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "Sf"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 }
             ]
         },
@@ -70,50 +70,20 @@
             "date": "2020-01-21",
             "dishes": [
                 {
-                    "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
-                    "prices": {
-                        "students": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.9,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 1.0,
-                            "price_per_unit": 1.05,
-                            "unit": "100g"
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "2",
-                        "Ei",
-                        "Gl",
-                        "GlD",
-                        "GlW",
-                        "Mi"
-                    ],
-                    "dish_type": "StuBistro Self-Service"
-                },
-                {
                     "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -129,6 +99,36 @@
                         "Sf"
                     ],
                     "dish_type": "StuBistro Self-Service"
+                },
+                {
+                    "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "Ei",
+                        "Gl",
+                        "GlD",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 }
             ]
         },
@@ -136,47 +136,20 @@
             "date": "2020-01-22",
             "dishes": [
                 {
-                    "name": "Pasta mit Tomaten-Frischkäse-Sauce",
-                    "prices": {
-                        "students": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.9,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 1.0,
-                            "price_per_unit": 1.05,
-                            "unit": "100g"
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ],
-                    "dish_type": "StuBistro Self-Service"
-                },
-                {
                     "name": "Halbe Schweinshaxe mit Biersauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -190,6 +163,33 @@
                         "S"
                     ],
                     "dish_type": "StuBistro Self-Service"
+                },
+                {
+                    "name": "Pasta mit Tomaten-Frischkäse-Sauce",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Self-Service"
                 }
             ]
         },
@@ -200,17 +200,17 @@
                     "name": "Currywurst mit Honig-Ingwer-Ketchup",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -227,17 +227,17 @@
                     "name": "Frische Rahmschwammerl",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -259,17 +259,17 @@
                     "name": "Schollenfilet (MSC) paniert mit Remouladensauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -291,17 +291,17 @@
                     "name": "Kaiserschmarrn mit Apfelmus",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }

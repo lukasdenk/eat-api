@@ -1,0 +1,341 @@
+{
+    "number": 9,
+    "year": 2020,
+    "days": [
+        {
+            "date": "2020-02-24",
+            "dishes": [
+                {
+                    "name": "Gulasch vom Schwein",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": "Tagesgericht 3"
+                },
+                {
+                    "name": "Ravioli mit Pilzfüllung in pikanter Kräutersauce",
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 4"
+                }
+            ]
+        },
+        {
+            "date": "2020-02-25",
+            "dishes": [
+                {
+                    "name": "Mediterraner Nudel-Gemüse-Auflauf",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 3"
+                },
+                {
+                    "name": "Münchner Schnitzel mit Senf-Meerrettichkruste",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "3",
+                        "Ei",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S",
+                        "Sf",
+                        "Sw"
+                    ],
+                    "dish_type": "Aktionsessen 4"
+                }
+            ]
+        },
+        {
+            "date": "2020-02-26",
+            "dishes": [
+                {
+                    "name": "Knöpflepfanne mit Gemüse und Pilzen",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlD",
+                        "GlW",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 3"
+                },
+                {
+                    "name": "Katerfrühstück: Dillhappen vom Matjeshering",
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "11",
+                        "2",
+                        "3",
+                        "Ei",
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sf"
+                    ],
+                    "dish_type": "Tagesgericht 4"
+                },
+                {
+                    "name": "Rinderhacksteak mit Sauce Bernaise",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Mi",
+                        "R",
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "Aktionsessen 6"
+                }
+            ]
+        },
+        {
+            "date": "2020-02-27",
+            "dishes": [
+                {
+                    "name": "Hähnchenkeule mexikanische Art",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Tagesgericht 3"
+                },
+                {
+                    "name": "Grünkohl-Hanf-Bällchen mit Schnittlauchdip",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 4"
+                }
+            ]
+        },
+        {
+            "date": "2020-02-28",
+            "dishes": [
+                {
+                    "name": "Putenschnitzel mit Tomate und Mozzarella überbacken",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 5"
+                },
+                {
+                    "name": "Millirahmstrudel mit Äpfeln und Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 6"
+                }
+            ]
+        }
+    ]
+}

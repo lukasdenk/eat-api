@@ -110,7 +110,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Maultaschensuppe",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -128,7 +128,15 @@
                             "unit": "100g"
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "R",
+                        "S",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {

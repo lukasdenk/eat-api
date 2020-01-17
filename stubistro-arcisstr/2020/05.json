@@ -6,6 +6,33 @@
             "date": "2020-01-27",
             "dishes": [
                 {
+                    "name": "Falafel mit Joghurt-Gurken-Minz Dip",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
+                },
+                {
                     "name": "Pasta Emiliana mit (Vorder-)Schinken und Erbsen",
                     "prices": {
                         "students": {
@@ -34,10 +61,15 @@
                         "Mi",
                         "S"
                     ],
-                    "dish_type": "StuBistro Gericht 1"
-                },
+                    "dish_type": "StuBistro Gericht 2"
+                }
+            ]
+        },
+        {
+            "date": "2020-01-28",
+            "dishes": [
                 {
-                    "name": "Falafel mit Joghurt-Gurken-Minz Dip",
+                    "name": "Pasta mit Tomaten-Zucchini-Sauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -58,16 +90,10 @@
                     "ingredients": [
                         "Gl",
                         "GlW",
-                        "Kn",
-                        "Mi"
+                        "Kn"
                     ],
                     "dish_type": "StuBistro Gericht 1"
-                }
-            ]
-        },
-        {
-            "date": "2020-01-28",
-            "dishes": [
+                },
                 {
                     "name": "Sweet & Sour mit Schweinefleisch",
                     "prices": {
@@ -96,33 +122,7 @@
                         "Sf",
                         "Sw"
                     ],
-                    "dish_type": "StuBistro Gericht 1"
-                },
-                {
-                    "name": "Pasta mit Tomaten-Zucchini-Sauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ],
-                    "dish_type": "StuBistro Gericht 1"
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -174,7 +174,7 @@
                         }
                     },
                     "ingredients": [],
-                    "dish_type": "StuBistro Gericht 1"
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
@@ -231,13 +231,39 @@
                         "R",
                         "S"
                     ],
-                    "dish_type": "StuBistro Gericht 1"
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         },
         {
             "date": "2020-01-31",
             "dishes": [
+                {
+                    "name": "Pasta mit Austernpilzen und Babyspinat",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "StuBistro Gericht 1"
+                },
                 {
                     "name": "Forelle Müllerin Art mit Mandelbutter",
                     "prices": {
@@ -265,33 +291,7 @@
                         "Sc",
                         "ScM"
                     ],
-                    "dish_type": "StuBistro Gericht 1"
-                },
-                {
-                    "name": "Pasta mit Austernpilzen und Babyspinat",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ],
-                    "dish_type": "StuBistro Gericht 1"
+                    "dish_type": "StuBistro Gericht 2"
                 }
             ]
         }

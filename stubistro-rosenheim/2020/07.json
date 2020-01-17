@@ -1,0 +1,858 @@
+{
+    "number": 7,
+    "year": 2020,
+    "days": [
+        {
+            "date": "2020-02-10",
+            "dishes": [
+                {
+                    "name": "Chickenwings mit Barbecuesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "10",
+                        "11",
+                        "2",
+                        "4",
+                        "Kn",
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": "Self-Service"
+                },
+                {
+                    "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagessuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagesgemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Sesamkartoffeln",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Mi",
+                        "Se"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
+                },
+                {
+                    "name": "Tagesdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
+                }
+            ]
+        },
+        {
+            "date": "2020-02-11",
+            "dishes": [
+                {
+                    "name": "Currywurst mit Honig-Ingwer-Ketchup",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "8",
+                        "R",
+                        "S",
+                        "Sf"
+                    ],
+                    "dish_type": "Self-Service"
+                },
+                {
+                    "name": "Spinatknödel Tiroler Art mit Bergkäse und Salbeibutter",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagessuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagesgemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Countrykartoffeln",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
+                },
+                {
+                    "name": "Tagesdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
+                }
+            ]
+        },
+        {
+            "date": "2020-02-12",
+            "dishes": [
+                {
+                    "name": "Münchner Krustenbraten mit Biersauce",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "S"
+                    ],
+                    "dish_type": "Self-Service"
+                },
+                {
+                    "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "Ei",
+                        "Gl",
+                        "GlD",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagessuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagesgemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Semmelknödel",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
+                },
+                {
+                    "name": "Tagesdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
+                }
+            ]
+        },
+        {
+            "date": "2020-02-13",
+            "dishes": [
+                {
+                    "name": "Putensteak Calabreser Art",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Self-Service"
+                },
+                {
+                    "name": "Pasta all'arrabiata",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagessuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagesgemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Kartoffelgratin",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
+                },
+                {
+                    "name": "Tagesdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
+                }
+            ]
+        },
+        {
+            "date": "2020-02-14",
+            "dishes": [
+                {
+                    "name": "Farfalle mit Thunfisch",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "So"
+                    ],
+                    "dish_type": "Self-Service"
+                },
+                {
+                    "name": "Kaiserschmarrn mit Apfelmus",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "3",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagessuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagesgemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
+                },
+                {
+                    "name": "Tagesdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Tagesdessert"
+                }
+            ]
+        }
+    ]
+}

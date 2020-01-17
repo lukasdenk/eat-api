@@ -9,17 +9,17 @@
                     "name": "Pasta Emiliana mit (Vorder-)Schinken und Erbsen",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -40,17 +40,17 @@
                     "name": "Falafel mit Joghurt-Gurken-Minz Dip",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -98,17 +98,17 @@
                     "name": "Sweet & Sour mit Schweinefleisch",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -129,28 +129,6 @@
         {
             "date": "2020-01-29",
             "dishes": [
-                {
-                    "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
-                    "prices": {
-                        "students": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.9,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 1.0,
-                            "price_per_unit": 1.05,
-                            "unit": "100g"
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": "StuBistro Self-Service"
-                },
                 {
                     "name": "Pasta mit grünem Spargel, Petersilie und Kirschtomaten",
                     "prices": {
@@ -174,6 +152,28 @@
                         "Gl",
                         "GlW"
                     ],
+                    "dish_type": "StuBistro Self-Service"
+                },
+                {
+                    "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [],
                     "dish_type": "StuBistro Self-Service"
                 }
             ]
@@ -211,17 +211,17 @@
                     "name": "Fränkische Bratwurst",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -242,17 +242,17 @@
                     "name": "Gebratene Hähnchenkeule mit Barbecuesauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }

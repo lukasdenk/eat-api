@@ -2,927 +2,12 @@
     "canteen_id": "stubistro-schellingstr",
     "weeks": [
         {
-            "number": 51,
-            "year": 2019,
-            "days": [
-                {
-                    "date": "2019-12-16",
-                    "dishes": [
-                        {
-                            "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Ei",
-                                "Gl",
-                                "GlW",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Schweinerahmgeschnetzeltes mit Pfifferlingen und Steinpilzen",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "5",
-                                "99",
-                                "Gl",
-                                "GlG",
-                                "GlW",
-                                "Kn",
-                                "Mi",
-                                "S",
-                                "Sw"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2019-12-17",
-                    "dishes": [
-                        {
-                            "name": "Schinkennudeln (Vorderschinken) mit Zwiebeln und Ei",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "2",
-                                "3",
-                                "8",
-                                "Ei",
-                                "Gl",
-                                "GlW",
-                                "Kn",
-                                "Mi",
-                                "S"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Kartoffel-Pilz-Auflauf mit frischem Lauch und Dip",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "1",
-                                "2",
-                                "Ei",
-                                "Gl",
-                                "GlW",
-                                "Kn",
-                                "Mi",
-                                "Sf"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2019-12-18",
-                    "dishes": [
-                        {
-                            "name": "Boeuf à la mode aus dem Rinderbug",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "3",
-                                "5",
-                                "99",
-                                "Gl",
-                                "GlG",
-                                "GlW",
-                                "Kn",
-                                "Mi",
-                                "R",
-                                "Sl",
-                                "Sw"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Spinatknödel Tiroler Art mit Bergkäse",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Ei",
-                                "Gl",
-                                "GlW",
-                                "Mi",
-                                "Sl"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2019-12-19",
-                    "dishes": [
-                        {
-                            "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "3",
-                                "6",
-                                "Gl",
-                                "GlD",
-                                "Kn",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Pfannengyros vom Schwein mit Tsatsiki",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "3",
-                                "5",
-                                "Kn",
-                                "Mi",
-                                "S",
-                                "Sw"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2019-12-20",
-                    "dishes": [
-                        {
-                            "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Ei",
-                                "Gl",
-                                "GlW",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Seelachsfilet (MSC) mit Gemüse und Weißweinsauce",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "5",
-                                "99",
-                                "Fi",
-                                "Gl",
-                                "GlW",
-                                "Kn",
-                                "Mi",
-                                "Sl",
-                                "Sw"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "number": 2,
-            "year": 2020,
-            "days": [
-                {
-                    "date": "2020-01-07",
-                    "dishes": [
-                        {
-                            "name": "Kalbsrahmgulasch mit Champignons und Weißwein",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "5",
-                                "99",
-                                "Gl",
-                                "GlW",
-                                "Mi",
-                                "Sw"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Kartoffeltaschen mit Kräuterfrischkäse",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Gl",
-                                "GlW",
-                                "Kn",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2020-01-08",
-                    "dishes": [
-                        {
-                            "name": "Pasta mit Champignonrahmsauce",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Gl",
-                                "GlW",
-                                "Kn",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Schweinesteak Strindberg (mit Senf-Zwiebelschmelze)",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Ei",
-                                "Gl",
-                                "GlW",
-                                "Mi",
-                                "S",
-                                "Sf",
-                                "Sl"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2020-01-09",
-                    "dishes": [
-                        {
-                            "name": "Senner Rösti mit Tomate und Käse überbacken",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "1",
-                                "2",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Rendang - Indonesisches Rindfleisch",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "2",
-                                "R"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2020-01-10",
-                    "dishes": [
-                        {
-                            "name": "Zanderfilet mit Sauce Hollandaise",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Ei",
-                                "Fi",
-                                "Gl",
-                                "GlW",
-                                "Mi",
-                                "Sl"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Kleine Dampfnudel mit Vanillesauce",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Ei",
-                                "Gl",
-                                "GlW",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "number": 3,
-            "year": 2020,
-            "days": [
-                {
-                    "date": "2020-01-13",
-                    "dishes": [
-                        {
-                            "name": "Rougaille (Soja in würziger Tomatensauce)",
-                            "prices": {
-                                "students": {
-                                    "base_price": 0.0,
-                                    "price_per_unit": 0.33,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 0.0,
-                                    "price_per_unit": 0.55,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 0.0,
-                                    "price_per_unit": 0.66,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Kn",
-                                "Sf",
-                                "So"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Pikante Chickenwings mit Barbecuesauce",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "10",
-                                "11",
-                                "Kn",
-                                "Sf",
-                                "Sl"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2020-01-14",
-                    "dishes": [
-                        {
-                            "name": "Super-Green-Detox (Eintopf mit grünen Bohnen, Lauch, Stangensellerie, Weißkraut)",
-                            "prices": {
-                                "students": {
-                                    "base_price": 0.0,
-                                    "price_per_unit": 0.33,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 0.0,
-                                    "price_per_unit": 0.55,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 0.0,
-                                    "price_per_unit": 0.66,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Sl"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Penne all'amatriciana",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "2",
-                                "3",
-                                "Gl",
-                                "GlW",
-                                "Kn",
-                                "S",
-                                "Sl"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2020-01-15",
-                    "dishes": [
-                        {
-                            "name": "Schweinesteak mit Schinken und Käse überbacken",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "1",
-                                "2",
-                                "3",
-                                "8",
-                                "Gl",
-                                "GlG",
-                                "GlW",
-                                "Kn",
-                                "Mi",
-                                "S"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Orange-Bomb-Detox (Eintopf mit Kürbis, Karotte, Kartoffel und Kokos)",
-                            "prices": {
-                                "students": {
-                                    "base_price": 0.0,
-                                    "price_per_unit": 0.33,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 0.0,
-                                    "price_per_unit": 0.55,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 0.0,
-                                    "price_per_unit": 0.66,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2020-01-16",
-                    "dishes": [
-                        {
-                            "name": "Hähnchenkeule mexikanische Art",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "2",
-                                "Gl",
-                                "GlW",
-                                "Kn"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Currynudeln mit gebratenen Gemüsestreifen",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Ei",
-                                "Gl",
-                                "GlW",
-                                "Se",
-                                "Sf",
-                                "Sl"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                },
-                {
-                    "date": "2020-01-17",
-                    "dishes": [
-                        {
-                            "name": "Millirahmstrudel mit Äpfeln und Vanillesauce",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "1",
-                                "Gl",
-                                "GlW",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
-                            "name": "Lachsfilet auf Blattspinat",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Fi",
-                                "Gl",
-                                "GlW",
-                                "Kn",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "number": 4,
             "year": 2020,
             "days": [
                 {
                     "date": "2020-01-20",
                     "dishes": [
-                        {
-                            "name": "Rindergeschnetzeltes Stroganoff",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "2",
-                                "9",
-                                "Gl",
-                                "GlG",
-                                "GlW",
-                                "Kn",
-                                "Mi",
-                                "R",
-                                "Sf"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
                         {
                             "name": "Pasta all'arrabiata",
                             "prices": {
@@ -949,6 +34,38 @@
                                 "Kn"
                             ],
                             "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Rindergeschnetzeltes Stroganoff",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "9",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "R",
+                                "Sf"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
                         }
                     ]
                 },
@@ -956,50 +73,20 @@
                     "date": "2020-01-21",
                     "dishes": [
                         {
-                            "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "1",
-                                "2",
-                                "Ei",
-                                "Gl",
-                                "GlD",
-                                "GlW",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
                             "name": "Hähnchenknusperfilet mit Mango-Chili-Dip",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1015,6 +102,36 @@
                                 "Sf"
                             ],
                             "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "Ei",
+                                "Gl",
+                                "GlD",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
                         }
                     ]
                 },
@@ -1022,47 +139,20 @@
                     "date": "2020-01-22",
                     "dishes": [
                         {
-                            "name": "Pasta mit Tomaten-Frischkäse-Sauce",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [
-                                "Gl",
-                                "GlW",
-                                "Kn",
-                                "Mi"
-                            ],
-                            "dish_type": "StuBistro Self-Service"
-                        },
-                        {
                             "name": "Halbe Schweinshaxe mit Biersauce",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1076,6 +166,33 @@
                                 "S"
                             ],
                             "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Pasta mit Tomaten-Frischkäse-Sauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
                         }
                     ]
                 },
@@ -1086,17 +203,17 @@
                             "name": "Currywurst mit Honig-Ingwer-Ketchup",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1113,17 +230,17 @@
                             "name": "Frische Rahmschwammerl",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1145,17 +262,17 @@
                             "name": "Schollenfilet (MSC) paniert mit Remouladensauce",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1177,17 +294,17 @@
                             "name": "Kaiserschmarrn mit Apfelmus",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1216,17 +333,17 @@
                             "name": "Pasta Emiliana mit (Vorder-)Schinken und Erbsen",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1247,17 +364,17 @@
                             "name": "Falafel mit Joghurt-Gurken-Minz Dip",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1305,17 +422,17 @@
                             "name": "Sweet & Sour mit Schweinefleisch",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1336,28 +453,6 @@
                 {
                     "date": "2020-01-29",
                     "dishes": [
-                        {
-                            "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.75,
-                                    "unit": "100g"
-                                },
-                                "staff": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 0.9,
-                                    "unit": "100g"
-                                },
-                                "guests": {
-                                    "base_price": 1.0,
-                                    "price_per_unit": 1.05,
-                                    "unit": "100g"
-                                }
-                            },
-                            "ingredients": [],
-                            "dish_type": "StuBistro Self-Service"
-                        },
                         {
                             "name": "Pasta mit grünem Spargel, Petersilie und Kirschtomaten",
                             "prices": {
@@ -1381,6 +476,28 @@
                                 "Gl",
                                 "GlW"
                             ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [],
                             "dish_type": "StuBistro Self-Service"
                         }
                     ]
@@ -1418,17 +535,17 @@
                             "name": "Fränkische Bratwurst",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1449,17 +566,17 @@
                             "name": "Gebratene Hähnchenkeule mit Barbecuesauce",
                             "prices": {
                                 "students": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.75,
                                     "unit": "100g"
                                 },
                                 "staff": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 0.9,
                                     "unit": "100g"
                                 },
                                 "guests": {
-                                    "base_price": 1.0,
+                                    "base_price": 1.5,
                                     "price_per_unit": 1.05,
                                     "unit": "100g"
                                 }
@@ -1496,6 +613,1151 @@
                                 "Gl",
                                 "GlW",
                                 "Kn"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 6,
+            "year": 2020,
+            "days": [
+                {
+                    "date": "2020-02-03",
+                    "dishes": [
+                        {
+                            "name": "Älpler Makkaroni mit Bergkäse",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Klassische Rinderroulade mit Senf-Gemüse-Sauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "3",
+                                "99",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "R",
+                                "S",
+                                "Sf",
+                                "Sl",
+                                "Sw"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-04",
+                    "dishes": [
+                        {
+                            "name": "Cordon bleu vom Schwein (mit Formfleisch-Kochschinken)",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "3",
+                                "8",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "S",
+                                "Sf",
+                                "Sl"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Pasta Pomodoro mit Tomaten und Basilikum",
+                            "prices": {
+                                "students": {
+                                    "base_price": 0.0,
+                                    "price_per_unit": 0.33,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 0.0,
+                                    "price_per_unit": 0.55,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 0.0,
+                                    "price_per_unit": 0.66,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "3",
+                                "Gl",
+                                "GlW",
+                                "Kn"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-05",
+                    "dishes": [
+                        {
+                            "name": "Kartoffel-Zucchini-Auflauf mit Paprikasauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Münchner Gulasch vom Rind",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "R"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-06",
+                    "dishes": [
+                        {
+                            "name": "Schwarzwurzel-Knusperecke mit Kräuterdip",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi",
+                                "Sc",
+                                "Se",
+                                "Sf",
+                                "Sl",
+                                "So"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Schweinerückensteak mit grüner Pfeffersauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "S"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-07",
+                    "dishes": [
+                        {
+                            "name": "Gebratenes Zanderfilet mit Mandelbutter",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Fi",
+                                "Gl",
+                                "GlW",
+                                "Mi",
+                                "Sc",
+                                "ScM"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Pfannkuchen mit Kirschfüllung dazu Vanillesauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 7,
+            "year": 2020,
+            "days": [
+                {
+                    "date": "2020-02-10",
+                    "dishes": [
+                        {
+                            "name": "Green-Thai-Curry vom Rind",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Kn",
+                                "R"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-11",
+                    "dishes": [
+                        {
+                            "name": "Jägerschnitzel von der Pute mit Waldpilzen",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "3",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "S"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Phad Thai - Thailändisches Nudelgericht",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "En",
+                                "Fi",
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "So"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-12",
+                    "dishes": [
+                        {
+                            "name": "Hähnchenbrustfilet mit Gemüsesalsa (scharf)",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "4",
+                                "Kn"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Pfannkuchen mit Mascarpone-Erdbeerfüllung und Vanillesauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-13",
+                    "dishes": [
+                        {
+                            "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "3",
+                                "6",
+                                "Gl",
+                                "GlD",
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Pfannengyros vom Schwein mit Tsatsiki",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "3",
+                                "5",
+                                "Kn",
+                                "Mi",
+                                "S",
+                                "Sw"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-14",
+                    "dishes": [
+                        {
+                            "name": "Schweinebraten mit Biersauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "99",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "S"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Gnocchi mit Tomatensauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 0.0,
+                                    "price_per_unit": 0.33,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 0.0,
+                                    "price_per_unit": 0.55,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 0.0,
+                                    "price_per_unit": 0.66,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "So"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 8,
+            "year": 2020,
+            "days": [
+                {
+                    "date": "2020-02-17",
+                    "dishes": [
+                        {
+                            "name": "Alm Cordon bleu gefüllt mit Bergkäse und rohem Schinken",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "Ei",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "S"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "Sl"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-18",
+                    "dishes": [
+                        {
+                            "name": "Kalbsrahmgulasch mit Champignons und Weißwein",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "5",
+                                "99",
+                                "Gl",
+                                "GlW",
+                                "Mi",
+                                "Sw"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Kartoffeltaschen mit Kräuterfrischkäse",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-19",
+                    "dishes": [
+                        {
+                            "name": "Schweinesteak Strindberg (mit Senf-Zwiebelschmelze)",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi",
+                                "S",
+                                "Sf",
+                                "Sl"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Pasta mit Champignonrahmsauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-20",
+                    "dishes": [
+                        {
+                            "name": "Rendang - Indonesisches Rindfleisch",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "R"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Gemüsespieß mit Kräuterdip",
+                            "prices": {
+                                "students": {
+                                    "base_price": 0.0,
+                                    "price_per_unit": 0.33,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 0.0,
+                                    "price_per_unit": 0.55,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 0.0,
+                                    "price_per_unit": 0.66,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-21",
+                    "dishes": [
+                        {
+                            "name": "Kleine Dampfnudel mit Vanillesauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Zanderfilet mit Sauce Hollandaise",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Fi",
+                                "Gl",
+                                "GlW",
+                                "Mi",
+                                "Sl"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 9,
+            "year": 2020,
+            "days": [
+                {
+                    "date": "2020-02-26",
+                    "dishes": [
+                        {
+                            "name": "Pasta di Manzo mit Rindfleischstreifen in Balsamico",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "5",
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "R",
+                                "Sw"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Knöpflepfanne mit Gemüse und Pilzen",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlD",
+                                "GlW",
+                                "Sl"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-27",
+                    "dishes": [
+                        {
+                            "name": "Hähnchenkeule mexikanische Art",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "Gl",
+                                "GlW",
+                                "Kn"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Currynudeln mit gebratenen Gemüsestreifen",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Se",
+                                "Sf",
+                                "Sl"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-02-28",
+                    "dishes": [
+                        {
+                            "name": "Lachsfilet auf Blattspinat",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "Fi",
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "StuBistro Self-Service"
+                        },
+                        {
+                            "name": "Millirahmstrudel mit Äpfeln und Vanillesauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.75,
+                                    "unit": "100g"
+                                },
+                                "staff": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 0.9,
+                                    "unit": "100g"
+                                },
+                                "guests": {
+                                    "base_price": 1.5,
+                                    "price_per_unit": 1.05,
+                                    "unit": "100g"
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "Gl",
+                                "GlW",
+                                "Mi"
                             ],
                             "dish_type": "StuBistro Self-Service"
                         }

@@ -56,7 +56,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Pfannkuchensuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -74,7 +74,13 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
