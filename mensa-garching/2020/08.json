@@ -37,17 +37,17 @@
                     "name": "Schweinerückensteak mit Paprikasauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -88,42 +88,48 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Leberspätzlesuppe",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "S",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
                     "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -139,20 +145,46 @@
                     "dish_type": "Vegetarisch"
                 },
                 {
-                    "name": "Alm Cordon bleu gefüllt mit Bergkäse und rohem Schinken",
+                    "name": "Tortellini mit Spinat-Ricotta Füllung mit Tomatensauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Alm Cordon bleu gefüllt mit Bergkäse und rohem Schinken",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -204,17 +236,17 @@
                     "name": "Pizza Salami",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -237,17 +269,17 @@
                     "name": "Bratwurstschnecke",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -290,17 +322,17 @@
                     "name": "Tagessuppe",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -312,17 +344,17 @@
                     "name": "Kartoffeltaschen mit Kräuterfrischkäse",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -339,17 +371,17 @@
                     "name": "Kalbsrahmgulasch mit Champignons und Weißwein",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -373,17 +405,17 @@
                     "name": "Pasta mit Champignonrahmsauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -400,17 +432,17 @@
                     "name": "Hähnchenspieß mit Apfel-Mango-Chutney",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -475,17 +507,17 @@
                     "name": "Tagessuppe",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -497,17 +529,17 @@
                     "name": "Geröstete Maultaschen mit Lauchzwiebeln und Ei",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -525,17 +557,17 @@
                     "name": "Schweinesteak Strindberg (mit Senf-Zwiebelschmelze)",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -555,17 +587,17 @@
                     "name": "Apfelstrudel mit Vanillesauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -586,17 +618,17 @@
                     "name": "Pasta mit orientalischem Lammragout",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -639,17 +671,17 @@
                     "name": "Tagessuppe",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -661,17 +693,17 @@
                     "name": "Senner Rösti mit Tomate und Käse überbacken",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -687,17 +719,17 @@
                     "name": "Arista al fiorentina - Schweinebraten toskanische Art",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -718,17 +750,17 @@
                     "name": "Schaschlik",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -748,17 +780,17 @@
                     "name": "Pasta Carbonara",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -780,17 +812,17 @@
                     "name": "Zanderfilet mit Sauce Hollandaise",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -833,17 +865,17 @@
                     "name": "Tagessuppe",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -855,17 +887,17 @@
                     "name": "Hackbraten mit Rahmsauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -888,17 +920,17 @@
                     "name": "Kleine Dampfnudel mit Vanillesauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }

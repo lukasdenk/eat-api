@@ -145,7 +145,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Leberknödelsuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -163,7 +163,13 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "S",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -194,6 +200,35 @@
                         "Sl"
                     ],
                     "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Tortellini in Tomatensauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Alm Cordon bleu gefüllt mit Bergkäse und rohem Schinken",
@@ -255,6 +290,35 @@
                         "Sl"
                     ],
                     "dish_type": "Fleisch"
+                },
+                {
+                    "name": "Fleischpflanzerl",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "R",
+                        "S",
+                        "Sf"
+                    ],
+                    "dish_type": "Fisch"
                 }
             ]
         },
@@ -321,7 +385,7 @@
                     "dish_type": "Pizza"
                 },
                 {
-                    "name": "Bratwurstschnecke",
+                    "name": "Köttbullar mit Rahmsauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -340,11 +404,74 @@
                         }
                     },
                     "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "S"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
+                    "name": "Kartoffelauflauf mit Schinken und Gemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
                         "8",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
                         "S",
                         "Sl"
                     ],
-                    "dish_type": "Grill"
+                    "dish_type": ""
+                },
+                {
+                    "name": "Kräuterdip",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Sweet & Sour mit Schweinefleisch",
@@ -574,6 +701,37 @@
                         "So"
                     ],
                     "dish_type": "Pizza"
+                },
+                {
+                    "name": "Flammkuchen mit Speck und Lauch",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "S",
+                        "So"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Hähnchenspieß mit Apfel-Mango-Chutney",
