@@ -283,7 +283,7 @@ class Dish:
         self.dish_type = dish_type
 
     def __repr__(self):
-        return "%s %s: %s" % (self.name, str(sorted(self.ingredients)), self.price)
+        return "%s %s: %s" % (self.name, str(sorted(self.ingredients)), str(self.prices))
 
     def __eq__(self, other: Any):
         if isinstance(other, self.__class__):

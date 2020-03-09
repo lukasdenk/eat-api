@@ -440,7 +440,7 @@ class IPPBistroMenuParser(MenuParser):
         # get html tree
         tree = html.fromstring(page.content)
         # get url of current pdf menu
-        xpath_query = tree.xpath("//a[contains(@title, 'KW-')]/@href")
+        xpath_query = tree.xpath("//a[contains(@title, 'KW_')]/@href")
 
         if len(xpath_query) < 1:
             return None
