@@ -2,14 +2,14 @@
     "canteen_id": "mediziner-mensa",
     "weeks": [
         {
-            "number": 11,
+            "number": 12,
             "year": 2020,
             "days": [
                 {
-                    "date": "2020-03-09",
+                    "date": "2020-03-16",
                     "dishes": [
                         {
-                            "name": "Kartoffel-Lauchsuppe",
+                            "name": "Käserahmsuppe",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -28,39 +28,15 @@
                                 }
                             },
                             "ingredients": [
+                                "1",
+                                "2",
                                 "Gl",
                                 "Mi"
                             ],
                             "dish_type": "Suppe"
                         },
                         {
-                            "name": "Rostbrätl mit Zwiebeln",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Gl",
-                                "S",
-                                "Sf"
-                            ],
-                            "dish_type": "Hauptkomponente"
-                        },
-                        {
-                            "name": "Kartoffelstrudel",
+                            "name": "Gemüsestrudel",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -87,36 +63,63 @@
                             "dish_type": "Hauptkomponente"
                         },
                         {
-                            "name": "Reisnudeln mit Ragout vom geräuchertem Tofu",
+                            "name": "Gebratene Mie-Nudeln mit Gemüse-Julienne und Ei",
                             "prices": {
                                 "students": {
-                                    "base_price": 3.8,
+                                    "base_price": "N/A",
                                     "price_per_unit": null,
                                     "unit": null
                                 },
                                 "staff": {
-                                    "base_price": 3.8,
+                                    "base_price": "N/A",
                                     "price_per_unit": null,
                                     "unit": null
                                 },
                                 "guests": {
-                                    "base_price": 3.8,
+                                    "base_price": "N/A",
                                     "price_per_unit": null,
                                     "unit": null
                                 }
                             },
                             "ingredients": [
+                                "Ei",
+                                "Gl",
                                 "So"
+                            ],
+                            "dish_type": "Hauptkomponente"
+                        },
+                        {
+                            "name": "Feuertopf mit Rinderhackfleisch und Baguette",
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "R"
                             ],
                             "dish_type": "Extraessen"
                         }
                     ]
                 },
                 {
-                    "date": "2020-03-10",
+                    "date": "2020-03-17",
                     "dishes": [
                         {
-                            "name": "Blumenkohlsuppe",
+                            "name": "Brokkolicremesuppe",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -141,7 +144,7 @@
                             "dish_type": "Suppe"
                         },
                         {
-                            "name": "Spaghetti \"Pad thai\" (Bratnudeln mit Ei)",
+                            "name": "Ungarischer Saftbraten",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -159,33 +162,14 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": [],
+                            "ingredients": [
+                                "Gl",
+                                "S"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
-                            "name": "Scheiterhaufen 3,B,Y,M,N, mit Apfelstücken, dazu",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [],
-                            "dish_type": "Hauptkomponente"
-                        },
-                        {
-                            "name": "Vanille-Orangensoße",
+                            "name": "Marillenknödel 1,2,3,B,N, mit Vanillesoße und Kompott",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -210,7 +194,42 @@
                             "dish_type": "Hauptkomponente"
                         },
                         {
-                            "name": "Süßkartoffel-Gemüse-Eintopf",
+                            "name": "Spaghetti mit Basilikum-Tomatensoße, dazu Eichblattsalat und Parmesan",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.65,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.65,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.65,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "Ei",
+                                "Gl",
+                                "Mi",
+                                "Sf",
+                                "Sw"
+                            ],
+                            "dish_type": "Extraessen"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-03-18",
+                    "dishes": [
+                        {
+                            "name": "Paprika-MaisSuppe",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -229,14 +248,212 @@
                                 }
                             },
                             "ingredients": [
-                                "Sl"
+                                "Gl",
+                                "Mi"
+                            ],
+                            "dish_type": "Suppe"
+                        },
+                        {
+                            "name": "Brokkoli-Nuss-Ecken",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "Mi",
+                                "Sc"
+                            ],
+                            "dish_type": "Hauptkomponente"
+                        },
+                        {
+                            "name": "Spiegelei",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei"
+                            ],
+                            "dish_type": "Hauptkomponente"
+                        },
+                        {
+                            "name": "Paniertes Schweineschnitzel mit Kartoffelmayosalat und Zitronenecke",
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "3",
+                                "4",
+                                "Ei",
+                                "Gl",
+                                "S",
+                                "Sf",
+                                "Sl",
+                                "Sw"
                             ],
                             "dish_type": "Extraessen"
                         }
                     ]
                 },
                 {
-                    "date": "2020-03-11",
+                    "date": "2020-03-19",
+                    "dishes": [
+                        {
+                            "name": "Zucchinisuppe",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "Mi"
+                            ],
+                            "dish_type": "Suppe"
+                        },
+                        {
+                            "name": "Hähnchenkeule auf Teufelsart",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "9",
+                                "G",
+                                "Gl"
+                            ],
+                            "dish_type": "Hauptkomponente"
+                        },
+                        {
+                            "name": "Paprika-Kartoffel-Puffer",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "Mi",
+                                "So"
+                            ],
+                            "dish_type": "Hauptkomponente"
+                        },
+                        {
+                            "name": "Gemüseauflauf mit Kräutersoße und grünem Salat",
+                            "prices": {
+                                "students": {
+                                    "base_price": 3.05,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 3.05,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.05,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "Ei",
+                                "Gl",
+                                "Mi",
+                                "Sf",
+                                "Sl",
+                                "Sw"
+                            ],
+                            "dish_type": "Extraessen"
+                        }
+                    ]
+                },
+                {
+                    "date": "2020-03-20",
                     "dishes": [
                         {
                             "name": "Spargelcremesuppe",
@@ -264,32 +481,7 @@
                             "dish_type": "Suppe"
                         },
                         {
-                            "name": "Kartoffel-Paprika-Tortilla",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Ei",
-                                "Mi"
-                            ],
-                            "dish_type": "Hauptkomponente"
-                        },
-                        {
-                            "name": "Spinat-Quark-Plätzchen",
+                            "name": "Matjes nach Hausfrauen Art",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -310,117 +502,17 @@
                             "ingredients": [
                                 "2",
                                 "3",
-                                "5",
-                                "Ei",
-                                "Mi",
-                                "Sw"
-                            ],
-                            "dish_type": "Hauptkomponente"
-                        },
-                        {
-                            "name": "Mediterranes Grillgemüse mit Kartoffel-Drillingen",
-                            "prices": {
-                                "students": {
-                                    "base_price": 3.85,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 3.85,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 3.85,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [],
-                            "dish_type": "Extraessen"
-                        }
-                    ]
-                },
-                {
-                    "date": "2020-03-12",
-                    "dishes": [
-                        {
-                            "name": "Pilz-Karottensuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Gl",
-                                "Mi"
-                            ],
-                            "dish_type": "Suppe"
-                        },
-                        {
-                            "name": "Asiatische Pfanne mit Putenstreifen",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "G"
-                            ],
-                            "dish_type": "Hauptkomponente"
-                        },
-                        {
-                            "name": "Reisauflauf mit warmem Brombeerkompott",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
                                 "9",
                                 "Ei",
-                                "Mi"
+                                "Fi",
+                                "Gl",
+                                "Mi",
+                                "Sf"
                             ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
-                            "name": "Paprikahälften mit Hirsefüllung auf",
+                            "name": "Scharfe Kartoffelpfanne",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -434,44 +526,46 @@
                                 },
                                 "guests": {
                                     "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Sl"
-                            ],
-                            "dish_type": "Extraessen"
-                        },
-                        {
-                            "name": "Tomatensugo",
-                            "prices": {
-                                "students": {
-                                    "base_price": 3.75,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 3.75,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 3.75,
                                     "price_per_unit": null,
                                     "unit": null
                                 }
                             },
                             "ingredients": [],
+                            "dish_type": "Hauptkomponente"
+                        },
+                        {
+                            "name": "Kalbsragout in Kurkumasoße mit Brokkoli und Bulgur",
+                            "prices": {
+                                "students": {
+                                    "base_price": 4.05,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 4.05,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 4.05,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "K",
+                                "Mi"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
                 },
                 {
-                    "date": "2020-03-13",
+                    "date": "2020-03-21",
                     "dishes": [
                         {
-                            "name": "Knoblauchcremesuppe",
+                            "name": "Tomatencremesuppe",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -496,7 +590,7 @@
                             "dish_type": "Suppe"
                         },
                         {
-                            "name": "Pilz-Paprika-Gyros",
+                            "name": "Graupen-Gemüse-Pfanne mit Hähnchen",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -515,121 +609,14 @@
                                 }
                             },
                             "ingredients": [
-                                "Gl"
-                            ],
-                            "dish_type": "Hauptkomponente"
-                        },
-                        {
-                            "name": "Mariniertes Tofuschnitzel",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Sc",
-                                "Sf",
-                                "So"
-                            ],
-                            "dish_type": "Hauptkomponente"
-                        },
-                        {
-                            "name": "Balinesischer Glasnudelsalat",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "En"
-                            ],
-                            "dish_type": "Extraessen"
-                        }
-                    ]
-                },
-                {
-                    "date": "2020-03-14",
-                    "dishes": [
-                        {
-                            "name": "Bunte Gemüsebrühe",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Sl"
-                            ],
-                            "dish_type": "Suppe"
-                        },
-                        {
-                            "name": "Kartoffeleintopf mit Putenwiener",
-                            "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "2",
-                                "3",
-                                "4",
-                                "8",
                                 "G",
-                                "Sf",
+                                "Gl",
                                 "Sl"
                             ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
-                            "name": "Weizen-Curry-Pfanne mit Wokgemüse",
+                            "name": "Spinat-Kicherbsen mit Kokosmilch",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -648,17 +635,18 @@
                                 }
                             },
                             "ingredients": [
-                                "Gl"
+                                "Gl",
+                                "Mi"
                             ],
                             "dish_type": "Hauptkomponente"
                         }
                     ]
                 },
                 {
-                    "date": "2020-03-15",
+                    "date": "2020-03-22",
                     "dishes": [
                         {
-                            "name": "Kräutercremesuppe",
+                            "name": "Kohlrabicremesuppe",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -683,7 +671,7 @@
                             "dish_type": "Suppe"
                         },
                         {
-                            "name": "Rinderbraten",
+                            "name": "Rindergeschnetzeltes",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -703,12 +691,13 @@
                             },
                             "ingredients": [
                                 "Gl",
+                                "Mi",
                                 "R"
                             ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
-                            "name": "Karoffelauflauf mit Gemüse",
+                            "name": "Kartoffeltaschen mit Frischkäsefüllung",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -727,11 +716,10 @@
                                 }
                             },
                             "ingredients": [
-                                "1",
                                 "2",
-                                "Ei",
-                                "Gl",
-                                "Mi"
+                                "3",
+                                "Mi",
+                                "Sw"
                             ],
                             "dish_type": "Hauptkomponente"
                         }
