@@ -3,292 +3,6 @@
         "canteen_id": "mensa-arcisstr",
         "dishes": [
             {
-                "name": "Pasta mit Putenbolognese",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Pizza türkische Art mit Rindfleisch und Chili",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "R",
-                    "So"
-                ],
-                "dish_type": "Pizza",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Hähnchenbrustfilet mit Gemüsesalsa (scharf)",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "2",
-                    "4",
-                    "Kn"
-                ],
-                "dish_type": "Grill",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Wokpfanne mit Shrimps und Gemüse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "1",
-                    "Gl",
-                    "GlW",
-                    "Kr",
-                    "Se",
-                    "Sl",
-                    "So"
-                ],
-                "dish_type": "Wok",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Pikantes Kartoffelchili",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Kn"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Kaspressknödel mit Bouillongemüse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "2",
-                    "Ei",
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Mi",
-                    "So"
-                ],
-                "dish_type": "Vegetarisch",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Andalusisches Rinderragout (GQB)",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "5",
-                    "99",
-                    "Gl",
-                    "GlW",
-                    "R",
-                    "Sw"
-                ],
-                "dish_type": "Fleisch",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Südfranzösischer Fischtopf mit Meeresfrüchten, Gemüse und Baguette",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Gl",
-                    "GlG",
-                    "GlR",
-                    "GlW",
-                    "Kn",
-                    "Kr",
-                    "Wt"
-                ],
-                "dish_type": "Fisch",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Apfelkücherl mit Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Süßspeise",
-                "date": "2020-03-25"
-            },
-            {
                 "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
                 "prices": {
                     "students": {
@@ -810,2129 +524,8 @@
         ]
     },
     {
-        "canteen_id": "mensa-martinsried",
-        "dishes": [
-            {
-                "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "3",
-                    "6",
-                    "Gl",
-                    "GlD",
-                    "Kn",
-                    "Mi"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Hähnchenbrustfilet mit Gemüsesalsa (scharf)",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Kn"
-                ],
-                "dish_type": "Grill",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Pikantes Kartoffelchili",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Kn"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Südfranzösischer Fischtopf mit Meeresfrüchten, Gemüse und Baguette",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Gl",
-                    "GlG",
-                    "GlR",
-                    "GlW",
-                    "Kn",
-                    "Kr",
-                    "Wt"
-                ],
-                "dish_type": "Fisch",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Apfelkücherl mit Zimtzucker",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Süßspeise",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Bunter Gemüseeeintopf",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Sl"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Bio-Linsen mit Bio-Spätzle",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl",
-                    "So"
-                ],
-                "dish_type": "Vegetarisch",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Pfannengyros vom Schwein mit Tsatsiki",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "14",
-                    "3",
-                    "5",
-                    "Kn",
-                    "Mi",
-                    "S",
-                    "Sw"
-                ],
-                "dish_type": "Fleisch",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Fish (MSC) & Chips mit Sauce Tartare",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "1",
-                    "11",
-                    "Ei",
-                    "Fi",
-                    "Gl",
-                    "GlW",
-                    "Mi",
-                    "Sf"
-                ],
-                "dish_type": "Fisch",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Gnocchi in pikantem Hähnchen-Gemüse-Ragout",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "Sl"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Chop Suey vom Schweinefleisch",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "3",
-                    "5",
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "S",
-                    "So",
-                    "Sw"
-                ],
-                "dish_type": "Wok",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Zartweizen mit Gemüse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Wolfsbarschfilet aus dem Ofen mit Zitronen-Knoblauch-Kräuter-Marinade",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Kn"
-                ],
-                "dish_type": "Fisch",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Süßspeise",
-                "date": "2020-03-27"
-            }
-        ]
-    },
-    {
-        "canteen_id": "stubistro-rosenheim",
-        "dishes": [
-            {
-                "name": "Rinder-Maultaschen mit Zwiebelsauce",
-                "prices": {
-                    "students": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.5,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "Mi",
-                    "R"
-                ],
-                "dish_type": "Self-Service",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Super-Green-Detox (Eintopf mit grünen Bohnen, Lauch, Stangensellerie, Weißkraut)",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Blätterteigtasche gefüllt mit Spinat und Hirtenkäse mit Tomatensauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "Sc",
-                    "Se",
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Tagesgemüse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Aktionsdessert",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Dessert",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Tagesdessert",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesdessert",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Rinderschmorbraten (GQB)",
-                "prices": {
-                    "students": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.5,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "99",
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "R",
-                    "Sl",
-                    "Sw"
-                ],
-                "dish_type": "Self-Service",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Cevapcici von der Pute mit Ajvar",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "Sf"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Tortellini (Käsefüllung) mit Kräutersauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Blaukraut",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "11",
-                    "3"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Kartoffelknödel",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "2",
-                    "5",
-                    "Sw"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Djuvecreis",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Kn"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Aktionsdessert",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Dessert",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Tagesdessert",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesdessert",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Gebratenes Zanderfilet mit Dillsauce (F)",
-                "prices": {
-                    "students": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.5,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Gl",
-                    "Mi"
-                ],
-                "dish_type": "Self-Service",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Tortellini al forno mit buntem Gemüse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "1",
-                    "2",
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "R",
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Germknödel mit Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Tagesgemüse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Aktionsdessert",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Dessert",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Tagesdessert",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesdessert",
-                "date": "2020-03-27"
-            }
-        ]
-    },
-    {
-        "canteen_id": "stubistro-grosshadern",
-        "dishes": []
-    },
-    {
-        "canteen_id": "ipp-bistro",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stucafe-boltzmannstr",
-        "dishes": [
-            {
-                "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "3",
-                    "6",
-                    "Gl",
-                    "GlD",
-                    "Kn",
-                    "Mi"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Schweinebraten mit Biersauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "99",
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "S"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-27"
-            }
-        ]
-    },
-    {
-        "canteen_id": "stucafe-garching",
-        "dishes": [
-            {
-                "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "3",
-                    "6",
-                    "Gl",
-                    "GlD",
-                    "Kn",
-                    "Mi"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Schweinebraten mit Biersauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "99",
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "S"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-27"
-            }
-        ]
-    },
-    {
-        "canteen_id": "mensa-lothstr",
-        "dishes": [
-            {
-                "name": "Pikantes Kartoffelchili",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 1.9,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Kn"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Pasta mit Putenbolognese",
-                "prices": {
-                    "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Hähnchenbrustfilet mit Gemüsesalsa (scharf)",
-                "prices": {
-                    "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "2",
-                    "4",
-                    "Kn"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Spinatknödel Tiroler Art mit Bergkäse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi",
-                    "Sl"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Südfranzösischer Fischtopf mit Meeresfrüchten, Gemüse und Baguette",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Gl",
-                    "GlG",
-                    "GlR",
-                    "GlW",
-                    "Kn",
-                    "Kr",
-                    "Wt"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Bunter Gemüseeeintopf",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 1.9,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Pfannengyros vom Schwein mit Tsatsiki",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "3",
-                    "5",
-                    "Kn",
-                    "Mi",
-                    "S",
-                    "Sw"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Hähnchenbrust Thai-Style mit Gemüse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "2",
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "So"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Fish (MSC) & Chips mit Sauce Tartare",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "1",
-                    "11",
-                    "Ei",
-                    "Fi",
-                    "Gl",
-                    "GlW",
-                    "Mi",
-                    "Sf"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Bio-Linsen mit Bio-Spätzle",
-                "prices": {
-                    "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl",
-                    "So"
-                ],
-                "dish_type": "Biogericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Zartweizen mit Gemüse",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 1.9,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Schweinebraten mit Biersauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "99",
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "S"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Wolfsbarschfilet aus dem Ofen in Zitronen-Knoblauch-Kräuter-Marinade",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Kn"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-27"
-            }
-        ]
-    },
-    {
-        "canteen_id": "stubistro-arcisstr",
-        "dishes": [
-            {
-                "name": "Spinatknödel Tiroler Art mit Bergkäse und knackigem Beilagensalat",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "11",
-                    "3",
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi",
-                    "Sf",
-                    "Sl",
-                    "Sw"
-                ],
-                "dish_type": "StuBistro Gericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Pasta mit Putenbolognese",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl"
-                ],
-                "dish_type": "StuBistro Gericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Linsen mit Spätzle",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl",
-                    "So"
-                ],
-                "dish_type": "StuBistro Gericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Pfannengyros vom Schwein mit Tsatsiki",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "3",
-                    "5",
-                    "Kn",
-                    "Mi",
-                    "S",
-                    "Sw"
-                ],
-                "dish_type": "StuBistro Gericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "StuBistro Gericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Schweinebraten mit Biersauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "99",
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "S"
-                ],
-                "dish_type": "StuBistro Gericht",
-                "date": "2020-03-27"
-            }
-        ]
-    },
-    {
-        "canteen_id": "stubistro-schellingstr",
-        "dishes": [
-            {
-                "name": "Pasta mit Putenbolognese",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl"
-                ],
-                "dish_type": "StuBistro Self-Service",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Spinatknödel Tiroler Art mit Bergkäse",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi",
-                    "Sl"
-                ],
-                "dish_type": "StuBistro Self-Service",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Linsen mit Spätzle",
-                "prices": {
-                    "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.55,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.66,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl",
-                    "So"
-                ],
-                "dish_type": "StuBistro Self-Service",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Pfannengyros vom Schwein mit Tsatsiki",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "3",
-                    "5",
-                    "Kn",
-                    "Mi",
-                    "S",
-                    "Sw"
-                ],
-                "dish_type": "StuBistro Self-Service",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "StuBistro Self-Service",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Schweinebraten mit Biersauce",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "99",
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "S"
-                ],
-                "dish_type": "StuBistro Self-Service",
-                "date": "2020-03-27"
-            }
-        ]
-    },
-    {
         "canteen_id": "mensa-leopoldstr",
         "dishes": [
-            {
-                "name": "Hähnchenbrustfilet mit Gemüsesalsa (scharf) und Rosmarinkartoffeln",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "2",
-                    "4",
-                    "Kn"
-                ],
-                "dish_type": "Grill",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Pikantes Kartoffelchili",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Kn"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Kaspressknödel mit Bouillongemüse",
-                "prices": {
-                    "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.85,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.95,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "2",
-                    "Ei",
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Mi",
-                    "So"
-                ],
-                "dish_type": "Vegetarisch",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Südfranzösischer Fischtopf mit Meeresfrüchten, Gemüse und Baguette und Wilder Reis",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Gl",
-                    "GlG",
-                    "GlR",
-                    "GlW",
-                    "Kn",
-                    "Kr",
-                    "Wt"
-                ],
-                "dish_type": "Fisch",
-                "date": "2020-03-25"
-            },
             {
                 "name": "Bunter Gemüseeeintopf",
                 "prices": {
@@ -3167,37 +760,8 @@
         ]
     },
     {
-        "canteen_id": "stucafe-karlstr",
+        "canteen_id": "stubistro-arcisstr",
         "dishes": [
-            {
-                "name": "Spinatknödel Tiroler Art mit Bergkäse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi",
-                    "Sl"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-25"
-            },
             {
                 "name": "Linsen mit Spätzle",
                 "prices": {
@@ -3224,24 +788,54 @@
                     "Sl",
                     "So"
                 ],
-                "dish_type": "Aktionsessen",
+                "dish_type": "StuBistro Gericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Pfannengyros vom Schwein mit Tsatsiki",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "3",
+                    "5",
+                    "Kn",
+                    "Mi",
+                    "S",
+                    "Sw"
+                ],
+                "dish_type": "StuBistro Gericht",
                 "date": "2020-03-26"
             },
             {
                 "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
                 "prices": {
                     "students": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 2.95,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 3.45,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -3252,87 +846,198 @@
                     "GlW",
                     "Mi"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "StuBistro Gericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Schweinebraten mit Biersauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "99",
+                    "Gl",
+                    "GlG",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "S"
+                ],
+                "dish_type": "StuBistro Gericht",
                 "date": "2020-03-27"
             }
         ]
     },
     {
-        "canteen_id": "stucafe-akademie-weihenstephan",
+        "canteen_id": "stucafe-boltzmannstr",
         "dishes": [
             {
-                "name": "Apfelkücherl mit Vanillesauce",
+                "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
                 "prices": {
                     "students": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 2.95,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 3.45,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
                 },
                 "ingredients": [
-                    "Ei",
+                    "3",
+                    "6",
                     "Gl",
-                    "GlW",
+                    "GlD",
+                    "Kn",
                     "Mi"
                 ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
+                "dish_type": "Aktionsessen",
+                "date": "2020-03-26"
             },
             {
-                "name": "Pasta mit Putenbolognese",
+                "name": "Schweinebraten mit Biersauce",
                 "prices": {
                     "students": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 2.95,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 3.45,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
                 },
                 "ingredients": [
+                    "99",
                     "Gl",
+                    "GlG",
                     "GlW",
                     "Kn",
-                    "Sl"
+                    "Mi",
+                    "S"
                 ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
+                "dish_type": "Aktionsessen",
+                "date": "2020-03-27"
+            }
+        ]
+    },
+    {
+        "canteen_id": "ipp-bistro",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stucafe-garching",
+        "dishes": [
+            {
+                "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "3",
+                    "6",
+                    "Gl",
+                    "GlD",
+                    "Kn",
+                    "Mi"
+                ],
+                "dish_type": "Aktionsessen",
+                "date": "2020-03-26"
             },
+            {
+                "name": "Schweinebraten mit Biersauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "99",
+                    "Gl",
+                    "GlG",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "S"
+                ],
+                "dish_type": "Aktionsessen",
+                "date": "2020-03-27"
+            }
+        ]
+    },
+    {
+        "canteen_id": "stubistro-schellingstr",
+        "dishes": [
             {
                 "name": "Linsen mit Spätzle",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.55,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.66,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -3342,7 +1047,126 @@
                     "Sl",
                     "So"
                 ],
-                "dish_type": "Aktionsessen",
+                "dish_type": "StuBistro Self-Service",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Pfannengyros vom Schwein mit Tsatsiki",
+                "prices": {
+                    "students": {
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
+                    "staff": {
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
+                    },
+                    "guests": {
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
+                    }
+                },
+                "ingredients": [
+                    "3",
+                    "5",
+                    "Kn",
+                    "Mi",
+                    "S",
+                    "Sw"
+                ],
+                "dish_type": "StuBistro Self-Service",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
+                "prices": {
+                    "students": {
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
+                    "staff": {
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
+                    },
+                    "guests": {
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
+                    }
+                },
+                "ingredients": [
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Mi"
+                ],
+                "dish_type": "StuBistro Self-Service",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Schweinebraten mit Biersauce",
+                "prices": {
+                    "students": {
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
+                    "staff": {
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
+                    },
+                    "guests": {
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
+                    }
+                },
+                "ingredients": [
+                    "99",
+                    "Gl",
+                    "GlG",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "S"
+                ],
+                "dish_type": "StuBistro Self-Service",
+                "date": "2020-03-27"
+            }
+        ]
+    },
+    {
+        "canteen_id": "mensa-lothstr",
+        "dishes": [
+            {
+                "name": "Bunter Gemüseeeintopf",
+                "prices": {
+                    "students": {
+                        "base_price": 1.0,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": 1.9,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Sl"
+                ],
+                "dish_type": "Tagesgericht",
                 "date": "2020-03-26"
             },
             {
@@ -3374,240 +1198,6 @@
                 ],
                 "dish_type": "Aktionsessen",
                 "date": "2020-03-26"
-            },
-            {
-                "name": "Tortellini (Käsefüllung) mit Käse-Sahne-Sauce",
-                "prices": {
-                    "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "1",
-                    "2",
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Wolfsbarschfilet aus dem Ofen in Zitronen-Knoblauch-Kräuter-Marinade",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Kn"
-                ],
-                "dish_type": "Aktionsessen",
-                "date": "2020-03-27"
-            }
-        ]
-    },
-    {
-        "canteen_id": "stucafe-pasing",
-        "dishes": []
-    },
-    {
-        "canteen_id": "mensa-pasing",
-        "dishes": [
-            {
-                "name": "Pasta mit Putenbolognese",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Wokpfanne mit Shrimps und Gemüse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "1",
-                    "Gl",
-                    "GlW",
-                    "Kr",
-                    "Se",
-                    "Sl",
-                    "So"
-                ],
-                "dish_type": "Wok",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Pikantes Kartoffelchili",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Kn"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Südfranzösischer Fischtopf mit Meeresfrüchten, Gemüse und Baguette",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Gl",
-                    "GlG",
-                    "GlR",
-                    "GlW",
-                    "Kn",
-                    "Kr",
-                    "Wt"
-                ],
-                "dish_type": "Fisch",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Apfelkücherl mit Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Süßspeise",
-                "date": "2020-03-25"
             },
             {
                 "name": "Hähnchenbrust Thai-Style mit Gemüse",
@@ -3629,395 +1219,11 @@
                     }
                 },
                 "ingredients": [
+                    "2",
                     "Gl",
                     "GlW",
                     "Kn",
-                    "Sf",
                     "So"
-                ],
-                "dish_type": "Wok",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Bunter Gemüseeeintopf",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Sl"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Bio-Linsen mit Bio-Spätzle",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl",
-                    "So"
-                ],
-                "dish_type": "Vegetarisch",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Fish (MSC) & Chips mit Sauce Tartare",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "1",
-                    "11",
-                    "Ei",
-                    "Fi",
-                    "Gl",
-                    "GlW",
-                    "Mi",
-                    "Sf"
-                ],
-                "dish_type": "Fisch",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Gnocchi in pikantem Hähnchen-Gemüse-Ragout",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Mi",
-                    "Sl"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Zartweizen mit Gemüse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Wolfsbarschfilet aus dem Ofen in Zitronen-Knoblauch-Kräuter-Marinade",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Fi",
-                    "Kn"
-                ],
-                "dish_type": "Fisch",
-                "date": "2020-03-27"
-            },
-            {
-                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Süßspeise",
-                "date": "2020-03-27"
-            }
-        ]
-    },
-    {
-        "canteen_id": "mensa-weihenstephan",
-        "dishes": [
-            {
-                "name": "Pikantes Kartoffelchili",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 1.9,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Kn"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Pasta mit Putenbolognese",
-                "prices": {
-                    "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Apfelkücherl mit Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Bunter Gemüseeeintopf",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 1.9,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-26"
-            },
-            {
-                "name": "Pfannengyros vom Schwein mit Tsatsiki",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "3",
-                    "5",
-                    "Kn",
-                    "Mi",
-                    "S",
-                    "Sw"
                 ],
                 "dish_type": "Aktionsessen",
                 "date": "2020-03-26"
@@ -4111,7 +1317,7 @@
                 "date": "2020-03-27"
             },
             {
-                "name": "Tortellini (Käsefüllung) mit Käse-Sahne-Sauce",
+                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
                 "prices": {
                     "students": {
                         "base_price": 2.4,
@@ -4130,16 +1336,43 @@
                     }
                 },
                 "ingredients": [
-                    "1",
-                    "2",
                     "Ei",
                     "Gl",
                     "GlW",
-                    "Kn",
-                    "Mi",
-                    "Sl"
+                    "Mi"
                 ],
                 "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Schweinebraten mit Biersauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "99",
+                    "Gl",
+                    "GlG",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "S"
+                ],
+                "dish_type": "Aktionsessen",
                 "date": "2020-03-27"
             },
             {
@@ -4171,200 +1404,12 @@
         ]
     },
     {
+        "canteen_id": "stucafe-pasing",
+        "dishes": []
+    },
+    {
         "canteen_id": "mensa-garching",
         "dishes": [
-            {
-                "name": "Pasta mit Gemüsebolognese",
-                "prices": {
-                    "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.55,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.66,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sl"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Bratwurstschnecke",
-                "prices": {
-                    "students": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.5,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "8",
-                    "S",
-                    "Sl"
-                ],
-                "dish_type": "Grill",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Pikantes Kartoffelchili",
-                "prices": {
-                    "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.55,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.66,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Kn"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.5,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Südtiroler Schlutzkrapfen auf Schwarzwurzeln mit Grana Padano",
-                "prices": {
-                    "students": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.5,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "2",
-                    "Ei",
-                    "Gl",
-                    "GlR",
-                    "GlW",
-                    "Kn",
-                    "Mi"
-                ],
-                "dish_type": "Vegetarisch",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Andalusisches Rinderragout (GQB)",
-                "prices": {
-                    "students": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.5,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "5",
-                    "99",
-                    "Gl",
-                    "GlW",
-                    "R",
-                    "Sw"
-                ],
-                "dish_type": "Fleisch",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Apfelkücherl mit Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.5,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.5,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Süßspeise",
-                "date": "2020-03-25"
-            },
             {
                 "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
                 "prices": {
@@ -4798,65 +1843,43 @@
         ]
     },
     {
-        "canteen_id": "stucafe-adalbertstr",
+        "canteen_id": "stubistro-goethestr",
         "dishes": [
             {
-                "name": "Pasta mit Putenbolognese",
+                "name": "Pfannengyros vom Schwein mit Tsatsiki",
                 "prices": {
                     "students": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 2.95,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 3.45,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
                 },
                 "ingredients": [
-                    "Gl",
-                    "GlW",
+                    "3",
+                    "5",
                     "Kn",
-                    "Sl"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-03-25"
-            },
-            {
-                "name": "Spinatknödel Tiroler Art mit Bergkäse",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
                     "Mi",
-                    "Sl"
+                    "S",
+                    "Sw"
                 ],
                 "dish_type": "Aktionsessen",
-                "date": "2020-03-25"
-            },
+                "date": "2020-03-26"
+            }
+        ]
+    },
+    {
+        "canteen_id": "stucafe-adalbertstr",
+        "dishes": [
             {
                 "name": "Linsen mit Spätzle",
                 "prices": {
@@ -4978,10 +2001,152 @@
         ]
     },
     {
-        "canteen_id": "stubistro-goethestr",
+        "canteen_id": "stubistro-grosshadern",
+        "dishes": []
+    },
+    {
+        "canteen_id": "mensa-pasing",
         "dishes": [
             {
-                "name": "Spinatknödel Tiroler Art mit Bergkäse",
+                "name": "Hähnchenbrust Thai-Style mit Gemüse",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Sf",
+                    "So"
+                ],
+                "dish_type": "Wok",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Bunter Gemüseeeintopf",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Sl"
+                ],
+                "dish_type": "Vegan, Eintopf, Suppe",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Tagessuppe",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Bio-Linsen mit Bio-Spätzle",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Sl",
+                    "So"
+                ],
+                "dish_type": "Vegetarisch",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Fish (MSC) & Chips mit Sauce Tartare",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "1",
+                    "11",
+                    "Ei",
+                    "Fi",
+                    "Gl",
+                    "GlW",
+                    "Mi",
+                    "Sf"
+                ],
+                "dish_type": "Fisch",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Gnocchi in pikantem Hähnchen-Gemüse-Ragout",
                 "prices": {
                     "students": {
                         "base_price": "N/A",
@@ -5003,11 +2168,461 @@
                     "Ei",
                     "Gl",
                     "GlW",
+                    "Kn",
                     "Mi",
                     "Sl"
                 ],
+                "dish_type": "Pasta",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Zartweizen mit Gemüse",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn"
+                ],
+                "dish_type": "Vegan, Eintopf, Suppe",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Tagessuppe",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Wolfsbarschfilet aus dem Ofen in Zitronen-Knoblauch-Kräuter-Marinade",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Fi",
+                    "Kn"
+                ],
+                "dish_type": "Fisch",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Mi"
+                ],
+                "dish_type": "Süßspeise",
+                "date": "2020-03-27"
+            }
+        ]
+    },
+    {
+        "canteen_id": "mensa-martinsried",
+        "dishes": [
+            {
+                "name": "Bunter Gemüseeeintopf",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Sl"
+                ],
+                "dish_type": "Vegan, Eintopf, Suppe",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Tagessuppe",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Bio-Linsen mit Bio-Spätzle",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Sl",
+                    "So"
+                ],
+                "dish_type": "Vegetarisch",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Pfannengyros vom Schwein mit Tsatsiki",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "14",
+                    "3",
+                    "5",
+                    "Kn",
+                    "Mi",
+                    "S",
+                    "Sw"
+                ],
+                "dish_type": "Fleisch",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Fish (MSC) & Chips mit Sauce Tartare",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "1",
+                    "11",
+                    "Ei",
+                    "Fi",
+                    "Gl",
+                    "GlW",
+                    "Mi",
+                    "Sf"
+                ],
+                "dish_type": "Fisch",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Gnocchi in pikantem Hähnchen-Gemüse-Ragout",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "Sl"
+                ],
+                "dish_type": "Pasta",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Chop Suey vom Schweinefleisch",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "3",
+                    "5",
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "S",
+                    "So",
+                    "Sw"
+                ],
+                "dish_type": "Wok",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Zartweizen mit Gemüse",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn"
+                ],
+                "dish_type": "Vegan, Eintopf, Suppe",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Tagessuppe",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Wolfsbarschfilet aus dem Ofen mit Zitronen-Knoblauch-Kräuter-Marinade",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Fi",
+                    "Kn"
+                ],
+                "dish_type": "Fisch",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Mi"
+                ],
+                "dish_type": "Süßspeise",
+                "date": "2020-03-27"
+            }
+        ]
+    },
+    {
+        "canteen_id": "stucafe-akademie-weihenstephan",
+        "dishes": [
+            {
+                "name": "Linsen mit Spätzle",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Sl",
+                    "So"
+                ],
                 "dish_type": "Aktionsessen",
-                "date": "2020-03-25"
+                "date": "2020-03-26"
             },
             {
                 "name": "Pfannengyros vom Schwein mit Tsatsiki",
@@ -5038,6 +2653,757 @@
                 ],
                 "dish_type": "Aktionsessen",
                 "date": "2020-03-26"
+            },
+            {
+                "name": "Tortellini (Käsefüllung) mit Käse-Sahne-Sauce",
+                "prices": {
+                    "students": {
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": 2.95,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": 3.45,
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "1",
+                    "2",
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "Sl"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Wolfsbarschfilet aus dem Ofen in Zitronen-Knoblauch-Kräuter-Marinade",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Fi",
+                    "Kn"
+                ],
+                "dish_type": "Aktionsessen",
+                "date": "2020-03-27"
+            }
+        ]
+    },
+    {
+        "canteen_id": "stubistro-rosenheim",
+        "dishes": [
+            {
+                "name": "Rinderschmorbraten (GQB)",
+                "prices": {
+                    "students": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
+                    "staff": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
+                    },
+                    "guests": {
+                        "base_price": 1.5,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
+                    }
+                },
+                "ingredients": [
+                    "99",
+                    "Gl",
+                    "GlG",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "R",
+                    "Sl",
+                    "Sw"
+                ],
+                "dish_type": "Self-Service",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Cevapcici von der Pute mit Ajvar",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "Sf"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Tortellini (Käsefüllung) mit Kräutersauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "Sl"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Tagessuppe",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Blaukraut",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "11",
+                    "3"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Kartoffelknödel",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "2",
+                    "5",
+                    "Sw"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Djuvecreis",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Kn"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Aktionsdessert",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Dessert",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Tagesdessert",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesdessert",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Gebratenes Zanderfilet mit Dillsauce (F)",
+                "prices": {
+                    "students": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
+                    "staff": {
+                        "base_price": 1.5,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
+                    },
+                    "guests": {
+                        "base_price": 1.5,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
+                    }
+                },
+                "ingredients": [
+                    "Fi",
+                    "Gl",
+                    "Mi"
+                ],
+                "dish_type": "Self-Service",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Tortellini al forno mit buntem Gemüse",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "1",
+                    "2",
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "R",
+                    "Sl"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Germknödel mit Vanillesauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Mi"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Tagessuppe",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Tagesgemüse",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Aktionsdessert",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Dessert",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Tagesdessert",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesdessert",
+                "date": "2020-03-27"
+            }
+        ]
+    },
+    {
+        "canteen_id": "stucafe-karlstr",
+        "dishes": [
+            {
+                "name": "Linsen mit Spätzle",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Sl",
+                    "So"
+                ],
+                "dish_type": "Aktionsessen",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
+                "prices": {
+                    "students": {
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": 2.95,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": 3.45,
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Mi"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            }
+        ]
+    },
+    {
+        "canteen_id": "mensa-weihenstephan",
+        "dishes": [
+            {
+                "name": "Bunter Gemüseeeintopf",
+                "prices": {
+                    "students": {
+                        "base_price": 1.0,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": 1.9,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Sl"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Pfannengyros vom Schwein mit Tsatsiki",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "3",
+                    "5",
+                    "Kn",
+                    "Mi",
+                    "S",
+                    "Sw"
+                ],
+                "dish_type": "Aktionsessen",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Fish (MSC) & Chips mit Sauce Tartare",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "1",
+                    "11",
+                    "Ei",
+                    "Fi",
+                    "Gl",
+                    "GlW",
+                    "Mi",
+                    "Sf"
+                ],
+                "dish_type": "Aktionsessen",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Bio-Linsen mit Bio-Spätzle",
+                "prices": {
+                    "students": {
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": 2.95,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": 3.45,
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Sl",
+                    "So"
+                ],
+                "dish_type": "Biogericht",
+                "date": "2020-03-26"
+            },
+            {
+                "name": "Zartweizen mit Gemüse",
+                "prices": {
+                    "students": {
+                        "base_price": 1.0,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": 1.9,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Tortellini (Käsefüllung) mit Käse-Sahne-Sauce",
+                "prices": {
+                    "students": {
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": 2.95,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": 3.45,
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "1",
+                    "2",
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "Sl"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-03-27"
+            },
+            {
+                "name": "Wolfsbarschfilet aus dem Ofen in Zitronen-Knoblauch-Kräuter-Marinade",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Fi",
+                    "Kn"
+                ],
+                "dish_type": "Aktionsessen",
+                "date": "2020-03-27"
             }
         ]
     }
