@@ -1,36 +1,65 @@
 {
-    "number": 38,
+    "number": 41,
     "year": 2020,
     "days": [
         {
-            "date": "2020-09-14",
+            "date": "2020-10-06",
             "dishes": [
                 {
-                    "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais",
+                    "name": "Getreidepfanne mit frischem Gemüse",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
+                            "base_price": 1.0,
                             "price_per_unit": null,
                             "unit": null
                         },
                         "staff": {
-                            "base_price": "N/A",
+                            "base_price": 1.9,
                             "price_per_unit": null,
                             "unit": null
                         },
                         "guests": {
-                            "base_price": "N/A",
+                            "base_price": 2.4,
                             "price_per_unit": null,
                             "unit": null
                         }
                     },
                     "ingredients": [
-                        "Kn"
+                        "Gl",
+                        "GlG"
                     ],
-                    "dish_type": "Tellergericht Vegan"
+                    "dish_type": "Tagesgericht 1"
                 },
                 {
-                    "name": "Cordon bleu vom Schwein (mit Formfleisch-Kochschinken) mit Countrykartoffel, Erbsen und Karotten",
+                    "name": "Gebratenes Schweinefleisch mit Gemüe in Hoisinsauce",
+                    "prices": {
+                        "students": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.95,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.45,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "S",
+                        "So"
+                    ],
+                    "dish_type": "Tagesgericht 4"
+                },
+                {
+                    "name": "Mediterraner Nudel-Gemüse-Auflauf",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -49,6 +78,97 @@
                         }
                     },
                     "ingredients": [
+                        "1",
+                        "2",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 3"
+                }
+            ]
+        },
+        {
+            "date": "2020-10-07",
+            "dishes": [
+                {
+                    "name": "Veganer Borschtsch mit Kraut, Kartoffeln und Roter Beete",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 2.4,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "3",
+                        "5",
+                        "9",
+                        "Kn",
+                        "Sw"
+                    ],
+                    "dish_type": "Tagesgericht 1"
+                },
+                {
+                    "name": "Knöpflepfanne mit Gemüse und Pilzen",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlD",
+                        "GlW",
+                        "Sl"
+                    ],
+                    "dish_type": "Tagesgericht 3"
+                },
+                {
+                    "name": "Schweinesteak mit Schinken und Käse überbacken",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
                         "2",
                         "3",
                         "8",
@@ -57,160 +177,65 @@
                         "GlW",
                         "Kn",
                         "Mi",
-                        "S",
-                        "Sf",
-                        "Sl"
+                        "S"
                     ],
-                    "dish_type": "Tellergericht Fleisch"
+                    "dish_type": "Aktionsessen 5"
                 }
             ]
         },
         {
-            "date": "2020-09-15",
+            "date": "2020-10-08",
             "dishes": [
                 {
-                    "name": "Nasi Goreng (mit Hähnchenfleisch)",
+                    "name": "Pasta mit Gemüsebolognese",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
+                            "base_price": 1.9,
                             "price_per_unit": null,
                             "unit": null
                         },
                         "staff": {
-                            "base_price": "N/A",
+                            "base_price": 2.6,
                             "price_per_unit": null,
                             "unit": null
                         },
                         "guests": {
-                            "base_price": "N/A",
+                            "base_price": 3.1,
                             "price_per_unit": null,
                             "unit": null
                         }
                     },
                     "ingredients": [
-                        "2",
                         "Gl",
                         "GlW",
                         "Kn",
-                        "Sf",
-                        "So"
+                        "Sl"
                     ],
-                    "dish_type": "Tellergericht Wok"
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
-                    "name": "Linseneintopf mit Gemüse",
+                    "name": "Käsekrainer mit Bratensauce",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
+                            "base_price": 2.4,
                             "price_per_unit": null,
                             "unit": null
                         },
                         "staff": {
-                            "base_price": "N/A",
+                            "base_price": 2.95,
                             "price_per_unit": null,
                             "unit": null
                         },
                         "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "3",
-                        "5",
-                        "Sl",
-                        "Sw"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-16",
-            "dishes": [
-                {
-                    "name": "Nürnberger Würstchen mit Kartoffelbrei und Sauerkraut",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "3",
-                        "8",
-                        "Mi",
-                        "R",
-                        "S"
-                    ],
-                    "dish_type": "Tellergericht Grill"
-                },
-                {
-                    "name": "Asiatische Reis-Gemüsepfanne",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
+                            "base_price": 3.45,
                             "price_per_unit": null,
                             "unit": null
                         }
                     },
                     "ingredients": [
                         "2",
-                        "Kn",
-                        "Sf",
-                        "Sl",
-                        "So"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-17",
-            "dishes": [
-                {
-                    "name": "Fleischpflanzerl mit Rahmsauce, Kartoffelbrei, Erbsen",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Ei",
+                        "3",
+                        "8",
                         "Gl",
                         "GlG",
                         "GlW",
@@ -220,10 +245,10 @@
                         "S",
                         "Sf"
                     ],
-                    "dish_type": "Tellergericht Grill"
+                    "dish_type": "Tagesgericht 4"
                 },
                 {
-                    "name": "Couscous mit Pilzen, Tomaten und Spinat",
+                    "name": "Hähnchenkeule mexikanische Art",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -242,20 +267,48 @@
                         }
                     },
                     "ingredients": [
+                        "2",
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Aktionsessen 2"
+                }
+            ]
+        },
+        {
+            "date": "2020-10-09",
+            "dishes": [
+                {
+                    "name": "Gemüsecurry mit roten Linsen, Spinat und Kokosmilch",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
                         "Gl",
                         "GlW",
                         "Kn",
                         "So"
                     ],
-                    "dish_type": "Tellergericht Vegan"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-18",
-            "dishes": [
+                    "dish_type": "Aktionsessen 4"
+                },
                 {
-                    "name": "Rindergeschnetzeltes (GQB) mit grünem Pfeffer, Reis und Mischgemüse",
+                    "name": "Truthahnschnitzel mit Tomate und Mozzarella überbacken",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -274,14 +327,37 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlG",
-                        "GlW",
                         "Kn",
-                        "Mi",
-                        "R"
+                        "Mi"
                     ],
-                    "dish_type": "Tellergericht Grill"
+                    "dish_type": "Aktionsessen 5"
+                },
+                {
+                    "name": "Millirahmstrudel mit Äpfeln und Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 6"
                 }
             ]
         }

@@ -1,12 +1,12 @@
 {
-    "number": 38,
+    "number": 41,
     "year": 2020,
     "days": [
         {
-            "date": "2020-09-14",
+            "date": "2020-10-05",
             "dishes": [
                 {
-                    "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais",
+                    "name": "Pasta mit Tomaten- Frischkäsesauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -25,51 +25,15 @@
                         }
                     },
                     "ingredients": [
-                        "Kn"
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi"
                     ],
-                    "dish_type": "Tellergericht Vegan"
+                    "dish_type": "Pasta"
                 },
                 {
-                    "name": "Cordon bleu vom Schwein (mit Formfleisch-Kochschinken) mit Countrykartoffel, Erbsen und Karotten",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "3",
-                        "8",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "S",
-                        "Sf",
-                        "Sl"
-                    ],
-                    "dish_type": "Tellergericht Fleisch"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-15",
-            "dishes": [
-                {
-                    "name": "Nasi Goreng (mit Hähnchenfleisch)",
+                    "name": "Arabischer Couscous mit Karotten und Kichererbsen",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -92,13 +56,12 @@
                         "Gl",
                         "GlW",
                         "Kn",
-                        "Sf",
                         "So"
                     ],
-                    "dish_type": "Tellergericht Wok"
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Linseneintopf mit Gemüse",
+                    "name": "Cevapcici mit Ajvar und Djuvecreis",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -117,48 +80,21 @@
                         }
                     },
                     "ingredients": [
-                        "3",
-                        "5",
-                        "Sl",
-                        "Sw"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-16",
-            "dishes": [
-                {
-                    "name": "Nürnberger Würstchen mit Kartoffelbrei und Sauerkraut",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "3",
-                        "8",
-                        "Mi",
-                        "R",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
                         "S"
                     ],
-                    "dish_type": "Tellergericht Grill"
-                },
+                    "dish_type": "Fleisch"
+                }
+            ]
+        },
+        {
+            "date": "2020-10-06",
+            "dishes": [
                 {
-                    "name": "Asiatische Reis-Gemüsepfanne",
+                    "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -177,21 +113,42 @@
                         }
                     },
                     "ingredients": [
-                        "2",
+                        "Ei",
+                        "Gl",
+                        "GlW",
                         "Kn",
-                        "Sf",
-                        "Sl",
-                        "So"
+                        "Mi",
+                        "Sl"
                     ],
-                    "dish_type": "Tellergericht Vegan"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-17",
-            "dishes": [
+                    "dish_type": "Pasta"
+                },
                 {
-                    "name": "Fleischpflanzerl mit Rahmsauce, Kartoffelbrei, Erbsen",
+                    "name": "Getreidepfanne mit frischem Gemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlG"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
+                },
+                {
+                    "name": "Kotelett vom Lamm mit Rosmarinjus mit Kartoffelgratin",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -215,15 +172,17 @@
                         "GlG",
                         "GlW",
                         "Kn",
-                        "Mi",
-                        "R",
-                        "S",
-                        "Sf"
+                        "Mi"
                     ],
-                    "dish_type": "Tellergericht Grill"
-                },
+                    "dish_type": "Fleisch"
+                }
+            ]
+        },
+        {
+            "date": "2020-10-07",
+            "dishes": [
                 {
-                    "name": "Couscous mit Pilzen, Tomaten und Spinat",
+                    "name": "Pasta mit Putengeschnetzeltem und Gemüse",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -244,18 +203,12 @@
                     "ingredients": [
                         "Gl",
                         "GlW",
-                        "Kn",
-                        "So"
+                        "Kn"
                     ],
-                    "dish_type": "Tellergericht Vegan"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-18",
-            "dishes": [
+                    "dish_type": "Pasta"
+                },
                 {
-                    "name": "Rindergeschnetzeltes (GQB) mit grünem Pfeffer, Reis und Mischgemüse",
+                    "name": "Zartweizen mit Tomaten, Zucchini und Auberginen",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -274,14 +227,194 @@
                         }
                     },
                     "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
+                }
+            ]
+        },
+        {
+            "date": "2020-10-08",
+            "dishes": [
+                {
+                    "name": "Käsekrainer mit Bratensauce, Kartoffelbrei und Kümmelkraut",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "5",
+                        "8",
+                        "99",
                         "Gl",
                         "GlG",
                         "GlW",
                         "Kn",
                         "Mi",
-                        "R"
+                        "R",
+                        "S",
+                        "Sf",
+                        "Sw"
                     ],
-                    "dish_type": "Tellergericht Grill"
+                    "dish_type": "Grill"
+                },
+                {
+                    "name": "Frische Rahmschwammerl mit Semmelknödel",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Pfannkuchen mit Kirschfüllung dazu Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Süßspeise"
+                }
+            ]
+        },
+        {
+            "date": "2020-10-09",
+            "dishes": [
+                {
+                    "name": "Mexikanisches Soja-Chili mit Kartoffeln",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "So"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
+                },
+                {
+                    "name": "Schollenfilet (MSC) mit Kartoffel-Endivien-Salat",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Sf"
+                    ],
+                    "dish_type": "Fisch"
+                },
+                {
+                    "name": "Millirahmstrudel mit Äpfeln und Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Süßspeise"
                 }
             ]
         }

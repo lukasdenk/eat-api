@@ -1,12 +1,12 @@
 {
-    "number": 38,
+    "number": 41,
     "year": 2020,
     "days": [
         {
-            "date": "2020-09-14",
+            "date": "2020-10-06",
             "dishes": [
                 {
-                    "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais",
+                    "name": "Gebratenes Schweinefleisch mit Gemüse in Hoisinsauce , dazu Curcumareis",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -25,80 +25,16 @@
                         }
                     },
                     "ingredients": [
-                        "Kn"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                },
-                {
-                    "name": "Cordon bleu vom Schwein (mit Formfleisch-Kochschinken) mit Countrykartoffel, Erbsen und Karotten",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "3",
-                        "8",
                         "Gl",
-                        "GlG",
                         "GlW",
                         "Kn",
-                        "Mi",
                         "S",
-                        "Sf",
-                        "Sl"
-                    ],
-                    "dish_type": "Tellergericht Fleisch"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-15",
-            "dishes": [
-                {
-                    "name": "Nasi Goreng (mit Hähnchenfleisch)",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Sf",
                         "So"
                     ],
                     "dish_type": "Tellergericht Wok"
                 },
                 {
-                    "name": "Linseneintopf mit Gemüse",
+                    "name": "Getreidepfanne mit frischem Gemüse",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -117,81 +53,18 @@
                         }
                     },
                     "ingredients": [
-                        "3",
-                        "5",
-                        "Sl",
-                        "Sw"
+                        "Gl",
+                        "GlG"
                     ],
                     "dish_type": "Tellergericht Vegan"
                 }
             ]
         },
         {
-            "date": "2020-09-16",
+            "date": "2020-10-07",
             "dishes": [
                 {
-                    "name": "Nürnberger Würstchen mit Kartoffelbrei und Sauerkraut",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "3",
-                        "8",
-                        "Mi",
-                        "R",
-                        "S"
-                    ],
-                    "dish_type": "Tellergericht Grill"
-                },
-                {
-                    "name": "Asiatische Reis-Gemüsepfanne",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "Kn",
-                        "Sf",
-                        "Sl",
-                        "So"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-17",
-            "dishes": [
-                {
-                    "name": "Fleischpflanzerl mit Rahmsauce, Kartoffelbrei, Erbsen",
+                    "name": "Knöpflepfanne mit Gemüse und Pilzen",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -212,18 +85,122 @@
                     "ingredients": [
                         "Ei",
                         "Gl",
+                        "GlD",
+                        "GlW",
+                        "Sl"
+                    ],
+                    "dish_type": "Tellergericht Veggie"
+                },
+                {
+                    "name": "Schweinesteak mit Schinken und Käse überbacken , Röstkartoffeln und Cordialgemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "3",
+                        "8",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S",
+                        "Sl"
+                    ],
+                    "dish_type": "Tellergericht Fleisch"
+                }
+            ]
+        },
+        {
+            "date": "2020-10-08",
+            "dishes": [
+                {
+                    "name": "Pasta mit Gemüsebolognese",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Tellergericht Pasta"
+                },
+                {
+                    "name": "Käsekrainer mit Bratensauce, Kartoffelbrei und Kümmelkraut",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "5",
+                        "8",
+                        "99",
+                        "Gl",
                         "GlG",
                         "GlW",
                         "Kn",
                         "Mi",
                         "R",
                         "S",
-                        "Sf"
+                        "Sf",
+                        "Sw"
                     ],
                     "dish_type": "Tellergericht Grill"
-                },
+                }
+            ]
+        },
+        {
+            "date": "2020-10-09",
+            "dishes": [
                 {
-                    "name": "Couscous mit Pilzen, Tomaten und Spinat",
+                    "name": "Gemüsecurry mit roten Linsen, Spinat und Kokosmilch",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -242,20 +219,16 @@
                         }
                     },
                     "ingredients": [
+                        "2",
                         "Gl",
                         "GlW",
                         "Kn",
                         "So"
                     ],
-                    "dish_type": "Tellergericht Vegan"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-18",
-            "dishes": [
+                    "dish_type": "Tellergericht Wok"
+                },
                 {
-                    "name": "Rindergeschnetzeltes (GQB) mit grünem Pfeffer, Reis und Mischgemüse",
+                    "name": "Truthahnschnitzel mit Tomate und Mozzarella überbacken, dazu Reis und mediterranes Gemüse",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -274,14 +247,10 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlG",
-                        "GlW",
                         "Kn",
-                        "Mi",
-                        "R"
+                        "Mi"
                     ],
-                    "dish_type": "Tellergericht Grill"
+                    "dish_type": "Tellergericht Fleisch"
                 }
             ]
         }

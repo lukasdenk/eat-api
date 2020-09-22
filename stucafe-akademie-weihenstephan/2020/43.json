@@ -1,12 +1,66 @@
 {
-    "number": 38,
+    "number": 43,
     "year": 2020,
     "days": [
         {
-            "date": "2020-09-14",
+            "date": "2020-10-19",
             "dishes": [
                 {
-                    "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais",
+                    "name": "Balinesisches Kokoshähnchen",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.9,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": 2.6,
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": 3.1,
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn"
+                    ],
+                    "dish_type": "Tagesgericht 3"
+                },
+                {
+                    "name": "Kartoffelgartin a la Caspar mit Erbsen-Minz-Püree und Ofenkürbis",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Aktionsessen 4"
+                }
+            ]
+        },
+        {
+            "date": "2020-10-20",
+            "dishes": [
+                {
+                    "name": "Veganes Shakshuka a la Caspar mit Bratkartoffeln und Hummus",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -27,10 +81,10 @@
                     "ingredients": [
                         "Kn"
                     ],
-                    "dish_type": "Tellergericht Vegan"
+                    "dish_type": "Aktionsessen 4"
                 },
                 {
-                    "name": "Cordon bleu vom Schwein (mit Formfleisch-Kochschinken) mit Countrykartoffel, Erbsen und Karotten",
+                    "name": "Schweineschnitzel Wiener Art",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -49,9 +103,6 @@
                         }
                     },
                     "ingredients": [
-                        "2",
-                        "3",
-                        "8",
                         "Gl",
                         "GlG",
                         "GlW",
@@ -61,15 +112,15 @@
                         "Sf",
                         "Sl"
                     ],
-                    "dish_type": "Tellergericht Fleisch"
+                    "dish_type": "Aktionsessen 6"
                 }
             ]
         },
         {
-            "date": "2020-09-15",
+            "date": "2020-10-21",
             "dishes": [
                 {
-                    "name": "Nasi Goreng (mit Hähnchenfleisch)",
+                    "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -87,18 +138,11 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [
-                        "2",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Sf",
-                        "So"
-                    ],
-                    "dish_type": "Tellergericht Wok"
+                    "ingredients": [],
+                    "dish_type": "Aktionsessen 3"
                 },
                 {
-                    "name": "Linseneintopf mit Gemüse",
+                    "name": "Ofenkartoffeln a la Caspar mit grüner Sauce und Ei",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -117,48 +161,50 @@
                         }
                     },
                     "ingredients": [
-                        "3",
                         "5",
-                        "Sl",
+                        "9",
+                        "Ei",
+                        "Gl",
+                        "GlR",
+                        "Mi",
+                        "Sf",
                         "Sw"
                     ],
-                    "dish_type": "Tellergericht Vegan"
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
         {
-            "date": "2020-09-16",
+            "date": "2020-10-22",
             "dishes": [
                 {
-                    "name": "Nürnberger Würstchen mit Kartoffelbrei und Sauerkraut",
+                    "name": "Fränkische Bratwurst",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
+                            "base_price": 1.9,
                             "price_per_unit": null,
                             "unit": null
                         },
                         "staff": {
-                            "base_price": "N/A",
+                            "base_price": 2.6,
                             "price_per_unit": null,
                             "unit": null
                         },
                         "guests": {
-                            "base_price": "N/A",
+                            "base_price": 3.1,
                             "price_per_unit": null,
                             "unit": null
                         }
                     },
                     "ingredients": [
-                        "3",
                         "8",
-                        "Mi",
                         "R",
                         "S"
                     ],
-                    "dish_type": "Tellergericht Grill"
+                    "dish_type": "Tagesgericht 3"
                 },
                 {
-                    "name": "Asiatische Reis-Gemüsepfanne",
+                    "name": "Kartoffelpflanzerl mit gebratenen Pilzen und Zwiebeln",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -178,84 +224,23 @@
                     },
                     "ingredients": [
                         "2",
-                        "Kn",
-                        "Sf",
-                        "Sl",
-                        "So"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                }
-            ]
-        },
-        {
-            "date": "2020-09-17",
-            "dishes": [
-                {
-                    "name": "Fleischpflanzerl mit Rahmsauce, Kartoffelbrei, Erbsen",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
+                        "3",
                         "Ei",
                         "Gl",
                         "GlG",
                         "GlW",
-                        "Kn",
                         "Mi",
-                        "R",
-                        "S",
-                        "Sf"
-                    ],
-                    "dish_type": "Tellergericht Grill"
-                },
-                {
-                    "name": "Couscous mit Pilzen, Tomaten und Spinat",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
                         "So"
                     ],
-                    "dish_type": "Tellergericht Vegan"
+                    "dish_type": "Aktionsessen 4"
                 }
             ]
         },
         {
-            "date": "2020-09-18",
+            "date": "2020-10-23",
             "dishes": [
                 {
-                    "name": "Rindergeschnetzeltes (GQB) mit grünem Pfeffer, Reis und Mischgemüse",
+                    "name": "Veganer Gulaschtopf mit Kartoffeln, Wurzelgemüse und Sojacreme , dazu Baguette",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -276,12 +261,41 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
+                        "GlR",
                         "GlW",
-                        "Kn",
-                        "Mi",
-                        "R"
+                        "Sl",
+                        "So"
                     ],
-                    "dish_type": "Tellergericht Grill"
+                    "dish_type": "Aktionsessen 4"
+                },
+                {
+                    "name": "Forelle Müllerin Art mit Mandelbutter",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sc",
+                        "ScM"
+                    ],
+                    "dish_type": "Aktionsessen 9"
                 }
             ]
         }

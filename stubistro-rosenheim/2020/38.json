@@ -3,348 +3,119 @@
     "year": 2020,
     "days": [
         {
-            "date": "2020-09-14",
-            "dishes": [
-                {
-                    "name": "Pasta mit Broccoli-Sahne-Sauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ],
-                    "dish_type": "Tellergericht Pasta"
-                },
-                {
-                    "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "Kn"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                },
-                {
-                    "name": "Klassische Rinderroulade mit Senf-Gemüse-Sauce , Blaukraut und Salzkartoffeln",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "11",
-                        "2",
-                        "3",
-                        "5",
-                        "99",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "R",
-                        "S",
-                        "Sf",
-                        "Sl",
-                        "Sw"
-                    ],
-                    "dish_type": "Tellergericht Fleisch"
-                },
-                {
-                    "name": "Schollenfilet (MSC) paniert mit Remouladensauce und Petersilienkartoffeln, Schweineschnitzel Wiener Art mit Remouladensauce und Röstkartoffeln",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "11",
-                        "3",
-                        "6",
-                        "9",
-                        "Ei",
-                        "Fi",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "S",
-                        "Sf",
-                        "Sl"
-                    ],
-                    "dish_type": "Tellergericht Fisch"
-                },
-                {
-                    "name": "Milchreis mit Kirschsauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "Mi"
-                    ],
-                    "dish_type": "Tellergericht Süßspeise"
-                },
-                {
-                    "name": "Frischer Salatteller \"Mexiko\" mit Mais, Paprika und Hähnchenbrust, dazu Baguette",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlG",
-                        "GlR",
-                        "GlW"
-                    ],
-                    "dish_type": "Salatteller"
-                }
-            ]
-        },
-        {
             "date": "2020-09-15",
             "dishes": [
                 {
-                    "name": "Pasta Pomodoro mit Tomaten und Basilikum",
+                    "name": "Currywurst mit Honig-Ingwer-Ketchup",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
                         },
                         "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
                         },
                         "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
                         }
                     },
                     "ingredients": [
                         "2",
                         "3",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ],
-                    "dish_type": "Tellergericht Pasta"
-                },
-                {
-                    "name": "Nasi Goreng (mit Hähnchenfleisch)",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Sf",
-                        "So"
-                    ],
-                    "dish_type": "Tellergericht Wok"
-                },
-                {
-                    "name": "Linseneintopf mit Gemüse",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "3",
-                        "5",
-                        "Sl",
-                        "Sw"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                },
-                {
-                    "name": "Cordon bleu vom Schwein (mit Formfleisch-Kochschinken)mit gebackenen Kartoffelspiralen und Gemüse, Schweineschnitzel Wiener Art mit gebackenen Kartoffelspiralen und Gemüse",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "3",
-                        "8",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "S",
-                        "Sf",
-                        "Sl"
-                    ],
-                    "dish_type": "Tellergericht Fleisch"
-                },
-                {
-                    "name": "Linseneintopf mit ein Paar Wiener",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "3",
-                        "5",
                         "8",
                         "R",
                         "S",
-                        "Sl",
-                        "Sw"
+                        "Sf"
                     ],
-                    "dish_type": "Tellergericht Fleisch"
+                    "dish_type": "Self-Service"
                 },
                 {
-                    "name": "Frischer Salatteller mit Tabouleh und Hummus, dazu Baguette",
+                    "name": "Gnocchi mit Tomatensauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Maultaschensuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "R",
+                        "S",
+                        "Sl"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Buntes Gemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Countrykartoffeln",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -364,13 +135,33 @@
                     },
                     "ingredients": [
                         "Gl",
-                        "GlG",
-                        "GlR",
-                        "GlW",
-                        "Kn",
-                        "So"
+                        "GlW"
                     ],
-                    "dish_type": "Salatteller"
+                    "dish_type": ""
+                },
+                {
+                    "name": "Bayrisch Creme mit Pfirsich",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Mi"
+                    ],
+                    "dish_type": "Dessert"
                 }
             ]
         },
@@ -378,67 +169,37 @@
             "date": "2020-09-16",
             "dishes": [
                 {
-                    "name": "Nürnberger Würstchen mit Kartoffelbrei und Sauerkraut, Fleischpflanzerl mit Kartoffelbrei und Sauerkraut, Fränkische Bratwurst mit Sauerkraut und Kartoffelbrei",
+                    "name": "Köttbullar mit Rahmsauce",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
                         },
                         "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
                         },
                         "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
                         }
                     },
                     "ingredients": [
-                        "3",
-                        "8",
                         "Ei",
                         "Gl",
                         "GlW",
+                        "Kn",
                         "Mi",
                         "R",
-                        "S",
-                        "Sf"
+                        "S"
                     ],
-                    "dish_type": "Tellergericht Grill"
+                    "dish_type": "Self-Service"
                 },
                 {
-                    "name": "Asiatische Reis-Gemüsepfanne",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "Kn",
-                        "Sf",
-                        "Sl",
-                        "So"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                },
-                {
-                    "name": "Kartoffel-Zucchini-Auflauf mit Paprikasauce",
+                    "name": "Rahmchampignons mit Semmelknödel",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -458,17 +219,16 @@
                     },
                     "ingredients": [
                         "1",
-                        "2",
                         "Ei",
                         "Gl",
                         "GlW",
                         "Kn",
                         "Mi"
                     ],
-                    "dish_type": "Tellergericht Veggie"
+                    "dish_type": ""
                 },
                 {
-                    "name": "Münchner Gulasch vom Rind (GQB) mit Semmelknödel",
+                    "name": "Gemüsecremesuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -487,19 +247,13 @@
                         }
                     },
                     "ingredients": [
-                        "1",
-                        "Ei",
                         "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "R"
+                        "GlW"
                     ],
-                    "dish_type": "Tellergericht Fleisch"
+                    "dish_type": ""
                 },
                 {
-                    "name": "Frischer Salatteller mit Hackbällchen, Parmesan und Croutons, dazu Baguette",
+                    "name": "Erbsengemüse",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -518,16 +272,55 @@
                         }
                     },
                     "ingredients": [
-                        "2",
-                        "Ei",
-                        "Gl",
-                        "GlG",
-                        "GlR",
-                        "GlW",
-                        "Mi",
-                        "So"
+                        "Sl"
                     ],
-                    "dish_type": "Salatteller"
+                    "dish_type": ""
+                },
+                {
+                    "name": "Kartoffelpüree",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 }
             ]
         },
@@ -535,36 +328,33 @@
             "date": "2020-09-17",
             "dishes": [
                 {
-                    "name": "Schweinerückensteak mit grüner Pfeffersauce , Kartoffelgratin und Romanesco",
+                    "name": "Putensteak mit Currysauce",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
                         },
                         "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
                         },
                         "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
                         }
                     },
                     "ingredients": [
                         "Gl",
-                        "GlG",
                         "GlW",
-                        "Kn",
-                        "Mi",
-                        "S"
+                        "Sf"
                     ],
-                    "dish_type": "Tellergericht Grill"
+                    "dish_type": "Self-Service"
                 },
                 {
-                    "name": "Couscous mit Pilzen, Tomaten und Mangold",
+                    "name": "Pasta mit Sojabolognese",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -585,46 +375,57 @@
                     "ingredients": [
                         "Gl",
                         "GlW",
-                        "Kn",
-                        "So"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                },
-                {
-                    "name": "Schwarzwurzel-Knusperecke mit Kräuterdip",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Mi",
-                        "Sc",
-                        "Se",
-                        "Sf",
                         "Sl",
                         "So"
                     ],
-                    "dish_type": "Tellergericht Veggie"
+                    "dish_type": ""
                 },
                 {
-                    "name": "Putengeschnetzeltes Züricher Art mit Knöpfle und Erbsen-Karotten-Gemüse",
+                    "name": "Tagessuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagesgemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Pasta",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -643,22 +444,13 @@
                         }
                     },
                     "ingredients": [
-                        "5",
-                        "99",
-                        "Ei",
                         "Gl",
-                        "GlD",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "Sl",
-                        "Sw"
+                        "GlW"
                     ],
-                    "dish_type": "Tellergericht Fleisch"
+                    "dish_type": ""
                 },
                 {
-                    "name": "Italienischer Nudelsalat mit Baguette",
+                    "name": "Aktionsdessert",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -676,18 +468,8 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [
-                        "5",
-                        "Gl",
-                        "GlG",
-                        "GlR",
-                        "GlW",
-                        "Mi",
-                        "Sc",
-                        "ScM",
-                        "Sw"
-                    ],
-                    "dish_type": "Salatteller"
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 }
             ]
         },
@@ -695,36 +477,38 @@
             "date": "2020-09-18",
             "dishes": [
                 {
-                    "name": "Gebratenes Zanderfilet mit Mandelbutter, Petersilienkartoffeln und Ofengemüse",
+                    "name": "Wokpfanne mit Shrimps und Gemüse",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
                         },
                         "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
                         },
                         "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 1.5,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
                         }
                     },
                     "ingredients": [
-                        "Fi",
+                        "1",
+                        "2",
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "Sc",
-                        "ScM"
+                        "Kr",
+                        "Se",
+                        "Sl",
+                        "So"
                     ],
-                    "dish_type": "Tellergericht Grill"
+                    "dish_type": "Self-Service"
                 },
                 {
-                    "name": "Blumenkohl-Kartoffel-Curry",
+                    "name": "Pfannkuchen mit Kirschfüllung dazu Vanillesauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -743,43 +527,15 @@
                         }
                     },
                     "ingredients": [
-                        "Kn",
-                        "Sl"
-                    ],
-                    "dish_type": "Tellergericht Vegan"
-                },
-                {
-                    "name": "Südtiroler Schlutzkrapfen auf Schwarzwurzeln mit Grana Padano",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
                         "Ei",
                         "Gl",
-                        "GlR",
                         "GlW",
-                        "Kn",
                         "Mi"
                     ],
-                    "dish_type": "Tellergericht Veggie"
+                    "dish_type": ""
                 },
                 {
-                    "name": "Krautwickerl mit Speck-Zwiebel-Sauce mit Kartoffelbrei",
+                    "name": "Tagessuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -797,20 +553,11 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [
-                        "2",
-                        "3",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "S"
-                    ],
-                    "dish_type": "Tellergericht Fleisch"
+                    "ingredients": [],
+                    "dish_type": ""
                 },
                 {
-                    "name": "Frischer Salatteller mit Falafel und Tsatziki, dazu Baguette",
+                    "name": "Gulaschsuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -830,13 +577,55 @@
                     },
                     "ingredients": [
                         "Gl",
-                        "GlG",
-                        "GlR",
                         "GlW",
                         "Kn",
-                        "Mi"
+                        "R"
                     ],
-                    "dish_type": "Salatteller"
+                    "dish_type": ""
+                },
+                {
+                    "name": "Tagesgemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 }
             ]
         }
