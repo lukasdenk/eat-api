@@ -9,17 +9,17 @@
                     "name": "Klassische Rinderroulade mit Senf-Gemüse-Sauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -65,79 +65,6 @@
                         "Gl",
                         "GlW",
                         "Kn",
-                        "Mi"
-                    ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Mexikanischer Reistopf mit Bohnen, Paprika und Mais",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Kn"
-                    ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Kartoffelröstis mit Kräutersahnequark",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Kn",
-                        "Mi"
-                    ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Kartoffelbrei",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
                         "Mi"
                     ],
                     "dish_type": ""
@@ -209,6 +136,28 @@
                     },
                     "ingredients": [],
                     "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 }
             ]
         },
@@ -216,28 +165,30 @@
             "date": "2020-10-27",
             "dishes": [
                 {
-                    "name": "Cordon bleu vom Schwein (mit Formfleisch-Kochschinken)",
+                    "name": "Cordon bleu vom Schwein",
                     "prices": {
                         "students": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
                     },
                     "ingredients": [
+                        "1",
                         "2",
                         "3",
                         "8",
+                        "Ei",
                         "Gl",
                         "GlG",
                         "GlW",
@@ -248,60 +199,6 @@
                         "Sl"
                     ],
                     "dish_type": "Self-Service"
-                },
-                {
-                    "name": "Pasta Pomodoro mit Tomaten und Basilikum",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "3",
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Linseneintopf mit Gemüse",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "3",
-                        "5",
-                        "Sl",
-                        "Sw"
-                    ],
-                    "dish_type": ""
                 },
                 {
                     "name": "Pikanter Reisauflauf mit Gemüse, Käse und Paprikasauce",
@@ -335,7 +232,7 @@
                     "dish_type": ""
                 },
                 {
-                    "name": "Countrykartoffeln",
+                    "name": "Kartoffelsalat",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -354,9 +251,11 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
+                        "1",
+                        "3",
+                        "5",
+                        "Sf",
+                        "Sw"
                     ],
                     "dish_type": ""
                 },
@@ -403,6 +302,28 @@
                     },
                     "ingredients": [],
                     "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 }
             ]
         },
@@ -413,17 +334,17 @@
                     "name": "Münchner Gulasch vom Rind (GQB)",
                     "prices": {
                         "students": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -437,32 +358,6 @@
                         "R"
                     ],
                     "dish_type": "Self-Service"
-                },
-                {
-                    "name": "Gnocchi mit Maronen und Kürbis",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "So"
-                    ],
-                    "dish_type": ""
                 },
                 {
                     "name": "Asiatische Reis-Gemüsepfanne",
@@ -489,36 +384,6 @@
                         "Sf",
                         "Sl",
                         "So"
-                    ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Kartoffel-Zucchini-Auflauf mit Paprikasauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "2",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
                     ],
                     "dish_type": ""
                 },
@@ -592,6 +457,28 @@
                     },
                     "ingredients": [],
                     "dish_type": ""
+                },
+                {
+                    "name": "Aktionsdessert",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": "Dessert"
                 }
             ]
         },
@@ -602,17 +489,17 @@
                     "name": "Schweinerückensteak mit grüner Pfeffersauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.5,
+                            "base_price": 1.0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -652,84 +539,6 @@
                         "Kn",
                         "Mi"
                     ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Couscous mit Pilzen, Tomaten und Mangold",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "So"
-                    ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Hausgemachte Gemüsequiche mit Schnittlauchdip",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "2",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Mi"
-                    ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Röstkartoffeln",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
                     "dish_type": ""
                 },
                 {
@@ -801,74 +610,9 @@
                     },
                     "ingredients": [],
                     "dish_type": ""
-                }
-            ]
-        },
-        {
-            "date": "2020-10-30",
-            "dishes": [
-                {
-                    "name": "Gebratenes Zanderfilet mit Mandelbutter",
-                    "prices": {
-                        "students": {
-                            "base_price": 1.5,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 1.5,
-                            "price_per_unit": 0.9,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 1.5,
-                            "price_per_unit": 1.05,
-                            "unit": "100g"
-                        }
-                    },
-                    "ingredients": [
-                        "Fi",
-                        "Gl",
-                        "GlW",
-                        "Mi",
-                        "Sc",
-                        "ScM"
-                    ],
-                    "dish_type": "Self-Service"
                 },
                 {
-                    "name": "Süßer Kürbisstrudel mit Vanillesauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "3",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Mi",
-                        "Sc",
-                        "ScH",
-                        "So"
-                    ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Buntes Pfannengemüse",
+                    "name": "Aktionsdessert",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -887,6 +631,134 @@
                         }
                     },
                     "ingredients": [],
+                    "dish_type": "Dessert"
+                }
+            ]
+        },
+        {
+            "date": "2020-10-30",
+            "dishes": [
+                {
+                    "name": "Gebratenes Zanderfilet mit Mandelbutter",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sc",
+                        "ScM"
+                    ],
+                    "dish_type": "Self-Service"
+                },
+                {
+                    "name": "Salzkartoffeln",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Apfelstrudel mit Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Basmatireis",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Gruseldessert mit Augen (Litschi gefüllt mit Sauerkirschen auf Vanillecreme)",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Mi"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -912,28 +784,6 @@
                         "Kn",
                         "Mi"
                     ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Salzkartoffeln",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
                     "dish_type": ""
                 },
                 {
@@ -981,7 +831,7 @@
                     "dish_type": ""
                 },
                 {
-                    "name": "Gruseldessert mit Augen (Litschi gefüllt mit Sauerkirschen auf Vanillecreme)",
+                    "name": "Gruseldessert mit Augen (Litschi gefüllt mit Sauerkirschen auf Vanillecreme) (2)",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
