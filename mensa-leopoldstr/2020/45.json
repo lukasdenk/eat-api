@@ -460,28 +460,6 @@
                     "dish_type": ""
                 },
                 {
-                    "name": "Orange-Bomb-Detox (Eintopf mit Kürbis, Karotte, Kartoffel und Kokos)",
-                    "prices": {
-                        "students": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.85,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.95,
-                            "unit": "100g"
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": "Vegetarisch"
-                },
-                {
                     "name": "Panierte Sellerieschnitzel mit Farmersalat und Sojajoghurt",
                     "prices": {
                         "students": {
@@ -510,6 +488,28 @@
                         "So",
                         "Sw"
                     ],
+                    "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Orange-Bomb-Detox (Eintopf mit Kürbis, Karotte, Kartoffel und Kokos)",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [],
                     "dish_type": "Vegetarisch"
                 },
                 {

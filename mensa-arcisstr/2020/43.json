@@ -418,7 +418,7 @@
                     "dish_type": "Pizza"
                 },
                 {
-                    "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
+                    "name": "Hähnchenspieß vom Grill mit Pommes und Gemüse",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -436,7 +436,10 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Kn",
+                        "Mi"
+                    ],
                     "dish_type": "Grill"
                 },
                 {
@@ -467,7 +470,35 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Blumenkohlcremesuppe",
+                    "name": "Pfannkuchensuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Bulgur mit Zucchini und Tomaten",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -488,12 +519,12 @@
                     "ingredients": [
                         "Gl",
                         "GlW",
-                        "Mi"
+                        "Kn"
                     ],
                     "dish_type": ""
                 },
                 {
-                    "name": "Ofenkartoffeln a la Caspar mit grüner Sauce und Ei",
+                    "name": "Ofenkartoffeln a la Caspar mit grüner Sauce und Fenchel Tomatengemüse",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -522,6 +553,35 @@
                         "Sw"
                     ],
                     "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Nudelauflauf mit Gemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 }
             ]
         },
@@ -555,7 +615,7 @@
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Pizza des Tages",
+                    "name": "Pizza Funghi mit Champignons",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -573,7 +633,13 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "So"
+                    ],
                     "dish_type": "Pizza"
                 },
                 {
@@ -603,6 +669,33 @@
                     "dish_type": "Grill"
                 },
                 {
+                    "name": "Bunte Nudelpfanne mit Geflügel",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Sf",
+                        "Sl"
+                    ],
+                    "dish_type": ""
+                },
+                {
                     "name": "Blumenkohl-Kartoffel-Curry",
                     "prices": {
                         "students": {
@@ -628,7 +721,36 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Kartoffelpflanzerl mit gebratenen Pilzen und Zwiebeln",
+                    "name": "Linsensuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "3",
+                        "5",
+                        "Gl",
+                        "GlW",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Kartoffelpflanzerl mit gebratenen Pilzen und Zwiebeln mit Grüner-Soße",
                     "prices": {
                         "students": {
                             "base_price": "N/A",

@@ -548,34 +548,6 @@
                     "dish_type": ""
                 },
                 {
-                    "name": "Bio-Linsen mit Bio-Spätzle",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Sl",
-                        "So"
-                    ],
-                    "dish_type": "Vegetarisch"
-                },
-                {
                     "name": "Panierte Sellerieschnitzel mit Farmersalat und Sojajoghurt",
                     "prices": {
                         "students": {
@@ -603,6 +575,34 @@
                         "Sl",
                         "So",
                         "Sw"
+                    ],
+                    "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Bio-Linsen mit Bio-Spätzle",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Sl",
+                        "So"
                     ],
                     "dish_type": "Vegetarisch"
                 },
