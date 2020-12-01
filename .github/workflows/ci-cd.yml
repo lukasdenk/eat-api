@@ -19,7 +19,8 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run: |
-        sudo apt-get install tree poppler-utils
+        sudo apt update -y
+        sudo apt install -y tree poppler-utils
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Test with pytest
