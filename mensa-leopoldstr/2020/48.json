@@ -6,7 +6,7 @@
             "date": "2020-11-23",
             "dishes": [
                 {
-                    "name": "Bio-Pasta mit Broccoli-Sahne-Sauce",
+                    "name": "Bio-Pasta mit Bio-Spinat-Sahne-Sauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -80,7 +80,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Blumenkohlcremesuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -98,7 +98,11 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -131,6 +135,31 @@
                         "Sf"
                     ],
                     "dish_type": "Fleisch"
+                },
+                {
+                    "name": "Putensteak mit Kräuterbutter",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 }
             ]
         },
@@ -138,7 +167,7 @@
             "date": "2020-11-24",
             "dishes": [
                 {
-                    "name": "Roast beef mit Schmorzwiebelsauce",
+                    "name": "Rinderlendensteak mit Schmorzwiebelsauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -219,7 +248,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Leberknödelsuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -237,7 +266,14 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "R",
+                        "S",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -352,7 +388,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Tomaten-Kokos-Suppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -370,7 +406,12 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "2",
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -480,7 +521,7 @@
                     "dish_type": ""
                 },
                 {
-                    "name": "Frische Rahmschwammerl",
+                    "name": "Rahmschwammerl in Kräutersahne",
                     "prices": {
                         "students": {
                             "base_price": 0.0,
