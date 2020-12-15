@@ -1,49 +1,22 @@
 [
     {
-        "canteen_id": "mensa-lothstr",
+        "canteen_id": "mensa-leopoldstr",
         "dishes": [
-            {
-                "name": "Kräuterpolenta mit Tomatenragout",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 1.9,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-12-15"
-            },
             {
                 "name": "Gnocchi mit Schafskäse und frischem Basilikum",
                 "prices": {
                     "students": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 2.95,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 3.45,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -56,7 +29,85 @@
                     "Mi",
                     "Sl"
                 ],
+                "dish_type": "Pasta",
+                "date": "2020-12-15"
+            },
+            {
+                "name": "Kräuterpolenta mit Tomatenragout",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn"
+                ],
+                "dish_type": "Vegan, Eintopf, Suppe",
+                "date": "2020-12-15"
+            },
+            {
+                "name": "Tagessuppe",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
                 "dish_type": "Tagesgericht",
+                "date": "2020-12-15"
+            },
+            {
+                "name": "Veganes Pilzgratin mit Sojasahne",
+                "prices": {
+                    "students": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
+                    "staff": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.85,
+                        "unit": "100g"
+                    },
+                    "guests": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.95,
+                        "unit": "100g"
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "So"
+                ],
+                "dish_type": "Vegetarisch",
                 "date": "2020-12-15"
             },
             {
@@ -89,24 +140,53 @@
                     "Sl",
                     "Sw"
                 ],
-                "dish_type": "Aktionsessen",
+                "dish_type": "Fleisch",
                 "date": "2020-12-15"
+            },
+            {
+                "name": "Pasta mit Wildschweinragout und Kastanien",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "5",
+                    "99",
+                    "Gl",
+                    "GlW",
+                    "Sw"
+                ],
+                "dish_type": "Pasta",
+                "date": "2020-12-16"
             },
             {
                 "name": "Pikantes Kartoffelchili",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 1.9,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -114,61 +194,67 @@
                 "ingredients": [
                     "Kn"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Vegan, Eintopf, Suppe",
                 "date": "2020-12-16"
             },
             {
-                "name": "Pasta mit Putenragout",
+                "name": "Kaspressknödel mit Bouillongemüse",
                 "prices": {
                     "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.85,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.95,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
+                    "2",
+                    "Ei",
                     "Gl",
                     "GlW",
-                    "Kn",
-                    "Sl"
+                    "Mi"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Vegetarisch",
                 "date": "2020-12-16"
             },
             {
-                "name": "Bunter Gemüseeeintopf",
+                "name": "Pilzlasagne mit Austernpilzen und Champignons",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": 1.9,
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.85,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.95,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
-                    "Sl"
+                    "1",
+                    "2",
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Mi"
                 ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-12-17"
+                "dish_type": "Vegetarisch",
+                "date": "2020-12-16"
             },
             {
                 "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
@@ -190,14 +276,89 @@
                     }
                 },
                 "ingredients": [
-                    "3",
                     "6",
                     "Gl",
                     "GlD",
                     "Kn",
                     "Mi"
                 ],
-                "dish_type": "Aktionsessen",
+                "dish_type": "Pasta",
+                "date": "2020-12-17"
+            },
+            {
+                "name": "Grüne Bohnen mit Basmatireis in Kokos-Zitronensauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Sf"
+                ],
+                "dish_type": "Wok",
+                "date": "2020-12-17"
+            },
+            {
+                "name": "Bunter Gemüseeeintopf",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Sl"
+                ],
+                "dish_type": "Vegan, Eintopf, Suppe",
+                "date": "2020-12-17"
+            },
+            {
+                "name": "Tagessuppe",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [],
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-17"
             },
             {
@@ -230,79 +391,24 @@
                     "Sl",
                     "Sw"
                 ],
-                "dish_type": "Aktionsessen",
+                "dish_type": "Fleisch",
                 "date": "2020-12-17"
             },
             {
-                "name": "Zartweizen mit Gemüse",
+                "name": "Bio-Pasta mit Bio-Soja-Bolognese (dazu Hartkäse)",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 1.9,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-12-18"
-            },
-            {
-                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
-                ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-12-18"
-            },
-            {
-                "name": "Bulgur mit Karotten, Fenchel und Sellerie",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": 1.9,
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -311,26 +417,87 @@
                     "Gl",
                     "GlW",
                     "Kn",
-                    "Sl"
+                    "Mi",
+                    "So"
                 ],
-                "dish_type": "Tagesgericht",
-                "date": "2020-12-21"
+                "dish_type": "Pasta",
+                "date": "2020-12-18"
+            },
+            {
+                "name": "Gekräutertes Pilzragout (Champignons, Egerlingen und Austernpilzen) an Röstiecken",
+                "prices": {
+                    "students": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
+                    "staff": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.85,
+                        "unit": "100g"
+                    },
+                    "guests": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.95,
+                        "unit": "100g"
+                    }
+                },
+                "ingredients": [
+                    "5",
+                    "99",
+                    "So",
+                    "Sw"
+                ],
+                "dish_type": "Vegetarisch",
+                "date": "2020-12-18"
+            },
+            {
+                "name": "Lebkuchenstrudel mit Vanillesauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "3",
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Mi",
+                    "Sc",
+                    "ScM",
+                    "So"
+                ],
+                "dish_type": "Süßspeise",
+                "date": "2020-12-18"
             },
             {
                 "name": "Gnocchi mit Tomatensauce",
                 "prices": {
                     "students": {
-                        "base_price": 1.9,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 2.6,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 3.1,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -341,7 +508,65 @@
                     "Kn",
                     "So"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Pasta",
+                "date": "2020-12-21"
+            },
+            {
+                "name": "Bulgur mit Karotten, Fenchel und Sellerie",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Sl"
+                ],
+                "dish_type": "Vegan, Eintopf, Suppe",
+                "date": "2020-12-21"
+            },
+            {
+                "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
+                "prices": {
+                    "students": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
+                    "staff": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.85,
+                        "unit": "100g"
+                    },
+                    "guests": {
+                        "base_price": 0.0,
+                        "price_per_unit": 0.95,
+                        "unit": "100g"
+                    }
+                },
+                "ingredients": [
+                    "Ei",
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Mi",
+                    "Sl"
+                ],
+                "dish_type": "Vegetarisch",
                 "date": "2020-12-21"
             },
             {
@@ -373,24 +598,51 @@
                     "Mi",
                     "S"
                 ],
-                "dish_type": "Aktionsessen",
+                "dish_type": "Fleisch",
                 "date": "2020-12-21"
+            },
+            {
+                "name": "Bio-Pasta Napoli (Bio-Tomaten-Basilikumsauce)",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn"
+                ],
+                "dish_type": "Pasta",
+                "date": "2020-12-22"
             },
             {
                 "name": "Mexikanisches Soja-Chili",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 1.9,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -399,26 +651,26 @@
                     "Kn",
                     "So"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Vegan, Eintopf, Suppe",
                 "date": "2020-12-22"
             },
             {
                 "name": "Kartoffeltaschen mit Kräuterfrischkäse",
                 "prices": {
                     "students": {
-                        "base_price": 2.4,
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": 2.95,
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.85,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": 3.45,
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.95,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -427,24 +679,24 @@
                     "Kn",
                     "Mi"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Vegetarisch",
                 "date": "2020-12-22"
             },
             {
                 "name": "Schweinesteak Strindberg (mit Senf-Zwiebelschmelze)",
                 "prices": {
                     "students": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 2.95,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 3.45,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -458,24 +710,52 @@
                     "Sf",
                     "Sl"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Fleisch",
                 "date": "2020-12-22"
+            },
+            {
+                "name": "Pasta mit Champignonrahmsauce",
+                "prices": {
+                    "students": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn",
+                    "Mi"
+                ],
+                "dish_type": "Pasta",
+                "date": "2020-12-23"
             },
             {
                 "name": "Gemüsegulasch",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 1.9,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 2.4,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -483,24 +763,24 @@
                 "ingredients": [
                     "Kn"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Vegan, Eintopf, Suppe",
                 "date": "2020-12-23"
             },
             {
                 "name": "Fleischpflanzerl mit Rahmsauce",
                 "prices": {
                     "students": {
-                        "base_price": 1.9,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 2.6,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 3.1,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -516,24 +796,24 @@
                     "S",
                     "Sf"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Fleisch",
                 "date": "2020-12-23"
             },
             {
-                "name": "Pasta mit Champignonrahmsauce",
+                "name": "Apfelstrudel mit Vanillesauce",
                 "prices": {
                     "students": {
-                        "base_price": 1.9,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": 2.6,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": 3.1,
+                        "base_price": "N/A",
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -541,16 +821,39 @@
                 "ingredients": [
                     "Gl",
                     "GlW",
-                    "Kn",
                     "Mi"
                 ],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Süßspeise",
                 "date": "2020-12-23"
             }
         ]
     },
     {
+        "canteen_id": "stucafe-adalbertstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "mensa-weihenstephan",
+        "dishes": []
+    },
+    {
         "canteen_id": "stubistro-schellingstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stubistro-grosshadern",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stucafe-karlstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "mensa-martinsried",
+        "dishes": []
+    },
+    {
+        "canteen_id": "ipp-bistro",
         "dishes": []
     },
     {
@@ -1150,15 +1453,15 @@
         ]
     },
     {
-        "canteen_id": "stucafe-pasing",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stubistro-grosshadern",
-        "dishes": []
-    },
-    {
         "canteen_id": "stucafe-boltzmannstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stucafe-garching",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stubistro-goethestr",
         "dishes": []
     },
     {
@@ -2096,22 +2399,6 @@
                 "date": "2020-12-23"
             }
         ]
-    },
-    {
-        "canteen_id": "ipp-bistro",
-        "dishes": []
-    },
-    {
-        "canteen_id": "mensa-pasing",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stubistro-arcisstr",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stubistro-goethestr",
-        "dishes": []
     },
     {
         "canteen_id": "mensa-arcisstr",
@@ -3136,6 +3423,10 @@
                 "date": "2020-12-23"
             }
         ]
+    },
+    {
+        "canteen_id": "stucafe-pasing",
+        "dishes": []
     },
     {
         "canteen_id": "mensa-garching",
@@ -4242,27 +4533,50 @@
         ]
     },
     {
-        "canteen_id": "mensa-martinsried",
-        "dishes": []
-    },
-    {
-        "canteen_id": "mensa-leopoldstr",
+        "canteen_id": "mensa-lothstr",
         "dishes": [
             {
-                "name": "Gnocchi mit Schafskäse und frischem Basilikum",
+                "name": "Kräuterpolenta mit Tomatenragout",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
+                        "base_price": 1.0,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 1.9,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlW",
+                    "Kn"
+                ],
+                "dish_type": "Tagesgericht",
+                "date": "2020-12-15"
+            },
+            {
+                "name": "Gnocchi mit Schafskäse und frischem Basilikum",
+                "prices": {
+                    "students": {
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "staff": {
+                        "base_price": 2.95,
+                        "price_per_unit": null,
+                        "unit": null
+                    },
+                    "guests": {
+                        "base_price": 3.45,
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -4275,85 +4589,7 @@
                     "Mi",
                     "Sl"
                 ],
-                "dish_type": "Pasta",
-                "date": "2020-12-15"
-            },
-            {
-                "name": "Kräuterpolenta mit Tomatenragout",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-12-15"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
                 "dish_type": "Tagesgericht",
-                "date": "2020-12-15"
-            },
-            {
-                "name": "Veganes Pilzgratin mit Sojasahne",
-                "prices": {
-                    "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.85,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.95,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "So"
-                ],
-                "dish_type": "Vegetarisch",
                 "date": "2020-12-15"
             },
             {
@@ -4386,53 +4622,24 @@
                     "Sl",
                     "Sw"
                 ],
-                "dish_type": "Fleisch",
+                "dish_type": "Aktionsessen",
                 "date": "2020-12-15"
-            },
-            {
-                "name": "Pasta mit Wildschweinragout und Kastanien",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "5",
-                    "99",
-                    "Gl",
-                    "GlW",
-                    "Sw"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-12-16"
             },
             {
                 "name": "Pikantes Kartoffelchili",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
+                        "base_price": 1.0,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 1.9,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 2.4,
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -4440,67 +4647,61 @@
                 "ingredients": [
                     "Kn"
                 ],
-                "dish_type": "Vegan, Eintopf, Suppe",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-16"
             },
             {
-                "name": "Kaspressknödel mit Bouillongemüse",
+                "name": "Pasta mit Putenragout",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.85,
-                        "unit": "100g"
+                        "base_price": 2.95,
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.95,
-                        "unit": "100g"
+                        "base_price": 3.45,
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
-                    "2",
-                    "Ei",
                     "Gl",
                     "GlW",
-                    "Mi"
+                    "Kn",
+                    "Sl"
                 ],
-                "dish_type": "Vegetarisch",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-16"
             },
             {
-                "name": "Pilzlasagne mit Austernpilzen und Champignons",
+                "name": "Bunter Gemüseeeintopf",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": 1.0,
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.85,
-                        "unit": "100g"
+                        "base_price": 1.9,
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.95,
-                        "unit": "100g"
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
-                    "1",
-                    "2",
-                    "Ei",
-                    "Gl",
-                    "GlW",
-                    "Mi"
+                    "Sl"
                 ],
-                "dish_type": "Vegetarisch",
-                "date": "2020-12-16"
+                "dish_type": "Tagesgericht",
+                "date": "2020-12-17"
             },
             {
                 "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
@@ -4522,89 +4723,14 @@
                     }
                 },
                 "ingredients": [
+                    "3",
                     "6",
                     "Gl",
                     "GlD",
                     "Kn",
                     "Mi"
                 ],
-                "dish_type": "Pasta",
-                "date": "2020-12-17"
-            },
-            {
-                "name": "Grüne Bohnen mit Basmatireis in Kokos-Zitronensauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Sf"
-                ],
-                "dish_type": "Wok",
-                "date": "2020-12-17"
-            },
-            {
-                "name": "Bunter Gemüseeeintopf",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Sl"
-                ],
-                "dish_type": "Vegan, Eintopf, Suppe",
-                "date": "2020-12-17"
-            },
-            {
-                "name": "Tagessuppe",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [],
-                "dish_type": "Tagesgericht",
+                "dish_type": "Aktionsessen",
                 "date": "2020-12-17"
             },
             {
@@ -4637,24 +4763,24 @@
                     "Sl",
                     "Sw"
                 ],
-                "dish_type": "Fleisch",
+                "dish_type": "Aktionsessen",
                 "date": "2020-12-17"
             },
             {
-                "name": "Bio-Pasta mit Bio-Soja-Bolognese (dazu Hartkäse)",
+                "name": "Zartweizen mit Gemüse",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
+                        "base_price": 1.0,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 1.9,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 2.4,
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -4662,116 +4788,54 @@
                 "ingredients": [
                     "Gl",
                     "GlW",
-                    "Kn",
-                    "Mi",
-                    "So"
+                    "Kn"
                 ],
-                "dish_type": "Pasta",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-18"
             },
             {
-                "name": "Gekräutertes Pilzragout (Champignons, Egerlingen und Austernpilzen) an Röstiecken",
+                "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.85,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.95,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "5",
-                    "99",
-                    "So",
-                    "Sw"
-                ],
-                "dish_type": "Vegetarisch",
-                "date": "2020-12-18"
-            },
-            {
-                "name": "Lebkuchenstrudel mit Vanillesauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
+                        "base_price": 2.4,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 2.95,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 3.45,
                         "price_per_unit": null,
                         "unit": null
                     }
                 },
                 "ingredients": [
-                    "3",
                     "Ei",
                     "Gl",
                     "GlW",
-                    "Mi",
-                    "Sc",
-                    "ScM",
-                    "So"
+                    "Mi"
                 ],
-                "dish_type": "Süßspeise",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-18"
-            },
-            {
-                "name": "Gnocchi mit Tomatensauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "So"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-12-21"
             },
             {
                 "name": "Bulgur mit Karotten, Fenchel und Sellerie",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
+                        "base_price": 1.0,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 1.9,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 2.4,
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -4782,37 +4846,35 @@
                     "Kn",
                     "Sl"
                 ],
-                "dish_type": "Vegan, Eintopf, Suppe",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-21"
             },
             {
-                "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
+                "name": "Gnocchi mit Tomatensauce",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": 1.9,
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.85,
-                        "unit": "100g"
+                        "base_price": 2.6,
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.95,
-                        "unit": "100g"
+                        "base_price": 3.1,
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
-                    "Ei",
                     "Gl",
                     "GlW",
                     "Kn",
-                    "Mi",
-                    "Sl"
+                    "So"
                 ],
-                "dish_type": "Vegetarisch",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-21"
             },
             {
@@ -4844,51 +4906,24 @@
                     "Mi",
                     "S"
                 ],
-                "dish_type": "Fleisch",
+                "dish_type": "Aktionsessen",
                 "date": "2020-12-21"
-            },
-            {
-                "name": "Bio-Pasta Napoli (Bio-Tomaten-Basilikumsauce)",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-12-22"
             },
             {
                 "name": "Mexikanisches Soja-Chili",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
+                        "base_price": 1.0,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 1.9,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 2.4,
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -4897,26 +4932,26 @@
                     "Kn",
                     "So"
                 ],
-                "dish_type": "Vegan, Eintopf, Suppe",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-22"
             },
             {
                 "name": "Kartoffeltaschen mit Kräuterfrischkäse",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": 2.4,
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.85,
-                        "unit": "100g"
+                        "base_price": 2.95,
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.95,
-                        "unit": "100g"
+                        "base_price": 3.45,
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -4925,24 +4960,24 @@
                     "Kn",
                     "Mi"
                 ],
-                "dish_type": "Vegetarisch",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-22"
             },
             {
                 "name": "Schweinesteak Strindberg (mit Senf-Zwiebelschmelze)",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
+                        "base_price": 2.4,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 2.95,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 3.45,
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -4956,52 +4991,24 @@
                     "Sf",
                     "Sl"
                 ],
-                "dish_type": "Fleisch",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-22"
-            },
-            {
-                "name": "Pasta mit Champignonrahmsauce",
-                "prices": {
-                    "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    },
-                    "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlW",
-                    "Kn",
-                    "Mi"
-                ],
-                "dish_type": "Pasta",
-                "date": "2020-12-23"
             },
             {
                 "name": "Gemüsegulasch",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
+                        "base_price": 1.0,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 1.9,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 2.4,
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -5009,24 +5016,24 @@
                 "ingredients": [
                     "Kn"
                 ],
-                "dish_type": "Vegan, Eintopf, Suppe",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-23"
             },
             {
                 "name": "Fleischpflanzerl mit Rahmsauce",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
+                        "base_price": 1.9,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 2.6,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 3.1,
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -5042,24 +5049,24 @@
                     "S",
                     "Sf"
                 ],
-                "dish_type": "Fleisch",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-23"
             },
             {
-                "name": "Apfelstrudel mit Vanillesauce",
+                "name": "Pasta mit Champignonrahmsauce",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
+                        "base_price": 1.9,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "staff": {
-                        "base_price": "N/A",
+                        "base_price": 2.6,
                         "price_per_unit": null,
                         "unit": null
                     },
                     "guests": {
-                        "base_price": "N/A",
+                        "base_price": 3.1,
                         "price_per_unit": null,
                         "unit": null
                     }
@@ -5067,27 +5074,20 @@
                 "ingredients": [
                     "Gl",
                     "GlW",
+                    "Kn",
                     "Mi"
                 ],
-                "dish_type": "Süßspeise",
+                "dish_type": "Tagesgericht",
                 "date": "2020-12-23"
             }
         ]
     },
     {
-        "canteen_id": "stucafe-karlstr",
+        "canteen_id": "mensa-pasing",
         "dishes": []
     },
     {
-        "canteen_id": "mensa-weihenstephan",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stucafe-garching",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stucafe-adalbertstr",
+        "canteen_id": "stubistro-arcisstr",
         "dishes": []
     }
 ]
