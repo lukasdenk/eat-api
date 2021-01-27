@@ -1,24 +1,80 @@
 [
     {
-        "canteen_id": "mensa-leopoldstr",
+        "canteen_id": "stucafe-akademie-weihenstephan",
+        "dishes": []
+    },
+    {
+        "canteen_id": "ipp-bistro",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stucafe-karlstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "mensa-weihenstephan",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stucafe-adalbertstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stucafe-boltzmannstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "mensa-lothstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stucafe-garching",
+        "dishes": []
+    },
+    {
+        "canteen_id": "mensa-martinsried",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stubistro-schellingstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stubistro-arcisstr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stubistro-rosenheim",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stubistro-grosshadern",
+        "dishes": []
+    },
+    {
+        "canteen_id": "stubistro-goethestr",
+        "dishes": []
+    },
+    {
+        "canteen_id": "mensa-garching",
         "dishes": [
             {
                 "name": "Pasta mit verschiedenen Schwammerl",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.55,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.66,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -32,19 +88,19 @@
                 "name": "Asiatische Reis-Gemüsepfanne",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.55,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.66,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -61,19 +117,19 @@
                 "name": "Tagessuppe",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [],
@@ -85,17 +141,17 @@
                 "prices": {
                     "students": {
                         "base_price": 0.0,
-                        "price_per_unit": 0.75,
+                        "price_per_unit": 0.33,
                         "unit": "100g"
                     },
                     "staff": {
                         "base_price": 0.0,
-                        "price_per_unit": 0.85,
+                        "price_per_unit": 0.55,
                         "unit": "100g"
                     },
                     "guests": {
                         "base_price": 0.0,
-                        "price_per_unit": 0.95,
+                        "price_per_unit": 0.66,
                         "unit": "100g"
                     }
                 },
@@ -112,19 +168,19 @@
                 "name": "Münchner Gulasch vom Rind (GQB)",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -142,19 +198,19 @@
                 "name": "Bio-Pasta mit Bio-Tomaten-Frischkäse-Sauce",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -167,22 +223,51 @@
                 "date": "2021-01-28"
             },
             {
+                "name": "Pizza Margherita mit Mozzarella",
+                "prices": {
+                    "students": {
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
+                    },
+                    "staff": {
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
+                    },
+                    "guests": {
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
+                    }
+                },
+                "ingredients": [
+                    "Gl",
+                    "GlG",
+                    "GlW",
+                    "Mi",
+                    "So"
+                ],
+                "dish_type": "Pizza",
+                "date": "2021-01-28"
+            },
+            {
                 "name": "Schweinerückensteak mit grüner Pfeffersauce",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -200,19 +285,19 @@
                 "name": "Veganes Nasi Goreng mit Sojasprossen",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.55,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.66,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -230,25 +315,26 @@
                 "name": "Couscous mit Pilzen, Tomaten und Mangold",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.55,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.66,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
                     "Gl",
                     "GlW",
-                    "Kn"
+                    "Kn",
+                    "So"
                 ],
                 "dish_type": "Vegan, Eintopf, Suppe",
                 "date": "2021-01-28"
@@ -257,19 +343,19 @@
                 "name": "Tagessuppe",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [],
@@ -280,19 +366,19 @@
                 "name": "Pasta mit Linsen und Staudensellerie",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.55,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.66,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -311,19 +397,19 @@
                 "name": "Gebratenes Zanderfilet mit Mandelbutter",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -341,19 +427,19 @@
                 "name": "Blumenkohl-Kartoffel-Curry",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.33,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.55,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 0.0,
+                        "price_per_unit": 0.66,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -367,19 +453,19 @@
                 "name": "Tagessuppe",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [],
@@ -390,19 +476,19 @@
                 "name": "Topfen-Birnenstrudel mit Mandel-Vanillesaue",
                 "prices": {
                     "students": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.75,
+                        "unit": "100g"
                     },
                     "staff": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 0.9,
+                        "unit": "100g"
                     },
                     "guests": {
-                        "base_price": "N/A",
-                        "price_per_unit": null,
-                        "unit": null
+                        "base_price": 1.0,
+                        "price_per_unit": 1.05,
+                        "unit": "100g"
                     }
                 },
                 "ingredients": [
@@ -418,54 +504,6 @@
                 "date": "2021-01-29"
             }
         ]
-    },
-    {
-        "canteen_id": "stucafe-adalbertstr",
-        "dishes": []
-    },
-    {
-        "canteen_id": "mensa-weihenstephan",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stubistro-schellingstr",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stubistro-grosshadern",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stucafe-karlstr",
-        "dishes": []
-    },
-    {
-        "canteen_id": "mensa-martinsried",
-        "dishes": []
-    },
-    {
-        "canteen_id": "ipp-bistro",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stucafe-akademie-weihenstephan",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stucafe-boltzmannstr",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stucafe-garching",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stubistro-goethestr",
-        "dishes": []
-    },
-    {
-        "canteen_id": "stubistro-rosenheim",
-        "dishes": []
     },
     {
         "canteen_id": "mensa-arcisstr",
@@ -957,29 +995,25 @@
         ]
     },
     {
-        "canteen_id": "stucafe-pasing",
-        "dishes": []
-    },
-    {
-        "canteen_id": "mensa-garching",
+        "canteen_id": "mensa-leopoldstr",
         "dishes": [
             {
                 "name": "Pasta mit verschiedenen Schwammerl",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.55,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.66,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -993,19 +1027,19 @@
                 "name": "Asiatische Reis-Gemüsepfanne",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.55,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.66,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -1022,19 +1056,19 @@
                 "name": "Tagessuppe",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [],
@@ -1046,17 +1080,17 @@
                 "prices": {
                     "students": {
                         "base_price": 0.0,
-                        "price_per_unit": 0.33,
+                        "price_per_unit": 0.75,
                         "unit": "100g"
                     },
                     "staff": {
                         "base_price": 0.0,
-                        "price_per_unit": 0.55,
+                        "price_per_unit": 0.85,
                         "unit": "100g"
                     },
                     "guests": {
                         "base_price": 0.0,
-                        "price_per_unit": 0.66,
+                        "price_per_unit": 0.95,
                         "unit": "100g"
                     }
                 },
@@ -1073,19 +1107,19 @@
                 "name": "Münchner Gulasch vom Rind (GQB)",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -1103,19 +1137,19 @@
                 "name": "Bio-Pasta mit Bio-Tomaten-Frischkäse-Sauce",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -1128,51 +1162,22 @@
                 "date": "2021-01-28"
             },
             {
-                "name": "Pizza Margherita mit Mozzarella",
-                "prices": {
-                    "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
-                    },
-                    "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
-                    },
-                    "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
-                    }
-                },
-                "ingredients": [
-                    "Gl",
-                    "GlG",
-                    "GlW",
-                    "Mi",
-                    "So"
-                ],
-                "dish_type": "Pizza",
-                "date": "2021-01-28"
-            },
-            {
                 "name": "Schweinerückensteak mit grüner Pfeffersauce",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -1190,19 +1195,19 @@
                 "name": "Veganes Nasi Goreng mit Sojasprossen",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.55,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.66,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -1220,26 +1225,25 @@
                 "name": "Couscous mit Pilzen, Tomaten und Mangold",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.55,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.66,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
                     "Gl",
                     "GlW",
-                    "Kn",
-                    "So"
+                    "Kn"
                 ],
                 "dish_type": "Vegan, Eintopf, Suppe",
                 "date": "2021-01-28"
@@ -1248,19 +1252,19 @@
                 "name": "Tagessuppe",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [],
@@ -1271,19 +1275,19 @@
                 "name": "Pasta mit Linsen und Staudensellerie",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.55,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.66,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -1302,19 +1306,19 @@
                 "name": "Gebratenes Zanderfilet mit Mandelbutter",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -1332,19 +1336,19 @@
                 "name": "Blumenkohl-Kartoffel-Curry",
                 "prices": {
                     "students": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.33,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.55,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 0.0,
-                        "price_per_unit": 0.66,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -1358,19 +1362,19 @@
                 "name": "Tagessuppe",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [],
@@ -1381,19 +1385,19 @@
                 "name": "Topfen-Birnenstrudel mit Mandel-Vanillesaue",
                 "prices": {
                     "students": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.75,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "staff": {
-                        "base_price": 1.0,
-                        "price_per_unit": 0.9,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     },
                     "guests": {
-                        "base_price": 1.0,
-                        "price_per_unit": 1.05,
-                        "unit": "100g"
+                        "base_price": "N/A",
+                        "price_per_unit": null,
+                        "unit": null
                     }
                 },
                 "ingredients": [
@@ -1411,15 +1415,11 @@
         ]
     },
     {
-        "canteen_id": "mensa-lothstr",
-        "dishes": []
-    },
-    {
         "canteen_id": "mensa-pasing",
         "dishes": []
     },
     {
-        "canteen_id": "stubistro-arcisstr",
+        "canteen_id": "stucafe-pasing",
         "dishes": []
     }
 ]
