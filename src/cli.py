@@ -16,8 +16,7 @@ def parse_cli_args():
         metavar="LOCATION",
         dest="location",
         choices=(
-            ["fmi-bistro", "ipp-bistro", "mediziner-mensa"]
-            + list(StudentenwerkMenuParser.location_id_mapping.keys())
+            ["fmi-bistro", "ipp-bistro", "mediziner-mensa"] + list(StudentenwerkMenuParser.location_id_mapping.keys())
         ),
         help="the location you want to eat at",
     )
