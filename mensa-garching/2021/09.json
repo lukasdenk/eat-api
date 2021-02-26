@@ -36,37 +36,7 @@
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Penne Quattro Formaggi (2)",
-                    "prices": {
-                        "students": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.9,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 1.0,
-                            "price_per_unit": 1.05,
-                            "unit": "100g"
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "2",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ],
-                    "dish_type": "Pasta"
-                },
-                {
-                    "name": "Rotes Curry vom Rind (GQB) mit Wokgemüse",
+                    "name": "Rotes Curry vom Rind mit Wokgemüse",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -120,7 +90,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Grießnockerlsuppe",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -138,7 +108,12 @@
                             "unit": "100g"
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -774,7 +749,7 @@
                     "dish_type": "Fleisch"
                 },
                 {
-                    "name": "Dinkelpfannkuchen mit Haselnuss-Nougat-Füllung und Vaniilesauce",
+                    "name": "Kleine Dampfnudel mit Vanillesauce",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -795,13 +770,37 @@
                     "ingredients": [
                         "Ei",
                         "Gl",
-                        "GlD",
-                        "Mi",
-                        "Sc",
-                        "ScH",
-                        "So"
+                        "GlW",
+                        "Mi"
                     ],
                     "dish_type": "Süßspeise"
+                },
+                {
+                    "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 }
             ]
         }
