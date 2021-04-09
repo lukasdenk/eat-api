@@ -18,7 +18,7 @@ Simple static API for the canteens of the [Studentenwerk München](http://www.st
 | Name                           | API-key                        | Address location                                                                                                         |
 | :----------------------------- | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
 | Mensa Arcisstraße              | mensa-arcisstr                 | [Arcisstraße 17, München](https://www.google.com/maps?q=Arcisstraße+17,+München)                                         |
-| Mensa Garching                 | mensa-garching                 | [Lichtenbergstraße 2, Garching](https://www.google.com/maps?q=Lichtenbergstraße+2,+Garching)                             |
+| Mensa Garching                 | mensa-garching                 | [Boltzmannstraße 19, Garching](https://www.google.com/maps?q=Boltzmannstraße+19,+Garching)                             |
 | Mensa Leopoldstraße            | mensa-leopoldstr               | [Leopoldstraße 13a, München](https://www.google.com/maps?q=Leopoldstraße+13a,+München)                                   |
 | Mensa Lothstraße               | mensa-lothstr                  | [Lothstraße 13d, München](https://www.google.com/maps?q=Lothstraße+13d,+München)                                         |
 | Mensa Martinsried              | mensa-martinsried              | [Großhaderner Straße 6, Planegg-Martinsried](https://www.google.com/maps?q=Großhaderner%20Straße+6,+Planegg-Martinsried) |
@@ -32,7 +32,7 @@ Simple static API for the canteens of the [Studentenwerk München](http://www.st
 | StuCafé Adalbertstraße         | stucafe-adalbertstr            | [Adalbertstraße 5, München](https://www.google.com/maps?q=Adalbertstraße+5,+München)                                     |
 | StuCafé Akademie Weihenstephan | stucafe-akademie-weihenstephan | [Alte Akademie 1, Freising](https://www.google.com/maps?q=Alte%20Akademie+1,+Freising)                                   |
 | StuCafé Boltzmannstraße        | stucafe-boltzmannstr           | [Boltzmannstraße 15, Garching](https://www.google.com/maps?q=Boltzmannstraße+15,+Garching)                               |
-| StuCafé in der Mensa Garching  | stucafe-garching               | [Lichtenbergstraße 2, Garching](https://www.google.com/maps?q=Lichtenbergstraße+2,+Garching)                             |
+| StuCafé in der Mensa Garching  | stucafe-garching               | [Boltzmannstraße 19, Garching](https://www.google.com/maps?q=Boltzmannstraße+19,+Garching)                             |
 | StuCafé Karlstraße             | stucafe-karlstr                | [Karlstraße 6, München](https://www.google.com/maps?q=Karlstraße+6,+München)                                             |
 | StuCafé Pasing                 | stucafe-pasing                 | [Am Stadtpark 20, München](https://www.google.com/maps?q=Am%20Stadtpark+20,+München)                                     |
 | FMI Bistro Garching            | fmi-bistro                     | [Boltzmannstraße 3, Garching](https://www.google.com/maps?q=Boltzmannstraße+3,+Garching)                                 |
