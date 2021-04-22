@@ -1,12 +1,12 @@
 {
-    "number": 17,
+    "number": 21,
     "year": 2021,
     "days": [
         {
-            "date": "2021-04-26",
+            "date": "2021-05-25",
             "dishes": [
                 {
-                    "name": "Schweinerückensteak mit Steinpilzen in Rahm",
+                    "name": "Gnocchi mit frischem Pfannengemüse",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -27,13 +27,12 @@
                     "ingredients": [
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "S"
+                        "So"
                     ],
-                    "dish_type": "Grill"
+                    "dish_type": "Pasta"
                 },
                 {
-                    "name": "Gnocchi mit Ragout von weißem (g.g.A.) und grünen Spargel",
+                    "name": "Minestrone",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -52,16 +51,13 @@
                         }
                     },
                     "ingredients": [
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Mi",
+                        "Kn",
                         "Sl"
                     ],
-                    "dish_type": "Wok"
+                    "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Graupen-Gemüse-Pfanne",
+                    "name": "Schweineschnitzel Wiener Art",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -82,71 +78,20 @@
                     "ingredients": [
                         "Gl",
                         "GlG",
+                        "GlW",
                         "Kn",
-                        "Sl"
+                        "Mi",
+                        "S"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
-                },
-                {
-                    "name": "Bärlauchsuppe",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Mi"
-                    ],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
-                    "prices": {
-                        "students": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.85,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.95,
-                            "unit": "100g"
-                        }
-                    },
-                    "ingredients": [
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Mi"
-                    ],
-                    "dish_type": "Vegetarisch"
+                    "dish_type": "Fleisch"
                 }
             ]
         },
         {
-            "date": "2021-04-27",
+            "date": "2021-05-26",
             "dishes": [
                 {
-                    "name": "Maultaschen mit Frischkäsefüllung und Spargelragout (g.g.A.)",
+                    "name": "Pasta mit grünem Spargel, Petersilie und Kirschtomaten",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -165,19 +110,13 @@
                         }
                     },
                     "ingredients": [
-                        "5",
-                        "99",
-                        "Ei",
                         "Gl",
-                        "GlW",
-                        "Mi",
-                        "Sl",
-                        "Sw"
+                        "GlW"
                     ],
-                    "dish_type": "Wok"
+                    "dish_type": "Pasta"
                 },
                 {
-                    "name": "Kräuterpolenta mit Tomatenragout",
+                    "name": "Kokos-Pilz-Topf mit Glasnudeln",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -196,37 +135,11 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
+                        "2",
+                        "Kn",
+                        "Sf"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
-                },
-                {
-                    "name": "Spargelcremesuppe (g.g.A.)",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Mi"
-                    ],
-                    "dish_type": ""
                 },
                 {
                     "name": "Tagessuppe",
@@ -251,74 +164,7 @@
                     "dish_type": ""
                 },
                 {
-                    "name": "Kartoffel-Pilz-Auflauf mit frischem Lauch und Dip",
-                    "prices": {
-                        "students": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.85,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.95,
-                            "unit": "100g"
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "2",
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "Sf"
-                    ],
-                    "dish_type": "Vegetarisch"
-                },
-                {
-                    "name": "Welsfilet mit Schmorgurkengemüse und Bärlauchsauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "5",
-                        "99",
-                        "Fi",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "Sw"
-                    ],
-                    "dish_type": "Fisch"
-                }
-            ]
-        },
-        {
-            "date": "2021-04-28",
-            "dishes": [
-                {
-                    "name": "Rindersteak mit Rotwein-Zwiebel-Sauce",
+                    "name": "Stifado (griechisches Rindfleischragout mit Steckrüben)",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -345,12 +191,18 @@
                         "Kn",
                         "Mi",
                         "R",
+                        "Sl",
                         "Sw"
                     ],
-                    "dish_type": "Grill"
-                },
+                    "dish_type": "Fleisch"
+                }
+            ]
+        },
+        {
+            "date": "2021-05-27",
+            "dishes": [
                 {
-                    "name": "Cannelloni mit Spinat-Ricotta-Füllung und weißem Spargel (g.g.A.)",
+                    "name": "Pasta mit Spargel (g.g.A.)-Broccoli mit rotem Pesto",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -369,16 +221,48 @@
                         }
                     },
                     "ingredients": [
-                        "Ei",
+                        "2",
+                        "3",
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "Sl"
+                        "Kn",
+                        "Sc",
+                        "ScM"
+                    ],
+                    "dish_type": "Pasta"
+                },
+                {
+                    "name": "Sweet & Sour mit Schweinefleisch",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "5",
+                        "Kn",
+                        "S",
+                        "Sf",
+                        "Sw"
                     ],
                     "dish_type": "Wok"
                 },
                 {
-                    "name": "Pikantes Kartoffelchili",
+                    "name": "Bulgur mit Zucchini und Tomaten",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -397,6 +281,8 @@
                         }
                     },
                     "ingredients": [
+                        "Gl",
+                        "GlW",
                         "Kn"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
@@ -428,115 +314,6 @@
                     "dish_type": ""
                 },
                 {
-                    "name": "Pilzpfanne mit weißem (g.g.A.) und grünem Spargel, Lauchzwiebeln, Kirschtomaten",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": "Fleisch"
-                }
-            ]
-        },
-        {
-            "date": "2021-04-29",
-            "dishes": [
-                {
-                    "name": "Hausgemachte Mangoldlasagne",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "2",
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Mi"
-                    ],
-                    "dish_type": "Pasta"
-                },
-                {
-                    "name": "Curry-Mie-Nudeln mit Asiagemüse und grünem Spargel",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "Gl",
-                        "GlW",
-                        "Se",
-                        "Sf",
-                        "So"
-                    ],
-                    "dish_type": "Wok"
-                },
-                {
-                    "name": "Bunter Gemüseeeintopf",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Sl"
-                    ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
-                },
-                {
                     "name": "Tagessuppe",
                     "prices": {
                         "students": {
@@ -557,49 +334,14 @@
                     },
                     "ingredients": [],
                     "dish_type": ""
-                },
-                {
-                    "name": "Schweinebraten mit Biersauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "3",
-                        "5",
-                        "99",
-                        "Ei",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "S",
-                        "Sw"
-                    ],
-                    "dish_type": "Fleisch"
                 }
             ]
         },
         {
-            "date": "2021-04-30",
+            "date": "2021-05-28",
             "dishes": [
                 {
-                    "name": "Pasta mit weißem (g.g.A.) und grünem Spargel und Erbsen",
+                    "name": "Forelle Müllerin Art mit Mandelbutter",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -618,14 +360,17 @@
                         }
                     },
                     "ingredients": [
+                        "Fi",
                         "Gl",
                         "GlW",
-                        "Mi"
+                        "Mi",
+                        "Sc",
+                        "ScM"
                     ],
-                    "dish_type": "Wok"
+                    "dish_type": "Grill"
                 },
                 {
-                    "name": "Zartweizen mit Gemüse",
+                    "name": "Kichererbsencurry mit Gemüse und Chili",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -644,8 +389,7 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlW",
+                        "2",
                         "Kn"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
@@ -673,7 +417,7 @@
                     "dish_type": ""
                 },
                 {
-                    "name": "Spargel-Basilikum-Omelett mit Hartkäse",
+                    "name": "Pfannkuchen mit Heidelbeerfüllung und Vanillesauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -692,46 +436,12 @@
                         }
                     },
                     "ingredients": [
-                        "2",
                         "Ei",
-                        "Mi"
-                    ],
-                    "dish_type": "Fleisch"
-                },
-                {
-                    "name": "Gebackenes Seelachsfilet (MSC) mit Kartoffelsalat und Remouladensauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "11",
-                        "3",
-                        "5",
-                        "9",
-                        "Ei",
-                        "Fi",
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "Sf",
-                        "Sw"
+                        "Mi"
                     ],
-                    "dish_type": "Fisch"
+                    "dish_type": "Süßspeise"
                 }
             ]
         }

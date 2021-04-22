@@ -171,6 +171,32 @@
                     "dish_type": "Pasta"
                 },
                 {
+                    "name": "Rinderlende mit Kräuterbutter",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "Mi",
+                        "R"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
                     "name": "Linseneintopf mit Gemüse",
                     "prices": {
                         "students": {
@@ -224,22 +250,47 @@
                     "dish_type": ""
                 },
                 {
+                    "name": "Gegrilltes Putensteak mit Kräuterbutter",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": "Fleisch"
+                },
+                {
                     "name": "Quiche mit grünem und weißem (g.g.A.) Spargel",
                     "prices": {
                         "students": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
                         },
                         "staff": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.85,
-                            "unit": "100g"
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
                         },
                         "guests": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.95,
-                            "unit": "100g"
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
                         }
                     },
                     "ingredients": [
@@ -250,7 +301,7 @@
                         "GlW",
                         "Mi"
                     ],
-                    "dish_type": "Vegetarisch"
+                    "dish_type": "Fleisch"
                 }
             ]
         },
@@ -283,7 +334,7 @@
                         "Sc",
                         "ScM"
                     ],
-                    "dish_type": "Pasta"
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Asiatische Reis-Gemüsepfanne",
@@ -314,7 +365,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Scharfe Arabische Gemüsesuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -330,42 +381,40 @@
                             "base_price": "N/A",
                             "price_per_unit": null,
                             "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Veganes Kartoffelgratin mit Bärlauch, Spargel (g.g.A.) und veganer Sauce",
-                    "prices": {
-                        "students": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.75,
-                            "unit": "100g"
-                        },
-                        "staff": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.85,
-                            "unit": "100g"
-                        },
-                        "guests": {
-                            "base_price": 0.0,
-                            "price_per_unit": 0.95,
-                            "unit": "100g"
                         }
                     },
                     "ingredients": [
-                        "1",
+                        "2",
+                        "Kn"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Linseneintopf mit Gemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
                         "3",
                         "5",
-                        "99",
-                        "Gl",
-                        "GlW",
-                        "Sf",
-                        "So",
+                        "Sl",
                         "Sw"
                     ],
-                    "dish_type": "Vegetarisch"
+                    "dish_type": ""
                 },
                 {
                     "name": "Münchner Gulasch vom Rind",
@@ -395,6 +444,62 @@
                         "R"
                     ],
                     "dish_type": "Fleisch"
+                },
+                {
+                    "name": "Veganes Kartoffelgratin mit Bärlauch, Spargel (g.g.A.) und veganer Sauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "3",
+                        "5",
+                        "99",
+                        "Gl",
+                        "GlW",
+                        "So",
+                        "Sw"
+                    ],
+                    "dish_type": "Fleisch"
+                },
+                {
+                    "name": "Überbackenes Hacksteak mit Weißkäse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Mi",
+                        "R",
+                        "Sf"
+                    ],
+                    "dish_type": ""
                 }
             ]
         },
@@ -456,6 +561,30 @@
                     "dish_type": "Grill"
                 },
                 {
+                    "name": "Putensteak mit Honig-Ingwer-Ketchup",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Sf"
+                    ],
+                    "dish_type": ""
+                },
+                {
                     "name": "Grünes Spargelcurry (g.g.A.) in Kokosmilch mit Karotten und Blumenkohl",
                     "prices": {
                         "students": {
@@ -478,6 +607,34 @@
                         "Kn"
                     ],
                     "dish_type": "Wok"
+                },
+                {
+                    "name": "Dinkel-Pasta mit frischem Schrobenhausener Spargel (g.g.A.) und Rucolapesto",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlD",
+                        "Kn",
+                        "Sc",
+                        "ScM"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Couscous mit Pilzen, Tomaten und Mangold",
@@ -506,34 +663,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": ""
-                }
-            ]
-        },
-        {
-            "date": "2021-04-23",
-            "dishes": [
-                {
-                    "name": "Spargel-Zitronen-Pasta mit Weißkäse (Weißer Spargel g.g.gA.)",
+                    "name": "Erbsensuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -554,10 +684,15 @@
                     "ingredients": [
                         "Gl",
                         "GlW",
-                        "Mi"
+                        "Sl"
                     ],
-                    "dish_type": "Pasta"
-                },
+                    "dish_type": ""
+                }
+            ]
+        },
+        {
+            "date": "2021-04-23",
+            "dishes": [
                 {
                     "name": "Gebratenes Zanderfilet mit Bärlauchhollandaise",
                     "prices": {
@@ -586,6 +721,32 @@
                         "Sl"
                     ],
                     "dish_type": "Grill"
+                },
+                {
+                    "name": "Spargel-Zitronen-Pasta mit Weißkäse (Weißer Spargel g.g.gA.)",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Gemüsecurry mit roten Linsen, Spinat und Kokosmilch",
@@ -662,6 +823,35 @@
                     },
                     "ingredients": [],
                     "dish_type": ""
+                },
+                {
+                    "name": "Seelachsfilet paniert mit Bärlauchhollandaise",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": "Fisch"
                 },
                 {
                     "name": "Pfannkuchen mit Himbeer-Panna-Cotta und Vanillesauce",

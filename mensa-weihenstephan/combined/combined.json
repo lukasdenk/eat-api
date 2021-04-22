@@ -1,4 +1,45 @@
 {
     "canteen_id": "mensa-weihenstephan",
-    "weeks": []
+    "weeks": [
+        {
+            "number": 16,
+            "year": 2021,
+            "days": [
+                {
+                    "date": "2021-04-19",
+                    "dishes": [
+                        {
+                            "name": "Kartoffelröstis mit Kräutersahnequark",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "Tagesgericht 3"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-04-20",
+                    "dishes": []
+                }
+            ]
+        }
+    ]
 }
