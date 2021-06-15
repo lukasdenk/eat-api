@@ -6,7 +6,7 @@
             "date": "2021-06-15",
             "dishes": [
                 {
-                    "name": "Mini-Frühlingsrollen an Gemüse-Curry-Reis",
+                    "name": "Hähnchenfiletspieß auf Kokos-Curcuma-Reis mit Erdnussauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -25,14 +25,13 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlW",
+                        "En",
                         "Kn",
+                        "Mi",
                         "Se",
-                        "Sf",
-                        "So"
+                        "Sl"
                     ],
-                    "dish_type": "Wok"
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Grüne Bohnen-Kartoffel-Gemüse in Kokos-Zitronensauce",
@@ -84,7 +83,8 @@
                         "Gl",
                         "GlW",
                         "Kn",
-                        "Mi"
+                        "Mi",
+                        "Sl"
                     ],
                     "dish_type": "Vegetarisch"
                 }
@@ -119,12 +119,13 @@
                         "GlW",
                         "Kn",
                         "Mi",
+                        "Sl",
                         "Sw"
                     ],
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Hähnchenfiletspieß auf Kokos-Curcuma-Reis mit Erdnussauce",
+                    "name": "Mini-Frühlingsrollen an Gemüse-Curry-Reis",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -143,10 +144,15 @@
                         }
                     },
                     "ingredients": [
-                        "En",
-                        "Kn"
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Se",
+                        "Sf",
+                        "Sl",
+                        "So"
                     ],
-                    "dish_type": "Grill"
+                    "dish_type": "Wok"
                 },
                 {
                     "name": "Zartweizen mit Tomaten, Zucchini und Auberginen",
@@ -249,7 +255,6 @@
                     },
                     "ingredients": [
                         "5",
-                        "9",
                         "99",
                         "Gl",
                         "GlG",
@@ -315,7 +320,8 @@
                     },
                     "ingredients": [
                         "Kn",
-                        "Sf"
+                        "Sf",
+                        "Sl"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },

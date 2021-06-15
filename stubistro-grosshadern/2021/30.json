@@ -1,12 +1,39 @@
 {
-    "number": 25,
+    "number": 30,
     "year": 2021,
     "days": [
         {
-            "date": "2021-06-21",
+            "date": "2021-07-26",
             "dishes": [
                 {
-                    "name": "Ravioli mit Pilzfüllung in pikanter Kräutersauce",
+                    "name": "Bulgur mit Karotten, Fenchel und Sellerie",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
+                },
+                {
+                    "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -32,10 +59,10 @@
                         "Mi",
                         "Sl"
                     ],
-                    "dish_type": "Pasta"
+                    "dish_type": "Vegetarisch"
                 },
                 {
-                    "name": "Arabischer Couscous mit Karotten und Kichererbsen",
+                    "name": "Alm Cordon bleu gefüllt mit Bergkäse und rohem Schinken",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -55,75 +82,23 @@
                     },
                     "ingredients": [
                         "2",
+                        "Ei",
                         "Gl",
+                        "GlG",
                         "GlW",
                         "Kn",
-                        "Sl"
-                    ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
-                },
-                {
-                    "name": "Fried Chicken Wings mit Barbecuesauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "10",
-                        "11",
-                        "Kn",
-                        "Sf",
-                        "Sl"
+                        "Mi",
+                        "S"
                     ],
                     "dish_type": "Fleisch"
                 }
             ]
         },
         {
-            "date": "2021-06-22",
+            "date": "2021-07-27",
             "dishes": [
                 {
-                    "name": "Pasta mit Gorgonzolasauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Mi",
-                        "Sl"
-                    ],
-                    "dish_type": "Pasta"
-                },
-                {
-                    "name": "Veganes Nasi Goreng mit Sojasprossen",
+                    "name": "Pasta Pomodoro mit Tomaten und Basilikum",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -143,16 +118,15 @@
                     },
                     "ingredients": [
                         "2",
+                        "3",
                         "Gl",
                         "GlW",
-                        "Kn",
-                        "Sl",
-                        "So"
+                        "Kn"
                     ],
-                    "dish_type": "Wok"
+                    "dish_type": "Pasta"
                 },
                 {
-                    "name": "Getreidepfanne mit frischem Gemüse",
+                    "name": "Bratwurstschnecke",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -171,19 +145,45 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Sl"
+                        "3",
+                        "8",
+                        "S"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
+                    "name": "Braunes Linsencurry mit Frühlingszwiebeln und Koriander",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Sf",
+                        "Sl",
+                        "So"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
                 }
             ]
         },
         {
-            "date": "2021-06-23",
+            "date": "2021-07-28",
             "dishes": [
                 {
-                    "name": "Grünes Hähnchen-Curry mit Wokgemüse und Basmatireis",
+                    "name": "Pasta mit Weißkäse, Zucchini, Paprika und Kapern",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -202,17 +202,40 @@
                         }
                     },
                     "ingredients": [
-                        "2",
-                        "En",
                         "Gl",
                         "GlW",
                         "Kn",
-                        "So"
+                        "Mi"
+                    ],
+                    "dish_type": "Pasta"
+                },
+                {
+                    "name": "Rotes Gemüsecurry",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "Sl"
                     ],
                     "dish_type": "Wok"
                 },
                 {
-                    "name": "Asian fried Noodles",
+                    "name": "Amiwo - Roter Maisbrei mit Chili, dazu bunte Paprikastreifen",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -231,50 +254,17 @@
                         }
                     },
                     "ingredients": [
-                        "2",
-                        "Gl",
-                        "GlW",
-                        "Sl",
-                        "So"
+                        "En"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
-                },
-                {
-                    "name": "Topfenpalatschinken",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Ei",
-                        "Gl",
-                        "GlW",
-                        "Mi",
-                        "Sc",
-                        "ScM"
-                    ],
-                    "dish_type": "Süßspeise"
                 }
             ]
         },
         {
-            "date": "2021-06-24",
+            "date": "2021-07-29",
             "dishes": [
                 {
-                    "name": "Pasta all'arrabiata",
+                    "name": "Gemüsespieß vom Grill mit Guacamoledip",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -293,12 +283,11 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlW",
+                        "3",
                         "Kn",
-                        "Sl"
+                        "Mi"
                     ],
-                    "dish_type": "Pasta"
+                    "dish_type": "Grill"
                 },
                 {
                     "name": "Pikante Hirse mit schwarzen Bohnen und Gemüse",
@@ -327,7 +316,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Grünkohl-Hanf-Bällchen mit Schnittlauchdip",
+                    "name": "Hähnchenspieß vom Grill mit Paprika und Zwiebel",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -345,18 +334,16 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [
-                        "Mi"
-                    ],
-                    "dish_type": "Vegetarisch"
+                    "ingredients": [],
+                    "dish_type": "Fleisch"
                 }
             ]
         },
         {
-            "date": "2021-06-25",
+            "date": "2021-07-30",
             "dishes": [
                 {
-                    "name": "Lachsfilet Teriyaki Art auf Lauch-Limonengemüse",
+                    "name": "Forelle Müllerin Art mit Mandelbutter",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -375,17 +362,17 @@
                         }
                     },
                     "ingredients": [
-                        "2",
                         "Fi",
                         "Gl",
                         "GlW",
-                        "Se",
-                        "So"
+                        "Mi",
+                        "Sc",
+                        "ScM"
                     ],
                     "dish_type": "Grill"
                 },
                 {
-                    "name": "Italienischer Bohneneintopf",
+                    "name": "Bunte Gemüsepaella",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -404,13 +391,12 @@
                         }
                     },
                     "ingredients": [
-                        "Kn",
-                        "Sl"
+                        "Kn"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Topfen-Birnenstrudel (mit Rosinen) mit Mandel-Vanillesaue",
+                    "name": "Apfelstrudel mit Vanillesauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -432,9 +418,7 @@
                         "Ei",
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "Sc",
-                        "ScM"
+                        "Mi"
                     ],
                     "dish_type": "Süßspeise"
                 }

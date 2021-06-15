@@ -93,7 +93,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Pfannkuchensuppe",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -111,7 +111,13 @@
                             "unit": "100g"
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -237,6 +243,38 @@
                     "dish_type": "Pizza"
                 },
                 {
+                    "name": "Rindsbratwurst vom Grill",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "8",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
                     "name": "Mini-Frühlingsrollen an Gemüse-Curry-Reis",
                     "prices": {
                         "students": {
@@ -256,11 +294,13 @@
                         }
                     },
                     "ingredients": [
+                        "2",
                         "Gl",
                         "GlW",
                         "Kn",
                         "Se",
                         "Sf",
+                        "Sl",
                         "So"
                     ],
                     "dish_type": "Wok"
@@ -293,7 +333,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Eierflaumsuppe",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -311,7 +351,10 @@
                             "unit": "100g"
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -397,9 +440,36 @@
                     },
                     "ingredients": [
                         "En",
-                        "Kn"
+                        "Kn",
+                        "Sl"
                     ],
                     "dish_type": "Grill"
+                },
+                {
+                    "name": "Schweinefleischspieß auf Kokos-Curcuma-Reis mit Erdnussauce",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "En",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Zartweizen mit Tomaten, Zucchini und Auberginen",
@@ -428,7 +498,7 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Gemüsecurrysuppe",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -446,7 +516,12 @@
                             "unit": "100g"
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Sf"
+                    ],
                     "dish_type": ""
                 },
                 {

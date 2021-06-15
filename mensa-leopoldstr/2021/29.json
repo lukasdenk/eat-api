@@ -1,151 +1,10 @@
 {
-    "number": 24,
+    "number": 29,
     "year": 2021,
     "days": [
         {
-            "date": "2021-06-14",
+            "date": "2021-07-19",
             "dishes": [
-                {
-                    "name": "Pasta mit Gemüsebolognese",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Sl"
-                    ],
-                    "dish_type": "Pasta"
-                },
-                {
-                    "name": "Pizza Salami",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "2",
-                        "3",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "S",
-                        "So"
-                    ],
-                    "dish_type": "Pizza"
-                },
-                {
-                    "name": "Rindsbratwurst vom Grill",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "2",
-                        "3",
-                        "8",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Kn",
-                        "Mi",
-                        "R"
-                    ],
-                    "dish_type": "Grill"
-                },
-                {
-                    "name": "Bulgur mit Karotten, Fenchel und Sellerie",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Sl"
-                    ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
-                },
-                {
-                    "name": "Tagessuppe",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": ""
-                },
                 {
                     "name": "Gnocchi mit Schafskäse und frischem Basilikum",
                     "prices": {
@@ -173,10 +32,10 @@
                         "Mi",
                         "Sl"
                     ],
-                    "dish_type": "Vegetarisch"
+                    "dish_type": "Pasta"
                 },
                 {
-                    "name": "Chicken-Crossies mit Barbecue-Dip",
+                    "name": "Putensteak mit Kräuterbutter",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -195,17 +54,96 @@
                         }
                     },
                     "ingredients": [
-                        "10",
-                        "11",
                         "Gl",
-                        "Kn",
-                        "Sf",
-                        "Sl"
+                        "GlW"
                     ],
-                    "dish_type": "Fleisch"
+                    "dish_type": "Grill"
                 },
                 {
-                    "name": "Lammkotelette",
+                    "name": "Mexikanisches Soja-Chili",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "Sl",
+                        "So"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
+                },
+                {
+                    "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Frühlingsrolle mit süßsaurer Sauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sl",
+                        "So"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Lammgulasch nach Art der Provence",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -235,10 +173,10 @@
             ]
         },
         {
-            "date": "2021-06-15",
+            "date": "2021-07-20",
             "dishes": [
                 {
-                    "name": "Bio-Pasta Napoli (Bio-Tomaten-Basilikumsauce)",
+                    "name": "Tortellini mit Basilikum-Tomaten-Pesto",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -257,42 +195,18 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ],
-                    "dish_type": "Pasta"
-                },
-                {
-                    "name": "Pasta mit Schafskäsesoße",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
+                        "2",
+                        "Ei",
                         "Gl",
                         "GlW",
                         "Kn",
                         "Mi",
                         "Sl"
                     ],
-                    "dish_type": ""
+                    "dish_type": "Pasta"
                 },
                 {
-                    "name": "Pizza mit Schafskäse und Oliven",
+                    "name": "Phad Thai - Thailändisches Nudelgericht",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -311,49 +225,19 @@
                         }
                     },
                     "ingredients": [
-                        "1",
                         "2",
-                        "6",
-                        "Gl",
-                        "GlG",
-                        "GlW",
-                        "Mi",
-                        "So"
-                    ],
-                    "dish_type": "Pizza"
-                },
-                {
-                    "name": "Mini-Frühlingsrollen an Gemüse-Curry-Reis",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
+                        "Ei",
+                        "En",
+                        "Fi",
                         "Gl",
                         "GlW",
                         "Kn",
-                        "Se",
-                        "Sf",
-                        "Sl",
                         "So"
                     ],
                     "dish_type": "Wok"
                 },
                 {
-                    "name": "Grüne Bohnen-Kartoffel-Gemüse in Kokos-Zitronensauce",
+                    "name": "Kräuterpolenta mit Tomatenragout",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -375,63 +259,40 @@
                         "Gl",
                         "GlW",
                         "Kn",
-                        "Sf",
                         "Sl"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Ofenkartoffeln a la Caspar mit grüner Sauce und Ei",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
                         },
                         "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
                         },
                         "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Kartoffeltaschen mit Kräuterfrischkäse",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
+                        "5",
+                        "Ei",
                         "Mi",
-                        "Sl"
+                        "Sf",
+                        "Sw"
                     ],
                     "dish_type": "Vegetarisch"
                 },
                 {
-                    "name": "Chili con Carne mit Brot",
+                    "name": "Jägerschnitzel vom Truthahn mit Waldpilzen",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -450,21 +311,19 @@
                         }
                     },
                     "ingredients": [
+                        "2",
+                        "3",
+                        "8",
                         "Gl",
+                        "GlG",
                         "GlW",
                         "Kn",
-                        "R",
-                        "Sl"
+                        "Mi"
                     ],
                     "dish_type": "Fleisch"
-                }
-            ]
-        },
-        {
-            "date": "2021-06-16",
-            "dishes": [
+                },
                 {
-                    "name": "Pasta mit Champignonrahmsauce",
+                    "name": "Seelachsfilet (MSC) Florentiner Art mit Blattspinat und Hollandaise überbacken",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -485,63 +344,24 @@
                     "ingredients": [
                         "5",
                         "99",
+                        "Ei",
+                        "Fi",
                         "Gl",
                         "GlW",
                         "Kn",
                         "Mi",
+                        "Sl",
                         "Sw"
                     ],
-                    "dish_type": "Pasta"
-                },
+                    "dish_type": "Fisch"
+                }
+            ]
+        },
+        {
+            "date": "2021-07-21",
+            "dishes": [
                 {
-                    "name": "Pizza des Tages",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": "Pizza"
-                },
-                {
-                    "name": "Hähnchenfiletspieß auf Kokos-Curcuma-Reis mit Erdnussauce",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "En",
-                        "Kn"
-                    ],
-                    "dish_type": "Grill"
-                },
-                {
-                    "name": "Zartweizen mit Tomaten, Zucchini und Auberginen",
+                    "name": "Pasta mit Ricotta-Paprika-Sauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -560,65 +380,124 @@
                         }
                     },
                     "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn"
-                    ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
-                },
-                {
-                    "name": "Tagessuppe",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Überbackene Burritos Mexican Style",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "2",
                         "Gl",
                         "GlW",
                         "Kn",
                         "Mi"
                     ],
+                    "dish_type": "Pasta"
+                },
+                {
+                    "name": "Hähnchenbrustfilet mit Gemüsesalsa (scharf)",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
+                    "name": "Graupen-Gemüse-Pfanne",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlG",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
+                },
+                {
+                    "name": "Blätterteigtasche mit Spinat und Hirtenkäse mit Joghurt-Minz-Dip",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sc",
+                        "Se",
+                        "Sl"
+                    ],
                     "dish_type": "Vegetarisch"
                 },
                 {
-                    "name": "Apfelstrudel mit Vanillesauce",
+                    "name": "Kartoffelpilzragout mit Kohlrabi",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Apfelkücherl mit Vanillesauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -647,10 +526,10 @@
             ]
         },
         {
-            "date": "2021-06-17",
+            "date": "2021-07-22",
             "dishes": [
                 {
-                    "name": "Bio-Penne mit Bio-Tomaten-Zucchinisauce (dazu Hartkäse)",
+                    "name": "Dinkelnudelpfanne Griechische Art mit Oliven,Schafskäse und Knoblauch",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -669,37 +548,16 @@
                         }
                     },
                     "ingredients": [
+                        "6",
                         "Gl",
-                        "GlW",
+                        "GlD",
                         "Kn",
                         "Mi"
                     ],
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Pizza des Tages",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": "Pizza"
-                },
-                {
-                    "name": "Gemüsespieß mit Kräuterdip",
+                    "name": "Halloumi vom Grill mit frischem Ratatoulli",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -724,7 +582,7 @@
                     "dish_type": "Grill"
                 },
                 {
-                    "name": "Bunte Gemüsepaella",
+                    "name": "Mediterraner Gemüseeintopf",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -743,220 +601,68 @@
                         }
                     },
                     "ingredients": [
-                        "Kn"
+                        "Kn",
+                        "Sl"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Vegane Reis-Gemüse-Pflanzerl mit Fenchel-Karottensalat und Orangendressing",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
                         },
                         "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
                         },
                         "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": ""
-                },
-                {
-                    "name": "Senner Rösti mit Tomate und Käse überbacken",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "1",
-                        "2",
-                        "Mi"
-                    ],
-                    "dish_type": "Vegetarisch"
-                },
-                {
-                    "name": "Arista al fiorentina - Schweinebraten toskanische Art",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
                         }
                     },
                     "ingredients": [
                         "5",
-                        "9",
-                        "99",
-                        "Gl",
-                        "GlG",
-                        "GlW",
+                        "Lu",
+                        "Se",
+                        "Sl",
+                        "So",
+                        "Sw"
+                    ],
+                    "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Pfannengyros vom Schwein mit Tsatsiki",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "3",
+                        "5",
                         "Kn",
                         "Mi",
+                        "S",
                         "Sw"
                     ],
                     "dish_type": "Fleisch"
-                }
-            ]
-        },
-        {
-            "date": "2021-06-18",
-            "dishes": [
-                {
-                    "name": "Vegane Strozzapreti Carbonara mit Räuchertofu",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Gl",
-                        "GlW",
-                        "Kn",
-                        "Sl",
-                        "So"
-                    ],
-                    "dish_type": "Pasta"
-                },
-                {
-                    "name": "Pizza des Tages",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": "Pizza"
-                },
-                {
-                    "name": "Zanderfilet mit Sauce Hollandaise",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Ei",
-                        "Fi",
-                        "Gl",
-                        "GlW",
-                        "Mi",
-                        "Sl"
-                    ],
-                    "dish_type": "Grill"
-                },
-                {
-                    "name": "Reis-Gemüse-Curry",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [
-                        "Kn",
-                        "Sf"
-                    ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
-                },
-                {
-                    "name": "Tagessuppe",
-                    "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
-                    },
-                    "ingredients": [],
-                    "dish_type": ""
                 },
                 {
                     "name": "Schupfnudeln mit Zimtzucker und Apfelmus",
@@ -982,6 +688,151 @@
                         "Ei",
                         "Gl",
                         "GlW"
+                    ],
+                    "dish_type": "Süßspeise"
+                }
+            ]
+        },
+        {
+            "date": "2021-07-23",
+            "dishes": [
+                {
+                    "name": "Pasta mit getrockneten Tomaten, Kapern und Rucola",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "Gl",
+                        "GlW"
+                    ],
+                    "dish_type": "Pasta"
+                },
+                {
+                    "name": "Tofugeschnetzeltes China-Town",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "Kn",
+                        "Sl",
+                        "So"
+                    ],
+                    "dish_type": "Wok"
+                },
+                {
+                    "name": "Zartweizen mit Gemüse",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
+                },
+                {
+                    "name": "Panierter Seelachs (MSC) mit Remoulade",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "11",
+                        "3",
+                        "9",
+                        "Ei",
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sf"
+                    ],
+                    "dish_type": "Fisch"
+                },
+                {
+                    "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
                     ],
                     "dish_type": "Süßspeise"
                 }
