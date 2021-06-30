@@ -7,7 +7,7 @@ from datetime import date
 
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
-import src.main as main
+from src import main
 from src.entities import Week
 from src.menu_parser import (
     FMIBistroMenuParser,
