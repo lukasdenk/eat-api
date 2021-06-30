@@ -22,6 +22,7 @@ disable=print-statement,
         too-few-public-methods, #TODO code quality
         too-many-arguments,
         unsubscriptable-object,
+        consider-using-dict-items,
 
         import-error, #produces weird PYTHONPATH issues. WONTFIX until pylint/pre-commit allows setting environment options.
         # to run this locally remove this line temporarily and call
