@@ -3,7 +3,7 @@ from unittest import TestCase
 
 from pyopenmensa.feed import LazyBuilder
 
-import src.openmensa as openmensa
+from src import openmensa
 from src.entities import Dish, Menu, Price, Prices, Week
 
 
