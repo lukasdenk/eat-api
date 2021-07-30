@@ -1,4 +1,133 @@
 {
     "canteen_id": "mensa-weihenstephan",
-    "weeks": []
+    "weeks": [
+        {
+            "number": 35,
+            "year": 2021,
+            "days": [
+                {
+                    "date": "2021-08-30",
+                    "dishes": [
+                        {
+                            "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "Aktionsessen 4"
+                        },
+                        {
+                            "name": "Putensteak mit geschmorter Paprika, Champignons und Zwiebeln",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [],
+                            "dish_type": "Aktionsessen 7"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-08-31",
+                    "dishes": [
+                        {
+                            "name": "Phad Thai - Thailändisches Nudelgericht",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "Ei",
+                                "En",
+                                "Fi",
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "So"
+                            ],
+                            "dish_type": "Aktionsessen 4"
+                        },
+                        {
+                            "name": "Rindersteak mit Rotwein-Zwiebel-Sauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "5",
+                                "99",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "R",
+                                "Sw"
+                            ],
+                            "dish_type": "Aktionsessen 10"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

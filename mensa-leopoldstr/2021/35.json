@@ -1,12 +1,12 @@
 {
-    "number": 30,
+    "number": 35,
     "year": 2021,
     "days": [
         {
-            "date": "2021-07-30",
+            "date": "2021-08-30",
             "dishes": [
                 {
-                    "name": "Vegane Pasta Carbonara mit Räuchertofu",
+                    "name": "Gnocchi mit Schafskäse und frischem Basilikum",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -28,13 +28,13 @@
                         "Gl",
                         "GlW",
                         "Kn",
-                        "Sl",
-                        "So"
+                        "Mi",
+                        "Sl"
                     ],
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Forelle Müllerin Art mit Mandelbutter",
+                    "name": "Putensteak mit geschmorter Paprika, Champignons und Zwiebeln",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -52,18 +52,11 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [
-                        "Fi",
-                        "Gl",
-                        "GlW",
-                        "Mi",
-                        "Sc",
-                        "ScM"
-                    ],
+                    "ingredients": [],
                     "dish_type": "Grill"
                 },
                 {
-                    "name": "Bunte Gemüsepaella",
+                    "name": "Graupen-Gemüse-Pfanne",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -82,40 +75,42 @@
                         }
                     },
                     "ingredients": [
-                        "Kn"
+                        "Gl",
+                        "GlG",
+                        "Kn",
+                        "Sl"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Pfannkuchensuppe",
+                    "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
                     "prices": {
                         "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
                         },
                         "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
                         },
                         "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
                         }
                     },
                     "ingredients": [
                         "Ei",
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "Sl"
+                        "Mi"
                     ],
-                    "dish_type": ""
+                    "dish_type": "Vegetarisch"
                 },
                 {
-                    "name": "Hackbraten mit Rahmsauce",
+                    "name": "Gefüllte Paprikaschote mit Tomatensauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -134,20 +129,22 @@
                         }
                     },
                     "ingredients": [
-                        "Ei",
+                        "2",
                         "Gl",
-                        "GlG",
+                        "GlD",
                         "GlW",
                         "Kn",
-                        "Mi",
-                        "R",
-                        "S",
-                        "Sf"
+                        "Mi"
                     ],
-                    "dish_type": "Fleisch"
-                },
+                    "dish_type": ""
+                }
+            ]
+        },
+        {
+            "date": "2021-08-31",
+            "dishes": [
                 {
-                    "name": "Panierter Seelachs (MSC) mit Remoulade",
+                    "name": "Tortellini (Käsefüllung) mit Käse-Sahne-Sauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -167,20 +164,18 @@
                     },
                     "ingredients": [
                         "1",
-                        "11",
-                        "3",
-                        "9",
+                        "2",
                         "Ei",
-                        "Fi",
                         "Gl",
                         "GlW",
+                        "Kn",
                         "Mi",
-                        "Sf"
+                        "Sl"
                     ],
-                    "dish_type": "Fisch"
+                    "dish_type": "Pasta"
                 },
                 {
-                    "name": "Kleine Dampfnudel mit Vanillesauce",
+                    "name": "Rindersteak mit Rotwein-Zwiebel-Sauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -199,12 +194,107 @@
                         }
                     },
                     "ingredients": [
+                        "5",
+                        "99",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "Sw"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
+                    "name": "Phad Thai - Thailändisches Nudelgericht",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "Ei",
+                        "En",
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "So"
+                    ],
+                    "dish_type": "Wok"
+                },
+                {
+                    "name": "Kräuterpolenta mit Tomatenragout",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Vegan, Eintopf, Suppe"
+                },
+                {
+                    "name": "Kartoffel-Pilz-Auflauf mit frischem Lauch und Dip",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.85,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.95,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
                         "Ei",
                         "Gl",
                         "GlW",
-                        "Mi"
+                        "Kn",
+                        "Mi",
+                        "Sf",
+                        "Sl"
                     ],
-                    "dish_type": "Süßspeise"
+                    "dish_type": "Vegetarisch"
                 }
             ]
         }
