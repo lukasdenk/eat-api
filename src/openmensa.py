@@ -35,5 +35,5 @@ def addDishToCanteen(dish, date, canteen):
 
 
 def writeFeedToFile(canteen, directory):
-    with open(f"{str(directory)}/feed.xml", "w") as outfile:
+    with open(f"{str(directory)}/feed.xml", "w", encoding="utf-8") as outfile:
         outfile.write(canteen.toXMLFeed())

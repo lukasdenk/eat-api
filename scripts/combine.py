@@ -22,10 +22,10 @@ def main():
                     os.chdir("..")
                 os.chdir("..")
 
-        with open(out_file_name, "w") as out_file:
+        with open(out_file_name, "w", encoding="utf-8") as out_file:
             out_file.write('{"canteens": [\n')
             for i, file in enumerate(files):
-                with open(file) as in_file:
+                with open(file, encoding="utf-8") as in_file:
                     for line in in_file:
                         out_file.write(line)
                     if i < len(files) - 1:

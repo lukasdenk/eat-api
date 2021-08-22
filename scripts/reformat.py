@@ -53,14 +53,14 @@ def main():
         print('Loading "all.json"')
         # Read all menus from the "all.json" file
         if os.path.isfile("all.json"):
-            with open("all.json", "r") as input_file:
+            with open("all.json", "r", encoding="utf-8") as input_file:
                 data = json.load(input_file)
                 print('Parsing "all.json"')
                 for c in data.get("canteens"):
                     canteens.append(Canteen(c))
 
         print('Saving result to "all_ref.json"')
-        with open("all_ref.json", "w") as outfile:
+        with open("all_ref.json", "w", encoding="utf-8") as outfile:
             json.dump(canteens, outfile, default=lambda o: o.__dict__, indent=4, ensure_ascii=False)
         print("Done")
 

@@ -370,7 +370,7 @@ class FMIBistroMenuParser(MenuParser):
                 with tempfile.NamedTemporaryFile() as temp_txt:
                     # convert pdf to text by calling pdftotext
                     call(["pdftotext", "-layout", temp_pdf.name, temp_txt.name])  # nosec: all input is fully defined
-                    with open(temp_txt.name, "r") as myfile:
+                    with open(temp_txt.name, "r", encoding="utf-8") as myfile:
                         # read generated text file
                         data = myfile.read()
                         parsed_menus = self.get_menus(data, year, week_number)
@@ -520,7 +520,7 @@ class IPPBistroMenuParser(MenuParser):
                     call(
                         ["pdftotext", "-l", "1", "-layout", temp_pdf.name, temp_txt.name],
                     )  # nosec: all input is fully defined
-                    with open(temp_txt.name, "r") as myfile:
+                    with open(temp_txt.name, "r", encoding="utf-8") as myfile:
                         # read generated text file
                         data = myfile.read()
                         parsed_menus = self.get_menus(data, year, week_number)
@@ -733,7 +733,7 @@ class MedizinerMensaMenuParser(MenuParser):
                 call(
                     ["pdftotext", "-l", "1", "-layout", temp_pdf.name, temp_txt.name],
                 )  # nosec: all input is fully defined
-                with open(temp_txt.name, "r") as myfile:
+                with open(temp_txt.name, "r", encoding="utf-8") as myfile:
                     # read generated text file
                     data = myfile.read()
                     return self.get_menus(data, year, week_number)

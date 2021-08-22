@@ -38,7 +38,7 @@ def jsonify(weeks, directory, location, combine_dishes):
         # convert Week object to JSON
         week_json = week.to_json()
         # write JSON to file: <year>/<calendar_week>.json
-        with open(f"{str(json_dir)}/{str(calendar_week).zfill(2)}.json", "w") as outfile:
+        with open(f"{str(json_dir)}/{str(calendar_week).zfill(2)}.json", "w", encoding="utf-8") as outfile:
             json.dump(json.loads(week_json), outfile, indent=4, ensure_ascii=False)
 
     # check if combine parameter got set
@@ -60,7 +60,7 @@ def jsonify(weeks, directory, location, combine_dishes):
     )
 
     # write JSON object to file
-    with open(f"{str(json_dir)}/{combined_df_name}.json", "w") as outfile:
+    with open(f"{str(json_dir)}/{combined_df_name}.json", "w", encoding="utf-8") as outfile:
         json.dump(json.loads(weeks_json_all), outfile, indent=4, ensure_ascii=False)
 
 
@@ -70,7 +70,7 @@ def main():
 
     # print canteens
     if args.locations:
-        with open("canteens.json", "r") as canteens:
+        with open("canteens.json", "r", encoding="utf-8") as canteens:
             print(json.dumps(json.load(canteens)))
         return
 

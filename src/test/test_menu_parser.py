@@ -28,21 +28,32 @@ class MenuParserTest(unittest.TestCase):
 class StudentenwerkMenuParserTest(unittest.TestCase):
     studentenwerk_menu_parser = StudentenwerkMenuParser()
 
-    with open("src/test/assets/studentenwerk/in/speiseplan_mensa_garching_old.html") as speiseplan_mensa_garching_old:
+    with open(
+        "src/test/assets/studentenwerk/in/speiseplan_mensa_garching_old.html",
+        encoding="utf-8",
+    ) as speiseplan_mensa_garching_old:
         menu_html_mensa_garching_old = html.fromstring(speiseplan_mensa_garching_old.read())
-    with open("src/test/assets/studentenwerk/in/speiseplan_mensa_garching_new.html") as speiseplan_mensa_garching_new:
+    with open(
+        "src/test/assets/studentenwerk/in/speiseplan_mensa_garching_new.html",
+        encoding="utf-8",
+    ) as speiseplan_mensa_garching_new:
         menu_html_mensa_garching_new = html.fromstring(speiseplan_mensa_garching_new.read())
     with open(
         "src/test/assets/studentenwerk/in/speiseplan_mensa_garching_old_wrong_date_format.html",
+        encoding="utf-8",
     ) as speiseplan_mensa_garching_old_wrong_date_format:
         menu_html_mensa_garching_old_wrong_date_format = html.fromstring(
             speiseplan_mensa_garching_old_wrong_date_format.read(),
         )
     with open(
         "src/test/assets/studentenwerk/in/speiseplan_stubistro_großhadern.html",
+        encoding="utf-8",
     ) as speiseplan_stubistro_grosshadern:
         menu_html_stubistro_grosshadern = html.fromstring(speiseplan_stubistro_grosshadern.read())
-    with open("src/test/assets/studentenwerk/in/speiseplan_mensa_arcisstrasse.html") as speiseplan_mensa_arcisstrasse:
+    with open(
+        "src/test/assets/studentenwerk/in/speiseplan_mensa_arcisstrasse.html",
+        encoding="utf-8",
+    ) as speiseplan_mensa_arcisstrasse:
         menu_html_mensa_arcisstrasse = html.fromstring(speiseplan_mensa_arcisstrasse.read())
 
     def test_studentenwerk_mensa_garching_old(self):
@@ -55,9 +66,13 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "mensa-garching", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/studentenwerk/out/speiseplan_mensa_garching_old.json", "r") as reference:
+                with open(
+                    "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_old.json",
+                    "r",
+                    encoding="utf-8",
+                ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     def test_studentenwerk_mensa_garching_new(self):
@@ -70,9 +85,13 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "mensa-garching", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/studentenwerk/out/speiseplan_mensa_garching_new.json", "r") as reference:
+                with open(
+                    "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_new.json",
+                    "r",
+                    encoding="utf-8",
+                ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     def test_studentenwerk_mensa_garching_old_wrong_date_format(self):
@@ -88,11 +107,12 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "mensa-garching", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
                 with open(
                     "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_old_wrong_date_format.json",
                     "r",
+                    encoding="utf-8",
                 ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
@@ -106,9 +126,13 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "stubistro-großhadern", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/studentenwerk/out/speiseplan_stubistro_großhadern.json", "r") as reference:
+                with open(
+                    "src/test/assets/studentenwerk/out/speiseplan_stubistro_großhadern.json",
+                    "r",
+                    encoding="utf-8",
+                ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     def test_studentenwerk_mensa_arcisstrasse(self):
@@ -121,9 +145,13 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "mensa-arcisstr", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/studentenwerk/out/speiseplan_mensa_arcisstrasse.json", "r") as reference:
+                with open(
+                    "src/test/assets/studentenwerk/out/speiseplan_mensa_arcisstrasse.json",
+                    "r",
+                    encoding="utf-8",
+                ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     def test_should_ignore_day_when_date_of_the_day_is_in_a_wrong_format(self):
@@ -163,15 +191,30 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         return obj
 
     def test_should_convert_week_to_json(self):
-        with open("src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-13.json") as data_file:
+        with open(
+            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-13.json",
+            encoding="utf-8",
+        ) as data_file:
             week_2017_13 = json.load(data_file)
-        with open("src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-14.json") as data_file:
+        with open(
+            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-14.json",
+            encoding="utf-8",
+        ) as data_file:
             week_2017_14 = json.load(data_file)
-        with open("src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-15.json") as data_file:
+        with open(
+            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-15.json",
+            encoding="utf-8",
+        ) as data_file:
             week_2017_15 = json.load(data_file)
-        with open("src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-16.json") as data_file:
+        with open(
+            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-16.json",
+            encoding="utf-8",
+        ) as data_file:
             week_2017_16 = json.load(data_file)
-        with open("src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-17.json") as data_file:
+        with open(
+            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-17.json",
+            encoding="utf-8",
+        ) as data_file:
             week_2017_17 = json.load(data_file)
 
         menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
@@ -201,12 +244,12 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
 class FMIBistroParserTest(unittest.TestCase):
     bistro_parser = FMIBistroMenuParser()
 
-    with open("src/test/assets/fmi/in/Garching-Speiseplan_KW44_2017.txt", "r") as menu_kw_44_2017:
+    with open("src/test/assets/fmi/in/Garching-Speiseplan_KW44_2017.txt", "r", encoding="utf-8") as menu_kw_44_2017:
         menu_kw_44_2017_txt = menu_kw_44_2017.read()
     menu_kw_44_2017_year = 2017
     menu_kw_44_2017_week_number = 44
 
-    with open("src/test/assets/fmi/in/Garching-Speiseplan_KW45_2017.txt", "r") as menu_kw_45_2017:
+    with open("src/test/assets/fmi/in/Garching-Speiseplan_KW45_2017.txt", "r", encoding="utf-8") as menu_kw_45_2017:
         menu_kw_45_2017_txt = menu_kw_45_2017.read()
     menu_kw_45_2017_year = 2017
     menu_kw_45_2017_week_number = 45
@@ -225,9 +268,9 @@ class FMIBistroParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "fmi-bistro", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/fmi/out/menu_kw_44_2017.json", "r") as reference:
+                with open("src/test/assets/fmi/out/menu_kw_44_2017.json", "r", encoding="utf-8") as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     def test_fmi_bistro_kw_45_2017(self):
@@ -244,9 +287,9 @@ class FMIBistroParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "fmi-bistro", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/fmi/out/menu_kw_45_2017.json", "r") as reference:
+                with open("src/test/assets/fmi/out/menu_kw_45_2017.json", "r", encoding="utf-8") as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     """
@@ -264,12 +307,12 @@ class FMIBistroParserTest(unittest.TestCase):
 class IPPBistroParserTest(unittest.TestCase):
     ipp_parser = IPPBistroMenuParser()
 
-    with open("src/test/assets/ipp/in/menu_kw_47_2017.txt", "r") as menu_kw_47_2017:
+    with open("src/test/assets/ipp/in/menu_kw_47_2017.txt", "r", encoding="utf-8") as menu_kw_47_2017:
         menu_kw_47_2017_txt = menu_kw_47_2017.read()
     menu_kw_47_2017_year = 2017
     menu_kw_47_2017_week_number = 47
 
-    with open("src/test/assets/ipp/in/menu_kw_48_2017.txt", "r") as menu_kw_48_2017:
+    with open("src/test/assets/ipp/in/menu_kw_48_2017.txt", "r", encoding="utf-8") as menu_kw_48_2017:
         menu_kw_48_2017_txt = menu_kw_48_2017.read()
     menu_kw_48_2017_year = 2017
     menu_kw_48_2017_week_number = 48
@@ -288,9 +331,9 @@ class IPPBistroParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_47_2017.json", "r") as reference:
+                with open("src/test/assets/ipp/out/menu_kw_47_2017.json", "r", encoding="utf-8") as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     def test_ipp_bistro_kw_48_2017(self):
@@ -307,15 +350,15 @@ class IPPBistroParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_48_2017.json", "r") as reference:
+                with open("src/test/assets/ipp/out/menu_kw_48_2017.json", "r", encoding="utf-8") as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     # Test Cases with holidays
 
     # Two holidays (Mon & Tue)
-    with open("src/test/assets/ipp/in/menu_kw_18_2018.txt", "r") as menu_kw_18_2018:
+    with open("src/test/assets/ipp/in/menu_kw_18_2018.txt", "r", encoding="utf-8") as menu_kw_18_2018:
         menu_kw_18_2018_txt = menu_kw_18_2018.read()
     menu_kw_18_2018_year = 2018
     menu_kw_18_2018_week_number = 18
@@ -334,13 +377,13 @@ class IPPBistroParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_18_2018.json", "r") as reference:
+                with open("src/test/assets/ipp/out/menu_kw_18_2018.json", "r", encoding="utf-8") as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     # One holiday (Thu)
-    with open("src/test/assets/ipp/in/menu_kw_19_2018.txt", "r") as menu_kw_19_2018:
+    with open("src/test/assets/ipp/in/menu_kw_19_2018.txt", "r", encoding="utf-8") as menu_kw_19_2018:
         menu_kw_19_2018_txt = menu_kw_19_2018.read()
     menu_kw_19_2018_year = 2018
     menu_kw_19_2018_week_number = 19
@@ -359,13 +402,13 @@ class IPPBistroParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_19_2018.json", "r") as reference:
+                with open("src/test/assets/ipp/out/menu_kw_19_2018.json", "r", encoding="utf-8") as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     # "Überraschungsmenü" and "Geschlossen" in first line of table
-    with open("src/test/assets/ipp/in/menu_kw_22_2019.txt", "r") as menu_kw_22_2019:
+    with open("src/test/assets/ipp/in/menu_kw_22_2019.txt", "r", encoding="utf-8") as menu_kw_22_2019:
         menu_kw_22_2019_txt = menu_kw_22_2019.read()
     menu_kw_22_2019_year = 2019
     menu_kw_22_2019_week_number = 22
@@ -384,9 +427,9 @@ class IPPBistroParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_22_2019.json", "r") as reference:
+                with open("src/test/assets/ipp/out/menu_kw_22_2019.json", "r", encoding="utf-8") as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     """
@@ -406,12 +449,12 @@ class IPPBistroParserTest(unittest.TestCase):
 class MedizinerMensaParserTest(unittest.TestCase):
     mediziner_mensa_parser = MedizinerMensaMenuParser()
 
-    with open("src/test/assets/mediziner-mensa/in/menu_kw_44_2018.txt", "r") as menu_kw_44_2018:
+    with open("src/test/assets/mediziner-mensa/in/menu_kw_44_2018.txt", "r", encoding="utf-8") as menu_kw_44_2018:
         menu_kw_44_2018_txt = menu_kw_44_2018.read()
     menu_kw_44_2018_year = 2018
     menu_kw_44_2018_week_number = 44
 
-    with open("src/test/assets/mediziner-mensa/in/menu_kw_47_2018.txt", "r") as menu_kw_47_2018:
+    with open("src/test/assets/mediziner-mensa/in/menu_kw_47_2018.txt", "r", encoding="utf-8") as menu_kw_47_2018:
         menu_kw_47_2018_txt = menu_kw_47_2018.read()
     menu_kw_47_2018_year = 2018
     menu_kw_47_2018_week_number = 47
@@ -430,9 +473,13 @@ class MedizinerMensaParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "mediziner-mensa", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/mediziner-mensa/out/menu_kw_44_2018.json", "r") as reference:
+                with open(
+                    "src/test/assets/mediziner-mensa/out/menu_kw_44_2018.json",
+                    "r",
+                    encoding="utf-8",
+                ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     def test_mediziner_mensa_kw_47_2018(self):
@@ -449,9 +496,13 @@ class MedizinerMensaParserTest(unittest.TestCase):
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "mediziner-mensa", True)
             # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r") as generated:
+            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
-                with open("src/test/assets/mediziner-mensa/out/menu_kw_47_2018.json", "r") as reference:
+                with open(
+                    "src/test/assets/mediziner-mensa/out/menu_kw_47_2018.json",
+                    "r",
+                    encoding="utf-8",
+                ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     # """
