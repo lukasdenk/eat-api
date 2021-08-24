@@ -52,6 +52,7 @@
                         }
                     },
                     "ingredients": [
+                        "1",
                         "2",
                         "3",
                         "8",
@@ -60,9 +61,41 @@
                         "GlW",
                         "Kn",
                         "Mi",
-                        "S"
+                        "S",
+                        "Sf"
                     ],
                     "dish_type": "Grill"
+                },
+                {
+                    "name": "Schweineschnitzel Wiener Art",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S",
+                        "Sf"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Gemüsecurry mit frischem Koriander und Süßkartoffeln",
@@ -112,31 +145,33 @@
                     "ingredients": [
                         "Kn",
                         "Se",
-                        "Sl",
                         "So"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Curry-Kokossuppe",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.75,
+                            "base_price": 0.0,
+                            "price_per_unit": 0.33,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.9,
+                            "base_price": 0.0,
+                            "price_per_unit": 0.55,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
-                            "price_per_unit": 1.05,
+                            "base_price": 0.0,
+                            "price_per_unit": 0.66,
                             "unit": "100g"
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "En",
+                        "Kn"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -171,6 +206,33 @@
         {
             "date": "2021-08-24",
             "dishes": [
+                {
+                    "name": "Pasta mit mediterraner Gemüsesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.33,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.55,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 0.0,
+                            "price_per_unit": 0.66,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Pasta"
+                },
                 {
                     "name": "Pizza mit Vorderschinken",
                     "prices": {
@@ -231,7 +293,7 @@
                     "dish_type": "Grill"
                 },
                 {
-                    "name": "Veganes Nasi Goreng mit Sojasprossen",
+                    "name": "Veganes Bami Goreng mit Sojasprossen",
                     "prices": {
                         "students": {
                             "base_price": 0.0,
@@ -279,13 +341,12 @@
                         }
                     },
                     "ingredients": [
-                        "Kn",
-                        "Sl"
+                        "Kn"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Pfannkuchensuppe",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -303,7 +364,13 @@
                             "unit": "100g"
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -486,14 +553,44 @@
                         }
                     },
                     "ingredients": [
+                        "1",
                         "Gl",
                         "GlG",
                         "GlW",
                         "Kn",
                         "Mi",
-                        "R"
+                        "R",
+                        "Sf"
                     ],
                     "dish_type": "Fleisch"
+                },
+                {
+                    "name": "Lammgulasch nach Art der Provence",
+                    "prices": {
+                        "students": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.75,
+                            "unit": "100g"
+                        },
+                        "staff": {
+                            "base_price": 1.0,
+                            "price_per_unit": 0.9,
+                            "unit": "100g"
+                        },
+                        "guests": {
+                            "base_price": 1.0,
+                            "price_per_unit": 1.05,
+                            "unit": "100g"
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 }
             ]
         },
@@ -578,6 +675,7 @@
                         }
                     },
                     "ingredients": [
+                        "2",
                         "Kn"
                     ],
                     "dish_type": "Wok"
@@ -688,7 +786,7 @@
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Gebratenes Zanderfilet mit Kräuterbutter",
+                    "name": "Garnelen in Zitronen-Kokos-Dip",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -707,11 +805,15 @@
                         }
                     },
                     "ingredients": [
-                        "Fi",
+                        "1",
+                        "11",
+                        "3",
+                        "Ei",
                         "Gl",
                         "GlW",
-                        "Kn",
-                        "Mi"
+                        "Kr",
+                        "Mi",
+                        "Sf"
                     ],
                     "dish_type": "Grill"
                 },

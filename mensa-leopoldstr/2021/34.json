@@ -112,10 +112,34 @@
                     "ingredients": [
                         "Kn",
                         "Se",
-                        "Sl",
                         "So"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
+                },
+                {
+                    "name": "Pumpkin And Pepper Soup (scharfe Kürbis-Paprika-Suppe)",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Countrykartoffeln mit Sahnequark und Petersilie",
@@ -224,10 +248,37 @@
                         }
                     },
                     "ingredients": [
-                        "Kn",
-                        "Sl"
+                        "Kn"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
+                },
+                {
+                    "name": "Pfannkuchensuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Falafel mit Joghurt-Gurken-Minz Dip",
@@ -288,6 +339,37 @@
                         "Wt"
                     ],
                     "dish_type": "Fisch"
+                },
+                {
+                    "name": "Gebackenes Kabeljaufilet (MSC)",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "3",
+                        "9",
+                        "Ei",
+                        "Fi",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "So"
+                    ],
+                    "dish_type": ""
                 }
             ]
         },
@@ -377,6 +459,33 @@
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
                 {
+                    "name": "Kartoffel-Lauchcremesuppe",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
                     "name": "Kartoffelgröstl mit Gemüse und Ei",
                     "prices": {
                         "students": {
@@ -399,6 +508,62 @@
                         "Ei"
                     ],
                     "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Bratwurstschnecke",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "3",
+                        "8",
+                        "S"
+                    ],
+                    "dish_type": "Fleisch"
+                },
+                {
+                    "name": "Käsekrainer",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "8",
+                        "Mi",
+                        "R",
+                        "S",
+                        "Sf"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Münchner Gulasch vom Rind",

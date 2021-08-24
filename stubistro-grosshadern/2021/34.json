@@ -38,6 +38,64 @@
                     "dish_type": "Grill"
                 },
                 {
+                    "name": "Frikadelle mit Speck-Zwiebel-Sauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "R",
+                        "S",
+                        "Sf"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Frikadelle mit Speck-Zwiebel-Sauce (2)",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "R",
+                        "S",
+                        "Sf"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
                     "name": "Gemüsecurry mit frischem Koriander und Süßkartoffeln",
                     "prices": {
                         "students": {
@@ -118,6 +176,61 @@
             "date": "2021-08-24",
             "dishes": [
                 {
+                    "name": "Paniertes Hähnchenschnitzel",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
+                    "name": "Frikadelle mit Speck-Zwiebel-Sauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "R",
+                        "S",
+                        "Sf"
+                    ],
+                    "dish_type": ""
+                },
+                {
                     "name": "Veganes Nasi Goreng mit Sojasprossen",
                     "prices": {
                         "students": {
@@ -138,9 +251,12 @@
                     },
                     "ingredients": [
                         "2",
+                        "3",
                         "Gl",
                         "GlW",
                         "Kn",
+                        "Se",
+                        "Sf",
                         "Sl",
                         "So"
                     ],

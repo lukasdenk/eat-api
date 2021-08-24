@@ -33,7 +33,7 @@
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Pizza des Tages",
+                    "name": "Pizza Regina mit (Vorder-)Schinken und Champignons",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -51,7 +51,17 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "8",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "S",
+                        "So"
+                    ],
                     "dish_type": "Pizza"
                 },
                 {
@@ -85,6 +95,35 @@
                         "S"
                     ],
                     "dish_type": "Grill"
+                },
+                {
+                    "name": "Schweineschnitzel Wiener Art",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Gemüsecurry mit frischem Koriander und Süßkartoffeln",
@@ -194,7 +233,7 @@
             "date": "2021-08-24",
             "dishes": [
                 {
-                    "name": "Pizza des Tages",
+                    "name": "Pasta mit mediterraner Gemüsesauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -212,7 +251,41 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Sl"
+                    ],
+                    "dish_type": "Pasta"
+                },
+                {
+                    "name": "Pizza Verdura mit gebratenem Gemüse und Mozzarella",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "So"
+                    ],
                     "dish_type": "Pizza"
                 },
                 {
@@ -411,7 +484,7 @@
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Pizza des Tages",
+                    "name": "Pizza Margherita mit Mozzarella",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -429,7 +502,13 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "So"
+                    ],
                     "dish_type": "Pizza"
                 },
                 {
@@ -459,7 +538,7 @@
                     "dish_type": "Grill"
                 },
                 {
-                    "name": "Asiatische Reis-Gemüsepfanne",
+                    "name": "Linseneintopf mit Gemüse",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -478,11 +557,10 @@
                         }
                     },
                     "ingredients": [
-                        "2",
-                        "Kn",
-                        "Sf",
+                        "3",
+                        "5",
                         "Sl",
-                        "So"
+                        "Sw"
                     ],
                     "dish_type": "Vegan, Eintopf, Suppe"
                 },
