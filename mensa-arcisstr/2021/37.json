@@ -35,7 +35,7 @@
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Pizza des Tages",
+                    "name": "Pizza Funghi mit Champignons",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -53,7 +53,13 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "So"
+                    ],
                     "dish_type": "Pizza"
                 },
                 {
@@ -76,11 +82,15 @@
                         }
                     },
                     "ingredients": [
+                        "5",
+                        "99",
                         "Gl",
                         "GlG",
                         "GlW",
                         "Kn",
-                        "Mi"
+                        "Mi",
+                        "Sl",
+                        "Sw"
                     ],
                     "dish_type": "Grill"
                 },
@@ -105,12 +115,12 @@
                     },
                     "ingredients": [
                         "2",
+                        "3",
                         "Gl",
                         "GlW",
-                        "Kn",
-                        "Sl"
+                        "Kn"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
                     "name": "Tagessuppe",
@@ -156,7 +166,6 @@
                     "ingredients": [
                         "Kn",
                         "Sf",
-                        "Sl",
                         "So"
                     ],
                     "dish_type": "Vegetarisch"
@@ -224,13 +233,12 @@
                         "Ei",
                         "Gl",
                         "GlW",
-                        "Mi",
-                        "Sl"
+                        "Mi"
                     ],
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Pizza des Tages",
+                    "name": "Fusilli mit Ricotta-Tomaten-Rahmsauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -248,7 +256,71 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "Ei",
+                        "Gl",
+                        "GlD",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Pizza quattro formaggi",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "So"
+                    ],
                     "dish_type": "Pizza"
                 },
                 {
@@ -300,7 +372,7 @@
                     "ingredients": [
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
                     "name": "Paelle de verduras (Spanische Gemüsepfanne)",
@@ -393,7 +465,7 @@
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Pizza des Tages",
+                    "name": "Pasta mit Basilikum-Tomatenpesto",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -411,7 +483,46 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Pizza Salami",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "3",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S",
+                        "So"
+                    ],
                     "dish_type": "Pizza"
                 },
                 {
@@ -472,7 +583,7 @@
                         "GlG",
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
                     "name": "Tagessuppe",
@@ -618,6 +729,42 @@
                     "dish_type": "Pizza"
                 },
                 {
+                    "name": "Überbackenes Hacksteak griechische Art mit Tsatsiki",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "3",
+                        "5",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "R",
+                        "Sf",
+                        "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
                     "name": "Mafe - Senegalisches Gemüsecurry",
                     "prices": {
                         "students": {
@@ -670,7 +817,7 @@
                         "Kn",
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
                     "name": "Tagessuppe",
@@ -717,6 +864,34 @@
                         "Mi"
                     ],
                     "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Hausgemachter Topfenstrudel mit Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "So"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Gebratene Entenkeule mit Chili-Karotten-Orangensauce",
@@ -772,6 +947,7 @@
                         }
                     },
                     "ingredients": [
+                        "2",
                         "Ei",
                         "Gl",
                         "GlW",
@@ -782,7 +958,7 @@
                     "dish_type": "Pasta"
                 },
                 {
-                    "name": "Pizza des Tages",
+                    "name": "Knöpfle Gemüsepfanne mit Schinken",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -800,7 +976,51 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "8",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S",
+                        "Sl"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Pizza mit Vorderschinken",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "3",
+                        "8",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Mi",
+                        "S",
+                        "So"
+                    ],
                     "dish_type": "Pizza"
                 },
                 {
@@ -883,7 +1103,7 @@
                         "Kn",
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
                     "name": "Tagessuppe",

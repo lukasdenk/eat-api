@@ -2,14 +2,14 @@
     "canteen_id": "mensa-weihenstephan",
     "weeks": [
         {
-            "number": 35,
+            "number": 37,
             "year": 2021,
             "days": [
                 {
-                    "date": "2021-08-30",
+                    "date": "2021-09-13",
                     "dishes": [
                         {
-                            "name": "Spinatspätzlepfanne mit Bergkäse und abgeschmelzten Zwiebeln",
+                            "name": "Smoky Mountain Chicken (mit Käse und Vorderschinken überbacken)",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -28,15 +28,26 @@
                                 }
                             },
                             "ingredients": [
-                                "Ei",
-                                "Gl",
-                                "GlW",
-                                "Mi"
+                                "1",
+                                "10",
+                                "11",
+                                "2",
+                                "3",
+                                "8",
+                                "Kn",
+                                "Mi",
+                                "Sf",
+                                "Sl"
                             ],
-                            "dish_type": "Aktionsessen 4"
-                        },
+                            "dish_type": "Aktionsessen 8"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-09-14",
+                    "dishes": [
                         {
-                            "name": "Putensteak mit geschmorter Paprika, Champignons und Zwiebeln",
+                            "name": "Rinderbraten mit Rotweinsauce",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -54,16 +65,238 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": [],
+                            "ingredients": [
+                                "5",
+                                "99",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "R",
+                                "Sl",
+                                "Sw"
+                            ],
                             "dish_type": "Aktionsessen 7"
                         }
                     ]
                 },
                 {
-                    "date": "2021-08-31",
+                    "date": "2021-09-15",
                     "dishes": [
                         {
-                            "name": "Phad Thai - Thailändisches Nudelgericht",
+                            "name": "Dinkelpfannkuchen mit Haselnuss-Nougat-Füllung und Vanillesauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "Ei",
+                                "Gl",
+                                "GlD",
+                                "Mi",
+                                "Sc",
+                                "ScH",
+                                "So"
+                            ],
+                            "dish_type": "Tagesgericht 4"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-09-16",
+                    "dishes": [
+                        {
+                            "name": "Pasta mit verschiedenen Schwammerl",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW"
+                            ],
+                            "dish_type": "Tagesgericht 3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 41,
+            "year": 2021,
+            "days": [
+                {
+                    "date": "2021-10-11",
+                    "dishes": [
+                        {
+                            "name": "Gnocchi mit Schafskäse und frischem Basilikum",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "Sl"
+                            ],
+                            "dish_type": "Tagesgericht 4"
+                        },
+                        {
+                            "name": "Mini-Frühlingsrollen an Gemüse-Curry-Reis",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Se",
+                                "Sf",
+                                "So"
+                            ],
+                            "dish_type": "Aktionsessen 4"
+                        },
+                        {
+                            "name": "Putensteak mit Kräuterbutter",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW"
+                            ],
+                            "dish_type": "Aktionsessen 9"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-12",
+                    "dishes": [
+                        {
+                            "name": "Pasta mit würzigem Kürbis",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW"
+                            ],
+                            "dish_type": "Tagesgericht 3"
+                        },
+                        {
+                            "name": "Frittierte Falafelbällchen mit Baba Ganoush (Auberginen-Sesam-Dip)",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Se"
+                            ],
+                            "dish_type": "Aktionsessen 5"
+                        },
+                        {
+                            "name": "Pizza Regina mit (Vorder-)Schinken und Champignons",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -83,18 +316,75 @@
                             },
                             "ingredients": [
                                 "2",
-                                "Ei",
-                                "En",
-                                "Fi",
+                                "3",
+                                "8",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Mi",
+                                "S",
+                                "So"
+                            ],
+                            "dish_type": "Aktionsessen 9"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-13",
+                    "dishes": [
+                        {
+                            "name": "Pikantes Kartoffelchili",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Kn"
+                            ],
+                            "dish_type": "Tagesgericht 1"
+                        },
+                        {
+                            "name": "Pasta mit Ricotta-Paprika-Sauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
                                 "Gl",
                                 "GlW",
                                 "Kn",
-                                "So"
+                                "Mi"
                             ],
-                            "dish_type": "Aktionsessen 4"
+                            "dish_type": "Tagesgericht 3"
                         },
                         {
-                            "name": "Rindersteak mit Rotwein-Zwiebel-Sauce",
+                            "name": "Andalusisches Rinderragout",
                             "prices": {
                                 "students": {
                                     "base_price": "N/A",
@@ -123,7 +413,1158 @@
                                 "R",
                                 "Sw"
                             ],
-                            "dish_type": "Aktionsessen 10"
+                            "dish_type": "Aktionsessen 8"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-14",
+                    "dishes": [
+                        {
+                            "name": "Amiwo - Roter Maisbrei mit Chili, dazu bunte Paprikastreifen",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "En"
+                            ],
+                            "dish_type": "Tagesgericht 1"
+                        },
+                        {
+                            "name": "Rindsbratwurst vom Grill",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "3",
+                                "8",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "R"
+                            ],
+                            "dish_type": "Tagesgericht 4"
+                        },
+                        {
+                            "name": "Pizza rucola, prosciutto e grana padano",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "3",
+                                "Ei",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Mi",
+                                "S",
+                                "So"
+                            ],
+                            "dish_type": "Aktionsessen 9"
+                        },
+                        {
+                            "name": "Bio-Pasta mit Bio-Soja-Bolognese (dazu Hartkäse)",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "Sl",
+                                "So"
+                            ],
+                            "dish_type": "Biogericht 3"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-15",
+                    "dishes": [
+                        {
+                            "name": "Zartweizen mit Gemüse",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn"
+                            ],
+                            "dish_type": "Tagesgericht 1"
+                        },
+                        {
+                            "name": "Germknödel gefüllt mit Pflaumenmus dazu Vanillesauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "Tagesgericht 4"
+                        },
+                        {
+                            "name": "Garnelen mit Zitronen-Kokos-Dip",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "11",
+                                "3",
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Kr",
+                                "Mi",
+                                "Sf"
+                            ],
+                            "dish_type": "Aktionsessen 9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 42,
+            "year": 2021,
+            "days": [
+                {
+                    "date": "2021-10-18",
+                    "dishes": [
+                        {
+                            "name": "Syrische Linsensuppe mit Zitrone und Kreuzkümmel",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Kn"
+                            ],
+                            "dish_type": "Tagesgericht 1"
+                        },
+                        {
+                            "name": "Kartoffeltaschen mit Kräuterfrischkäse",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "Tagesgericht 4"
+                        },
+                        {
+                            "name": "Gegrillte Hähnchenbrust mit levantinischer Mangosauce nach Amba Art",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "5",
+                                "Kn",
+                                "Sf",
+                                "Sw"
+                            ],
+                            "dish_type": "Aktionsessen 5"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-19",
+                    "dishes": [
+                        {
+                            "name": "Mexikanisches Soja-Chili",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Kn",
+                                "So"
+                            ],
+                            "dish_type": "Tagesgericht 1"
+                        },
+                        {
+                            "name": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "Sl"
+                            ],
+                            "dish_type": "Aktionsessen 4"
+                        },
+                        {
+                            "name": "Sweet & Sour mit Schweinefleisch",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "3",
+                                "5",
+                                "Kn",
+                                "S",
+                                "Sf",
+                                "Sw"
+                            ],
+                            "dish_type": "Aktionsessen 6"
+                        },
+                        {
+                            "name": "Pizza Salami",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "3",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "S",
+                                "So"
+                            ],
+                            "dish_type": "Aktionsessen 9"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-20",
+                    "dishes": [
+                        {
+                            "name": "Tomaten-Kichererbsentopf mit Sumach",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "3",
+                                "Kn"
+                            ],
+                            "dish_type": "Tagesgericht 1"
+                        },
+                        {
+                            "name": "Pasta mit Champignonrahmsauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.6,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.1,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi"
+                            ],
+                            "dish_type": "Tagesgericht 3"
+                        },
+                        {
+                            "name": "Schweinesteak Strindberg (mit Senf-Zwiebelschmelze)",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi",
+                                "S",
+                                "Sf",
+                                "Sl"
+                            ],
+                            "dish_type": "Aktionsessen 4"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-21",
+                    "dishes": [
+                        {
+                            "name": "Bunte Gemüsepaella",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "3",
+                                "Kn"
+                            ],
+                            "dish_type": "Tagesgericht 1"
+                        },
+                        {
+                            "name": "Arista al fiorentina - Schweinebraten toskanische Art",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "5",
+                                "99",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "Sw"
+                            ],
+                            "dish_type": "Aktionsessen 5"
+                        },
+                        {
+                            "name": "Pizza Mexiko mit Vorderschinken, Mais, Paprikawürfeln und Mozzarella",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "3",
+                                "8",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Mi",
+                                "So"
+                            ],
+                            "dish_type": "Aktionsessen 9"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-22",
+                    "dishes": [
+                        {
+                            "name": "Kleine Dampfnudel mit Vanillesauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "Tagesgericht 4"
+                        },
+                        {
+                            "name": "Mediterrane Schupfnudelpfanne mit frischem Gemüse",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Kn"
+                            ],
+                            "dish_type": "Aktionsessen 3"
+                        },
+                        {
+                            "name": "Massaman Curry (mit Hähnchen)",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "En",
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Sf"
+                            ],
+                            "dish_type": "Aktionsessen 4"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "number": 43,
+            "year": 2021,
+            "days": [
+                {
+                    "date": "2021-10-25",
+                    "dishes": [
+                        {
+                            "name": "Karotten-Kürbisragout",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Sf"
+                            ],
+                            "dish_type": "Tagesgericht 1"
+                        },
+                        {
+                            "name": "Gulasch vom Schwein",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "S"
+                            ],
+                            "dish_type": "Tagesgericht 4"
+                        },
+                        {
+                            "name": "Ravioli mit Pilzfüllung in pikanter Kräutersauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "Sl"
+                            ],
+                            "dish_type": "Aktionsessen 3"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-26",
+                    "dishes": [
+                        {
+                            "name": "Mediterraner Nudel-Gemüse-Auflauf",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "Ei",
+                                "Gl",
+                                "GlW",
+                                "Mi"
+                            ],
+                            "dish_type": "Aktionsessen 3"
+                        },
+                        {
+                            "name": "Rinderbraten mit Rotweinsauce",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "5",
+                                "99",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "R",
+                                "Sl",
+                                "Sw"
+                            ],
+                            "dish_type": "Aktionsessen 7"
+                        },
+                        {
+                            "name": "Pizza Spinaci mit Gorgonzola und Tomate",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Kn",
+                                "Mi",
+                                "So"
+                            ],
+                            "dish_type": "Aktionsessen 8"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-27",
+                    "dishes": [
+                        {
+                            "name": "Kartoffelgröstl mit Gemüse und Ei",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei"
+                            ],
+                            "dish_type": "Tagesgericht 4"
+                        },
+                        {
+                            "name": "Überbackenes Hacksteak griechische Art mit Tsatsiki",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "3",
+                                "5",
+                                "Ei",
+                                "Kn",
+                                "Mi",
+                                "R",
+                                "Sf",
+                                "Sl",
+                                "Sw"
+                            ],
+                            "dish_type": "Aktionsessen 6"
+                        },
+                        {
+                            "name": "Bio-Linsen mit Bio-Spätzle",
+                            "prices": {
+                                "students": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 2.95,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 3.45,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Sl",
+                                "So"
+                            ],
+                            "dish_type": "Biogericht 3"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-28",
+                    "dishes": [
+                        {
+                            "name": "Käsekrainer mit Senf, Ketchup oder Barbecuedip",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "10",
+                                "11",
+                                "2",
+                                "3",
+                                "8",
+                                "Kn",
+                                "Mi",
+                                "R",
+                                "S",
+                                "Sf",
+                                "Sl"
+                            ],
+                            "dish_type": "Aktionsessen 5"
+                        },
+                        {
+                            "name": "Grünkohl-Hanf-Bällchen mit Schnittlauchdip",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Mi"
+                            ],
+                            "dish_type": "Aktionsessen 7"
+                        },
+                        {
+                            "name": "Pizza Elsässer Art mit Sauerrahm, Zwiebeln, Speck und Käse",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "2",
+                                "3",
+                                "8",
+                                "Gl",
+                                "GlG",
+                                "GlW",
+                                "Mi",
+                                "So"
+                            ],
+                            "dish_type": "Aktionsessen 9"
+                        }
+                    ]
+                },
+                {
+                    "date": "2021-10-29",
+                    "dishes": [
+                        {
+                            "name": "Afrikanischer Kürbiseintopf mit Zimt",
+                            "prices": {
+                                "students": {
+                                    "base_price": 1.0,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": 1.9,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": 2.4,
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Kn"
+                            ],
+                            "dish_type": "Tagesgericht 1"
+                        },
+                        {
+                            "name": "Gnocchi mit Pilzen, Tomaten und Spinat",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Gl",
+                                "GlW",
+                                "Kn"
+                            ],
+                            "dish_type": "Aktionsessen 6"
+                        },
+                        {
+                            "name": "Zanderfilet mit Sauce Hollandaise",
+                            "prices": {
+                                "students": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "staff": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                },
+                                "guests": {
+                                    "base_price": "N/A",
+                                    "price_per_unit": null,
+                                    "unit": null
+                                }
+                            },
+                            "ingredients": [
+                                "Ei",
+                                "Fi",
+                                "Gl",
+                                "GlW",
+                                "Mi",
+                                "Sl"
+                            ],
+                            "dish_type": "Aktionsessen 9"
                         }
                     ]
                 }

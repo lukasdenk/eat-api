@@ -35,6 +35,63 @@
                     "dish_type": "Pasta"
                 },
                 {
+                    "name": "Canelloni \"Ricotta-Spinat\" in pikanter Kräutersauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Mediterraner Nudel-Gemüse-Auflauf",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "1",
+                        "2",
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": "Pasta"
+                },
+                {
                     "name": "Kotelett vom Lamm mit Rosmarinjus",
                     "prices": {
                         "students": {
@@ -54,13 +111,47 @@
                         }
                     },
                     "ingredients": [
+                        "5",
+                        "99",
                         "Gl",
                         "GlG",
                         "GlW",
                         "Kn",
-                        "Mi"
+                        "Mi",
+                        "Sw"
                     ],
                     "dish_type": "Grill"
+                },
+                {
+                    "name": "Schweinefilet mit Rosmarinjus",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "5",
+                        "99",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "Sw"
+                    ],
+                    "dish_type": ""
                 },
                 {
                     "name": "Arabischer Couscous mit Karotten und Kichererbsen",
@@ -83,15 +174,15 @@
                     },
                     "ingredients": [
                         "2",
+                        "3",
                         "Gl",
                         "GlW",
-                        "Kn",
-                        "Sl"
+                        "Kn"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Blumenkohlcremesuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -109,7 +200,11 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -178,7 +273,7 @@
             "date": "2021-09-14",
             "dishes": [
                 {
-                    "name": "Mediterraner Nudel-Gemüse-Auflauf",
+                    "name": "Käsekrainer",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -197,18 +292,18 @@
                         }
                     },
                     "ingredients": [
-                        "1",
                         "2",
-                        "Ei",
-                        "Gl",
-                        "GlW",
+                        "3",
+                        "8",
                         "Mi",
-                        "Sl"
+                        "R",
+                        "S",
+                        "Sf"
                     ],
-                    "dish_type": "Pasta"
+                    "dish_type": "Grill"
                 },
                 {
-                    "name": "Sojageschnetzeltes mit Basmatireis und frischen Champignons",
+                    "name": "Sojageschnetzeltes mit Champignons",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -259,10 +354,10 @@
                         "Sl",
                         "So"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Vegane Gulaschsuppe mit Soja, Kartoffeln und Paprika",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -280,7 +375,12 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Kn",
+                        "So"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -337,6 +437,40 @@
                         "Mi",
                         "R",
                         "Sl",
+                        "Sw"
+                    ],
+                    "dish_type": "Fleisch"
+                },
+                {
+                    "name": "Saltimbocca vom Schweinefilet (mit rohem Schinken )",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "5",
+                        "99",
+                        "Gl",
+                        "GlG",
+                        "GlW",
+                        "Kn",
+                        "Mi",
+                        "S",
                         "Sw"
                     ],
                     "dish_type": "Fleisch"
@@ -428,13 +562,12 @@
                     },
                     "ingredients": [
                         "Gl",
-                        "GlG",
-                        "Sl"
+                        "GlG"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Tomaten-Kokos-Suppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -452,7 +585,12 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "2",
+                        "Gl",
+                        "GlW",
+                        "Kn"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -484,6 +622,32 @@
                         "Mi"
                     ],
                     "dish_type": "Vegetarisch"
+                },
+                {
+                    "name": "Saltimbocca vom Schweinefilet (mit rohem Schinken )",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "2",
+                        "3",
+                        "S"
+                    ],
+                    "dish_type": "Fleisch"
                 },
                 {
                     "name": "Dinkelpfannkuchen mit Haselnuss-Nougat-Füllung und Vanillesauce",
@@ -546,6 +710,33 @@
                     "dish_type": "Pasta"
                 },
                 {
+                    "name": "Currywurst mit Honig-Ingwer-Ketchup",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "8",
+                        "R",
+                        "S",
+                        "Sf"
+                    ],
+                    "dish_type": "Grill"
+                },
+                {
                     "name": "Mafe - Senegalisches Gemüsecurry",
                     "prices": {
                         "students": {
@@ -598,10 +789,10 @@
                         "Kn",
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Leberspätzlesuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -619,7 +810,13 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "S",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -647,7 +844,7 @@
                     "dish_type": "Vegetarisch"
                 },
                 {
-                    "name": "Gebratene Entenkeule mit Chili-Karotten-Orangensauce",
+                    "name": "Gebratene Entenkeule mit Glühweinsauce",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -667,11 +864,15 @@
                     },
                     "ingredients": [
                         "2",
+                        "5",
+                        "99",
                         "Gl",
                         "GlG",
                         "GlW",
                         "Kn",
-                        "Mi"
+                        "Mi",
+                        "Sl",
+                        "Sw"
                     ],
                     "dish_type": "Fleisch"
                 }
@@ -739,6 +940,33 @@
                     "dish_type": "Grill"
                 },
                 {
+                    "name": "Zanderfilet nach Müllerin Art",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Fi",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
                     "name": "Gemüsecurry mit roten Linsen, Spinat und Kokosmilch",
                     "prices": {
                         "students": {
@@ -759,6 +987,7 @@
                     },
                     "ingredients": [
                         "2",
+                        "En",
                         "Gl",
                         "GlW",
                         "Kn",
@@ -789,10 +1018,10 @@
                         "Kn",
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Gemüsecremesuppe",
                     "prices": {
                         "students": {
                             "base_price": "N/A",
@@ -810,7 +1039,12 @@
                             "unit": null
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Gl",
+                        "GlW",
+                        "Mi",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -839,6 +1073,90 @@
                         "Mi"
                     ],
                     "dish_type": "Süßspeise"
+                },
+                {
+                    "name": "Dinkelpfannkuchen mit Haselnuss-Nougat-Füllung und Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlD",
+                        "Mi",
+                        "Sc",
+                        "ScH",
+                        "So"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Kleine Dampfnudel mit Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
+                },
+                {
+                    "name": "Topfen-Birnen-Strudel mit Rosinen, dazu Vanillesauce",
+                    "prices": {
+                        "students": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "staff": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        },
+                        "guests": {
+                            "base_price": "N/A",
+                            "price_per_unit": null,
+                            "unit": null
+                        }
+                    },
+                    "ingredients": [
+                        "Ei",
+                        "Gl",
+                        "GlW",
+                        "Mi"
+                    ],
+                    "dish_type": ""
                 }
             ]
         }

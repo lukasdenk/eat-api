@@ -108,10 +108,10 @@
                         }
                     },
                     "ingredients": [],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
-                    "name": "Tagessuppe",
+                    "name": "Kartoffelsuppe",
                     "prices": {
                         "students": {
                             "base_price": 1.0,
@@ -129,7 +129,10 @@
                             "unit": "100g"
                         }
                     },
-                    "ingredients": [],
+                    "ingredients": [
+                        "Mi",
+                        "Sl"
+                    ],
                     "dish_type": ""
                 },
                 {
@@ -302,7 +305,7 @@
                         "Sf",
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
                     "name": "Tagessuppe",
@@ -463,7 +466,7 @@
                         "Kn",
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
                     "name": "Tagessuppe",
@@ -661,7 +664,7 @@
                         "Kn",
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
                     "name": "Tagessuppe",
@@ -819,7 +822,7 @@
                         "GlW",
                         "Sl"
                     ],
-                    "dish_type": "Vegan, Eintopf, Suppe"
+                    "dish_type": "Studitopf"
                 },
                 {
                     "name": "Tagessuppe",
