@@ -3,24 +3,21 @@
 import datetime
 import json
 import re
-from typing import Any, Dict, List, Optional, Sequence, Set, Union
+from typing import Any, Dict, List, Optional, Sequence, Set
 
 
 class Price:
-    base_price: Union[float, str]
+    base_price: Optional[float]
     price_per_unit: Optional[float]
     unit: Optional[str]
 
     def __init__(
         self,
-        base_price: Union[float, str],
+        base_price: Optional[float] = None,
         price_per_unit: Optional[float] = None,
         unit: Optional[str] = None,
     ):
-        try:
-            self.base_price = float(base_price)
-        except ValueError:
-            self.base_price = base_price
+        self.base_price = base_price
         self.price_per_unit = price_per_unit
         self.unit = unit
 
@@ -52,15 +49,12 @@ class Price:
 
 
 class Prices:
-    students: Price
-    staff: Price
-    guests: Price
+    students: Optional[Price]
+    staff: Optional[Price]
+    guests: Optional[Price]
 
     def __init__(self, students: Optional[Price] = None, staff: Optional[Price] = None, guests: Optional[Price] = None):
-        if students is None:
-            self.students = Price("N/A")
-        else:
-            self.students = students
+        self.students = students
         # fall back to the students price if there is only one price available
         if staff is None:
             self.staff = self.students
@@ -72,9 +66,12 @@ class Prices:
             self.guests = guests
 
     def setBasePrice(self, base_price: float) -> None:
-        self.students.base_price = base_price
-        self.staff.base_price = base_price
-        self.guests.base_price = base_price
+        if self.students is not None:
+            self.students.base_price = base_price
+        if self.staff is not None:
+            self.staff.base_price = base_price
+        if self.guests is not None:
+            self.guests.base_price = base_price
 
     def __eq__(self, other: Any) -> bool:
         if isinstance(other, self.__class__):
@@ -86,9 +83,9 @@ class Prices:
 
     def to_json_obj(self):
         return {
-            "students": self.students.to_json_obj(),
-            "staff": self.staff.to_json_obj(),
-            "guests": self.guests.to_json_obj(),
+            "students": self.students.to_json_obj() if self.students is not None else None,
+            "staff": self.staff.to_json_obj() if self.staff is not None else None,
+            "guests": self.guests.to_json_obj() if self.guests is not None else None,
         }
 
     def __hash__(self) -> int:
