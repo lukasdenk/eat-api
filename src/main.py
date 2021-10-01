@@ -8,6 +8,12 @@ import util
 from entities import Week
 from openmensa import openmensa
 
+"""
+The current version of the JSON output.
+Should be incremented as soon as the JSON output format changed in any way, shape or form.
+"""
+JSON_VERSION: str = "2.1"
+
 
 def get_menu_parsing_strategy(location):
     # set parsing strategy based on location
@@ -36,10 +42,12 @@ def jsonify(weeks, directory, location, combine_dishes):
             os.makedirs(f"{str(directory)}/{str(year)}")
 
         # convert Week object to JSON
-        week_json = week.to_json()
+        week_json = week.to_json_obj()
+        if week_json is not None:
+            week_json["version"] = JSON_VERSION
         # write JSON to file: <year>/<calendar_week>.json
         with open(f"{str(json_dir)}/{str(calendar_week).zfill(2)}.json", "w", encoding="utf-8") as outfile:
-            json.dump(json.loads(week_json), outfile, indent=4, ensure_ascii=False)
+            json.dump(week_json, outfile, indent=4, ensure_ascii=False)
 
     # check if combine parameter got set
     if not combine_dishes:
@@ -54,7 +62,11 @@ def jsonify(weeks, directory, location, combine_dishes):
 
     # convert all weeks to one JSON object
     weeks_json_all = json.dumps(
-        {"canteen_id": location, "weeks": [weeks[calendar_week].to_json_obj() for calendar_week in weeks]},
+        {
+            "version": JSON_VERSION,
+            "canteen_id": location,
+            "weeks": [weeks[calendar_week].to_json_obj() for calendar_week in weeks],
+        },
         ensure_ascii=False,
         indent=4,
     )

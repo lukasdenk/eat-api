@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import datetime
-import json
 import re
 from typing import Any, Dict, List, Optional, Sequence, Set
 
@@ -352,14 +351,6 @@ class Week:
                 for menu in self.days
             ],
         }
-
-    def to_json(self) -> str:
-        week_json: str = json.dumps(
-            self.to_json_obj(),
-            ensure_ascii=False,
-            indent=4,
-        )
-        return week_json
 
     @staticmethod
     # def to_weeks(menus: Dict[datetime.date, Menu]) -> Dict[int, Week]:
