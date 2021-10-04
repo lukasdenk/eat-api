@@ -8,21 +8,9 @@
                 {
                     "name": "Smoky Mountain Chicken (mit Käse und Vorderschinken überbacken)",
                     "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
+                        "students": null,
+                        "staff": null,
+                        "guests": null
                     },
                     "ingredients": [
                         "1",
@@ -46,21 +34,9 @@
                 {
                     "name": "Rinderbraten mit Rotweinsauce",
                     "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
+                        "students": null,
+                        "staff": null,
+                        "guests": null
                     },
                     "ingredients": [
                         "5",
@@ -144,5 +120,6 @@
                 }
             ]
         }
-    ]
+    ],
+    "version": "2.1"
 }

@@ -38,21 +38,9 @@
                 {
                     "name": "Pasta mit Weißkäse, Zucchini, Paprika und Kapern",
                     "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
+                        "students": null,
+                        "staff": null,
+                        "guests": null
                     },
                     "ingredients": [
                         "Gl",
@@ -70,21 +58,9 @@
                 {
                     "name": "Münchner Gulasch vom Rind",
                     "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
+                        "students": null,
+                        "staff": null,
+                        "guests": null
                     },
                     "ingredients": [
                         "Gl",
@@ -104,21 +80,9 @@
                 {
                     "name": "Käsespätzle Breisgauer Art mit Rahm",
                     "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
+                        "students": null,
+                        "staff": null,
+                        "guests": null
                     },
                     "ingredients": [
                         "Gl",
@@ -135,21 +99,9 @@
                 {
                     "name": "Chili con Carne",
                     "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
+                        "students": null,
+                        "staff": null,
+                        "guests": null
                     },
                     "ingredients": [
                         "Gl",
@@ -163,5 +115,6 @@
                 }
             ]
         }
-    ]
+    ],
+    "version": "2.1"
 }

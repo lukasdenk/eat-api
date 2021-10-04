@@ -41,21 +41,9 @@
                 {
                     "name": "Frittierte Falafelbällchen mit Baba Ganoush (Auberginen-Sesam-Dip)",
                     "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
+                        "students": null,
+                        "staff": null,
+                        "guests": null
                     },
                     "ingredients": [
                         "Gl",
@@ -105,21 +93,9 @@
                 {
                     "name": "Pfannengyros vom Schwein mit Tsatsiki",
                     "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
+                        "students": null,
+                        "staff": null,
+                        "guests": null
                     },
                     "ingredients": [
                         "3",
@@ -139,21 +115,9 @@
                 {
                     "name": "Gebackenes Seelachsfilet (MSC) mit Kartoffelsalat und Remouladensauce",
                     "prices": {
-                        "students": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "staff": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        },
-                        "guests": {
-                            "base_price": "N/A",
-                            "price_per_unit": null,
-                            "unit": null
-                        }
+                        "students": null,
+                        "staff": null,
+                        "guests": null
                     },
                     "ingredients": [
                         "1",
@@ -173,5 +137,6 @@
                 }
             ]
         }
-    ]
+    ],
+    "version": "2.1"
 }
