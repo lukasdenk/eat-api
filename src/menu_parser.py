@@ -651,11 +651,12 @@ class IPPBistroMenuParser(MenuParser):
             # create list of Dish objects
             dishes = []
             for i, (dish_name, price) in enumerate(dish_names_price):
+                priceStr: str = price.replace(",", ".").strip()
                 priceObj: Optional[Price] = None
                 try:
-                    priceObj = Price(float(price.replace(",", ".").strip()))
+                    priceObj = Price(float(priceStr))
                 except ValueError:
-                    pass
+                    print(f"Warning: Error during parsing price: {priceStr}")
                 dishes.append(
                     Dish(
                         dish_name.strip(),
