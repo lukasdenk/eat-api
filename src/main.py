@@ -8,11 +8,11 @@ import util
 from entities import Week
 from openmensa import openmensa
 
+JSON_VERSION: str = "2.1"
 """
 The current version of the JSON output.
 Should be incremented as soon as the JSON output format changed in any way, shape or form.
 """
-JSON_VERSION: str = "2.1"
 
 
 def get_menu_parsing_strategy(location):
