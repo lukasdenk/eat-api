@@ -1,4 +1,5 @@
 {
+    "version": "2.1",
     "canteen_id": "mediziner-mensa",
     "weeks": [
         {
@@ -11,67 +12,40 @@
                         {
                             "name": "Blumenkohlcremesuppe",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Gl", "Mi"],
+                            "ingredients": [
+                                "Gl",
+                                "Mi"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
                             "name": "Pfannengyros mit Tzaziki",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Mi", "S"],
+                            "ingredients": [
+                                "Mi",
+                                "S"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Spaghetti \" Gemüsebolognese \"",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Gl", "Sl"],
+                            "ingredients": [
+                                "Gl",
+                                "Sl"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -93,7 +67,12 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["Gl", "Mi", "So", "Sw"],
+                            "ingredients": [
+                                "Gl",
+                                "Mi",
+                                "So",
+                                "Sw"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -104,67 +83,40 @@
                         {
                             "name": "Gelbe Erbsensuppe",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Gl", "Mi"],
+                            "ingredients": [
+                                "Gl",
+                                "Mi"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
                             "name": "Grüner Bohneneintopf mit Rindfleisch",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["R", "Sl"],
+                            "ingredients": [
+                                "R",
+                                "Sl"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Veggi-Gulasch",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Gl", "Sl"],
+                            "ingredients": [
+                                "Gl",
+                                "Sl"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -186,7 +138,11 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["Fi", "Gl", "Mi"],
+                            "ingredients": [
+                                "Fi",
+                                "Gl",
+                                "Mi"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -197,67 +153,42 @@
                         {
                             "name": "Rinderbrühe \" Gärtnerin \"",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["R", "Sl"],
+                            "ingredients": [
+                                "R",
+                                "Sl"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
                             "name": "Schweinegulasch",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Gl", "S"],
+                            "ingredients": [
+                                "Gl",
+                                "S"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Gemüsekuchen mit Mozzarella überbacken",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Mi", "Sl"],
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "Mi",
+                                "Sl"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -279,7 +210,16 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["2", "3", "8", "G", "Gl", "Mi", "Sf", "Sw"],
+                            "ingredients": [
+                                "2",
+                                "3",
+                                "8",
+                                "G",
+                                "Gl",
+                                "Mi",
+                                "Sf",
+                                "Sw"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -290,67 +230,45 @@
                         {
                             "name": "Kürbiscremesuppe",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Gl", "Mi"],
+                            "ingredients": [
+                                "Gl",
+                                "Mi"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
                             "name": "Rinderhackbraten",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Mi", "R", "Sf", "So"],
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "Mi",
+                                "R",
+                                "Sf",
+                                "So"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Dinkel-Kräuterbratling",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Mi"],
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "Mi"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -372,7 +290,12 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["1", "2", "Mi", "Sw"],
+                            "ingredients": [
+                                "1",
+                                "2",
+                                "Mi",
+                                "Sw"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -383,67 +306,44 @@
                         {
                             "name": "Minestrone",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Sl"],
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "Sl"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
                             "name": "Gebratene Hähnchenbrust",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["G"],
+                            "ingredients": [
+                                "G"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Scheiterhaufen mit Apfel-Vanille-Ragout",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["3", "9", "Ei", "Gl", "Mi", "So"],
+                            "ingredients": [
+                                "3",
+                                "9",
+                                "Ei",
+                                "Gl",
+                                "Mi",
+                                "So"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -465,7 +365,15 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["3", "4", "Ei", "G", "Gl", "S", "Sf"],
+                            "ingredients": [
+                                "3",
+                                "4",
+                                "Ei",
+                                "G",
+                                "Gl",
+                                "S",
+                                "Sf"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -476,67 +384,41 @@
                         {
                             "name": "Tomatencremesuppe",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Gl", "Mi"],
+                            "ingredients": [
+                                "Gl",
+                                "Mi"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
                             "name": "Pichelsteiner Gemüseeintopf mit Rindfleisch",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["R", "Sl"],
+                            "ingredients": [
+                                "R",
+                                "Sl"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Ofenkartoffel mit herzhaftem Gemüseragout",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Gl", "Mi", "Sl"],
+                            "ingredients": [
+                                "Gl",
+                                "Mi",
+                                "Sl"
+                            ],
                             "dish_type": "Hauptkomponente"
                         }
                     ]
@@ -547,67 +429,42 @@
                         {
                             "name": "Grießnockerlsuppe",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Ei", "Gl"],
+                            "ingredients": [
+                                "Ei",
+                                "Gl"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
                             "name": "Glasierter Putenbraten in Kräuterrahmsoße",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["G", "Gl", "Mi"],
+                            "ingredients": [
+                                "G",
+                                "Gl",
+                                "Mi"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
                             "name": "Eieromelett",
                             "prices": {
-                                "students": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": "N/A",
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
+                                "students": null,
+                                "staff": null,
+                                "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Mi"],
+                            "ingredients": [
+                                "Ei",
+                                "Gl",
+                                "Mi"
+                            ],
                             "dish_type": "Hauptkomponente"
                         }
                     ]

@@ -219,11 +219,11 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
 
         menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
         weeks = Week.to_weeks(menus)
-        week_2017_13_actual = json.loads(weeks[13].to_json())
-        week_2017_14_actual = json.loads(weeks[14].to_json())
-        week_2017_15_actual = json.loads(weeks[15].to_json())
-        week_2017_16_actual = json.loads(weeks[16].to_json())
-        week_2017_17_actual = json.loads(weeks[17].to_json())
+        week_2017_13_actual = weeks[13].to_json_obj()
+        week_2017_14_actual = weeks[14].to_json_obj()
+        week_2017_15_actual = weeks[15].to_json_obj()
+        week_2017_16_actual = weeks[16].to_json_obj()
+        week_2017_17_actual = weeks[17].to_json_obj()
 
         self.assertEqual(self.order_json_objects(week_2017_13_actual), self.order_json_objects(week_2017_13))
         self.assertEqual(self.order_json_objects(week_2017_14_actual), self.order_json_objects(week_2017_14))
