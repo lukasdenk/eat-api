@@ -243,9 +243,12 @@ class StudentenwerkMenuParser(MenuParser):
         # make duplicates unique by adding (2), (3) etc. to the names
         dish_names = util.make_duplicates_unique(dish_names)
         # obtain the types of the dishes (e.g. 'Tagesgericht 1')
-        dish_types: List[str] = [
-            type.text if type.text else "" for type in menu_html.xpath("//span[@class='stwm-artname']")
-        ]
+        dish_types: List[str] = []
+        current_type = ""
+        for type_ in menu_html.xpath("//span[@class='stwm-artname']"):
+            if type_.text:
+                current_type = type_.text
+            dish_types += [current_type]
         # obtain all ingredients
         dish_markers_additional: List[str] = menu_html.xpath(
             "//li[contains(@class, 'c-schedule__list-item  u-clearfix  clearfix  "
