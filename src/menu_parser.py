@@ -51,7 +51,7 @@ class StudentenwerkMenuParser(MenuParser):
     prices_self_service_vegan: Prices = Prices(Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g"))
 
     # Students, Staff, Guests
-    prices_mesa_leopoldstr: Dict[str, Prices] = {
+    prices_mensa_leopoldstr: Dict[str, Prices] = {
         "Grüne Mensa": Prices(),
         "Vegan": Prices(Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g")),
         "Vegetarisch": Prices(Price(0, 0.75, "100g"), Price(0, 0.85, "100g"), Price(0, 0.95, "100g")),
@@ -138,7 +138,7 @@ class StudentenwerkMenuParser(MenuParser):
                 pass
 
         if location == "mensa-leopoldstr":
-            return StudentenwerkMenuParser.prices_mesa_leopoldstr.get(dish[0], Prices())
+            return StudentenwerkMenuParser.prices_mensa_leopoldstr.get(dish[0], Prices())
 
         # Fall back to the old price
         return StudentenwerkMenuParser.prices_mesa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
@@ -243,9 +243,12 @@ class StudentenwerkMenuParser(MenuParser):
         # make duplicates unique by adding (2), (3) etc. to the names
         dish_names = util.make_duplicates_unique(dish_names)
         # obtain the types of the dishes (e.g. 'Tagesgericht 1')
-        dish_types: List[str] = [
-            type.text if type.text else "" for type in menu_html.xpath("//span[@class='stwm-artname']")
-        ]
+        dish_types: List[str] = []
+        current_type = ""
+        for type_ in menu_html.xpath("//span[@class='stwm-artname']"):
+            if type_.text:
+                current_type = type_.text
+            dish_types += [current_type]
         # obtain all ingredients
         dish_markers_additional: List[str] = menu_html.xpath(
             "//li[contains(@class, 'c-schedule__list-item  u-clearfix  clearfix  "
