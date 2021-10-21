@@ -51,7 +51,7 @@ class StudentenwerkMenuParser(MenuParser):
     prices_self_service_vegan: Prices = Prices(Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g"))
 
     # Students, Staff, Guests
-    prices_mesa_leopoldstr: Dict[str, Prices] = {
+    prices_mensa_leopoldstr: Dict[str, Prices] = {
         "Grüne Mensa": Prices(),
         "Vegan": Prices(Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g")),
         "Vegetarisch": Prices(Price(0, 0.75, "100g"), Price(0, 0.85, "100g"), Price(0, 0.95, "100g")),
@@ -138,7 +138,7 @@ class StudentenwerkMenuParser(MenuParser):
                 pass
 
         if location == "mensa-leopoldstr":
-            return StudentenwerkMenuParser.prices_mesa_leopoldstr.get(dish[0], Prices())
+            return StudentenwerkMenuParser.prices_mensa_leopoldstr.get(dish[0], Prices())
 
         # Fall back to the old price
         return StudentenwerkMenuParser.prices_mesa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
