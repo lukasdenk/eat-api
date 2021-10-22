@@ -199,32 +199,31 @@ class StudentenwerkMenuParser(MenuParser):
     def get_menus(self, location: str, location_id: int) -> Dict[datetime.date, Menu]:
         menus = {}
         for date in self.__get_available_dates(location_id):
-            menu = self.get_menu(location, location_id, date)
-            if menu:
-                menus[date] = menu
+            page_link: str = self.base_url_with_date.format(location_id=location_id, date=date.strftime("%Y-%m-%d"))
+            page: requests.Response = requests.get(page_link)
+            if page.ok:
+                try:
+                    tree: html.Element = html.fromstring(page.content)
+                    menu = self.get_menu(tree, location, date)
+                    if menu:
+                        menus[date] = menu
+                # pylint: disable=broad-except
+                except Exception as e:
+                    print(f"Exception while parsing menu from {date}. Skipping current date. Exception args: {e.args}")
+                # pylint: enable=broad-except
         return menus
 
-    def get_menu(self, location: str, location_id: int, date: datetime.date) -> Optional[Menu]:
-        page_link: str = self.base_url_with_date.format(location_id=location_id, date=date.strftime("%Y-%m-%d"))
-        page: requests.Response = requests.get(page_link)
-        if page.ok:
-            try:
-                tree: html.Element = html.fromstring(page.content)
-                # get current menu
-                current_menu: html.Element = self.__get_daily_menus_as_html(tree)[0]
-                # get html representation of menu
-                menu_html = html.fromstring(html.tostring(current_menu))
+    def get_menu(self, page: html.Element, location: str, date: datetime.date) -> Optional[Menu]:
+        # get current menu
+        current_menu: html.Element = self.__get_daily_menus_as_html(page)[0]
+        # get html representation of menu
+        menu_html = html.fromstring(html.tostring(current_menu))
 
-                # parse dishes of current menu
-                dishes: List[Dish] = self.__parse_dishes(menu_html, location)
-                # create menu object
-                menu: Menu = Menu(date, dishes)
-                return menu
-            # pylint: disable=broad-except
-            except Exception as e:
-                print(f"Exception while parsing menu from {date}. Skipping current date. Exception args: {e.args}")
-            # pylint: enable=broad-except
-        return None
+        # parse dishes of current menu
+        dishes: List[Dish] = self.__parse_dishes(menu_html, location)
+        # create menu object
+        menu: Menu = Menu(date, dishes)
+        return menu
 
     def __get_available_dates(self, location_id: int) -> List[datetime.date]:
         page_link: str = self.base_url.format(location_id=location_id)
