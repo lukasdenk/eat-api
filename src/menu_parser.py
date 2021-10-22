@@ -6,6 +6,7 @@ import sys
 import tempfile
 import unicodedata
 from abc import ABC, abstractmethod
+from enum import Enum
 from subprocess import call  # nosec: all the inputs is fully defined
 from typing import Dict, List, Optional, Pattern, Tuple
 from warnings import warn
@@ -44,11 +45,25 @@ class StudentenwerkMenuParser(MenuParser):
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
 
     # Base price for sausage, meat, fish
-    prices_self_service_base: Tuple[float, float, float] = (0.5, 1.00, 1.50)
+    class BasePriceType(Enum):
+        VEGETARIAN = 0
+        SAUSAGE = 0.5
+        MEAT = 1.0
+        FISH = 1.5
+
+        def __init__(self, price):
+            self.price = price
+
     # Meet and vegetarian base prices for Students, Staff, Guests
-    prices_self_service_classic: Prices = Prices(Price(0, 0.75, "100g"), Price(0, 0.90, "100g"), Price(0, 1.05, "100g"))
-    # Vegan, stew and soup prices for students, staff, guests
-    prices_self_service_vegan: Prices = Prices(Price(0, 0.33, "100g"), Price(0, 0.55, "100g"), Price(0, 0.66, "100g"))
+    class PricePerUnitType(Enum):
+        CLASSIC = 0.75, 0.9, 1.05
+        VEGAN_SOUP_STEW = 0.33, 0.55, 0.66
+
+        def __init__(self, students: float, staff: float, guests: float):
+            self.students = students
+            self.staff = staff
+            self.guests = guests
+            self.unit = "100g"
 
     # Students, Staff, Guests
     prices_mensa_leopoldstr: Dict[str, Prices] = {
@@ -120,27 +135,49 @@ class StudentenwerkMenuParser(MenuParser):
     }
 
     @staticmethod
-    def __getPrice(location: str, dish: Tuple[str, str, str, str, str]) -> Prices:
+    def __get_self_service_prices(base_price_type: BasePriceType, price_per_unit_type: PricePerUnitType) -> Prices:
+        students: Price = Price(
+            base_price_type.price,
+            price_per_unit_type.students,
+            price_per_unit_type.unit,
+        )
+        staff: Price = Price(
+            base_price_type.price,
+            price_per_unit_type.staff,
+            price_per_unit_type.unit,
+        )
+        guests: Price = Price(
+            base_price_type.price,
+            price_per_unit_type.guests,
+            price_per_unit_type.unit,
+        )
+        return Prices(students, staff, guests)
+
+    @staticmethod
+    def __getPrice(location: str, dish: Tuple[str, str, str, str, str], dish_name: str) -> Prices:
         if location == "mensa-leopoldstr":
             return StudentenwerkMenuParser.prices_mensa_leopoldstr.get(dish[0], Prices())
 
         if location in ["mensa-weihenstephan", "mensa-lothstr"]:
             return StudentenwerkMenuParser.prices_mensa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
         else:
+            if dish[0] == "Studitopf" or dish[4] == "2":  # Soup, Stew or Vegan
+                price_per_unit_type = StudentenwerkMenuParser.PricePerUnitType.VEGAN_SOUP_STEW
+            else:
+                price_per_unit_type = StudentenwerkMenuParser.PricePerUnitType.CLASSIC
+
             if dish[4] == "0":  # Non-Vegetarian
-                prices: Prices = StudentenwerkMenuParser.prices_self_service_classic
                 # Add a base price to the dish
                 if "Fi" in dish[2]:  # Fish
-                    prices.setBasePrice(StudentenwerkMenuParser.prices_self_service_base[2])
-                else:  # Sausage and meat. TODO: Find a way to distinguish between sausage and meat
-                    prices.setBasePrice(StudentenwerkMenuParser.prices_self_service_base[1])
-                return prices
-            if dish[4] == "1":  # Vegetarian
-                return StudentenwerkMenuParser.prices_self_service_classic
-            if dish[4] == "2":  # Vegan
-                return StudentenwerkMenuParser.prices_self_service_vegan
-        # Fallback:
-        return Prices()
+                    base_price_type = StudentenwerkMenuParser.BasePriceType.FISH
+                # Sausage. TODO: Find better way to distinguish between sausage and meat
+                elif "wurst" in dish_name.lower() or "würstchen" in dish_name.lower():
+                    base_price_type = StudentenwerkMenuParser.BasePriceType.SAUSAGE
+                else:  # Meat
+                    base_price_type = StudentenwerkMenuParser.BasePriceType.MEAT
+            else:
+                base_price_type = StudentenwerkMenuParser.BasePriceType.VEGETARIAN
+            return StudentenwerkMenuParser.__get_self_service_prices(base_price_type, price_per_unit_type)
 
     # Some of the locations do not use the general Studentenwerk system and do not have a location id.
     # It differs how they publish their menus — probably everyone needs an own parser.
@@ -306,7 +343,7 @@ class StudentenwerkMenuParser(MenuParser):
                 dish_ingredients.parse_ingredients(dishes_dict[name][2])
                 dish_ingredients.parse_ingredients(dishes_dict[name][3])
                 # find price
-                price: Prices = StudentenwerkMenuParser.__getPrice(location, dishes_dict[name])
+                price: Prices = StudentenwerkMenuParser.__getPrice(location, dishes_dict[name], name)
                 # create dish
                 dishes.append(Dish(name, price, dish_ingredients.ingredient_set, dishes_dict[name][0]))
 
