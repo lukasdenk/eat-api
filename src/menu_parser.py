@@ -214,7 +214,7 @@ class StudentenwerkMenuParser(MenuParser):
         menus: Dict[datetime.date, Menu] = {}
         # convert passed date to string
         # get all available daily menus
-        daily_menus: html.Element = self.__get_daily_menus_as_html(page)
+        daily_menus: List[html.Element] = self.__get_daily_menus_as_html(page)
 
         # iterate through daily menus
         for daily_menu in daily_menus:
