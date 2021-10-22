@@ -312,8 +312,12 @@ class StudentenwerkMenuParser(MenuParser):
             dish_ingredients.parse_ingredients(dishes_dict[name][1])
             dish_ingredients.parse_ingredients(dishes_dict[name][2])
             dish_ingredients.parse_ingredients(dishes_dict[name][3])
-            # find price
-            price: Prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name])
+            # do not price side dishes
+            if dishes_dict[name][0] == "Beilagen":
+                price: Prices = Prices()
+            else:
+                # find price
+                price: Prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name])
             # create dish
             dishes.append(Dish(name, price, dish_ingredients.ingredient_set, dishes_dict[name][0]))
 
