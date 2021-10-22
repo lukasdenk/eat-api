@@ -44,7 +44,7 @@ class StudentenwerkMenuParser(MenuParser):
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
 
     # Base price for sausage, meat, fish
-    prices_self_service_base: Tuple[float, float, float] = (0.55, 1.00, 1.50)
+    prices_self_service_base: Tuple[float, float, float] = (0.5, 1.00, 1.50)
     # Meet and vegetarian base prices for Students, Staff, Guests
     prices_self_service_classic: Prices = Prices(Price(0, 0.75, "100g"), Price(0, 0.90, "100g"), Price(0, 1.05, "100g"))
     # Vegan, stew and soup prices for students, staff, guests
