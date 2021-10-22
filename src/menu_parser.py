@@ -176,7 +176,7 @@ class StudentenwerkMenuParser(MenuParser):
         # "stucafe-weihenstephan": ,
     }
 
-    base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{}_-de.html"
+    base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{date}_{location_id}_-de.html"
 
     def parse(self, location: str) -> Optional[Dict[datetime.date, Menu]]:
         """`location` can be either the numeric location id or its string alias as defined in `location_id_mapping`"""
@@ -192,11 +192,22 @@ class StudentenwerkMenuParser(MenuParser):
                 )
                 return None
 
-        page_link: str = self.base_url.format(location_id)
+        today = datetime.date.today()
+        timedelta = datetime.timedelta(days=60)
+        begin = today - timedelta
+        end = today + timedelta
+        menus = {}
 
-        page: requests.Response = requests.get(page_link)
-        tree: html.Element = html.fromstring(page.content)
-        return self.get_menus(tree, location)
+        while begin <= end:
+            page_link: str = self.base_url.format(location_id=location_id, date=begin.strftime("%Y-%m-%d"))
+
+            begin += datetime.timedelta(days=1)
+
+            page: requests.Response = requests.get(page_link)
+            if page.ok:
+                tree: html.Element = html.fromstring(page.content)
+                menus.update(self.get_menus(tree, location))
+        return menus
 
     def get_menus(self, page: html.Element, location: str) -> Dict[datetime.date, Menu]:
         # initialize empty dictionary
