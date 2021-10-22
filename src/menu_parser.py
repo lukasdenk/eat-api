@@ -176,7 +176,10 @@ class StudentenwerkMenuParser(MenuParser):
         # "stucafe-weihenstephan": ,
     }
 
-    base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{date}_{location_id}_-de.html"
+    base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{location_id}_-de.html"
+    base_url_with_date: str = (
+        "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{date}_{location_id}_-de.html"
+    )
 
     def parse(self, location: str) -> Optional[Dict[datetime.date, Menu]]:
         """`location` can be either the numeric location id or its string alias as defined in `location_id_mapping`"""
@@ -191,53 +194,51 @@ class StudentenwerkMenuParser(MenuParser):
                     sys.stderr,
                 )
                 return None
-
-        today = datetime.date.today()
-        timedelta = datetime.timedelta(days=60)
-        begin = today - timedelta
-        end = today + timedelta
         menus = {}
-
-        while begin <= end:
-            page_link: str = self.base_url.format(location_id=location_id, date=begin.strftime("%Y-%m-%d"))
-
-            begin += datetime.timedelta(days=1)
-
-            page: requests.Response = requests.get(page_link)
-            if page.ok:
-                tree: html.Element = html.fromstring(page.content)
-                menus.update(self.get_menus(tree, location))
+        for date in self.__get_available_dates(location_id):
+            menu = self.get_menu(location, location_id, date)
+            if menu:
+                menus[date] = menu
         return menus
 
-    def get_menus(self, page: html.Element, location: str) -> Dict[datetime.date, Menu]:
-        # initialize empty dictionary
-        menus: Dict[datetime.date, Menu] = {}
-        # convert passed date to string
-        # get all available daily menus
-        daily_menus: List[html.Element] = self.__get_daily_menus_as_html(page)
+    def get_menu(self, location: str, location_id: int, date: datetime.date) -> Optional[Menu]:
+        page_link: str = self.base_url_with_date.format(location_id=location_id, date=date.strftime("%Y-%m-%d"))
+        page: requests.Response = requests.get(page_link)
+        if page.ok:
+            try:
+                tree: html.Element = html.fromstring(page.content)
+                # get current menu
+                current_menu: html.Element = self.__get_daily_menus_as_html(tree)[0]
+                # get html representation of menu
+                menu_html = html.fromstring(html.tostring(current_menu))
 
-        # iterate through daily menus
-        for daily_menu in daily_menus:
-            # get html representation of current menu
-            menu_html = html.fromstring(html.tostring(daily_menu))
-            # get the date of the current menu; some string modifications are necessary
-            current_menu_date_str = menu_html.xpath("//strong/text()")[0]
+                # parse dishes of current menu
+                dishes: List[Dish] = self.__parse_dishes(menu_html, location)
+                # create menu object
+                menu: Menu = Menu(date, dishes)
+                return menu
+            # pylint: disable=broad-except
+            except Exception as e:
+                print(f"Exception while parsing menu from {date}. Skipping current date. Exception args: {e.args}")
+            # pylint: enable=broad-except
+        return None
+
+    def __get_available_dates(self, location_id: int) -> List[datetime.date]:
+        page_link: str = self.base_url.format(location_id=location_id)
+        page: requests.Response = requests.get(page_link)
+        tree: html.Element = html.fromstring(page.content)
+        dates: List[datetime.date] = []
+        date_strings: List[str] = tree.xpath("//div[@class='c-schedule__item']//strong/text()")
+        for date_str in date_strings:
             # parse date
             try:
-                current_menu_date: datetime.date = util.parse_date(current_menu_date_str)
+                date: datetime.date = util.parse_date(date_str)
             except ValueError:
-                print(f"Warning: Error during parsing date from html page. Problematic date: {current_menu_date_str}")
+                print(f"Warning: Error during parsing date from html page. Problematic date: {date_str}")
                 # continue and parse subsequent menus
                 continue
-            # parse dishes of current menu
-            dishes: List[Dish] = self.__parse_dishes(menu_html, location)
-            # create menu object
-            menu: Menu = Menu(current_menu_date, dishes)
-            # add menu object to dictionary using the date as key
-            menus[current_menu_date] = menu
-
-        # return the menu for the requested date; if no menu exists, None is returned
-        return menus
+            dates += [date]
+        return dates
 
     @staticmethod
     def __get_daily_menus_as_html(page):
