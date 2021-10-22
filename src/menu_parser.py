@@ -194,6 +194,9 @@ class StudentenwerkMenuParser(MenuParser):
                     sys.stderr,
                 )
                 return None
+        return self.get_menus(location, location_id)
+
+    def get_menus(self, location: str, location_id: int) -> Dict[datetime.date, Menu]:
         menus = {}
         for date in self.__get_available_dates(location_id):
             menu = self.get_menu(location, location_id, date)
