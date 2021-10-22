@@ -307,23 +307,15 @@ class StudentenwerkMenuParser(MenuParser):
         # create Dish objects with correct prices; if price is not available, -1 is used instead
         dishes: List[Dish] = []
         for name in dishes_dict:
-            if not dishes_dict[name] and dishes:
-                # some dishes are multi-row. That means that for the same type the dish is written in multiple rows.
-                # From the second row on the type is then just empty. In that case, we just use the price and
-                # ingredients of the previous dish.
-                dishes.append(Dish(name, dishes[-1].prices, dishes[-1].ingredients, dishes[-1].dish_type))
-                print(location)
-                print(dishes)
-            else:
-                dish_ingredients: Ingredients = Ingredients(location)
-                # parse ingredients
-                dish_ingredients.parse_ingredients(dishes_dict[name][1])
-                dish_ingredients.parse_ingredients(dishes_dict[name][2])
-                dish_ingredients.parse_ingredients(dishes_dict[name][3])
-                # find price
-                price: Prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name])
-                # create dish
-                dishes.append(Dish(name, price, dish_ingredients.ingredient_set, dishes_dict[name][0]))
+            dish_ingredients: Ingredients = Ingredients(location)
+            # parse ingredients
+            dish_ingredients.parse_ingredients(dishes_dict[name][1])
+            dish_ingredients.parse_ingredients(dishes_dict[name][2])
+            dish_ingredients.parse_ingredients(dishes_dict[name][3])
+            # find price
+            price: Prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name])
+            # create dish
+            dishes.append(Dish(name, price, dish_ingredients.ingredient_set, dishes_dict[name][0]))
 
         return dishes
 
