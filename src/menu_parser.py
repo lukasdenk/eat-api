@@ -120,7 +120,7 @@ class StudentenwerkMenuParser(MenuParser):
     }
 
     @staticmethod
-    def __getPrice(location: str, dish: Tuple[str, str, str, str, str]) -> Prices:
+    def __get_price(location: str, dish: Tuple[str, str, str, str, str]) -> Prices:
         if "Self-Service" in dish[0] or location == "mensa-garching":
             if dish[4] == "0":  # Meat
                 prices: Prices = StudentenwerkMenuParser.prices_self_service_classic
@@ -312,6 +312,8 @@ class StudentenwerkMenuParser(MenuParser):
                 # From the second row on the type is then just empty. In that case, we just use the price and
                 # ingredients of the previous dish.
                 dishes.append(Dish(name, dishes[-1].prices, dishes[-1].ingredients, dishes[-1].dish_type))
+                print(location)
+                print(dishes)
             else:
                 dish_ingredients: Ingredients = Ingredients(location)
                 # parse ingredients
@@ -319,7 +321,7 @@ class StudentenwerkMenuParser(MenuParser):
                 dish_ingredients.parse_ingredients(dishes_dict[name][2])
                 dish_ingredients.parse_ingredients(dishes_dict[name][3])
                 # find price
-                price: Prices = StudentenwerkMenuParser.__getPrice(location, dishes_dict[name])
+                price: Prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name])
                 # create dish
                 dishes.append(Dish(name, price, dish_ingredients.ingredient_set, dishes_dict[name][0]))
 
@@ -666,16 +668,16 @@ class IPPBistroMenuParser(MenuParser):
             # create list of Dish objects
             dishes = []
             for i, (dish_name, price) in enumerate(dish_names_price):
-                priceStr: str = price.replace(",", ".").strip()
-                priceObj: Optional[Price] = None
+                price_str: str = price.replace(",", ".").strip()
+                price_obj: Optional[Price] = None
                 try:
-                    priceObj = Price(float(priceStr))
+                    price_obj = Price(float(price_str))
                 except ValueError:
-                    print(f"Warning: Error during parsing price: {priceStr}")
+                    print(f"Warning: Error during parsing price: {price_str}")
                 dishes.append(
                     Dish(
                         dish_name.strip(),
-                        Prices(priceObj),
+                        Prices(price_obj),
                         ingredients.ingredient_set,
                         dish_types[i],
                     ),
