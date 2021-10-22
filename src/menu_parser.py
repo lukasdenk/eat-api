@@ -75,7 +75,7 @@ class StudentenwerkMenuParser(MenuParser):
 
     # Students, Staff, Guests
     # Looks like those are the fallback prices
-    prices_mesa_weihenstephan_mensa_lothstrasse: Dict[str, Tuple[Price, Price, Price]] = {
+    prices_mensa_weihenstephan_mensa_lothstrasse: Dict[str, Tuple[Price, Price, Price]] = {
         "Tagesgericht 1": Prices(Price(1.00), Price(1.90), Price(2.40)),
         "Tagesgericht 2": Prices(Price(1.55), Price(2.25), Price(2.75)),
         "Tagesgericht 3": Prices(Price(1.90), Price(2.60), Price(3.10)),
@@ -121,8 +121,13 @@ class StudentenwerkMenuParser(MenuParser):
 
     @staticmethod
     def __getPrice(location: str, dish: Tuple[str, str, str, str, str]) -> Prices:
-        if "Self-Service" in dish[0] or location == "mensa-garching":
-            if dish[4] == "0":  # Meat
+        if location == "mensa-leopoldstr":
+            return StudentenwerkMenuParser.prices_mensa_leopoldstr.get(dish[0], Prices())
+
+        if location in ["mensa-weihenstephan", "mensa-lothstr"]:
+            return StudentenwerkMenuParser.prices_mensa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
+        else:
+            if dish[4] == "0":  # Non-Vegetarian
                 prices: Prices = StudentenwerkMenuParser.prices_self_service_classic
                 # Add a base price to the dish
                 if "Fi" in dish[2]:  # Fish
@@ -134,14 +139,8 @@ class StudentenwerkMenuParser(MenuParser):
                 return StudentenwerkMenuParser.prices_self_service_classic
             if dish[4] == "2":  # Vegan
                 return StudentenwerkMenuParser.prices_self_service_vegan
-            else:
-                pass
-
-        if location == "mensa-leopoldstr":
-            return StudentenwerkMenuParser.prices_mensa_leopoldstr.get(dish[0], Prices())
-
-        # Fall back to the old price
-        return StudentenwerkMenuParser.prices_mesa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
+        # Fallback:
+        return Prices()
 
     # Some of the locations do not use the general Studentenwerk system and do not have a location id.
     # It differs how they publish their menus — probably everyone needs an own parser.
