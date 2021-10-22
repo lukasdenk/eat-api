@@ -23,10 +23,10 @@ done
 # Combine all combined.json files to one all.json file:
 python3 scripts/combine.py
 # Remove all dishes which are older than one day
-# and reorganize them in a more efficent format:
+# and reorganize them in a more efficient format:
 python3 scripts/reformat.py
 
-# Coppy canteens.json in the output directory:
+# Copy canteens.json in the output directory:
 echo "Coppying canteens..."
 cp src/canteens.json $OUT_DIR
 echo "Done"
