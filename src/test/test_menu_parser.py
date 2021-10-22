@@ -16,6 +16,7 @@ from src.menu_parser import (
     MenuParser,
     StudentenwerkMenuParser,
 )
+from src.test import test_util
 
 
 class MenuParserTest(unittest.TestCase):
@@ -28,140 +29,84 @@ class MenuParserTest(unittest.TestCase):
 class StudentenwerkMenuParserTest(unittest.TestCase):
     studentenwerk_menu_parser = StudentenwerkMenuParser()
 
-    with open(
+    menu_html_mensa_garching_old = test_util.load_html(
         "src/test/assets/studentenwerk/in/speiseplan_mensa_garching_old.html",
-        encoding="utf-8",
-    ) as speiseplan_mensa_garching_old:
-        menu_html_mensa_garching_old = html.fromstring(speiseplan_mensa_garching_old.read())
-    with open(
+    )
+    menu_html_mensa_garching_new = test_util.load_html(
         "src/test/assets/studentenwerk/in/speiseplan_mensa_garching_new.html",
-        encoding="utf-8",
-    ) as speiseplan_mensa_garching_new:
-        menu_html_mensa_garching_new = html.fromstring(speiseplan_mensa_garching_new.read())
-    with open(
+    )
+    menu_html_mensa_garching_old_wrong_date_format = test_util.load_html(
         "src/test/assets/studentenwerk/in/speiseplan_mensa_garching_old_wrong_date_format.html",
-        encoding="utf-8",
-    ) as speiseplan_mensa_garching_old_wrong_date_format:
-        menu_html_mensa_garching_old_wrong_date_format = html.fromstring(
-            speiseplan_mensa_garching_old_wrong_date_format.read(),
-        )
-    with open(
+    )
+    menu_html_stubistro_grosshadern = test_util.load_html(
         "src/test/assets/studentenwerk/in/speiseplan_stubistro_großhadern.html",
-        encoding="utf-8",
-    ) as speiseplan_stubistro_grosshadern:
-        menu_html_stubistro_grosshadern = html.fromstring(speiseplan_stubistro_grosshadern.read())
-    with open(
+    )
+    menu_html_mensa_arcisstrasse = test_util.load_html(
         "src/test/assets/studentenwerk/in/speiseplan_mensa_arcisstrasse.html",
-        encoding="utf-8",
-    ) as speiseplan_mensa_arcisstrasse:
-        menu_html_mensa_arcisstrasse = html.fromstring(speiseplan_mensa_arcisstrasse.read())
+    )
 
     def test_studentenwerk_mensa_garching_old(self):
-        # parse the menu
-        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "mensa-garching", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open(
-                    "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_old.json",
-                    "r",
-                    encoding="utf-8",
-                ) as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
+        self.__test_studentenwerk_location(
+            self.menu_html_mensa_garching_old,
+            "mensa-garching",
+            "speiseplan_mensa_garching_old",
+        )
 
     def test_studentenwerk_mensa_garching_new(self):
-        # parse the menu
-        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_new, "mensa-garching")
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "mensa-garching", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open(
-                    "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_new.json",
-                    "r",
-                    encoding="utf-8",
-                ) as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
+        self.__test_studentenwerk_location(
+            self.menu_html_mensa_garching_new,
+            "mensa-garching",
+            "speiseplan_mensa_garching_new",
+        )
 
     def test_studentenwerk_mensa_garching_old_wrong_date_format(self):
-        # parse the menu
-        menus = self.studentenwerk_menu_parser.get_menus(
+        self.__test_studentenwerk_location(
             self.menu_html_mensa_garching_old_wrong_date_format,
             "mensa-garching",
+            "speiseplan_mensa_garching_old_wrong_date_format",
         )
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "mensa-garching", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open(
-                    "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_old_wrong_date_format.json",
-                    "r",
-                    encoding="utf-8",
-                ) as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
 
     def test_studentenwerk_stubistro_grosshadern(self):
-        # parse the menu
-        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_stubistro_grosshadern, "stubistro-großhadern")
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "stubistro-großhadern", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open(
-                    "src/test/assets/studentenwerk/out/speiseplan_stubistro_großhadern.json",
-                    "r",
-                    encoding="utf-8",
-                ) as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
+        self.__test_studentenwerk_location(
+            self.menu_html_stubistro_grosshadern,
+            "stubistro-großhadern",
+            "speiseplan_stubistro_großhadern",
+        )
 
     def test_studentenwerk_mensa_arcisstrasse(self):
+        self.__test_studentenwerk_location(
+            self.menu_html_mensa_arcisstrasse,
+            "mensa-arcisstr",
+            "speiseplan_mensa_arcisstrasse",
+        )
+
+    def __test_studentenwerk_location(self, html_element: html.Element, location: str, filename: str) -> None:
         # parse the menu
-        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_arcisstrasse, "mensa-arcisstr")
+        menus = self.studentenwerk_menu_parser.get_menus(html_element, location)
         weeks = Week.to_weeks(menus)
 
         # create temp dir for testing
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "mensa-arcisstr", True)
+            main.jsonify(weeks, temp_dir, location, True)
             # open the generated file
             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
                 with open(
-                    "src/test/assets/studentenwerk/out/speiseplan_mensa_arcisstrasse.json",
-                    "r",
-                    encoding="utf-8",
+                        f"src/test/assets/studentenwerk/out/{filename}.json",
+                        "r",
+                        encoding="utf-8",
                 ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
     def test_should_ignore_day_when_date_of_the_day_is_in_a_wrong_format(self):
-        menucount = len(
+        menu_count = len(
             self.studentenwerk_menu_parser.get_menus(
                 self.menu_html_mensa_garching_old_wrong_date_format,
                 "mensa-garching",
             ),
         )
-        self.assertEqual(22, menucount)
+        self.assertEqual(22, menu_count)
 
     def test_should_return_weeks_when_converting_menu_to_week_objects(self):
         menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
@@ -178,58 +123,16 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             else:
                 self.assertEqual(5, week_length)
 
-    def order_json_objects(self, obj):
-        """
-        Recusively orders all elemts in a Json object.
-        Source:
-        https://stackoverflow.com/questions/25851183/how-to-compare-two-json-objects-with-the-same-elements-in-a-different-order-equa
-        """
-        if isinstance(obj, dict):
-            return sorted((k, self.order_json_objects(v)) for k, v in obj.items())
-        if isinstance(obj, list):
-            return sorted(self.order_json_objects(x) for x in obj)
-        return obj
-
     def test_should_convert_week_to_json(self):
-        with open(
-            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-13.json",
-            encoding="utf-8",
-        ) as data_file:
-            week_2017_13 = json.load(data_file)
-        with open(
-            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-14.json",
-            encoding="utf-8",
-        ) as data_file:
-            week_2017_14 = json.load(data_file)
-        with open(
-            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-15.json",
-            encoding="utf-8",
-        ) as data_file:
-            week_2017_15 = json.load(data_file)
-        with open(
-            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-16.json",
-            encoding="utf-8",
-        ) as data_file:
-            week_2017_16 = json.load(data_file)
-        with open(
-            "src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-17.json",
-            encoding="utf-8",
-        ) as data_file:
-            week_2017_17 = json.load(data_file)
-
+        calendar_weeks = range(13, 18)
         menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
         weeks = Week.to_weeks(menus)
-        week_2017_13_actual = weeks[13].to_json_obj()
-        week_2017_14_actual = weeks[14].to_json_obj()
-        week_2017_15_actual = weeks[15].to_json_obj()
-        week_2017_16_actual = weeks[16].to_json_obj()
-        week_2017_17_actual = weeks[17].to_json_obj()
-
-        self.assertEqual(self.order_json_objects(week_2017_13_actual), self.order_json_objects(week_2017_13))
-        self.assertEqual(self.order_json_objects(week_2017_14_actual), self.order_json_objects(week_2017_14))
-        self.assertEqual(self.order_json_objects(week_2017_15_actual), self.order_json_objects(week_2017_15))
-        self.assertEqual(self.order_json_objects(week_2017_16_actual), self.order_json_objects(week_2017_16))
-        self.assertEqual(self.order_json_objects(week_2017_17_actual), self.order_json_objects(week_2017_17))
+        for calendar_week in calendar_weeks:
+            reference_week = test_util.load_json(
+                f"src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-{calendar_week}.json",
+            )
+            generated_week = weeks[calendar_week].to_json_obj()
+            self.assertEqual(test_util.order_json_objects(generated_week), test_util.order_json_objects(reference_week))
 
     """
     # just for generating reference json files
