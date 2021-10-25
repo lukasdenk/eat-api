@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 
-from datetime import datetime
+from datetime import date, datetime
+from typing import Dict
+
+from libretranslatepy import LibreTranslateAPI
+
+from src.entities import Menu
 
 date_pattern = "%d.%m.%Y"
 cli_date_format = "dd.mm.yyyy"
@@ -24,3 +29,23 @@ def make_duplicates_unique(names_with_duplicates):
             names_without_duplicates[i] += f" ({count})"
 
     return names_without_duplicates
+
+
+def translate_dishes(menus: Dict[date, Menu], language: str) -> Dict[date, Menu]:
+    """
+    Translate the dish titles of a menu
+
+    :param menus: Menus dictionary as given by the menu parser, will be modified
+    :param language: identifier for a language
+    :return:
+    """
+    lt = LibreTranslateAPI()
+    # source language is always german
+    source_language = "de"
+
+    # traverse through all dish titles
+    for menu in menus.values():
+        for dish in menu.dishes:
+            dish.name = lt.translate(dish.name, source_language, language)
+
+    return menus
