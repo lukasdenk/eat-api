@@ -45,4 +45,8 @@ def parse_cli_args():
         action="store_true",
         help="prints all available locations formated as JSON",
     )
+    parser.add_argument(
+        "--language",
+        help="The language to translate the dish titles to",
+    )
     return parser.parse_args()
