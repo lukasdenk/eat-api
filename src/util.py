@@ -39,7 +39,7 @@ def translate_dishes(menus: Dict[date, Menu], language: str) -> bool:
     :param language: identifier for a language
     :return: Whether translation was successful
     """
-    lt = LibreTranslateAPI()
+    lt = LibreTranslateAPI("https://translate.argosopentech.com/")
     # source language is always german
     source_language = "de"
 
