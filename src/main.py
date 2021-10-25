@@ -112,7 +112,9 @@ def main():
 
     # optionally translate the dish titles
     if args.language is not None:
-        util.translate_dishes(menus, args.language)
+        translated = util.translate_dishes(menus, args.language)
+        if not translated:
+            print("Error. The translation was not successful")
 
     # jsonify argument is set
     if args.jsonify is not None:

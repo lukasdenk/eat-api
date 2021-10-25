@@ -31,21 +31,26 @@ def make_duplicates_unique(names_with_duplicates):
     return names_without_duplicates
 
 
-def translate_dishes(menus: Dict[date, Menu], language: str) -> Dict[date, Menu]:
+def translate_dishes(menus: Dict[date, Menu], language: str) -> bool:
     """
     Translate the dish titles of a menu
 
     :param menus: Menus dictionary as given by the menu parser, will be modified
     :param language: identifier for a language
-    :return:
+    :return: Whether translation was successful
     """
     lt = LibreTranslateAPI()
     # source language is always german
     source_language = "de"
+
+    # check if given language code is supported, abort if not
+    language_codes = [lang["code"] for lang in lt.languages()]
+    if language not in language_codes:
+        return False
 
     # traverse through all dish titles
     for menu in menus.values():
         for dish in menu.dishes:
             dish.name = lt.translate(dish.name, source_language, language)
 
-    return menus
+    return True
