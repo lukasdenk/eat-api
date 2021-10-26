@@ -162,6 +162,8 @@ main.py [-h] [-p LOCATION] [-d DATE] [-j PATH] [-c] [--openmensa PATH]
 
 optional arguments:
   -h, --help            show this help message and exit
+  -p LOCATION, --parse LOCATION
+                        the location you want to eat at
   -d DATE, --date DATE  date (DD.MM.YYYY) of the day of which you want to get
                         the menu
   -j PATH, --jsonify PATH
@@ -182,10 +184,10 @@ Here are some sample calls:
 
 ```
 # Get the menus for the whole current week at mensa-garching
-$ python src/main.py mensa-garching
+$ python src/main.py -p mensa-garching
 
 # Get the menu for April 2 at mensa-arcisstrasse
-$ python src/main.py mensa-arcisstrasse -d 02.04.2019
+$ python src/main.py -p mensa-arcisstrasse -d 02.04.2019
 ```
 
 ## Projects using `eat-api`
