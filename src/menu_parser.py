@@ -136,8 +136,8 @@ class StudentenwerkMenuParser(MenuParser):
 
     @staticmethod
     def __get_self_service_prices(
-            base_price_type: SelfServiceBasePriceType,
-            price_per_unit_type: SelfServicePricePerUnitType,
+        base_price_type: SelfServiceBasePriceType,
+        price_per_unit_type: SelfServicePricePerUnitType,
     ) -> Prices:
         students: Price = Price(
             base_price_type.price,

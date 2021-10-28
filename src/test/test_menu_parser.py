@@ -61,8 +61,8 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
                 with open(
-                        f"src/test/assets/studentenwerk/{location}/reference/combined.json",
-                        encoding="utf-8",
+                    f"src/test/assets/studentenwerk/{location}/reference/combined.json",
+                    encoding="utf-8",
                 ) as reference:
                     gen = json.load(generated)
                     ref = json.load(reference)
@@ -73,8 +73,8 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         for date in self.test_dates:
             # parse the menu
             with open(
-                    f"src/test/assets/studentenwerk/{location}/for-generation/{date}.html",
-                    encoding="utf-8",
+                f"src/test/assets/studentenwerk/{location}/for-generation/{date}.html",
+                encoding="utf-8",
             ) as f:
                 tree: html.Element = html.fromstring(f.read())
             studentenwerk_menu_parser = StudentenwerkMenuParser()
