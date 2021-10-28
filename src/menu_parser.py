@@ -45,7 +45,7 @@ class StudentenwerkMenuParser(MenuParser):
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
 
     # Base price for sausage, meat, fish
-    class BasePriceType(Enum):
+    class SelfServiceBasePriceType(Enum):
         VEGETARIAN = 0
         SAUSAGE = 0.5
         MEAT = 1.0
@@ -55,7 +55,7 @@ class StudentenwerkMenuParser(MenuParser):
             self.price = price
 
     # Meet and vegetarian base prices for Students, Staff, Guests
-    class PricePerUnitType(Enum):
+    class SelfServicePricePerUnitType(Enum):
         CLASSIC = 0.75, 0.9, 1.05
         VEGAN_SOUP_STEW = 0.33, 0.55, 0.66
 
@@ -135,7 +135,10 @@ class StudentenwerkMenuParser(MenuParser):
     }
 
     @staticmethod
-    def __get_self_service_prices(base_price_type: BasePriceType, price_per_unit_type: PricePerUnitType) -> Prices:
+    def __get_self_service_prices(
+        base_price_type: SelfServiceBasePriceType,
+        price_per_unit_type: SelfServicePricePerUnitType,
+    ) -> Prices:
         students: Price = Price(
             base_price_type.price,
             price_per_unit_type.students,
@@ -154,7 +157,7 @@ class StudentenwerkMenuParser(MenuParser):
         return Prices(students, staff, guests)
 
     @staticmethod
-    def __getPrice(location: str, dish: Tuple[str, str, str, str, str], dish_name: str) -> Prices:
+    def __get_price(location: str, dish: Tuple[str, str, str, str, str], dish_name: str) -> Prices:
         if location == "mensa-leopoldstr":
             return StudentenwerkMenuParser.prices_mensa_leopoldstr.get(dish[0], Prices())
 
@@ -162,21 +165,21 @@ class StudentenwerkMenuParser(MenuParser):
             return StudentenwerkMenuParser.prices_mensa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
         else:
             if dish[0] == "Studitopf" or dish[4] == "2":  # Soup, Stew or Vegan
-                price_per_unit_type = StudentenwerkMenuParser.PricePerUnitType.VEGAN_SOUP_STEW
+                price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.VEGAN_SOUP_STEW
             else:
-                price_per_unit_type = StudentenwerkMenuParser.PricePerUnitType.CLASSIC
+                price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.CLASSIC
 
             if dish[4] == "0":  # Non-Vegetarian
                 # Add a base price to the dish
                 if "Fi" in dish[2]:  # Fish
-                    base_price_type = StudentenwerkMenuParser.BasePriceType.FISH
+                    base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.FISH
                 # Sausage. TODO: Find better way to distinguish between sausage and meat
                 elif "wurst" in dish_name.lower() or "würstchen" in dish_name.lower():
-                    base_price_type = StudentenwerkMenuParser.BasePriceType.SAUSAGE
+                    base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.SAUSAGE
                 else:  # Meat
-                    base_price_type = StudentenwerkMenuParser.BasePriceType.MEAT
+                    base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.MEAT
             else:
-                base_price_type = StudentenwerkMenuParser.BasePriceType.VEGETARIAN
+                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN
             return StudentenwerkMenuParser.__get_self_service_prices(base_price_type, price_per_unit_type)
 
     # Some of the locations do not use the general Studentenwerk system and do not have a location id.
@@ -195,7 +198,6 @@ class StudentenwerkMenuParser(MenuParser):
         # "stubistro-benediktbeuern": ,
         "stubistro-goethestr": 418,
         "stubistro-großhadern": 414,
-        "stubistro-grosshadern": 414,
         "stubistro-rosenheim": 441,
         "stubistro-schellingstr": 416,
         # "stubistro-schillerstr": ,
@@ -240,16 +242,12 @@ class StudentenwerkMenuParser(MenuParser):
             if page.ok:
                 try:
                     tree: html.Element = html.fromstring(page.content)
-                    # if date <= datetime.date.fromisoformat("2021-09-24"):
-                    #     with open(f"/home/lukas/PycharmProjects/eat-api/src/test/assets/studentenwerk/{location}/for-generation/{date.isoformat()}.html","w",encoding="utf-8") as f:
-                    #         f.write(page.content.decode("utf-8"))
                     menu = self.get_menu(tree, location, date)
                     if menu:
                         menus[date] = menu
                 # pylint: disable=broad-except
                 except Exception as e:
-                    pass
-                    # print(f"Exception while parsing menu from {date}. Skipping current date. Exception args: {e.args}")
+                    print(f"Exception while parsing menu from {date}. Skipping current date. Exception args: {e.args}")
                 # pylint: enable=broad-except
         return menus
 
@@ -359,9 +357,9 @@ class StudentenwerkMenuParser(MenuParser):
                 price: Prices = Prices()
             else:
                 # find price
-                price: Prices = StudentenwerkMenuParser.__getPrice(location, dishes_dict[name], name)
-                # create dish
-                dishes.append(Dish(name, price, dish_ingredients.ingredient_set, dishes_dict[name][0]))
+                price: Prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name], name)
+            # create dish
+            dishes.append(Dish(name, price, dish_ingredients.ingredient_set, dishes_dict[name][0]))
 
         return dishes
 

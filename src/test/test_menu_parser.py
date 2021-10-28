@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import datetime
 import json
 import os
 import tempfile
@@ -30,16 +29,18 @@ class MenuParserTest(unittest.TestCase):
 class StudentenwerkMenuParserTest(unittest.TestCase):
     studentenwerk_menu_parser = StudentenwerkMenuParser()
 
-    test_dates = [datetime.date(2021, 9, 13),
-                  datetime.date(2021, 9, 14),
-                  datetime.date(2021, 9, 15),
-                  datetime.date(2021, 9, 16),
-                  datetime.date(2021, 9, 17),
-                  datetime.date(2021, 9, 20),
-                  datetime.date(2021, 9, 21),
-                  datetime.date(2021, 9, 22),
-                  datetime.date(2021, 9, 23),
-                  datetime.date(2021, 9, 24)]
+    test_dates = [
+        date(2021, 9, 13),
+        date(2021, 9, 14),
+        date(2021, 9, 15),
+        date(2021, 9, 16),
+        date(2021, 9, 17),
+        date(2021, 9, 20),
+        date(2021, 9, 21),
+        date(2021, 9, 22),
+        date(2021, 9, 23),
+        date(2021, 9, 24),
+    ]
 
     def test_studentenwerk(self) -> None:
         locations = ["mensa-garching", "mensa-arcisstr", "stubistro-großhadern"]
@@ -59,25 +60,23 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
                 with open(
-                        f"src/test/assets/studentenwerk/{location}/reference/combined.json",
-                        encoding="utf-8",
+                    f"src/test/assets/studentenwerk/{location}/reference/combined.json",
+                    encoding="utf-8",
                 ) as reference:
-                    gen = json.load(generated)
-                    ref = json.load(reference)
-                    self.assertEqual(gen, ref)
+                    self.assertEqual(json.load(generated), json.load(reference))
 
     def __get_menus(self, location):
         menus = {}
-        for date in self.test_dates:
+        for date_ in self.test_dates:
             # parse the menu
             with open(
-                    f"src/test/assets/studentenwerk/{location}/for-generation/{date}.html",
-                    encoding="utf-8",
+                f"src/test/assets/studentenwerk/{location}/for-generation/{date_}.html",
+                encoding="utf-8",
             ) as f:
                 tree: html.Element = html.fromstring(f.read())
             studentenwerk_menu_parser = StudentenwerkMenuParser()
 
-            menus[date] = studentenwerk_menu_parser.get_menu(tree, location, date)
+            menus[date_] = studentenwerk_menu_parser.get_menu(tree, location, date_)
         return menus
 
     def test_should_return_weeks_when_converting_menu_to_week_objects(self):
@@ -85,12 +84,11 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         weeks_actual = Week.to_weeks(menus)
         length_weeks_actual = len(weeks_actual)
 
-        referenced_weeks_length = 2
-        self.assertEqual(referenced_weeks_length, length_weeks_actual)
+        self.assertEqual(2, length_weeks_actual)
         for calendar_week in weeks_actual:
             week = weeks_actual[calendar_week]
             week_length = len(week.days)
-            self.assertEqual(referenced_weeks_length, week_length)
+            self.assertEqual(5, week_length)
 
     def test_should_convert_week_to_json(self):
         calendar_weeks = [37, 38]
