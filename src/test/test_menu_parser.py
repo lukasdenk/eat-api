@@ -63,9 +63,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
                     f"src/test/assets/studentenwerk/{location}/reference/combined.json",
                     encoding="utf-8",
                 ) as reference:
-                    gen = json.load(generated)
-                    ref = json.load(reference)
-                    self.assertEqual(gen, ref)
+                    self.assertEqual(json.load(generated), json.load(reference))
 
     def __get_menus(self, location):
         menus = {}
