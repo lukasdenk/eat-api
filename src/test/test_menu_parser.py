@@ -93,9 +93,9 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
                 with open(
-                        f"src/test/assets/studentenwerk/out/{filename}.json",
-                        "r",
-                        encoding="utf-8",
+                    f"src/test/assets/studentenwerk/out/{filename}.json",
+                    "r",
+                    encoding="utf-8",
                 ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
