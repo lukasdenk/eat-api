@@ -5,7 +5,7 @@ from typing import Dict
 
 from libretranslatepy import LibreTranslateAPI
 
-from src.entities import Menu
+from entities import Menu
 
 date_pattern = "%d.%m.%Y"
 cli_date_format = "dd.mm.yyyy"
