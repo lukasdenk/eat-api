@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import datetime
 import json
 import os
 import tempfile
@@ -45,45 +46,25 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         "src/test/assets/studentenwerk/in/speiseplan_mensa_arcisstrasse.html",
     )
 
-    def test_studentenwerk_mensa_garching_old(self):
-        self.__test_studentenwerk_location(
-            self.menu_html_mensa_garching_old,
-            "mensa-garching",
-            "speiseplan_mensa_garching_old",
-        )
 
-    def test_studentenwerk_mensa_garching_new(self):
-        self.__test_studentenwerk_location(
-            self.menu_html_mensa_garching_new,
-            "mensa-garching",
-            "speiseplan_mensa_garching_new",
-        )
+    def test_studentenwerk(self) -> None:
+        locations = ["mensa-garching", "mensa-arcisstr"]
+        for location in locations:
+            self.__test_studentenwerk_location(location)
 
-    def test_studentenwerk_mensa_garching_old_wrong_date_format(self):
-        self.__test_studentenwerk_location(
-            self.menu_html_mensa_garching_old_wrong_date_format,
-            "mensa-garching",
-            "speiseplan_mensa_garching_old_wrong_date_format",
-        )
-
-    def test_studentenwerk_stubistro_grosshadern(self):
-        self.__test_studentenwerk_location(
-            self.menu_html_stubistro_grosshadern,
-            "stubistro-großhadern",
-            "speiseplan_stubistro_großhadern",
-        )
-
-    def test_studentenwerk_mensa_arcisstrasse(self):
-        self.__test_studentenwerk_location(
-            self.menu_html_mensa_arcisstrasse,
-            "mensa-arcisstr",
-            "speiseplan_mensa_arcisstrasse",
-        )
-
-    def __test_studentenwerk_location(self, html_element: html.Element, location: str, filename: str) -> None:
+    def __test_studentenwerk_location(self, location: str) -> None:
+        date = datetime.date.fromisoformat("2021-09-13")
         # parse the menu
-        menus = self.studentenwerk_menu_parser.get_menus(html_element, location)
-        weeks = Week.to_weeks(menus)
+        with open(
+                f"src/test/assets/studentenwerk/{location}/for-generation/{date.isoformat()}.html",
+                encoding="utf-8",
+        ) as f:
+            tree: html.Element = html.fromstring(f.read())
+        studentenwerk_menu_parser = StudentenwerkMenuParser()
+
+        menu = studentenwerk_menu_parser.get_menu(tree, location, date)
+
+        weeks = Week.to_weeks({date: menu})
 
         # create temp dir for testing
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -93,8 +74,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
                 with open(
-                    f"src/test/assets/studentenwerk/out/{filename}.json",
-                    "r",
+                    f"src/test/assets/studentenwerk/{location}/reference/{date}.json",
                     encoding="utf-8",
                 ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
