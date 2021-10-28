@@ -9,17 +9,17 @@
                     "name": "Pasta mit Gorgonzola-Walnuss-Sauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -38,17 +38,17 @@
                     "name": "Rostbratwürstchen nach Nürnberger Art",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -114,18 +114,18 @@
                     "name": "Kartoffelsuppe",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.75,
+                            "base_price": 0,
+                            "price_per_unit": 0.33,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
-                            "price_per_unit": 0.9,
+                            "base_price": 0,
+                            "price_per_unit": 0.55,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
-                            "price_per_unit": 1.05,
+                            "base_price": 0,
+                            "price_per_unit": 0.66,
                             "unit": "100g"
                         }
                     },
@@ -139,17 +139,17 @@
                     "name": "Spinatknödel Tiroler Art mit Bergkäse",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -167,17 +167,17 @@
                     "name": "Vegane Minibratwürstchen",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -381,17 +381,17 @@
                     "name": "Pizza Funghi mit Champignons",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -468,17 +468,17 @@
                     "prices": {
                         "students": {
                             "base_price": 1.0,
-                            "price_per_unit": 0.75,
+                            "price_per_unit": 0.33,
                             "unit": "100g"
                         },
                         "staff": {
                             "base_price": 1.0,
-                            "price_per_unit": 0.9,
+                            "price_per_unit": 0.55,
                             "unit": "100g"
                         },
                         "guests": {
                             "base_price": 1.0,
-                            "price_per_unit": 1.05,
+                            "price_per_unit": 0.66,
                             "unit": "100g"
                         }
                     },
@@ -489,17 +489,17 @@
                     "name": "Allgäuer Käsespätzle mit Röstzwiebeln",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -687,17 +687,17 @@
                     "name": "Gnocchi mit Schafskäse und frischem Basilikum",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -765,17 +765,17 @@
                     "prices": {
                         "students": {
                             "base_price": 1.0,
-                            "price_per_unit": 0.75,
+                            "price_per_unit": 0.33,
                             "unit": "100g"
                         },
                         "staff": {
                             "base_price": 1.0,
-                            "price_per_unit": 0.9,
+                            "price_per_unit": 0.55,
                             "unit": "100g"
                         },
                         "guests": {
                             "base_price": 1.0,
-                            "price_per_unit": 1.05,
+                            "price_per_unit": 0.66,
                             "unit": "100g"
                         }
                     },
@@ -786,17 +786,17 @@
                     "name": "Frühlingsrolle mit süßsaurer Sauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -989,17 +989,17 @@
                     "name": "Bio-Pasta mit Bio-Tomaten-Frischkäse-Sauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -1049,17 +1049,17 @@
                     "name": "Currywurst mit Honig-Ingwer-Ketchup",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -1104,17 +1104,17 @@
                     "prices": {
                         "students": {
                             "base_price": 1.0,
-                            "price_per_unit": 0.75,
+                            "price_per_unit": 0.33,
                             "unit": "100g"
                         },
                         "staff": {
                             "base_price": 1.0,
-                            "price_per_unit": 0.9,
+                            "price_per_unit": 0.55,
                             "unit": "100g"
                         },
                         "guests": {
                             "base_price": 1.0,
-                            "price_per_unit": 1.05,
+                            "price_per_unit": 0.66,
                             "unit": "100g"
                         }
                     },
@@ -1147,17 +1147,17 @@
                     "name": "Schupfnudeln mit Zimtzucker und Apfelmus",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -1310,17 +1310,17 @@
                     "name": "Tortellini mit Ricotta-Spinat-Füllung in Kräutersauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -1393,17 +1393,17 @@
                     "prices": {
                         "students": {
                             "base_price": 1.0,
-                            "price_per_unit": 0.75,
+                            "price_per_unit": 0.33,
                             "unit": "100g"
                         },
                         "staff": {
                             "base_price": 1.0,
-                            "price_per_unit": 0.9,
+                            "price_per_unit": 0.55,
                             "unit": "100g"
                         },
                         "guests": {
                             "base_price": 1.0,
-                            "price_per_unit": 1.05,
+                            "price_per_unit": 0.66,
                             "unit": "100g"
                         }
                     },
@@ -1414,17 +1414,17 @@
                     "name": "Schollenfilet (MSC) paniert mit Remouladensauce",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 1.5,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -1447,17 +1447,17 @@
                     "name": "Kaiserschmarrn mit Apfelmus",
                     "prices": {
                         "students": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.75,
                             "unit": "100g"
                         },
                         "staff": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 0.9,
                             "unit": "100g"
                         },
                         "guests": {
-                            "base_price": 1.0,
+                            "base_price": 0,
                             "price_per_unit": 1.05,
                             "unit": "100g"
                         }
@@ -1601,6 +1601,5 @@
                 }
             ]
         }
-    ],
-    "version": "2.1"
+    ]
 }

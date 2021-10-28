@@ -30,16 +30,18 @@ class MenuParserTest(unittest.TestCase):
 class StudentenwerkMenuParserTest(unittest.TestCase):
     studentenwerk_menu_parser = StudentenwerkMenuParser()
 
-    test_dates = [datetime.date(2021, 9, 13),
-                  datetime.date(2021, 9, 14),
-                  datetime.date(2021, 9, 15),
-                  datetime.date(2021, 9, 16),
-                  datetime.date(2021, 9, 17),
-                  datetime.date(2021, 9, 20),
-                  datetime.date(2021, 9, 21),
-                  datetime.date(2021, 9, 22),
-                  datetime.date(2021, 9, 23),
-                  datetime.date(2021, 9, 24)]
+    test_dates = [
+        datetime.date(2021, 9, 13),
+        datetime.date(2021, 9, 14),
+        datetime.date(2021, 9, 15),
+        datetime.date(2021, 9, 16),
+        datetime.date(2021, 9, 17),
+        datetime.date(2021, 9, 20),
+        datetime.date(2021, 9, 21),
+        datetime.date(2021, 9, 22),
+        datetime.date(2021, 9, 23),
+        datetime.date(2021, 9, 24),
+    ]
 
     def test_studentenwerk(self) -> None:
         locations = ["mensa-garching", "mensa-arcisstr", "stubistro-großhadern"]
@@ -85,12 +87,11 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         weeks_actual = Week.to_weeks(menus)
         length_weeks_actual = len(weeks_actual)
 
-        referenced_weeks_length = 2
-        self.assertEqual(referenced_weeks_length, length_weeks_actual)
+        self.assertEqual(2, length_weeks_actual)
         for calendar_week in weeks_actual:
             week = weeks_actual[calendar_week]
             week_length = len(week.days)
-            self.assertEqual(referenced_weeks_length, week_length)
+            self.assertEqual(5, week_length)
 
     def test_should_convert_week_to_json(self):
         calendar_weeks = [37, 38]
