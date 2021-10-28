@@ -72,8 +72,8 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         for date_ in self.test_dates:
             # parse the menu
             with open(
-                    f"src/test/assets/studentenwerk/{location}/for-generation/{date_}.html",
-                    encoding="utf-8",
+                f"src/test/assets/studentenwerk/{location}/for-generation/{date_}.html",
+                encoding="utf-8",
             ) as f:
                 tree: html.Element = html.fromstring(f.read())
             studentenwerk_menu_parser = StudentenwerkMenuParser()
