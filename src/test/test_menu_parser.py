@@ -30,41 +30,15 @@ class MenuParserTest(unittest.TestCase):
 class StudentenwerkMenuParserTest(unittest.TestCase):
     studentenwerk_menu_parser = StudentenwerkMenuParser()
 
-    menu_html_mensa_garching_old = test_util.load_html(
-        "src/test/assets/studentenwerk/in/speiseplan_mensa_garching_old.html",
-    )
-    menu_html_mensa_garching_new = test_util.load_html(
-        "src/test/assets/studentenwerk/in/speiseplan_mensa_garching_new.html",
-    )
-    menu_html_mensa_garching_old_wrong_date_format = test_util.load_html(
-        "src/test/assets/studentenwerk/in/speiseplan_mensa_garching_old_wrong_date_format.html",
-    )
-    menu_html_stubistro_grosshadern = test_util.load_html(
-        "src/test/assets/studentenwerk/in/speiseplan_stubistro_großhadern.html",
-    )
-    menu_html_mensa_arcisstrasse = test_util.load_html(
-        "src/test/assets/studentenwerk/in/speiseplan_mensa_arcisstrasse.html",
-    )
-
-
     def test_studentenwerk(self) -> None:
-        locations = ["mensa-garching", "mensa-arcisstr"]
+        locations = ["mensa-garching", "mensa-arcisstr", "stubistro-großhadern"]
         for location in locations:
             self.__test_studentenwerk_location(location)
 
     def __test_studentenwerk_location(self, location: str) -> None:
-        date = datetime.date.fromisoformat("2021-09-13")
-        # parse the menu
-        with open(
-                f"src/test/assets/studentenwerk/{location}/for-generation/{date.isoformat()}.html",
-                encoding="utf-8",
-        ) as f:
-            tree: html.Element = html.fromstring(f.read())
-        studentenwerk_menu_parser = StudentenwerkMenuParser()
+        menus = self.__get_menus(location)
 
-        menu = studentenwerk_menu_parser.get_menu(tree, location, date)
-
-        weeks = Week.to_weeks({date: menu})
+        weeks = Week.to_weeks(menus)
 
         # create temp dir for testing
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -74,42 +48,51 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
                 # open the reference file
                 with open(
-                    f"src/test/assets/studentenwerk/{location}/reference/{date}.json",
-                    encoding="utf-8",
+                        f"src/test/assets/studentenwerk/{location}/reference/combined.json",
+                        encoding="utf-8",
                 ) as reference:
                     self.assertEqual(json.load(generated), json.load(reference))
 
-    def test_should_ignore_day_when_date_of_the_day_is_in_a_wrong_format(self):
-        menu_count = len(
-            self.studentenwerk_menu_parser.get_menus(
-                self.menu_html_mensa_garching_old_wrong_date_format,
-                "mensa-garching",
-            ),
-        )
-        self.assertEqual(22, menu_count)
+    # pylint: disable=no-self-use
+    def __get_menus(self, location):
+        menus = {}
+        start_date = datetime.date.fromisoformat("2021-09-13")
+        end_date = datetime.date.fromisoformat("2021-09-24")
+        timedelta = datetime.timedelta(days=1)
+        while start_date <= end_date:
+            # parse the menu
+            with open(
+                    f"src/test/assets/studentenwerk/{location}/for-generation/{start_date}.html",
+                    encoding="utf-8",
+            ) as f:
+                tree: html.Element = html.fromstring(f.read())
+            studentenwerk_menu_parser = StudentenwerkMenuParser()
+
+            menus[start_date] = studentenwerk_menu_parser.get_menu(tree, location, start_date)
+            start_date += timedelta
+        return menus
+
+    # pylint: enable=no-self-use
 
     def test_should_return_weeks_when_converting_menu_to_week_objects(self):
-        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
+        menus = self.__get_menus("mensa-garching")
         weeks_actual = Week.to_weeks(menus)
         length_weeks_actual = len(weeks_actual)
 
-        self.assertEqual(5, length_weeks_actual)
+        referenced_weeks_length = 2
+        self.assertEqual(referenced_weeks_length, length_weeks_actual)
         for calendar_week in weeks_actual:
             week = weeks_actual[calendar_week]
             week_length = len(week.days)
-            # calendar weeks 15 and 16 have one day less, because of a holiday
-            if calendar_week in [15, 16]:
-                self.assertEqual(4, week_length)
-            else:
-                self.assertEqual(5, week_length)
+            self.assertEqual(referenced_weeks_length, week_length)
 
     def test_should_convert_week_to_json(self):
-        calendar_weeks = range(13, 18)
-        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
+        calendar_weeks = [37, 38]
+        menus = self.__get_menus("mensa-garching")
         weeks = Week.to_weeks(menus)
         for calendar_week in calendar_weeks:
             reference_week = test_util.load_json(
-                f"src/test/assets/studentenwerk/out/speiseplan_mensa_garching_kw2017-{calendar_week}.json",
+                f"src/test/assets/studentenwerk/mensa-garching/reference/week_{calendar_week}.json",
             )
             generated_week = weeks[calendar_week].to_json_obj()
             self.assertEqual(test_util.order_json_objects(generated_week), test_util.order_json_objects(reference_week))
