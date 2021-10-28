@@ -30,6 +30,17 @@ class MenuParserTest(unittest.TestCase):
 class StudentenwerkMenuParserTest(unittest.TestCase):
     studentenwerk_menu_parser = StudentenwerkMenuParser()
 
+    test_dates = [datetime.date(2021, 9, 13),
+                  datetime.date(2021, 9, 14),
+                  datetime.date(2021, 9, 15),
+                  datetime.date(2021, 9, 16),
+                  datetime.date(2021, 9, 17),
+                  datetime.date(2021, 9, 20),
+                  datetime.date(2021, 9, 21),
+                  datetime.date(2021, 9, 22),
+                  datetime.date(2021, 9, 23),
+                  datetime.date(2021, 9, 24)]
+
     def test_studentenwerk(self) -> None:
         locations = ["mensa-garching", "mensa-arcisstr", "stubistro-großhadern"]
         for location in locations:
@@ -51,28 +62,23 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
                         f"src/test/assets/studentenwerk/{location}/reference/combined.json",
                         encoding="utf-8",
                 ) as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
+                    gen = json.load(generated)
+                    ref = json.load(reference)
+                    self.assertEqual(gen, ref)
 
-    # pylint: disable=no-self-use
     def __get_menus(self, location):
         menus = {}
-        start_date = datetime.date.fromisoformat("2021-09-13")
-        end_date = datetime.date.fromisoformat("2021-09-24")
-        timedelta = datetime.timedelta(days=1)
-        while start_date <= end_date:
+        for date in self.test_dates:
             # parse the menu
             with open(
-                    f"src/test/assets/studentenwerk/{location}/for-generation/{start_date}.html",
+                    f"src/test/assets/studentenwerk/{location}/for-generation/{date}.html",
                     encoding="utf-8",
             ) as f:
                 tree: html.Element = html.fromstring(f.read())
             studentenwerk_menu_parser = StudentenwerkMenuParser()
 
-            menus[start_date] = studentenwerk_menu_parser.get_menu(tree, location, start_date)
-            start_date += timedelta
+            menus[date] = studentenwerk_menu_parser.get_menu(tree, location, date)
         return menus
-
-    # pylint: enable=no-self-use
 
     def test_should_return_weeks_when_converting_menu_to_week_objects(self):
         menus = self.__get_menus("mensa-garching")
