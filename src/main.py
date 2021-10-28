@@ -39,7 +39,7 @@ def jsonify(weeks, directory, location, combine_dishes):
         # create dir: <year>/
         json_dir = f"{str(directory)}/{str(year)}"
         if not os.path.exists(json_dir):
-            os.makedirs(f"{str(directory)}/{str(year)}")
+            os.makedirs(json_dir)
 
         # convert Week object to JSON
         week_json = week.to_json_obj()
