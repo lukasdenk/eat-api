@@ -242,9 +242,6 @@ class StudentenwerkMenuParser(MenuParser):
             if page.ok:
                 try:
                     tree: html.Element = html.fromstring(page.content)
-                    # if date <= datetime.date.fromisoformat("2021-09-24"):
-                    #     with open(f"/home/lukas/PycharmProjects/eat-api/src/test/assets/studentenwerk/{location}/for-generation/{date.isoformat()}.html","w",encoding="utf-8") as f:
-                    #         f.write(page.content.decode("utf-8"))
                     menu = self.get_menu(tree, location, date)
                     if menu:
                         menus[date] = menu
