@@ -247,8 +247,7 @@ class StudentenwerkMenuParser(MenuParser):
                         menus[date] = menu
                 # pylint: disable=broad-except
                 except Exception as e:
-                    pass
-                    # print(f"Exception while parsing menu from {date}. Skipping current date. Exception args: {e.args}")
+                    print(f"Exception while parsing menu from {date}. Skipping current date. Exception args: {e.args}")
                 # pylint: enable=broad-except
         return menus
 
