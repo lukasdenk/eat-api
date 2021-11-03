@@ -1,12 +1,6 @@
 import json
 
-# somehow, pylint and mypy do not recognize the "Union" class
-# pylint:disable=no-name-in-module
-from types import Union  # type: ignore #(for mypy)
-
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
-
-# pylint:enable=no-name-in-module
 
 
 def load_html(path: str) -> html.Element:
@@ -17,7 +11,7 @@ def load_html(path: str) -> html.Element:
     return html_element  # noqa: R504
 
 
-def load_json(path: Union[bytes, str]) -> object:  # type: ignore
+def load_json(path: str) -> object:  # type: ignore
     with open(path, encoding="utf-8") as f:
         json_obj = json.load(f)
     # suppress flake8 warning about "unnecessary variable assignment before return statement".
