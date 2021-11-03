@@ -78,13 +78,11 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, location, True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                reference = test_util.load_json(
-                    f"{self.base_path_location.format(location=location)}/reference/combined.json",
-                )
-                self.assertEqual(json.load(generated), reference)
+            generated = test_util.load_json(os.path.join(temp_dir, "combined", "combined.json"))
+            reference = test_util.load_json(
+                f"{self.base_path_location.format(location=location)}/reference/combined.json",
+            )
+            self.assertEqual(generated, reference)
 
     def __get_menus(self, location):
         menus = {}
