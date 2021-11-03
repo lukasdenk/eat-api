@@ -267,6 +267,11 @@ class StudentenwerkMenuParser(MenuParser):
         page_link: str = self.base_url.format(location_id=location_id)
         page: requests.Response = requests.get(page_link)
         tree: html.Element = html.fromstring(page.content)
+        return self.get_available_dates_for_html(tree)
+
+    # public for testing
+    # pylint: disable=no-self-use
+    def get_available_dates_for_html(self, tree: html.Element) -> List[datetime.date]:
         dates: List[datetime.date] = []
         date_strings: List[str] = tree.xpath("//div[@class='c-schedule__item']//strong/text()")
         for date_str in date_strings:
@@ -279,6 +284,8 @@ class StudentenwerkMenuParser(MenuParser):
                 continue
             dates += [date]
         return dates
+
+    # pylint: enable=no-self-use
 
     @staticmethod
     def __get_daily_menus_as_html(page):
