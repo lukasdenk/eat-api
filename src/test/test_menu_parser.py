@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
+import datetime
 import json
 import os
 import tempfile
 import unittest
 from datetime import date
+from typing import List
 
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
@@ -29,6 +31,8 @@ class MenuParserTest(unittest.TestCase):
 class StudentenwerkMenuParserTest(unittest.TestCase):
     studentenwerk_menu_parser = StudentenwerkMenuParser()
 
+    base_path_location = "src/test/assets/studentenwerk/{location}"
+
     test_dates = [
         date(2021, 9, 13),
         date(2021, 9, 14),
@@ -42,40 +46,52 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         date(2021, 9, 24),
     ]
 
+    test_dates_nov = []
+
+    start_date = date(2021, 11, 1)
+    end_date = date(2021, 12, 1)
+
+    # all work days in november
+    while start_date < end_date:
+        # 5 means Saturday and so on
+        if start_date.weekday() not in {5, 6}:
+            test_dates_nov += [start_date]
+        start_date += datetime.timedelta(days=1)
+
     def test_studentenwerk(self) -> None:
         locations = ["mensa-garching", "mensa-arcisstr", "stubistro-großhadern"]
         for location in locations:
             self.__test_studentenwerk_location(location)
 
+    def test_get_dates(self) -> None:
+        tree = test_util.load_html(
+            f"{self.base_path_location.format(location='mensa-garching')}/for-generation/overview.html",
+        )
+        dates: List[date] = self.studentenwerk_menu_parser.get_available_dates_for_html(tree)
+        self.assertEqual(self.test_dates_nov, dates)
+
     def __test_studentenwerk_location(self, location: str) -> None:
         menus = self.__get_menus(location)
-
         weeks = Week.to_weeks(menus)
 
         # create temp dir for testing
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, location, True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open(
-                    f"src/test/assets/studentenwerk/{location}/reference/combined.json",
-                    encoding="utf-8",
-                ) as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
+            generated = test_util.load_json(os.path.join(temp_dir, "combined", "combined.json"))
+            reference = test_util.load_json(
+                f"{self.base_path_location.format(location=location)}/reference/combined.json",
+            )
+            self.assertEqual(generated, reference)
 
     def __get_menus(self, location):
         menus = {}
         for date_ in self.test_dates:
             # parse the menu
-            with open(
-                f"src/test/assets/studentenwerk/{location}/for-generation/{date_}.html",
-                encoding="utf-8",
-            ) as f:
-                tree: html.Element = html.fromstring(f.read())
+            tree: html.Element = test_util.load_html(
+                f"{self.base_path_location.format(location=location)}/for-generation/{date_}.html",
+            )
             studentenwerk_menu_parser = StudentenwerkMenuParser()
-
             menus[date_] = studentenwerk_menu_parser.get_menu(tree, location, date_)
         return menus
 
@@ -96,7 +112,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         weeks = Week.to_weeks(menus)
         for calendar_week in calendar_weeks:
             reference_week = test_util.load_json(
-                f"src/test/assets/studentenwerk/mensa-garching/reference/week_{calendar_week}.json",
+                f"{self.base_path_location.format(location='mensa-garching')}/reference/week_{calendar_week}.json",
             )
             generated_week = weeks[calendar_week].to_json_obj()
             self.assertEqual(test_util.order_json_objects(generated_week), test_util.order_json_objects(reference_week))
