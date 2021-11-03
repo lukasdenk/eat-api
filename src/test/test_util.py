@@ -3,9 +3,6 @@ import json
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
 
-# from types import Union
-
-
 def load_html(path: str) -> html.Element:
     #
     with open(path, encoding="utf-8") as f:
