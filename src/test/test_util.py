@@ -1,10 +1,10 @@
 import json
+
 # somehow, pylint and mypy do not recognize the "Union" class
 # pylint:disable=no-name-in-module
 from types import Union  # type: ignore #(for mypy)
 
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
-
 
 # pylint:enable=no-name-in-module
 
