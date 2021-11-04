@@ -5,7 +5,7 @@ LOC_LIST=( "mensa-arcisstr" "mensa-garching" "mensa-leopoldstr" "mensa-lothstr" 
 "stubistro-grosshadern" "stubistro-rosenheim" "stubistro-schellingstr" "stucafe-adalbertstr" \
 "stucafe-akademie-weihenstephan" "stucafe-boltzmannstr" "stucafe-garching" "stucafe-karlstr" "stucafe-pasing" \
 "ipp-bistro" "fmi-bistro" "mediziner-mensa" )
-OUT_DIR="dist"
+OUT_DIR="${OUT_DIR:-dist}"
 
 # Delete old output directory if it exists:
 if [ -d $OUT_DIR ]; then
