@@ -49,6 +49,10 @@ def translate_dishes(menus: Dict[date, Menu], language: str) -> bool:
     # source language is always german
     source_language = "de"
 
+    # don't use deepl, when already correct language
+    if source_language == language:
+        return True
+
     # traverse through all dish titles
     for menu in menus.values():
         for dish in menu.dishes:
