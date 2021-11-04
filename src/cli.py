@@ -47,6 +47,7 @@ def parse_cli_args():
     )
     parser.add_argument(
         "--language",
-        help="The language to translate the dish titles to",
+        help="The language to translate the dish titles to, "
+        "needs an DeepL API-Key in the environment variable DEEPL_API_KEY_EAT_API",
     )
     return parser.parse_args()

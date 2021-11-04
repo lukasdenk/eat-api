@@ -174,6 +174,7 @@ optional arguments:
   --openmensa PATH      directory for OpenMensa XML output (date parameter
                         will be ignored if this argument is used)
   -l, --locations       prints all available locations formated as JSON
+  --language LANGUAGE   The language to translate the dish titles to, needs an DeepL API-Key in the environment variable DEEPL_API_KEY_EAT_API
 ```
 
 It is mandatory to specify the canteen (e.g. mensa-garching). Furthermore, you can specify a date, for which you would like to get the menu. If no date is provided, all the dishes for the current week will be printed to the command line. the `--jsonify` option is used for the API and produces some JSON files containing the menu data.
