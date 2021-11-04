@@ -6,6 +6,7 @@ LOC_LIST=( "mensa-arcisstr" "mensa-garching" "mensa-leopoldstr" "mensa-lothstr" 
 "stucafe-akademie-weihenstephan" "stucafe-boltzmannstr" "stucafe-garching" "stucafe-karlstr" "stucafe-pasing" \
 "ipp-bistro" "fmi-bistro" "mediziner-mensa" )
 OUT_DIR="${OUT_DIR:-dist}"
+LANGUAGE="${LANGUAGE_EAT_API:-de}"
 
 # Delete old output directory if it exists:
 if [ -d $OUT_DIR ]; then
@@ -17,7 +18,7 @@ mkdir $OUT_DIR
 # Parse all canteens:
 for loc in "${LOC_LIST[@]}"; do
     echo "Parsing menus for: " "$loc"
-    python3 src/main.py -p "$loc" -j "./$OUT_DIR/$loc" -c
+    python3 src/main.py -p "$loc" -j "./$OUT_DIR/$loc" -c --language "$LANGUAGE"
 done
 
 # Combine all combined.json files to one all.json file:
