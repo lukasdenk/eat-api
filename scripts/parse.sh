@@ -13,7 +13,7 @@ if [ -d $OUT_DIR ]; then
 		rm -r $OUT_DIR
 fi
 # Create empty output directory:
-mkdir $OUT_DIR
+mkdir -p $OUT_DIR
 
 # Parse all canteens:
 for loc in "${LOC_LIST[@]}"; do
