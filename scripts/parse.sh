@@ -6,7 +6,7 @@ LOC_LIST=( "mensa-arcisstr" "mensa-garching" "mensa-leopoldstr" "mensa-lothstr" 
 "stucafe-akademie-weihenstephan" "stucafe-boltzmannstr" "stucafe-garching" "stucafe-karlstr" "stucafe-pasing" \
 "ipp-bistro" "fmi-bistro" "mediziner-mensa" )
 OUT_DIR="${OUT_DIR:-dist}"
-LANGUAGE="${LANGUAGE_EAT_API:-de}"
+LANGUAGE="${LANGUAGE_EAT_API:-DE}"
 
 # Delete old output directory if it exists:
 if [ -d $OUT_DIR ]; then

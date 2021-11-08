@@ -29,7 +29,7 @@ jobs:
               if: github.event_name == 'push'
             - name: Parse
               env:
-                LANGUAGE_EAT_API: en-us
+                LANGUAGE_EAT_API: EN-US
                 DEEPL_API_KEY_EAT_API: ${{ secrets.DEEPL_API_KEY }}
               run: ./scripts/parse.sh
             - name: Copy to language named subfolder

@@ -37,7 +37,7 @@ def translate_dishes(menus: Dict[date, Menu], language: str) -> bool:
     Translate the dish titles of a menu
 
     :param menus: Menus dictionary as given by the menu parser, will be modified
-    :param language: identifier for a language
+    :param language: Identifier for a language
     :return: Whether translation was successful
     """
     # get api key from environment, abort if not given
@@ -47,10 +47,10 @@ def translate_dishes(menus: Dict[date, Menu], language: str) -> bool:
 
     translator = deepl.Translator(deepl_api_key)
     # source language is always german
-    source_language = "de"
+    source_language = "DE"
 
     # don't use deepl, when already correct language
-    if source_language == language:
+    if source_language.lower() == language.lower():
         return True
 
     # traverse through all dish titles
