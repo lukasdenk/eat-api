@@ -378,20 +378,6 @@ class StudentenwerkMenuParser(MenuParser):
 class FMIBistroMenuParser(MenuParser):
     url = "https://www.wilhelm-gastronomie.de/.cm4all/mediadb/Speiseplan_Garching_KW{calendar_week}_{year}.pdf"
 
-    price_regex = r"(\d+(,\d+)?(?=\s?\€))"
-    ingredients_regex = r"[a-z][a-zA-Z]*"
-
-    ignore_line_words = {
-        "",
-        "suppe",
-        "meat",
-        "&",
-        "grill",
-        "vegan*",
-        "veggie",
-    }
-    ignore_line_regex = r"(\s*" + r"|\s*".join(ignore_line_words) + r"\s*)"
-
     class DishType(Enum):
         SOUP = auto()
         MEAT = auto()
@@ -428,7 +414,6 @@ class FMIBistroMenuParser(MenuParser):
         menus = {}
 
         lines, menu_end, menu_start = self.__get_relevant_text(text)
-        estimated_column_length = 49
 
         for date in Week.get_non_weekend_days_for_calendar_week(year, calendar_week):
             dishes = []
@@ -437,7 +422,7 @@ class FMIBistroMenuParser(MenuParser):
 
             for line in lines:
                 if "€" not in line:
-                    dish_title_part = self.__extract_dish_title_part(line, estimated_column_length, date.weekday())
+                    dish_title_part = self.__extract_dish_title_part(line, date.weekday())
                     if dish_title_part:
                         dish_title_parts += [dish_title_part]
                 else:
@@ -468,7 +453,8 @@ class FMIBistroMenuParser(MenuParser):
         return menus
 
     # pylint: disable=no-self-use
-    def __extract_dish_title_part(self, line: str, estimated_column_length: int, weekday_index: int) -> Optional[str]:
+    def __extract_dish_title_part(self, line: str, weekday_index: int) -> Optional[str]:
+        estimated_column_length = 49
         estimated_column_begin = weekday_index * estimated_column_length
         estimated_column_end = min(estimated_column_begin + estimated_column_length, len(line))
         # compensate rounding errors
@@ -480,19 +466,27 @@ class FMIBistroMenuParser(MenuParser):
         except IndexError:
             return None
 
-    # pylint: enable=no-self-use
-
     def __get_relevant_text(self, text: str) -> Tuple[List[str], int, int]:
+        ignore_line_words = {
+            "",
+            "suppe",
+            "meat",
+            "&",
+            "grill",
+            "vegan*",
+            "veggie",
+        }
+        ignore_line_regex = r"(\s*" + r"|\s*".join(ignore_line_words) + r"\s*)"
+
         lines: List[str] = []
         menu_start = 4
         menu_end = -15
         for line in text.splitlines()[menu_start:menu_end]:
-            if re.fullmatch(self.ignore_line_regex, line, re.IGNORECASE):
+            if re.fullmatch(ignore_line_regex, line, re.IGNORECASE):
                 continue
             lines += [line[13:]]
         return lines, menu_end, menu_start
 
-    # pylint: disable=no-self-use
     def __get_ingredient_str_and_price(self, column_index: int, line: str) -> Optional[Tuple[str, float]]:
         # match ingredients or prices
         estimated_column_length = int(len(line) / 5)
