@@ -2,7 +2,6 @@
 
 import datetime
 import re
-from enum import Enum
 from typing import Any, Dict, List, Optional, Sequence, Set
 
 
@@ -345,15 +344,6 @@ class Week:
     year: int
     days: List[Menu]
 
-    class WeekDay(Enum):
-        MONDAY = 0
-        TUESDAY = 1
-        WEDNSDAY = 2
-        THURSDAY = 3
-        FRIDAY = 4
-        SATURDAY = 5
-        SUNDAY = 6
-
     def __init__(self, calendar_week: int, year: int, days: List[Menu]):
         self.calendar_week = calendar_week
         self.year = year
@@ -401,7 +391,7 @@ class Week:
         days = []
 
         start_date = datetime.date.fromisocalendar(year, calendar_week, 1)
-        for i in range(5):
+        for _ in range(5):
             days += [start_date]
             start_date += datetime.timedelta(days=1)
         return days

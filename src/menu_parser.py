@@ -334,7 +334,7 @@ class FMIBistroMenuParser(MenuParser):
         "vegan*",
         "veggie",
     }
-    ignore_line_regex = r"(\s*" + r"|\s*".join(ignore_line_words) + "\s*)"
+    ignore_line_regex = r"(\s*" + r"|\s*".join(ignore_line_words) + r"\s*)"
 
     class DishType(Enum):
         SOUP = auto()
@@ -365,20 +365,7 @@ class FMIBistroMenuParser(MenuParser):
                         menus.update(parsed_menus)
         return menus
 
-    def __get_dates_with_menu(self, lines: List[str], year: int, weeknumber: int) -> List[datetime.date]:
-        dates = []
-        for line in lines:
-            if "€" in line:
-                estimated_column_length = int(len(line) / 5)
-                estimated_column_end = estimated_column_length
-                for date in Week.get_non_weekend_days_for_calendar_week(year, weeknumber):
-                    if "€" in line[estimated_column_end - 15: min(estimated_column_end + 15, len(line))]:
-                        dates += [date]
-                    estimated_column_end += estimated_column_length
-        dates.sort()
-        return dates
-
-    def get_menus(self, text, year, calendar_week):
+    def get_menus(self, text: str, year: int, calendar_week: int) -> Dict[datetime.date, Menu]:
         menus = {}
 
         lines, menu_end, menu_start = self.__get_relevant_text(text)
@@ -398,11 +385,11 @@ class FMIBistroMenuParser(MenuParser):
                 else:
                     try:
                         dish_type = next(dish_type_iterator)
-                    except StopIteration:
+                    except StopIteration as e:
                         raise ParsingError(
                             f"Only 3 lines in the lines from {menu_start}-{menu_end} are expected to"
                             f" contain the '€' sign.",
-                        )
+                        ) from e
                     ingredient_str_and_price_optional = self.__get_ingredient_str_and_price(date.weekday(), line)
                     if ingredient_str_and_price_optional is None:
                         # no menu for that day
@@ -422,16 +409,20 @@ class FMIBistroMenuParser(MenuParser):
                 menus[date] = Menu(date, dishes)
         return menus
 
-    def __extract_dish_title_part(self, line: str, estimated_column_length, weekday_index: int) -> Optional[str]:
+    # pylint: disable=no-self-use
+    def __extract_dish_title_part(self, line: str, estimated_column_length: int, weekday_index: int) -> Optional[str]:
         estimated_column_begin = weekday_index * estimated_column_length
         estimated_column_end = min(estimated_column_begin + estimated_column_length, len(line))
         # compensate rounding errors
         if abs(estimated_column_end - len(line)) < 5:
             estimated_column_end = len(line)
         try:
-            return re.findall(r"\S+(?:\s+\S+)*", line[estimated_column_begin:estimated_column_end])[0]
+            # cast to str for return type check of pre-commit
+            return str(re.findall(r"\S+(?:\s+\S+)*", line[estimated_column_begin:estimated_column_end])[0])
         except IndexError:
             return None
+
+    # pylint: enable=no-self-use
 
     def __get_relevant_text(self, text: str) -> Tuple[List[str], int, int]:
         lines: List[str] = []
@@ -443,6 +434,7 @@ class FMIBistroMenuParser(MenuParser):
             lines += [line[13:]]
         return lines, menu_end, menu_start
 
+    # pylint: disable=no-self-use
     def __get_ingredient_str_and_price(self, column_index: int, line: str) -> Optional[Tuple[str, float]]:
         # match ingredients or prices
         estimated_column_length = int(len(line) / 5)
@@ -452,7 +444,11 @@ class FMIBistroMenuParser(MenuParser):
         try:
             price_str = re.findall(
                 r"\d+(?:,\d+)?",
-                line[estimated_column_end - delta: min(estimated_column_end + delta, len(line))],
+                # pre-commit tool black will reformat the file so that flake8 will complain with E203.
+                # However, according to
+                # https://black.readthedocs.io/en/stable/faq.html#why-are-flake8-s-e203-and-w503-violated,
+                # this is against PEP8
+                line[estimated_column_end - delta : min(estimated_column_end + delta, len(line))],  # noqa: E203
             )[0]
         except IndexError:
             return None
@@ -460,11 +456,17 @@ class FMIBistroMenuParser(MenuParser):
         try:
             ingredients_str = re.findall(
                 r"[A-Za-z](?:,[A-Za-z]+)*",
-                line[max(estimated_column_begin - delta, 0): estimated_column_begin + delta],
+                # pre-commit tool black will reformat the file so that flake8 will complain with E203.
+                # However, according to
+                # https://black.readthedocs.io/en/stable/faq.html#why-are-flake8-s-e203-and-w503-violated,
+                # this is against PEP8
+                line[max(estimated_column_begin - delta, 0) : estimated_column_begin + delta],  # noqa: E203
             )[0]
         except IndexError:
             ingredients_str = ""
         return ingredients_str, price
+
+    # pylint: enable=no-self-use
 
 
 class IPPBistroMenuParser(MenuParser):
