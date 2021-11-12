@@ -399,26 +399,29 @@ class FMIBistroMenuParser(MenuParser):
 
     def parse(self, location: str) -> Optional[Dict[datetime.date, Menu]]:
         today = datetime.date.today()
-        year, calendar_week, _ = today.isocalendar()
-        calendar_week = 44
-        menus = {}
-
-        # get pdf
-        page = requests.get(self.url.format(calendar_week=calendar_week, year=year))
-        with tempfile.NamedTemporaryFile() as temp_pdf:
-            # download pdf
-            temp_pdf.write(page.content)
-            print()
-            with open("test.txt", "wb") as temp_txt:
-                # with tempfile.NamedTemporaryFile() as temp_txt:
-                # convert pdf to text by calling pdftotext
-                call(["pdftotext", "-layout", temp_pdf.name, temp_txt.name])  # nosec: all input is fully defined
-                with open(temp_txt.name, "r", encoding="utf-8") as myfile:
-                    # read generated text file
-                    data = myfile.read()
-                    parsed_menus = self.get_menus(data, year, calendar_week)
-                    if parsed_menus is not None:
-                        menus.update(parsed_menus)
+        years_and_calendar_weeks: List[Tuple[int, int, int]] = [
+            today.isocalendar(),
+            (today + datetime.timedelta(days=7)).isocalendar(),
+        ]
+        for year, calendar_week, _ in years_and_calendar_weeks:
+            menus = {}
+            # get pdf
+            page = requests.get(self.url.format(calendar_week=calendar_week, year=year))
+            if page.status_code == 200:
+                with tempfile.NamedTemporaryFile() as temp_pdf:
+                    # download pdf
+                    temp_pdf.write(page.content)
+                    with tempfile.NamedTemporaryFile() as temp_txt:
+                        # convert pdf to text by calling pdftotext
+                        call(
+                            ["pdftotext", "-layout", temp_pdf.name, temp_txt.name],
+                        )  # nosec: all input is fully defined
+                        with open(temp_txt.name, "r", encoding="utf-8") as myfile:
+                            # read generated text file
+                            data = myfile.read()
+                            parsed_menus = self.get_menus(data, year, calendar_week)
+                            if parsed_menus is not None:
+                                menus.update(parsed_menus)
         return menus
 
     def get_menus(self, text: str, year: int, calendar_week: int) -> Dict[datetime.date, Menu]:
@@ -433,7 +436,6 @@ class FMIBistroMenuParser(MenuParser):
             dish_type_iterator = iter(FMIBistroMenuParser.DishType)
 
             for line in lines:
-                print(len(line))
                 if "€" not in line:
                     dish_title_part = self.__extract_dish_title_part(line, estimated_column_length, date.weekday())
                     if dish_title_part:
