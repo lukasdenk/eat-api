@@ -50,7 +50,7 @@ class StudentenwerkMenuParser(MenuParser):
 
     # Base price for sausage, meat, fish
     class SelfServiceBasePriceType(Enum):
-        VEGETARIAN = 0
+        VEGETARIAN_SOUP_STEW = 0
         SAUSAGE = 0.5
         MEAT = 1.0
         FISH = 1.5
@@ -61,7 +61,7 @@ class StudentenwerkMenuParser(MenuParser):
     # Meet and vegetarian base prices for Students, Staff, Guests
     class SelfServicePricePerUnitType(Enum):
         CLASSIC = 0.75, 0.9, 1.05
-        VEGAN_SOUP_STEW = 0.33, 0.55, 0.66
+        SOUP_STEW = 0.33, 0.55, 0.66
 
         def __init__(self, students: float, staff: float, guests: float):
             self.students = students
@@ -168,22 +168,21 @@ class StudentenwerkMenuParser(MenuParser):
         if location in ["mensa-weihenstephan", "mensa-lothstr"]:
             return StudentenwerkMenuParser.prices_mensa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
         else:
-            if dish[0] == "Studitopf" or dish[4] == "2":  # Soup, Stew or Vegan
-                price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.VEGAN_SOUP_STEW
+            if dish[0] == "Studitopf":  # Soup or Stew
+                price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.SOUP_STEW
             else:
                 price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.CLASSIC
 
-            if dish[4] == "0":  # Non-Vegetarian
-                # Add a base price to the dish
-                if "Fi" in dish[2]:  # Fish
+            if dish[0] != "Studitopf" and dish[4] == "0":  # Non-Vegetarian
+                if "Fi" in dish[2]:
                     base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.FISH
-                # Sausage. TODO: Find better way to distinguish between sausage and meat
+                # TODO: Find better way to distinguish between sausage and meat
                 elif "wurst" in dish_name.lower() or "würstchen" in dish_name.lower():
                     base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.SAUSAGE
-                else:  # Meat
+                else:
                     base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.MEAT
             else:
-                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN
+                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN_SOUP_STEW
             return StudentenwerkMenuParser.__get_self_service_prices(base_price_type, price_per_unit_type)
 
     # Some of the locations do not use the general Studentenwerk system and do not have a location id.

@@ -18,7 +18,7 @@ mkdir -p $OUT_DIR
 # Parse all canteens:
 for loc in "${LOC_LIST[@]}"; do
     echo "Parsing menus for: " "$loc"
-    python3 src/main.py -p "$loc" -j "./$OUT_DIR/$loc" -c --language "$LANGUAGE"
+    python3 src/main.py -p "$loc" -j "./$OUT_DIR/$loc" -c
 done
 
 # Combine all combined.json files to one all.json file:
