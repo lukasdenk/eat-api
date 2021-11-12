@@ -117,77 +117,26 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             generated_week = weeks[calendar_week].to_json_obj()
             self.assertEqual(test_util.order_json_objects(generated_week), test_util.order_json_objects(reference_week))
 
-    """
-    # just for generating reference json files
-    def test_gen_file(self):
-        # parse the menu
-        menus = self.studentenwerk_menu_parser.get_menus(self.menu_html_mensa_garching_old, "mensa-garching")
-        weeks = Week.to_weeks(menus)
-        main.jsonify(weeks, "/tmp/eat-api_test_output", "mensa-garching", True)
-    """
-
 
 class FMIBistroParserTest(unittest.TestCase):
     bistro_parser = FMIBistroMenuParser()
 
-    with open("src/test/assets/fmi/in/Garching-Speiseplan_KW44_2017.txt", "r", encoding="utf-8") as menu_kw_44_2017:
-        menu_kw_44_2017_txt = menu_kw_44_2017.read()
-    menu_kw_44_2017_year = 2017
-    menu_kw_44_2017_week_number = 44
-
-    with open("src/test/assets/fmi/in/Garching-Speiseplan_KW45_2017.txt", "r", encoding="utf-8") as menu_kw_45_2017:
-        menu_kw_45_2017_txt = menu_kw_45_2017.read()
-    menu_kw_45_2017_year = 2017
-    menu_kw_45_2017_week_number = 45
-
-    def test_fmi_bistro_kw_44_2017(self):
-        # parse the menu
-        menus = self.bistro_parser.get_menus(
-            self.menu_kw_44_2017_txt,
-            self.menu_kw_44_2017_year,
-            self.menu_kw_44_2017_week_number,
-        )
+    def test_fmi_bistro(self):
+        for_generation_path = "src/test/assets/fmi/for-generation/calendar_week_2021_{calendar_week}.txt"
+        menus = {}
+        for calendar_week in range(44, 46):
+            text = test_util.load_txt(for_generation_path.format(calendar_week=calendar_week))
+            menus.update(self.bistro_parser.get_menus(text, 2021, calendar_week))
         weeks = Week.to_weeks(menus)
 
         # create temp dir for testing
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, "fmi-bistro", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open("src/test/assets/fmi/out/menu_kw_44_2017.json", "r", encoding="utf-8") as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
+            generated = test_util.load_json(os.path.join(temp_dir, "combined", "combined.json"))
+            reference = test_util.load_json("src/test/assets/fmi/reference/combined.json")
 
-    def test_fmi_bistro_kw_45_2017(self):
-        # parse the menu
-        menus = self.bistro_parser.get_menus(
-            self.menu_kw_45_2017_txt,
-            self.menu_kw_45_2017_year,
-            self.menu_kw_45_2017_week_number,
-        )
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "fmi-bistro", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open("src/test/assets/fmi/out/menu_kw_45_2017.json", "r", encoding="utf-8") as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
-
-    """
-    # just for generating reference json files
-    def test_gen_file(self):
-        # parse the menu
-        menus = self.bistro_parser.get_menus(
-            self.menu_kw_45_2017_txt, self.menu_kw_45_2017_year, self.menu_kw_45_2017_week_number
-        )
-        weeks = Week.to_weeks(menus)
-        main.jsonify(weeks, "/tmp/eat-api_test_output", "fmi-bistro", True)
-    """
+            self.assertEqual(test_util.order_json_objects(generated), test_util.order_json_objects(reference))
 
 
 class IPPBistroParserTest(unittest.TestCase):

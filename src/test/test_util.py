@@ -19,6 +19,14 @@ def load_json(path: str) -> object:  # type: ignore
     return json_obj  # noqa: R504
 
 
+def load_txt(path: str) -> str:
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    # suppress flake8 warning about "unnecessary variable assignment before return statement".
+    # reason: file closing could otherwise have side-effects
+    return text  # noqa: R504
+
+
 def order_json_objects(obj):
     """
     Recusively orders all elemts in a Json object.

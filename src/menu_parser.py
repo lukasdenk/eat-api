@@ -403,8 +403,8 @@ class FMIBistroMenuParser(MenuParser):
             today.isocalendar(),
             (today + datetime.timedelta(days=7)).isocalendar(),
         ]
+        menus = {}
         for year, calendar_week, _ in years_and_calendar_weeks:
-            menus = {}
             # get pdf
             page = requests.get(self.url.format(calendar_week=calendar_week, year=year))
             if page.status_code == 200:
