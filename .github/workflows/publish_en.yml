@@ -1,34 +1,39 @@
-name: publish
+name: publish_en
 
 on:
     schedule:
-        - cron: '0 9,21 * * MON-FRI'
-        - cron: '0 21 * * SUN'
+        - cron: '00 22 * * SUN'
+
 
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2.4.0
+            - uses: actions/checkout@v1
             - name: Setup Python
               uses: actions/setup-python@v2.2.2
               with:
-                  python-version: 3.9
+                python-version: 3.9
             - name: Install dependencies
               run: |
-                  sudo apt update -y
-                  sudo apt install -y tree poppler-utils
-                  python -m pip install --upgrade pip
-                  pip install poetry==1.1.11
-                  poetry config virtualenvs.create false
-                  poetry install --no-interaction --no-ansi
+                sudo apt update -y
+                sudo apt install -y tree poppler-utils
+                python -m pip install --upgrade pip
+                pip install poetry==1.1.11
+                poetry config virtualenvs.create false
+                poetry install --no-interaction --no-ansi
             - name: Test with pytest
               run: pytest
               env:
-                  PYTHONPATH: src/
+                PYTHONPATH: src/
               if: github.event_name == 'push'
             - name: Parse
+              env:
+                LANGUAGE_EAT_API: EN-US
+                DEEPL_API_KEY_EAT_API: ${{ secrets.DEEPL_API_KEY }}
               run: ./scripts/parse.sh
+            - name: Copy to language named subfolder
+              run: mv dist en && mkdir dist && mv en dist
             - name: Deploy
               uses: docker://peaceiris/gh-pages:v2.5.1
               env:

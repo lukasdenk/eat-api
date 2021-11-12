@@ -39,7 +39,7 @@ def jsonify(weeks, directory, location, combine_dishes):
         # create dir: <year>/
         json_dir = f"{str(directory)}/{str(year)}"
         if not os.path.exists(json_dir):
-            os.makedirs(f"{str(directory)}/{str(year)}")
+            os.makedirs(json_dir)
 
         # convert Week object to JSON
         week_json = week.to_json_obj()
@@ -109,8 +109,15 @@ def main():
     # print menu
     if menus is None:
         print("Error. Could not retrieve menu(s)")
+
+    # optionally translate the dish titles
+    if args.language is not None:
+        translated = util.translate_dishes(menus, args.language)
+        if not translated:
+            print("Error. The translation was not successful")
+
     # jsonify argument is set
-    elif args.jsonify is not None:
+    if args.jsonify is not None:
         weeks = Week.to_weeks(menus)
         if not os.path.exists(args.jsonify):
             os.makedirs(args.jsonify)
