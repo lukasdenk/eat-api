@@ -151,6 +151,15 @@ The following link would give you the menu of Mensa Garching for week 20 in 2019
 https://tum-dev.github.io/eat-api/mensa-garching/2019/20.json
 ```
 
+#### Translation
+
+Besides, the german version, there is also an english translation available.
+The structure of the english version is the same as in the german version, but with the following base url.
+
+```
+https://tum-dev.github.io/eat-api/en/<location>/<year>/<week-number>.json
+```
+
 ### CLI
 
 The JSON files are produced by the tool shown in this repository. Hence, it is either possible to access the API or use the tool itself to obtain the desired menu data. The CLI needs to be used as follows:
@@ -174,6 +183,7 @@ optional arguments:
   --openmensa PATH      directory for OpenMensa XML output (date parameter
                         will be ignored if this argument is used)
   -l, --locations       prints all available locations formated as JSON
+  --language LANGUAGE   The language to translate the dish titles to, needs an DeepL API-Key in the environment variable DEEPL_API_KEY_EAT_API
 ```
 
 It is mandatory to specify the canteen (e.g. mensa-garching). Furthermore, you can specify a date, for which you would like to get the menu. If no date is provided, all the dishes for the current week will be printed to the command line. the `--jsonify` option is used for the API and produces some JSON files containing the menu data.
@@ -189,6 +199,13 @@ $ python src/main.py -p mensa-garching
 # Get the menu for April 2 at mensa-arcisstrasse
 $ python src/main.py -p mensa-arcisstrasse -d 02.04.2019
 ```
+
+#### Translations
+
+Dish titles are provided only in german by the Studentenwerk. 
+We offer the possibility to translate them using the DeepL API.
+In order to use the API, there needs to be an API key provided in the environment variable `DEEPL_API_KEY_EAT_API`.
+The target language can be specified using the `--language` option using one of the languages supported by DeepL e.g. `EN-US`.
 
 ## Projects using `eat-api`
 
