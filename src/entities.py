@@ -2,6 +2,7 @@
 
 import datetime
 import re
+from enum import Enum
 from typing import Any, Dict, List, Optional, Sequence, Set
 
 
@@ -150,21 +151,34 @@ class Ingredients:
     """A dictionary of all ingredients (from the Studentenwerk) with their description."""
 
     fmi_ingredient_lookup = {
-        "Gluten": "Gl",
-        "Laktose": "Mi",
-        "Milcheiweiß": "Mi",
-        "Milch": "Mi",
-        "Ei": "Ei",
-        "Hühnerei": "Ei",
-        "Soja": "So",
-        "Nüsse": "Sc",
-        "Erdnuss": "En",
-        "Sellerie": "Sl",
-        "Fisch": "Si",
-        "Krebstiere": "Kr",
-        "Weichtiere": "Wt",
-        "Sesam": "Se",
-        "Senf": "Sf",
+        "a": "Gluten",
+        "aW": "Weizen",
+        "aR": "Roggen",
+        "aG": "Gerste",
+        "aH": "Hafer",
+        "aD": "Dinkel",
+        "aHy": "Hybridstämme",
+        "b": "Krebstiere",
+        "c": "Eier",
+        "d": "Fisch",
+        "e": "Erdnüsse",
+        "f": "Soja",
+        "g": "Milch",
+        "u": "Laktose",
+        "h": "Schalenfrüchte",
+        "hMn": "Mandeln",
+        "hH": "Haselnüsse",
+        "hW": "Walnüsse",
+        "hK": "Cashewnüsse",
+        "hPe": "Pekanüsse",
+        "hPi": "Pistazien",
+        "hQ": "Macadamianüsse",
+        "i": "Sellerie",
+        "j": "Senf",
+        "k": "Sesam",
+        "l": "Schwefeldioxid und Sulphite",
+        "m": "Lupine",
+        "n": "Weichtiere",
     }
 
     mediziner_ingredient_lookup = {
@@ -331,6 +345,15 @@ class Week:
     year: int
     days: List[Menu]
 
+    class WeekDay(Enum):
+        MONDAY = 0
+        TUESDAY = 1
+        WEDNSDAY = 2
+        THURSDAY = 3
+        FRIDAY = 4
+        SATURDAY = 5
+        SUNDAY = 6
+
     def __init__(self, calendar_week: int, year: int, days: List[Menu]):
         self.calendar_week = calendar_week
         self.year = year
@@ -372,3 +395,13 @@ class Week:
             week.days.append(menu)
             weeks[calendar_week] = week
         return weeks
+
+    @staticmethod
+    def get_non_weekend_days_for_calendar_week(year: int, calendar_week: int) -> List[datetime.date]:
+        days = []
+
+        start_date = datetime.date.fromisocalendar(year, calendar_week, 1)
+        for i in range(5):
+            days += [start_date]
+            start_date += datetime.timedelta(days=1)
+        return days

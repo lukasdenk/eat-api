@@ -6,6 +6,7 @@ import sys
 import tempfile
 import unicodedata
 from abc import ABC, abstractmethod
+from enum import Enum, auto
 from subprocess import call  # nosec: all the inputs is fully defined
 from typing import Dict, List, Optional, Pattern, Tuple
 from warnings import warn
@@ -14,7 +15,11 @@ import requests
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
 import util
-from entities import Dish, Ingredients, Menu, Price, Prices
+from entities import Dish, Ingredients, Menu, Price, Prices, Week
+
+
+class ParsingError(Exception):
+    pass
 
 
 class MenuParser(ABC):
@@ -315,166 +320,151 @@ class StudentenwerkMenuParser(MenuParser):
 
 
 class FMIBistroMenuParser(MenuParser):
-    url = "http://www.wilhelm-gastronomie.de/"
-    allergens = [
-        "Gluten",
-        "Laktose",
-        "Milcheiweiß",
-        "Hühnerei",
-        "Soja",
-        "Nüsse",
-        "Erdnuss",
-        "Sellerie",
-        "Fisch",
-        "Krebstiere",
-        "Weichtiere",
-        "Sesam",
-        "Senf",
-        "Milch",
-        "Ei",
-    ]
-    allergens_regex = (
-        r"(Allergene:((\s|\n)*(Gluten|Laktose|Milcheiweiß|Hühnerei|Soja|Nüsse|Erdnuss|Sellerie|Fisch"
-        r"|Krebstiere|Weichtiere|Sesam|Senf|Milch|Ei),?(?![\w-]))*) "
-    )
-    price_regex = r"\€\s\d+,\d+"
-    dish_regex = r".+?\€\s\d+,\d+"
+    url = "https://www.wilhelm-gastronomie.de/.cm4all/mediadb/Speiseplan_Garching_KW{calendar_week}_{year}.pdf"
+
+    price_regex = r"(\d+(,\d+)?(?=\s?\€))"
+    ingredients_regex = r"[a-z][a-zA-Z]*"
+
+    ignore_line_words = {
+        "",
+        "suppe",
+        "meat",
+        "&",
+        "grill",
+        "vegan*",
+        "veggie",
+    }
+    ignore_line_regex = r"(\s*" + r"|\s*".join(ignore_line_words) + "\s*)"
+
+    class DishType(Enum):
+        SOUP = auto()
+        MEAT = auto()
+        VEGETARIAN = auto()
 
     def parse(self, location: str) -> Optional[Dict[datetime.date, Menu]]:
-        # get web page of bistro
-        page = requests.get(self.url)
-        # get html tree
-        tree = html.fromstring(page.content)
-        # get url of current pdf menu
-        xpath_query = tree.xpath("//a[contains(@href, 'Garching-KW')]/@href")
+        today = datetime.date.today()
+        year, calendar_week, _ = today.isocalendar()
+        calendar_week = 44
+        menus = {}
 
-        if len(xpath_query) < 1:
+        # get pdf
+        page = requests.get(self.url.format(calendar_week=calendar_week, year=year))
+        with tempfile.NamedTemporaryFile() as temp_pdf:
+            # download pdf
+            temp_pdf.write(page.content)
+            print()
+            with open("test.txt", "wb") as temp_txt:
+                # with tempfile.NamedTemporaryFile() as temp_txt:
+                # convert pdf to text by calling pdftotext
+                call(["pdftotext", "-layout", temp_pdf.name, temp_txt.name])  # nosec: all input is fully defined
+                with open(temp_txt.name, "r", encoding="utf-8") as myfile:
+                    # read generated text file
+                    data = myfile.read()
+                    parsed_menus = self.get_menus(data, year, calendar_week)
+                    if parsed_menus is not None:
+                        menus.update(parsed_menus)
+        return menus
+
+    def __get_dates_with_menu(self, lines: List[str], year: int, weeknumber: int) -> List[datetime.date]:
+        dates = []
+        for line in lines:
+            if "€" in line:
+                estimated_column_length = int(len(line) / 5)
+                estimated_column_end = estimated_column_length
+                for date in Week.get_non_weekend_days_for_calendar_week(year, weeknumber):
+                    if "€" in line[estimated_column_end - 15: min(estimated_column_end + 15, len(line))]:
+                        dates += [date]
+                    estimated_column_end += estimated_column_length
+        dates.sort()
+        return dates
+
+    def get_menus(self, text, year, calendar_week):
+        menus = {}
+
+        lines, menu_end, menu_start = self.__get_relevant_text(text)
+        estimated_column_length = 49
+
+        for date in Week.get_non_weekend_days_for_calendar_week(year, calendar_week):
+            dishes = []
+            dish_title_parts = []
+            dish_type_iterator = iter(FMIBistroMenuParser.DishType)
+
+            for line in lines:
+                print(len(line))
+                if "€" not in line:
+                    dish_title_part = self.__extract_dish_title_part(line, estimated_column_length, date.weekday())
+                    if dish_title_part:
+                        dish_title_parts += [dish_title_part]
+                else:
+                    try:
+                        dish_type = next(dish_type_iterator)
+                    except StopIteration:
+                        raise ParsingError(
+                            f"Only 3 lines in the lines from {menu_start}-{menu_end} are expected to"
+                            f" contain the '€' sign.",
+                        )
+                    ingredient_str_and_price_optional = self.__get_ingredient_str_and_price(date.weekday(), line)
+                    if ingredient_str_and_price_optional is None:
+                        # no menu for that day
+                        break
+                    ingredient_str, price = ingredient_str_and_price_optional
+                    dish_prices = Prices(Price(price), Price(price), Price(price + 0.8))
+                    ingredients = Ingredients("fmi-bistro")
+                    ingredients.parse_ingredients(ingredient_str)
+                    dish_ingredients = ingredients.ingredient_set
+
+                    # merge title lines and replace subsequent whitespaces with single " "
+                    dish_title = re.sub(r"\s+", " ", " ".join(dish_title_parts))
+                    dishes += [Dish(dish_title, dish_prices, dish_ingredients, str(dish_type))]
+
+                    dish_title_parts = []
+            if dishes:
+                menus[date] = Menu(date, dishes)
+        return menus
+
+    def __extract_dish_title_part(self, line: str, estimated_column_length, weekday_index: int) -> Optional[str]:
+        estimated_column_begin = weekday_index * estimated_column_length
+        estimated_column_end = min(estimated_column_begin + estimated_column_length, len(line))
+        # compensate rounding errors
+        if abs(estimated_column_end - len(line)) < 5:
+            estimated_column_end = len(line)
+        try:
+            return re.findall(r"\S+(?:\s+\S+)*", line[estimated_column_begin:estimated_column_end])[0]
+        except IndexError:
             return None
 
-        menus = {}
-        for pdf_url in xpath_query:
-            # Example PDF-name: Garching-Speiseplan_KW46_2017.pdf
-            # more examples: https://regex101.com/r/ATOHj3/3
-            pdf_name = pdf_url.split("/")[-1]
-            wn_year_match = re.search(r"KW[^a-zA-Z1-9]*([1-9]+\d*)[^a-zA-Z1-9]*([1-9]+\d{3})?", pdf_name, re.IGNORECASE)
-            week_number = int(wn_year_match.group(1)) if wn_year_match else None
-            year = int(wn_year_match.group(2)) if wn_year_match and wn_year_match.group(2) else None
-
-            today = datetime.datetime.today()
-            # a hacky way to detect when something is appended or prepended to the year (like 20181 for year 2018)
-            # TODO probably replace year abnormality by a better method
-            if (year != today.year and str(today.year) in str(year)) or year is None:
-                year = today.year
-
-            with tempfile.NamedTemporaryFile() as temp_pdf:
-                # download pdf
-                response = requests.get(pdf_url)
-                temp_pdf.write(response.content)
-                with tempfile.NamedTemporaryFile() as temp_txt:
-                    # convert pdf to text by calling pdftotext
-                    call(["pdftotext", "-layout", temp_pdf.name, temp_txt.name])  # nosec: all input is fully defined
-                    with open(temp_txt.name, "r", encoding="utf-8") as myfile:
-                        # read generated text file
-                        data = myfile.read()
-                        parsed_menus = self.get_menus(data, year, week_number)
-                        if parsed_menus is not None:
-                            menus.update(parsed_menus)
-
-        return menus
-
-    def get_menus(self, text, year, week_number):
-        menus = {}
-        lines = text.splitlines()
-        count = 0
-        # remove headline etc.
-        for line in lines:
-            if line.replace(" ", "").replace("\n", "").lower() == "montagdienstagmittwochdonnerstagfreitag":
-                break
-            count += 1  # noqa: SIM113
-
-        lines = lines[count:]
-        # we assume that the weeksdays are now all in the first line
-        pos_mon = lines[0].find("Montag")
-        pos_tue = lines[0].find("Dienstag")
-        pos_wed = lines[0].find("Mittwoch")
-        pos_thu = lines[0].find("Donnerstag")
-        pos_fri = lines[0].find("Freitag")
-
-        # The text is formatted as table using whitespaces. Hence, we need to get those parts of each line that refer
-        #  to the respective week day
-        lines_weekdays = {"mon": "", "tue": "", "wed": "", "thu": "", "fri": ""}
-        for line in lines:
-            lines_weekdays["mon"] += " " + line[pos_mon:pos_tue].replace("\n", " ").replace("Montag", "")
-            lines_weekdays["tue"] += " " + line[pos_tue:pos_wed].replace("\n", " ").replace("Dienstag", "")
-            lines_weekdays["wed"] += " " + line[pos_wed:pos_thu].replace("\n", " ").replace("Mittwoch", "")
-            lines_weekdays["thu"] += " " + line[pos_thu:pos_fri].replace("\n", " ").replace("Donnerstag", "")
-            lines_weekdays["fri"] += " " + line[pos_fri:].replace("\n", " ").replace("Freitag", "")
-
-        # currently, up to 5 dishes are on the menu
-        num_dishes = 5
-        if year < 2018:
-            # in older versions of the FMI Bistro menu, the Aktionsgericht was the same for the whole week
-            num_dishes = 3
-            line_aktion = [s for s in lines if "Aktion" in s]
-            if len(line_aktion) == 1:
-                line_aktion_pos = lines.index(line_aktion[0]) - 2
-                aktionsgericht = " ".join(lines[line_aktion_pos : line_aktion_pos + 3])  # noqa: E203
-                aktionsgericht = (
-                    aktionsgericht.replace("Montag – Freitag", "")
-                    .replace("Tagessuppe täglich wechselndes Angebot", "")
-                    .replace("ab € 1,00", "")
-                    .replace("Aktion", "")
-                )
-                num_dishes += aktionsgericht.count("€")
-                for key in lines_weekdays:
-                    lines_weekdays[key] = aktionsgericht + ", " + lines_weekdays[key]
-
-        # Process menus for each day
-        for key in lines_weekdays:
-            # stop parsing day when bistro is closed at that day
-            if "geschlossen" in lines_weekdays[key].lower():
+    def __get_relevant_text(self, text: str) -> Tuple[List[str], int, int]:
+        lines: List[str] = []
+        menu_start = 4
+        menu_end = -15
+        for line in text.splitlines()[menu_start:menu_end]:
+            if re.fullmatch(self.ignore_line_regex, line, re.IGNORECASE):
                 continue
+            lines += [line[13:]]
+        return lines, menu_end, menu_start
 
-            # extract all allergens
-            dish_allergens = []
-            for match in re.findall(self.allergens_regex, lines_weekdays[key]):
-                if len(match) > 0:
-                    dish_allergens.append(re.sub(r"((Allergene:)|\s|\n)*", "", match[0]))
-                else:
-                    dish_allergens.append("")
-            lines_weekdays[key] = re.sub(self.allergens_regex, "", lines_weekdays[key])
-            # get rid of two-character umlauts (e.g. SMALL_LETTER_A+COMBINING_DIACRITICAL_MARK_UMLAUT)
-            lines_weekdays[key] = unicodedata.normalize("NFKC", lines_weekdays[key])
-            # remove multi-whitespaces
-            lines_weekdays[key] = " ".join(lines_weekdays[key].split())
-
-            # remove no allergens indicator
-            lines_weekdays[key] = lines_weekdays[key].replace("./.", "")
-            # get all dish including name and price
-            dish_names = re.findall(self.dish_regex, lines_weekdays[key])
-            # get dish prices
-            prices = re.findall(self.price_regex, " ".join(dish_names))
-            # convert prices to float
-            prices = [Prices(Price(float(price.replace("€", "").replace(",", ".").strip()))) for price in prices]
-            # remove price and commas from dish names
-            dish_names = [re.sub(self.price_regex, "", dish).replace(",", "").strip() for dish in dish_names]
-            # create list of Dish objects; only take first 3/4 as the following dishes are corrupt and not necessary
-            dishes = []
-            for (dish_name, price, dish_allergen) in list(zip(dish_names, prices, dish_allergens)):
-                # filter empty dishes
-                if dish_name:
-                    ingredients = Ingredients("fmi-bistro")
-                    ingredients.parse_ingredients(dish_allergen)
-                    dishes.append(Dish(dish_name, price, ingredients.ingredient_set, "Tagesgericht"))
-            dishes = dishes[:num_dishes]
-            date = self.get_date(year, week_number, self.weekday_positions[key])
-            # create new Menu object and add it to dict
-            menu = Menu(date, dishes)
-            # remove duplicates
-            menu.remove_duplicates()
-            menus[date] = menu
-
-        return menus
+    def __get_ingredient_str_and_price(self, column_index: int, line: str) -> Optional[Tuple[str, float]]:
+        # match ingredients or prices
+        estimated_column_length = int(len(line) / 5)
+        estimated_column_begin = column_index * estimated_column_length
+        estimated_column_end = min(estimated_column_begin + estimated_column_length, len(line))
+        delta = 15
+        try:
+            price_str = re.findall(
+                r"\d+(?:,\d+)?",
+                line[estimated_column_end - delta: min(estimated_column_end + delta, len(line))],
+            )[0]
+        except IndexError:
+            return None
+        price = float(price_str.replace(",", "."))
+        try:
+            ingredients_str = re.findall(
+                r"[A-Za-z](?:,[A-Za-z]+)*",
+                line[max(estimated_column_begin - delta, 0): estimated_column_begin + delta],
+            )[0]
+        except IndexError:
+            ingredients_str = ""
+        return ingredients_str, price
 
 
 class IPPBistroMenuParser(MenuParser):
