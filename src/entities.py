@@ -182,7 +182,9 @@ class Canteen(Enum):
 
 
 class Ingredient(Enum):
-    _ignore_ = ["studentenwerk_lookup", "fmi_lookup"]
+    # mypy does not recognize that studentenwerk_lookup, fmi_lookup and mediziner_lookup are not Enum types.
+    # This is the reason for the many "# type: ignore" comments.
+    _ignore_ = ["studentenwerk_lookup", "fmi_lookup", "mediziner_lookup"]
 
     def __init__(self, german_text: str, studentenwerk_lookup_key: Optional[str], fmi_lookup_key: Optional[str]):
         self.german_text = german_text
@@ -325,7 +327,7 @@ class Ingredient(Enum):
         "Wt": {MOLLUSCS},  # type: ignore
     }
 
-    mediziner_ingredient_lookup: Dict[str, Set[Ingredient]] = {  # type: ignore
+    mediziner_lookup: Dict[str, Set[Ingredient]] = {  # type: ignore
         "1": {DYESTUFF},  # type: ignore
         "2": {PRESERVATIVES},  # type: ignore
         "3": {ANTIOXIDANTS},  # type: ignore
@@ -362,7 +364,7 @@ class Ingredient(Enum):
     @staticmethod
     def lookup(canteen: Canteen, lookup: str) -> Set[Ingredient]:
         if canteen == Canteen.MEDIZINER_MENSA:
-            ingredients: Set[Ingredient] = Ingredient.mediziner_ingredient_lookup.get(lookup, set())  # type: ignore
+            ingredients: Set[Ingredient] = Ingredient.mediziner_lookup.get(lookup, set())  # type: ignore
         elif canteen in StudentenwerkMenuParser.canteens:
             ingredients = Ingredient.studentenwerk_lookup.get(lookup, set())  # type: ignore
         elif canteen in FMIBistroMenuParser.canteens:
