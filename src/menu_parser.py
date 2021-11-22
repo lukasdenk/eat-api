@@ -15,7 +15,7 @@ import requests
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
 import util
-from entities import Dish, Ingredients, Menu, Price, Prices, Week
+from entities import Canteen, Dish, IngredientsOld, Menu, Price, Prices, Week
 
 
 class ParsingError(Exception):
@@ -46,6 +46,29 @@ class MenuParser(ABC):
 
 
 class StudentenwerkMenuParser(MenuParser):
+    # Canteens:
+    canteens = {
+        Canteen.MENSA_ARCISSTR,
+        Canteen.MENSA_GARCHING,
+        Canteen.MENSA_LEOPOLDSTR,
+        Canteen.MENSA_LOTHSTR,
+        Canteen.MENSA_MARTINSRIED,
+        Canteen.MENSA_PASING,
+        Canteen.MENSA_WEIHENSTEPHAN,
+        Canteen.STUBISTRO_ARCISSTR,
+        Canteen.STUBISTRO_GOETHESTR,
+        Canteen.STUBISTRO_GROSSHADERN,
+        Canteen.STUBISTRO_ROSENHEIM,
+        Canteen.STUBISTRO_SCHELLINGSTR,
+        Canteen.STUCAFE_ADALBERTSTR,
+        Canteen.STUCAFE_AKADEMIE_WEIHENSTEPHAN,
+        Canteen.STUCAFE_BOLTZMANNSTR,
+        Canteen.STUCAFE_GARCHING,
+        Canteen.STUCAFE_KARLSTR,
+        Canteen.STUCAFE_PASING,
+        Canteen.MEDIZINER_MENSA,
+    }
+
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
 
     # Base price for sausage, meat, fish
@@ -357,7 +380,7 @@ class StudentenwerkMenuParser(MenuParser):
         # create Dish objects with correct prices; if price is not available, -1 is used instead
         dishes: List[Dish] = []
         for name in dishes_dict:
-            dish_ingredients: Ingredients = Ingredients(location)
+            dish_ingredients: IngredientsOld = IngredientsOld(location)
             # parse ingredients
             dish_ingredients.parse_ingredients(dishes_dict[name][1])
             dish_ingredients.parse_ingredients(dishes_dict[name][2])
@@ -376,6 +399,8 @@ class StudentenwerkMenuParser(MenuParser):
 
 class FMIBistroMenuParser(MenuParser):
     url = "https://www.wilhelm-gastronomie.de/.cm4all/mediadb/Speiseplan_Garching_KW{calendar_week}_{year}.pdf"
+
+    canteens = {Canteen.FMI_BISTRO}
 
     class DishType(Enum):
         SOUP = auto()
@@ -438,7 +463,7 @@ class FMIBistroMenuParser(MenuParser):
                         break
                     ingredient_str, price = ingredient_str_and_price_optional
                     dish_prices = Prices(Price(price), Price(price), Price(price + 0.8))
-                    ingredients = Ingredients("fmi-bistro")
+                    ingredients = IngredientsOld("fmi-bistro")
                     ingredients.parse_ingredients(ingredient_str)
                     dish_ingredients = ingredients.ingredient_set
 
@@ -692,7 +717,7 @@ class IPPBistroMenuParser(MenuParser):
 
             # create ingredients
             # all dishes have the same ingridients
-            ingredients = Ingredients("ipp-bistro")
+            ingredients = IngredientsOld("ipp-bistro")
             ingredients.parse_ingredients("Mi,Gl,Sf,Sl,Ei,Se,4")
             # create list of Dish objects
             dishes = []
@@ -729,7 +754,7 @@ class MedizinerMensaMenuParser(MenuParser):
 
     def parse_dish(self, dish_str):
         # ingredients
-        dish_ingredients = Ingredients("mediziner-mensa")
+        dish_ingredients = IngredientsOld("mediziner-mensa")
         matches = re.findall(self.ingredients_regex, dish_str)
         while len(matches) > 0:
             for match in matches:
