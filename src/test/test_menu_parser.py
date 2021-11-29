@@ -11,7 +11,7 @@ from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 from src import main
 from src.entities import Location, Menu, Week
 from src.menu_parser import FMIBistroMenuParser, MedizinerMensaMenuParser, MenuParser, StudentenwerkMenuParser
-from src.test import test_util
+from src.utils import file_util
 
 
 class MenuParserTest(unittest.TestCase):
@@ -57,7 +57,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             self.__test_studentenwerk_location(location)
 
     def test_get_dates(self) -> None:
-        tree = test_util.load_html(
+        tree = file_util.load_html(
             f"{self.base_path_location.format(location=Location.MENSA_GARCHING.directory_format)}"
             f"/for-generation/overview.html",
         )
@@ -72,8 +72,8 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, location, True)
-            generated = test_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
-            reference = test_util.load_ordered_json(
+            generated = file_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
+            reference = file_util.load_ordered_json(
                 f"{self.base_path_location.format(location=location.directory_format)}/reference/combined.json",
             )
             self.assertEqual(generated, reference)
@@ -82,7 +82,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         menus = {}
         for date_ in self.test_dates:
             # parse the menu
-            tree: html.Element = test_util.load_html(
+            tree: html.Element = file_util.load_html(
                 f"{self.base_path_location.format(location=location.directory_format)}/for-generation/{date_}.html",
             )
             studentenwerk_menu_parser = StudentenwerkMenuParser()
@@ -107,11 +107,11 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         menus = self.__get_menus(Location.MENSA_GARCHING)
         weeks = Week.to_weeks(menus)
         for calendar_week in calendar_weeks:
-            reference_week = test_util.load_ordered_json(
+            reference_week = file_util.load_ordered_json(
                 f"{self.base_path_location.format(location=Location.MENSA_GARCHING.directory_format)}"
                 f"/reference/week_{calendar_week}.json",
             )
-            generated_week = test_util.order_json_objects(weeks[calendar_week].to_json_obj())
+            generated_week = file_util.order_json_objects(weeks[calendar_week].to_json_obj())
             self.assertEqual(generated_week, reference_week)
 
 
@@ -122,7 +122,7 @@ class FMIBistroParserTest(unittest.TestCase):
         for_generation_path = "src/test/assets/fmi/for-generation/calendar_week_2021_{calendar_week}.txt"
         menus = {}
         for calendar_week in range(44, 46):
-            text = test_util.load_txt(for_generation_path.format(calendar_week=calendar_week))
+            text = file_util.load_txt(for_generation_path.format(calendar_week=calendar_week))
             menus.update(self.bistro_parser.get_menus(text, 2021, calendar_week))
         weeks = Week.to_weeks(menus)
 
@@ -130,8 +130,8 @@ class FMIBistroParserTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, Location.FMI_BISTRO, True)
-            generated = test_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
-            reference = test_util.load_ordered_json("src/test/assets/fmi/reference/combined.json")
+            generated = file_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
+            reference = file_util.load_ordered_json("src/test/assets/fmi/reference/combined.json")
 
             self.assertEqual(generated, reference)
 
@@ -284,7 +284,7 @@ class MedizinerMensaParserTest(unittest.TestCase):
     def test_mediziner_mensa(self):
         # parse the menu
         for calendar_week in [44, 47]:
-            for_generation = test_util.load_txt(
+            for_generation = file_util.load_txt(
                 f"src/test/assets/mediziner-mensa/for-generation/week_2018_{calendar_week}.txt",
             )
             menus = self.mediziner_mensa_parser.get_menus(
@@ -299,8 +299,8 @@ class MedizinerMensaParserTest(unittest.TestCase):
                 # store output in the tempdir
                 main.jsonify(weeks, temp_dir, Location.MEDIZINER_MENSA, True)
                 # open the generated file
-                generated = test_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
-                reference = test_util.load_ordered_json(
+                generated = file_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
+                reference = file_util.load_ordered_json(
                     f"src/test/assets/mediziner-mensa/reference/week_2018_{calendar_week}.json",
                 )
                 self.assertEqual(generated, reference)
@@ -309,7 +309,7 @@ class MedizinerMensaParserTest(unittest.TestCase):
     # just for generating reference json files
     def test_gen_file(self):
         # parse the menu
-        for_generation = test_util.load_txt(
+        for_generation = file_util.load_txt(
             "src/test/assets/mediziner-mensa/for-generation/week_2018_44.txt",
         )
         menus = self.mediziner_mensa_parser.get_menus(

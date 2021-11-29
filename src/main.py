@@ -3,11 +3,11 @@ import json
 import os
 from typing import Dict, Optional
 
+import cli
 import menu_parser
-import util
 from entities import Location, Week
 from openmensa import openmensa
-from src import cli
+from utils import util
 
 JSON_VERSION: str = "2.1"
 """
@@ -82,10 +82,10 @@ def main():
     # get command line args
     args = cli.parse_cli_args()
 
-    # print canteens
+    # print locations
     if args.locations:
-        with open("canteens.json", "r", encoding="utf-8") as canteens:
-            print(json.dumps(json.load(canteens)))
+        with open("canteens.json", "r", encoding="utf-8") as locations:
+            print(json.dumps(json.load(locations)))
         return
 
     location = Location.get_location_by_str(args.location)

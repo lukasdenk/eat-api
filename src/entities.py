@@ -6,8 +6,6 @@ import datetime
 from enum import Enum, auto
 from typing import Any, Dict, List, Optional, Set
 
-import menu_parser
-
 
 class Price:
     base_price: Optional[float]
@@ -102,6 +100,13 @@ class Site:
         self.latitude = latitude
         self.longitude = longitude
 
+    def to_json_obj(self):
+        return {
+            "address": self.address,
+            "latitude": self.latitude,
+            "longitude": self.longitude,
+        }
+
 
 class Location(Enum):
     # Some of the locations do not use the general Studentenwerk system and therefore do not have a url_id.
@@ -185,12 +190,25 @@ class Location(Enum):
     def get_location_by_str(location_str: str) -> Location:
         return Location[location_str.upper().replace("-", "_")]
 
+    def to_json_obj(self):
+        return {
+            "name": self.name,
+            "long_name": self.long_name,
+            "site": self.site.to_json_obj(),
+            "url_id": self.url_id,
+        }
+
 
 class Diet(Enum):
     VEGAN = auto()
     VEGETARIAN = auto()
     CARNIVOROUS = auto()
     PESCETARIAN = auto()
+
+    def to_json_obj(self):
+        return {
+            "name": self.name,
+        }
 
 
 class Ingredient(Enum):
@@ -259,22 +277,7 @@ class Ingredient(Enum):
         return NotImplemented
 
     @staticmethod
-    def lookup(location: Location, lookup: str) -> Set[Ingredient]:
-
-        ingredients: Set[Ingredient]
-        # for some weird reason the Location enum is created twice when using pytest.
-        # For this reason it does not behave like an singleton as it should
-        # (see https://docs.python.org/3/library/enum.html?highlight=enum#enum-members-aka-instances).
-        # This is why the "name" attributes are used
-        if location.name == Location.MEDIZINER_MENSA.name:
-            ingredients = mediziner_lookup.get(lookup, set())  # type: ignore
-        elif location.name in map(lambda l: l.name, menu_parser.StudentenwerkMenuParser.locations):  # type: ignore
-            ingredients = studentenwerk_lookup.get(lookup, set())  # type: ignore
-        elif location.name in map(lambda l: l.name, menu_parser.FMIBistroMenuParser.locations):  # type: ignore
-            ingredients = fmi_lookup.get(lookup, set())  # type: ignore
-        else:
-            ingredients = set()
-
+    def add_supertype_ingredients(ingredients: Set[Ingredient]) -> None:
         # insert supertypes
         if ingredients & {
             Ingredient.ALMONDS,
@@ -295,136 +298,12 @@ class Ingredient(Enum):
             Ingredient.WHEAT,
         }:
             ingredients |= {Ingredient.CEREAL}
-        return ingredients
 
-    @staticmethod
-    def parse(canteen: Location, ingredients_str: str) -> Set[Ingredient]:
-        ingredients: Set[Ingredient] = set()
-        split_values: List[str] = ingredients_str.strip().split(",")
-        for value in split_values:
-            stripped = value.strip()
-            if not stripped.isspace():
-                ingredients |= Ingredient.lookup(canteen, stripped)
-        return ingredients
-
-
-# if an ingredient is a subclass of another ingredient,
-# the superclass is added in the function lookup. E.g.: A hazelnut is also a shell fruit.
-fmi_lookup: Dict[str, Set[Ingredient]] = {
-    "a": {Ingredient.GLUTEN},  # type: ignore
-    "aW": {Ingredient.WHEAT},  # type: ignore
-    "aR": {Ingredient.RYE},  # type: ignore
-    "aG": {Ingredient.BARLEY},  # type: ignore
-    "aH": {Ingredient.OAT},  # type: ignore
-    "aD": {Ingredient.SPELT},  # type: ignore
-    "aHy": {Ingredient.HYBRIDS},  # type: ignore
-    "b": {Ingredient.SHELLFISH},  # type: ignore
-    "c": {Ingredient.CHICKEN_EGGS},  # type: ignore
-    "d": {Ingredient.FISH},  # type: ignore
-    "e": {Ingredient.PEANUTS},  # type: ignore
-    "f": {Ingredient.SOY},  # type: ignore
-    "g": {Ingredient.MILK},  # type: ignore
-    "u": {Ingredient.LACTOSE},  # type: ignore
-    "h": {Ingredient.SHELL_FRUITS},  # type: ignore
-    "hMn": {Ingredient.ALMONDS},  # type: ignore
-    "hH": {Ingredient.HAZELNUTS},  # type: ignore
-    "hW": {Ingredient.WALNUTS},  # type: ignore
-    "hK": {Ingredient.CASHEWS},  # type: ignore
-    "hPe": {Ingredient.PECAN},  # type: ignore
-    "hPi": {Ingredient.PISTACHIOES},  # type: ignore
-    "hQ": {Ingredient.MACADAMIA},  # type: ignore
-    "i": {Ingredient.CELERY},  # type: ignore
-    "j": {Ingredient.MUSTARD},  # type: ignore
-    "k": {Ingredient.SESAME},  # type: ignore
-    "l": {Ingredient.SULFITES, Ingredient.SULPHURS},  # type: ignore
-    "m": {Ingredient.LUPIN},  # type: ignore
-    "n": {Ingredient.MOLLUSCS},  # type: ignore
-}
-
-studentenwerk_lookup: Dict[str, Set[Ingredient]] = {
-    "GQB": {Ingredient.BAVARIA},  # type: ignore
-    "MSC": {Ingredient.MSC},  # type: ignore
-    "1": {Ingredient.DYESTUFF},  # type: ignore
-    "2": {Ingredient.PRESERVATIVES},  # type: ignore
-    "3": {Ingredient.ANTIOXIDANTS},  # type: ignore
-    "4": {Ingredient.FLAVOR_ENHANCER},  # type: ignore
-    "5": {Ingredient.SULPHURS},  # type: ignore
-    "6": {Ingredient.DYESTUFF},  # type: ignore
-    "7": {Ingredient.WAXED},  # type: ignore
-    "8": {Ingredient.PHOSPATES},  # type: ignore
-    "9": {Ingredient.SWEETENERS},  # type: ignore
-    "10": {Ingredient.PHENYLALANINE},  # type: ignore
-    "11": {Ingredient.SWEETENERS},  # type: ignore
-    "13": {Ingredient.COCOA_CONTAINING_GREASE},  # type: ignore
-    "14": {Ingredient.GELATIN},  # type: ignore
-    "99": {Ingredient.ALCOHOL},  # type: ignore
-    # meatless is not an ingredient
-    "f": {},  # type: ignore
-    # vegan is not an ingredient
-    "v": {},  # type: ignore
-    "S": {Ingredient.PORK},  # type: ignore
-    "R": {Ingredient.BEEF},  # type: ignore
-    "K": {Ingredient.VEAL},  # type: ignore
-    "Kn": {Ingredient.GARLIC},  # type: ignore
-    "Ei": {Ingredient.CHICKEN_EGGS},  # type: ignore
-    "En": {Ingredient.PEANUTS},  # type: ignore
-    "Fi": {Ingredient.FISH},  # type: ignore
-    "Gl": {Ingredient.GLUTEN},  # type: ignore
-    "GlW": {Ingredient.WHEAT},  # type: ignore
-    "GlR": {Ingredient.RYE},  # type: ignore
-    "GlG": {Ingredient.BARLEY},  # type: ignore
-    "GlH": {Ingredient.OAT},  # type: ignore
-    "GlD": {Ingredient.SPELT},  # type: ignore
-    "Kr": {Ingredient.SHELLFISH},  # type: ignore
-    "Lu": {Ingredient.LUPIN},  # type: ignore
-    "Mi": {Ingredient.MILK, Ingredient.LACTOSE},  # type: ignore
-    "Sc": {Ingredient.SHELLFISH},  # type: ignore
-    "ScM": {Ingredient.ALMONDS},  # type: ignore
-    "ScH": {Ingredient.HAZELNUTS},  # type: ignore
-    "ScW": {Ingredient.WALNUTS},  # type: ignore
-    "ScC": {Ingredient.CASHEWS},  # type: ignore
-    "ScP": {Ingredient.PISTACHIOES},  # type: ignore
-    "Se": {Ingredient.SESAME},  # type: ignore
-    "Sf": {Ingredient.MUSTARD},  # type: ignore
-    "Sl": {Ingredient.CELERY},  # type: ignore
-    "So": {Ingredient.SOY},  # type: ignore
-    "Sw": {Ingredient.SULPHURS, Ingredient.SULFITES},  # type: ignore
-    "Wt": {Ingredient.MOLLUSCS},  # type: ignore
-}
-
-mediziner_lookup: Dict[str, Set[Ingredient]] = {  # type: ignore
-    "1": {Ingredient.DYESTUFF},  # type: ignore
-    "2": {Ingredient.PRESERVATIVES},  # type: ignore
-    "3": {Ingredient.ANTIOXIDANTS},  # type: ignore
-    "4": {Ingredient.FLAVOR_ENHANCER},  # type: ignore
-    "5": {Ingredient.SULPHURS},  # type: ignore
-    "6": {Ingredient.DYESTUFF},  # type: ignore
-    "7": {Ingredient.WAXED},  # type: ignore
-    "8": {Ingredient.PHOSPATES},  # type: ignore
-    "9": {Ingredient.SWEETENERS},  # type: ignore
-    "A": {Ingredient.ALCOHOL},  # type: ignore
-    "B": {Ingredient.GLUTEN},  # type: ignore
-    "C": {Ingredient.SHELLFISH},  # type: ignore
-    "E": {Ingredient.FISH},  # type: ignore
-    "F": {Ingredient.FISH},  # type: ignore
-    "G": {Ingredient.POULTRY},  # type: ignore
-    "H": {Ingredient.PEANUTS},  # type: ignore
-    "K": {Ingredient.VEAL},  # type: ignore
-    "L": {Ingredient.LAMB},  # type: ignore
-    "M": {Ingredient.SOY},  # type: ignore
-    "N": {Ingredient.MILK, Ingredient.LACTOSE},  # type: ignore
-    "O": {Ingredient.SHELL_FRUITS},  # type: ignore
-    "P": {Ingredient.CELERY},  # type: ignore
-    "R": {Ingredient.BEEF},  # type: ignore
-    "S": {Ingredient.PORK},  # type: ignore
-    "T": {Ingredient.MUSTARD},  # type: ignore
-    "U": {Ingredient.SESAME},  # type: ignore
-    "V": {Ingredient.SULPHURS, Ingredient.SULFITES},  # type: ignore
-    "W": {Ingredient.WILD_MEAT},  # type: ignore
-    "X": {Ingredient.LUPIN},  # type: ignore
-    "Y": {Ingredient.CHICKEN_EGGS},  # type: ignore
-    "Z": {Ingredient.MOLLUSCS},  # type: ignore
-}
+    def to_json_obj(self):
+        return {
+            "name": self.name,
+            "german_text": self.german_text,
+        }
 
 
 class Dish:

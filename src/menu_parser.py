@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# pylint:disable=too-many-lines
 
 import datetime
 import re
@@ -13,8 +14,8 @@ from warnings import warn
 import requests
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
-import util
 from entities import Diet, Dish, Ingredient, Location, Menu, Price, Prices, Week
+from utils import util
 
 
 class ParsingError(Exception):
@@ -27,6 +28,7 @@ class MenuParser(ABC):
     """
 
     locations: Set[Location] = NotImplemented
+    _ingredient_lookup: Dict[str, Set[Ingredient]] = NotImplemented
     # we use datetime %u, so we go from 1-7
     weekday_positions: Dict[str, int] = {"mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6, "sun": 7}
 
@@ -43,6 +45,17 @@ class MenuParser(ABC):
     @abstractmethod
     def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
         pass
+
+    @classmethod
+    def _parse_ingredient(cls, ingredients_str: str) -> Set[Ingredient]:
+        ingredients: Set[Ingredient] = set()
+        split_values: List[str] = ingredients_str.strip().split(",")
+        for value in split_values:
+            stripped = value.strip()
+            if not stripped.isspace():
+                ingredients |= cls._ingredient_lookup.get(stripped, set())
+        Ingredient.add_supertype_ingredients(ingredients)
+        return ingredients
 
 
 class StudentenwerkMenuParser(MenuParser):
@@ -90,6 +103,57 @@ class StudentenwerkMenuParser(MenuParser):
             self.staff = staff
             self.guests = guests
             self.unit = "100g"
+
+    _ingredient_lookup: Dict[str, Set[Ingredient]] = {
+        "GQB": {Ingredient.BAVARIA},  # type: ignore
+        "MSC": {Ingredient.MSC},  # type: ignore
+        "1": {Ingredient.DYESTUFF},  # type: ignore
+        "2": {Ingredient.PRESERVATIVES},  # type: ignore
+        "3": {Ingredient.ANTIOXIDANTS},  # type: ignore
+        "4": {Ingredient.FLAVOR_ENHANCER},  # type: ignore
+        "5": {Ingredient.SULPHURS},  # type: ignore
+        "6": {Ingredient.DYESTUFF},  # type: ignore
+        "7": {Ingredient.WAXED},  # type: ignore
+        "8": {Ingredient.PHOSPATES},  # type: ignore
+        "9": {Ingredient.SWEETENERS},  # type: ignore
+        "10": {Ingredient.PHENYLALANINE},  # type: ignore
+        "11": {Ingredient.SWEETENERS},  # type: ignore
+        "13": {Ingredient.COCOA_CONTAINING_GREASE},  # type: ignore
+        "14": {Ingredient.GELATIN},  # type: ignore
+        "99": {Ingredient.ALCOHOL},  # type: ignore
+        # meatless is not an ingredient
+        "f": {},  # type: ignore
+        # vegan is not an ingredient
+        "v": {},  # type: ignore
+        "S": {Ingredient.PORK},  # type: ignore
+        "R": {Ingredient.BEEF},  # type: ignore
+        "K": {Ingredient.VEAL},  # type: ignore
+        "Kn": {Ingredient.GARLIC},  # type: ignore
+        "Ei": {Ingredient.CHICKEN_EGGS},  # type: ignore
+        "En": {Ingredient.PEANUTS},  # type: ignore
+        "Fi": {Ingredient.FISH},  # type: ignore
+        "Gl": {Ingredient.GLUTEN},  # type: ignore
+        "GlW": {Ingredient.WHEAT},  # type: ignore
+        "GlR": {Ingredient.RYE},  # type: ignore
+        "GlG": {Ingredient.BARLEY},  # type: ignore
+        "GlH": {Ingredient.OAT},  # type: ignore
+        "GlD": {Ingredient.SPELT},  # type: ignore
+        "Kr": {Ingredient.SHELLFISH},  # type: ignore
+        "Lu": {Ingredient.LUPIN},  # type: ignore
+        "Mi": {Ingredient.MILK, Ingredient.LACTOSE},  # type: ignore
+        "Sc": {Ingredient.SHELLFISH},  # type: ignore
+        "ScM": {Ingredient.ALMONDS},  # type: ignore
+        "ScH": {Ingredient.HAZELNUTS},  # type: ignore
+        "ScW": {Ingredient.WALNUTS},  # type: ignore
+        "ScC": {Ingredient.CASHEWS},  # type: ignore
+        "ScP": {Ingredient.PISTACHIOES},  # type: ignore
+        "Se": {Ingredient.SESAME},  # type: ignore
+        "Sf": {Ingredient.MUSTARD},  # type: ignore
+        "Sl": {Ingredient.CELERY},  # type: ignore
+        "So": {Ingredient.SOY},  # type: ignore
+        "Sw": {Ingredient.SULPHURS, Ingredient.SULFITES},  # type: ignore
+        "Wt": {Ingredient.MOLLUSCS},  # type: ignore
+    }
 
     # Students, Staff, Guests
     prices_mensa_leopoldstr: Dict[str, Prices] = {
@@ -334,9 +398,9 @@ class StudentenwerkMenuParser(MenuParser):
         for name in dishes_dict:
             # parse ingredients
             ingredients = set()
-            ingredients |= Ingredient.parse(location, dishes_dict[name][1])
-            ingredients |= Ingredient.parse(location, dishes_dict[name][2])
-            ingredients |= Ingredient.parse(location, dishes_dict[name][3])
+            ingredients |= StudentenwerkMenuParser._parse_ingredient(dishes_dict[name][1])
+            ingredients |= StudentenwerkMenuParser._parse_ingredient(dishes_dict[name][2])
+            ingredients |= StudentenwerkMenuParser._parse_ingredient(dishes_dict[name][3])
             # do not prices side dishes
             prices: Prices
             if dishes_dict[name][0] == "Beilagen":
@@ -372,6 +436,38 @@ class FMIBistroMenuParser(MenuParser):
         SOUP = auto()
         MEAT = auto()
         VEGETARIAN = auto()
+
+    # if an ingredient is a subclass of another ingredient,
+    _ingredient_lookup: Dict[str, Set[Ingredient]] = {
+        "a": {Ingredient.GLUTEN},  # type: ignore
+        "aW": {Ingredient.WHEAT},  # type: ignore
+        "aR": {Ingredient.RYE},  # type: ignore
+        "aG": {Ingredient.BARLEY},  # type: ignore
+        "aH": {Ingredient.OAT},  # type: ignore
+        "aD": {Ingredient.SPELT},  # type: ignore
+        "aHy": {Ingredient.HYBRIDS},  # type: ignore
+        "b": {Ingredient.SHELLFISH},  # type: ignore
+        "c": {Ingredient.CHICKEN_EGGS},  # type: ignore
+        "d": {Ingredient.FISH},  # type: ignore
+        "e": {Ingredient.PEANUTS},  # type: ignore
+        "f": {Ingredient.SOY},  # type: ignore
+        "g": {Ingredient.MILK},  # type: ignore
+        "u": {Ingredient.LACTOSE},  # type: ignore
+        "h": {Ingredient.SHELL_FRUITS},  # type: ignore
+        "hMn": {Ingredient.ALMONDS},  # type: ignore
+        "hH": {Ingredient.HAZELNUTS},  # type: ignore
+        "hW": {Ingredient.WALNUTS},  # type: ignore
+        "hK": {Ingredient.CASHEWS},  # type: ignore
+        "hPe": {Ingredient.PECAN},  # type: ignore
+        "hPi": {Ingredient.PISTACHIOES},  # type: ignore
+        "hQ": {Ingredient.MACADAMIA},  # type: ignore
+        "i": {Ingredient.CELERY},  # type: ignore
+        "j": {Ingredient.MUSTARD},  # type: ignore
+        "k": {Ingredient.SESAME},  # type: ignore
+        "l": {Ingredient.SULFITES, Ingredient.SULPHURS},  # type: ignore
+        "m": {Ingredient.LUPIN},  # type: ignore
+        "n": {Ingredient.MOLLUSCS},  # type: ignore
+    }
 
     def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
         today = datetime.date.today()
@@ -429,7 +525,7 @@ class FMIBistroMenuParser(MenuParser):
                         break
                     ingredient_str, price = ingredient_str_and_price_optional
                     dish_prices = Prices(Price(price), Price(price), Price(price + 0.8))
-                    ingredients = Ingredient.parse(Location.FMI_BISTRO, ingredient_str)
+                    ingredients = FMIBistroMenuParser._parse_ingredient(ingredient_str)
 
                     # merge title lines and replace subsequent whitespaces with single " "
                     dish_title = re.sub(r"\s+", " ", " ".join(dish_title_parts))
@@ -723,13 +819,47 @@ class MedizinerMensaMenuParser(MenuParser):
     ingredients_regex = r"(\s([A-C]|[E-H]|[K-P]|[R-Z]|[1-9])(,([A-C]|[E-H]|[K-P]|[R-Z]|[1-9]))*(\s|\Z))"
     price_regex = r"(\d+(,(\d){2})\s?€)"
 
+    _ingredient_lookup: Dict[str, Set[Ingredient]] = {  # type: ignore
+        "1": {Ingredient.DYESTUFF},  # type: ignore
+        "2": {Ingredient.PRESERVATIVES},  # type: ignore
+        "3": {Ingredient.ANTIOXIDANTS},  # type: ignore
+        "4": {Ingredient.FLAVOR_ENHANCER},  # type: ignore
+        "5": {Ingredient.SULPHURS},  # type: ignore
+        "6": {Ingredient.DYESTUFF},  # type: ignore
+        "7": {Ingredient.WAXED},  # type: ignore
+        "8": {Ingredient.PHOSPATES},  # type: ignore
+        "9": {Ingredient.SWEETENERS},  # type: ignore
+        "A": {Ingredient.ALCOHOL},  # type: ignore
+        "B": {Ingredient.GLUTEN},  # type: ignore
+        "C": {Ingredient.SHELLFISH},  # type: ignore
+        "E": {Ingredient.FISH},  # type: ignore
+        "F": {Ingredient.FISH},  # type: ignore
+        "G": {Ingredient.POULTRY},  # type: ignore
+        "H": {Ingredient.PEANUTS},  # type: ignore
+        "K": {Ingredient.VEAL},  # type: ignore
+        "L": {Ingredient.LAMB},  # type: ignore
+        "M": {Ingredient.SOY},  # type: ignore
+        "N": {Ingredient.MILK, Ingredient.LACTOSE},  # type: ignore
+        "O": {Ingredient.SHELL_FRUITS},  # type: ignore
+        "P": {Ingredient.CELERY},  # type: ignore
+        "R": {Ingredient.BEEF},  # type: ignore
+        "S": {Ingredient.PORK},  # type: ignore
+        "T": {Ingredient.MUSTARD},  # type: ignore
+        "U": {Ingredient.SESAME},  # type: ignore
+        "V": {Ingredient.SULPHURS, Ingredient.SULFITES},  # type: ignore
+        "W": {Ingredient.WILD_MEAT},  # type: ignore
+        "X": {Ingredient.LUPIN},  # type: ignore
+        "Y": {Ingredient.CHICKEN_EGGS},  # type: ignore
+        "Z": {Ingredient.MOLLUSCS},  # type: ignore
+    }
+
     def parse_dish(self, dish_str):
         ingredients = set()
         matches = re.findall(self.ingredients_regex, dish_str)
         while len(matches) > 0:
             for match in matches:
                 if len(match) > 0:
-                    ingredients |= Ingredient.parse(Location.MEDIZINER_MENSA, match[0])
+                    ingredients |= MedizinerMensaMenuParser._parse_ingredient(match[0])
             dish_str = re.sub(self.ingredients_regex, " ", dish_str)
             matches = re.findall(self.ingredients_regex, dish_str)
         dish_str = re.sub(r"\s+", " ", dish_str).strip()

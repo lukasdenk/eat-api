@@ -1,4 +1,6 @@
 import json
+from json import JSONEncoder
+from typing import Any
 
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
@@ -42,3 +44,15 @@ def order_json_objects(obj):
     if isinstance(obj, list):
         return sorted(order_json_objects(x) for x in obj)
     return obj
+
+
+class CustomJsonEncoder(JSONEncoder):
+    def default(self, o: Any) -> Any:
+        if hasattr(o.__class__, "to_json_obj"):
+            return o.to_json_obj()
+        return super().default(o)
+
+
+def write_json(path: str, obj: object) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, cls=CustomJsonEncoder, indent=4)

@@ -24,11 +24,11 @@ done
 # Combine all combined.json files to one all.json file:
 python3 scripts/combine.py
 # Remove all dishes which are older than one day
-# and reorganize them in a more efficient format:
+# https://github.com/TUM-Dev/eat-api/tree/gh-pages/en and reorganize them in a more efficient format:
 python3 scripts/reformat.py
 
 # Copy canteens.json in the output directory:
-echo "Coppying canteens..."
+echo "Copying canteens..."
 cp src/canteens.json $OUT_DIR
 echo "Done"
 
@@ -38,5 +38,8 @@ for loc in "${openmensa_list[@]}"; do
     echo "Parsing openmensa menus for: " "$loc"
     python3 src/main.py -p "$loc" --openmensa "./dist/$loc"
 done
+
+echo "Creating Location-, Diet- and Ingredient-Enum"
+python3 ./src/enum_json_creator.py "./dist"
 
 tree dist/
