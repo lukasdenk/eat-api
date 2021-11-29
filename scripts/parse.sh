@@ -39,7 +39,9 @@ for loc in "${openmensa_list[@]}"; do
     python3 src/main.py -p "$loc" --openmensa "./dist/$loc"
 done
 
-echo "Creating Location-, Diet- and Ingredient-Enum"
-python3 ./src/enum_json_creator.py "./dist"
+ENUM_JSON_PATH="./dist/enums"
+mkdir -p "$ENUM_JSON_PATH"
+echo "Creating Location- and Label-Enum"
+python3 ./src/enum_json_creator.py "$ENUM_JSON_PATH"
 
 tree dist/

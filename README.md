@@ -2,16 +2,6 @@
 
 [![Actions Status](https://github.com/TUM-Dev/eat-api/workflows/CI%2FCD/badge.svg)](https://github.com/TUM-Dev/eat-api/actions)
 
----
-
-**The [eat-api](https://github.com/TUM-Dev/eat-api) will change its API to version 2 with support for the new [unit based pricing system](https://github.com/TUM-Dev/eat-api/issues/10).**
-
-**All changes can be found here: https://github.com/TUM-Dev/eat-api/pull/12**
-
-**When will this change happen?**  
-**01.01.2020**
-
----
 
 Simple static API for the canteens of the [Studentenwerk München](http://www.studentenwerk-muenchen.de) as well as some other locations. By now, the following locations are supported:
 
@@ -38,71 +28,8 @@ Simple static API for the canteens of the [Studentenwerk München](http://www.st
 | FMI Bistro Garching            | fmi-bistro                     | [Boltzmannstraße 3, Garching](https://www.google.com/maps?q=Boltzmannstraße+3,+Garching)                                 |
 | IPP Bistro Garching            | ipp-bistro                     | [Boltzmannstraße 2, Garching](https://goo.gl/maps/vYdsQhgxFvH2)                                                          |
 
-## Ingredients list:
-
-<details><summary>CLICK ME</summary>
-<p>
-
-```python
-ingredient_lookup = {
-        "GQB" : "Certified Quality - Bavaria",
-        "MSC" : "Marine Stewardship Council",
-
-        "1" : "with dyestuff",
-        "2" : "with preservative",
-        "3" : "with antioxidant",
-        "4" : "with flavor enhancers",
-        "5" : "sulphured",
-        "6" : "blackened (olive)",
-        "7" : "waxed",
-        "8" : "with phosphate",
-        "9" : "with sweeteners",
-        "10" : "contains a source of phenylalanine",
-        "11" : "with sugar and sweeteners",
-        "13" : "with cocoa-containing grease",
-        "14" : "with gelatin",
-        "99" : "with alcohol",
-
-        "f" : "meatless dish",
-        "v" : "vegan dish",
-        "S" : "with pork",
-        "R" : "with beef",
-        "K" : "with veal",
-        "G" : "with poultry", # mediziner mensa
-        "W" : "with wild meat", # mediziner mensa
-        "L" : "with lamb", # mediziner mensa
-        "Kn" : "with garlic",
-        "Ei" : "with chicken egg",
-        "En" : "with peanut",
-        "Fi" : "with fish",
-        "Gl" : "with gluten-containing cereals",
-        "GlW" : "with wheat",
-        "GlR" : "with rye",
-        "GlG" : "with barley",
-        "GlH" : "with oats",
-        "GlD" : "with spelt",
-        "Kr" : "with crustaceans",
-        "Lu" : "with lupines",
-        "Mi" : "with milk and lactose",
-        "Sc" : "with shell fruits",
-        "ScM" : "with almonds",
-        "ScH" : "with hazelnuts",
-        "ScW" : "with Walnuts",
-        "ScC" : "with cashew nuts",
-        "ScP" : "with pistachios",
-        "Se" : "with sesame seeds",
-        "Sf" : "with mustard",
-        "Sl" : "with celery",
-        "So" : "with soy",
-        "Sw" : "with sulfur dioxide and sulfites",
-        "Wt" : "with mollusks",
-}
-```
-
-Based on: [Studentenwerk München](https://www.studentenwerk-muenchen.de/mensa/speiseplan)
-
-</p>
-</details>
+## Label list - previously _ingredients_:
+See [here](https://tum-dev.github.io/eat-api/dist/enums/labels.json).
 
 ## Usage
 
