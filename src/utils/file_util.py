@@ -55,4 +55,4 @@ class CustomJsonEncoder(JSONEncoder):
 
 def write_json(path: str, obj: object) -> None:
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, cls=CustomJsonEncoder, indent=4)
+        json.dump(obj, f, cls=CustomJsonEncoder, indent=2)

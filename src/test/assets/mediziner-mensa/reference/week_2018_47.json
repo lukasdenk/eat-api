@@ -16,13 +16,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Pfannengyros mit Tzaziki",
@@ -31,13 +30,13 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.PORK"
+              "labels": [
+                "Label.LACTOSE",
+                "Label.MEAT",
+                "Label.MILK",
+                "Label.PORK"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Spaghetti \" Gem\u00fcsebolognese \"",
@@ -46,12 +45,11 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CELERY",
-                "Ingredient.GLUTEN"
+              "labels": [
+                "Label.CELERY",
+                "Label.GLUTEN"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Thai-Curry aus Blumenkohl und Kartoffeln mit Gem\u00fcsreis und Salat",
@@ -72,16 +70,15 @@
                   "unit": null
                 }
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.SOY",
-                "Ingredient.SULFITES",
-                "Ingredient.SULPHURS"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.SOY",
+                "Label.SULFITES",
+                "Label.SULPHURS"
               ],
-              "dish_type": "Extraessen",
-              "diet": "None"
+              "dish_type": "Extraessen"
             }
           ]
         },
@@ -95,13 +92,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Gr\u00fcner Bohneneintopf mit Rindfleisch",
@@ -110,12 +106,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.BEEF",
-                "Ingredient.CELERY"
+              "labels": [
+                "Label.BEEF",
+                "Label.CELERY",
+                "Label.MEAT"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Veggi-Gulasch",
@@ -124,12 +120,11 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CELERY",
-                "Ingredient.GLUTEN"
+              "labels": [
+                "Label.CELERY",
+                "Label.GLUTEN"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Rotbarschfischfilet in Dillso\u00dfe mit K\u00fcrbisgem\u00fcse und Wacholderreis",
@@ -150,14 +145,13 @@
                   "unit": null
                 }
               },
-              "ingredients": [
-                "Ingredient.FISH",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.FISH",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Extraessen",
-              "diet": "None"
+              "dish_type": "Extraessen"
             }
           ]
         },
@@ -171,12 +165,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.BEEF",
-                "Ingredient.CELERY"
+              "labels": [
+                "Label.BEEF",
+                "Label.CELERY",
+                "Label.MEAT"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Schweinegulasch",
@@ -185,12 +179,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.PORK"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.MEAT",
+                "Label.PORK"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Gem\u00fcsekuchen mit Mozzarella \u00fcberbacken",
@@ -199,15 +193,14 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CELERY",
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.CELERY",
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Schinkennudeln mit Tomatenso\u00dfe, dazu gemischter Salat",
@@ -228,20 +221,19 @@
                   "unit": null
                 }
               },
-              "ingredients": [
-                "Ingredient.ANTIOXIDANTS",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.MUSTARD",
-                "Ingredient.PHOSPATES",
-                "Ingredient.POULTRY",
-                "Ingredient.PRESERVATIVES",
-                "Ingredient.SULFITES",
-                "Ingredient.SULPHURS"
+              "labels": [
+                "Label.ANTIOXIDANTS",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.MUSTARD",
+                "Label.PHOSPATES",
+                "Label.POULTRY",
+                "Label.PRESERVATIVES",
+                "Label.SULFITES",
+                "Label.SULPHURS"
               ],
-              "dish_type": "Extraessen",
-              "diet": "None"
+              "dish_type": "Extraessen"
             }
           ]
         },
@@ -255,13 +247,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Rinderhackbraten",
@@ -270,17 +261,17 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.BEEF",
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.MUSTARD",
-                "Ingredient.SOY"
+              "labels": [
+                "Label.BEEF",
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MEAT",
+                "Label.MILK",
+                "Label.MUSTARD",
+                "Label.SOY"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Dinkel-Kr\u00e4uterbratling",
@@ -289,14 +280,13 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Pikantes Risotto mit buntem Gem\u00fcse und Tomatensalat mit Basilikum",
@@ -317,16 +307,15 @@
                   "unit": null
                 }
               },
-              "ingredients": [
-                "Ingredient.DYESTUFF",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.PRESERVATIVES",
-                "Ingredient.SULFITES",
-                "Ingredient.SULPHURS"
+              "labels": [
+                "Label.DYESTUFF",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.PRESERVATIVES",
+                "Label.SULFITES",
+                "Label.SULPHURS"
               ],
-              "dish_type": "Extraessen",
-              "diet": "None"
+              "dish_type": "Extraessen"
             }
           ]
         },
@@ -340,13 +329,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CELERY",
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN"
+              "labels": [
+                "Label.CELERY",
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Gebratene H\u00e4hnchenbrust",
@@ -355,11 +343,10 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.POULTRY"
+              "labels": [
+                "Label.POULTRY"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Scheiterhaufen mit Apfel-Vanille-Ragout",
@@ -368,17 +355,16 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.ANTIOXIDANTS",
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.SOY",
-                "Ingredient.SWEETENERS"
+              "labels": [
+                "Label.ANTIOXIDANTS",
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.SOY",
+                "Label.SWEETENERS"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Paniertes Schnitzel vom Schwein und Pute mit Kartoffelmayosalat und Zitronenecke",
@@ -399,17 +385,17 @@
                   "unit": null
                 }
               },
-              "ingredients": [
-                "Ingredient.ANTIOXIDANTS",
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.FLAVOR_ENHANCER",
-                "Ingredient.GLUTEN",
-                "Ingredient.MUSTARD",
-                "Ingredient.PORK",
-                "Ingredient.POULTRY"
+              "labels": [
+                "Label.ANTIOXIDANTS",
+                "Label.CHICKEN_EGGS",
+                "Label.FLAVOR_ENHANCER",
+                "Label.GLUTEN",
+                "Label.MEAT",
+                "Label.MUSTARD",
+                "Label.PORK",
+                "Label.POULTRY"
               ],
-              "dish_type": "Extraessen",
-              "diet": "None"
+              "dish_type": "Extraessen"
             }
           ]
         },
@@ -423,13 +409,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Pichelsteiner Gem\u00fcseeintopf mit Rindfleisch",
@@ -438,12 +423,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.BEEF",
-                "Ingredient.CELERY"
+              "labels": [
+                "Label.BEEF",
+                "Label.CELERY",
+                "Label.MEAT"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Ofenkartoffel mit herzhaftem Gem\u00fcseragout",
@@ -452,14 +437,13 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CELERY",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.CELERY",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             }
           ]
         },
@@ -473,12 +457,11 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN"
+              "labels": [
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Glasierter Putenbraten in Kr\u00e4uterrahmso\u00dfe",
@@ -487,14 +470,13 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.POULTRY"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.POULTRY"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Eieromelett",
@@ -503,14 +485,13 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             }
           ]
         }

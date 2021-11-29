@@ -16,13 +16,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Gekochtes Ochsenfleisch mit Meerrettich",
@@ -31,16 +30,16 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.ANTIOXIDANTS",
-                "Ingredient.BEEF",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.SULFITES",
-                "Ingredient.SULPHURS"
+              "labels": [
+                "Label.ANTIOXIDANTS",
+                "Label.BEEF",
+                "Label.LACTOSE",
+                "Label.MEAT",
+                "Label.MILK",
+                "Label.SULFITES",
+                "Label.SULPHURS"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "K\u00fcrbisauflauf",
@@ -49,16 +48,15 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.DYESTUFF",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.PRESERVATIVES"
+              "labels": [
+                "Label.CHICKEN_EGGS",
+                "Label.DYESTUFF",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.PRESERVATIVES"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Asiatische Gem\u00fcse-Puten-Pfanne mit Reisnudeln",
@@ -79,16 +77,15 @@
                   "unit": null
                 }
               },
-              "ingredients": [
-                "Ingredient.FISH",
-                "Ingredient.GLUTEN",
-                "Ingredient.POULTRY",
-                "Ingredient.SESAME",
-                "Ingredient.SHELL_FRUITS",
-                "Ingredient.SOY"
+              "labels": [
+                "Label.FISH",
+                "Label.GLUTEN",
+                "Label.POULTRY",
+                "Label.SESAME",
+                "Label.SHELL_FRUITS",
+                "Label.SOY"
               ],
-              "dish_type": "Extraessen",
-              "diet": "None"
+              "dish_type": "Extraessen"
             }
           ]
         },
@@ -102,13 +99,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Oldenburger Gr\u00fcnkohl mit Mettenden",
@@ -117,19 +113,19 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.ANTIOXIDANTS",
-                "Ingredient.FLAVOR_ENHANCER",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.MUSTARD",
-                "Ingredient.PHOSPATES",
-                "Ingredient.PORK",
-                "Ingredient.PRESERVATIVES"
+              "labels": [
+                "Label.ANTIOXIDANTS",
+                "Label.FLAVOR_ENHANCER",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MEAT",
+                "Label.MILK",
+                "Label.MUSTARD",
+                "Label.PHOSPATES",
+                "Label.PORK",
+                "Label.PRESERVATIVES"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Kaschmir Kohlrabi und Brokkoli",
@@ -138,12 +134,11 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Conchiglioni Nudeln mit mit mediterranem Gem\u00fcse",
@@ -164,16 +159,15 @@
                   "unit": null
                 }
               },
-              "ingredients": [
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.DYESTUFF",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.PRESERVATIVES"
+              "labels": [
+                "Label.CHICKEN_EGGS",
+                "Label.DYESTUFF",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.PRESERVATIVES"
               ],
-              "dish_type": "Extraessen",
-              "diet": "None"
+              "dish_type": "Extraessen"
             }
           ]
         },
@@ -187,9 +181,8 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "labels": [],
+              "dish_type": "Suppe"
             },
             {
               "name": "Germkn\u00f6del mit Vanilleso\u00dfe",
@@ -198,16 +191,15 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.DYESTUFF",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.SWEETENERS"
+              "labels": [
+                "Label.CHICKEN_EGGS",
+                "Label.DYESTUFF",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.SWEETENERS"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Herzhaftes Kartoffelgratin",
@@ -216,17 +208,16 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CELERY",
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.DYESTUFF",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.PRESERVATIVES"
+              "labels": [
+                "Label.CELERY",
+                "Label.CHICKEN_EGGS",
+                "Label.DYESTUFF",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.PRESERVATIVES"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Holzf\u00e4llersteak mit Bratkartoffeln und Wei\u00dfkrautsalat",
@@ -247,14 +238,14 @@
                   "unit": null
                 }
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.PORK",
-                "Ingredient.SULFITES",
-                "Ingredient.SULPHURS"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.MEAT",
+                "Label.PORK",
+                "Label.SULFITES",
+                "Label.SULPHURS"
               ],
-              "dish_type": "Extraessen",
-              "diet": "None"
+              "dish_type": "Extraessen"
             }
           ]
         },
@@ -268,13 +259,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "H\u00e4hnchenbrust gegrillt",
@@ -283,11 +273,10 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.POULTRY"
+              "labels": [
+                "Label.POULTRY"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "In Sesam\u00f6l gebratenes Wokgem\u00fcse",
@@ -296,15 +285,14 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.PRESERVATIVES",
-                "Ingredient.SESAME",
-                "Ingredient.SHELL_FRUITS",
-                "Ingredient.SOY"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.PRESERVATIVES",
+                "Label.SESAME",
+                "Label.SHELL_FRUITS",
+                "Label.SOY"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             }
           ]
         },
@@ -318,13 +306,12 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK"
+              "labels": [
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Forelle \"M\u00fcllerin Art \"",
@@ -333,12 +320,11 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.FISH",
-                "Ingredient.GLUTEN"
+              "labels": [
+                "Label.FISH",
+                "Label.GLUTEN"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Quarkkl\u00f6\u00dfchen",
@@ -347,18 +333,17 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.ANTIOXIDANTS",
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.PRESERVATIVES",
-                "Ingredient.SULFITES",
-                "Ingredient.SULPHURS"
+              "labels": [
+                "Label.ANTIOXIDANTS",
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.PRESERVATIVES",
+                "Label.SULFITES",
+                "Label.SULPHURS"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Chili con Cous Cous mit K\u00fcrbis-Apfel-Salat",
@@ -379,15 +364,14 @@
                   "unit": null
                 }
               },
-              "ingredients": [
-                "Ingredient.ANTIOXIDANTS",
-                "Ingredient.GLUTEN",
-                "Ingredient.SULFITES",
-                "Ingredient.SULPHURS",
-                "Ingredient.SWEETENERS"
+              "labels": [
+                "Label.ANTIOXIDANTS",
+                "Label.GLUTEN",
+                "Label.SULFITES",
+                "Label.SULPHURS",
+                "Label.SWEETENERS"
               ],
-              "dish_type": "Extraessen",
-              "diet": "None"
+              "dish_type": "Extraessen"
             }
           ]
         },
@@ -401,15 +385,15 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.BEEF",
-                "Ingredient.CELERY",
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN",
-                "Ingredient.PORK"
+              "labels": [
+                "Label.BEEF",
+                "Label.CELERY",
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN",
+                "Label.MEAT",
+                "Label.PORK"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Gefl\u00fcgelpflanzerl",
@@ -418,16 +402,15 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.CHICKEN_EGGS",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.POULTRY",
-                "Ingredient.SOY"
+              "labels": [
+                "Label.CHICKEN_EGGS",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.POULTRY",
+                "Label.SOY"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Krauttopf mit einer Vollkornsemmel",
@@ -436,11 +419,10 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.GLUTEN"
+              "labels": [
+                "Label.GLUTEN"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             }
           ]
         },
@@ -454,15 +436,14 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.DYESTUFF",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.PRESERVATIVES"
+              "labels": [
+                "Label.DYESTUFF",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.PRESERVATIVES"
               ],
-              "dish_type": "Suppe",
-              "diet": "None"
+              "dish_type": "Suppe"
             },
             {
               "name": "Geschmortes Kalbfleisch",
@@ -471,11 +452,11 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.VEAL"
+              "labels": [
+                "Label.MEAT",
+                "Label.VEAL"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             },
             {
               "name": "Vegetarische Moussaka",
@@ -484,15 +465,14 @@
                 "staff": null,
                 "guests": null
               },
-              "ingredients": [
-                "Ingredient.DYESTUFF",
-                "Ingredient.GLUTEN",
-                "Ingredient.LACTOSE",
-                "Ingredient.MILK",
-                "Ingredient.PRESERVATIVES"
+              "labels": [
+                "Label.DYESTUFF",
+                "Label.GLUTEN",
+                "Label.LACTOSE",
+                "Label.MILK",
+                "Label.PRESERVATIVES"
               ],
-              "dish_type": "Hauptkomponente",
-              "diet": "None"
+              "dish_type": "Hauptkomponente"
             }
           ]
         }

@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import datetime
-from enum import Enum, auto
+from enum import Enum
 from typing import Any, Dict, List, Optional, Set
 
 
@@ -200,23 +200,7 @@ class Location(Enum):
         }
 
 
-class Diet(Enum):
-    VEGAN = auto()
-    VEGETARIAN = auto()
-    CARNIVOROUS = auto()
-    PESCETARIAN = auto()
-
-    def to_json_obj(self):
-        return {
-            "name": self.name,
-        }
-
-
-class Ingredient(Enum):
-    # mypy does not recognize that studentenwerk_lookup, fmi_lookup and mediziner_lookup are not Enum types.
-    # This is the reason for the many "# type: ignore" comments.
-    _ignore_ = ["studentenwerk_lookup", "fmi_lookup", "mediziner_lookup"]
-
+class Label(Enum):
     def __init__(self, german_text: str):
         self.german_text = german_text
 
@@ -271,6 +255,9 @@ class Ingredient(Enum):
     GARLIC = "Knoblauch"
     POULTRY = "Geflügel"
     CEREAL = "Getreide"
+    MEAT = "Fleisch"
+    VEGAN = "Vegan"
+    VEGETARIAN = "Vegetarisch"
 
     def __lt__(self, other):
         if self.__class__ is other.__class__:
@@ -278,27 +265,36 @@ class Ingredient(Enum):
         return NotImplemented
 
     @staticmethod
-    def add_supertype_ingredients(ingredients: Set[Ingredient]) -> None:
+    def add_supertype_labels(labels: Set[Label]) -> None:
         # insert supertypes
-        if ingredients & {
-            Ingredient.ALMONDS,
-            Ingredient.HAZELNUTS,
-            Ingredient.MACADAMIA,
-            Ingredient.CASHEWS,
-            Ingredient.PECAN,
-            Ingredient.PISTACHIOES,
-            Ingredient.SESAME,
-            Ingredient.WALNUTS,
+        if labels & {
+            Label.ALMONDS,
+            Label.HAZELNUTS,
+            Label.MACADAMIA,
+            Label.CASHEWS,
+            Label.PECAN,
+            Label.PISTACHIOES,
+            Label.SESAME,
+            Label.WALNUTS,
         }:
-            ingredients |= {Ingredient.SHELL_FRUITS}
-        if ingredients & {
-            Ingredient.BARLEY,
-            Ingredient.OAT,
-            Ingredient.RYE,
-            Ingredient.SPELT,
-            Ingredient.WHEAT,
+            labels |= {Label.SHELL_FRUITS}
+        if labels & {
+            Label.BARLEY,
+            Label.OAT,
+            Label.RYE,
+            Label.SPELT,
+            Label.WHEAT,
         }:
-            ingredients |= {Ingredient.CEREAL}
+            labels |= {Label.CEREAL}
+        if labels & {Label.VEGAN}:
+            labels |= {Label.VEGETARIAN}
+
+        if labels & {
+            Label.PORK,
+            Label.BEEF,
+            Label.VEAL,
+        }:
+            labels |= {Label.MEAT}
 
     def to_json_obj(self):
         return {
@@ -310,33 +306,30 @@ class Ingredient(Enum):
 class Dish:
     name: str
     prices: Prices
-    ingredients: Set[Ingredient]
+    labels: Set[Label]
     dish_type: str
-    diet: Optional[Diet]
 
     def __init__(
         self,
         name: str,
         prices: Prices,
-        ingredients: Set[Ingredient],
+        labels: Set[Label],
         dish_type: str,
-        diet: Optional[Diet] = None,
     ):
         self.name = name
         self.prices = prices
-        self.ingredients = ingredients
+        self.labels = labels
         self.dish_type = dish_type
-        self.diet = diet
 
     def __repr__(self):
-        return f"{self.name} {str(sorted(self.ingredients))}: {str(self.prices)}"
+        return f"{self.name} {str(sorted(self.labels))}: {str(self.prices)}"
 
     def __eq__(self, other: Any) -> bool:
         if isinstance(other, self.__class__):
             return (
                 self.name == other.name
                 and self.prices == other.prices
-                and self.ingredients == other.ingredients
+                and self.labels == other.labels
                 and self.dish_type == other.dish_type
             )
         return False
@@ -345,14 +338,13 @@ class Dish:
         return {
             "name": self.name,
             "prices": self.prices.to_json_obj(),
-            "ingredients": sorted(map(str, self.ingredients)),
+            "labels": sorted(map(str, self.labels)),
             "dish_type": self.dish_type,
-            "diet": str(self.diet),
         }
 
     def __hash__(self) -> int:
         # http://stackoverflow.com/questions/4005318/how-to-implement-a-good-hash-function-in-python
-        return (hash(self.name) << 1) ^ hash(self.prices) ^ hash(frozenset(self.ingredients)) ^ hash(self.dish_type)
+        return (hash(self.name) << 1) ^ hash(self.prices) ^ hash(frozenset(self.labels)) ^ hash(self.dish_type)
 
 
 class Menu:

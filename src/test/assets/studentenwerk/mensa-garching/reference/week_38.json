@@ -24,19 +24,19 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.SHELLFISH",
-            "Ingredient.SHELL_FRUITS",
-            "Ingredient.WALNUTS",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.SHELLFISH",
+            "Label.SHELL_FRUITS",
+            "Label.VEGETARIAN",
+            "Label.WALNUTS",
+            "Label.WHEAT"
           ],
-          "dish_type": "Pasta",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Pasta"
         },
         {
           "name": "Rostbratw\u00fcrstchen nach N\u00fcrnberger Art",
@@ -57,14 +57,14 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.BEEF",
-            "Ingredient.PHOSPATES",
-            "Ingredient.PORK"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.BEEF",
+            "Label.MEAT",
+            "Label.PHOSPATES",
+            "Label.PORK"
           ],
-          "dish_type": "Grill",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Grill"
         },
         {
           "name": "Veganes Tomatencurry mit Falafel",
@@ -85,15 +85,16 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.MUSTARD",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.MUSTARD",
+            "Label.VEGAN",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Wok",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Wok"
         },
         {
           "name": "Quinoapfanne mit Gem\u00fcse und Chili (scharf)",
@@ -114,9 +115,11 @@
               "unit": "100g"
             }
           },
-          "ingredients": [],
-          "dish_type": "Studitopf",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Studitopf"
         },
         {
           "name": "Kartoffelsuppe",
@@ -137,13 +140,13 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK"
+          "labels": [
+            "Label.CELERY",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Studitopf",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Studitopf"
         },
         {
           "name": "Spinatkn\u00f6del Tiroler Art mit Bergk\u00e4se",
@@ -164,17 +167,17 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CELERY",
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Vegetarisch",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Vegetarisch"
         },
         {
           "name": "Vegane Minibratw\u00fcrstchen",
@@ -195,13 +198,13 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.GARLIC",
-            "Ingredient.SOY"
+          "labels": [
+            "Label.CELERY",
+            "Label.GARLIC",
+            "Label.SOY",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Vegetarisch",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Vegetarisch"
         },
         {
           "name": "Kartoffelbrei",
@@ -210,12 +213,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK"
+          "labels": [
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Couscous mit Oliven\u00f6l",
@@ -224,13 +227,14 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CEREAL",
-            "Ingredient.GLUTEN",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CEREAL",
+            "Label.GLUTEN",
+            "Label.VEGAN",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frisches Gem\u00fcse",
@@ -239,12 +243,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.SOY"
+          "labels": [
+            "Label.CELERY",
+            "Label.MEAT",
+            "Label.SOY"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Sauerkraut",
@@ -253,9 +257,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "Gem\u00fcse Bayerischer Wald",
@@ -264,9 +270,10 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "labels": [
+            "Label.MEAT"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Dessertbar",
@@ -275,28 +282,28 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ALMONDS",
-            "Ingredient.BARLEY",
-            "Ingredient.CASHEWS",
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.COCOA_CONTAINING_GREASE",
-            "Ingredient.GELATIN",
-            "Ingredient.GLUTEN",
-            "Ingredient.HAZELNUTS",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.OAT",
-            "Ingredient.PEANUTS",
-            "Ingredient.SHELLFISH",
-            "Ingredient.SHELL_FRUITS",
-            "Ingredient.SOY",
-            "Ingredient.WALNUTS",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ALMONDS",
+            "Label.BARLEY",
+            "Label.CASHEWS",
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.COCOA_CONTAINING_GREASE",
+            "Label.GELATIN",
+            "Label.GLUTEN",
+            "Label.HAZELNUTS",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK",
+            "Label.OAT",
+            "Label.PEANUTS",
+            "Label.SHELLFISH",
+            "Label.SHELL_FRUITS",
+            "Label.SOY",
+            "Label.WALNUTS",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Salatbar",
@@ -305,19 +312,18 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.DYESTUFF",
-            "Ingredient.FISH",
-            "Ingredient.GARLIC",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.MUSTARD",
-            "Ingredient.SOY",
-            "Ingredient.SWEETENERS"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.DYESTUFF",
+            "Label.FISH",
+            "Label.GARLIC",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.MUSTARD",
+            "Label.SOY",
+            "Label.SWEETENERS"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.PESCETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Quarkcreme mit Blaubeeren",
@@ -326,13 +332,13 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.SOY"
+          "labels": [
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.SOY",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Schokocreme mit Amarettini",
@@ -341,18 +347,18 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.SHELLFISH",
-            "Ingredient.SOY",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.SHELLFISH",
+            "Label.SOY",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Karotten-Orangen-Apfel-Saft",
@@ -361,9 +367,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "Grazy Purple: Beeren-Smoothie mit roten R\u00fcben und Haferflocken",
@@ -372,13 +380,13 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CEREAL",
-            "Ingredient.GLUTEN",
-            "Ingredient.OAT"
+          "labels": [
+            "Label.CEREAL",
+            "Label.GLUTEN",
+            "Label.OAT",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Beilagen"
         }
       ]
     },
@@ -404,15 +412,16 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CELERY",
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.VEGAN",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Pasta",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Pasta"
         },
         {
           "name": "Pizza Funghi mit Champignons",
@@ -433,17 +442,17 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.BARLEY",
-            "Ingredient.CEREAL",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.SOY",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.BARLEY",
+            "Label.CEREAL",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.SOY",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Pizza",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Pizza"
         },
         {
           "name": "Roast beef mit Schmorzwiebelsauce",
@@ -464,21 +473,21 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.ALCOHOL",
-            "Ingredient.BARLEY",
-            "Ingredient.BEEF",
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.SULFITES",
-            "Ingredient.SULPHURS",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ALCOHOL",
+            "Label.BARLEY",
+            "Label.BEEF",
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK",
+            "Label.SULFITES",
+            "Label.SULPHURS",
+            "Label.WHEAT"
           ],
-          "dish_type": "Grill",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Grill"
         },
         {
           "name": "Indisches Linsencurry",
@@ -499,13 +508,14 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.GARLIC",
-            "Ingredient.MUSTARD"
+          "labels": [
+            "Label.CELERY",
+            "Label.GARLIC",
+            "Label.MUSTARD",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Studitopf",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Studitopf"
         },
         {
           "name": "Tagessuppe",
@@ -526,9 +536,10 @@
               "unit": "100g"
             }
           },
-          "ingredients": [],
-          "dish_type": "Studitopf",
-          "diet": "Diet.CARNIVOROUS"
+          "labels": [
+            "Label.MEAT"
+          ],
+          "dish_type": "Studitopf"
         },
         {
           "name": "Allg\u00e4uer K\u00e4sesp\u00e4tzle mit R\u00f6stzwiebeln",
@@ -549,19 +560,19 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.DYESTUFF",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.PRESERVATIVES",
-            "Ingredient.SPELT",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.DYESTUFF",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.PRESERVATIVES",
+            "Label.SPELT",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Vegetarisch",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Vegetarisch"
         },
         {
           "name": "Gekr\u00e4utertes Pilzragout (Champignons, Egerlingen und Austernpilzen)",
@@ -582,14 +593,15 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.ALCOHOL",
-            "Ingredient.SOY",
-            "Ingredient.SULFITES",
-            "Ingredient.SULPHURS"
+          "labels": [
+            "Label.ALCOHOL",
+            "Label.SOY",
+            "Label.SULFITES",
+            "Label.SULPHURS",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Vegetarisch",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Vegetarisch"
         },
         {
           "name": "Countrykartoffeln",
@@ -598,13 +610,13 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CEREAL",
-            "Ingredient.GLUTEN",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CEREAL",
+            "Label.GLUTEN",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Salzkartoffeln",
@@ -613,9 +625,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frisches Gem\u00fcse",
@@ -624,12 +638,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.SOY"
+          "labels": [
+            "Label.CELERY",
+            "Label.MEAT",
+            "Label.SOY"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Gr\u00fcne Bohnen",
@@ -638,9 +652,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "Ged\u00fcnstetes Zucchini-Stangensellerie-Paprika-Gem\u00fcse",
@@ -649,11 +665,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CELERY"
+          "labels": [
+            "Label.CELERY",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Dessertbar",
@@ -662,28 +679,28 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ALMONDS",
-            "Ingredient.BARLEY",
-            "Ingredient.CASHEWS",
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.COCOA_CONTAINING_GREASE",
-            "Ingredient.GELATIN",
-            "Ingredient.GLUTEN",
-            "Ingredient.HAZELNUTS",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.OAT",
-            "Ingredient.PEANUTS",
-            "Ingredient.SHELLFISH",
-            "Ingredient.SHELL_FRUITS",
-            "Ingredient.SOY",
-            "Ingredient.WALNUTS",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ALMONDS",
+            "Label.BARLEY",
+            "Label.CASHEWS",
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.COCOA_CONTAINING_GREASE",
+            "Label.GELATIN",
+            "Label.GLUTEN",
+            "Label.HAZELNUTS",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK",
+            "Label.OAT",
+            "Label.PEANUTS",
+            "Label.SHELLFISH",
+            "Label.SHELL_FRUITS",
+            "Label.SOY",
+            "Label.WALNUTS",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Salatbar",
@@ -692,19 +709,18 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.DYESTUFF",
-            "Ingredient.FISH",
-            "Ingredient.GARLIC",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.MUSTARD",
-            "Ingredient.SOY",
-            "Ingredient.SWEETENERS"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.DYESTUFF",
+            "Label.FISH",
+            "Label.GARLIC",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.MUSTARD",
+            "Label.SOY",
+            "Label.SWEETENERS"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.PESCETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Bayerisch Creme mit Himbeermark",
@@ -713,13 +729,13 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.GELATIN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK"
+          "labels": [
+            "Label.GELATIN",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Pfirsich-Mango-Orangen-Saft",
@@ -728,9 +744,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "Little Green: Erdbeer-Kiwi-Spinat-Smoothie mit Kokosmilch",
@@ -739,9 +757,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         }
       ]
     },
@@ -767,17 +787,17 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CELERY",
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Pasta",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Pasta"
         },
         {
           "name": "Gelbes Gem\u00fcsecurry aus Blumenkohl und Broccoli",
@@ -798,11 +818,12 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.GARLIC"
+          "labels": [
+            "Label.GARLIC",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Wok",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Wok"
         },
         {
           "name": "Mediterraner Gem\u00fcseeintopf",
@@ -823,12 +844,13 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.GARLIC"
+          "labels": [
+            "Label.CELERY",
+            "Label.GARLIC",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Studitopf",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Studitopf"
         },
         {
           "name": "Tagessuppe",
@@ -849,9 +871,10 @@
               "unit": "100g"
             }
           },
-          "ingredients": [],
-          "dish_type": "Studitopf",
-          "diet": "Diet.CARNIVOROUS"
+          "labels": [
+            "Label.MEAT"
+          ],
+          "dish_type": "Studitopf"
         },
         {
           "name": "Fr\u00fchlingsrolle mit s\u00fc\u00dfsaurer Sauce",
@@ -872,15 +895,15 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CELERY",
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Vegetarisch",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Vegetarisch"
         },
         {
           "name": "Bierbratl mit Biersauce",
@@ -901,19 +924,19 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.ALCOHOL",
-            "Ingredient.BARLEY",
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.PORK",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ALCOHOL",
+            "Label.BARLEY",
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK",
+            "Label.PORK",
+            "Label.WHEAT"
           ],
-          "dish_type": "Fleisch",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Fleisch"
         },
         {
           "name": "Reis",
@@ -922,11 +945,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CELERY"
+          "labels": [
+            "Label.CELERY",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Kleiner Kartoffelkn\u00f6del",
@@ -935,13 +959,14 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.PRESERVATIVES",
-            "Ingredient.SULFITES",
-            "Ingredient.SULPHURS"
+          "labels": [
+            "Label.PRESERVATIVES",
+            "Label.SULFITES",
+            "Label.SULPHURS",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frisches Gem\u00fcse",
@@ -950,12 +975,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.SOY"
+          "labels": [
+            "Label.CELERY",
+            "Label.MEAT",
+            "Label.SOY"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Bayerisch Kraut",
@@ -964,14 +989,15 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ALCOHOL",
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.SULFITES",
-            "Ingredient.SULPHURS"
+          "labels": [
+            "Label.ALCOHOL",
+            "Label.ANTIOXIDANTS",
+            "Label.SULFITES",
+            "Label.SULPHURS",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Gebratener K\u00fcrbis",
@@ -980,9 +1006,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Dessertbar",
@@ -991,28 +1019,28 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ALMONDS",
-            "Ingredient.BARLEY",
-            "Ingredient.CASHEWS",
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.COCOA_CONTAINING_GREASE",
-            "Ingredient.GELATIN",
-            "Ingredient.GLUTEN",
-            "Ingredient.HAZELNUTS",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.OAT",
-            "Ingredient.PEANUTS",
-            "Ingredient.SHELLFISH",
-            "Ingredient.SHELL_FRUITS",
-            "Ingredient.SOY",
-            "Ingredient.WALNUTS",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ALMONDS",
+            "Label.BARLEY",
+            "Label.CASHEWS",
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.COCOA_CONTAINING_GREASE",
+            "Label.GELATIN",
+            "Label.GLUTEN",
+            "Label.HAZELNUTS",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK",
+            "Label.OAT",
+            "Label.PEANUTS",
+            "Label.SHELLFISH",
+            "Label.SHELL_FRUITS",
+            "Label.SOY",
+            "Label.WALNUTS",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Salatbar",
@@ -1021,19 +1049,18 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.DYESTUFF",
-            "Ingredient.FISH",
-            "Ingredient.GARLIC",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.MUSTARD",
-            "Ingredient.SOY",
-            "Ingredient.SWEETENERS"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.DYESTUFF",
+            "Label.FISH",
+            "Label.GARLIC",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.MUSTARD",
+            "Label.SOY",
+            "Label.SWEETENERS"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.PESCETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Vegane Schokohirse in Sojacreme mit Kirsch-Banane",
@@ -1042,11 +1069,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.SOY"
+          "labels": [
+            "Label.SOY",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Green Mango: Smoothie mit Mango, Feldsalat, Basilikum und Banane",
@@ -1055,9 +1083,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "Erdbeer-Banane-Orangen-Saft",
@@ -1066,9 +1096,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         }
       ]
     },
@@ -1094,17 +1126,17 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CELERY",
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Pasta",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Pasta"
         },
         {
           "name": "Pizza Quattro Stagioni mit (Vorder-)Schinken, Paprika, Champignons und Oliven",
@@ -1125,21 +1157,21 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.BARLEY",
-            "Ingredient.CEREAL",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.PHOSPATES",
-            "Ingredient.PORK",
-            "Ingredient.PRESERVATIVES",
-            "Ingredient.SOY",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.BARLEY",
+            "Label.CEREAL",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK",
+            "Label.PHOSPATES",
+            "Label.PORK",
+            "Label.PRESERVATIVES",
+            "Label.SOY",
+            "Label.WHEAT"
           ],
-          "dish_type": "Pizza",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Pizza"
         },
         {
           "name": "Currywurst mit Honig-Ingwer-Ketchup",
@@ -1160,14 +1192,14 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.BEEF",
-            "Ingredient.MUSTARD",
-            "Ingredient.PHOSPATES",
-            "Ingredient.PORK"
+          "labels": [
+            "Label.BEEF",
+            "Label.MEAT",
+            "Label.MUSTARD",
+            "Label.PHOSPATES",
+            "Label.PORK"
           ],
-          "dish_type": "Grill",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Grill"
         },
         {
           "name": "Couscous mit mediterranem Gem\u00fcse",
@@ -1188,15 +1220,16 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CELERY",
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.VEGAN",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Studitopf",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Studitopf"
         },
         {
           "name": "Tagessuppe",
@@ -1217,9 +1250,10 @@
               "unit": "100g"
             }
           },
-          "ingredients": [],
-          "dish_type": "Studitopf",
-          "diet": "Diet.CARNIVOROUS"
+          "labels": [
+            "Label.MEAT"
+          ],
+          "dish_type": "Studitopf"
         },
         {
           "name": "Halbes Hendl",
@@ -1240,9 +1274,10 @@
               "unit": "100g"
             }
           },
-          "ingredients": [],
-          "dish_type": "Fleisch",
-          "diet": "Diet.CARNIVOROUS"
+          "labels": [
+            "Label.MEAT"
+          ],
+          "dish_type": "Fleisch"
         },
         {
           "name": "Schupfnudeln mit Zimtzucker und Apfelmus",
@@ -1263,15 +1298,15 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.GLUTEN",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.GLUTEN",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "S\u00fc\u00dfspeise",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "S\u00fc\u00dfspeise"
         },
         {
           "name": "Kartoffelsalat",
@@ -1280,15 +1315,16 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.DYESTUFF",
-            "Ingredient.MUSTARD",
-            "Ingredient.SULFITES",
-            "Ingredient.SULPHURS"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.DYESTUFF",
+            "Label.MUSTARD",
+            "Label.SULFITES",
+            "Label.SULPHURS",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Pommes frites",
@@ -1297,9 +1333,10 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGETARIAN"
+          "labels": [
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "Erbsen, natur",
@@ -1308,11 +1345,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CELERY"
+          "labels": [
+            "Label.CELERY",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Rahmmangold",
@@ -1321,16 +1359,16 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Dessertbar",
@@ -1339,28 +1377,28 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ALMONDS",
-            "Ingredient.BARLEY",
-            "Ingredient.CASHEWS",
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.COCOA_CONTAINING_GREASE",
-            "Ingredient.GELATIN",
-            "Ingredient.GLUTEN",
-            "Ingredient.HAZELNUTS",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.OAT",
-            "Ingredient.PEANUTS",
-            "Ingredient.SHELLFISH",
-            "Ingredient.SHELL_FRUITS",
-            "Ingredient.SOY",
-            "Ingredient.WALNUTS",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ALMONDS",
+            "Label.BARLEY",
+            "Label.CASHEWS",
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.COCOA_CONTAINING_GREASE",
+            "Label.GELATIN",
+            "Label.GLUTEN",
+            "Label.HAZELNUTS",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK",
+            "Label.OAT",
+            "Label.PEANUTS",
+            "Label.SHELLFISH",
+            "Label.SHELL_FRUITS",
+            "Label.SOY",
+            "Label.WALNUTS",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Salatbar",
@@ -1369,19 +1407,18 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.DYESTUFF",
-            "Ingredient.FISH",
-            "Ingredient.GARLIC",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.MUSTARD",
-            "Ingredient.SOY",
-            "Ingredient.SWEETENERS"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.DYESTUFF",
+            "Label.FISH",
+            "Label.GARLIC",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.MUSTARD",
+            "Label.SOY",
+            "Label.SWEETENERS"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.PESCETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Kokos-Panna-Cotta mit Himbeersauce",
@@ -1390,13 +1427,13 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.GELATIN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK"
+          "labels": [
+            "Label.GELATIN",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Ingwer-Shot: Smoothie aus Ananas, Ingwer, Kurkuma",
@@ -1405,9 +1442,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "Ananas-Apfel-Minze-Saft",
@@ -1416,9 +1455,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         }
       ]
     },
@@ -1444,18 +1485,18 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.SOY",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CELERY",
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.SOY",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Pasta",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Pasta"
         },
         {
           "name": "Tofugeschnetzeltes China-Town",
@@ -1476,14 +1517,15 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.GARLIC",
-            "Ingredient.PRESERVATIVES",
-            "Ingredient.SOY"
+          "labels": [
+            "Label.CELERY",
+            "Label.GARLIC",
+            "Label.PRESERVATIVES",
+            "Label.SOY",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Wok",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Wok"
         },
         {
           "name": "Bauerneintopf mit Bauernbrot",
@@ -1504,14 +1546,15 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.CEREAL",
-            "Ingredient.GLUTEN",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CELERY",
+            "Label.CEREAL",
+            "Label.GLUTEN",
+            "Label.VEGAN",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Studitopf",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Studitopf"
         },
         {
           "name": "Tagessuppe",
@@ -1532,9 +1575,10 @@
               "unit": "100g"
             }
           },
-          "ingredients": [],
-          "dish_type": "Studitopf",
-          "diet": "Diet.CARNIVOROUS"
+          "labels": [
+            "Label.MEAT"
+          ],
+          "dish_type": "Studitopf"
         },
         {
           "name": "Schollenfilet (MSC) paniert mit Remouladensauce",
@@ -1555,21 +1599,20 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.DYESTUFF",
-            "Ingredient.FISH",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.MUSTARD",
-            "Ingredient.SWEETENERS",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.DYESTUFF",
+            "Label.FISH",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.MUSTARD",
+            "Label.SWEETENERS",
+            "Label.WHEAT"
           ],
-          "dish_type": "Fisch",
-          "diet": "Diet.PESCETARIAN"
+          "dish_type": "Fisch"
         },
         {
           "name": "Kaiserschmarrn mit Apfelmus",
@@ -1590,17 +1633,17 @@
               "unit": "100g"
             }
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "S\u00fc\u00dfspeise",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "S\u00fc\u00dfspeise"
         },
         {
           "name": "Salzkartoffeln",
@@ -1609,9 +1652,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "Reis",
@@ -1620,11 +1665,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CELERY"
+          "labels": [
+            "Label.CELERY",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Frisches Wurzelgem\u00fcse",
@@ -1633,11 +1679,12 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CELERY"
+          "labels": [
+            "Label.CELERY",
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Blattspinat",
@@ -1646,17 +1693,17 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.CELERY",
-            "Ingredient.CEREAL",
-            "Ingredient.GARLIC",
-            "Ingredient.GLUTEN",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.CELERY",
+            "Label.CEREAL",
+            "Label.GARLIC",
+            "Label.GLUTEN",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.VEGETARIAN",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Dessertbar",
@@ -1665,28 +1712,28 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ALMONDS",
-            "Ingredient.BARLEY",
-            "Ingredient.CASHEWS",
-            "Ingredient.CEREAL",
-            "Ingredient.CHICKEN_EGGS",
-            "Ingredient.COCOA_CONTAINING_GREASE",
-            "Ingredient.GELATIN",
-            "Ingredient.GLUTEN",
-            "Ingredient.HAZELNUTS",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.OAT",
-            "Ingredient.PEANUTS",
-            "Ingredient.SHELLFISH",
-            "Ingredient.SHELL_FRUITS",
-            "Ingredient.SOY",
-            "Ingredient.WALNUTS",
-            "Ingredient.WHEAT"
+          "labels": [
+            "Label.ALMONDS",
+            "Label.BARLEY",
+            "Label.CASHEWS",
+            "Label.CEREAL",
+            "Label.CHICKEN_EGGS",
+            "Label.COCOA_CONTAINING_GREASE",
+            "Label.GELATIN",
+            "Label.GLUTEN",
+            "Label.HAZELNUTS",
+            "Label.LACTOSE",
+            "Label.MEAT",
+            "Label.MILK",
+            "Label.OAT",
+            "Label.PEANUTS",
+            "Label.SHELLFISH",
+            "Label.SHELL_FRUITS",
+            "Label.SOY",
+            "Label.WALNUTS",
+            "Label.WHEAT"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.CARNIVOROUS"
+          "dish_type": "Beilagen"
         },
         {
           "name": "T\u00e4glich frische Salatbar",
@@ -1695,19 +1742,18 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.DYESTUFF",
-            "Ingredient.FISH",
-            "Ingredient.GARLIC",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK",
-            "Ingredient.MUSTARD",
-            "Ingredient.SOY",
-            "Ingredient.SWEETENERS"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.DYESTUFF",
+            "Label.FISH",
+            "Label.GARLIC",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.MUSTARD",
+            "Label.SOY",
+            "Label.SWEETENERS"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.PESCETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Schwedische Quarkspeise (mit \u00c4pfeln)",
@@ -1716,13 +1762,13 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [
-            "Ingredient.ANTIOXIDANTS",
-            "Ingredient.LACTOSE",
-            "Ingredient.MILK"
+          "labels": [
+            "Label.ANTIOXIDANTS",
+            "Label.LACTOSE",
+            "Label.MILK",
+            "Label.VEGETARIAN"
           ],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGETARIAN"
+          "dish_type": "Beilagen"
         },
         {
           "name": "Karotten-Apfel-Ingwer-Saft",
@@ -1731,9 +1777,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         },
         {
           "name": "Little Green: Erdbeer-Kiwi-Spinat-Smoothie mit Kokosmilch",
@@ -1742,9 +1790,11 @@
             "staff": null,
             "guests": null
           },
-          "ingredients": [],
-          "dish_type": "Beilagen",
-          "diet": "Diet.VEGAN"
+          "labels": [
+            "Label.VEGAN",
+            "Label.VEGETARIAN"
+          ],
+          "dish_type": "Beilagen"
         }
       ]
     }
