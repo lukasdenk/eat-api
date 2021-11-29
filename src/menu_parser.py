@@ -14,7 +14,7 @@ import requests
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
 import util
-from entities import Dish, Ingredient, Location, Menu, Price, Prices, Week
+from entities import Diet, Dish, Ingredient, Location, Menu, Price, Prices, Week
 
 
 class ParsingError(Exception):
@@ -344,10 +344,23 @@ class StudentenwerkMenuParser(MenuParser):
             else:
                 # find prices
                 prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name], name)
-            # create dish
-            dishes.append(Dish(name, prices, ingredients, dishes_dict[name][0]))
+            diet = StudentenwerkMenuParser.__parse_diet(dishes_dict[name][4], ingredients)
+            dishes.append(Dish(name, prices, ingredients, dishes_dict[name][0], diet))
 
         return dishes
+
+    @staticmethod
+    def __parse_diet(diet_str: str, ingredients: Set[Ingredient]) -> Optional[Diet]:
+        if diet_str == "0":
+            if Ingredient.FISH in ingredients:
+                return Diet.PESCETARIAN
+            else:
+                return Diet.CARNIVOROUS
+        elif diet_str == "1":
+            return Diet.VEGETARIAN
+        elif diet_str == "2":
+            return Diet.VEGAN
+        return None
 
 
 class FMIBistroMenuParser(MenuParser):

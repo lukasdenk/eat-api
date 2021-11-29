@@ -1,0 +1,1752 @@
+{
+  "number": 38,
+  "year": 2021,
+  "days": [
+    {
+      "date": "2021-09-20",
+      "dishes": [
+        {
+          "name": "Pasta mit Gorgonzola-Walnuss-Sauce",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.SHELLFISH",
+            "Ingredient.SHELL_FRUITS",
+            "Ingredient.WALNUTS",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Pasta",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Rostbratw\u00fcrstchen nach N\u00fcrnberger Art",
+          "prices": {
+            "students": {
+              "base_price": 0.5,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0.5,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0.5,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.BEEF",
+            "Ingredient.PHOSPATES",
+            "Ingredient.PORK"
+          ],
+          "dish_type": "Grill",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Veganes Tomatencurry mit Falafel",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.MUSTARD",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Wok",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Quinoapfanne mit Gem\u00fcse und Chili (scharf)",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [],
+          "dish_type": "Studitopf",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Kartoffelsuppe",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK"
+          ],
+          "dish_type": "Studitopf",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Spinatkn\u00f6del Tiroler Art mit Bergk\u00e4se",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Vegetarisch",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Vegane Minibratw\u00fcrstchen",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.GARLIC",
+            "Ingredient.SOY"
+          ],
+          "dish_type": "Vegetarisch",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Kartoffelbrei",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Couscous mit Oliven\u00f6l",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CEREAL",
+            "Ingredient.GLUTEN",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "T\u00e4glich frisches Gem\u00fcse",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.SOY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Sauerkraut",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Gem\u00fcse Bayerischer Wald",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "T\u00e4glich frische Dessertbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ALMONDS",
+            "Ingredient.BARLEY",
+            "Ingredient.CASHEWS",
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.COCOA_CONTAINING_GREASE",
+            "Ingredient.GELATIN",
+            "Ingredient.GLUTEN",
+            "Ingredient.HAZELNUTS",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.OAT",
+            "Ingredient.PEANUTS",
+            "Ingredient.SHELLFISH",
+            "Ingredient.SHELL_FRUITS",
+            "Ingredient.SOY",
+            "Ingredient.WALNUTS",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "T\u00e4glich frische Salatbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.DYESTUFF",
+            "Ingredient.FISH",
+            "Ingredient.GARLIC",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.MUSTARD",
+            "Ingredient.SOY",
+            "Ingredient.SWEETENERS"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.PESCETARIAN"
+        },
+        {
+          "name": "Quarkcreme mit Blaubeeren",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.SOY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Schokocreme mit Amarettini",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.SHELLFISH",
+            "Ingredient.SOY",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Karotten-Orangen-Apfel-Saft",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Grazy Purple: Beeren-Smoothie mit roten R\u00fcben und Haferflocken",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CEREAL",
+            "Ingredient.GLUTEN",
+            "Ingredient.OAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGETARIAN"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-21",
+      "dishes": [
+        {
+          "name": "Pasta all'arrabiata",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Pasta",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Pizza Funghi mit Champignons",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.BARLEY",
+            "Ingredient.CEREAL",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.SOY",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Pizza",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Roast beef mit Schmorzwiebelsauce",
+          "prices": {
+            "students": {
+              "base_price": 1.0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 1.0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 1.0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.ALCOHOL",
+            "Ingredient.BARLEY",
+            "Ingredient.BEEF",
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.SULFITES",
+            "Ingredient.SULPHURS",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Grill",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Indisches Linsencurry",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.GARLIC",
+            "Ingredient.MUSTARD"
+          ],
+          "dish_type": "Studitopf",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Tagessuppe",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [],
+          "dish_type": "Studitopf",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Allg\u00e4uer K\u00e4sesp\u00e4tzle mit R\u00f6stzwiebeln",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.DYESTUFF",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.PRESERVATIVES",
+            "Ingredient.SPELT",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Vegetarisch",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Gekr\u00e4utertes Pilzragout (Champignons, Egerlingen und Austernpilzen)",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.ALCOHOL",
+            "Ingredient.SOY",
+            "Ingredient.SULFITES",
+            "Ingredient.SULPHURS"
+          ],
+          "dish_type": "Vegetarisch",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Countrykartoffeln",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CEREAL",
+            "Ingredient.GLUTEN",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Salzkartoffeln",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "T\u00e4glich frisches Gem\u00fcse",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.SOY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Gr\u00fcne Bohnen",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Ged\u00fcnstetes Zucchini-Stangensellerie-Paprika-Gem\u00fcse",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CELERY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "T\u00e4glich frische Dessertbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ALMONDS",
+            "Ingredient.BARLEY",
+            "Ingredient.CASHEWS",
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.COCOA_CONTAINING_GREASE",
+            "Ingredient.GELATIN",
+            "Ingredient.GLUTEN",
+            "Ingredient.HAZELNUTS",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.OAT",
+            "Ingredient.PEANUTS",
+            "Ingredient.SHELLFISH",
+            "Ingredient.SHELL_FRUITS",
+            "Ingredient.SOY",
+            "Ingredient.WALNUTS",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "T\u00e4glich frische Salatbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.DYESTUFF",
+            "Ingredient.FISH",
+            "Ingredient.GARLIC",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.MUSTARD",
+            "Ingredient.SOY",
+            "Ingredient.SWEETENERS"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.PESCETARIAN"
+        },
+        {
+          "name": "Bayerisch Creme mit Himbeermark",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.GELATIN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Pfirsich-Mango-Orangen-Saft",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Little Green: Erdbeer-Kiwi-Spinat-Smoothie mit Kokosmilch",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-22",
+      "dishes": [
+        {
+          "name": "Gnocchi mit Schafsk\u00e4se und frischem Basilikum",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Pasta",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Gelbes Gem\u00fcsecurry aus Blumenkohl und Broccoli",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.GARLIC"
+          ],
+          "dish_type": "Wok",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Mediterraner Gem\u00fcseeintopf",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.GARLIC"
+          ],
+          "dish_type": "Studitopf",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Tagessuppe",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [],
+          "dish_type": "Studitopf",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Fr\u00fchlingsrolle mit s\u00fc\u00dfsaurer Sauce",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Vegetarisch",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Bierbratl mit Biersauce",
+          "prices": {
+            "students": {
+              "base_price": 1.0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 1.0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 1.0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.ALCOHOL",
+            "Ingredient.BARLEY",
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.PORK",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Fleisch",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Reis",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CELERY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Kleiner Kartoffelkn\u00f6del",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.PRESERVATIVES",
+            "Ingredient.SULFITES",
+            "Ingredient.SULPHURS"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "T\u00e4glich frisches Gem\u00fcse",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.SOY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Bayerisch Kraut",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ALCOHOL",
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.SULFITES",
+            "Ingredient.SULPHURS"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Gebratener K\u00fcrbis",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "T\u00e4glich frische Dessertbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ALMONDS",
+            "Ingredient.BARLEY",
+            "Ingredient.CASHEWS",
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.COCOA_CONTAINING_GREASE",
+            "Ingredient.GELATIN",
+            "Ingredient.GLUTEN",
+            "Ingredient.HAZELNUTS",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.OAT",
+            "Ingredient.PEANUTS",
+            "Ingredient.SHELLFISH",
+            "Ingredient.SHELL_FRUITS",
+            "Ingredient.SOY",
+            "Ingredient.WALNUTS",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "T\u00e4glich frische Salatbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.DYESTUFF",
+            "Ingredient.FISH",
+            "Ingredient.GARLIC",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.MUSTARD",
+            "Ingredient.SOY",
+            "Ingredient.SWEETENERS"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.PESCETARIAN"
+        },
+        {
+          "name": "Vegane Schokohirse in Sojacreme mit Kirsch-Banane",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.SOY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Green Mango: Smoothie mit Mango, Feldsalat, Basilikum und Banane",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Erdbeer-Banane-Orangen-Saft",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-23",
+      "dishes": [
+        {
+          "name": "Bio-Pasta mit Bio-Tomaten-Frischk\u00e4se-Sauce",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Pasta",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Pizza Quattro Stagioni mit (Vorder-)Schinken, Paprika, Champignons und Oliven",
+          "prices": {
+            "students": {
+              "base_price": 1.0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 1.0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 1.0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.BARLEY",
+            "Ingredient.CEREAL",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.PHOSPATES",
+            "Ingredient.PORK",
+            "Ingredient.PRESERVATIVES",
+            "Ingredient.SOY",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Pizza",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Currywurst mit Honig-Ingwer-Ketchup",
+          "prices": {
+            "students": {
+              "base_price": 0.5,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0.5,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0.5,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.BEEF",
+            "Ingredient.MUSTARD",
+            "Ingredient.PHOSPATES",
+            "Ingredient.PORK"
+          ],
+          "dish_type": "Grill",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Couscous mit mediterranem Gem\u00fcse",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Studitopf",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Tagessuppe",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [],
+          "dish_type": "Studitopf",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Halbes Hendl",
+          "prices": {
+            "students": {
+              "base_price": 1.0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 1.0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 1.0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [],
+          "dish_type": "Fleisch",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Schupfnudeln mit Zimtzucker und Apfelmus",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.GLUTEN",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "S\u00fc\u00dfspeise",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Kartoffelsalat",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.DYESTUFF",
+            "Ingredient.MUSTARD",
+            "Ingredient.SULFITES",
+            "Ingredient.SULPHURS"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Pommes frites",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Erbsen, natur",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CELERY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Rahmmangold",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "T\u00e4glich frische Dessertbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ALMONDS",
+            "Ingredient.BARLEY",
+            "Ingredient.CASHEWS",
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.COCOA_CONTAINING_GREASE",
+            "Ingredient.GELATIN",
+            "Ingredient.GLUTEN",
+            "Ingredient.HAZELNUTS",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.OAT",
+            "Ingredient.PEANUTS",
+            "Ingredient.SHELLFISH",
+            "Ingredient.SHELL_FRUITS",
+            "Ingredient.SOY",
+            "Ingredient.WALNUTS",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "T\u00e4glich frische Salatbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.DYESTUFF",
+            "Ingredient.FISH",
+            "Ingredient.GARLIC",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.MUSTARD",
+            "Ingredient.SOY",
+            "Ingredient.SWEETENERS"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.PESCETARIAN"
+        },
+        {
+          "name": "Kokos-Panna-Cotta mit Himbeersauce",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.GELATIN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Ingwer-Shot: Smoothie aus Ananas, Ingwer, Kurkuma",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Ananas-Apfel-Minze-Saft",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        }
+      ]
+    },
+    {
+      "date": "2021-09-24",
+      "dishes": [
+        {
+          "name": "Tortellini mit Ricotta-Spinat-F\u00fcllung in Kr\u00e4utersauce",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.SOY",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Pasta",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Tofugeschnetzeltes China-Town",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.GARLIC",
+            "Ingredient.PRESERVATIVES",
+            "Ingredient.SOY"
+          ],
+          "dish_type": "Wok",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Bauerneintopf mit Bauernbrot",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.CEREAL",
+            "Ingredient.GLUTEN",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Studitopf",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Tagessuppe",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.33,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.55,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 0.66,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [],
+          "dish_type": "Studitopf",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "Schollenfilet (MSC) paniert mit Remouladensauce",
+          "prices": {
+            "students": {
+              "base_price": 1.5,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 1.5,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 1.5,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.DYESTUFF",
+            "Ingredient.FISH",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.MUSTARD",
+            "Ingredient.SWEETENERS",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Fisch",
+          "diet": "Diet.PESCETARIAN"
+        },
+        {
+          "name": "Kaiserschmarrn mit Apfelmus",
+          "prices": {
+            "students": {
+              "base_price": 0,
+              "price_per_unit": 0.75,
+              "unit": "100g"
+            },
+            "staff": {
+              "base_price": 0,
+              "price_per_unit": 0.9,
+              "unit": "100g"
+            },
+            "guests": {
+              "base_price": 0,
+              "price_per_unit": 1.05,
+              "unit": "100g"
+            }
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "S\u00fc\u00dfspeise",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Salzkartoffeln",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Reis",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CELERY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Frisches Wurzelgem\u00fcse",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CELERY"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Blattspinat",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.CELERY",
+            "Ingredient.CEREAL",
+            "Ingredient.GARLIC",
+            "Ingredient.GLUTEN",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "T\u00e4glich frische Dessertbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ALMONDS",
+            "Ingredient.BARLEY",
+            "Ingredient.CASHEWS",
+            "Ingredient.CEREAL",
+            "Ingredient.CHICKEN_EGGS",
+            "Ingredient.COCOA_CONTAINING_GREASE",
+            "Ingredient.GELATIN",
+            "Ingredient.GLUTEN",
+            "Ingredient.HAZELNUTS",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.OAT",
+            "Ingredient.PEANUTS",
+            "Ingredient.SHELLFISH",
+            "Ingredient.SHELL_FRUITS",
+            "Ingredient.SOY",
+            "Ingredient.WALNUTS",
+            "Ingredient.WHEAT"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.CARNIVOROUS"
+        },
+        {
+          "name": "T\u00e4glich frische Salatbar",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.DYESTUFF",
+            "Ingredient.FISH",
+            "Ingredient.GARLIC",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK",
+            "Ingredient.MUSTARD",
+            "Ingredient.SOY",
+            "Ingredient.SWEETENERS"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.PESCETARIAN"
+        },
+        {
+          "name": "Schwedische Quarkspeise (mit \u00c4pfeln)",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [
+            "Ingredient.ANTIOXIDANTS",
+            "Ingredient.LACTOSE",
+            "Ingredient.MILK"
+          ],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGETARIAN"
+        },
+        {
+          "name": "Karotten-Apfel-Ingwer-Saft",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        },
+        {
+          "name": "Little Green: Erdbeer-Kiwi-Spinat-Smoothie mit Kokosmilch",
+          "prices": {
+            "students": null,
+            "staff": null,
+            "guests": null
+          },
+          "ingredients": [],
+          "dish_type": "Beilagen",
+          "diet": "Diet.VEGAN"
+        }
+      ]
+    }
+  ]
+}

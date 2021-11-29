@@ -21,7 +21,8 @@
                 "Ingredient.LACTOSE",
                 "Ingredient.MILK"
               ],
-              "dish_type": "Suppe"
+              "dish_type": "Suppe",
+              "diet": "None"
             },
             {
               "name": "Gekochtes Ochsenfleisch mit Meerrettich",
@@ -38,10 +39,11 @@
                 "Ingredient.SULFITES",
                 "Ingredient.SULPHURS"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
-              "name": "Kürbisauflauf",
+              "name": "K\u00fcrbisauflauf",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -55,10 +57,11 @@
                 "Ingredient.MILK",
                 "Ingredient.PRESERVATIVES"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
-              "name": "Asiatische Gemüse-Puten-Pfanne mit Reisnudeln",
+              "name": "Asiatische Gem\u00fcse-Puten-Pfanne mit Reisnudeln",
               "prices": {
                 "students": {
                   "base_price": 3.8,
@@ -84,7 +87,8 @@
                 "Ingredient.SHELL_FRUITS",
                 "Ingredient.SOY"
               ],
-              "dish_type": "Extraessen"
+              "dish_type": "Extraessen",
+              "diet": "None"
             }
           ]
         },
@@ -103,10 +107,11 @@
                 "Ingredient.LACTOSE",
                 "Ingredient.MILK"
               ],
-              "dish_type": "Suppe"
+              "dish_type": "Suppe",
+              "diet": "None"
             },
             {
-              "name": "Oldenburger Grünkohl mit Mettenden",
+              "name": "Oldenburger Gr\u00fcnkohl mit Mettenden",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -123,7 +128,8 @@
                 "Ingredient.PORK",
                 "Ingredient.PRESERVATIVES"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
               "name": "Kaschmir Kohlrabi und Brokkoli",
@@ -136,10 +142,11 @@
                 "Ingredient.LACTOSE",
                 "Ingredient.MILK"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
-              "name": "Conchiglioni Nudeln mit mit mediterranem Gemüse",
+              "name": "Conchiglioni Nudeln mit mit mediterranem Gem\u00fcse",
               "prices": {
                 "students": {
                   "base_price": 3.15,
@@ -165,7 +172,8 @@
                 "Ingredient.MILK",
                 "Ingredient.PRESERVATIVES"
               ],
-              "dish_type": "Extraessen"
+              "dish_type": "Extraessen",
+              "diet": "None"
             }
           ]
         },
@@ -173,17 +181,18 @@
           "date": "2018-10-31",
           "dishes": [
             {
-              "name": "Französische Zwiebelsuppe",
+              "name": "Franz\u00f6sische Zwiebelsuppe",
               "prices": {
                 "students": null,
                 "staff": null,
                 "guests": null
               },
               "ingredients": [],
-              "dish_type": "Suppe"
+              "dish_type": "Suppe",
+              "diet": "None"
             },
             {
-              "name": "Germknödel mit Vanillesoße",
+              "name": "Germkn\u00f6del mit Vanilleso\u00dfe",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -197,7 +206,8 @@
                 "Ingredient.MILK",
                 "Ingredient.SWEETENERS"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
               "name": "Herzhaftes Kartoffelgratin",
@@ -215,10 +225,11 @@
                 "Ingredient.MILK",
                 "Ingredient.PRESERVATIVES"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
-              "name": "Holzfällersteak mit Bratkartoffeln und Weißkrautsalat",
+              "name": "Holzf\u00e4llersteak mit Bratkartoffeln und Wei\u00dfkrautsalat",
               "prices": {
                 "students": {
                   "base_price": 3.7,
@@ -242,7 +253,8 @@
                 "Ingredient.SULFITES",
                 "Ingredient.SULPHURS"
               ],
-              "dish_type": "Extraessen"
+              "dish_type": "Extraessen",
+              "diet": "None"
             }
           ]
         },
@@ -250,7 +262,7 @@
           "date": "2018-11-01",
           "dishes": [
             {
-              "name": "Süßkartoffelcremesuppe",
+              "name": "S\u00fc\u00dfkartoffelcremesuppe",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -261,10 +273,11 @@
                 "Ingredient.LACTOSE",
                 "Ingredient.MILK"
               ],
-              "dish_type": "Suppe"
+              "dish_type": "Suppe",
+              "diet": "None"
             },
             {
-              "name": "Hähnchenbrust gegrillt",
+              "name": "H\u00e4hnchenbrust gegrillt",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -273,10 +286,11 @@
               "ingredients": [
                 "Ingredient.POULTRY"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
-              "name": "In Sesamöl gebratenes Wokgemüse",
+              "name": "In Sesam\u00f6l gebratenes Wokgem\u00fcse",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -289,7 +303,8 @@
                 "Ingredient.SHELL_FRUITS",
                 "Ingredient.SOY"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             }
           ]
         },
@@ -308,10 +323,11 @@
                 "Ingredient.LACTOSE",
                 "Ingredient.MILK"
               ],
-              "dish_type": "Suppe"
+              "dish_type": "Suppe",
+              "diet": "None"
             },
             {
-              "name": "Forelle \"Müllerin Art \"",
+              "name": "Forelle \"M\u00fcllerin Art \"",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -321,10 +337,11 @@
                 "Ingredient.FISH",
                 "Ingredient.GLUTEN"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
-              "name": "Quarkklößchen",
+              "name": "Quarkkl\u00f6\u00dfchen",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -340,10 +357,11 @@
                 "Ingredient.SULFITES",
                 "Ingredient.SULPHURS"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
-              "name": "Chili con Cous Cous mit Kürbis-Apfel-Salat",
+              "name": "Chili con Cous Cous mit K\u00fcrbis-Apfel-Salat",
               "prices": {
                 "students": {
                   "base_price": 2.15,
@@ -368,7 +386,8 @@
                 "Ingredient.SULPHURS",
                 "Ingredient.SWEETENERS"
               ],
-              "dish_type": "Extraessen"
+              "dish_type": "Extraessen",
+              "diet": "None"
             }
           ]
         },
@@ -376,7 +395,7 @@
           "date": "2018-11-03",
           "dishes": [
             {
-              "name": "Bratspätzlesuppe",
+              "name": "Bratsp\u00e4tzlesuppe",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -389,10 +408,11 @@
                 "Ingredient.GLUTEN",
                 "Ingredient.PORK"
               ],
-              "dish_type": "Suppe"
+              "dish_type": "Suppe",
+              "diet": "None"
             },
             {
-              "name": "Geflügelpflanzerl",
+              "name": "Gefl\u00fcgelpflanzerl",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -406,7 +426,8 @@
                 "Ingredient.POULTRY",
                 "Ingredient.SOY"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
               "name": "Krauttopf mit einer Vollkornsemmel",
@@ -418,7 +439,8 @@
               "ingredients": [
                 "Ingredient.GLUTEN"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             }
           ]
         },
@@ -426,7 +448,7 @@
           "date": "2018-11-04",
           "dishes": [
             {
-              "name": "Käsecremesuppe",
+              "name": "K\u00e4secremesuppe",
               "prices": {
                 "students": null,
                 "staff": null,
@@ -439,7 +461,8 @@
                 "Ingredient.MILK",
                 "Ingredient.PRESERVATIVES"
               ],
-              "dish_type": "Suppe"
+              "dish_type": "Suppe",
+              "diet": "None"
             },
             {
               "name": "Geschmortes Kalbfleisch",
@@ -451,7 +474,8 @@
               "ingredients": [
                 "Ingredient.VEAL"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             },
             {
               "name": "Vegetarische Moussaka",
@@ -467,7 +491,8 @@
                 "Ingredient.MILK",
                 "Ingredient.PRESERVATIVES"
               ],
-              "dish_type": "Hauptkomponente"
+              "dish_type": "Hauptkomponente",
+              "diet": "None"
             }
           ]
         }

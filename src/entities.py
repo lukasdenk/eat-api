@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import datetime
-from enum import Enum
+from enum import Enum, auto
 from typing import Any, Dict, List, Optional, Set
 
 import menu_parser
@@ -68,7 +68,7 @@ class Prices:
         else:
             self.guests = guests
 
-    def setBasePrice(self, base_price: float) -> None:
+    def set_base_price(self, base_price: float) -> None:
         if self.students is not None:
             self.students.base_price = base_price
         if self.staff is not None:
@@ -184,6 +184,13 @@ class Location(Enum):
     @staticmethod
     def get_location_by_str(location_str: str) -> Location:
         return Location[location_str.upper().replace("-", "_")]
+
+
+class Diet(Enum):
+    VEGAN = auto()
+    VEGETARIAN = auto()
+    CARNIVOROUS = auto()
+    PESCETARIAN = auto()
 
 
 class Ingredient(Enum):
@@ -425,12 +432,21 @@ class Dish:
     prices: Prices
     ingredients: Set[Ingredient]
     dish_type: str
+    diet: Optional[Diet]
 
-    def __init__(self, name: str, prices: Prices, ingredients: Set[Ingredient], dish_type: str):
+    def __init__(
+        self,
+        name: str,
+        prices: Prices,
+        ingredients: Set[Ingredient],
+        dish_type: str,
+        diet: Optional[Diet] = None,
+    ):
         self.name = name
         self.prices = prices
         self.ingredients = ingredients
         self.dish_type = dish_type
+        self.diet = diet
 
     def __repr__(self):
         return f"{self.name} {str(sorted(self.ingredients))}: {str(self.prices)}"
@@ -451,6 +467,7 @@ class Dish:
             "prices": self.prices.to_json_obj(),
             "ingredients": sorted(map(str, self.ingredients)),
             "dish_type": self.dish_type,
+            "diet": str(self.diet),
         }
 
     def __hash__(self) -> int:
