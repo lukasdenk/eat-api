@@ -1,755 +1,755 @@
 {
-    "version": "2.1",
-    "canteen_id": "fmi-bistro",
-    "weeks": [
+  "version": "2.1",
+  "canteen_id": "fmi-bistro",
+  "weeks": [
+    {
+      "number": 44,
+      "year": 2021,
+      "days": [
         {
-            "number": 44,
-            "year": 2021,
-            "days": [
-                {
-                    "date": "2021-11-02",
-                    "dishes": [
-                        {
-                            "name": "Tagessuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 2.0,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.SOUP"
-                        },
-                        {
-                            "name": "Gefülltes Schweineschnitzel mit Lauch, Pilzen und Speck paniert dazu Kartoffel-Endiviensalat und Zitroneneck",
-                            "prices": {
-                                "students": {
-                                    "base_price": 5.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 5.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 6.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.MEAT"
-                        },
-                        {
-                            "name": "Marokkanisches Kürbis- Curry mit CousCous und Koriander",
-                            "prices": {
-                                "students": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 5.3999999999999995,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.VEGETARIAN"
-                        }
-                    ]
+          "date": "2021-11-02",
+          "dishes": [
+            {
+              "name": "Tagessuppe",
+              "prices": {
+                "students": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
                 },
-                {
-                    "date": "2021-11-03",
-                    "dishes": [
-                        {
-                            "name": "Tagessuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 2.0,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.SOUP"
-                        },
-                        {
-                            "name": "Curryfleisch vom Hähnchen mit geschmorrten Äpfeln an Duftreis",
-                            "prices": {
-                                "students": {
-                                    "base_price": 5.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 5.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 6.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.MEAT"
-                        },
-                        {
-                            "name": "Thaicurry-Gemüse aus frischem Wok-Gemüse und Mienudeln",
-                            "prices": {
-                                "students": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 5.3999999999999995,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.VEGETARIAN"
-                        }
-                    ]
+                "staff": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
                 },
-                {
-                    "date": "2021-11-04",
-                    "dishes": [
-                        {
-                            "name": "Tagessuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 2.0,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.SOUP"
-                        },
-                        {
-                            "name": "Zwiebelrostbraten vom Rind mit Röstzwiebeln, grüne Bohnen und Kroketten",
-                            "prices": {
-                                "students": {
-                                    "base_price": 6.3,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 6.3,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 7.1,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Gluten",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.MEAT"
-                        },
-                        {
-                            "name": "Fasolia Weiße Bohnen mit Gemüse und Reisrand",
-                            "prices": {
-                                "students": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 5.3999999999999995,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.VEGETARIAN"
-                        }
-                    ]
-                },
-                {
-                    "date": "2021-11-05",
-                    "dishes": [
-                        {
-                            "name": "Tagessuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 2.0,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.SOUP"
-                        },
-                        {
-                            "name": "Winzer Topf mit Rind, Kartoffeln, Weißkohl, Karotten und Erbsen",
-                            "prices": {
-                                "students": {
-                                    "base_price": 5.7,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 5.7,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 6.5,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Gluten",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.MEAT"
-                        },
-                        {
-                            "name": "Dampfnudeln mit Heiße Himbeeren und Vanillesoße",
-                            "prices": {
-                                "students": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 5.3999999999999995,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten",
-                                "Milch"
-                            ],
-                            "dish_type": "DishType.VEGETARIAN"
-                        }
-                    ]
+                "guests": {
+                  "base_price": 2.0,
+                  "price_per_unit": null,
+                  "unit": null
                 }
-            ]
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.SOUP"
+            },
+            {
+              "name": "Gef\u00fclltes Schweineschnitzel mit Lauch, Pilzen und Speck paniert dazu Kartoffel-Endiviensalat und Zitroneneck",
+              "prices": {
+                "students": {
+                  "base_price": 5.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 5.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 6.6,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.MEAT"
+            },
+            {
+              "name": "Marokkanisches K\u00fcrbis- Curry mit CousCous und Koriander",
+              "prices": {
+                "students": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 5.3999999999999995,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.VEGETARIAN"
+            }
+          ]
         },
         {
-            "number": 45,
-            "year": 2021,
-            "days": [
-                {
-                    "date": "2021-11-08",
-                    "dishes": [
-                        {
-                            "name": "Tagessuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 2.0,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.SOUP"
-                        },
-                        {
-                            "name": "Fleischbällchen in Tomatensoße mit Mozzarella überbacken dazu Reis",
-                            "prices": {
-                                "students": {
-                                    "base_price": 5.7,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 5.7,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 6.5,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.MEAT"
-                        },
-                        {
-                            "name": "Dreierlei Gnocchi (Süßkartoffel, Spinat, Kartoffel) in Gemüsesugo mit Parmesan",
-                            "prices": {
-                                "students": {
-                                    "base_price": 4.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 4.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 5.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.VEGETARIAN"
-                        }
-                    ]
+          "date": "2021-11-03",
+          "dishes": [
+            {
+              "name": "Tagessuppe",
+              "prices": {
+                "students": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
                 },
-                {
-                    "date": "2021-11-09",
-                    "dishes": [
-                        {
-                            "name": "Tagessuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 2.0,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.SOUP"
-                        },
-                        {
-                            "name": "Burgunder Braten vom Rind mit Rosenkohl und Tomaten- Knöpfle",
-                            "prices": {
-                                "students": {
-                                    "base_price": 6.3,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 6.3,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 7.1,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.MEAT"
-                        },
-                        {
-                            "name": "Frühlingsrolle Veggy auf Asia- Gemüsereis dazu Sweet-Chilli-Soße",
-                            "prices": {
-                                "students": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 5.3999999999999995,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.VEGETARIAN"
-                        }
-                    ]
+                "staff": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
                 },
-                {
-                    "date": "2021-11-10",
-                    "dishes": [
-                        {
-                            "name": "Tagessuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 2.0,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.SOUP"
-                        },
-                        {
-                            "name": "Pizza Regina mit Tomate, Mozzarella, Voderschinken und frischen Champignons",
-                            "prices": {
-                                "students": {
-                                    "base_price": 5.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 5.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 6.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Gluten"
-                            ],
-                            "dish_type": "DishType.MEAT"
-                        },
-                        {
-                            "name": "Spinat-Käsespätzle mit Schmorrzwiebeln",
-                            "prices": {
-                                "students": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 5.3999999999999995,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.VEGETARIAN"
-                        }
-                    ]
-                },
-                {
-                    "date": "2021-11-11",
-                    "dishes": [
-                        {
-                            "name": "Tagessuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 2.0,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.SOUP"
-                        },
-                        {
-                            "name": "Kalbsgulasch \"Morengo\" mit Bandnudeln und Broccoli",
-                            "prices": {
-                                "students": {
-                                    "base_price": 6.3,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 6.3,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 7.1,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Gluten",
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.MEAT"
-                        },
-                        {
-                            "name": "Kartoffel- Waldpilzgratin",
-                            "prices": {
-                                "students": {
-                                    "base_price": 4.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 4.8,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 5.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.VEGETARIAN"
-                        }
-                    ]
-                },
-                {
-                    "date": "2021-11-12",
-                    "dishes": [
-                        {
-                            "name": "Tagessuppe",
-                            "prices": {
-                                "students": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 1.2,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 2.0,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Milch",
-                                "Sellerie"
-                            ],
-                            "dish_type": "DishType.SOUP"
-                        },
-                        {
-                            "name": "Kabeljau in Kartoffel-Panade mit Dampfkartoffeln und Joghurtdip",
-                            "prices": {
-                                "students": {
-                                    "base_price": 5.7,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 5.7,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 6.5,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten"
-                            ],
-                            "dish_type": "DishType.MEAT"
-                        },
-                        {
-                            "name": "Apfelstrudel mit Vanillesoße",
-                            "prices": {
-                                "students": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "staff": {
-                                    "base_price": 4.6,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                },
-                                "guests": {
-                                    "base_price": 5.3999999999999995,
-                                    "price_per_unit": null,
-                                    "unit": null
-                                }
-                            },
-                            "ingredients": [
-                                "Eier",
-                                "Gluten"
-                            ],
-                            "dish_type": "DishType.VEGETARIAN"
-                        }
-                    ]
+                "guests": {
+                  "base_price": 2.0,
+                  "price_per_unit": null,
+                  "unit": null
                 }
-            ]
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.SOUP"
+            },
+            {
+              "name": "Curryfleisch vom H\u00e4hnchen mit geschmorrten \u00c4pfeln an Duftreis",
+              "prices": {
+                "students": {
+                  "base_price": 5.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 5.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 6.6,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.MEAT"
+            },
+            {
+              "name": "Thaicurry-Gem\u00fcse aus frischem Wok-Gem\u00fcse und Mienudeln",
+              "prices": {
+                "students": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 5.3999999999999995,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.VEGETARIAN"
+            }
+          ]
+        },
+        {
+          "date": "2021-11-04",
+          "dishes": [
+            {
+              "name": "Tagessuppe",
+              "prices": {
+                "students": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 2.0,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.SOUP"
+            },
+            {
+              "name": "Zwiebelrostbraten vom Rind mit R\u00f6stzwiebeln, gr\u00fcne Bohnen und Kroketten",
+              "prices": {
+                "students": {
+                  "base_price": 6.3,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 6.3,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 7.1,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.GLUTEN"
+              ],
+              "dish_type": "DishType.MEAT"
+            },
+            {
+              "name": "Fasolia Wei\u00dfe Bohnen mit Gem\u00fcse und Reisrand",
+              "prices": {
+                "students": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 5.3999999999999995,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.VEGETARIAN"
+            }
+          ]
+        },
+        {
+          "date": "2021-11-05",
+          "dishes": [
+            {
+              "name": "Tagessuppe",
+              "prices": {
+                "students": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 2.0,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.SOUP"
+            },
+            {
+              "name": "Winzer Topf mit Rind, Kartoffeln, Wei\u00dfkohl, Karotten und Erbsen",
+              "prices": {
+                "students": {
+                  "base_price": 5.7,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 5.7,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 6.5,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.GLUTEN"
+              ],
+              "dish_type": "DishType.MEAT"
+            },
+            {
+              "name": "Dampfnudeln mit Hei\u00dfe Himbeeren und Vanilleso\u00dfe",
+              "prices": {
+                "students": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 5.3999999999999995,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.VEGETARIAN"
+            }
+          ]
         }
-    ]
+      ]
+    },
+    {
+      "number": 45,
+      "year": 2021,
+      "days": [
+        {
+          "date": "2021-11-08",
+          "dishes": [
+            {
+              "name": "Tagessuppe",
+              "prices": {
+                "students": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 2.0,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.SOUP"
+            },
+            {
+              "name": "Fleischb\u00e4llchen in Tomatenso\u00dfe mit Mozzarella \u00fcberbacken dazu Reis",
+              "prices": {
+                "students": {
+                  "base_price": 5.7,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 5.7,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 6.5,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.MEAT"
+            },
+            {
+              "name": "Dreierlei Gnocchi (S\u00fc\u00dfkartoffel, Spinat, Kartoffel) in Gem\u00fcsesugo mit Parmesan",
+              "prices": {
+                "students": {
+                  "base_price": 4.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 4.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 5.6,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.VEGETARIAN"
+            }
+          ]
+        },
+        {
+          "date": "2021-11-09",
+          "dishes": [
+            {
+              "name": "Tagessuppe",
+              "prices": {
+                "students": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 2.0,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.SOUP"
+            },
+            {
+              "name": "Burgunder Braten vom Rind mit Rosenkohl und Tomaten- Kn\u00f6pfle",
+              "prices": {
+                "students": {
+                  "base_price": 6.3,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 6.3,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 7.1,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.MEAT"
+            },
+            {
+              "name": "Fr\u00fchlingsrolle Veggy auf Asia- Gem\u00fcsereis dazu Sweet-Chilli-So\u00dfe",
+              "prices": {
+                "students": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 5.3999999999999995,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN"
+              ],
+              "dish_type": "DishType.VEGETARIAN"
+            }
+          ]
+        },
+        {
+          "date": "2021-11-10",
+          "dishes": [
+            {
+              "name": "Tagessuppe",
+              "prices": {
+                "students": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 2.0,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.SOUP"
+            },
+            {
+              "name": "Pizza Regina mit Tomate, Mozzarella, Voderschinken und frischen Champignons",
+              "prices": {
+                "students": {
+                  "base_price": 5.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 5.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 6.6,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.GLUTEN"
+              ],
+              "dish_type": "DishType.MEAT"
+            },
+            {
+              "name": "Spinat-K\u00e4sesp\u00e4tzle mit Schmorrzwiebeln",
+              "prices": {
+                "students": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 5.3999999999999995,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.VEGETARIAN"
+            }
+          ]
+        },
+        {
+          "date": "2021-11-11",
+          "dishes": [
+            {
+              "name": "Tagessuppe",
+              "prices": {
+                "students": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 2.0,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.SOUP"
+            },
+            {
+              "name": "Kalbsgulasch \"Morengo\" mit Bandnudeln und Broccoli",
+              "prices": {
+                "students": {
+                  "base_price": 6.3,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 6.3,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 7.1,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.GLUTEN",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.MEAT"
+            },
+            {
+              "name": "Kartoffel- Waldpilzgratin",
+              "prices": {
+                "students": {
+                  "base_price": 4.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 4.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 5.6,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.VEGETARIAN"
+            }
+          ]
+        },
+        {
+          "date": "2021-11-12",
+          "dishes": [
+            {
+              "name": "Tagessuppe",
+              "prices": {
+                "students": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 1.2,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 2.0,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "DishType.SOUP"
+            },
+            {
+              "name": "Kabeljau in Kartoffel-Panade mit Dampfkartoffeln und Joghurtdip",
+              "prices": {
+                "students": {
+                  "base_price": 5.7,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 5.7,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 6.5,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN"
+              ],
+              "dish_type": "DishType.MEAT"
+            },
+            {
+              "name": "Apfelstrudel mit Vanilleso\u00dfe",
+              "prices": {
+                "students": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 4.6,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 5.3999999999999995,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN"
+              ],
+              "dish_type": "DishType.VEGETARIAN"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

@@ -2,7 +2,7 @@
 
 import argparse
 
-from menu_parser import StudentenwerkMenuParser
+from entities import Location
 
 
 def parse_cli_args():
@@ -15,9 +15,9 @@ def parse_cli_args():
         "--parse",
         metavar="LOCATION",
         dest="location",
-        choices=(
-            ["fmi-bistro", "ipp-bistro", "mediziner-mensa"] + list(StudentenwerkMenuParser.location_id_mapping.keys())
-        ),
+        # pylint:disable=protected-access
+        choices=(Location._member_names_ + [key.directory_format for key in Location]),
+        # pylint:enable=protected-access
         help="the location you want to eat at",
     )
     parseGroup: argparse._MutuallyExclusiveGroup = group.add_argument_group("parse")  # pylint: disable=protected-access

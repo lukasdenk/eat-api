@@ -11,12 +11,12 @@ def load_html(path: str) -> html.Element:
     return html_element  # noqa: R504
 
 
-def load_json(path: str) -> object:  # type: ignore
+def load_ordered_json(path: str) -> object:  # type: ignore
     with open(path, encoding="utf-8") as f:
         json_obj = json.load(f)
     # suppress flake8 warning about "unnecessary variable assignment before return statement".
     # reason: file closing could otherwise have side-effects
-    return json_obj  # noqa: R504
+    return order_json_objects(json_obj)  # noqa: R504
 
 
 def load_txt(path: str) -> str:

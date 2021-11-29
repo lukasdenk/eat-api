@@ -16,7 +16,11 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Gl", "Mi"],
+                            "ingredients": [
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
@@ -26,7 +30,11 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Mi", "S"],
+                            "ingredients": [
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK",
+                                "Ingredient.PORK"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -36,7 +44,10 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Gl", "Sl"],
+                            "ingredients": [
+                                "Ingredient.CELERY",
+                                "Ingredient.GLUTEN"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -58,7 +69,14 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["Gl", "Mi", "So", "Sw"],
+                            "ingredients": [
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK",
+                                "Ingredient.SOY",
+                                "Ingredient.SULFITES",
+                                "Ingredient.SULPHURS"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -73,7 +91,11 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Gl", "Mi"],
+                            "ingredients": [
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
@@ -83,7 +105,10 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["R", "Sl"],
+                            "ingredients": [
+                                "Ingredient.BEEF",
+                                "Ingredient.CELERY"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -93,7 +118,10 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Gl", "Sl"],
+                            "ingredients": [
+                                "Ingredient.CELERY",
+                                "Ingredient.GLUTEN"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -115,7 +143,12 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["Fi", "Gl", "Mi"],
+                            "ingredients": [
+                                "Ingredient.FISH",
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -130,7 +163,10 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["R", "Sl"],
+                            "ingredients": [
+                                "Ingredient.BEEF",
+                                "Ingredient.CELERY"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
@@ -140,7 +176,10 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Gl", "S"],
+                            "ingredients": [
+                                "Ingredient.GLUTEN",
+                                "Ingredient.PORK"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -150,7 +189,13 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Mi", "Sl"],
+                            "ingredients": [
+                                "Ingredient.CELERY",
+                                "Ingredient.CHICKEN_EGGS",
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -172,7 +217,18 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["2", "3", "8", "G", "Gl", "Mi", "Sf", "Sw"],
+                            "ingredients": [
+                                "Ingredient.ANTIOXIDANTS",
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK",
+                                "Ingredient.MUSTARD",
+                                "Ingredient.PHOSPATES",
+                                "Ingredient.POULTRY",
+                                "Ingredient.PRESERVATIVES",
+                                "Ingredient.SULFITES",
+                                "Ingredient.SULPHURS"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -187,7 +243,11 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Gl", "Mi"],
+                            "ingredients": [
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
@@ -197,7 +257,15 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Mi", "R", "Sf", "So"],
+                            "ingredients": [
+                                "Ingredient.BEEF",
+                                "Ingredient.CHICKEN_EGGS",
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK",
+                                "Ingredient.MUSTARD",
+                                "Ingredient.SOY"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -207,7 +275,12 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Mi"],
+                            "ingredients": [
+                                "Ingredient.CHICKEN_EGGS",
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -229,7 +302,14 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["1", "2", "Mi", "Sw"],
+                            "ingredients": [
+                                "Ingredient.DYESTUFF",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK",
+                                "Ingredient.PRESERVATIVES",
+                                "Ingredient.SULFITES",
+                                "Ingredient.SULPHURS"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -244,7 +324,11 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Sl"],
+                            "ingredients": [
+                                "Ingredient.CELERY",
+                                "Ingredient.CHICKEN_EGGS",
+                                "Ingredient.GLUTEN"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
@@ -254,7 +338,9 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["G"],
+                            "ingredients": [
+                                "Ingredient.POULTRY"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -264,7 +350,15 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["3", "9", "Ei", "Gl", "Mi", "So"],
+                            "ingredients": [
+                                "Ingredient.ANTIOXIDANTS",
+                                "Ingredient.CHICKEN_EGGS",
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK",
+                                "Ingredient.SOY",
+                                "Ingredient.SWEETENERS"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -286,7 +380,15 @@
                                     "unit": null
                                 }
                             },
-                            "ingredients": ["3", "4", "Ei", "G", "Gl", "S", "Sf"],
+                            "ingredients": [
+                                "Ingredient.ANTIOXIDANTS",
+                                "Ingredient.CHICKEN_EGGS",
+                                "Ingredient.FLAVOR_ENHANCER",
+                                "Ingredient.GLUTEN",
+                                "Ingredient.MUSTARD",
+                                "Ingredient.PORK",
+                                "Ingredient.POULTRY"
+                            ],
                             "dish_type": "Extraessen"
                         }
                     ]
@@ -301,7 +403,11 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Gl", "Mi"],
+                            "ingredients": [
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
@@ -311,7 +417,10 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["R", "Sl"],
+                            "ingredients": [
+                                "Ingredient.BEEF",
+                                "Ingredient.CELERY"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -321,7 +430,12 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Gl", "Mi", "Sl"],
+                            "ingredients": [
+                                "Ingredient.CELERY",
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK"
+                            ],
                             "dish_type": "Hauptkomponente"
                         }
                     ]
@@ -336,7 +450,10 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Ei", "Gl"],
+                            "ingredients": [
+                                "Ingredient.CHICKEN_EGGS",
+                                "Ingredient.GLUTEN"
+                            ],
                             "dish_type": "Suppe"
                         },
                         {
@@ -346,7 +463,12 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["G", "Gl", "Mi"],
+                            "ingredients": [
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK",
+                                "Ingredient.POULTRY"
+                            ],
                             "dish_type": "Hauptkomponente"
                         },
                         {
@@ -356,7 +478,12 @@
                                 "staff": null,
                                 "guests": null
                             },
-                            "ingredients": ["Ei", "Gl", "Mi"],
+                            "ingredients": [
+                                "Ingredient.CHICKEN_EGGS",
+                                "Ingredient.GLUTEN",
+                                "Ingredient.LACTOSE",
+                                "Ingredient.MILK"
+                            ],
                             "dish_type": "Hauptkomponente"
                         }
                     ]

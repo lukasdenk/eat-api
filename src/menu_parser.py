@@ -2,20 +2,19 @@
 
 import datetime
 import re
-import sys
 import tempfile
 import unicodedata
 from abc import ABC, abstractmethod
 from enum import Enum, auto
 from subprocess import call  # nosec: all the inputs is fully defined
-from typing import Dict, List, Optional, Pattern, Tuple
+from typing import Dict, List, Optional, Pattern, Set, Tuple
 from warnings import warn
 
 import requests
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
 import util
-from entities import Canteen, Dish, IngredientsOld, Menu, Price, Prices, Week
+from entities import Dish, Ingredient, Location, Menu, Price, Prices, Week
 
 
 class ParsingError(Exception):
@@ -27,6 +26,7 @@ class MenuParser(ABC):
     Abstract menu parser class.
     """
 
+    locations: Set[Location] = NotImplemented
     # we use datetime %u, so we go from 1-7
     weekday_positions: Dict[str, int] = {"mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6, "sun": 7}
 
@@ -41,32 +41,31 @@ class MenuParser(ABC):
         return datetime.datetime.strptime(date_str % (year, week_number, day), date_format).date()
 
     @abstractmethod
-    def parse(self, location: str) -> Optional[Dict[datetime.date, Menu]]:
+    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
         pass
 
 
 class StudentenwerkMenuParser(MenuParser):
-    # Canteens:
-    canteens = {
-        Canteen.MENSA_ARCISSTR,
-        Canteen.MENSA_GARCHING,
-        Canteen.MENSA_LEOPOLDSTR,
-        Canteen.MENSA_LOTHSTR,
-        Canteen.MENSA_MARTINSRIED,
-        Canteen.MENSA_PASING,
-        Canteen.MENSA_WEIHENSTEPHAN,
-        Canteen.STUBISTRO_ARCISSTR,
-        Canteen.STUBISTRO_GOETHESTR,
-        Canteen.STUBISTRO_GROSSHADERN,
-        Canteen.STUBISTRO_ROSENHEIM,
-        Canteen.STUBISTRO_SCHELLINGSTR,
-        Canteen.STUCAFE_ADALBERTSTR,
-        Canteen.STUCAFE_AKADEMIE_WEIHENSTEPHAN,
-        Canteen.STUCAFE_BOLTZMANNSTR,
-        Canteen.STUCAFE_GARCHING,
-        Canteen.STUCAFE_KARLSTR,
-        Canteen.STUCAFE_PASING,
-        Canteen.MEDIZINER_MENSA,
+    # Locations:
+    locations = {
+        Location.MENSA_ARCISSTR,
+        Location.MENSA_GARCHING,
+        Location.MENSA_LEOPOLDSTR,
+        Location.MENSA_LOTHSTR,
+        Location.MENSA_MARTINSRIED,
+        Location.MENSA_PASING,
+        Location.MENSA_WEIHENSTEPHAN,
+        Location.STUBISTRO_ARCISSTR,
+        Location.STUBISTRO_GOETHESTR,
+        Location.STUBISTRO_GROSSHADERN,
+        Location.STUBISTRO_ROSENHEIM,
+        Location.STUBISTRO_SCHELLINGSTR,
+        Location.STUCAFE_ADALBERTSTR,
+        Location.STUCAFE_AKADEMIE_WEIHENSTEPHAN,
+        Location.STUCAFE_BOLTZMANNSTR,
+        Location.STUCAFE_GARCHING,
+        Location.STUCAFE_KARLSTR,
+        Location.STUCAFE_PASING,
     }
 
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
@@ -184,11 +183,11 @@ class StudentenwerkMenuParser(MenuParser):
         return Prices(students, staff, guests)
 
     @staticmethod
-    def __get_price(location: str, dish: Tuple[str, str, str, str, str], dish_name: str) -> Prices:
-        if location == "mensa-leopoldstr":
+    def __get_price(location: Location, dish: Tuple[str, str, str, str, str], dish_name: str) -> Prices:
+        if location == Location.MENSA_LEOPOLDSTR:
             return StudentenwerkMenuParser.prices_mensa_leopoldstr.get(dish[0], Prices())
 
-        if location in ["mensa-weihenstephan", "mensa-lothstr"]:
+        if location in [Location.MENSA_WEIHENSTEPHAN, Location.MENSA_LOTHSTR]:
             return StudentenwerkMenuParser.prices_mensa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
         else:
             if dish[0] == "Studitopf":  # Soup or Stew
@@ -208,62 +207,15 @@ class StudentenwerkMenuParser(MenuParser):
                 base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN_SOUP_STEW
             return StudentenwerkMenuParser.__get_self_service_prices(base_price_type, price_per_unit_type)
 
-    # Some of the locations do not use the general Studentenwerk system and do not have a location id.
-    # It differs how they publish their menus — probably everyone needs an own parser.
-    # For documentation they are in the list but commented out.
-    location_id_mapping: Dict[str, int] = {
-        "mensa-arcisstr": 421,
-        "mensa-arcisstrasse": 421,  # backwards compatibility
-        "mensa-garching": 422,
-        "mensa-leopoldstr": 411,
-        "mensa-lothstr": 431,
-        "mensa-martinsried": 412,
-        "mensa-pasing": 432,
-        "mensa-weihenstephan": 423,
-        "stubistro-arcisstr": 450,
-        # "stubistro-benediktbeuern": ,
-        "stubistro-goethestr": 418,
-        "stubistro-großhadern": 414,
-        "stubistro-rosenheim": 441,
-        "stubistro-schellingstr": 416,
-        # "stubistro-schillerstr": ,
-        "stucafe-adalbertstr": 512,
-        "stucafe-akademie-weihenstephan": 526,
-        # "stucafe-audimax" ,
-        "stucafe-boltzmannstr": 527,
-        "stucafe-garching": 524,
-        # "stucafe-heßstr": ,
-        "stucafe-karlstr": 532,
-        # "stucafe-leopoldstr": ,
-        # "stucafe-olympiapark": ,
-        "stucafe-pasing": 534,
-        # "stucafe-weihenstephan": ,
-    }
-
     base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{location_id}_-de.html"
     base_url_with_date: str = (
         "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{date}_{location_id}_-de.html"
     )
 
-    def parse(self, location: str) -> Optional[Dict[datetime.date, Menu]]:
-        """`location` can be either the numeric location id or its string alias as defined in `location_id_mapping`"""
-        try:
-            location_id: int = int(location)
-        except ValueError:
-            try:
-                location_id = self.location_id_mapping[location]
-            except KeyError:
-                print(
-                    f"Location {location} not found. Choose one of {', '.join(self.location_id_mapping.keys())}.",
-                    sys.stderr,
-                )
-                return None
-        return self.get_menus(location, location_id)
-
-    def get_menus(self, location: str, location_id: int) -> Dict[datetime.date, Menu]:
+    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
         menus = {}
-        for date in self.__get_available_dates(location_id):
-            page_link: str = self.base_url_with_date.format(location_id=location_id, date=date.strftime("%Y-%m-%d"))
+        for date in self.__get_available_dates(location):
+            page_link: str = self.base_url_with_date.format(location_id=location.url_id, date=date.strftime("%Y-%m-%d"))
             page: requests.Response = requests.get(page_link)
             if page.ok:
                 try:
@@ -277,7 +229,7 @@ class StudentenwerkMenuParser(MenuParser):
                 # pylint: enable=broad-except
         return menus
 
-    def get_menu(self, page: html.Element, location: str, date: datetime.date) -> Optional[Menu]:
+    def get_menu(self, page: html.Element, location: Location, date: datetime.date) -> Optional[Menu]:
         # get current menu
         current_menu: html.Element = self.__get_daily_menus_as_html(page)[0]
         # get html representation of menu
@@ -289,8 +241,8 @@ class StudentenwerkMenuParser(MenuParser):
         menu: Menu = Menu(date, dishes)
         return menu
 
-    def __get_available_dates(self, location_id: int) -> List[datetime.date]:
-        page_link: str = self.base_url.format(location_id=location_id)
+    def __get_available_dates(self, location: Location) -> List[datetime.date]:
+        page_link: str = self.base_url.format(location_id=location.url_id)
         page: requests.Response = requests.get(page_link)
         tree: html.Element = html.fromstring(page.content)
         return self.get_available_dates_for_html(tree)
@@ -320,7 +272,7 @@ class StudentenwerkMenuParser(MenuParser):
         return daily_menus
 
     @staticmethod
-    def __parse_dishes(menu_html, location):
+    def __parse_dishes(menu_html: html.Element, location: Location) -> List[Dish]:
         # obtain the names of all dishes in a passed menu
         dish_names: List[str] = [
             dish.rstrip() for dish in menu_html.xpath("//p[@class='js-schedule-dish-description']/text()")
@@ -377,22 +329,23 @@ class StudentenwerkMenuParser(MenuParser):
                 dish_marker_meetless,
             )
 
-        # create Dish objects with correct prices; if price is not available, -1 is used instead
+        # create Dish objects with correct prices; if prices is not available, -1 is used instead
         dishes: List[Dish] = []
         for name in dishes_dict:
-            dish_ingredients: IngredientsOld = IngredientsOld(location)
             # parse ingredients
-            dish_ingredients.parse_ingredients(dishes_dict[name][1])
-            dish_ingredients.parse_ingredients(dishes_dict[name][2])
-            dish_ingredients.parse_ingredients(dishes_dict[name][3])
-            # do not price side dishes
+            ingredients = set()
+            ingredients |= Ingredient.parse(location, dishes_dict[name][1])
+            ingredients |= Ingredient.parse(location, dishes_dict[name][2])
+            ingredients |= Ingredient.parse(location, dishes_dict[name][3])
+            # do not prices side dishes
+            prices: Prices
             if dishes_dict[name][0] == "Beilagen":
-                price: Prices = Prices()
+                prices = Prices()
             else:
-                # find price
-                price: Prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name], name)
+                # find prices
+                prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name], name)
             # create dish
-            dishes.append(Dish(name, price, dish_ingredients.ingredient_set, dishes_dict[name][0]))
+            dishes.append(Dish(name, prices, ingredients, dishes_dict[name][0]))
 
         return dishes
 
@@ -400,14 +353,14 @@ class StudentenwerkMenuParser(MenuParser):
 class FMIBistroMenuParser(MenuParser):
     url = "https://www.wilhelm-gastronomie.de/.cm4all/mediadb/Speiseplan_Garching_KW{calendar_week}_{year}.pdf"
 
-    canteens = {Canteen.FMI_BISTRO}
+    locations = {Location.FMI_BISTRO}
 
     class DishType(Enum):
         SOUP = auto()
         MEAT = auto()
         VEGETARIAN = auto()
 
-    def parse(self, location: str) -> Optional[Dict[datetime.date, Menu]]:
+    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
         today = datetime.date.today()
         years_and_calendar_weeks: List[Tuple[int, int, int]] = [
             today.isocalendar(),
@@ -463,13 +416,11 @@ class FMIBistroMenuParser(MenuParser):
                         break
                     ingredient_str, price = ingredient_str_and_price_optional
                     dish_prices = Prices(Price(price), Price(price), Price(price + 0.8))
-                    ingredients = IngredientsOld("fmi-bistro")
-                    ingredients.parse_ingredients(ingredient_str)
-                    dish_ingredients = ingredients.ingredient_set
+                    ingredients = Ingredient.parse(Location.FMI_BISTRO, ingredient_str)
 
                     # merge title lines and replace subsequent whitespaces with single " "
                     dish_title = re.sub(r"\s+", " ", " ".join(dish_title_parts))
-                    dishes += [Dish(dish_title, dish_prices, dish_ingredients, str(dish_type))]
+                    dishes += [Dish(dish_title, dish_prices, ingredients, str(dish_type))]
 
                     dish_title_parts = []
             if dishes:
@@ -546,6 +497,8 @@ class FMIBistroMenuParser(MenuParser):
 
 
 class IPPBistroMenuParser(MenuParser):
+    locations = {Location.IPP_BISTRO}
+
     url = "http://konradhof-catering.com/ipp/"
     split_days_regex: Pattern[str] = re.compile(
         r"(Tagessuppe siehe Aushang|Aushang|Aschermittwoch|Feiertag|Geschlossen)",
@@ -561,7 +514,7 @@ class IPPBistroMenuParser(MenuParser):
     """Detects the ‚Überraschungsmenü‘ keyword if it has not a price. The price is expected between the groups."""
     dish_regex: Pattern[str] = re.compile(r"(.+?)(\d+,\d+|\?€)\s€[^)]")
 
-    def parse(self, location: str) -> Optional[Dict[datetime.date, Menu]]:
+    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
         page = requests.get(self.url)
         # get html tree
         tree = html.fromstring(page.content)
@@ -717,9 +670,12 @@ class IPPBistroMenuParser(MenuParser):
 
             # create ingredients
             # all dishes have the same ingridients
-            ingredients = IngredientsOld("ipp-bistro")
-            ingredients.parse_ingredients("Mi,Gl,Sf,Sl,Ei,Se,4")
+            # TODO: switch to new Ingredient and Location enum
+            # ingredients = IngredientsOld("ipp-bistro")
+            # ingredients.parse_ingredients("Mi,Gl,Sf,Sl,Ei,Se,4")
             # create list of Dish objects
+            # see TODO above
+            ingredients = None
             dishes = []
             for i, (dish_name, price) in enumerate(dish_names_price):
                 price_str: str = price.replace(",", ".").strip()
@@ -747,19 +703,20 @@ class IPPBistroMenuParser(MenuParser):
 
 
 class MedizinerMensaMenuParser(MenuParser):
+    locations = {Location.MEDIZINER_MENSA}
+
     startPageurl = "https://www.sv.tum.de/med/startseite/"
     baseUrl = "https://www.sv.tum.de"
     ingredients_regex = r"(\s([A-C]|[E-H]|[K-P]|[R-Z]|[1-9])(,([A-C]|[E-H]|[K-P]|[R-Z]|[1-9]))*(\s|\Z))"
     price_regex = r"(\d+(,(\d){2})\s?€)"
 
     def parse_dish(self, dish_str):
-        # ingredients
-        dish_ingredients = IngredientsOld("mediziner-mensa")
+        ingredients = set()
         matches = re.findall(self.ingredients_regex, dish_str)
         while len(matches) > 0:
             for match in matches:
                 if len(match) > 0:
-                    dish_ingredients.parse_ingredients(match[0])
+                    ingredients |= Ingredient.parse(Location.MEDIZINER_MENSA, match[0])
             dish_str = re.sub(self.ingredients_regex, " ", dish_str)
             matches = re.findall(self.ingredients_regex, dish_str)
         dish_str = re.sub(r"\s+", " ", dish_str).strip()
@@ -772,9 +729,9 @@ class MedizinerMensaMenuParser(MenuParser):
                 dish_price = Prices(Price(float(match[0].replace("€", "").replace(",", ".").strip())))
         dish_str = re.sub(self.price_regex, "", dish_str)
 
-        return Dish(dish_str, dish_price, dish_ingredients.ingredient_set, "Tagesgericht")
+        return Dish(dish_str, dish_price, ingredients, "Tagesgericht")
 
-    def parse(self, location: str) -> Optional[Dict[datetime.date, Menu]]:
+    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
         page = requests.get(self.startPageurl)
         # get html tree
         tree = html.fromstring(page.content)

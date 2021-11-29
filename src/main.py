@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 import json
 import os
+from typing import Dict, Optional
 
-import cli
 import menu_parser
 import util
-from entities import Week
+from entities import Location, Week
 from openmensa import openmensa
+from src import cli
 
 JSON_VERSION: str = "2.1"
 """
@@ -15,20 +16,21 @@ Should be incremented as soon as the JSON output format changed in any way, shap
 """
 
 
-def get_menu_parsing_strategy(location):
+def get_menu_parsing_strategy(location: Location) -> Optional[menu_parser.MenuParser]:
+    parsers = {
+        menu_parser.StudentenwerkMenuParser,
+        menu_parser.FMIBistroMenuParser,
+        menu_parser.IPPBistroMenuParser,
+        menu_parser.MedizinerMensaMenuParser,
+    }
     # set parsing strategy based on location
-    if isinstance(location, int) or location in menu_parser.StudentenwerkMenuParser.location_id_mapping:
-        return menu_parser.StudentenwerkMenuParser()
-    elif location == "fmi-bistro":
-        return menu_parser.FMIBistroMenuParser()
-    elif location == "ipp-bistro":
-        return menu_parser.IPPBistroMenuParser()
-    elif location == "mediziner-mensa":
-        return menu_parser.MedizinerMensaMenuParser()
+    for parser in parsers:
+        if location in parser.locations:
+            return parser()
     return None
 
 
-def jsonify(weeks, directory, location, combine_dishes):
+def jsonify(weeks: Dict[int, Week], directory: str, location: Location, combine_dishes: bool) -> None:
     # iterate through weeks
     for calendar_week in weeks:
         # get Week object
@@ -64,7 +66,7 @@ def jsonify(weeks, directory, location, combine_dishes):
     weeks_json_all = json.dumps(
         {
             "version": JSON_VERSION,
-            "canteen_id": location,
+            "canteen_id": location.directory_format,
             "weeks": [weeks[calendar_week].to_json_obj() for calendar_week in weeks],
         },
         ensure_ascii=False,
@@ -86,12 +88,9 @@ def main():
             print(json.dumps(json.load(canteens)))
         return
 
-    # get location from args
-    location = args.location
+    location = Location.get_location_by_str(args.location)
     # get required parser
     parser = get_menu_parsing_strategy(location)
-    if parser is None:
-        print(f"The selected location '{location}' does not exist.")
 
     # parse menu
     menus = parser.parse(location)

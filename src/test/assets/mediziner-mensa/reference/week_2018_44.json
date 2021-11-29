@@ -1,0 +1,477 @@
+{
+  "version": "2.1",
+  "canteen_id": "mediziner-mensa",
+  "weeks": [
+    {
+      "number": 44,
+      "year": 2018,
+      "days": [
+        {
+          "date": "2018-10-29",
+          "dishes": [
+            {
+              "name": "Spinatcremesuppe",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "Suppe"
+            },
+            {
+              "name": "Gekochtes Ochsenfleisch mit Meerrettich",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.ANTIOXIDANTS",
+                "Ingredient.BEEF",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.SULFITES",
+                "Ingredient.SULPHURS"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Kürbisauflauf",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.DYESTUFF",
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.PRESERVATIVES"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Asiatische Gemüse-Puten-Pfanne mit Reisnudeln",
+              "prices": {
+                "students": {
+                  "base_price": 3.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 3.8,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 3.8,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.FISH",
+                "Ingredient.GLUTEN",
+                "Ingredient.POULTRY",
+                "Ingredient.SESAME",
+                "Ingredient.SHELL_FRUITS",
+                "Ingredient.SOY"
+              ],
+              "dish_type": "Extraessen"
+            }
+          ]
+        },
+        {
+          "date": "2018-10-30",
+          "dishes": [
+            {
+              "name": "Selleriecremesuppe",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "Suppe"
+            },
+            {
+              "name": "Oldenburger Grünkohl mit Mettenden",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.ANTIOXIDANTS",
+                "Ingredient.FLAVOR_ENHANCER",
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.MUSTARD",
+                "Ingredient.PHOSPATES",
+                "Ingredient.PORK",
+                "Ingredient.PRESERVATIVES"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Kaschmir Kohlrabi und Brokkoli",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Conchiglioni Nudeln mit mit mediterranem Gemüse",
+              "prices": {
+                "students": {
+                  "base_price": 3.15,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 3.15,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 3.15,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.DYESTUFF",
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.PRESERVATIVES"
+              ],
+              "dish_type": "Extraessen"
+            }
+          ]
+        },
+        {
+          "date": "2018-10-31",
+          "dishes": [
+            {
+              "name": "Französische Zwiebelsuppe",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [],
+              "dish_type": "Suppe"
+            },
+            {
+              "name": "Germknödel mit Vanillesoße",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.DYESTUFF",
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.SWEETENERS"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Herzhaftes Kartoffelgratin",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.CELERY",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.DYESTUFF",
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.PRESERVATIVES"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Holzfällersteak mit Bratkartoffeln und Weißkrautsalat",
+              "prices": {
+                "students": {
+                  "base_price": 3.7,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 3.7,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 3.7,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.GLUTEN",
+                "Ingredient.PORK",
+                "Ingredient.SULFITES",
+                "Ingredient.SULPHURS"
+              ],
+              "dish_type": "Extraessen"
+            }
+          ]
+        },
+        {
+          "date": "2018-11-01",
+          "dishes": [
+            {
+              "name": "Süßkartoffelcremesuppe",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "Suppe"
+            },
+            {
+              "name": "Hähnchenbrust gegrillt",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.POULTRY"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "In Sesamöl gebratenes Wokgemüse",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.GLUTEN",
+                "Ingredient.PRESERVATIVES",
+                "Ingredient.SESAME",
+                "Ingredient.SHELL_FRUITS",
+                "Ingredient.SOY"
+              ],
+              "dish_type": "Hauptkomponente"
+            }
+          ]
+        },
+        {
+          "date": "2018-11-02",
+          "dishes": [
+            {
+              "name": "Brokkolicremesuppe",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK"
+              ],
+              "dish_type": "Suppe"
+            },
+            {
+              "name": "Forelle \"Müllerin Art \"",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.FISH",
+                "Ingredient.GLUTEN"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Quarkklößchen",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.ANTIOXIDANTS",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.PRESERVATIVES",
+                "Ingredient.SULFITES",
+                "Ingredient.SULPHURS"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Chili con Cous Cous mit Kürbis-Apfel-Salat",
+              "prices": {
+                "students": {
+                  "base_price": 2.15,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "staff": {
+                  "base_price": 2.15,
+                  "price_per_unit": null,
+                  "unit": null
+                },
+                "guests": {
+                  "base_price": 2.15,
+                  "price_per_unit": null,
+                  "unit": null
+                }
+              },
+              "ingredients": [
+                "Ingredient.ANTIOXIDANTS",
+                "Ingredient.GLUTEN",
+                "Ingredient.SULFITES",
+                "Ingredient.SULPHURS",
+                "Ingredient.SWEETENERS"
+              ],
+              "dish_type": "Extraessen"
+            }
+          ]
+        },
+        {
+          "date": "2018-11-03",
+          "dishes": [
+            {
+              "name": "Bratspätzlesuppe",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.BEEF",
+                "Ingredient.CELERY",
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.PORK"
+              ],
+              "dish_type": "Suppe"
+            },
+            {
+              "name": "Geflügelpflanzerl",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.CHICKEN_EGGS",
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.POULTRY",
+                "Ingredient.SOY"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Krauttopf mit einer Vollkornsemmel",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.GLUTEN"
+              ],
+              "dish_type": "Hauptkomponente"
+            }
+          ]
+        },
+        {
+          "date": "2018-11-04",
+          "dishes": [
+            {
+              "name": "Käsecremesuppe",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.DYESTUFF",
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.PRESERVATIVES"
+              ],
+              "dish_type": "Suppe"
+            },
+            {
+              "name": "Geschmortes Kalbfleisch",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.VEAL"
+              ],
+              "dish_type": "Hauptkomponente"
+            },
+            {
+              "name": "Vegetarische Moussaka",
+              "prices": {
+                "students": null,
+                "staff": null,
+                "guests": null
+              },
+              "ingredients": [
+                "Ingredient.DYESTUFF",
+                "Ingredient.GLUTEN",
+                "Ingredient.LACTOSE",
+                "Ingredient.MILK",
+                "Ingredient.PRESERVATIVES"
+              ],
+              "dish_type": "Hauptkomponente"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

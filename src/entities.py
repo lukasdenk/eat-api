@@ -3,11 +3,10 @@
 from __future__ import annotations
 
 import datetime
-import re
 from enum import Enum
-from typing import Any, Dict, List, Optional, Sequence, Set
+from typing import Any, Dict, List, Optional, Set
 
-from src.menu_parser import FMIBistroMenuParser, StudentenwerkMenuParser
+import menu_parser
 
 
 class Price:
@@ -97,59 +96,61 @@ class Prices:
         return hash(self.students) ^ hash(self.staff) ^ hash(self.guests)
 
 
-class Location:
+class Site:
     def __init__(self, address: str, latitude: float, longitude: float):
         self.address = address
         self.latitude = latitude
         self.longitude = longitude
 
 
-class Canteen(Enum):
-    def __init__(self, location: Location, name: str, url_id: int):
-        self.location = location
-        self.name = name
+class Location(Enum):
+    # Some of the locations do not use the general Studentenwerk system and therefore do not have a url_id.
+    def __init__(self, long_name: str, site: Site, url_id: int):
+        self.long_name = long_name
+        self.site = site
         self.url_id = url_id
+        self.directory_format = self.name.lower().replace("_", "-")
 
-    MENSA_ARCISSTR = "Mensa Arcisstraße", Location("Arcisstraße 17, München", 48.14742, 11.56722), 421
-    MENSA_GARCHING = "Mensa Garching", Location("Boltzmannstraße 19, Garching", 48.268132, 11.672263), 422
-    MENSA_LEOPOLDSTR = "Mensa Leopoldstraße", Location("Leopoldstraße 13a, München", 48.156311, 11.582446), 411
-    MENSA_LOTHSTR = "Mensa Lothstraße", Location("Lothstraße 13d, München", 48.153989, 11.552424), 431
-    MENSA_MARTINSRIED = "Mensa Martinsried", Location("Großhaderner Straße 44, Plategg", 48.109824, 11.460006), 412
-    MENSA_PASING = "Mensa Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 432
+    MENSA_ARCISSTR = "Mensa Arcisstraße", Site("Arcisstraße 17, München", 48.14742, 11.56722), 421
+    MENSA_GARCHING = "Mensa Garching", Site("Boltzmannstraße 19, Garching", 48.268132, 11.672263), 422
+    MENSA_LEOPOLDSTR = "Mensa Leopoldstraße", Site("Leopoldstraße 13a, München", 48.156311, 11.582446), 411
+    MENSA_LOTHSTR = "Mensa Lothstraße", Site("Lothstraße 13d, München", 48.153989, 11.552424), 431
+    MENSA_MARTINSRIED = "Mensa Martinsried", Site("Großhaderner Straße 44, Plategg", 48.109824, 11.460006), 412
+    MENSA_PASING = "Mensa Pasing", Site("Am Stadtpark 20, München", 48.141568, 11.451119), 432
     MENSA_WEIHENSTEPHAN = (
         "Mensa Weihenstephan",
-        Location(
+        Site(
             "Maximus-von-Imhof-Forum 5, Freising",
             48.39959,
             11.723147,
         ),
         423,
     )
-    STUBISTRO_ARCISSTR = "StuBistro Arcisstraße", Location("Leopoldstraße 13A, München", 48.156486, 11.581872), 450
-    STUBISTRO_GOETHESTR = "StuBistro Goethestraße", Location("Goethestraße 70, München", 48.131396, 11.558264), 418
+    STUBISTRO_ARCISSTR = "StuBistro Arcisstraße", Site("Leopoldstraße 13A, München", 48.156486, 11.581872), 450
+    STUBISTRO_GOETHESTR = "StuBistro Goethestraße", Site("Goethestraße 70, München", 48.131396, 11.558264), 418
     STUBISTRO_GROSSHADERN = (
         "StuBistro Großhadern",
-        Location(
+        Site(
             "Butenandtstraße 13, Gebäude F, München",
             48.11363,
             11.46503,
         ),
         414,
     )
-    STUBISTRO_ROSENHEIM = "StuBistro Rosenheim", Location("Hochschulstraße 1, Rosenheim", 47.867344, 12.107559), 441
+    STUBISTRO_ROSENHEIM = "StuBistro Rosenheim", Site("Hochschulstraße 1, Rosenheim", 47.867344, 12.107559), 441
     STUBISTRO_SCHELLINGSTR = (
         "StuBistro Schellingstraße",
-        Location(
+        Site(
             "Schellingstraße 3, München",
             48.148893,
             11.579027,
         ),
         416,
     )
-    STUCAFE_ADALBERTSTR = "StuCafé Adalbertstraße", Location("Adalbertstraße 5, München", 48.151507, 11.581033), 512
+    STUCAFE_ADALBERTSTR = "StuCafé Adalbertstraße", Site("Adalbertstraße 5, München", 48.151507, 11.581033), 512
     STUCAFE_AKADEMIE_WEIHENSTEPHAN = (
         "StuCafé Akademie Weihenstephan",
-        Location(
+        Site(
             "Alte Akademie 1, Freising",
             48.3948,
             11.729338,
@@ -158,7 +159,7 @@ class Canteen(Enum):
     )
     STUCAFE_BOLTZMANNSTR = (
         "StuCafé Boltzmannstraße",
-        Location(
+        Site(
             "Boltzmannstraße 15, Garching",
             48.265768,
             11.667593,
@@ -167,18 +168,22 @@ class Canteen(Enum):
     )
     STUCAFE_GARCHING = (
         "StuCafé in der Mensa Garching",
-        Location(
+        Site(
             "Boltzmannstraße 19, Garching",
             48.268268,
             11.6717,
         ),
         524,
     )
-    STUCAFE_KARLSTR = "StuCafé Karlstraße", Location("Karlstraße 6, München", 48.142759, 11.568432), 532
-    STUCAFE_PASING = "StuCafé Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 534
-    IPP_BISTRO = "IPP Bistro Garching", Location("Boltzmannstraße 2, 85748 Garching", 48.262371, 11.672702), None
-    FMI_BISTRO = "FMI Bistro Garching", Location("Boltzmannstraße 3, 85748 Garching", 48.262408, 11.668028), None
-    MEDIZINER_MENSA = "Mediziner Mensa", Location("Ismaninger Straße 22, 81675 München", 48.136569, 11.5993226), None
+    STUCAFE_KARLSTR = "StuCafé Karlstraße", Site("Karlstraße 6, München", 48.142759, 11.568432), 532
+    STUCAFE_PASING = "StuCafé Pasing", Site("Am Stadtpark 20, München", 48.141568, 11.451119), 534
+    IPP_BISTRO = "IPP Bistro Garching", Site("Boltzmannstraße 2, 85748 Garching", 48.262371, 11.672702), None
+    FMI_BISTRO = "FMI Bistro Garching", Site("Boltzmannstraße 3, 85748 Garching", 48.262408, 11.668028), None
+    MEDIZINER_MENSA = "Mediziner Mensa", Site("Ismaninger Straße 22, 81675 München", 48.136569, 11.5993226), None
+
+    @staticmethod
+    def get_location_by_str(location_str: str) -> Location:
+        return Location[location_str.upper().replace("-", "_")]
 
 
 class Ingredient(Enum):
@@ -186,45 +191,43 @@ class Ingredient(Enum):
     # This is the reason for the many "# type: ignore" comments.
     _ignore_ = ["studentenwerk_lookup", "fmi_lookup", "mediziner_lookup"]
 
-    def __init__(self, german_text: str, studentenwerk_lookup_key: Optional[str], fmi_lookup_key: Optional[str]):
+    def __init__(self, german_text: str):
         self.german_text = german_text
-        self.studentenwerk_lookup_key = studentenwerk_lookup_key
-        self.fmi_lookup_key = fmi_lookup_key
 
-    GLUTEN = "Gluten", None, "a"
-    WHEAT = "Weizen", None, "aW"
-    RYE = "Roggen", None, "aR"
-    BARLEY = "Gerste", None, "aG"
-    OAT = "Hafer", None, "aH"
-    SPELT = "Dinkel", None, "aD"
-    HYBRIDS = "Hybridstämme", None, "aH"
-    SHELLFISH = "Krebstiere", None, "b"
-    CHICKEN_EGGS = "Eier", None, "c"
-    FISH = "Fisch", None, "d"
-    PEANUTS = "Erdnüsse", None, "e"
-    SOY = "Soja", None, "f"
-    MILK = "Milch", None, "g"
-    LACTOSE = "Laktose", None, "u"
-    ALMONDS = "Mandeln", None, "hMn"
-    HAZELNUTS = "Haselnüsse", None, "hH"
-    WALNUTS = "Walnüsse", None, "hW"
-    CASHEWS = "Cashewnüsse", None, "hK"
-    PECAN = "Pekanüsse", None, "hPe"
-    PISTACHIOES = "Pistazien", None, "hPi"
-    MACADAMIA = "Macadamianüsse", None, "hQ"
-    CELERY = "Sellerie", None, "i"
-    MUSTARD = "Senf", None, "j"
-    SESAME = "Sesam", None, "k"
-    SULPHURS = "Schwefeldioxid", None, "l"
+    GLUTEN = "Gluten"
+    WHEAT = "Weizen"
+    RYE = "Roggen"
+    BARLEY = "Gerste"
+    OAT = "Hafer"
+    SPELT = "Dinkel"
+    HYBRIDS = "Hybridstämme"
+    SHELLFISH = "Krebstiere"
+    CHICKEN_EGGS = "Eier"
+    FISH = "Fisch"
+    PEANUTS = "Erdnüsse"
+    SOY = "Soja"
+    MILK = "Milch"
+    LACTOSE = "Laktose"
+    ALMONDS = "Mandeln"
+    HAZELNUTS = "Haselnüsse"
+    WALNUTS = "Walnüsse"
+    CASHEWS = "Cashewnüsse"
+    PECAN = "Pekanüsse"
+    PISTACHIOES = "Pistazien"
+    MACADAMIA = "Macadamianüsse"
+    CELERY = "Sellerie"
+    MUSTARD = "Senf"
+    SESAME = "Sesam"
+    SULPHURS = "Schwefeldioxid"
     SULFITES = "Sulfite"
-    LUPIN = "Lupine", None, "m"
-    MOLLUSCS = "Weichtiere", None, "n"
+    LUPIN = "Lupine"
+    MOLLUSCS = "Weichtiere"
     SHELL_FRUITS = "Schalenfrüchte"
 
-    BAVARIA = "Zertifizierte Qualität Bayern", "GQB", None
-    MSC = "Marine Stewardship Council", "MSC", None
-    DYESTUFF = "Farbstoffe", "1", None
-    PRESERVATIVES = "Preservate", "2", None
+    BAVARIA = "Zertifizierte Qualität Bayern"
+    MSC = "Marine Stewardship Council"
+    DYESTUFF = "Farbstoffe"
+    PRESERVATIVES = "Preservate"
     ANTIOXIDANTS = "Antioxidanten"
     FLAVOR_ENHANCER = "Geschmacksverstärker"
     WAXED = "Gewachst"
@@ -243,132 +246,25 @@ class Ingredient(Enum):
     POULTRY = "Geflügel"
     CEREAL = "Getreide"
 
-    # if an ingredient is a subclass of another ingredient,
-    # the superclass is added in the function lookup. E.g.: A hazelnut is also a shell fruit.
-    fmi_lookup: Dict[str, Set[Ingredient]] = {
-        "a": {GLUTEN},  # type: ignore
-        "aW": {WHEAT},  # type: ignore
-        "aR": {RYE},  # type: ignore
-        "aG": {BARLEY},  # type: ignore
-        "aH": {OAT},  # type: ignore
-        "aD": {SPELT},  # type: ignore
-        "aHy": {HYBRIDS},  # type: ignore
-        "b": {SHELLFISH},  # type: ignore
-        "c": {CHICKEN_EGGS},  # type: ignore
-        "d": {FISH},  # type: ignore
-        "e": {PEANUTS},  # type: ignore
-        "f": {SOY},  # type: ignore
-        "g": {MILK},  # type: ignore
-        "u": {LACTOSE},  # type: ignore
-        "h": {SHELL_FRUITS},  # type: ignore
-        "hMn": {ALMONDS},  # type: ignore
-        "hH": {HAZELNUTS},  # type: ignore
-        "hW": {WALNUTS},  # type: ignore
-        "hK": {CASHEWS},  # type: ignore
-        "hPe": {PECAN},  # type: ignore
-        "hPi": {PISTACHIOES},  # type: ignore
-        "hQ": {MACADAMIA},  # type: ignore
-        "i": {CELERY},  # type: ignore
-        "j": {MUSTARD},  # type: ignore
-        "k": {SESAME},  # type: ignore
-        "l": {SULFITES, SULPHURS},  # type: ignore
-        "m": {LUPIN},  # type: ignore
-        "n": {MOLLUSCS},  # type: ignore
-    }
-
-    studentenwerk_lookup: Dict[str, Set[Ingredient]] = {
-        "GQB": {BAVARIA},  # type: ignore
-        "MSC": {MSC},  # type: ignore
-        "1": {DYESTUFF},  # type: ignore
-        "2": {PRESERVATIVES},  # type: ignore
-        "3": {ANTIOXIDANTS},  # type: ignore
-        "4": {FLAVOR_ENHANCER},  # type: ignore
-        "5": {SULPHURS},  # type: ignore
-        "6": {DYESTUFF},  # type: ignore
-        "7": {WAXED},  # type: ignore
-        "8": {PHOSPATES},  # type: ignore
-        "9": {SWEETENERS},  # type: ignore
-        "10": {PHENYLALANINE},  # type: ignore
-        "11": {SWEETENERS},  # type: ignore
-        "13": {COCOA_CONTAINING_GREASE},  # type: ignore
-        "14": {GELATIN},  # type: ignore
-        "99": {ALCOHOL},  # type: ignore
-        # meatless is not an ingredient
-        "f": {},  # type: ignore
-        # vegan is not an ingredient
-        "v": {},  # type: ignore
-        "S": {PORK},  # type: ignore
-        "R": {BEEF},  # type: ignore
-        "K": {VEAL},  # type: ignore
-        "Kn": {GARLIC},  # type: ignore
-        "Ei": {CHICKEN_EGGS},  # type: ignore
-        "En": {PEANUTS},  # type: ignore
-        "Fi": {FISH},  # type: ignore
-        "Gl": {GLUTEN},  # type: ignore
-        "GlW": {WHEAT},  # type: ignore
-        "GlR": {RYE},  # type: ignore
-        "GlG": {BARLEY},  # type: ignore
-        "GlH": {OAT},  # type: ignore
-        "GlD": {SPELT},  # type: ignore
-        "Kr": {SHELLFISH},  # type: ignore
-        "Lu": {LUPIN},  # type: ignore
-        "Mi": {MILK, LACTOSE},  # type: ignore
-        "Sc": {SHELLFISH},  # type: ignore
-        "ScM": {ALMONDS},  # type: ignore
-        "ScH": {HAZELNUTS},  # type: ignore
-        "ScW": {WALNUTS},  # type: ignore
-        "ScC": {CASHEWS},  # type: ignore
-        "ScP": {PISTACHIOES},  # type: ignore
-        "Se": {SESAME},  # type: ignore
-        "Sf": {MUSTARD},  # type: ignore
-        "Sl": {CELERY},  # type: ignore
-        "So": {SOY},  # type: ignore
-        "Sw": {SULPHURS, SULFITES},  # type: ignore
-        "Wt": {MOLLUSCS},  # type: ignore
-    }
-
-    mediziner_lookup: Dict[str, Set[Ingredient]] = {  # type: ignore
-        "1": {DYESTUFF},  # type: ignore
-        "2": {PRESERVATIVES},  # type: ignore
-        "3": {ANTIOXIDANTS},  # type: ignore
-        "4": {FLAVOR_ENHANCER},  # type: ignore
-        "5": {SULPHURS},  # type: ignore
-        "6": {DYESTUFF},  # type: ignore
-        "7": {WAXED},  # type: ignore
-        "8": {PHOSPATES},  # type: ignore
-        "9": {SWEETENERS},  # type: ignore
-        "A": {ALCOHOL},  # type: ignore
-        "B": {GLUTEN},  # type: ignore
-        "C": {SHELLFISH},  # type: ignore
-        "E": {FISH},  # type: ignore
-        "F": {FISH},  # type: ignore
-        "G": {POULTRY},  # type: ignore
-        "H": {PEANUTS},  # type: ignore
-        "K": {VEAL},  # type: ignore
-        "L": {LAMB},  # type: ignore
-        "M": {SOY},  # type: ignore
-        "N": {MILK, LACTOSE},  # type: ignore
-        "O": {SHELL_FRUITS},  # type: ignore
-        "P": {CELERY},  # type: ignore
-        "R": {BEEF},  # type: ignore
-        "S": {PORK},  # type: ignore
-        "T": {MUSTARD},  # type: ignore
-        "U": {SESAME},  # type: ignore
-        "V": {SULPHURS, SULFITES},  # type: ignore
-        "W": {WILD_MEAT},  # type: ignore
-        "X": {LUPIN},  # type: ignore
-        "Y": {CHICKEN_EGGS},  # type: ignore
-        "Z": {MOLLUSCS},  # type: ignore
-    }
+    def __lt__(self, other):
+        if self.__class__ is other.__class__:
+            return self.name < other.value
+        return NotImplemented
 
     @staticmethod
-    def lookup(canteen: Canteen, lookup: str) -> Set[Ingredient]:
-        if canteen == Canteen.MEDIZINER_MENSA:
-            ingredients: Set[Ingredient] = Ingredient.mediziner_lookup.get(lookup, set())  # type: ignore
-        elif canteen in StudentenwerkMenuParser.canteens:
-            ingredients = Ingredient.studentenwerk_lookup.get(lookup, set())  # type: ignore
-        elif canteen in FMIBistroMenuParser.canteens:
-            ingredients = Ingredient.fmi_lookup.get(lookup, set())  # type: ignore
+    def lookup(location: Location, lookup: str) -> Set[Ingredient]:
+
+        ingredients: Set[Ingredient]
+        # for some weird reason the Location enum is created twice when using pytest.
+        # For this reason it does not behave like an singleton as it should
+        # (see https://docs.python.org/3/library/enum.html?highlight=enum#enum-members-aka-instances).
+        # This is why the "name" attributes are used
+        if location.name == Location.MEDIZINER_MENSA.name:
+            ingredients = mediziner_lookup.get(lookup, set())  # type: ignore
+        elif location.name in map(lambda l: l.name, menu_parser.StudentenwerkMenuParser.locations):  # type: ignore
+            ingredients = studentenwerk_lookup.get(lookup, set())  # type: ignore
+        elif location.name in map(lambda l: l.name, menu_parser.FMIBistroMenuParser.locations):  # type: ignore
+            ingredients = fmi_lookup.get(lookup, set())  # type: ignore
         else:
             ingredients = set()
 
@@ -394,193 +290,143 @@ class Ingredient(Enum):
             ingredients |= {Ingredient.CEREAL}
         return ingredients
 
+    @staticmethod
+    def parse(canteen: Location, ingredients_str: str) -> Set[Ingredient]:
+        ingredients: Set[Ingredient] = set()
+        split_values: List[str] = ingredients_str.strip().split(",")
+        for value in split_values:
+            stripped = value.strip()
+            if not stripped.isspace():
+                ingredients |= Ingredient.lookup(canteen, stripped)
+        return ingredients
 
-class IngredientsOld:
-    location: str
-    ingredient_set: Set[str]
 
-    ingredient_lookup = {
-        "GQB": "Certified Quality - Bavaria",
-        "MSC": "Marine Stewardship Council",
-        "1": "with dyestuff",
-        "2": "with preservative",
-        "3": "with antioxidant",
-        "4": "with flavor enhancers",
-        "5": "sulphured",
-        "6": "blackened (olive)",
-        "7": "waxed",
-        "8": "with phosphate",
-        "9": "with sweeteners",
-        "10": "contains a source of phenylalanine",
-        "11": "with sugar and sweeteners",
-        "13": "with cocoa-containing grease",
-        "14": "with gelatin",
-        "99": "with alcohol",
-        "f": "meatless dish",
-        "v": "vegan dish",
-        "S": "with pork",
-        "R": "with beef",
-        "K": "with veal",
-        "G": "with poultry",  # mediziner mensa
-        "W": "with wild meat",  # mediziner mensa
-        "L": "with lamb",  # mediziner mensa
-        "Kn": "with garlic",
-        "Ei": "with chicken egg",
-        "En": "with peanut",
-        "Fi": "with fish",
-        "Gl": "with gluten-containing cereals",
-        "GlW": "with wheat",
-        "GlR": "with rye",
-        "GlG": "with barley",
-        "GlH": "with oats",
-        "GlD": "with spelt",
-        "Kr": "with crustaceans",
-        "Lu": "with lupines",
-        "Mi": "with milk and lactose",
-        "Sc": "with shell fruits",
-        "ScM": "with almonds",
-        "ScH": "with hazelnuts",
-        "ScW": "with Walnuts",
-        "ScC": "with cashew nuts",
-        "ScP": "with pistachios",
-        "Se": "with sesame seeds",
-        "Sf": "with mustard",
-        "Sl": "with celery",
-        "So": "with soy",
-        "Sw": "with sulfur dioxide and sulfites",
-        "Wt": "with mollusks",
-    }
-    """A dictionary of all ingredients (from the Studentenwerk) with their description."""
+# if an ingredient is a subclass of another ingredient,
+# the superclass is added in the function lookup. E.g.: A hazelnut is also a shell fruit.
+fmi_lookup: Dict[str, Set[Ingredient]] = {
+    "a": {Ingredient.GLUTEN},  # type: ignore
+    "aW": {Ingredient.WHEAT},  # type: ignore
+    "aR": {Ingredient.RYE},  # type: ignore
+    "aG": {Ingredient.BARLEY},  # type: ignore
+    "aH": {Ingredient.OAT},  # type: ignore
+    "aD": {Ingredient.SPELT},  # type: ignore
+    "aHy": {Ingredient.HYBRIDS},  # type: ignore
+    "b": {Ingredient.SHELLFISH},  # type: ignore
+    "c": {Ingredient.CHICKEN_EGGS},  # type: ignore
+    "d": {Ingredient.FISH},  # type: ignore
+    "e": {Ingredient.PEANUTS},  # type: ignore
+    "f": {Ingredient.SOY},  # type: ignore
+    "g": {Ingredient.MILK},  # type: ignore
+    "u": {Ingredient.LACTOSE},  # type: ignore
+    "h": {Ingredient.SHELL_FRUITS},  # type: ignore
+    "hMn": {Ingredient.ALMONDS},  # type: ignore
+    "hH": {Ingredient.HAZELNUTS},  # type: ignore
+    "hW": {Ingredient.WALNUTS},  # type: ignore
+    "hK": {Ingredient.CASHEWS},  # type: ignore
+    "hPe": {Ingredient.PECAN},  # type: ignore
+    "hPi": {Ingredient.PISTACHIOES},  # type: ignore
+    "hQ": {Ingredient.MACADAMIA},  # type: ignore
+    "i": {Ingredient.CELERY},  # type: ignore
+    "j": {Ingredient.MUSTARD},  # type: ignore
+    "k": {Ingredient.SESAME},  # type: ignore
+    "l": {Ingredient.SULFITES, Ingredient.SULPHURS},  # type: ignore
+    "m": {Ingredient.LUPIN},  # type: ignore
+    "n": {Ingredient.MOLLUSCS},  # type: ignore
+}
 
-    fmi_ingredient_lookup = {
-        "a": "Gluten",
-        "aW": "Weizen",
-        "aR": "Roggen",
-        "aG": "Gerste",
-        "aH": "Hafer",
-        "aD": "Dinkel",
-        "aHy": "Hybridstämme",
-        "b": "Krebstiere",
-        "c": "Eier",
-        "d": "Fisch",
-        "e": "Erdnüsse",
-        "f": "Soja",
-        "g": "Milch",
-        "u": "Laktose",
-        "h": "Schalenfrüchte",
-        "hMn": "Mandeln",
-        "hH": "Haselnüsse",
-        "hW": "Walnüsse",
-        "hK": "Cashewnüsse",
-        "hPe": "Pekanüsse",
-        "hPi": "Pistazien",
-        "hQ": "Macadamianüsse",
-        "i": "Sellerie",
-        "j": "Senf",
-        "k": "Sesam",
-        "l": "Schwefeldioxid und Sulphite",
-        "m": "Lupine",
-        "n": "Weichtiere",
-    }
+studentenwerk_lookup: Dict[str, Set[Ingredient]] = {
+    "GQB": {Ingredient.BAVARIA},  # type: ignore
+    "MSC": {Ingredient.MSC},  # type: ignore
+    "1": {Ingredient.DYESTUFF},  # type: ignore
+    "2": {Ingredient.PRESERVATIVES},  # type: ignore
+    "3": {Ingredient.ANTIOXIDANTS},  # type: ignore
+    "4": {Ingredient.FLAVOR_ENHANCER},  # type: ignore
+    "5": {Ingredient.SULPHURS},  # type: ignore
+    "6": {Ingredient.DYESTUFF},  # type: ignore
+    "7": {Ingredient.WAXED},  # type: ignore
+    "8": {Ingredient.PHOSPATES},  # type: ignore
+    "9": {Ingredient.SWEETENERS},  # type: ignore
+    "10": {Ingredient.PHENYLALANINE},  # type: ignore
+    "11": {Ingredient.SWEETENERS},  # type: ignore
+    "13": {Ingredient.COCOA_CONTAINING_GREASE},  # type: ignore
+    "14": {Ingredient.GELATIN},  # type: ignore
+    "99": {Ingredient.ALCOHOL},  # type: ignore
+    # meatless is not an ingredient
+    "f": {},  # type: ignore
+    # vegan is not an ingredient
+    "v": {},  # type: ignore
+    "S": {Ingredient.PORK},  # type: ignore
+    "R": {Ingredient.BEEF},  # type: ignore
+    "K": {Ingredient.VEAL},  # type: ignore
+    "Kn": {Ingredient.GARLIC},  # type: ignore
+    "Ei": {Ingredient.CHICKEN_EGGS},  # type: ignore
+    "En": {Ingredient.PEANUTS},  # type: ignore
+    "Fi": {Ingredient.FISH},  # type: ignore
+    "Gl": {Ingredient.GLUTEN},  # type: ignore
+    "GlW": {Ingredient.WHEAT},  # type: ignore
+    "GlR": {Ingredient.RYE},  # type: ignore
+    "GlG": {Ingredient.BARLEY},  # type: ignore
+    "GlH": {Ingredient.OAT},  # type: ignore
+    "GlD": {Ingredient.SPELT},  # type: ignore
+    "Kr": {Ingredient.SHELLFISH},  # type: ignore
+    "Lu": {Ingredient.LUPIN},  # type: ignore
+    "Mi": {Ingredient.MILK, Ingredient.LACTOSE},  # type: ignore
+    "Sc": {Ingredient.SHELLFISH},  # type: ignore
+    "ScM": {Ingredient.ALMONDS},  # type: ignore
+    "ScH": {Ingredient.HAZELNUTS},  # type: ignore
+    "ScW": {Ingredient.WALNUTS},  # type: ignore
+    "ScC": {Ingredient.CASHEWS},  # type: ignore
+    "ScP": {Ingredient.PISTACHIOES},  # type: ignore
+    "Se": {Ingredient.SESAME},  # type: ignore
+    "Sf": {Ingredient.MUSTARD},  # type: ignore
+    "Sl": {Ingredient.CELERY},  # type: ignore
+    "So": {Ingredient.SOY},  # type: ignore
+    "Sw": {Ingredient.SULPHURS, Ingredient.SULFITES},  # type: ignore
+    "Wt": {Ingredient.MOLLUSCS},  # type: ignore
+}
 
-    mediziner_ingredient_lookup = {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "5": "5",
-        "6": "6",
-        "7": "7",
-        "8": "8",
-        "9": "9",
-        "A": "99",
-        "B": "Gl",
-        "C": "Kr",
-        "E": "Fi",
-        "F": "Fi",
-        "G": "G",
-        "H": "En",
-        "K": "K",
-        "L": "L",
-        "M": "So",
-        "N": "Mi",
-        "O": "Sc",
-        "P": "Sl",
-        "R": "R",
-        "S": "S",
-        "T": "Sf",
-        "U": "Se",
-        "V": "Sw",
-        "W": "W",
-        "X": "Lu",
-        "Y": "Ei",
-        "Z": "Wt",
-    }
-
-    def __init__(self, location: str):
-        self.location = location
-        self.ingredient_set = set()
-
-    def _values_lookup(self, values: Sequence[str], lookup: Optional[Dict[str, str]]) -> None:
-        """
-        Normalizes ingredients to the self.ingredient_lookup codes.
-
-        Args:
-            values: A sequence of ingredients codes.
-            lookup: If needed, a mapping from a canteen specific ingredients codes to the self.ingredient_lookup codes.
-        """
-        for value in values:
-            # ignore empty values
-            if not value or value.isspace():
-                continue
-            if (not lookup and value not in self.ingredient_lookup) or (lookup and value not in lookup):
-
-                # sometimes the ‘,’ is missing between the ingredients (especially with IPP) and we try to split again
-                # with capital letters.
-                split_values: List[Any] = re.findall(r"[a-züöäA-ZÜÖÄ][^A-ZÜÖÄ]*", value)
-                if split_values:
-                    self._values_lookup(split_values, lookup)
-                    continue
-                else:
-                    print("Unknown ingredient for " + self.location + " found: " + str(value))
-                    continue
-
-            if lookup:
-                self.ingredient_set.add(lookup[value])
-            else:
-                self.ingredient_set.add(value)
-
-    def parse_ingredients(self, values: str) -> None:
-        """
-        Parse and creates a normalized list of ingredients.
-
-        Args:
-            values: String with comma separated ingredients codes.
-        """
-        values = values.strip()
-        split_values: List[str] = values.split(",")
-        # check for special parser/ingredient translation required
-        if self.location == "fmi-bistro":
-            self._values_lookup(split_values, self.fmi_ingredient_lookup)
-        elif self.location == "mediziner-mensa":
-            self._values_lookup(split_values, self.mediziner_ingredient_lookup)
-        # default to the "Studentenwerk" ingredients
-        # "ipp-bistro" also uses the "Studentenwerk" ingredients since all
-        # dishes contain the same ingredients
-        else:
-            self._values_lookup(split_values, None)
-
-    def __hash__(self) -> int:
-        return hash(frozenset(self.ingredient_set))
+mediziner_lookup: Dict[str, Set[Ingredient]] = {  # type: ignore
+    "1": {Ingredient.DYESTUFF},  # type: ignore
+    "2": {Ingredient.PRESERVATIVES},  # type: ignore
+    "3": {Ingredient.ANTIOXIDANTS},  # type: ignore
+    "4": {Ingredient.FLAVOR_ENHANCER},  # type: ignore
+    "5": {Ingredient.SULPHURS},  # type: ignore
+    "6": {Ingredient.DYESTUFF},  # type: ignore
+    "7": {Ingredient.WAXED},  # type: ignore
+    "8": {Ingredient.PHOSPATES},  # type: ignore
+    "9": {Ingredient.SWEETENERS},  # type: ignore
+    "A": {Ingredient.ALCOHOL},  # type: ignore
+    "B": {Ingredient.GLUTEN},  # type: ignore
+    "C": {Ingredient.SHELLFISH},  # type: ignore
+    "E": {Ingredient.FISH},  # type: ignore
+    "F": {Ingredient.FISH},  # type: ignore
+    "G": {Ingredient.POULTRY},  # type: ignore
+    "H": {Ingredient.PEANUTS},  # type: ignore
+    "K": {Ingredient.VEAL},  # type: ignore
+    "L": {Ingredient.LAMB},  # type: ignore
+    "M": {Ingredient.SOY},  # type: ignore
+    "N": {Ingredient.MILK, Ingredient.LACTOSE},  # type: ignore
+    "O": {Ingredient.SHELL_FRUITS},  # type: ignore
+    "P": {Ingredient.CELERY},  # type: ignore
+    "R": {Ingredient.BEEF},  # type: ignore
+    "S": {Ingredient.PORK},  # type: ignore
+    "T": {Ingredient.MUSTARD},  # type: ignore
+    "U": {Ingredient.SESAME},  # type: ignore
+    "V": {Ingredient.SULPHURS, Ingredient.SULFITES},  # type: ignore
+    "W": {Ingredient.WILD_MEAT},  # type: ignore
+    "X": {Ingredient.LUPIN},  # type: ignore
+    "Y": {Ingredient.CHICKEN_EGGS},  # type: ignore
+    "Z": {Ingredient.MOLLUSCS},  # type: ignore
+}
 
 
 class Dish:
     name: str
     prices: Prices
-    ingredients: Set[str]
+    ingredients: Set[Ingredient]
     dish_type: str
 
-    def __init__(self, name: str, prices: Prices, ingredients: Set[str], dish_type: str):
+    def __init__(self, name: str, prices: Prices, ingredients: Set[Ingredient], dish_type: str):
         self.name = name
         self.prices = prices
         self.ingredients = ingredients
@@ -603,7 +449,7 @@ class Dish:
         return {
             "name": self.name,
             "prices": self.prices.to_json_obj(),
-            "ingredients": sorted(self.ingredients),
+            "ingredients": sorted(map(str, self.ingredients)),
             "dish_type": self.dish_type,
         }
 
@@ -669,8 +515,7 @@ class Week:
         }
 
     @staticmethod
-    # def to_weeks(menus: Dict[datetime.date, Menu]) -> Dict[int, Week]:
-    def to_weeks(menus):
+    def to_weeks(menus: Dict[datetime.date, Menu]) -> Dict[int, Week]:
         weeks: Dict[int, Week] = {}
         for menu_key in menus:
             menu: Menu = menus[menu_key]

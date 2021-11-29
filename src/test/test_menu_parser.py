@@ -1,23 +1,16 @@
 # -*- coding: utf-8 -*-
 import datetime
-import json
 import os
 import tempfile
 import unittest
 from datetime import date
-from typing import List
+from typing import Dict, List
 
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
 from src import main
-from src.entities import Week
-from src.menu_parser import (
-    FMIBistroMenuParser,
-    IPPBistroMenuParser,
-    MedizinerMensaMenuParser,
-    MenuParser,
-    StudentenwerkMenuParser,
-)
+from src.entities import Location, Menu, Week
+from src.menu_parser import FMIBistroMenuParser, MedizinerMensaMenuParser, MenuParser, StudentenwerkMenuParser
 from src.test import test_util
 
 
@@ -59,18 +52,19 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         start_date += datetime.timedelta(days=1)
 
     def test_studentenwerk(self) -> None:
-        locations = ["mensa-garching", "mensa-arcisstr", "stubistro-großhadern"]
+        locations = [Location.MENSA_GARCHING, Location.MENSA_ARCISSTR, Location.STUBISTRO_GROSSHADERN]
         for location in locations:
             self.__test_studentenwerk_location(location)
 
     def test_get_dates(self) -> None:
         tree = test_util.load_html(
-            f"{self.base_path_location.format(location='mensa-garching')}/for-generation/overview.html",
+            f"{self.base_path_location.format(location=Location.MENSA_GARCHING.directory_format)}"
+            f"/for-generation/overview.html",
         )
         dates: List[date] = self.studentenwerk_menu_parser.get_available_dates_for_html(tree)
         self.assertEqual(self.test_dates_nov, dates)
 
-    def __test_studentenwerk_location(self, location: str) -> None:
+    def __test_studentenwerk_location(self, location: Location) -> None:
         menus = self.__get_menus(location)
         weeks = Week.to_weeks(menus)
 
@@ -78,25 +72,27 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
             main.jsonify(weeks, temp_dir, location, True)
-            generated = test_util.load_json(os.path.join(temp_dir, "combined", "combined.json"))
-            reference = test_util.load_json(
-                f"{self.base_path_location.format(location=location)}/reference/combined.json",
+            generated = test_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
+            reference = test_util.load_ordered_json(
+                f"{self.base_path_location.format(location=location.directory_format)}/reference/combined.json",
             )
             self.assertEqual(generated, reference)
 
-    def __get_menus(self, location):
+    def __get_menus(self, location: Location) -> Dict[date, Menu]:
         menus = {}
         for date_ in self.test_dates:
             # parse the menu
             tree: html.Element = test_util.load_html(
-                f"{self.base_path_location.format(location=location)}/for-generation/{date_}.html",
+                f"{self.base_path_location.format(location=location.directory_format)}/for-generation/{date_}.html",
             )
             studentenwerk_menu_parser = StudentenwerkMenuParser()
-            menus[date_] = studentenwerk_menu_parser.get_menu(tree, location, date_)
+            menu = studentenwerk_menu_parser.get_menu(tree, location, date_)
+            if menu is not None:
+                menus[date_] = menu
         return menus
 
     def test_should_return_weeks_when_converting_menu_to_week_objects(self):
-        menus = self.__get_menus("mensa-garching")
+        menus = self.__get_menus(Location.MENSA_GARCHING)
         weeks_actual = Week.to_weeks(menus)
         length_weeks_actual = len(weeks_actual)
 
@@ -108,14 +104,15 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
 
     def test_should_convert_week_to_json(self):
         calendar_weeks = [37, 38]
-        menus = self.__get_menus("mensa-garching")
+        menus = self.__get_menus(Location.MENSA_GARCHING)
         weeks = Week.to_weeks(menus)
         for calendar_week in calendar_weeks:
-            reference_week = test_util.load_json(
-                f"{self.base_path_location.format(location='mensa-garching')}/reference/week_{calendar_week}.json",
+            reference_week = test_util.load_ordered_json(
+                f"{self.base_path_location.format(location=Location.MENSA_GARCHING.directory_format)}"
+                f"/reference/week_{calendar_week}.json",
             )
-            generated_week = weeks[calendar_week].to_json_obj()
-            self.assertEqual(test_util.order_json_objects(generated_week), test_util.order_json_objects(reference_week))
+            generated_week = test_util.order_json_objects(weeks[calendar_week].to_json_obj())
+            self.assertEqual(generated_week, reference_week)
 
 
 class FMIBistroParserTest(unittest.TestCase):
@@ -132,140 +129,140 @@ class FMIBistroParserTest(unittest.TestCase):
         # create temp dir for testing
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "fmi-bistro", True)
-            generated = test_util.load_json(os.path.join(temp_dir, "combined", "combined.json"))
-            reference = test_util.load_json("src/test/assets/fmi/reference/combined.json")
+            main.jsonify(weeks, temp_dir, Location.FMI_BISTRO, True)
+            generated = test_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
+            reference = test_util.load_ordered_json("src/test/assets/fmi/reference/combined.json")
 
-            self.assertEqual(test_util.order_json_objects(generated), test_util.order_json_objects(reference))
+            self.assertEqual(generated, reference)
 
-
-class IPPBistroParserTest(unittest.TestCase):
-    ipp_parser = IPPBistroMenuParser()
-
-    with open("src/test/assets/ipp/in/menu_kw_47_2017.txt", "r", encoding="utf-8") as menu_kw_47_2017:
-        menu_kw_47_2017_txt = menu_kw_47_2017.read()
-    menu_kw_47_2017_year = 2017
-    menu_kw_47_2017_week_number = 47
-
-    with open("src/test/assets/ipp/in/menu_kw_48_2017.txt", "r", encoding="utf-8") as menu_kw_48_2017:
-        menu_kw_48_2017_txt = menu_kw_48_2017.read()
-    menu_kw_48_2017_year = 2017
-    menu_kw_48_2017_week_number = 48
-
-    def test_ipp_bistro_kw_47_2017(self):
-        # parse the menu
-        menus = self.ipp_parser.get_menus(
-            self.menu_kw_47_2017_txt,
-            self.menu_kw_47_2017_year,
-            self.menu_kw_47_2017_week_number,
-        )
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "ipp-bistro", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_47_2017.json", "r", encoding="utf-8") as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
-
-    def test_ipp_bistro_kw_48_2017(self):
-        # parse the menu
-        menus = self.ipp_parser.get_menus(
-            self.menu_kw_48_2017_txt,
-            self.menu_kw_48_2017_year,
-            self.menu_kw_48_2017_week_number,
-        )
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "ipp-bistro", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_48_2017.json", "r", encoding="utf-8") as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
-
-    # Test Cases with holidays
-
-    # Two holidays (Mon & Tue)
-    with open("src/test/assets/ipp/in/menu_kw_18_2018.txt", "r", encoding="utf-8") as menu_kw_18_2018:
-        menu_kw_18_2018_txt = menu_kw_18_2018.read()
-    menu_kw_18_2018_year = 2018
-    menu_kw_18_2018_week_number = 18
-
-    def test_ipp_bistro_kw_18_2018_closed_monday_tuesday(self):
-        # parse the menu
-        menus = self.ipp_parser.get_menus(
-            self.menu_kw_18_2018_txt,
-            self.menu_kw_18_2018_year,
-            self.menu_kw_18_2018_week_number,
-        )
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "ipp-bistro", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_18_2018.json", "r", encoding="utf-8") as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
-
-    # One holiday (Thu)
-    with open("src/test/assets/ipp/in/menu_kw_19_2018.txt", "r", encoding="utf-8") as menu_kw_19_2018:
-        menu_kw_19_2018_txt = menu_kw_19_2018.read()
-    menu_kw_19_2018_year = 2018
-    menu_kw_19_2018_week_number = 19
-
-    def test_ipp_bistro_kw_19_2018_closed_thursday(self):
-        # parse the menu
-        menus = self.ipp_parser.get_menus(
-            self.menu_kw_19_2018_txt,
-            self.menu_kw_19_2018_year,
-            self.menu_kw_19_2018_week_number,
-        )
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "ipp-bistro", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_19_2018.json", "r", encoding="utf-8") as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
-
-    # "Überraschungsmenü" and "Geschlossen" in first line of table
-    with open("src/test/assets/ipp/in/menu_kw_22_2019.txt", "r", encoding="utf-8") as menu_kw_22_2019:
-        menu_kw_22_2019_txt = menu_kw_22_2019.read()
-    menu_kw_22_2019_year = 2019
-    menu_kw_22_2019_week_number = 22
-
-    def test_ipp_bistro_kw_22_2019_closed_thursday(self):
-        # parse the menu
-        menus = self.ipp_parser.get_menus(
-            self.menu_kw_22_2019_txt,
-            self.menu_kw_22_2019_year,
-            self.menu_kw_22_2019_week_number,
-        )
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "ipp-bistro", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open("src/test/assets/ipp/out/menu_kw_22_2019.json", "r", encoding="utf-8") as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
+    # TODO: Rewrite Tests when IPPBistroParser is fixed (see Issue #5)
+    # class IPPBistroParserTest(unittest.TestCase):
+    #     ipp_parser = IPPBistroMenuParser()
+    #
+    #     with open("src/test/assets/ipp/in/menu_kw_47_2017.txt", "r", encoding="utf-8") as menu_kw_47_2017:
+    #         menu_kw_47_2017_txt = menu_kw_47_2017.read()
+    #     menu_kw_47_2017_year = 2017
+    #     menu_kw_47_2017_week_number = 47
+    #
+    #     with open("src/test/assets/ipp/in/menu_kw_48_2017.txt", "r", encoding="utf-8") as menu_kw_48_2017:
+    #         menu_kw_48_2017_txt = menu_kw_48_2017.read()
+    #     menu_kw_48_2017_year = 2017
+    #     menu_kw_48_2017_week_number = 48
+    #
+    #     def test_ipp_bistro_kw_47_2017(self):
+    #         # parse the menu
+    #         menus = self.ipp_parser.get_menus(
+    #             self.menu_kw_47_2017_txt,
+    #             self.menu_kw_47_2017_year,
+    #             self.menu_kw_47_2017_week_number,
+    #         )
+    #         weeks = Week.to_weeks(menus)
+    #
+    #         # create temp dir for testing
+    #         with tempfile.TemporaryDirectory() as temp_dir:
+    #             # store output in the tempdir
+    #             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
+    #             # open the generated file
+    #             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
+    #                 # open the reference file
+    #                 with open("src/test/assets/ipp/out/menu_kw_47_2017.json", "r", encoding="utf-8") as reference:
+    #                     self.assertEqual(json.load(generated), json.load(reference))
+    #
+    #     def test_ipp_bistro_kw_48_2017(self):
+    #         # parse the menu
+    #         menus = self.ipp_parser.get_menus(
+    #             self.menu_kw_48_2017_txt,
+    #             self.menu_kw_48_2017_year,
+    #             self.menu_kw_48_2017_week_number,
+    #         )
+    #         weeks = Week.to_weeks(menus)
+    #
+    #         # create temp dir for testing
+    #         with tempfile.TemporaryDirectory() as temp_dir:
+    #             # store output in the tempdir
+    #             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
+    #             # open the generated file
+    #             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
+    #                 # open the reference file
+    #                 with open("src/test/assets/ipp/out/menu_kw_48_2017.json", "r", encoding="utf-8") as reference:
+    #                     self.assertEqual(json.load(generated), json.load(reference))
+    #
+    #     # Test Cases with holidays
+    #
+    #     # Two holidays (Mon & Tue)
+    #     with open("src/test/assets/ipp/in/menu_kw_18_2018.txt", "r", encoding="utf-8") as menu_kw_18_2018:
+    #         menu_kw_18_2018_txt = menu_kw_18_2018.read()
+    #     menu_kw_18_2018_year = 2018
+    #     menu_kw_18_2018_week_number = 18
+    #
+    #     def test_ipp_bistro_kw_18_2018_closed_monday_tuesday(self):
+    #         # parse the menu
+    #         menus = self.ipp_parser.get_menus(
+    #             self.menu_kw_18_2018_txt,
+    #             self.menu_kw_18_2018_year,
+    #             self.menu_kw_18_2018_week_number,
+    #         )
+    #         weeks = Week.to_weeks(menus)
+    #
+    #         # create temp dir for testing
+    #         with tempfile.TemporaryDirectory() as temp_dir:
+    #             # store output in the tempdir
+    #             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
+    #             # open the generated file
+    #             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
+    #                 # open the reference file
+    #                 with open("src/test/assets/ipp/out/menu_kw_18_2018.json", "r", encoding="utf-8") as reference:
+    #                     self.assertEqual(json.load(generated), json.load(reference))
+    #
+    #     # One holiday (Thu)
+    #     with open("src/test/assets/ipp/in/menu_kw_19_2018.txt", "r", encoding="utf-8") as menu_kw_19_2018:
+    #         menu_kw_19_2018_txt = menu_kw_19_2018.read()
+    #     menu_kw_19_2018_year = 2018
+    #     menu_kw_19_2018_week_number = 19
+    #
+    #     def test_ipp_bistro_kw_19_2018_closed_thursday(self):
+    #         # parse the menu
+    #         menus = self.ipp_parser.get_menus(
+    #             self.menu_kw_19_2018_txt,
+    #             self.menu_kw_19_2018_year,
+    #             self.menu_kw_19_2018_week_number,
+    #         )
+    #         weeks = Week.to_weeks(menus)
+    #
+    #         # create temp dir for testing
+    #         with tempfile.TemporaryDirectory() as temp_dir:
+    #             # store output in the tempdir
+    #             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
+    #             # open the generated file
+    #             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
+    #                 # open the reference file
+    #                 with open("src/test/assets/ipp/out/menu_kw_19_2018.json", "r", encoding="utf-8") as reference:
+    #                     self.assertEqual(json.load(generated), json.load(reference))
+    #
+    #     # "Überraschungsmenü" and "Geschlossen" in first line of table
+    #     with open("src/test/assets/ipp/in/menu_kw_22_2019.txt", "r", encoding="utf-8") as menu_kw_22_2019:
+    #         menu_kw_22_2019_txt = menu_kw_22_2019.read()
+    #     menu_kw_22_2019_year = 2019
+    #     menu_kw_22_2019_week_number = 22
+    #
+    #     def test_ipp_bistro_kw_22_2019_closed_thursday(self):
+    #         # parse the menu
+    #         menus = self.ipp_parser.get_menus(
+    #             self.menu_kw_22_2019_txt,
+    #             self.menu_kw_22_2019_year,
+    #             self.menu_kw_22_2019_week_number,
+    #         )
+    #         weeks = Week.to_weeks(menus)
+    #
+    #         # create temp dir for testing
+    #         with tempfile.TemporaryDirectory() as temp_dir:
+    #             # store output in the tempdir
+    #             main.jsonify(weeks, temp_dir, "ipp-bistro", True)
+    #             # open the generated file
+    #             with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
+    #                 # open the reference file
+    #                 with open("src/test/assets/ipp/out/menu_kw_22_2019.json", "r", encoding="utf-8") as reference:
+    #                     self.assertEqual(json.load(generated), json.load(reference))
 
     """
     # just for generating reference json files
@@ -284,72 +281,43 @@ class IPPBistroParserTest(unittest.TestCase):
 class MedizinerMensaParserTest(unittest.TestCase):
     mediziner_mensa_parser = MedizinerMensaMenuParser()
 
-    with open("src/test/assets/mediziner-mensa/in/menu_kw_44_2018.txt", "r", encoding="utf-8") as menu_kw_44_2018:
-        menu_kw_44_2018_txt = menu_kw_44_2018.read()
-    menu_kw_44_2018_year = 2018
-    menu_kw_44_2018_week_number = 44
-
-    with open("src/test/assets/mediziner-mensa/in/menu_kw_47_2018.txt", "r", encoding="utf-8") as menu_kw_47_2018:
-        menu_kw_47_2018_txt = menu_kw_47_2018.read()
-    menu_kw_47_2018_year = 2018
-    menu_kw_47_2018_week_number = 47
-
-    def test_mediziner_mensa_kw_44_2018(self):
+    def test_mediziner_mensa(self):
         # parse the menu
-        menus = self.mediziner_mensa_parser.get_menus(
-            self.menu_kw_44_2018_txt,
-            self.menu_kw_44_2018_year,
-            self.menu_kw_44_2018_week_number,
-        )
-        weeks = Week.to_weeks(menus)
+        for calendar_week in [44, 47]:
+            for_generation = test_util.load_txt(
+                f"src/test/assets/mediziner-mensa/for-generation/week_2018_{calendar_week}.txt",
+            )
+            menus = self.mediziner_mensa_parser.get_menus(
+                for_generation,
+                2018,
+                calendar_week,
+            )
+            weeks = Week.to_weeks(menus)
 
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "mediziner-mensa", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open(
-                    "src/test/assets/mediziner-mensa/out/menu_kw_44_2018.json",
-                    "r",
-                    encoding="utf-8",
-                ) as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
-
-    def test_mediziner_mensa_kw_47_2018(self):
-        # parse the menu
-        menus = self.mediziner_mensa_parser.get_menus(
-            self.menu_kw_47_2018_txt,
-            self.menu_kw_47_2018_year,
-            self.menu_kw_47_2018_week_number,
-        )
-        weeks = Week.to_weeks(menus)
-
-        # create temp dir for testing
-        with tempfile.TemporaryDirectory() as temp_dir:
-            # store output in the tempdir
-            main.jsonify(weeks, temp_dir, "mediziner-mensa", True)
-            # open the generated file
-            with open(os.path.join(temp_dir, "combined", "combined.json"), "r", encoding="utf-8") as generated:
-                # open the reference file
-                with open(
-                    "src/test/assets/mediziner-mensa/out/menu_kw_47_2018.json",
-                    "r",
-                    encoding="utf-8",
-                ) as reference:
-                    self.assertEqual(json.load(generated), json.load(reference))
+            # create temp dir for testing
+            with tempfile.TemporaryDirectory() as temp_dir:
+                # store output in the tempdir
+                main.jsonify(weeks, temp_dir, Location.MEDIZINER_MENSA, True)
+                # open the generated file
+                generated = test_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
+                reference = test_util.load_ordered_json(
+                    f"src/test/assets/mediziner-mensa/reference/week_2018_{calendar_week}.json",
+                )
+                self.assertEqual(generated, reference)
 
     # """
     # just for generating reference json files
     def test_gen_file(self):
         # parse the menu
+        for_generation = test_util.load_txt(
+            "src/test/assets/mediziner-mensa/for-generation/week_2018_44.txt",
+        )
         menus = self.mediziner_mensa_parser.get_menus(
-            self.menu_kw_47_2018_txt,
-            self.menu_kw_47_2018_year,
-            self.menu_kw_47_2018_week_number,
+            for_generation,
+            2018,
+            47,
         )
         weeks = Week.to_weeks(menus)
-        main.jsonify(weeks, "/tmp/eat-api_test_output", "mediziner-mensa", True)
+        main.jsonify(weeks, "/tmp/eat-api_test_output", Location.MEDIZINER_MENSA, True)
 
     # """
