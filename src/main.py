@@ -111,7 +111,7 @@ def main():
         print("Error. Could not retrieve menu(s)")
 
     # optionally translate the dish titles
-    if args.language is not None:
+    if args.language is not None and args.language.upper() != "DE":
         translated = util.translate_dishes(menus, args.language)
         if not translated:
             print("Error. The translation was not successful")
