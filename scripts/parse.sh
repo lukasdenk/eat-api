@@ -2,7 +2,7 @@
 
 LOC_LIST=( "mensa-arcisstr" "mensa-garching" "mensa-leopoldstr" "mensa-lothstr" \
 "mensa-martinsried" "mensa-pasing" "mensa-weihenstephan" "stubistro-arcisstr" "stubistro-goethestr" \
-"stubistro-grosshadern" "stubistro-rosenheim" "stubistro-schellingstr" "stucafe-adalbertstr" \
+"stubistro-großhadern" "stubistro-rosenheim" "stubistro-schellingstr" "stucafe-adalbertstr" \
 "stucafe-akademie-weihenstephan" "stucafe-boltzmannstr" "stucafe-garching" "stucafe-karlstr" "stucafe-pasing" \
 "ipp-bistro" "fmi-bistro" "mediziner-mensa" )
 OUT_DIR="${OUT_DIR:-dist}"
