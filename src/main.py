@@ -134,7 +134,7 @@ def main():
         menu = menus[menu_date]
         print(menu)
     # else, print weeks
-    else:
+    elif menus is not None:
         weeks = Week.to_weeks(menus)
         for calendar_week in weeks:
             print(weeks[calendar_week])
