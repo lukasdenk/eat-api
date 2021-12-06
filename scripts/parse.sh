@@ -41,7 +41,7 @@ done
 
 ENUM_JSON_PATH="./dist/enums"
 mkdir -p "$ENUM_JSON_PATH"
-echo "Creating Canteen- and Label-Enum"
+echo "Creating Canteen-, Language- and Label-Enum"
 python3 ./src/enum_json_creator.py "$ENUM_JSON_PATH"
 
 tree dist/

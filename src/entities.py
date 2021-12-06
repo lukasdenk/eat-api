@@ -4,8 +4,10 @@
 from __future__ import annotations
 
 import datetime
-from enum import Enum
+from enum import Enum, auto
 from typing import Any, Dict, List, Optional, Set
+
+from utils import json_util
 
 
 class Price:
@@ -200,64 +202,73 @@ class Canteen(Enum):
         }
 
 
+class Language(Enum):
+    DE = auto()
+
+    def to_json_obj(self):
+        return {
+            "name": self.name,
+        }
+
+
 class Label(Enum):
-    def __init__(self, german_text: str):
-        self.german_text = german_text
+    def __init__(self, text: Dict[Language, str]):
+        self.text = text
 
-    GLUTEN = "Gluten"
-    WHEAT = "Weizen"
-    RYE = "Roggen"
-    BARLEY = "Gerste"
-    OAT = "Hafer"
-    SPELT = "Dinkel"
-    HYBRIDS = "Hybridstämme"
-    SHELLFISH = "Krebstiere"
-    CHICKEN_EGGS = "Eier"
-    FISH = "Fisch"
-    PEANUTS = "Erdnüsse"
-    SOY = "Soja"
-    MILK = "Milch"
-    LACTOSE = "Laktose"
-    ALMONDS = "Mandeln"
-    HAZELNUTS = "Haselnüsse"
-    WALNUTS = "Walnüsse"
-    CASHEWS = "Cashewnüsse"
-    PECAN = "Pekanüsse"
-    PISTACHIOES = "Pistazien"
-    MACADAMIA = "Macadamianüsse"
-    CELERY = "Sellerie"
-    MUSTARD = "Senf"
-    SESAME = "Sesam"
-    SULPHURS = "Schwefeldioxid"
-    SULFITES = "Sulfite"
-    LUPIN = "Lupine"
-    MOLLUSCS = "Weichtiere"
-    SHELL_FRUITS = "Schalenfrüchte"
+    GLUTEN = {Language.DE: "Gluten"}
+    WHEAT = {Language.DE: "Weizen"}
+    RYE = {Language.DE: "Roggen"}
+    BARLEY = {Language.DE: "Gerste"}
+    OAT = {Language.DE: "Hafer"}
+    SPELT = {Language.DE: "Dinkel"}
+    HYBRIDS = {Language.DE: "Hybridstämme"}
+    SHELLFISH = {Language.DE: "Krebstiere"}
+    CHICKEN_EGGS = {Language.DE: "Eier"}
+    FISH = {Language.DE: "Fisch"}
+    PEANUTS = {Language.DE: "Erdnüsse"}
+    SOY = {Language.DE: "Soja"}
+    MILK = {Language.DE: "Milch"}
+    LACTOSE = {Language.DE: "Laktose"}
+    ALMONDS = {Language.DE: "Mandeln"}
+    HAZELNUTS = {Language.DE: "Haselnüsse"}
+    WALNUTS = {Language.DE: "Walnüsse"}
+    CASHEWS = {Language.DE: "Cashewnüsse"}
+    PECAN = {Language.DE: "Pekanüsse"}
+    PISTACHIOES = {Language.DE: "Pistazien"}
+    MACADAMIA = {Language.DE: "Macadamianüsse"}
+    CELERY = {Language.DE: "Sellerie"}
+    MUSTARD = {Language.DE: "Senf"}
+    SESAME = {Language.DE: "Sesam"}
+    SULPHURS = {Language.DE: "Schwefeldioxid"}
+    SULFITES = {Language.DE: "Sulfite"}
+    LUPIN = {Language.DE: "Lupine"}
+    MOLLUSCS = {Language.DE: "Weichtiere"}
+    SHELL_FRUITS = {Language.DE: "Schalenfrüchte"}
 
-    BAVARIA = "Zertifizierte Qualität Bayern"
-    MSC = "Marine Stewardship Council"
-    DYESTUFF = "Farbstoffe"
-    PRESERVATIVES = "Preservate"
-    ANTIOXIDANTS = "Antioxidanten"
-    FLAVOR_ENHANCER = "Geschmacksverstärker"
-    WAXED = "Gewachst"
-    PHOSPATES = "Phosphate"
-    SWEETENERS = "Süßungsmittel"
-    PHENYLALANINE = "Phenylaline"
-    COCOA_CONTAINING_GREASE = "Kakaohaltiges Fett"
-    GELATIN = "Gelatine"
-    ALCOHOL = "Alkohol"
-    PORK = "Schweinefleisch"
-    BEEF = "Rinderfleisch"
-    VEAL = "Kalbsfleisch"
-    WILD_MEAT = "Wildfleisch"
-    LAMB = "Lammfleisch"
-    GARLIC = "Knoblauch"
-    POULTRY = "Geflügel"
-    CEREAL = "Getreide"
-    MEAT = "Fleisch"
-    VEGAN = "Vegan"
-    VEGETARIAN = "Vegetarisch"
+    BAVARIA = {Language.DE: "Zertifizierte Qualität Bayern"}
+    MSC = {Language.DE: "Marine Stewardship Council"}
+    DYESTUFF = {Language.DE: "Farbstoffe"}
+    PRESERVATIVES = {Language.DE: "Preservate"}
+    ANTIOXIDANTS = {Language.DE: "Antioxidanten"}
+    FLAVOR_ENHANCER = {Language.DE: "Geschmacksverstärker"}
+    WAXED = {Language.DE: "Gewachst"}
+    PHOSPATES = {Language.DE: "Phosphate"}
+    SWEETENERS = {Language.DE: "Süßungsmittel"}
+    PHENYLALANINE = {Language.DE: "Phenylaline"}
+    COCOA_CONTAINING_GREASE = {Language.DE: "Kakaohaltiges Fett"}
+    GELATIN = {Language.DE: "Gelatine"}
+    ALCOHOL = {Language.DE: "Alkohol"}
+    PORK = {Language.DE: "Schweinefleisch"}
+    BEEF = {Language.DE: "Rinderfleisch"}
+    VEAL = {Language.DE: "Kalbsfleisch"}
+    WILD_MEAT = {Language.DE: "Wildfleisch"}
+    LAMB = {Language.DE: "Lammfleisch"}
+    GARLIC = {Language.DE: "Knoblauch"}
+    POULTRY = {Language.DE: "Geflügel"}
+    CEREAL = {Language.DE: "Getreide"}
+    MEAT = {Language.DE: "Fleisch"}
+    VEGAN = {Language.DE: "Vegan"}
+    VEGETARIAN = {Language.DE: "Vegetarisch"}
 
     def __lt__(self, other):
         if self.__class__ is other.__class__:
@@ -299,7 +310,7 @@ class Label(Enum):
     def to_json_obj(self):
         return {
             "name": self.name,
-            "german_text": self.german_text,
+            "text": json_util.dict_to_json_dict(self.text),
         }
 
 

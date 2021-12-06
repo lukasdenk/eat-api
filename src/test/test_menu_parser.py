@@ -11,7 +11,7 @@ from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 from src import main
 from src.entities import Canteen, Menu, Week
 from src.menu_parser import FMIBistroMenuParser, MedizinerMensaMenuParser, MenuParser, StudentenwerkMenuParser
-from src.utils import file_util
+from src.utils import file_util, json_util
 
 
 class MenuParserTest(unittest.TestCase):
@@ -111,7 +111,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
                 f"{self.base_path_canteen.format(canteen=Canteen.MENSA_GARCHING.directory_format)}"
                 f"/reference/week_{calendar_week}.json",
             )
-            generated_week = file_util.order_json_objects(weeks[calendar_week].to_json_obj())
+            generated_week = json_util.order_json_objects(weeks[calendar_week].to_json_obj())
             self.assertEqual(generated_week, reference_week)
 
 
