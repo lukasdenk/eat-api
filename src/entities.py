@@ -203,7 +203,7 @@ class Canteen(ApiRepresentable, Enum):
             "canteen_id": self.canteen_id,
             "name": self.name,
             "long_name": self.long_name,
-            "site": self.site.to_json_obj(),
+            "location": self.site.to_json_obj(),
             "url_id": self.url_id,
         }
 
@@ -211,7 +211,7 @@ class Canteen(ApiRepresentable, Enum):
         return {
             "enum_name": self.name,
             "name": self.long_name,
-            "site": self.site.to_json_obj(),
+            "location": self.site.to_json_obj(),
             "canteen_id": self.canteen_id,
         }
 

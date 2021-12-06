@@ -15,10 +15,6 @@ fi
 # Create empty output directory:
 mkdir -p $OUT_DIR
 
-# Copy canteens.json in the output directory:
-echo "Copying canteens..."
-cp src/canteens.json $OUT_DIR
-echo "Done"
 
 # Parse all canteens:
 for canteen in "${CANTEEN_LIST[@]}"; do
@@ -43,5 +39,10 @@ ENUM_JSON_PATH="$OUT_DIR/enums"
 mkdir -p "$ENUM_JSON_PATH"
 echo "Creating Canteen-, Language- and Label-Enum"
 python3 ./src/enum_json_creator.py "$ENUM_JSON_PATH"
+
+# Copy canteens.json in the output directory (for backwards compatibility):
+echo "Copying canteens..."
+cp "$ENUM_JSON_PATH/canteens.json" $OUT_DIR
+echo "Done"
 
 tree "$OUT_DIR"
