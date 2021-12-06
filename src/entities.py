@@ -10,6 +10,11 @@ from typing import Any, Dict, List, Optional, Set
 from utils import json_util
 
 
+class ApiRepresentable:
+    def to_api_representation(self) -> Dict[str, object]:
+        pass
+
+
 class Price:
     base_price: Optional[float]
     price_per_unit: Optional[float]
@@ -111,7 +116,7 @@ class Location:
         }
 
 
-class Canteen(Enum):
+class Canteen(ApiRepresentable, Enum):
     # Some of the canteens do not use the general Studentenwerk system and therefore do not have a url_id.
     def __init__(self, long_name: str, location: Location, url_id: int):
         self.long_name = long_name
@@ -202,17 +207,25 @@ class Canteen(Enum):
             "url_id": self.url_id,
         }
 
-
-class Language(Enum):
-    DE = auto()
-
-    def to_json_obj(self):
+    def to_api_representation(self) -> Dict[str, object]:
         return {
-            "name": self.name,
+            "enum_name": self.name,
+            "name": self.long_name,
+            "site": self.site.to_json_obj(),
+            "canteen_id": self.canteen_id,
         }
 
 
-class Label(Enum):
+class Language(ApiRepresentable, Enum):
+    DE = auto()
+
+    def to_api_representation(self) -> Dict[str, object]:
+        return {
+            "enum_name": self.name,
+        }
+
+
+class Label(ApiRepresentable, Enum):
     def __init__(self, text: Dict[Language, str]):
         self.text = text
 
@@ -311,6 +324,12 @@ class Label(Enum):
     def to_json_obj(self):
         return {
             "name": self.name,
+            "text": json_util.dict_to_json_dict(self.text),
+        }
+
+    def to_api_representation(self) -> Dict[str, object]:
+        return {
+            "enum_name": self.name,
             "text": json_util.dict_to_json_dict(self.text),
         }
 

@@ -4,10 +4,10 @@ import os
 from typing import Dict, Optional
 
 import cli
+import enum_json_creator
 import menu_parser
 from entities import Canteen, Week
 from openmensa import openmensa
-from src import enum_json_creator
 from utils import util
 
 JSON_VERSION: str = "2.1"
@@ -85,7 +85,7 @@ def main():
 
     # print canteens
     if args.canteens:
-        print(enum_json_creator.get_canteens_as_json())
+        print(enum_json_creator.enum_to_api_representation_dict(list(Canteen)))
         return
 
     canteen = Canteen.get_canteen_by_str(args.canteen)

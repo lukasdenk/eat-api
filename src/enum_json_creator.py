@@ -1,32 +1,30 @@
+import json
 import os.path
 import sys
+from enum import Enum
+from typing import List, Type
 
 import entities
-from utils import file_util, json_util
+from utils import file_util
 
 
-def get_canteens_as_json() -> str:
+def enum_to_api_representation_dict(api_representables: List[Type[entities.ApiRepresentable]]) -> str:
+    representations = []
+    for api_representable in api_representables:
+        representations += [api_representable.to_api_representation()]
     # mypy does not recognize that json_util.to_json_str returns a str.
     # Hence the useless str()
-    return str(json_util.to_json_str(list(entities.Canteen)))
+    return str(json.dumps(representations,indent=2))
 
 
-def update_canteens(base_dir: str = "") -> None:
-    file_util.write_json(os.path.join(base_dir, "canteens.json"), list(entities.Canteen))
-
-
-def update_labels(base_dir: str = "") -> None:
-    file_util.write_json(os.path.join(base_dir, "labels.json"), list(entities.Label))
-
-
-def update_languages(base_dir: str = "") -> None:
-    file_util.write_json(os.path.join(base_dir, "languages.json"), list(entities.Language))
+def write_enum_as_api_representation_to_file(base_dir: str, filename: str, enum_type: Type[Enum]) -> None:
+    file_util.write(os.path.join(base_dir, filename), enum_to_api_representation_dict(list(enum_type)))
 
 
 if __name__ == "__main__":
     base_directory = "dist/enums"
     if len(sys.argv) > 1:
         base_directory = sys.argv[1]
-    update_canteens(base_directory)
-    update_labels(base_directory)
-    update_languages(base_directory)
+    enum_types = {entities.Canteen: "canteens.json", entities.Label: "labels.json", entities.Language: "languages.json"}
+    for key, value in enum_types.items():
+        write_enum_as_api_representation_to_file(base_directory, value, key)
