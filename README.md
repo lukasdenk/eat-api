@@ -29,7 +29,7 @@ Simple static API for the canteens of the [Studentenwerk München](http://www.st
 | IPP Bistro Garching            | ipp-bistro                     | [Boltzmannstraße 2, Garching](https://goo.gl/maps/vYdsQhgxFvH2)                                                          |
 
 ## Label list - previously _ingredients_:
-See [here](https://tum-dev.github.io/eat-api/dist/enums/labels.json).
+See [here](https://tum-dev.github.io/eat-api/enums/labels.json).
 
 ## Usage
 
@@ -67,7 +67,7 @@ https://tum-dev.github.io/eat-api/all_ref.json
 To get all available canteens:
 
 ```
-https://tum-dev.github.io/eat-api/dist/enums/canteens.json
+https://tum-dev.github.io/eat-api/enums/canteens.json
 ```
 
 #### Example
