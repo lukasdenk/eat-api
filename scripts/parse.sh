@@ -24,7 +24,7 @@ done
 # Combine all combined.json files to one all.json file:
 python3 scripts/combine.py
 # Remove all dishes which are older than one day
-# https://github.com/TUM-Dev/eat-api/tree/gh-pages/en and reorganize them in a more efficient format:
+# and reorganize them in a more efficient format:
 python3 scripts/reformat.py
 
 # Copy canteens.json in the output directory:
