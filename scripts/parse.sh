@@ -15,6 +15,11 @@ fi
 # Create empty output directory:
 mkdir -p $OUT_DIR
 
+# Copy canteens.json in the output directory:
+echo "Copying canteens..."
+cp src/canteens.json $OUT_DIR
+echo "Done"
+
 # Parse all canteens:
 for canteen in "${CANTEEN_LIST[@]}"; do
     echo "Parsing menus for: " "$canteen"
@@ -27,21 +32,16 @@ python3 scripts/combine.py
 # and reorganize them in a more efficient format:
 python3 scripts/reformat.py
 
-# Copy canteens.json in the output directory:
-echo "Copying canteens..."
-cp src/canteens.json $OUT_DIR
-echo "Done"
-
 openmensa_list=( "ipp-bistro" "fmi-bistro" )
 
-for canteen in "${openmensa_list[@]}"; do
-    echo "Parsing openmensa menus for: " "$canteen"
-    python3 src/main.py -p "$canteen" --openmensa "./dist/$canteen"
+for CANTEEN in "${openmensa_list[@]}"; do
+    echo "Parsing openmensa menus for: " "$CANTEEN"
+    python3 src/main.py -p "$CANTEEN" --openmensa "$OUT_DIR/$CANTEEN"
 done
 
-ENUM_JSON_PATH="./dist/enums"
+ENUM_JSON_PATH="$OUT_DIR/enums"
 mkdir -p "$ENUM_JSON_PATH"
 echo "Creating Canteen-, Language- and Label-Enum"
 python3 ./src/enum_json_creator.py "$ENUM_JSON_PATH"
 
-tree dist/
+tree "$OUT_DIR"

@@ -16,7 +16,7 @@ def parse_cli_args():
         metavar="CANTEEN",
         dest="canteen",
         # pylint:disable=protected-access
-        choices=(Canteen._member_names_ + [key.directory_format for key in Canteen]),
+        choices=(Canteen._member_names_ + [key.canteen_id for key in Canteen]),
         # pylint:enable=protected-access
         help="the canteen you want to eat at",
     )
@@ -40,7 +40,6 @@ def parse_cli_args():
         metavar="PATH",
     )
     group.add_argument(
-        "-l",
         "--canteens",
         action="store_true",
         help="prints all available canteens formated as JSON",

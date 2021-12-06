@@ -2,7 +2,13 @@ import os.path
 import sys
 
 import entities
-from utils import file_util
+from utils import file_util, json_util
+
+
+def get_canteens_as_json() -> str:
+    # mypy does not recognize that json_util.to_json_str returns a str.
+    # Hence the useless str()
+    return str(json_util.to_json_str(list(entities.Canteen)))
 
 
 def update_canteens(base_dir: str = "") -> None:
@@ -18,7 +24,7 @@ def update_languages(base_dir: str = "") -> None:
 
 
 if __name__ == "__main__":
-    base_directory = ""
+    base_directory = "dist/enums"
     if len(sys.argv) > 1:
         base_directory = sys.argv[1]
     update_canteens(base_directory)

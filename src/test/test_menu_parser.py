@@ -58,7 +58,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
 
     def test_get_dates(self) -> None:
         tree = file_util.load_html(
-            f"{self.base_path_canteen.format(canteen=Canteen.MENSA_GARCHING.directory_format)}"
+            f"{self.base_path_canteen.format(canteen=Canteen.MENSA_GARCHING.canteen_id)}"
             f"/for-generation/overview.html",
         )
         dates: List[date] = self.studentenwerk_menu_parser.get_available_dates_for_html(tree)
@@ -74,7 +74,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
             main.jsonify(weeks, temp_dir, canteen, True)
             generated = file_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
             reference = file_util.load_ordered_json(
-                f"{self.base_path_canteen.format(canteen=canteen.directory_format)}/reference/combined.json",
+                f"{self.base_path_canteen.format(canteen=canteen.canteen_id)}/reference/combined.json",
             )
             self.assertEqual(generated, reference)
 
@@ -83,7 +83,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         for date_ in self.test_dates:
             # parse the menu
             tree: html.Element = file_util.load_html(
-                f"{self.base_path_canteen.format(canteen=canteen.directory_format)}/for-generation/{date_}.html",
+                f"{self.base_path_canteen.format(canteen=canteen.canteen_id)}/for-generation/{date_}.html",
             )
             studentenwerk_menu_parser = StudentenwerkMenuParser()
             menu = studentenwerk_menu_parser.get_menu(tree, canteen, date_)
@@ -108,7 +108,7 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         weeks = Week.to_weeks(menus)
         for calendar_week in calendar_weeks:
             reference_week = file_util.load_ordered_json(
-                f"{self.base_path_canteen.format(canteen=Canteen.MENSA_GARCHING.directory_format)}"
+                f"{self.base_path_canteen.format(canteen=Canteen.MENSA_GARCHING.canteen_id)}"
                 f"/reference/week_{calendar_week}.json",
             )
             generated_week = json_util.order_json_objects(weeks[calendar_week].to_json_obj())

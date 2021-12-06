@@ -7,6 +7,7 @@ import cli
 import menu_parser
 from entities import Canteen, Week
 from openmensa import openmensa
+from src import enum_json_creator
 from utils import util
 
 JSON_VERSION: str = "2.1"
@@ -66,7 +67,7 @@ def jsonify(weeks: Dict[int, Week], directory: str, canteen: Canteen, combine_di
     weeks_json_all = json.dumps(
         {
             "version": JSON_VERSION,
-            "canteen_id": canteen.directory_format,
+            "canteen_id": canteen.canteen_id,
             "weeks": [weeks[calendar_week].to_json_obj() for calendar_week in weeks],
         },
         ensure_ascii=False,
@@ -84,8 +85,7 @@ def main():
 
     # print canteens
     if args.canteens:
-        with open("canteens.json", "r", encoding="utf-8") as canteens:
-            print(json.dumps(json.load(canteens)))
+        print(enum_json_creator.get_canteens_as_json())
         return
 
     canteen = Canteen.get_canteen_by_str(args.canteen)

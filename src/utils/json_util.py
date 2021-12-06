@@ -1,3 +1,4 @@
+import json
 from json import JSONEncoder
 from typing import Any, Dict, Union
 
@@ -35,3 +36,7 @@ def dict_to_json_dict(dict_: Dict[Any, Any]) -> Dict[Union[str, float, int], Any
             json_value = value
         json_dict[json_key] = json_value
     return json_dict
+
+
+def to_json_str(obj: Any) -> str:
+    return json.dumps(obj, cls=CustomJsonEncoder, indent=2)

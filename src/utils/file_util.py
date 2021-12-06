@@ -35,4 +35,4 @@ def load_txt(path: str) -> str:
 
 def write_json(path: str, obj: object) -> None:
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, cls=json_util.CustomJsonEncoder, indent=2)
+        f.write(json_util.to_json_str(obj))

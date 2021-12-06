@@ -117,7 +117,7 @@ class Canteen(Enum):
         self.long_name = long_name
         self.site = location
         self.url_id = url_id
-        self.directory_format = self.name.lower().replace("_", "-")
+        self.canteen_id = self.name.lower().replace("_", "-")
 
     MENSA_ARCISSTR = "Mensa Arcisstraße", Location("Arcisstraße 17, München", 48.14742, 11.56722), 421
     MENSA_GARCHING = "Mensa Garching", Location("Boltzmannstraße 19, Garching", 48.268132, 11.672263), 422
@@ -195,6 +195,7 @@ class Canteen(Enum):
 
     def to_json_obj(self):
         return {
+            "canteen_id": self.canteen_id,
             "name": self.name,
             "long_name": self.long_name,
             "site": self.site.to_json_obj(),
