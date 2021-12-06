@@ -9,7 +9,7 @@ from typing import Dict, List
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
 from src import main
-from src.entities import Location, Menu, Week
+from src.entities import Canteen, Menu, Week
 from src.menu_parser import FMIBistroMenuParser, MedizinerMensaMenuParser, MenuParser, StudentenwerkMenuParser
 from src.utils import file_util
 
@@ -24,7 +24,7 @@ class MenuParserTest(unittest.TestCase):
 class StudentenwerkMenuParserTest(unittest.TestCase):
     studentenwerk_menu_parser = StudentenwerkMenuParser()
 
-    base_path_location = "src/test/assets/studentenwerk/{location}"
+    base_path_canteen = "src/test/assets/studentenwerk/{canteen}"
 
     test_dates = [
         date(2021, 9, 13),
@@ -52,47 +52,47 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
         start_date += datetime.timedelta(days=1)
 
     def test_studentenwerk(self) -> None:
-        locations = [Location.MENSA_GARCHING, Location.MENSA_ARCISSTR, Location.STUBISTRO_GROSSHADERN]
-        for location in locations:
-            self.__test_studentenwerk_location(location)
+        canteens = [Canteen.MENSA_GARCHING, Canteen.MENSA_ARCISSTR, Canteen.STUBISTRO_GROSSHADERN]
+        for canteen in canteens:
+            self.__test_studentenwerk_canteen(canteen)
 
     def test_get_dates(self) -> None:
         tree = file_util.load_html(
-            f"{self.base_path_location.format(location=Location.MENSA_GARCHING.directory_format)}"
+            f"{self.base_path_canteen.format(canteen=Canteen.MENSA_GARCHING.directory_format)}"
             f"/for-generation/overview.html",
         )
         dates: List[date] = self.studentenwerk_menu_parser.get_available_dates_for_html(tree)
         self.assertEqual(self.test_dates_nov, dates)
 
-    def __test_studentenwerk_location(self, location: Location) -> None:
-        menus = self.__get_menus(location)
+    def __test_studentenwerk_canteen(self, canteen: Canteen) -> None:
+        menus = self.__get_menus(canteen)
         weeks = Week.to_weeks(menus)
 
         # create temp dir for testing
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
-            main.jsonify(weeks, temp_dir, location, True)
+            main.jsonify(weeks, temp_dir, canteen, True)
             generated = file_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
             reference = file_util.load_ordered_json(
-                f"{self.base_path_location.format(location=location.directory_format)}/reference/combined.json",
+                f"{self.base_path_canteen.format(canteen=canteen.directory_format)}/reference/combined.json",
             )
             self.assertEqual(generated, reference)
 
-    def __get_menus(self, location: Location) -> Dict[date, Menu]:
+    def __get_menus(self, canteen: Canteen) -> Dict[date, Menu]:
         menus = {}
         for date_ in self.test_dates:
             # parse the menu
             tree: html.Element = file_util.load_html(
-                f"{self.base_path_location.format(location=location.directory_format)}/for-generation/{date_}.html",
+                f"{self.base_path_canteen.format(canteen=canteen.directory_format)}/for-generation/{date_}.html",
             )
             studentenwerk_menu_parser = StudentenwerkMenuParser()
-            menu = studentenwerk_menu_parser.get_menu(tree, location, date_)
+            menu = studentenwerk_menu_parser.get_menu(tree, canteen, date_)
             if menu is not None:
                 menus[date_] = menu
         return menus
 
     def test_should_return_weeks_when_converting_menu_to_week_objects(self):
-        menus = self.__get_menus(Location.MENSA_GARCHING)
+        menus = self.__get_menus(Canteen.MENSA_GARCHING)
         weeks_actual = Week.to_weeks(menus)
         length_weeks_actual = len(weeks_actual)
 
@@ -104,11 +104,11 @@ class StudentenwerkMenuParserTest(unittest.TestCase):
 
     def test_should_convert_week_to_json(self):
         calendar_weeks = [37, 38]
-        menus = self.__get_menus(Location.MENSA_GARCHING)
+        menus = self.__get_menus(Canteen.MENSA_GARCHING)
         weeks = Week.to_weeks(menus)
         for calendar_week in calendar_weeks:
             reference_week = file_util.load_ordered_json(
-                f"{self.base_path_location.format(location=Location.MENSA_GARCHING.directory_format)}"
+                f"{self.base_path_canteen.format(canteen=Canteen.MENSA_GARCHING.directory_format)}"
                 f"/reference/week_{calendar_week}.json",
             )
             generated_week = file_util.order_json_objects(weeks[calendar_week].to_json_obj())
@@ -129,7 +129,7 @@ class FMIBistroParserTest(unittest.TestCase):
         # create temp dir for testing
         with tempfile.TemporaryDirectory() as temp_dir:
             # store output in the tempdir
-            main.jsonify(weeks, temp_dir, Location.FMI_BISTRO, True)
+            main.jsonify(weeks, temp_dir, Canteen.FMI_BISTRO, True)
             generated = file_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
             reference = file_util.load_ordered_json("src/test/assets/fmi/reference/combined.json")
 
@@ -297,7 +297,7 @@ class MedizinerMensaParserTest(unittest.TestCase):
             # create temp dir for testing
             with tempfile.TemporaryDirectory() as temp_dir:
                 # store output in the tempdir
-                main.jsonify(weeks, temp_dir, Location.MEDIZINER_MENSA, True)
+                main.jsonify(weeks, temp_dir, Canteen.MEDIZINER_MENSA, True)
                 # open the generated file
                 generated = file_util.load_ordered_json(os.path.join(temp_dir, "combined", "combined.json"))
                 reference = file_util.load_ordered_json(
@@ -318,6 +318,6 @@ class MedizinerMensaParserTest(unittest.TestCase):
             47,
         )
         weeks = Week.to_weeks(menus)
-        main.jsonify(weeks, "/tmp/eat-api_test_output", Location.MEDIZINER_MENSA, True)
+        main.jsonify(weeks, "/tmp/eat-api_test_output", Canteen.MEDIZINER_MENSA, True)
 
     # """

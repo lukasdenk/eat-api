@@ -95,7 +95,7 @@ class Prices:
         return hash(self.students) ^ hash(self.staff) ^ hash(self.guests)
 
 
-class Site:
+class Location:
     def __init__(self, address: str, latitude: float, longitude: float):
         self.address = address
         self.latitude = latitude
@@ -109,54 +109,54 @@ class Site:
         }
 
 
-class Location(Enum):
-    # Some of the locations do not use the general Studentenwerk system and therefore do not have a url_id.
-    def __init__(self, long_name: str, site: Site, url_id: int):
+class Canteen(Enum):
+    # Some of the canteens do not use the general Studentenwerk system and therefore do not have a url_id.
+    def __init__(self, long_name: str, location: Location, url_id: int):
         self.long_name = long_name
-        self.site = site
+        self.site = location
         self.url_id = url_id
         self.directory_format = self.name.lower().replace("_", "-")
 
-    MENSA_ARCISSTR = "Mensa Arcisstraße", Site("Arcisstraße 17, München", 48.14742, 11.56722), 421
-    MENSA_GARCHING = "Mensa Garching", Site("Boltzmannstraße 19, Garching", 48.268132, 11.672263), 422
-    MENSA_LEOPOLDSTR = "Mensa Leopoldstraße", Site("Leopoldstraße 13a, München", 48.156311, 11.582446), 411
-    MENSA_LOTHSTR = "Mensa Lothstraße", Site("Lothstraße 13d, München", 48.153989, 11.552424), 431
-    MENSA_MARTINSRIED = "Mensa Martinsried", Site("Großhaderner Straße 44, Plategg", 48.109824, 11.460006), 412
-    MENSA_PASING = "Mensa Pasing", Site("Am Stadtpark 20, München", 48.141568, 11.451119), 432
+    MENSA_ARCISSTR = "Mensa Arcisstraße", Location("Arcisstraße 17, München", 48.14742, 11.56722), 421
+    MENSA_GARCHING = "Mensa Garching", Location("Boltzmannstraße 19, Garching", 48.268132, 11.672263), 422
+    MENSA_LEOPOLDSTR = "Mensa Leopoldstraße", Location("Leopoldstraße 13a, München", 48.156311, 11.582446), 411
+    MENSA_LOTHSTR = "Mensa Lothstraße", Location("Lothstraße 13d, München", 48.153989, 11.552424), 431
+    MENSA_MARTINSRIED = "Mensa Martinsried", Location("Großhaderner Straße 44, Plategg", 48.109824, 11.460006), 412
+    MENSA_PASING = "Mensa Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 432
     MENSA_WEIHENSTEPHAN = (
         "Mensa Weihenstephan",
-        Site(
+        Location(
             "Maximus-von-Imhof-Forum 5, Freising",
             48.39959,
             11.723147,
         ),
         423,
     )
-    STUBISTRO_ARCISSTR = "StuBistro Arcisstraße", Site("Leopoldstraße 13A, München", 48.156486, 11.581872), 450
-    STUBISTRO_GOETHESTR = "StuBistro Goethestraße", Site("Goethestraße 70, München", 48.131396, 11.558264), 418
+    STUBISTRO_ARCISSTR = "StuBistro Arcisstraße", Location("Leopoldstraße 13A, München", 48.156486, 11.581872), 450
+    STUBISTRO_GOETHESTR = "StuBistro Goethestraße", Location("Goethestraße 70, München", 48.131396, 11.558264), 418
     STUBISTRO_GROSSHADERN = (
         "StuBistro Großhadern",
-        Site(
+        Location(
             "Butenandtstraße 13, Gebäude F, München",
             48.11363,
             11.46503,
         ),
         414,
     )
-    STUBISTRO_ROSENHEIM = "StuBistro Rosenheim", Site("Hochschulstraße 1, Rosenheim", 47.867344, 12.107559), 441
+    STUBISTRO_ROSENHEIM = "StuBistro Rosenheim", Location("Hochschulstraße 1, Rosenheim", 47.867344, 12.107559), 441
     STUBISTRO_SCHELLINGSTR = (
         "StuBistro Schellingstraße",
-        Site(
+        Location(
             "Schellingstraße 3, München",
             48.148893,
             11.579027,
         ),
         416,
     )
-    STUCAFE_ADALBERTSTR = "StuCafé Adalbertstraße", Site("Adalbertstraße 5, München", 48.151507, 11.581033), 512
+    STUCAFE_ADALBERTSTR = "StuCafé Adalbertstraße", Location("Adalbertstraße 5, München", 48.151507, 11.581033), 512
     STUCAFE_AKADEMIE_WEIHENSTEPHAN = (
         "StuCafé Akademie Weihenstephan",
-        Site(
+        Location(
             "Alte Akademie 1, Freising",
             48.3948,
             11.729338,
@@ -165,7 +165,7 @@ class Location(Enum):
     )
     STUCAFE_BOLTZMANNSTR = (
         "StuCafé Boltzmannstraße",
-        Site(
+        Location(
             "Boltzmannstraße 15, Garching",
             48.265768,
             11.667593,
@@ -174,22 +174,22 @@ class Location(Enum):
     )
     STUCAFE_GARCHING = (
         "StuCafé in der Mensa Garching",
-        Site(
+        Location(
             "Boltzmannstraße 19, Garching",
             48.268268,
             11.6717,
         ),
         524,
     )
-    STUCAFE_KARLSTR = "StuCafé Karlstraße", Site("Karlstraße 6, München", 48.142759, 11.568432), 532
-    STUCAFE_PASING = "StuCafé Pasing", Site("Am Stadtpark 20, München", 48.141568, 11.451119), 534
-    IPP_BISTRO = "IPP Bistro Garching", Site("Boltzmannstraße 2, 85748 Garching", 48.262371, 11.672702), None
-    FMI_BISTRO = "FMI Bistro Garching", Site("Boltzmannstraße 3, 85748 Garching", 48.262408, 11.668028), None
-    MEDIZINER_MENSA = "Mediziner Mensa", Site("Ismaninger Straße 22, 81675 München", 48.136569, 11.5993226), None
+    STUCAFE_KARLSTR = "StuCafé Karlstraße", Location("Karlstraße 6, München", 48.142759, 11.568432), 532
+    STUCAFE_PASING = "StuCafé Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 534
+    IPP_BISTRO = "IPP Bistro Garching", Location("Boltzmannstraße 2, 85748 Garching", 48.262371, 11.672702), None
+    FMI_BISTRO = "FMI Bistro Garching", Location("Boltzmannstraße 3, 85748 Garching", 48.262408, 11.668028), None
+    MEDIZINER_MENSA = "Mediziner Mensa", Location("Ismaninger Straße 22, 81675 München", 48.136569, 11.5993226), None
 
     @staticmethod
-    def get_location_by_str(location_str: str) -> Location:
-        return Location[location_str.upper().replace("-", "_")]
+    def get_canteen_by_str(canteen_str: str) -> Canteen:
+        return Canteen[canteen_str.upper().replace("-", "_")]
 
     def to_json_obj(self):
         return {

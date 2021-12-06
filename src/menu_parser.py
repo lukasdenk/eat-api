@@ -14,7 +14,7 @@ from warnings import warn
 import requests
 from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
-from entities import Dish, Label, Location, Menu, Price, Prices, Week
+from entities import Canteen, Dish, Label, Menu, Price, Prices, Week
 from utils import util
 
 
@@ -27,7 +27,7 @@ class MenuParser(ABC):
     Abstract menu parser class.
     """
 
-    locations: Set[Location] = NotImplemented
+    canteens: Set[Canteen] = NotImplemented
     _label_lookup: Dict[str, Set[Label]] = NotImplemented
     # we use datetime %u, so we go from 1-7
     weekday_positions: Dict[str, int] = {"mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6, "sun": 7}
@@ -43,7 +43,7 @@ class MenuParser(ABC):
         return datetime.datetime.strptime(date_str % (year, week_number, day), date_format).date()
 
     @abstractmethod
-    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
+    def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
         pass
 
     @classmethod
@@ -59,26 +59,26 @@ class MenuParser(ABC):
 
 
 class StudentenwerkMenuParser(MenuParser):
-    # Locations:
-    locations = {
-        Location.MENSA_ARCISSTR,
-        Location.MENSA_GARCHING,
-        Location.MENSA_LEOPOLDSTR,
-        Location.MENSA_LOTHSTR,
-        Location.MENSA_MARTINSRIED,
-        Location.MENSA_PASING,
-        Location.MENSA_WEIHENSTEPHAN,
-        Location.STUBISTRO_ARCISSTR,
-        Location.STUBISTRO_GOETHESTR,
-        Location.STUBISTRO_GROSSHADERN,
-        Location.STUBISTRO_ROSENHEIM,
-        Location.STUBISTRO_SCHELLINGSTR,
-        Location.STUCAFE_ADALBERTSTR,
-        Location.STUCAFE_AKADEMIE_WEIHENSTEPHAN,
-        Location.STUCAFE_BOLTZMANNSTR,
-        Location.STUCAFE_GARCHING,
-        Location.STUCAFE_KARLSTR,
-        Location.STUCAFE_PASING,
+    # Canteens:
+    canteens = {
+        Canteen.MENSA_ARCISSTR,
+        Canteen.MENSA_GARCHING,
+        Canteen.MENSA_LEOPOLDSTR,
+        Canteen.MENSA_LOTHSTR,
+        Canteen.MENSA_MARTINSRIED,
+        Canteen.MENSA_PASING,
+        Canteen.MENSA_WEIHENSTEPHAN,
+        Canteen.STUBISTRO_ARCISSTR,
+        Canteen.STUBISTRO_GOETHESTR,
+        Canteen.STUBISTRO_GROSSHADERN,
+        Canteen.STUBISTRO_ROSENHEIM,
+        Canteen.STUBISTRO_SCHELLINGSTR,
+        Canteen.STUCAFE_ADALBERTSTR,
+        Canteen.STUCAFE_AKADEMIE_WEIHENSTEPHAN,
+        Canteen.STUCAFE_BOLTZMANNSTR,
+        Canteen.STUCAFE_GARCHING,
+        Canteen.STUCAFE_KARLSTR,
+        Canteen.STUCAFE_PASING,
     }
 
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
@@ -246,11 +246,11 @@ class StudentenwerkMenuParser(MenuParser):
         return Prices(students, staff, guests)
 
     @staticmethod
-    def __get_price(location: Location, dish: Tuple[str, str, str, str, str], dish_name: str) -> Prices:
-        if location == Location.MENSA_LEOPOLDSTR:
+    def __get_price(canteen: Canteen, dish: Tuple[str, str, str, str, str], dish_name: str) -> Prices:
+        if canteen == Canteen.MENSA_LEOPOLDSTR:
             return StudentenwerkMenuParser.prices_mensa_leopoldstr.get(dish[0], Prices())
 
-        if location in [Location.MENSA_WEIHENSTEPHAN, Location.MENSA_LOTHSTR]:
+        if canteen in [Canteen.MENSA_WEIHENSTEPHAN, Canteen.MENSA_LOTHSTR]:
             return StudentenwerkMenuParser.prices_mensa_weihenstephan_mensa_lothstrasse.get(dish[0], Prices())
         else:
             if dish[0] == "Studitopf":  # Soup or Stew
@@ -270,20 +270,20 @@ class StudentenwerkMenuParser(MenuParser):
                 base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN_SOUP_STEW
             return StudentenwerkMenuParser.__get_self_service_prices(base_price_type, price_per_unit_type)
 
-    base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{location_id}_-de.html"
+    base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{canteen_id}_-de.html"
     base_url_with_date: str = (
-        "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{date}_{location_id}_-de.html"
+        "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{date}_{canteen_id}_-de.html"
     )
 
-    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
+    def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
         menus = {}
-        for date in self.__get_available_dates(location):
-            page_link: str = self.base_url_with_date.format(location_id=location.url_id, date=date.strftime("%Y-%m-%d"))
+        for date in self.__get_available_dates(canteen):
+            page_link: str = self.base_url_with_date.format(canteen_id=canteen.url_id, date=date.strftime("%Y-%m-%d"))
             page: requests.Response = requests.get(page_link)
             if page.ok:
                 try:
                     tree: html.Element = html.fromstring(page.content)
-                    menu = self.get_menu(tree, location, date)
+                    menu = self.get_menu(tree, canteen, date)
                     if menu:
                         menus[date] = menu
                 # pylint: disable=broad-except
@@ -292,20 +292,20 @@ class StudentenwerkMenuParser(MenuParser):
                 # pylint: enable=broad-except
         return menus
 
-    def get_menu(self, page: html.Element, location: Location, date: datetime.date) -> Optional[Menu]:
+    def get_menu(self, page: html.Element, canteen: Canteen, date: datetime.date) -> Optional[Menu]:
         # get current menu
         current_menu: html.Element = self.__get_daily_menus_as_html(page)[0]
         # get html representation of menu
         menu_html = html.fromstring(html.tostring(current_menu))
 
         # parse dishes of current menu
-        dishes: List[Dish] = self.__parse_dishes(menu_html, location)
+        dishes: List[Dish] = self.__parse_dishes(menu_html, canteen)
         # create menu object
         menu: Menu = Menu(date, dishes)
         return menu
 
-    def __get_available_dates(self, location: Location) -> List[datetime.date]:
-        page_link: str = self.base_url.format(location_id=location.url_id)
+    def __get_available_dates(self, canteen: Canteen) -> List[datetime.date]:
+        page_link: str = self.base_url.format(canteen_id=canteen.url_id)
         page: requests.Response = requests.get(page_link)
         tree: html.Element = html.fromstring(page.content)
         return self.get_available_dates_for_html(tree)
@@ -335,7 +335,7 @@ class StudentenwerkMenuParser(MenuParser):
         return daily_menus
 
     @staticmethod
-    def __parse_dishes(menu_html: html.Element, location: Location) -> List[Dish]:
+    def __parse_dishes(menu_html: html.Element, canteen: Canteen) -> List[Dish]:
         # obtain the names of all dishes in a passed menu
         dish_names: List[str] = [
             dish.rstrip() for dish in menu_html.xpath("//p[@class='js-schedule-dish-description']/text()")
@@ -407,7 +407,7 @@ class StudentenwerkMenuParser(MenuParser):
                 prices = Prices()
             else:
                 # find prices
-                prices = StudentenwerkMenuParser.__get_price(location, dishes_dict[name], name)
+                prices = StudentenwerkMenuParser.__get_price(canteen, dishes_dict[name], name)
             dishes.append(Dish(name, prices, labels, dishes_dict[name][0]))
         return dishes
 
@@ -426,7 +426,7 @@ class StudentenwerkMenuParser(MenuParser):
 class FMIBistroMenuParser(MenuParser):
     url = "https://www.wilhelm-gastronomie.de/.cm4all/mediadb/Speiseplan_Garching_KW{calendar_week}_{year}.pdf"
 
-    locations = {Location.FMI_BISTRO}
+    canteens = {Canteen.FMI_BISTRO}
 
     class DishType(Enum):
         SOUP = auto()
@@ -465,7 +465,7 @@ class FMIBistroMenuParser(MenuParser):
         "n": {Label.MOLLUSCS},
     }
 
-    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
+    def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
         today = datetime.date.today()
         years_and_calendar_weeks: List[Tuple[int, int, int]] = [
             today.isocalendar(),
@@ -602,7 +602,7 @@ class FMIBistroMenuParser(MenuParser):
 
 
 class IPPBistroMenuParser(MenuParser):
-    locations = {Location.IPP_BISTRO}
+    canteens = {Canteen.IPP_BISTRO}
 
     url = "http://konradhof-catering.com/ipp/"
     split_days_regex: Pattern[str] = re.compile(
@@ -619,7 +619,7 @@ class IPPBistroMenuParser(MenuParser):
     """Detects the ‚Überraschungsmenü‘ keyword if it has not a price. The price is expected between the groups."""
     dish_regex: Pattern[str] = re.compile(r"(.+?)(\d+,\d+|\?€)\s€[^)]")
 
-    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
+    def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
         page = requests.get(self.url)
         # get html tree
         tree = html.fromstring(page.content)
@@ -775,7 +775,7 @@ class IPPBistroMenuParser(MenuParser):
 
             # create labels
             # all dishes have the same ingridients
-            # TODO: switch to new label and Location enum
+            # TODO: switch to new label and Canteen enum
             # labels = IngredientsOld("ipp-bistro")
             # labels.parse_labels("Mi,Gl,Sf,Sl,Ei,Se,4")
             # create list of Dish objects
@@ -808,7 +808,7 @@ class IPPBistroMenuParser(MenuParser):
 
 
 class MedizinerMensaMenuParser(MenuParser):
-    locations = {Location.MEDIZINER_MENSA}
+    canteens = {Canteen.MEDIZINER_MENSA}
 
     startPageurl = "https://www.sv.tum.de/med/startseite/"
     baseUrl = "https://www.sv.tum.de"
@@ -870,7 +870,7 @@ class MedizinerMensaMenuParser(MenuParser):
 
         return Dish(dish_str, dish_price, labels, "Tagesgericht")
 
-    def parse(self, location: Location) -> Optional[Dict[datetime.date, Menu]]:
+    def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
         page = requests.get(self.startPageurl)
         # get html tree
         tree = html.fromstring(page.content)

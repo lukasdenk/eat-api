@@ -5,7 +5,7 @@ from typing import Dict, Optional
 
 import cli
 import menu_parser
-from entities import Location, Week
+from entities import Canteen, Week
 from openmensa import openmensa
 from utils import util
 
@@ -16,21 +16,21 @@ Should be incremented as soon as the JSON output format changed in any way, shap
 """
 
 
-def get_menu_parsing_strategy(location: Location) -> Optional[menu_parser.MenuParser]:
+def get_menu_parsing_strategy(canteen: Canteen) -> Optional[menu_parser.MenuParser]:
     parsers = {
         menu_parser.StudentenwerkMenuParser,
         menu_parser.FMIBistroMenuParser,
         menu_parser.IPPBistroMenuParser,
         menu_parser.MedizinerMensaMenuParser,
     }
-    # set parsing strategy based on location
+    # set parsing strategy based on canteen
     for parser in parsers:
-        if location in parser.locations:
+        if canteen in parser.canteens:
             return parser()
     return None
 
 
-def jsonify(weeks: Dict[int, Week], directory: str, location: Location, combine_dishes: bool) -> None:
+def jsonify(weeks: Dict[int, Week], directory: str, canteen: Canteen, combine_dishes: bool) -> None:
     # iterate through weeks
     for calendar_week in weeks:
         # get Week object
@@ -66,7 +66,7 @@ def jsonify(weeks: Dict[int, Week], directory: str, location: Location, combine_
     weeks_json_all = json.dumps(
         {
             "version": JSON_VERSION,
-            "canteen_id": location.directory_format,
+            "canteen_id": canteen.directory_format,
             "weeks": [weeks[calendar_week].to_json_obj() for calendar_week in weeks],
         },
         ensure_ascii=False,
@@ -82,18 +82,18 @@ def main():
     # get command line args
     args = cli.parse_cli_args()
 
-    # print locations
-    if args.locations:
-        with open("canteens.json", "r", encoding="utf-8") as locations:
-            print(json.dumps(json.load(locations)))
+    # print canteens
+    if args.canteens:
+        with open("canteens.json", "r", encoding="utf-8") as canteens:
+            print(json.dumps(json.load(canteens)))
         return
 
-    location = Location.get_location_by_str(args.location)
+    canteen = Canteen.get_canteen_by_str(args.canteen)
     # get required parser
-    parser = get_menu_parsing_strategy(location)
+    parser = get_menu_parsing_strategy(canteen)
 
     # parse menu
-    menus = parser.parse(location)
+    menus = parser.parse(canteen)
 
     # if date has been explicitly specified, try to parse it
     menu_date = None
@@ -120,7 +120,7 @@ def main():
         weeks = Week.to_weeks(menus)
         if not os.path.exists(args.jsonify):
             os.makedirs(args.jsonify)
-        jsonify(weeks, args.jsonify, location, args.combine)
+        jsonify(weeks, args.jsonify, canteen, args.combine)
     elif args.openmensa is not None:
         weeks = Week.to_weeks(menus)
         if not os.path.exists(args.openmensa):
@@ -129,7 +129,7 @@ def main():
     # date argument is set
     elif args.date is not None:
         if menu_date not in menus:
-            print(f"There is no menu for '{location}' on {menu_date}!")
+            print(f"There is no menu for '{canteen}' on {menu_date}!")
             return
         menu = menus[menu_date]
         print(menu)

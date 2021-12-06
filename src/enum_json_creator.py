@@ -6,7 +6,7 @@ from utils import file_util
 
 
 def update_canteens(base_dir: str = "") -> None:
-    file_util.write_json(os.path.join(base_dir, "locations.json"), list(entities.Location))
+    file_util.write_json(os.path.join(base_dir, "canteens.json"), list(entities.Canteen))
 
 
 def update_labels(base_dir: str = "") -> None:

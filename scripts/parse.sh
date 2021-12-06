@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOC_LIST=( "mensa-arcisstr" "mensa-garching" "mensa-leopoldstr" "mensa-lothstr" \
+CANTEEN_LIST=( "mensa-arcisstr" "mensa-garching" "mensa-leopoldstr" "mensa-lothstr" \
 "mensa-martinsried" "mensa-pasing" "mensa-weihenstephan" "stubistro-arcisstr" "stubistro-goethestr" \
 "stubistro-grosshadern" "stubistro-rosenheim" "stubistro-schellingstr" "stucafe-adalbertstr" \
 "stucafe-akademie-weihenstephan" "stucafe-boltzmannstr" "stucafe-garching" "stucafe-karlstr" "stucafe-pasing" \
@@ -16,9 +16,9 @@ fi
 mkdir -p $OUT_DIR
 
 # Parse all canteens:
-for loc in "${LOC_LIST[@]}"; do
-    echo "Parsing menus for: " "$loc"
-    python3 src/main.py -p "$loc" -j "./$OUT_DIR/$loc" -c
+for canteen in "${CANTEEN_LIST[@]}"; do
+    echo "Parsing menus for: " "$canteen"
+    python3 src/main.py -p "$canteen" -j "./$OUT_DIR/$canteen" -c
 done
 
 # Combine all combined.json files to one all.json file:
@@ -34,14 +34,14 @@ echo "Done"
 
 openmensa_list=( "ipp-bistro" "fmi-bistro" )
 
-for loc in "${openmensa_list[@]}"; do
-    echo "Parsing openmensa menus for: " "$loc"
-    python3 src/main.py -p "$loc" --openmensa "./dist/$loc"
+for canteen in "${openmensa_list[@]}"; do
+    echo "Parsing openmensa menus for: " "$canteen"
+    python3 src/main.py -p "$canteen" --openmensa "./dist/$canteen"
 done
 
 ENUM_JSON_PATH="./dist/enums"
 mkdir -p "$ENUM_JSON_PATH"
-echo "Creating Location- and Label-Enum"
+echo "Creating Canteen- and Label-Enum"
 python3 ./src/enum_json_creator.py "$ENUM_JSON_PATH"
 
 tree dist/
