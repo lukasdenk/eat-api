@@ -94,7 +94,7 @@ The JSON files are produced by the tool shown in this repository. Hence, it is e
 ```
 $ python src/main.py -h
 main.py [-h] [-p CANTEEN] [-d DATE] [-j PATH] [-c] [--openmensa PATH]
-        [-l]
+        [--canteens] 
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -109,7 +109,7 @@ optional arguments:
                         for the canteen specified
   --openmensa PATH      directory for OpenMensa XML output (date parameter
                         will be ignored if this argument is used)
-  -l, --canteens       prints all available canteens formated as JSON
+  --canteens            prints all available canteens formated as JSON
   --language LANGUAGE   The language to translate the dish titles to, needs an DeepL API-Key in the environment variable DEEPL_API_KEY_EAT_API
 ```
 
