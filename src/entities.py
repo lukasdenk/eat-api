@@ -369,7 +369,7 @@ class Dish:
         return {
             "name": self.name,
             "prices": self.prices.to_json_obj(),
-            "labels": sorted(map(str, self.labels)),
+            "labels": sorted(map(lambda l: l.name, self.labels)),
             "dish_type": self.dish_type,
         }
 

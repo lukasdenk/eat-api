@@ -1,4 +1,5 @@
 import json
+from enum import Enum
 from json import JSONEncoder
 from typing import Any, Dict, Union
 
@@ -28,6 +29,8 @@ def dict_to_json_dict(dict_: Dict[Any, Any]) -> Dict[Union[str, float, int], Any
     for key, value in dict_.items():
         if type(key) in [int, float]:
             json_key = key
+        elif isinstance(key, Enum):
+            json_key = key.name
         else:
             json_key = str(key)
         if hasattr(value.__class__, "to_json_obj"):

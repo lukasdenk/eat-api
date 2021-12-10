@@ -29,15 +29,15 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -61,14 +61,14 @@
                 }
               },
               "labels": [
-                "Label.BARLEY",
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.SOY",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "BARLEY",
+                "CEREAL",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "SOY",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -92,18 +92,18 @@
                 }
               },
               "labels": [
-                "Label.ALCOHOL",
-                "Label.BARLEY",
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.WHEAT"
+                "ALCOHOL",
+                "BARLEY",
+                "CELERY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "SULFITES",
+                "SULPHURS",
+                "WHEAT"
               ],
               "dish_type": "Grill"
             },
@@ -127,14 +127,14 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.PRESERVATIVES",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "PRESERVATIVES",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -158,7 +158,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -182,11 +182,11 @@
                 }
               },
               "labels": [
-                "Label.GARLIC",
-                "Label.MUSTARD",
-                "Label.SOY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "GARLIC",
+                "MUSTARD",
+                "SOY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -210,18 +210,18 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CELERY",
-                "Label.DYESTUFF",
-                "Label.GARLIC",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.MUSTARD",
-                "Label.PHENYLALANINE",
-                "Label.PHOSPATES",
-                "Label.PRESERVATIVES",
-                "Label.SWEETENERS"
+                "ANTIOXIDANTS",
+                "CELERY",
+                "DYESTUFF",
+                "GARLIC",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "MUSTARD",
+                "PHENYLALANINE",
+                "PHOSPATES",
+                "PRESERVATIVES",
+                "SWEETENERS"
               ],
               "dish_type": "Fleisch"
             },
@@ -233,10 +233,10 @@
                 "guests": null
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "GLUTEN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -248,9 +248,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.CELERY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -262,9 +262,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.CELERY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -276,9 +276,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN"
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -290,22 +290,22 @@
                 "guests": null
               },
               "labels": [
-                "Label.ALMONDS",
-                "Label.BARLEY",
-                "Label.CASHEWS",
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.HAZELNUTS",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.OAT",
-                "Label.PEANUTS",
-                "Label.SHELLFISH",
-                "Label.SHELL_FRUITS",
-                "Label.SOY",
-                "Label.VEGETARIAN",
-                "Label.WALNUTS",
-                "Label.WHEAT"
+                "ALMONDS",
+                "BARLEY",
+                "CASHEWS",
+                "CEREAL",
+                "GLUTEN",
+                "HAZELNUTS",
+                "LACTOSE",
+                "MILK",
+                "OAT",
+                "PEANUTS",
+                "SHELLFISH",
+                "SHELL_FRUITS",
+                "SOY",
+                "VEGETARIAN",
+                "WALNUTS",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             }
@@ -334,15 +334,15 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.PRESERVATIVES",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "PRESERVATIVES",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -366,13 +366,13 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -396,15 +396,15 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.SPELT",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "SPELT",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -428,16 +428,16 @@
                 }
               },
               "labels": [
-                "Label.BARLEY",
-                "Label.CEREAL",
-                "Label.DYESTUFF",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.PRESERVATIVES",
-                "Label.SOY",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "BARLEY",
+                "CEREAL",
+                "DYESTUFF",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "PRESERVATIVES",
+                "SOY",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -461,13 +461,13 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.SOY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "SOY",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Wok"
             },
@@ -491,9 +491,9 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Studitopf"
             },
@@ -517,10 +517,10 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.GARLIC",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "GARLIC",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -544,19 +544,19 @@
                 }
               },
               "labels": [
-                "Label.ALCOHOL",
-                "Label.BARLEY",
-                "Label.BEEF",
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.WHEAT"
+                "ALCOHOL",
+                "BARLEY",
+                "BEEF",
+                "CELERY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "SULFITES",
+                "SULPHURS",
+                "WHEAT"
               ],
               "dish_type": "Fleisch"
             },
@@ -568,8 +568,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -581,18 +581,18 @@
                 "guests": null
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CEREAL",
-                "Label.DYESTUFF",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.PRESERVATIVES",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "CEREAL",
+                "DYESTUFF",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "PRESERVATIVES",
+                "SULFITES",
+                "SULPHURS",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -604,11 +604,11 @@
                 "guests": null
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "GLUTEN",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -620,8 +620,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -633,9 +633,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN"
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -647,14 +647,14 @@
                 "guests": null
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -666,14 +666,14 @@
                 "guests": null
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -685,9 +685,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.CELERY",
-                "Label.MEAT",
-                "Label.SOY"
+                "CELERY",
+                "MEAT",
+                "SOY"
               ],
               "dish_type": "Beilagen"
             },
@@ -699,11 +699,11 @@
                 "guests": null
               },
               "labels": [
-                "Label.ALCOHOL",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "ALCOHOL",
+                "SULFITES",
+                "SULPHURS",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -715,8 +715,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -728,25 +728,25 @@
                 "guests": null
               },
               "labels": [
-                "Label.ALMONDS",
-                "Label.BARLEY",
-                "Label.CASHEWS",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.COCOA_CONTAINING_GREASE",
-                "Label.GELATIN",
-                "Label.GLUTEN",
-                "Label.HAZELNUTS",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.OAT",
-                "Label.PEANUTS",
-                "Label.SHELLFISH",
-                "Label.SHELL_FRUITS",
-                "Label.SOY",
-                "Label.WALNUTS",
-                "Label.WHEAT"
+                "ALMONDS",
+                "BARLEY",
+                "CASHEWS",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "COCOA_CONTAINING_GREASE",
+                "GELATIN",
+                "GLUTEN",
+                "HAZELNUTS",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "OAT",
+                "PEANUTS",
+                "SHELLFISH",
+                "SHELL_FRUITS",
+                "SOY",
+                "WALNUTS",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -758,15 +758,15 @@
                 "guests": null
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.DYESTUFF",
-                "Label.FISH",
-                "Label.GARLIC",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.MUSTARD",
-                "Label.SOY",
-                "Label.SWEETENERS"
+                "ANTIOXIDANTS",
+                "DYESTUFF",
+                "FISH",
+                "GARLIC",
+                "LACTOSE",
+                "MILK",
+                "MUSTARD",
+                "SOY",
+                "SWEETENERS"
               ],
               "dish_type": "Beilagen"
             },
@@ -778,9 +778,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN"
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -792,22 +792,22 @@
                 "guests": null
               },
               "labels": [
-                "Label.ALMONDS",
-                "Label.BARLEY",
-                "Label.CASHEWS",
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.HAZELNUTS",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.OAT",
-                "Label.PEANUTS",
-                "Label.SHELLFISH",
-                "Label.SHELL_FRUITS",
-                "Label.SOY",
-                "Label.VEGETARIAN",
-                "Label.WALNUTS",
-                "Label.WHEAT"
+                "ALMONDS",
+                "BARLEY",
+                "CASHEWS",
+                "CEREAL",
+                "GLUTEN",
+                "HAZELNUTS",
+                "LACTOSE",
+                "MILK",
+                "OAT",
+                "PEANUTS",
+                "SHELLFISH",
+                "SHELL_FRUITS",
+                "SOY",
+                "VEGETARIAN",
+                "WALNUTS",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             }
@@ -836,13 +836,13 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.PRESERVATIVES",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "CEREAL",
+                "GLUTEN",
+                "PRESERVATIVES",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -866,14 +866,14 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.PRESERVATIVES",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "PRESERVATIVES",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -897,19 +897,19 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.BARLEY",
-                "Label.CEREAL",
-                "Label.DYESTUFF",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.PORK",
-                "Label.PRESERVATIVES",
-                "Label.SOY",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "BARLEY",
+                "CEREAL",
+                "DYESTUFF",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "PORK",
+                "PRESERVATIVES",
+                "SOY",
+                "WHEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -933,19 +933,19 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.BEEF",
-                "Label.CELERY",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GARLIC",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.MUSTARD",
-                "Label.PRESERVATIVES",
-                "Label.SULFITES",
-                "Label.SULPHURS"
+                "ANTIOXIDANTS",
+                "BEEF",
+                "CELERY",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GARLIC",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "MUSTARD",
+                "PRESERVATIVES",
+                "SULFITES",
+                "SULPHURS"
               ],
               "dish_type": "Grill"
             },
@@ -969,12 +969,12 @@
                 }
               },
               "labels": [
-                "Label.BARLEY",
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "BARLEY",
+                "CELERY",
+                "CEREAL",
+                "GLUTEN",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Studitopf"
             },
@@ -998,7 +998,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -1022,16 +1022,16 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.PRESERVATIVES",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "PRESERVATIVES",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -1055,17 +1055,17 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.GLUTEN",
-                "Label.HAZELNUTS",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.SHELLFISH",
-                "Label.SHELL_FRUITS",
-                "Label.SOY",
-                "Label.SPELT",
-                "Label.VEGETARIAN"
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "GLUTEN",
+                "HAZELNUTS",
+                "LACTOSE",
+                "MILK",
+                "SHELLFISH",
+                "SHELL_FRUITS",
+                "SOY",
+                "SPELT",
+                "VEGETARIAN"
               ],
               "dish_type": "S\u00fc\u00dfspeise"
             },
@@ -1077,9 +1077,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.GARLIC",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "GARLIC",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -1091,14 +1091,14 @@
                 "guests": null
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CHICKEN_EGGS",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.MUSTARD",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.VEGETARIAN"
+                "ANTIOXIDANTS",
+                "CHICKEN_EGGS",
+                "LACTOSE",
+                "MILK",
+                "MUSTARD",
+                "SULFITES",
+                "SULPHURS",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -1110,7 +1110,7 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGETARIAN"
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -1122,8 +1122,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -1135,22 +1135,22 @@
                 "guests": null
               },
               "labels": [
-                "Label.ALMONDS",
-                "Label.BARLEY",
-                "Label.CASHEWS",
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.HAZELNUTS",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.OAT",
-                "Label.PEANUTS",
-                "Label.SHELLFISH",
-                "Label.SHELL_FRUITS",
-                "Label.SOY",
-                "Label.VEGETARIAN",
-                "Label.WALNUTS",
-                "Label.WHEAT"
+                "ALMONDS",
+                "BARLEY",
+                "CASHEWS",
+                "CEREAL",
+                "GLUTEN",
+                "HAZELNUTS",
+                "LACTOSE",
+                "MILK",
+                "OAT",
+                "PEANUTS",
+                "SHELLFISH",
+                "SHELL_FRUITS",
+                "SOY",
+                "VEGETARIAN",
+                "WALNUTS",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -1162,11 +1162,11 @@
                 "guests": null
               },
               "labels": [
-                "Label.SESAME",
-                "Label.SHELL_FRUITS",
-                "Label.SOY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "SESAME",
+                "SHELL_FRUITS",
+                "SOY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             }
@@ -1195,11 +1195,11 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "GLUTEN",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -1223,17 +1223,17 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.BARLEY",
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.PHOSPATES",
-                "Label.PRESERVATIVES",
-                "Label.SOY",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "BARLEY",
+                "CEREAL",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "PHOSPATES",
+                "PRESERVATIVES",
+                "SOY",
+                "WHEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -1257,22 +1257,22 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.BEEF",
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.MUSTARD",
-                "Label.PRESERVATIVES",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "BEEF",
+                "CELERY",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "MUSTARD",
+                "PRESERVATIVES",
+                "SULFITES",
+                "SULPHURS",
+                "WHEAT"
               ],
               "dish_type": "Grill"
             },
@@ -1296,15 +1296,15 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.PEANUTS",
-                "Label.PRESERVATIVES",
-                "Label.SOY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "PEANUTS",
+                "PRESERVATIVES",
+                "SOY",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Wok"
             },
@@ -1328,11 +1328,11 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.GARLIC",
-                "Label.PRESERVATIVES",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "GARLIC",
+                "PRESERVATIVES",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Studitopf"
             },
@@ -1356,7 +1356,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -1380,9 +1380,9 @@
                 }
               },
               "labels": [
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN"
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -1406,14 +1406,14 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.SOY",
-                "Label.WHEAT"
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "SOY",
+                "WHEAT"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -1437,15 +1437,15 @@
                 }
               },
               "labels": [
-                "Label.BARLEY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.PRESERVATIVES",
-                "Label.WHEAT"
+                "BARLEY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "PRESERVATIVES",
+                "WHEAT"
               ],
               "dish_type": "Fleisch"
             },
@@ -1457,11 +1457,11 @@
                 "guests": null
               },
               "labels": [
-                "Label.PRESERVATIVES",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "PRESERVATIVES",
+                "SULFITES",
+                "SULPHURS",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -1473,13 +1473,13 @@
                 "guests": null
               },
               "labels": [
-                "Label.BARLEY",
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "BARLEY",
+                "CEREAL",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -1491,14 +1491,14 @@
                 "guests": null
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -1510,11 +1510,11 @@
                 "guests": null
               },
               "labels": [
-                "Label.ALCOHOL",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "ALCOHOL",
+                "SULFITES",
+                "SULPHURS",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -1526,10 +1526,10 @@
                 "guests": null
               },
               "labels": [
-                "Label.GELATIN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK"
+                "GELATIN",
+                "LACTOSE",
+                "MEAT",
+                "MILK"
               ],
               "dish_type": "Beilagen"
             }
@@ -1558,16 +1558,16 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.PRESERVATIVES",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "PRESERVATIVES",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -1591,19 +1591,19 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.PHOSPATES",
-                "Label.PORK",
-                "Label.PRESERVATIVES",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "CELERY",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "PHOSPATES",
+                "PORK",
+                "PRESERVATIVES",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -1627,19 +1627,19 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.BARLEY",
-                "Label.CEREAL",
-                "Label.DYESTUFF",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.PHOSPATES",
-                "Label.PORK",
-                "Label.PRESERVATIVES",
-                "Label.SOY",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "BARLEY",
+                "CEREAL",
+                "DYESTUFF",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "PHOSPATES",
+                "PORK",
+                "PRESERVATIVES",
+                "SOY",
+                "WHEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -1663,14 +1663,14 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.FISH",
-                "Label.GLUTEN",
-                "Label.PRESERVATIVES",
-                "Label.SESAME",
-                "Label.SHELL_FRUITS",
-                "Label.SOY",
-                "Label.WHEAT"
+                "CEREAL",
+                "FISH",
+                "GLUTEN",
+                "PRESERVATIVES",
+                "SESAME",
+                "SHELL_FRUITS",
+                "SOY",
+                "WHEAT"
               ],
               "dish_type": "Grill"
             },
@@ -1694,14 +1694,14 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.PRESERVATIVES",
-                "Label.SOY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "PRESERVATIVES",
+                "SOY",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Wok"
             },
@@ -1725,10 +1725,10 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.GARLIC",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "GARLIC",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Studitopf"
             },
@@ -1752,7 +1752,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -1764,17 +1764,17 @@
                 "guests": null
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "SULFITES",
+                "SULPHURS",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -1786,17 +1786,17 @@
                 "guests": null
               },
               "labels": [
-                "Label.BARLEY",
-                "Label.BEEF",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.PORK",
-                "Label.WHEAT"
+                "BARLEY",
+                "BEEF",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "PORK",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -1808,8 +1808,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -1821,8 +1821,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -1834,13 +1834,13 @@
                 "guests": null
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Beilagen"
             },
@@ -1852,8 +1852,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -1865,10 +1865,10 @@
                 "guests": null
               },
               "labels": [
-                "Label.GELATIN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK"
+                "GELATIN",
+                "LACTOSE",
+                "MEAT",
+                "MILK"
               ],
               "dish_type": "Beilagen"
             }
@@ -1903,16 +1903,16 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.SHELLFISH",
-                "Label.SHELL_FRUITS",
-                "Label.VEGETARIAN",
-                "Label.WALNUTS",
-                "Label.WHEAT"
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "SHELLFISH",
+                "SHELL_FRUITS",
+                "VEGETARIAN",
+                "WALNUTS",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -1936,7 +1936,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -1960,11 +1960,11 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.BEEF",
-                "Label.MEAT",
-                "Label.PHOSPATES",
-                "Label.PORK"
+                "ANTIOXIDANTS",
+                "BEEF",
+                "MEAT",
+                "PHOSPATES",
+                "PORK"
               ],
               "dish_type": "Grill"
             },
@@ -1988,13 +1988,13 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.MUSTARD",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "MUSTARD",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Wok"
             },
@@ -2018,8 +2018,8 @@
                 }
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Studitopf"
             },
@@ -2043,7 +2043,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -2067,14 +2067,14 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -2098,10 +2098,10 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.GARLIC",
-                "Label.SOY",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "GARLIC",
+                "SOY",
+                "VEGETARIAN"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -2113,9 +2113,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN"
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -2127,8 +2127,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -2140,9 +2140,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.CELERY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -2154,7 +2154,7 @@
                 "guests": null
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Beilagen"
             }
@@ -2183,13 +2183,13 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -2213,7 +2213,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -2237,18 +2237,18 @@
                 }
               },
               "labels": [
-                "Label.ALCOHOL",
-                "Label.BARLEY",
-                "Label.BEEF",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.WHEAT"
+                "ALCOHOL",
+                "BARLEY",
+                "BEEF",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "SULFITES",
+                "SULPHURS",
+                "WHEAT"
               ],
               "dish_type": "Grill"
             },
@@ -2272,11 +2272,11 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.GARLIC",
-                "Label.MUSTARD",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "GARLIC",
+                "MUSTARD",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Studitopf"
             },
@@ -2300,7 +2300,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -2324,16 +2324,16 @@
                 }
               },
               "labels": [
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.PRESERVATIVES",
-                "Label.SPELT",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "PRESERVATIVES",
+                "SPELT",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -2357,12 +2357,12 @@
                 }
               },
               "labels": [
-                "Label.ALCOHOL",
-                "Label.SOY",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "ALCOHOL",
+                "SOY",
+                "SULFITES",
+                "SULPHURS",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -2374,8 +2374,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             }
@@ -2404,14 +2404,14 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -2435,7 +2435,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -2459,9 +2459,9 @@
                 }
               },
               "labels": [
-                "Label.GARLIC",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "GARLIC",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Wok"
             },
@@ -2485,9 +2485,9 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Studitopf"
             },
@@ -2511,12 +2511,12 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Vegetarisch"
             },
@@ -2540,16 +2540,16 @@
                 }
               },
               "labels": [
-                "Label.ALCOHOL",
-                "Label.BARLEY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MEAT",
-                "Label.MILK",
-                "Label.PORK",
-                "Label.WHEAT"
+                "ALCOHOL",
+                "BARLEY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MEAT",
+                "MILK",
+                "PORK",
+                "WHEAT"
               ],
               "dish_type": "Fleisch"
             },
@@ -2561,11 +2561,11 @@
                 "guests": null
               },
               "labels": [
-                "Label.CHICKEN_EGGS",
-                "Label.GARLIC",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN"
+                "CHICKEN_EGGS",
+                "GARLIC",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -2577,11 +2577,11 @@
                 "guests": null
               },
               "labels": [
-                "Label.PRESERVATIVES",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "PRESERVATIVES",
+                "SULFITES",
+                "SULPHURS",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -2593,12 +2593,12 @@
                 "guests": null
               },
               "labels": [
-                "Label.ALCOHOL",
-                "Label.ANTIOXIDANTS",
-                "Label.SULFITES",
-                "Label.SULPHURS",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "ALCOHOL",
+                "ANTIOXIDANTS",
+                "SULFITES",
+                "SULPHURS",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -2610,8 +2610,8 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             }
@@ -2640,14 +2640,14 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -2671,7 +2671,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -2695,11 +2695,11 @@
                 }
               },
               "labels": [
-                "Label.BEEF",
-                "Label.MEAT",
-                "Label.MUSTARD",
-                "Label.PHOSPATES",
-                "Label.PORK"
+                "BEEF",
+                "MEAT",
+                "MUSTARD",
+                "PHOSPATES",
+                "PORK"
               ],
               "dish_type": "Grill"
             },
@@ -2723,13 +2723,13 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -2753,7 +2753,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -2777,7 +2777,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Fleisch"
             },
@@ -2801,12 +2801,12 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.GLUTEN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "GLUTEN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "S\u00fc\u00dfspeise"
             },
@@ -2818,7 +2818,7 @@
                 "guests": null
               },
               "labels": [
-                "Label.VEGETARIAN"
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -2830,9 +2830,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.CELERY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             }
@@ -2861,15 +2861,15 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GARLIC",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.SOY",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "GARLIC",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "SOY",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Pasta"
             },
@@ -2893,7 +2893,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Pizza"
             },
@@ -2917,12 +2917,12 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.GARLIC",
-                "Label.PRESERVATIVES",
-                "Label.SOY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "GARLIC",
+                "PRESERVATIVES",
+                "SOY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Wok"
             },
@@ -2946,12 +2946,12 @@
                 }
               },
               "labels": [
-                "Label.CELERY",
-                "Label.CEREAL",
-                "Label.GLUTEN",
-                "Label.VEGAN",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "CELERY",
+                "CEREAL",
+                "GLUTEN",
+                "VEGAN",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -2975,7 +2975,7 @@
                 }
               },
               "labels": [
-                "Label.MEAT"
+                "MEAT"
               ],
               "dish_type": "Studitopf"
             },
@@ -2999,17 +2999,17 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.DYESTUFF",
-                "Label.FISH",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.MUSTARD",
-                "Label.SWEETENERS",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "DYESTUFF",
+                "FISH",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "MUSTARD",
+                "SWEETENERS",
+                "WHEAT"
               ],
               "dish_type": "Fisch"
             },
@@ -3033,14 +3033,14 @@
                 }
               },
               "labels": [
-                "Label.ANTIOXIDANTS",
-                "Label.CEREAL",
-                "Label.CHICKEN_EGGS",
-                "Label.GLUTEN",
-                "Label.LACTOSE",
-                "Label.MILK",
-                "Label.VEGETARIAN",
-                "Label.WHEAT"
+                "ANTIOXIDANTS",
+                "CEREAL",
+                "CHICKEN_EGGS",
+                "GLUTEN",
+                "LACTOSE",
+                "MILK",
+                "VEGETARIAN",
+                "WHEAT"
               ],
               "dish_type": "S\u00fc\u00dfspeise"
             },
@@ -3052,9 +3052,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.CELERY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             },
@@ -3066,9 +3066,9 @@
                 "guests": null
               },
               "labels": [
-                "Label.CELERY",
-                "Label.VEGAN",
-                "Label.VEGETARIAN"
+                "CELERY",
+                "VEGAN",
+                "VEGETARIAN"
               ],
               "dish_type": "Beilagen"
             }
