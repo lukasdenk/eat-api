@@ -27,8 +27,8 @@ class MenuParser(ABC):
     Abstract menu parser class.
     """
 
-    canteens: Set[Canteen] = NotImplemented
-    _label_lookup: Dict[str, Set[Label]] = NotImplemented
+    canteens: Set[Canteen]
+    _label_lookup: Dict[str, Set[Label]]
     # we use datetime %u, so we go from 1-7
     weekday_positions: Dict[str, int] = {"mon": 1, "tue": 2, "wed": 3, "thu": 4, "fri": 5, "sat": 6, "sun": 7}
 
@@ -121,8 +121,7 @@ class StudentenwerkMenuParser(MenuParser):
         "13": {Label.COCOA_CONTAINING_GREASE},
         "14": {Label.GELATIN},
         "99": {Label.ALCOHOL},
-        # meatless is not a label
-        "f": {},  # type: ignore
+        "f": {Label.VEGETARIAN},
         "v": {Label.VEGAN},
         "S": {Label.PORK},
         "R": {Label.BEEF},
@@ -270,15 +269,15 @@ class StudentenwerkMenuParser(MenuParser):
                 base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN_SOUP_STEW
             return StudentenwerkMenuParser.__get_self_service_prices(base_price_type, price_per_unit_type)
 
-    base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{canteen_id}_-de.html"
+    base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{url_id}_-de.html"
     base_url_with_date: str = (
-        "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{date}_{canteen_id}_-de.html"
+        "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{date}_{url_id}_-de.html"
     )
 
     def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
         menus = {}
         for date in self.__get_available_dates(canteen):
-            page_link: str = self.base_url_with_date.format(canteen_id=canteen.url_id, date=date.strftime("%Y-%m-%d"))
+            page_link: str = self.base_url_with_date.format(url_id=canteen.url_id, date=date.strftime("%Y-%m-%d"))
             page: requests.Response = requests.get(page_link)
             if page.ok:
                 try:
@@ -305,7 +304,7 @@ class StudentenwerkMenuParser(MenuParser):
         return menu
 
     def __get_available_dates(self, canteen: Canteen) -> List[datetime.date]:
-        page_link: str = self.base_url.format(canteen_id=canteen.url_id)
+        page_link: str = self.base_url.format(url_id=canteen.url_id)
         page: requests.Response = requests.get(page_link)
         tree: html.Element = html.fromstring(page.content)
         return self.get_available_dates_for_html(tree)

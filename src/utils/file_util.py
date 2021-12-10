@@ -39,5 +39,4 @@ def write(path: str, text: str) -> None:
 
 
 def write_json(path: str, obj: object) -> None:
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(json_util.to_json_str(obj))
+    write(path, json_util.to_json_str(obj))
