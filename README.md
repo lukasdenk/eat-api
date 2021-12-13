@@ -70,6 +70,12 @@ To get all available canteens:
 https://tum-dev.github.io/eat-api/enums/canteens.json
 ```
 
+To get all available labels:
+
+```
+https://tum-dev.github.io/eat-api/enums/labels.json
+```
+
 #### Example
 
 The following link would give you the menu of Mensa Garching for week 20 in 2019:
@@ -133,6 +139,10 @@ Dish titles are provided only in german by the Studentenwerk.
 We offer the possibility to translate them using the DeepL API.
 In order to use the API, there needs to be an API key provided in the environment variable `DEEPL_API_KEY_EAT_API`.
 The target language can be specified using the `--language` option using one of the languages supported by DeepL e.g. `EN-US`.
+
+### Generating `canteens.json` and `label.json`
+
+The `canteens.json` and `label.json` are generated from the `Canteen` and `Label` enum. To generate them, run `enum_json_creator.py [<path/to/directory>]`. This will also generate a `languages.json` file, which contains the languages supported by the `Label` enum. If no path is specified, the Python script stores them in `./dist/enums`.
 
 ## Projects using `eat-api`
 
