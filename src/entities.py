@@ -286,7 +286,7 @@ class Label(ApiRepresentable, Enum):
 
     def __lt__(self, other):
         if self.__class__ is other.__class__:
-            return self.name < other.value
+            return self.name < other.name
         return NotImplemented
 
     @staticmethod
