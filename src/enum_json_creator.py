@@ -25,6 +25,8 @@ if __name__ == "__main__":
     base_directory = "dist/enums"
     if len(sys.argv) > 1:
         base_directory = sys.argv[1]
+    if not os.path.exists(base_directory):
+        raise NotADirectoryError(f"There is no such directory '{base_directory}'.")
     enum_types = {entities.Canteen: "canteens.json", entities.Label: "labels.json", entities.Language: "languages.json"}
     for key, value in enum_types.items():
         write_enum_as_api_representation_to_file(base_directory, value, key)
