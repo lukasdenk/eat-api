@@ -2,7 +2,7 @@
 
 import argparse
 
-from menu_parser import StudentenwerkMenuParser
+from entities import Canteen
 
 
 def parse_cli_args():
@@ -13,12 +13,12 @@ def parse_cli_args():
     group.add_argument(
         "-p",
         "--parse",
-        metavar="LOCATION",
-        dest="location",
-        choices=(
-            ["fmi-bistro", "ipp-bistro", "mediziner-mensa"] + list(StudentenwerkMenuParser.location_id_mapping.keys())
-        ),
-        help="the location you want to eat at",
+        metavar="CANTEEN",
+        dest="canteen",
+        # pylint:disable=protected-access
+        choices=(Canteen._member_names_ + [key.canteen_id for key in Canteen]),
+        # pylint:enable=protected-access
+        help="the canteen you want to eat at",
     )
     parseGroup: argparse._MutuallyExclusiveGroup = group.add_argument_group("parse")  # pylint: disable=protected-access
     parseGroup.add_argument("-d", "--date", help="date (DD.MM.YYYY) of the day of which you want to get the menu")
@@ -32,7 +32,7 @@ def parse_cli_args():
         "-c",
         "--combine",
         action="store_true",
-        help='creates a "combined.json" file containing all dishes for the location specified',
+        help='creates a "combined.json" file containing all dishes for the canteen specified',
     )
     parseGroup.add_argument(
         "--openmensa",
@@ -40,10 +40,9 @@ def parse_cli_args():
         metavar="PATH",
     )
     group.add_argument(
-        "-l",
-        "--locations",
+        "--canteens",
         action="store_true",
-        help="prints all available locations formated as JSON",
+        help="prints all available canteens formated as JSON",
     )
     parser.add_argument(
         "--language",

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOC_LIST=( "mensa-arcisstr" "mensa-garching" "mensa-leopoldstr" "mensa-lothstr" \
+CANTEEN_LIST=( "mensa-arcisstr" "mensa-garching" "mensa-leopoldstr" "mensa-lothstr" \
 "mensa-martinsried" "mensa-pasing" "mensa-weihenstephan" "stubistro-arcisstr" "stubistro-goethestr" \
 "stubistro-großhadern" "stubistro-rosenheim" "stubistro-schellingstr" "stucafe-adalbertstr" \
 "stucafe-akademie-weihenstephan" "stucafe-boltzmannstr" "stucafe-garching" "stucafe-karlstr" "stucafe-pasing" \
@@ -15,10 +15,11 @@ fi
 # Create empty output directory:
 mkdir -p $OUT_DIR
 
+
 # Parse all canteens:
-for loc in "${LOC_LIST[@]}"; do
-    echo "Parsing menus for: " "$loc"
-    python3 src/main.py -p "$loc" -j "./$OUT_DIR/$loc" -c --language "$LANGUAGE"
+for canteen in "${CANTEEN_LIST[@]}"; do
+    echo "Parsing menus for: " "$canteen"
+    python3 src/main.py -p "$canteen" -j "./$OUT_DIR/$canteen" -c
 done
 
 # Combine all combined.json files to one all.json file:
@@ -27,16 +28,21 @@ python3 scripts/combine.py
 # and reorganize them in a more efficient format:
 python3 scripts/reformat.py
 
-# Copy canteens.json in the output directory:
-echo "Coppying canteens..."
-cp src/canteens.json $OUT_DIR
-echo "Done"
-
 openmensa_list=( "ipp-bistro" "fmi-bistro" )
 
-for loc in "${openmensa_list[@]}"; do
-    echo "Parsing openmensa menus for: " "$loc"
-    python3 src/main.py -p "$loc" --openmensa "./dist/$loc"
+for CANTEEN in "${openmensa_list[@]}"; do
+    echo "Parsing openmensa menus for: " "$CANTEEN"
+    python3 src/main.py -p "$CANTEEN" --openmensa "$OUT_DIR/$CANTEEN"
 done
 
-tree dist/
+ENUM_JSON_PATH="$OUT_DIR/enums"
+mkdir -p "$ENUM_JSON_PATH"
+echo "Creating Canteen-, Language- and Label-Enum"
+python3 ./src/enum_json_creator.py "$ENUM_JSON_PATH"
+
+# Copy canteens.json in the output directory (for backwards compatibility):
+echo "Copying canteens..."
+cp "$ENUM_JSON_PATH/canteens.json" $OUT_DIR
+echo "Done"
+
+tree "$OUT_DIR"

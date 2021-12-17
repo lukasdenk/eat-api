@@ -4,8 +4,15 @@
 from __future__ import annotations
 
 import datetime
-import re
-from typing import Any, Dict, List, Optional, Sequence, Set
+from enum import Enum, auto
+from typing import Any, Dict, List, Optional, Set
+
+from utils import json_util
+
+
+class ApiRepresentable:
+    def to_api_representation(self) -> Dict[str, object]:
+        pass
 
 
 class Price:
@@ -67,7 +74,7 @@ class Prices:
         else:
             self.guests = guests
 
-    def setBasePrice(self, base_price: float) -> None:
+    def set_base_price(self, base_price: float) -> None:
         if self.students is not None:
             self.students.base_price = base_price
         if self.staff is not None:
@@ -95,193 +102,265 @@ class Prices:
         return hash(self.students) ^ hash(self.staff) ^ hash(self.guests)
 
 
-class Ingredients:
-    location: str
-    ingredient_set: Set[str]
+class Location:
+    def __init__(self, address: str, latitude: float, longitude: float):
+        self.address = address
+        self.latitude = latitude
+        self.longitude = longitude
 
-    ingredient_lookup = {
-        "GQB": "Certified Quality - Bavaria",
-        "MSC": "Marine Stewardship Council",
-        "1": "with dyestuff",
-        "2": "with preservative",
-        "3": "with antioxidant",
-        "4": "with flavor enhancers",
-        "5": "sulphured",
-        "6": "blackened (olive)",
-        "7": "waxed",
-        "8": "with phosphate",
-        "9": "with sweeteners",
-        "10": "contains a source of phenylalanine",
-        "11": "with sugar and sweeteners",
-        "13": "with cocoa-containing grease",
-        "14": "with gelatin",
-        "99": "with alcohol",
-        "f": "meatless dish",
-        "v": "vegan dish",
-        "S": "with pork",
-        "R": "with beef",
-        "K": "with veal",
-        "G": "with poultry",  # mediziner mensa
-        "W": "with wild meat",  # mediziner mensa
-        "L": "with lamb",  # mediziner mensa
-        "Kn": "with garlic",
-        "Ei": "with chicken egg",
-        "En": "with peanut",
-        "Fi": "with fish",
-        "Gl": "with gluten-containing cereals",
-        "GlW": "with wheat",
-        "GlR": "with rye",
-        "GlG": "with barley",
-        "GlH": "with oats",
-        "GlD": "with spelt",
-        "Kr": "with crustaceans",
-        "Lu": "with lupines",
-        "Mi": "with milk and lactose",
-        "Sc": "with shell fruits",
-        "ScM": "with almonds",
-        "ScH": "with hazelnuts",
-        "ScW": "with Walnuts",
-        "ScC": "with cashew nuts",
-        "ScP": "with pistachios",
-        "Se": "with sesame seeds",
-        "Sf": "with mustard",
-        "Sl": "with celery",
-        "So": "with soy",
-        "Sw": "with sulfur dioxide and sulfites",
-        "Wt": "with mollusks",
-    }
-    """A dictionary of all ingredients (from the Studentenwerk) with their description."""
+    def to_json_obj(self):
+        return {
+            "address": self.address,
+            "latitude": self.latitude,
+            "longitude": self.longitude,
+        }
 
-    fmi_ingredient_lookup = {
-        "Gluten": "Gl",
-        "Laktose": "Mi",
-        "Milcheiweiß": "Mi",
-        "Milch": "Mi",
-        "Ei": "Ei",
-        "Hühnerei": "Ei",
-        "Soja": "So",
-        "Nüsse": "Sc",
-        "Erdnuss": "En",
-        "Sellerie": "Sl",
-        "Fisch": "Si",
-        "Krebstiere": "Kr",
-        "Weichtiere": "Wt",
-        "Sesam": "Se",
-        "Senf": "Sf",
-    }
 
-    mediziner_ingredient_lookup = {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "5": "5",
-        "6": "6",
-        "7": "7",
-        "8": "8",
-        "9": "9",
-        "A": "99",
-        "B": "Gl",
-        "C": "Kr",
-        "E": "Fi",
-        "F": "Fi",
-        "G": "G",
-        "H": "En",
-        "K": "K",
-        "L": "L",
-        "M": "So",
-        "N": "Mi",
-        "O": "Sc",
-        "P": "Sl",
-        "R": "R",
-        "S": "S",
-        "T": "Sf",
-        "U": "Se",
-        "V": "Sw",
-        "W": "W",
-        "X": "Lu",
-        "Y": "Ei",
-        "Z": "Wt",
-    }
+class Canteen(ApiRepresentable, Enum):
+    # Some of the canteens do not use the general Studentenwerk system and therefore do not have a url_id.
+    def __init__(self, long_name: str, location: Location, url_id: int):
+        self.long_name = long_name
+        self.site = location
+        self.url_id = url_id
+        self.canteen_id = self.name.lower().replace("_", "-")
 
-    def __init__(self, location: str):
-        self.location = location
-        self.ingredient_set = set()
+    MENSA_ARCISSTR = "Mensa Arcisstraße", Location("Arcisstraße 17, München", 48.14742, 11.56722), 421
+    MENSA_GARCHING = "Mensa Garching", Location("Boltzmannstraße 19, Garching", 48.268132, 11.672263), 422
+    MENSA_LEOPOLDSTR = "Mensa Leopoldstraße", Location("Leopoldstraße 13a, München", 48.156311, 11.582446), 411
+    MENSA_LOTHSTR = "Mensa Lothstraße", Location("Lothstraße 13d, München", 48.153989, 11.552424), 431
+    MENSA_MARTINSRIED = "Mensa Martinsried", Location("Großhaderner Straße 44, Plategg", 48.109824, 11.460006), 412
+    MENSA_PASING = "Mensa Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 432
+    MENSA_WEIHENSTEPHAN = (
+        "Mensa Weihenstephan",
+        Location(
+            "Maximus-von-Imhof-Forum 5, Freising",
+            48.39959,
+            11.723147,
+        ),
+        423,
+    )
+    STUBISTRO_ARCISSTR = "StuBistro Arcisstraße", Location("Leopoldstraße 13A, München", 48.156486, 11.581872), 450
+    STUBISTRO_GOETHESTR = "StuBistro Goethestraße", Location("Goethestraße 70, München", 48.131396, 11.558264), 418
+    STUBISTRO_GROSSHADERN = (
+        "StuBistro Großhadern",
+        Location(
+            "Butenandtstraße 13, Gebäude F, München",
+            48.11363,
+            11.46503,
+        ),
+        414,
+    )
+    STUBISTRO_ROSENHEIM = "StuBistro Rosenheim", Location("Hochschulstraße 1, Rosenheim", 47.867344, 12.107559), 441
+    STUBISTRO_SCHELLINGSTR = (
+        "StuBistro Schellingstraße",
+        Location(
+            "Schellingstraße 3, München",
+            48.148893,
+            11.579027,
+        ),
+        416,
+    )
+    STUCAFE_ADALBERTSTR = "StuCafé Adalbertstraße", Location("Adalbertstraße 5, München", 48.151507, 11.581033), 512
+    STUCAFE_AKADEMIE_WEIHENSTEPHAN = (
+        "StuCafé Akademie Weihenstephan",
+        Location(
+            "Alte Akademie 1, Freising",
+            48.3948,
+            11.729338,
+        ),
+        526,
+    )
+    STUCAFE_BOLTZMANNSTR = (
+        "StuCafé Boltzmannstraße",
+        Location(
+            "Boltzmannstraße 15, Garching",
+            48.265768,
+            11.667593,
+        ),
+        527,
+    )
+    STUCAFE_GARCHING = (
+        "StuCafé in der Mensa Garching",
+        Location(
+            "Boltzmannstraße 19, Garching",
+            48.268268,
+            11.6717,
+        ),
+        524,
+    )
+    STUCAFE_KARLSTR = "StuCafé Karlstraße", Location("Karlstraße 6, München", 48.142759, 11.568432), 532
+    STUCAFE_PASING = "StuCafé Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 534
+    IPP_BISTRO = "IPP Bistro Garching", Location("Boltzmannstraße 2, 85748 Garching", 48.262371, 11.672702), None
+    FMI_BISTRO = "FMI Bistro Garching", Location("Boltzmannstraße 3, 85748 Garching", 48.262408, 11.668028), None
+    MEDIZINER_MENSA = "Mediziner Mensa", Location("Ismaninger Straße 22, 81675 München", 48.136569, 11.5993226), None
 
-    def _values_lookup(self, values: Sequence[str], lookup: Optional[Dict[str, str]]) -> None:
-        """
-        Normalizes ingredients to the self.ingredient_lookup codes.
+    @staticmethod
+    def get_canteen_by_str(canteen_str: str) -> Canteen:
+        return Canteen[canteen_str.upper().replace("-", "_")]
 
-        Args:
-            values: A sequence of ingredients codes.
-            lookup: If needed, a mapping from a canteen specific ingredients codes to the self.ingredient_lookup codes.
-        """
-        for value in values:
-            # ignore empty values
-            if not value or value.isspace():
-                continue
-            if (not lookup and value not in self.ingredient_lookup) or (lookup and value not in lookup):
+    def to_json_obj(self):
+        return {
+            "canteen_id": self.canteen_id,
+            "name": self.name,
+            "long_name": self.long_name,
+            "location": self.site.to_json_obj(),
+            "url_id": self.url_id,
+        }
 
-                # sometimes the ‘,’ is missing between the ingredients (especially with IPP) and we try to split again
-                # with capital letters.
-                split_values: List[Any] = re.findall(r"[a-züöäA-ZÜÖÄ][^A-ZÜÖÄ]*", value)
-                if split_values:
-                    self._values_lookup(split_values, lookup)
-                    continue
-                else:
-                    print("Unknown ingredient for " + self.location + " found: " + str(value))
-                    continue
+    def to_api_representation(self) -> Dict[str, object]:
+        return {
+            "enum_name": self.name,
+            "name": self.long_name,
+            "location": self.site.to_json_obj(),
+            "canteen_id": self.canteen_id,
+        }
 
-            if lookup:
-                self.ingredient_set.add(lookup[value])
-            else:
-                self.ingredient_set.add(value)
 
-    def parse_ingredients(self, values: str) -> None:
-        """
-        Parse and creates a normalized list of ingredients.
+class Language(ApiRepresentable, Enum):
+    DE = auto()
 
-        Args:
-            values: String with comma separated ingredients codes.
-        """
-        values = values.strip()
-        split_values: List[str] = values.split(",")
-        # check for special parser/ingredient translation required
-        if self.location == "fmi-bistro":
-            self._values_lookup(split_values, self.fmi_ingredient_lookup)
-        elif self.location == "mediziner-mensa":
-            self._values_lookup(split_values, self.mediziner_ingredient_lookup)
-        # default to the "Studentenwerk" ingredients
-        # "ipp-bistro" also uses the "Studentenwerk" ingredients since all
-        # dishes contain the same ingredients
-        else:
-            self._values_lookup(split_values, None)
+    def to_api_representation(self) -> Dict[str, object]:
+        return {
+            "enum_name": self.name,
+        }
 
-    def __hash__(self) -> int:
-        return hash(frozenset(self.ingredient_set))
+
+class Label(ApiRepresentable, Enum):
+    def __init__(self, text: Dict[Language, str]):
+        self.text = text
+
+    GLUTEN = {Language.DE: "Gluten"}
+    WHEAT = {Language.DE: "Weizen"}
+    RYE = {Language.DE: "Roggen"}
+    BARLEY = {Language.DE: "Gerste"}
+    OAT = {Language.DE: "Hafer"}
+    SPELT = {Language.DE: "Dinkel"}
+    HYBRIDS = {Language.DE: "Hybridstämme"}
+    SHELLFISH = {Language.DE: "Krebstiere"}
+    CHICKEN_EGGS = {Language.DE: "Eier"}
+    FISH = {Language.DE: "Fisch"}
+    PEANUTS = {Language.DE: "Erdnüsse"}
+    SOY = {Language.DE: "Soja"}
+    MILK = {Language.DE: "Milch"}
+    LACTOSE = {Language.DE: "Laktose"}
+    ALMONDS = {Language.DE: "Mandeln"}
+    HAZELNUTS = {Language.DE: "Haselnüsse"}
+    WALNUTS = {Language.DE: "Walnüsse"}
+    CASHEWS = {Language.DE: "Cashewnüsse"}
+    PECAN = {Language.DE: "Pekanüsse"}
+    PISTACHIOES = {Language.DE: "Pistazien"}
+    MACADAMIA = {Language.DE: "Macadamianüsse"}
+    CELERY = {Language.DE: "Sellerie"}
+    MUSTARD = {Language.DE: "Senf"}
+    SESAME = {Language.DE: "Sesam"}
+    SULPHURS = {Language.DE: "Schwefeldioxid"}
+    SULFITES = {Language.DE: "Sulfite"}
+    LUPIN = {Language.DE: "Lupine"}
+    MOLLUSCS = {Language.DE: "Weichtiere"}
+    SHELL_FRUITS = {Language.DE: "Schalenfrüchte"}
+
+    BAVARIA = {Language.DE: "Zertifizierte Qualität Bayern"}
+    MSC = {Language.DE: "Marine Stewardship Council"}
+    DYESTUFF = {Language.DE: "Farbstoffe"}
+    PRESERVATIVES = {Language.DE: "Preservate"}
+    ANTIOXIDANTS = {Language.DE: "Antioxidanten"}
+    FLAVOR_ENHANCER = {Language.DE: "Geschmacksverstärker"}
+    WAXED = {Language.DE: "Gewachst"}
+    PHOSPATES = {Language.DE: "Phosphate"}
+    SWEETENERS = {Language.DE: "Süßungsmittel"}
+    PHENYLALANINE = {Language.DE: "Phenylaline"}
+    COCOA_CONTAINING_GREASE = {Language.DE: "Kakaohaltiges Fett"}
+    GELATIN = {Language.DE: "Gelatine"}
+    ALCOHOL = {Language.DE: "Alkohol"}
+    PORK = {Language.DE: "Schweinefleisch"}
+    BEEF = {Language.DE: "Rinderfleisch"}
+    VEAL = {Language.DE: "Kalbsfleisch"}
+    WILD_MEAT = {Language.DE: "Wildfleisch"}
+    LAMB = {Language.DE: "Lammfleisch"}
+    GARLIC = {Language.DE: "Knoblauch"}
+    POULTRY = {Language.DE: "Geflügel"}
+    CEREAL = {Language.DE: "Getreide"}
+    MEAT = {Language.DE: "Fleisch"}
+    VEGAN = {Language.DE: "Vegan"}
+    VEGETARIAN = {Language.DE: "Vegetarisch"}
+
+    def __lt__(self, other):
+        if self.__class__ is other.__class__:
+            return self.name < other.name
+        return NotImplemented
+
+    @staticmethod
+    def add_supertype_labels(labels: Set[Label]) -> None:
+        # insert supertypes
+        if labels & {
+            Label.ALMONDS,
+            Label.HAZELNUTS,
+            Label.MACADAMIA,
+            Label.CASHEWS,
+            Label.PECAN,
+            Label.PISTACHIOES,
+            Label.SESAME,
+            Label.WALNUTS,
+        }:
+            labels |= {Label.SHELL_FRUITS}
+        if labels & {
+            Label.BARLEY,
+            Label.OAT,
+            Label.RYE,
+            Label.SPELT,
+            Label.WHEAT,
+        }:
+            labels |= {Label.CEREAL}
+        if labels & {Label.VEGAN}:
+            labels |= {Label.VEGETARIAN}
+
+        if labels & {
+            Label.PORK,
+            Label.BEEF,
+            Label.VEAL,
+        }:
+            labels |= {Label.MEAT}
+
+    def to_json_obj(self):
+        return {
+            "name": self.name,
+            "text": json_util.dict_to_json_dict(self.text),
+        }
+
+    def to_api_representation(self) -> Dict[str, object]:
+        return {
+            "enum_name": self.name,
+            "text": json_util.dict_to_json_dict(self.text),
+        }
 
 
 class Dish:
     name: str
     prices: Prices
-    ingredients: Set[str]
+    labels: Set[Label]
     dish_type: str
 
-    def __init__(self, name: str, prices: Prices, ingredients: Set[str], dish_type: str):
+    def __init__(
+        self,
+        name: str,
+        prices: Prices,
+        labels: Set[Label],
+        dish_type: str,
+    ):
         self.name = name
         self.prices = prices
-        self.ingredients = ingredients
+        self.labels = labels
         self.dish_type = dish_type
 
     def __repr__(self):
-        return f"{self.name} {str(sorted(self.ingredients))}: {str(self.prices)}"
+        return f"{self.name} {str(sorted(self.labels))}: {str(self.prices)}"
 
     def __eq__(self, other: Any) -> bool:
         if isinstance(other, self.__class__):
             return (
                 self.name == other.name
                 and self.prices == other.prices
-                and self.ingredients == other.ingredients
+                and self.labels == other.labels
                 and self.dish_type == other.dish_type
             )
         return False
@@ -290,13 +369,13 @@ class Dish:
         return {
             "name": self.name,
             "prices": self.prices.to_json_obj(),
-            "ingredients": sorted(self.ingredients),
+            "labels": sorted(map(lambda l: l.name, self.labels)),
             "dish_type": self.dish_type,
         }
 
     def __hash__(self) -> int:
         # http://stackoverflow.com/questions/4005318/how-to-implement-a-good-hash-function-in-python
-        return (hash(self.name) << 1) ^ hash(self.prices) ^ hash(frozenset(self.ingredients)) ^ hash(self.dish_type)
+        return (hash(self.name) << 1) ^ hash(self.prices) ^ hash(frozenset(self.labels)) ^ hash(self.dish_type)
 
 
 class Menu:
@@ -356,8 +435,7 @@ class Week:
         }
 
     @staticmethod
-    # def to_weeks(menus: Dict[datetime.date, Menu]) -> Dict[int, Week]:
-    def to_weeks(menus):
+    def to_weeks(menus: Dict[datetime.date, Menu]) -> Dict[int, Week]:
         weeks: Dict[int, Week] = {}
         for menu_key in menus:
             menu: Menu = menus[menu_key]
@@ -375,3 +453,13 @@ class Week:
             week.days.append(menu)
             weeks[calendar_week] = week
         return weeks
+
+    @staticmethod
+    def get_non_weekend_days_for_calendar_week(year: int, calendar_week: int) -> List[datetime.date]:
+        days = []
+
+        start_date = datetime.date.fromisocalendar(year, calendar_week, 1)
+        for _ in range(5):
+            days += [start_date]
+            start_date += datetime.timedelta(days=1)
+        return days

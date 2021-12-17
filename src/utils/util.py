@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
+from __future__ import annotations
 
 import os
 from datetime import date, datetime
-from typing import Dict
+from typing import TYPE_CHECKING, Dict
 
 import deepl
 
-from entities import Menu
+if TYPE_CHECKING:
+    from src.entities import Menu
 
 date_pattern = "%d.%m.%Y"
 cli_date_format = "dd.mm.yyyy"

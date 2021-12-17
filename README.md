@@ -2,21 +2,11 @@
 
 [![Actions Status](https://github.com/TUM-Dev/eat-api/workflows/CI%2FCD/badge.svg)](https://github.com/TUM-Dev/eat-api/actions)
 
----
 
-**The [eat-api](https://github.com/TUM-Dev/eat-api) will change its API to version 2 with support for the new [unit based pricing system](https://github.com/TUM-Dev/eat-api/issues/10).**
+Simple static API for the canteens of the [Studentenwerk München](http://www.studentenwerk-muenchen.de) as well as some other canteens. By now, the following canteens are supported:
 
-**All changes can be found here: https://github.com/TUM-Dev/eat-api/pull/12**
-
-**When will this change happen?**  
-**01.01.2020**
-
----
-
-Simple static API for the canteens of the [Studentenwerk München](http://www.studentenwerk-muenchen.de) as well as some other locations. By now, the following locations are supported:
-
-| Name                           | API-key                        | Address location                                                                                                         |
-| :----------------------------- | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| Name                           | API-key                        | Address                                                                                                                  |
+| :----------------------------- | :----------------------------- |:-------------------------------------------------------------------------------------------------------------------------|
 | Mensa Arcisstraße              | mensa-arcisstr                 | [Arcisstraße 17, München](https://www.google.com/maps?q=Arcisstraße+17,+München)                                         |
 | Mensa Garching                 | mensa-garching                 | [Boltzmannstraße 19, Garching](https://www.google.com/maps?q=Boltzmannstraße+19,+Garching)                               |
 | Mensa Leopoldstraße            | mensa-leopoldstr               | [Leopoldstraße 13a, München](https://www.google.com/maps?q=Leopoldstraße+13a,+München)                                   |
@@ -38,71 +28,8 @@ Simple static API for the canteens of the [Studentenwerk München](http://www.st
 | FMI Bistro Garching            | fmi-bistro                     | [Boltzmannstraße 3, Garching](https://www.google.com/maps?q=Boltzmannstraße+3,+Garching)                                 |
 | IPP Bistro Garching            | ipp-bistro                     | [Boltzmannstraße 2, Garching](https://goo.gl/maps/vYdsQhgxFvH2)                                                          |
 
-## Ingredients list:
-
-<details><summary>CLICK ME</summary>
-<p>
-
-```python
-ingredient_lookup = {
-        "GQB" : "Certified Quality - Bavaria",
-        "MSC" : "Marine Stewardship Council",
-
-        "1" : "with dyestuff",
-        "2" : "with preservative",
-        "3" : "with antioxidant",
-        "4" : "with flavor enhancers",
-        "5" : "sulphured",
-        "6" : "blackened (olive)",
-        "7" : "waxed",
-        "8" : "with phosphate",
-        "9" : "with sweeteners",
-        "10" : "contains a source of phenylalanine",
-        "11" : "with sugar and sweeteners",
-        "13" : "with cocoa-containing grease",
-        "14" : "with gelatin",
-        "99" : "with alcohol",
-
-        "f" : "meatless dish",
-        "v" : "vegan dish",
-        "S" : "with pork",
-        "R" : "with beef",
-        "K" : "with veal",
-        "G" : "with poultry", # mediziner mensa
-        "W" : "with wild meat", # mediziner mensa
-        "L" : "with lamb", # mediziner mensa
-        "Kn" : "with garlic",
-        "Ei" : "with chicken egg",
-        "En" : "with peanut",
-        "Fi" : "with fish",
-        "Gl" : "with gluten-containing cereals",
-        "GlW" : "with wheat",
-        "GlR" : "with rye",
-        "GlG" : "with barley",
-        "GlH" : "with oats",
-        "GlD" : "with spelt",
-        "Kr" : "with crustaceans",
-        "Lu" : "with lupines",
-        "Mi" : "with milk and lactose",
-        "Sc" : "with shell fruits",
-        "ScM" : "with almonds",
-        "ScH" : "with hazelnuts",
-        "ScW" : "with Walnuts",
-        "ScC" : "with cashew nuts",
-        "ScP" : "with pistachios",
-        "Se" : "with sesame seeds",
-        "Sf" : "with mustard",
-        "Sl" : "with celery",
-        "So" : "with soy",
-        "Sw" : "with sulfur dioxide and sulfites",
-        "Wt" : "with mollusks",
-}
-```
-
-Based on: [Studentenwerk München](https://www.studentenwerk-muenchen.de/mensa/speiseplan)
-
-</p>
-</details>
+## Label list - previously _ingredients_:
+See [here](https://tum-dev.github.io/eat-api/enums/labels.json).
 
 ## Usage
 
@@ -111,22 +38,22 @@ Based on: [Studentenwerk München](https://www.studentenwerk-muenchen.de/mensa/s
 The actual API is provided by static JSON files, which can be found in the gh-pages branch of this repository. These files are created through automatic travis builds. You need to structure a link as follows in order to access the API:
 
 ```
-https://tum-dev.github.io/eat-api/<location>/<year>/<week-number>.json
+https://tum-dev.github.io/eat-api/<canteen>/<year>/<week-number>.json
 ```
 
-To get all menus for one specific location:
+To get all menus for one specific canteen:
 
 ```
-https://tum-dev.github.io/eat-api/<location>/combined/combined.json
+https://tum-dev.github.io/eat-api/<canteen>/combined/combined.json
 ```
 
-To get all menus for all locations:
+To get all menus for all canteens:
 
 ```
 https://tum-dev.github.io/eat-api/all.json
 ```
 
-To get all menus that are not older than one day for all locations:  
+To get all menus that are not older than one day for all canteens:  
 Here `dish_type` is also normalized.
 All tailing digits and spaces get removed from `dish_type`.
 For example `Tagesgericht 1` -> `Tagesgericht` and `Aktionsessen 6` -> `Aktionsessen`.
@@ -137,10 +64,16 @@ This results in this file being usually half the size of the `all.json` file.
 https://tum-dev.github.io/eat-api/all_ref.json
 ```
 
-To get all available canteens and their location:
+To get all available canteens:
 
 ```
-https://tum-dev.github.io/eat-api/canteens.json
+https://tum-dev.github.io/eat-api/enums/canteens.json
+```
+
+To get all available labels:
+
+```
+https://tum-dev.github.io/eat-api/enums/labels.json
 ```
 
 #### Example
@@ -157,7 +90,7 @@ Besides, the german version, there is also an english translation available.
 The structure of the english version is the same as in the german version, but with the following base url.
 
 ```
-https://tum-dev.github.io/eat-api/en/<location>/<year>/<week-number>.json
+https://tum-dev.github.io/eat-api/en/<canteen>/<year>/<week-number>.json
 ```
 
 ### CLI
@@ -166,23 +99,23 @@ The JSON files are produced by the tool shown in this repository. Hence, it is e
 
 ```
 $ python src/main.py -h
-main.py [-h] [-p LOCATION] [-d DATE] [-j PATH] [-c] [--openmensa PATH]
-        [-l]
+main.py [-h] [-p CANTEEN] [-d DATE] [-j PATH] [-c] [--openmensa PATH]
+        [--canteens] 
 
 optional arguments:
   -h, --help            show this help message and exit
-  -p LOCATION, --parse LOCATION
-                        the location you want to eat at
+  -p CANTEEN, --parse CANTEEN
+                        the canteen you want to eat at
   -d DATE, --date DATE  date (DD.MM.YYYY) of the day of which you want to get
                         the menu
   -j PATH, --jsonify PATH
                         directory for JSON output (date parameter will be
                         ignored if this argument is used)
   -c, --combine         creates a "combined.json" file containing all dishes
-                        for the location specified
+                        for the canteen specified
   --openmensa PATH      directory for OpenMensa XML output (date parameter
                         will be ignored if this argument is used)
-  -l, --locations       prints all available locations formated as JSON
+  --canteens            prints all available canteens formated as JSON
   --language LANGUAGE   The language to translate the dish titles to, needs an DeepL API-Key in the environment variable DEEPL_API_KEY_EAT_API
 ```
 
@@ -206,6 +139,10 @@ Dish titles are provided only in german by the Studentenwerk.
 We offer the possibility to translate them using the DeepL API.
 In order to use the API, there needs to be an API key provided in the environment variable `DEEPL_API_KEY_EAT_API`.
 The target language can be specified using the `--language` option using one of the languages supported by DeepL e.g. `EN-US`.
+
+### Generating `canteens.json` and `label.json`
+
+The `canteens.json` and `label.json` are generated from the `Canteen` and `Label` enum. To generate them, run `enum_json_creator.py [<path/to/directory>]`. This will also generate a `languages.json` file, which contains the languages supported by the `Label` enum. If no path is specified, the Python script stores them in `./dist/enums`.
 
 ## Projects using `eat-api`
 
