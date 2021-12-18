@@ -6,10 +6,10 @@ from datetime import datetime, timedelta
 
 
 class Dish:
-    def __init__(self, name, prices, ingredients, dish_type, date):
+    def __init__(self, name, prices, labels, dish_type, date):
         self.name = name
         self.prices = prices
-        self.ingredients = ingredients
+        self.labels = labels
         self.dish_type = self.uniformDishType(dish_type)
         self.date = date
 
@@ -38,7 +38,7 @@ class Canteen:
                                 Dish(
                                     dish.get("name"),
                                     dish.get("prices"),
-                                    dish.get("ingredients", ""),
+                                    dish.get("labels", ""),
                                     dish.get("dish_type"),
                                     date,
                                 ),
