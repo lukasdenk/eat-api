@@ -437,21 +437,22 @@ class Week:
     @staticmethod
     def to_weeks(menus: Dict[datetime.date, Menu]) -> Dict[int, Week]:
         weeks: Dict[int, Week] = {}
-        for menu_key in menus:
-            menu: Menu = menus[menu_key]
-            menu_date = menu.menu_date
-            # get calendar week
-            calendar_week = menu_date.isocalendar()[1]
-            # get year of the calendar week. watch out that for instance jan 01 can still be in week 52 of the
-            # previous year
-            year_of_calendar_week = (
-                menu_date.year - 1 if calendar_week == 52 and menu_date.month == 1 else menu_date.year
-            )
-
-            # append menus to respective week
-            week: Week = weeks.get(calendar_week, Week(calendar_week, year_of_calendar_week, []))
-            week.days.append(menu)
-            weeks[calendar_week] = week
+        if menus:
+            for menu_key in menus:
+                menu: Menu = menus[menu_key]
+                menu_date = menu.menu_date
+                # get calendar week
+                calendar_week = menu_date.isocalendar()[1]
+                # get year of the calendar week. watch out that for instance jan 01 can still be in week 52 of the
+                # previous year
+                year_of_calendar_week = (
+                    menu_date.year - 1 if calendar_week == 52 and menu_date.month == 1 else menu_date.year
+                )
+    
+                # append menus to respective week
+                week: Week = weeks.get(calendar_week, Week(calendar_week, year_of_calendar_week, []))
+                week.days.append(menu)
+                weeks[calendar_week] = week
         return weeks
 
     @staticmethod
