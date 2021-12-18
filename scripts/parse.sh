@@ -1,10 +1,10 @@
 #!/bin/bash
 
-CANTEEN_LIST=( "mensa-arcisstr" "mensa-garching" "mensa-leopoldstr" "mensa-lothstr" \
-"mensa-martinsried" "mensa-pasing" "mensa-weihenstephan" "stubistro-arcisstr" "stubistro-goethestr" \
-"stubistro-großhadern" "stubistro-rosenheim" "stubistro-schellingstr" "stucafe-adalbertstr" \
-"stucafe-akademie-weihenstephan" "stucafe-boltzmannstr" "stucafe-garching" "stucafe-karlstr" "stucafe-pasing" \
-"ipp-bistro" "fmi-bistro" "mediziner-mensa" )
+CANTEEN_LIST=( "MENSA_ARCISSTR" "MENSA_GARCHING" "MENSA_LEOPOLDSTR" "MENSA_LOTHSTR" "MENSA_MARTINSRIED" \
+"MENSA_PASING" "MENSA_WEIHENSTEPHAN" "STUBISTRO_ARCISSTR" "STUBISTRO_GOETHESTR" \
+"STUBISTRO_GROSSHADERN" "STUBISTRO_ROSENHEIM" "STUBISTRO_SCHELLINGSTR" "STUCAFE_ADALBERTSTR" \
+"STUCAFE_AKADEMIE_WEIHENSTEPHAN" "STUCAFE_BOLTZMANNSTR" "STUCAFE_GARCHING" "STUCAFE_KARLSTR" \
+"STUCAFE_PASING" "IPP_BISTRO" "FMI_BISTRO" "MEDIZINER_MENSA" )
 OUT_DIR="${OUT_DIR:-dist}"
 LANGUAGE="${LANGUAGE_EAT_API:-DE}"
 
@@ -15,12 +15,18 @@ fi
 # Create empty output directory:
 mkdir -p $OUT_DIR
 
+parse(){
+    echo "Parsing menus for: $1 in $2..."
+    python3 src/main.py -p "$1" -j "./$OUT_DIR/$1" -c
+    echo "Parsing menus for: $1 done."
+}
 
 # Parse all canteens:
-for canteen in "${CANTEEN_LIST[@]}"; do
-    echo "Parsing menus for: $canteen in $LANGUAGE"
-    python3 src/main.py -p "$canteen" -j "./$OUT_DIR/$canteen" -c
+for canteen in "${CANTEEN_LIST[@]}";
+do
+( parse $canteen $LANGUAGE ) &
 done
+wait # Wait for all processes to finish
 
 # Combine all combined.json files to one all.json file:
 python3 scripts/combine.py
