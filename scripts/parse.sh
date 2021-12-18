@@ -18,7 +18,7 @@ mkdir -p $OUT_DIR
 
 # Parse all canteens:
 for canteen in "${CANTEEN_LIST[@]}"; do
-    echo "Parsing menus for: " "$canteen"
+    echo "Parsing menus for: $canteen in $LANGUAGE"
     python3 src/main.py -p "$canteen" -j "./$OUT_DIR/$canteen" -c
 done
 
