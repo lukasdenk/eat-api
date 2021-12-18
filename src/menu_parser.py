@@ -779,7 +779,7 @@ class IPPBistroMenuParser(MenuParser):
             # labels.parse_labels("Mi,Gl,Sf,Sl,Ei,Se,4")
             # create list of Dish objects
             # see TODO above
-            labels = None
+            labels: Set[Label] = set()
             dishes = []
             for i, (dish_name, price) in enumerate(dish_names_price):
                 price_str: str = price.replace(",", ".").strip()
@@ -792,7 +792,7 @@ class IPPBistroMenuParser(MenuParser):
                     Dish(
                         dish_name.strip(),
                         Prices(price_obj),
-                        labels.label_set,
+                        labels,
                         dish_types[i],
                     ),
                 )
