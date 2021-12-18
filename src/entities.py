@@ -448,7 +448,7 @@ class Week:
                 year_of_calendar_week = (
                     menu_date.year - 1 if calendar_week == 52 and menu_date.month == 1 else menu_date.year
                 )
-    
+
                 # append menus to respective week
                 week: Week = weeks.get(calendar_week, Week(calendar_week, year_of_calendar_week, []))
                 week.days.append(menu)
