@@ -31,7 +31,10 @@ def addDishToCanteen(dish, date, canteen):
         prices = {"other": dish.prices.students.base_price}
     else:
         prices = {}
-    canteen.addMeal(date, "Speiseplan", dish.name, prices=prices)
+    if dish.name:
+        canteen.addMeal(date, "Speiseplan", dish.name, prices=prices)
+    else:
+        print("[WARNING] Empty dish name found: " + str(dish))
 
 
 def writeFeedToFile(canteen, directory):
