@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import datetime
-from enum import Enum, auto
+from enum import Enum
 from typing import Any, Dict, List, Optional, Set
 
 from utils import json_util
@@ -217,11 +217,20 @@ class Canteen(ApiRepresentable, Enum):
 
 
 class Language(ApiRepresentable, Enum):
-    DE = auto()
+    def __init__(self, base_url: str, label: str, flag: str):
+        self.base_url = base_url
+        self.label = label
+        self.flag = flag
+
+    DE = "https://tum-dev.github.io/eat-api/", "Deutsch", "🇩🇪"
+    EN = "https://tum-dev.github.io/eat-api/en/", "English", "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
 
     def to_api_representation(self) -> Dict[str, object]:
         return {
-            "enum_name": self.name,
+            "name": self.name,
+            "base_url": self.base_url,
+            "label": self.label,
+            "flag": self.flag,
         }
 
 
@@ -229,60 +238,60 @@ class Label(ApiRepresentable, Enum):
     def __init__(self, text: Dict[Language, str]):
         self.text = text
 
-    GLUTEN = {Language.DE: "Gluten"}
-    WHEAT = {Language.DE: "Weizen"}
-    RYE = {Language.DE: "Roggen"}
-    BARLEY = {Language.DE: "Gerste"}
-    OAT = {Language.DE: "Hafer"}
-    SPELT = {Language.DE: "Dinkel"}
-    HYBRIDS = {Language.DE: "Hybridstämme"}
-    SHELLFISH = {Language.DE: "Krebstiere"}
-    CHICKEN_EGGS = {Language.DE: "Eier"}
-    FISH = {Language.DE: "Fisch"}
-    PEANUTS = {Language.DE: "Erdnüsse"}
-    SOY = {Language.DE: "Soja"}
-    MILK = {Language.DE: "Milch"}
-    LACTOSE = {Language.DE: "Laktose"}
-    ALMONDS = {Language.DE: "Mandeln"}
-    HAZELNUTS = {Language.DE: "Haselnüsse"}
-    WALNUTS = {Language.DE: "Walnüsse"}
-    CASHEWS = {Language.DE: "Cashewnüsse"}
-    PECAN = {Language.DE: "Pekanüsse"}
-    PISTACHIOES = {Language.DE: "Pistazien"}
-    MACADAMIA = {Language.DE: "Macadamianüsse"}
-    CELERY = {Language.DE: "Sellerie"}
-    MUSTARD = {Language.DE: "Senf"}
-    SESAME = {Language.DE: "Sesam"}
-    SULPHURS = {Language.DE: "Schwefeldioxid"}
-    SULFITES = {Language.DE: "Sulfite"}
-    LUPIN = {Language.DE: "Lupine"}
-    MOLLUSCS = {Language.DE: "Weichtiere"}
-    SHELL_FRUITS = {Language.DE: "Schalenfrüchte"}
+    GLUTEN = {Language.DE: "Gluten", Language.EN: "gluten-containing cereals"}
+    WHEAT = {Language.DE: "Weizen", Language.EN: "wheat"}
+    RYE = {Language.DE: "Roggen", Language.EN: "rye"}
+    BARLEY = {Language.DE: "Gerste", Language.EN: "barley"}
+    OAT = {Language.DE: "Hafer", Language.EN: "oat"}
+    SPELT = {Language.DE: "Dinkel", Language.EN: "spelt"}
+    HYBRIDS = {Language.DE: "Hybridstämme", Language.EN: "hybrid strains"}
+    SHELLFISH = {Language.DE: "Krebstiere", Language.EN: "shellfish"}
+    CHICKEN_EGGS = {Language.DE: "Eier", Language.EN: "egg"}
+    FISH = {Language.DE: "Fisch", Language.EN: "fish"}
+    PEANUTS = {Language.DE: "Erdnüsse", Language.EN: "peanut"}
+    SOY = {Language.DE: "Soja", Language.EN: "soy"}
+    MILK = {Language.DE: "Milch", Language.EN: "milk"}
+    LACTOSE = {Language.DE: "Laktose", Language.EN: "lactose"}
+    ALMONDS = {Language.DE: "Mandeln", Language.EN: "almonds"}
+    HAZELNUTS = {Language.DE: "Haselnüsse", Language.EN: "hazelnuts"}
+    WALNUTS = {Language.DE: "Walnüsse", Language.EN: "walnuts"}
+    CASHEWS = {Language.DE: "Cashewnüsse", Language.EN: "cashews"}
+    PECAN = {Language.DE: "Pekanüsse", Language.EN: "pecans"}
+    PISTACHIOES = {Language.DE: "Pistazien", Language.EN: "pistachios"}
+    MACADAMIA = {Language.DE: "Macadamianüsse", Language.EN: "macadamias"}
+    CELERY = {Language.DE: "Sellerie", Language.EN: "celery"}
+    MUSTARD = {Language.DE: "Senf", Language.EN: "mustard"}
+    SESAME = {Language.DE: "Sesam", Language.EN: "sesame"}
+    SULPHURS = {Language.DE: "Schwefeldioxid", Language.EN: "sulphurs"}
+    SULFITES = {Language.DE: "Sulfite", Language.EN: "sulfites"}
+    LUPIN = {Language.DE: "Lupine", Language.EN: "lupin"}
+    MOLLUSCS = {Language.DE: "Weichtiere", Language.EN: "molluscs"}
+    SHELL_FRUITS = {Language.DE: "Schalenfrüchte", Language.EN: "shell fruits"}
 
-    BAVARIA = {Language.DE: "Zertifizierte Qualität Bayern"}
-    MSC = {Language.DE: "Marine Stewardship Council"}
-    DYESTUFF = {Language.DE: "Farbstoffe"}
-    PRESERVATIVES = {Language.DE: "Preservate"}
-    ANTIOXIDANTS = {Language.DE: "Antioxidanten"}
-    FLAVOR_ENHANCER = {Language.DE: "Geschmacksverstärker"}
-    WAXED = {Language.DE: "Gewachst"}
-    PHOSPATES = {Language.DE: "Phosphate"}
-    SWEETENERS = {Language.DE: "Süßungsmittel"}
-    PHENYLALANINE = {Language.DE: "Phenylaline"}
-    COCOA_CONTAINING_GREASE = {Language.DE: "Kakaohaltiges Fett"}
-    GELATIN = {Language.DE: "Gelatine"}
-    ALCOHOL = {Language.DE: "Alkohol"}
-    PORK = {Language.DE: "Schweinefleisch"}
-    BEEF = {Language.DE: "Rinderfleisch"}
-    VEAL = {Language.DE: "Kalbsfleisch"}
-    WILD_MEAT = {Language.DE: "Wildfleisch"}
-    LAMB = {Language.DE: "Lammfleisch"}
-    GARLIC = {Language.DE: "Knoblauch"}
-    POULTRY = {Language.DE: "Geflügel"}
-    CEREAL = {Language.DE: "Getreide"}
-    MEAT = {Language.DE: "Fleisch"}
-    VEGAN = {Language.DE: "Vegan"}
-    VEGETARIAN = {Language.DE: "Vegetarisch"}
+    BAVARIA = {Language.DE: "Zertifizierte Qualität Bayern", Language.EN: "Certified quality Bavaria"}
+    MSC = {Language.DE: "Marine Stewardship Council", Language.EN: "Marine Stewardship Council"}
+    DYESTUFF = {Language.DE: "Farbstoffe", Language.EN: "dyestuff"}
+    PRESERVATIVES = {Language.DE: "Preservate", Language.EN: "preservatives"}
+    ANTIOXIDANTS = {Language.DE: "Antioxidanten", Language.EN: "antioxidants"}
+    FLAVOR_ENHANCER = {Language.DE: "Geschmacksverstärker", Language.EN: "flavor enhancer"}
+    WAXED = {Language.DE: "Gewachst", Language.EN: "waxed"}
+    PHOSPATES = {Language.DE: "Phosphate", Language.EN: "phosphates"}
+    SWEETENERS = {Language.DE: "Süßungsmittel", Language.EN: "sweeteners"}
+    PHENYLALANINE = {Language.DE: "Phenylaline", Language.EN: "with a source of phenylalanine"}
+    COCOA_CONTAINING_GREASE = {Language.DE: "Kakaohaltiges Fett", Language.EN: "cocoa-containing grease"}
+    GELATIN = {Language.DE: "Gelatine", Language.EN: "gelatin"}
+    ALCOHOL = {Language.DE: "Alkohol", Language.EN: "alcohol"}
+    PORK = {Language.DE: "Schweinefleisch", Language.EN: "pork"}
+    BEEF = {Language.DE: "Rinderfleisch", Language.EN: "beef"}
+    VEAL = {Language.DE: "Kalbsfleisch", Language.EN: "veal"}
+    WILD_MEAT = {Language.DE: "Wildfleisch", Language.EN: "wild meat"}
+    LAMB = {Language.DE: "Lammfleisch", Language.EN: "lamb"}
+    GARLIC = {Language.DE: "Knoblauch", Language.EN: "garlic"}
+    POULTRY = {Language.DE: "Geflügel", Language.EN: "poultry"}
+    CEREAL = {Language.DE: "Getreide", Language.EN: "cereal"}
+    MEAT = {Language.DE: "Fleisch", Language.EN: "meat"}
+    VEGAN = {Language.DE: "Vegan", Language.EN: "vegan"}
+    VEGETARIAN = {Language.DE: "Vegetarisch", Language.EN: "vegetarian"}
 
     def __lt__(self, other):
         if self.__class__ is other.__class__:
