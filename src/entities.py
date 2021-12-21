@@ -217,16 +217,20 @@ class Canteen(ApiRepresentable, Enum):
 
 
 class Language(ApiRepresentable, Enum):
-    def __init__(self, base_url: str):
+    def __init__(self, base_url: str, label: str, flag: str):
         self.base_url = base_url
+        self.label = label
+        self.flag = flag
 
-    DE = "https://tum-dev.github.io/eat-api/"
-    EN = "https://tum-dev.github.io/eat-api/en/"
+    DE = "https://tum-dev.github.io/eat-api/", "Deutsch", "🇩🇪"
+    EN = "https://tum-dev.github.io/eat-api/en/", "English", "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
 
     def to_api_representation(self) -> Dict[str, object]:
         return {
             "name": self.name,
             "base_url": self.base_url,
+            "label": self.label,
+            "flag": self.flag,
         }
 
 
