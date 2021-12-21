@@ -403,7 +403,11 @@ class StudentenwerkMenuParser(MenuParser):
             # do not prices side dishes
             prices: Prices
             if dishes_dict[name][0] == "Beilagen":
-                prices = Prices()
+                # set classic prices without any base price
+                prices = StudentenwerkMenuParser.__get_self_service_prices(
+                    StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN_SOUP_STEW,
+                    StudentenwerkMenuParser.SelfServicePricePerUnitType.CLASSIC,
+                )
             else:
                 # find prices
                 prices = StudentenwerkMenuParser.__get_price(canteen, dishes_dict[name], name)
