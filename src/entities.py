@@ -4,7 +4,7 @@
 from __future__ import annotations
 
 import datetime
-from enum import Enum, auto
+from enum import Enum
 from typing import Any, Dict, List, Optional, Set
 
 from utils import json_util
@@ -217,12 +217,16 @@ class Canteen(ApiRepresentable, Enum):
 
 
 class Language(ApiRepresentable, Enum):
-    DE = auto()
-    EN = auto()
+    def __init__(self, base_url: str):
+        self.base_url = base_url
+
+    DE = "https://tum-dev.github.io/eat-api/"
+    EN = "https://tum-dev.github.io/eat-api/en/"
 
     def to_api_representation(self) -> Dict[str, object]:
         return {
-            "enum_name": self.name,
+            "name": self.name,
+            "base_url": self.base_url,
         }
 
 
