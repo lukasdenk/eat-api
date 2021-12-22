@@ -118,18 +118,29 @@ class Location:
 
 class Canteen(ApiRepresentable, Enum):
     # Some of the canteens do not use the general Studentenwerk system and therefore do not have a url_id.
-    def __init__(self, long_name: str, location: Location, url_id: int):
+    def __init__(self, long_name: str, location: Location, url_id: int, queue_status: str):
         self.long_name = long_name
         self.site = location
         self.url_id = url_id
         self.canteen_id = self.name.lower().replace("_", "-")
+        self.queue_status = queue_status
 
-    MENSA_ARCISSTR = "Mensa Arcisstraße", Location("Arcisstraße 17, München", 48.14742, 11.56722), 421
-    MENSA_GARCHING = "Mensa Garching", Location("Boltzmannstraße 19, Garching", 48.268132, 11.672263), 422
-    MENSA_LEOPOLDSTR = "Mensa Leopoldstraße", Location("Leopoldstraße 13a, München", 48.156311, 11.582446), 411
-    MENSA_LOTHSTR = "Mensa Lothstraße", Location("Lothstraße 13d, München", 48.153989, 11.552424), 431
-    MENSA_MARTINSRIED = "Mensa Martinsried", Location("Großhaderner Straße 44, Plategg", 48.109824, 11.460006), 412
-    MENSA_PASING = "Mensa Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 432
+    MENSA_ARCISSTR = "Mensa Arcisstraße", Location("Arcisstraße 17, München", 48.14742, 11.56722), 421, None
+    MENSA_GARCHING = (
+        "Mensa Garching",
+        Location("Boltzmannstraße 19, Garching", 48.268132, 11.672263),
+        422,
+        "https://mensa.liste.party/api",
+    )
+    MENSA_LEOPOLDSTR = "Mensa Leopoldstraße", Location("Leopoldstraße 13a, München", 48.156311, 11.582446), 411, None
+    MENSA_LOTHSTR = "Mensa Lothstraße", Location("Lothstraße 13d, München", 48.153989, 11.552424), 431, None
+    MENSA_MARTINSRIED = (
+        "Mensa Martinsried",
+        Location("Großhaderner Straße 44, Plategg", 48.109824, 11.460006),
+        412,
+        None,
+    )
+    MENSA_PASING = "Mensa Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 432, None
     MENSA_WEIHENSTEPHAN = (
         "Mensa Weihenstephan",
         Location(
@@ -138,9 +149,20 @@ class Canteen(ApiRepresentable, Enum):
             11.723147,
         ),
         423,
+        None,
     )
-    STUBISTRO_ARCISSTR = "StuBistro Arcisstraße", Location("Leopoldstraße 13A, München", 48.156486, 11.581872), 450
-    STUBISTRO_GOETHESTR = "StuBistro Goethestraße", Location("Goethestraße 70, München", 48.131396, 11.558264), 418
+    STUBISTRO_ARCISSTR = (
+        "StuBistro Arcisstraße",
+        Location("Leopoldstraße 13A, München", 48.156486, 11.581872),
+        450,
+        None,
+    )
+    STUBISTRO_GOETHESTR = (
+        "StuBistro Goethestraße",
+        Location("Goethestraße 70, München", 48.131396, 11.558264),
+        418,
+        None,
+    )
     STUBISTRO_GROSSHADERN = (
         "StuBistro Großhadern",
         Location(
@@ -149,8 +171,14 @@ class Canteen(ApiRepresentable, Enum):
             11.46503,
         ),
         414,
+        None,
     )
-    STUBISTRO_ROSENHEIM = "StuBistro Rosenheim", Location("Hochschulstraße 1, Rosenheim", 47.867344, 12.107559), 441
+    STUBISTRO_ROSENHEIM = (
+        "StuBistro Rosenheim",
+        Location("Hochschulstraße 1, Rosenheim", 47.867344, 12.107559),
+        441,
+        None,
+    )
     STUBISTRO_SCHELLINGSTR = (
         "StuBistro Schellingstraße",
         Location(
@@ -159,8 +187,14 @@ class Canteen(ApiRepresentable, Enum):
             11.579027,
         ),
         416,
+        None,
     )
-    STUCAFE_ADALBERTSTR = "StuCafé Adalbertstraße", Location("Adalbertstraße 5, München", 48.151507, 11.581033), 512
+    STUCAFE_ADALBERTSTR = (
+        "StuCafé Adalbertstraße",
+        Location("Adalbertstraße 5, München", 48.151507, 11.581033),
+        512,
+        None,
+    )
     STUCAFE_AKADEMIE_WEIHENSTEPHAN = (
         "StuCafé Akademie Weihenstephan",
         Location(
@@ -169,6 +203,7 @@ class Canteen(ApiRepresentable, Enum):
             11.729338,
         ),
         526,
+        None,
     )
     STUCAFE_BOLTZMANNSTR = (
         "StuCafé Boltzmannstraße",
@@ -178,6 +213,7 @@ class Canteen(ApiRepresentable, Enum):
             11.667593,
         ),
         527,
+        None,
     )
     STUCAFE_GARCHING = (
         "StuCafé in der Mensa Garching",
@@ -187,12 +223,18 @@ class Canteen(ApiRepresentable, Enum):
             11.6717,
         ),
         524,
+        None,
     )
-    STUCAFE_KARLSTR = "StuCafé Karlstraße", Location("Karlstraße 6, München", 48.142759, 11.568432), 532
-    STUCAFE_PASING = "StuCafé Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 534
-    IPP_BISTRO = "IPP Bistro Garching", Location("Boltzmannstraße 2, 85748 Garching", 48.262371, 11.672702), None
-    FMI_BISTRO = "FMI Bistro Garching", Location("Boltzmannstraße 3, 85748 Garching", 48.262408, 11.668028), None
-    MEDIZINER_MENSA = "Mediziner Mensa", Location("Ismaninger Straße 22, 81675 München", 48.136569, 11.5993226), None
+    STUCAFE_KARLSTR = "StuCafé Karlstraße", Location("Karlstraße 6, München", 48.142759, 11.568432), 532, None
+    STUCAFE_PASING = "StuCafé Pasing", Location("Am Stadtpark 20, München", 48.141568, 11.451119), 534, None
+    IPP_BISTRO = "IPP Bistro Garching", Location("Boltzmannstraße 2, 85748 Garching", 48.262371, 11.672702), None, None
+    FMI_BISTRO = "FMI Bistro Garching", Location("Boltzmannstraße 3, 85748 Garching", 48.262408, 11.668028), None, None
+    MEDIZINER_MENSA = (
+        "Mediziner Mensa",
+        Location("Ismaninger Straße 22, 81675 München", 48.136569, 11.5993226),
+        None,
+        None,
+    )
 
     @staticmethod
     def get_canteen_by_str(canteen_str: str) -> Canteen:
@@ -213,6 +255,7 @@ class Canteen(ApiRepresentable, Enum):
             "name": self.long_name,
             "location": self.site.to_json_obj(),
             "canteen_id": self.canteen_id,
+            "queue_status": self.queue_status,
         }
 
 
