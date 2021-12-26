@@ -278,63 +278,64 @@ class Language(ApiRepresentable, Enum):
 
 
 class Label(ApiRepresentable, Enum):
-    def __init__(self, text: Dict[Language, str]):
+    def __init__(self, text: Dict[Language, str], abbreviation: str):
         self.text = text
+        self.abbreviation = abbreviation
 
-    GLUTEN = {Language.DE: "Gluten", Language.EN: "gluten-containing cereals"}
-    WHEAT = {Language.DE: "Weizen", Language.EN: "wheat"}
-    RYE = {Language.DE: "Roggen", Language.EN: "rye"}
-    BARLEY = {Language.DE: "Gerste", Language.EN: "barley"}
-    OAT = {Language.DE: "Hafer", Language.EN: "oat"}
-    SPELT = {Language.DE: "Dinkel", Language.EN: "spelt"}
-    HYBRIDS = {Language.DE: "Hybridstämme", Language.EN: "hybrid strains"}
-    SHELLFISH = {Language.DE: "Krebstiere", Language.EN: "shellfish"}
-    CHICKEN_EGGS = {Language.DE: "Eier", Language.EN: "egg"}
-    FISH = {Language.DE: "Fisch", Language.EN: "fish"}
-    PEANUTS = {Language.DE: "Erdnüsse", Language.EN: "peanut"}
-    SOY = {Language.DE: "Soja", Language.EN: "soy"}
-    MILK = {Language.DE: "Milch", Language.EN: "milk"}
-    LACTOSE = {Language.DE: "Laktose", Language.EN: "lactose"}
-    ALMONDS = {Language.DE: "Mandeln", Language.EN: "almonds"}
-    HAZELNUTS = {Language.DE: "Haselnüsse", Language.EN: "hazelnuts"}
-    WALNUTS = {Language.DE: "Walnüsse", Language.EN: "walnuts"}
-    CASHEWS = {Language.DE: "Cashewnüsse", Language.EN: "cashews"}
-    PECAN = {Language.DE: "Pekanüsse", Language.EN: "pecans"}
-    PISTACHIOES = {Language.DE: "Pistazien", Language.EN: "pistachios"}
-    MACADAMIA = {Language.DE: "Macadamianüsse", Language.EN: "macadamias"}
-    CELERY = {Language.DE: "Sellerie", Language.EN: "celery"}
-    MUSTARD = {Language.DE: "Senf", Language.EN: "mustard"}
-    SESAME = {Language.DE: "Sesam", Language.EN: "sesame"}
-    SULPHURS = {Language.DE: "Schwefeldioxid", Language.EN: "sulphurs"}
-    SULFITES = {Language.DE: "Sulfite", Language.EN: "sulfites"}
-    LUPIN = {Language.DE: "Lupine", Language.EN: "lupin"}
-    MOLLUSCS = {Language.DE: "Weichtiere", Language.EN: "molluscs"}
-    SHELL_FRUITS = {Language.DE: "Schalenfrüchte", Language.EN: "shell fruits"}
+    GLUTEN = {Language.DE: "Gluten", Language.EN: "gluten-containing cereals"}, "🌿"
+    WHEAT = {Language.DE: "Weizen", Language.EN: "wheat"}, "GlW"
+    RYE = {Language.DE: "Roggen", Language.EN: "rye"}, "GlR"
+    BARLEY = {Language.DE: "Gerste", Language.EN: "barley"}, "GlG"
+    OAT = {Language.DE: "Hafer", Language.EN: "oat"}, "GlH"
+    SPELT = {Language.DE: "Dinkel", Language.EN: "spelt"}, "GlD"
+    HYBRIDS = {Language.DE: "Hybridstämme", Language.EN: "hybrid strains"}, "GlHy"
+    SHELLFISH = {Language.DE: "Krebstiere", Language.EN: "shellfish"}, "🦀"
+    CHICKEN_EGGS = {Language.DE: "Eier", Language.EN: "egg"}, "🥚"
+    FISH = {Language.DE: "Fisch", Language.EN: "fish"}, "🐟"
+    PEANUTS = {Language.DE: "Erdnüsse", Language.EN: "peanut"}, "🥜"
+    SOY = {Language.DE: "Soja", Language.EN: "soy"}, "So"
+    MILK = {Language.DE: "Milch", Language.EN: "milk"}, "🥛"
+    LACTOSE = {Language.DE: "Laktose", Language.EN: "lactose"}, "La"
+    ALMONDS = {Language.DE: "Mandeln", Language.EN: "almonds"}, "ScM"
+    HAZELNUTS = {Language.DE: "Haselnüsse", Language.EN: "hazelnuts"}, "🌰"
+    WALNUTS = {Language.DE: "Walnüsse", Language.EN: "walnuts"}, "ScW"
+    CASHEWS = {Language.DE: "Cashewnüsse", Language.EN: "cashews"}, "ScC"
+    PECAN = {Language.DE: "Pekanüsse", Language.EN: "pecans"}, "ScP"
+    PISTACHIOES = {Language.DE: "Pistazien", Language.EN: "pistachios"}, "ScP"
+    MACADAMIA = {Language.DE: "Macadamianüsse", Language.EN: "macadamias"}, "ScMa"
+    CELERY = {Language.DE: "Sellerie", Language.EN: "celery"}, "Sl"
+    MUSTARD = {Language.DE: "Senf", Language.EN: "mustard"}, "Sf"
+    SESAME = {Language.DE: "Sesam", Language.EN: "sesame"}, "Se"
+    SULPHURS = {Language.DE: "Schwefeldioxid", Language.EN: "sulphurs"}, "🔻"
+    SULFITES = {Language.DE: "Sulfite", Language.EN: "sulfites"}, "🔺"
+    LUPIN = {Language.DE: "Lupine", Language.EN: "lupin"}, "Lu"
+    MOLLUSCS = {Language.DE: "Weichtiere", Language.EN: "molluscs"}, "🐙"
+    SHELL_FRUITS = {Language.DE: "Schalenfrüchte", Language.EN: "shell fruits"}, "🥥"
 
-    BAVARIA = {Language.DE: "Zertifizierte Qualität Bayern", Language.EN: "Certified quality Bavaria"}
-    MSC = {Language.DE: "Marine Stewardship Council", Language.EN: "Marine Stewardship Council"}
-    DYESTUFF = {Language.DE: "Farbstoffe", Language.EN: "dyestuff"}
-    PRESERVATIVES = {Language.DE: "Preservate", Language.EN: "preservatives"}
-    ANTIOXIDANTS = {Language.DE: "Antioxidanten", Language.EN: "antioxidants"}
-    FLAVOR_ENHANCER = {Language.DE: "Geschmacksverstärker", Language.EN: "flavor enhancer"}
-    WAXED = {Language.DE: "Gewachst", Language.EN: "waxed"}
-    PHOSPATES = {Language.DE: "Phosphate", Language.EN: "phosphates"}
-    SWEETENERS = {Language.DE: "Süßungsmittel", Language.EN: "sweeteners"}
-    PHENYLALANINE = {Language.DE: "Phenylaline", Language.EN: "with a source of phenylalanine"}
-    COCOA_CONTAINING_GREASE = {Language.DE: "Kakaohaltiges Fett", Language.EN: "cocoa-containing grease"}
-    GELATIN = {Language.DE: "Gelatine", Language.EN: "gelatin"}
-    ALCOHOL = {Language.DE: "Alkohol", Language.EN: "alcohol"}
-    PORK = {Language.DE: "Schweinefleisch", Language.EN: "pork"}
-    BEEF = {Language.DE: "Rinderfleisch", Language.EN: "beef"}
-    VEAL = {Language.DE: "Kalbsfleisch", Language.EN: "veal"}
-    WILD_MEAT = {Language.DE: "Wildfleisch", Language.EN: "wild meat"}
-    LAMB = {Language.DE: "Lammfleisch", Language.EN: "lamb"}
-    GARLIC = {Language.DE: "Knoblauch", Language.EN: "garlic"}
-    POULTRY = {Language.DE: "Geflügel", Language.EN: "poultry"}
-    CEREAL = {Language.DE: "Getreide", Language.EN: "cereal"}
-    MEAT = {Language.DE: "Fleisch", Language.EN: "meat"}
-    VEGAN = {Language.DE: "Vegan", Language.EN: "vegan"}
-    VEGETARIAN = {Language.DE: "Vegetarisch", Language.EN: "vegetarian"}
+    BAVARIA = {Language.DE: "Zertifizierte Qualität Bayern", Language.EN: "Certified quality Bavaria"}, "GQB"
+    MSC = {Language.DE: "Marine Stewardship Council", Language.EN: "Marine Stewardship Council"}, "🎣"
+    DYESTUFF = {Language.DE: "Farbstoffe", Language.EN: "dyestuff"}, "🎨"
+    PRESERVATIVES = {Language.DE: "Preservate", Language.EN: "preservatives"}, "🥫"
+    ANTIOXIDANTS = {Language.DE: "Antioxidanten", Language.EN: "antioxidants"}, "⚗"
+    FLAVOR_ENHANCER = {Language.DE: "Geschmacksverstärker", Language.EN: "flavor enhancer"}, "🔬"
+    WAXED = {Language.DE: "Gewachst", Language.EN: "waxed"}, "🐝"
+    PHOSPATES = {Language.DE: "Phosphate", Language.EN: "phosphates"}, "🔷"
+    SWEETENERS = {Language.DE: "Süßungsmittel", Language.EN: "sweeteners"}, "🍬"
+    PHENYLALANINE = {Language.DE: "Phenylaline", Language.EN: "with a source of phenylalanine"}, "💊"
+    COCOA_CONTAINING_GREASE = {Language.DE: "Kakaohaltiges Fett", Language.EN: "cocoa-containing grease"}, "🍫"
+    GELATIN = {Language.DE: "Gelatine", Language.EN: "gelatin"}, "🍮"
+    ALCOHOL = {Language.DE: "Alkohol", Language.EN: "alcohol"}, "🍷"
+    PORK = {Language.DE: "Schweinefleisch", Language.EN: "pork"}, "🐖"
+    BEEF = {Language.DE: "Rinderfleisch", Language.EN: "beef"}, "🐄"
+    VEAL = {Language.DE: "Kalbsfleisch", Language.EN: "veal"}, "🐂"
+    WILD_MEAT = {Language.DE: "Wildfleisch", Language.EN: "wild meat"}, "🐗"
+    LAMB = {Language.DE: "Lammfleisch", Language.EN: "lamb"}, "🐑"
+    GARLIC = {Language.DE: "Knoblauch", Language.EN: "garlic"}, "🧄"
+    POULTRY = {Language.DE: "Geflügel", Language.EN: "poultry"}, "🐔"
+    CEREAL = {Language.DE: "Getreide", Language.EN: "cereal"}, "🌾"
+    MEAT = {Language.DE: "Fleisch", Language.EN: "meat"}, "🍖"
+    VEGAN = {Language.DE: "Vegan", Language.EN: "vegan"}, "🥕"
+    VEGETARIAN = {Language.DE: "Vegetarisch", Language.EN: "vegetarian"}, "🌽"
 
     def __lt__(self, other):
         if self.__class__ is other.__class__:
@@ -377,12 +378,14 @@ class Label(ApiRepresentable, Enum):
         return {
             "name": self.name,
             "text": json_util.dict_to_json_dict(self.text),
+            "abbreviation": self.abbreviation,
         }
 
     def to_api_representation(self) -> Dict[str, object]:
         return {
             "enum_name": self.name,
             "text": json_util.dict_to_json_dict(self.text),
+            "abbreviation": self.abbreviation,
         }
 
 
