@@ -329,6 +329,13 @@ class Canteen(ApiRepresentable, Enum):
         None,
         OpenHours(("08:00", "15:30"), ("08:00", "15:30"), ("08:00", "15:30"), ("08:00", "15:30"), ("08:00", "15:30")),
     )
+    MENSA_STRAUBING = (
+        "Mensa Straubing",
+        Location("Schulgasse 22, 94315 Straubing", 48.8845587, 12.5829364),
+        None,
+        None,
+        OpenHours(("07:30", "15:00"), ("07:30", "15:00"), ("07:30", "15:00"), ("07:30", "15:00"), ("07:30", "14:30")),
+    )
 
     @staticmethod
     def get_canteen_by_str(canteen_str: str) -> Canteen:

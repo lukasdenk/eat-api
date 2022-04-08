@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # pylint:disable=too-many-lines
 
+import csv
 import datetime
 import re
 import tempfile
@@ -211,8 +212,8 @@ class StudentenwerkMenuParser(MenuParser):
 
     @staticmethod
     def __get_self_service_prices(
-        base_price_type: SelfServiceBasePriceType,
-        price_per_unit_type: SelfServicePricePerUnitType,
+            base_price_type: SelfServiceBasePriceType,
+            price_per_unit_type: SelfServicePricePerUnitType,
     ) -> Prices:
         students: Price = Price(
             base_price_type.price,
@@ -360,12 +361,12 @@ class StudentenwerkMenuParser(MenuParser):
             dish_markers_meetless,
         )
         for (
-            dish_name,
-            dish_type,
-            dish_marker_additional,
-            dish_marker_allergen,
-            dish_marker_type,
-            dish_marker_meetless,
+                dish_name,
+                dish_type,
+                dish_marker_additional,
+                dish_marker_allergen,
+                dish_marker_type,
+                dish_marker_meetless,
         ) in dishes_tup:
             dishes_dict[dish_name] = (
                 dish_type,
@@ -567,7 +568,7 @@ class FMIBistroMenuParser(MenuParser):
                 # However, according to
                 # https://black.readthedocs.io/en/stable/faq.html#why-are-flake8-s-e203-and-w503-violated,
                 # this is against PEP8
-                line[estimated_column_end - delta : min(estimated_column_end + delta, len(line))],  # noqa: E203
+                line[estimated_column_end - delta: min(estimated_column_end + delta, len(line))],  # noqa: E203
             )[0]
         except IndexError:
             return None
@@ -579,7 +580,7 @@ class FMIBistroMenuParser(MenuParser):
                 # However, according to
                 # https://black.readthedocs.io/en/stable/faq.html#why-are-flake8-s-e203-and-w503-violated,
                 # this is against PEP8
-                line[max(estimated_column_begin - delta, 0) : estimated_column_begin + delta],  # noqa: E203
+                line[max(estimated_column_begin - delta, 0): estimated_column_begin + delta],  # noqa: E203
             )[0]
         except IndexError:
             labels_str = ""
@@ -736,7 +737,7 @@ class IPPBistroMenuParser(MenuParser):
         lines_weekdays = {"mon": "", "tue": "", "wed": "", "thu": "", "fri": ""}
         # it must be lines[3:] instead of lines[2:] or else the menus would start with "Preis ab 0,90€" (from the
         # soups) instead of the first menu, if there is a day where the bistro is closed.
-        for line in lines[soup_line_index + 3 :]:  # noqa: E203
+        for line in lines[soup_line_index + 3:]:  # noqa: E203
             lines_weekdays["mon"] += " " + line[pos_mon:pos_tue].replace("\n", " ")
             lines_weekdays["tue"] += " " + line[pos_tue:pos_wed].replace("\n", " ")
             lines_weekdays["wed"] += " " + line[pos_wed:pos_thu].replace("\n", " ")
@@ -998,3 +999,134 @@ class MedizinerMensaMenuParser(MenuParser):
             menus[date] = menu
 
         return menus
+
+
+class StraubingMensaMenuParser(MenuParser):
+    url = "https://www.stwno.de/infomax/daten-extern/csv/HS-SR/{calendar_week}.csv"
+    canteens = {Canteen.MENSA_STRAUBING}
+
+    _label_lookup: Dict[str, Set[Label]] = {
+        "1": {Label.DYESTUFF},
+        "2": {Label.PRESERVATIVES},
+        "3": {Label.ANTIOXIDANTS},
+        "4": {Label.FLAVOR_ENHANCER},
+        "5": {Label.SULPHURS},
+        "6": {Label.DYESTUFF},
+        "7": {Label.WAXED},
+        "8": {Label.PHOSPATES},
+        "9": {Label.SWEETENERS},
+        "10": {Label.PHENYLALANINE},
+        "16": {Label.SULFITES},
+        "17": {Label.PHENYLALANINE},
+        "AA": {Label.WHEAT},
+        "AB": {Label.RYE},
+        "AC": {Label.BARLEY},
+        "AD": {Label.OAT},
+        "AE": {Label.SPELT},
+        "AF": {Label.GLUTEN},
+        "B": {Label.SHELLFISH},
+        "C": {Label.CHICKEN_EGGS},
+        "D": {Label.FISH},
+        "E": {Label.PEANUTS},
+        "F": {Label.SOY},
+        "G": {Label.MILK},
+        "HA": {Label.ALMONDS},
+        "HB": {Label.HAZELNUTS},
+        "HC": {Label.WALNUTS},
+        "HD": {Label.CASHEWS},
+        "HE": {Label.PECAN},
+        "HG": {Label.PISTACHIOES},
+        "HH": {Label.MACADAMIA},
+        "I": {Label.CELERY},
+        "J": {Label.MUSTARD},
+        "K": {Label.SESAME},
+        "L": {Label.SULPHURS, Label.SULFITES},
+        "M": {Label.LUPIN},
+        "N": {Label.MOLLUSCS},
+    }
+
+    def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
+        menus = {}
+
+        today = datetime.date.today()
+        _, calendar_week, _ = today.isocalendar()
+
+        # As we don't know how many weeks we can fetch,
+        # repeat until there are non-valid dates in the downloaded csv file
+        while True:
+            page = requests.get(self.url.format(calendar_week=calendar_week))
+            if page.ok:
+                decoded_content = page.content.decode('cp1252')
+                cr = csv.reader(decoded_content.splitlines(), delimiter=';')
+                content = list(cr)
+                rows = content[1:]
+
+                date = util.parse_date(rows[0][0])
+                # abort loop, if date of fetched csv is more than one week ago
+                # as we can't request the year, only week information is given
+                # Downloaded csv therefore may contain data from previous years
+                if date < (today - datetime.timedelta(days=7)):
+                    break
+
+                dishes: List[Dish] = []
+                for row in rows:
+                    dish_date = util.parse_date(row[0])
+                    if date != dish_date:
+                        menus[date] = Menu(date, dishes)
+                        date = dish_date
+                        dishes = []
+
+                    dish = self.parse_dish(row)
+                    dishes.append(dish)
+
+                menus[date] = Menu(date, dishes)
+            else:
+                # also abort loop, when there can't be a menu fetched
+                break
+
+            calendar_week += 1
+
+        return menus
+
+    def parse_dish(self, data: List[str]) -> Dish:
+        labels: List[Label] = []
+
+        title = data[3]
+        bracket = title.rfind('(')  # find bracket that encloses labels
+
+        if bracket != -1:
+            labels.extend(self._parse_label(title[bracket:].replace('(', '').replace(')', '')))
+            title = title[:bracket].strip()
+
+        # prices are given as string with , instead of . as separator
+        prices = Prices(
+            Price(float(data[6].replace(',', '.'))),
+            Price(float(data[7].replace(',', '.'))),
+            Price(float(data[8].replace(',', '.'))),
+        )
+        dish_type = data[2]
+
+        marks = data[4]
+        labels.extend(self._marks_to_labels(marks))
+
+        return Dish(title, prices, labels, dish_type)
+
+    @classmethod
+    def _marks_to_labels(cls, marks: str) -> List[Label]:
+        mark_to_label = {
+            "VG": [Label.VEGAN, Label.VEGETARIAN],
+            "V": [Label.VEGETARIAN],
+            "G": [Label.POULTRY],
+            "S": [Label.PORK],
+            "A": [Label.ALCOHOL],
+            "F": [Label.FISH],
+            "R": [Label.BEEF],
+            "L": [Label.LAMB],
+            "W": [Label.WILD_MEAT],
+        }
+
+        labels = []
+        for mark in marks.split(','):
+            labels.extend(mark_to_label.get(mark, []))
+
+        return labels
