@@ -10,7 +10,13 @@ from lxml import html  # nosec: https://github.com/TUM-Dev/eat-api/issues/19
 
 from src import main
 from src.entities import Canteen, Menu, Week
-from src.menu_parser import FMIBistroMenuParser, MedizinerMensaMenuParser, MenuParser, StudentenwerkMenuParser
+from src.menu_parser import (
+    FMIBistroMenuParser,
+    MedizinerMensaMenuParser,
+    MenuParser,
+    StraubingMensaMenuParser,
+    StudentenwerkMenuParser,
+)
 from src.utils import file_util, json_util
 
 
@@ -321,3 +327,28 @@ class MedizinerMensaParserTest(unittest.TestCase):
         main.jsonify(weeks, "/tmp/eat-api_test_output", Canteen.MEDIZINER_MENSA, True)
 
     # """
+
+
+class StraubingMensaMenuParserTest(unittest.TestCase):
+    straubing_mensa_parser = StraubingMensaMenuParser()
+
+    def test_straubing_mensa(self):
+        for calendar_week in [16, 17]:
+            with open(f"src/test/assets/straubing/for-generation/{calendar_week}.csv", encoding="cp1252") as f:
+                for_generation = f.read()
+
+            rows = self.straubing_mensa_parser.parse_csv(for_generation)
+
+            menus = self.straubing_mensa_parser.parse_menu(rows)
+            weeks = Week.to_weeks(menus)
+
+            # create temp dir for testing
+            with tempfile.TemporaryDirectory() as temp_dir:
+                # store output in the tempdir
+                main.jsonify(weeks, temp_dir, Canteen.MENSA_STRAUBING, True)
+                # open the generated file
+                generated = file_util.load_ordered_json(os.path.join(temp_dir, "2022", f"{calendar_week}.json"))
+                reference = file_util.load_ordered_json(
+                    f"src/test/assets/straubing/reference/{calendar_week}.json",
+                )
+                self.assertEqual(generated, reference)
