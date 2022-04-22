@@ -212,8 +212,8 @@ class StudentenwerkMenuParser(MenuParser):
 
     @staticmethod
     def __get_self_service_prices(
-            base_price_type: SelfServiceBasePriceType,
-            price_per_unit_type: SelfServicePricePerUnitType,
+        base_price_type: SelfServiceBasePriceType,
+        price_per_unit_type: SelfServicePricePerUnitType,
     ) -> Prices:
         students: Price = Price(
             base_price_type.price,
@@ -361,12 +361,12 @@ class StudentenwerkMenuParser(MenuParser):
             dish_markers_meetless,
         )
         for (
-                dish_name,
-                dish_type,
-                dish_marker_additional,
-                dish_marker_allergen,
-                dish_marker_type,
-                dish_marker_meetless,
+            dish_name,
+            dish_type,
+            dish_marker_additional,
+            dish_marker_allergen,
+            dish_marker_type,
+            dish_marker_meetless,
         ) in dishes_tup:
             dishes_dict[dish_name] = (
                 dish_type,
@@ -568,7 +568,7 @@ class FMIBistroMenuParser(MenuParser):
                 # However, according to
                 # https://black.readthedocs.io/en/stable/faq.html#why-are-flake8-s-e203-and-w503-violated,
                 # this is against PEP8
-                line[estimated_column_end - delta: min(estimated_column_end + delta, len(line))],  # noqa: E203
+                line[estimated_column_end - delta : min(estimated_column_end + delta, len(line))],  # noqa: E203
             )[0]
         except IndexError:
             return None
@@ -580,7 +580,7 @@ class FMIBistroMenuParser(MenuParser):
                 # However, according to
                 # https://black.readthedocs.io/en/stable/faq.html#why-are-flake8-s-e203-and-w503-violated,
                 # this is against PEP8
-                line[max(estimated_column_begin - delta, 0): estimated_column_begin + delta],  # noqa: E203
+                line[max(estimated_column_begin - delta, 0) : estimated_column_begin + delta],  # noqa: E203
             )[0]
         except IndexError:
             labels_str = ""
@@ -737,7 +737,7 @@ class IPPBistroMenuParser(MenuParser):
         lines_weekdays = {"mon": "", "tue": "", "wed": "", "thu": "", "fri": ""}
         # it must be lines[3:] instead of lines[2:] or else the menus would start with "Preis ab 0,90€" (from the
         # soups) instead of the first menu, if there is a day where the bistro is closed.
-        for line in lines[soup_line_index + 3:]:  # noqa: E203
+        for line in lines[soup_line_index + 3 :]:  # noqa: E203
             lines_weekdays["mon"] += " " + line[pos_mon:pos_tue].replace("\n", " ")
             lines_weekdays["tue"] += " " + line[pos_tue:pos_wed].replace("\n", " ")
             lines_weekdays["wed"] += " " + line[pos_wed:pos_thu].replace("\n", " ")
@@ -747,13 +747,11 @@ class IPPBistroMenuParser(MenuParser):
         for key in lines_weekdays:
             # Appends `?€` to „Überraschungsmenü“ if it do not have a price. The second '€' is a separator for the
             # later split
-            # pylint:disable=E4702
             lines_weekdays[key] = self.surprise_without_price_regex.sub(r"\g<1>?€ € \g<2>", lines_weekdays[key])
             # get rid of two-character umlauts (e.g. SMALL_LETTER_A+COMBINING_DIACRITICAL_MARK_UMLAUT)
             lines_weekdays[key] = unicodedata.normalize("NFKC", lines_weekdays[key])
             # remove multi-whitespaces
             lines_weekdays[key] = " ".join(lines_weekdays[key].split())
-            # pylint:enable=E4702
             # get all dish including name and price
             dish_names_price = re.findall(self.dish_regex, lines_weekdays[key] + " ")
             # create dish types
@@ -1056,8 +1054,8 @@ class StraubingMensaMenuParser(MenuParser):
         while True:
             page = requests.get(self.url.format(calendar_week=calendar_week))
             if page.ok:
-                decoded_content = page.content.decode('cp1252')
-                cr = csv.reader(decoded_content.splitlines(), delimiter=';')
+                decoded_content = page.content.decode("cp1252")
+                cr = csv.reader(decoded_content.splitlines(), delimiter=";")
                 content = list(cr)
                 rows = content[1:]
 
@@ -1092,17 +1090,17 @@ class StraubingMensaMenuParser(MenuParser):
         labels: List[Label] = []
 
         title = data[3]
-        bracket = title.rfind('(')  # find bracket that encloses labels
+        bracket = title.rfind("(")  # find bracket that encloses labels
 
         if bracket != -1:
-            labels.extend(self._parse_label(title[bracket:].replace('(', '').replace(')', '')))
+            labels.extend(self._parse_label(title[bracket:].replace("(", "").replace(")", "")))
             title = title[:bracket].strip()
 
         # prices are given as string with , instead of . as separator
         prices = Prices(
-            Price(float(data[6].replace(',', '.'))),
-            Price(float(data[7].replace(',', '.'))),
-            Price(float(data[8].replace(',', '.'))),
+            Price(float(data[6].replace(",", "."))),
+            Price(float(data[7].replace(",", "."))),
+            Price(float(data[8].replace(",", "."))),
         )
         dish_type = data[2]
 
@@ -1126,7 +1124,7 @@ class StraubingMensaMenuParser(MenuParser):
         }
 
         labels = []
-        for mark in marks.split(','):
+        for mark in marks.split(","):
             labels.extend(mark_to_label.get(mark, []))
 
         return labels
