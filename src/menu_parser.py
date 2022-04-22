@@ -747,11 +747,13 @@ class IPPBistroMenuParser(MenuParser):
         for key in lines_weekdays:
             # Appends `?€` to „Überraschungsmenü“ if it do not have a price. The second '€' is a separator for the
             # later split
+            # pylint:disable=E4702
             lines_weekdays[key] = self.surprise_without_price_regex.sub(r"\g<1>?€ € \g<2>", lines_weekdays[key])
             # get rid of two-character umlauts (e.g. SMALL_LETTER_A+COMBINING_DIACRITICAL_MARK_UMLAUT)
             lines_weekdays[key] = unicodedata.normalize("NFKC", lines_weekdays[key])
             # remove multi-whitespaces
             lines_weekdays[key] = " ".join(lines_weekdays[key].split())
+            # pylint:enable=E4702
             # get all dish including name and price
             dish_names_price = re.findall(self.dish_regex, lines_weekdays[key] + " ")
             # create dish types
@@ -1044,7 +1046,7 @@ class StraubingMensaMenuParser(MenuParser):
     }
 
     def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
-        menus = {}
+        menus: Dict[datetime.date, Menu] = {}
 
         today = datetime.date.today()
         _, calendar_week, _ = today.isocalendar()
@@ -1055,9 +1057,7 @@ class StraubingMensaMenuParser(MenuParser):
             page = requests.get(self.url.format(calendar_week=calendar_week))
             if page.ok:
                 decoded_content = page.content.decode("cp1252")
-                cr = csv.reader(decoded_content.splitlines(), delimiter=";")
-                content = list(cr)
-                rows = content[1:]
+                rows = self.parse_csv(decoded_content)
 
                 date = util.parse_date(rows[0][0])
                 # abort loop, if date of fetched csv is more than one week ago
@@ -1066,24 +1066,39 @@ class StraubingMensaMenuParser(MenuParser):
                 if date < (today - datetime.timedelta(days=7)):
                     break
 
-                dishes: List[Dish] = []
-                for row in rows:
-                    dish_date = util.parse_date(row[0])
-                    if date != dish_date:
-                        menus[date] = Menu(date, dishes)
-                        date = dish_date
-                        dishes = []
+                menus.update(self.parse_menu(rows))
 
-                    dish = self.parse_dish(row)
-                    dishes.append(dish)
-
-                menus[date] = Menu(date, dishes)
             else:
                 # also abort loop, when there can't be a menu fetched
                 break
 
             calendar_week += 1
 
+        return menus
+
+    @staticmethod
+    def parse_csv(csv_string: str) -> List[List[str]]:
+        cr = csv.reader(csv_string.splitlines(), delimiter=";")
+        content = list(cr)
+        return content[1:]
+
+    def parse_menu(self, rows: List[List[str]]) -> Dict[datetime.date, Menu]:
+        menus = {}
+
+        date = util.parse_date(rows[0][0])
+        dishes: List[Dish] = []
+
+        for row in rows:
+            dish_date = util.parse_date(row[0])
+            if date != dish_date:
+                menus[date] = Menu(date, dishes)
+                date = dish_date
+                dishes = []
+
+            dish = self.parse_dish(row)
+            dishes.append(dish)
+
+        menus[date] = Menu(date, dishes)
         return menus
 
     def parse_dish(self, data: List[str]) -> Dish:
