@@ -436,8 +436,8 @@ class Label(ApiRepresentable, Enum):
     POULTRY = {Language.DE: "Geflügel", Language.EN: "poultry"}, "🐔"
     CEREAL = {Language.DE: "Getreide", Language.EN: "cereal"}, "🌾"
     MEAT = {Language.DE: "Fleisch", Language.EN: "meat"}, "🍖"
-    VEGAN = {Language.DE: "Vegan", Language.EN: "vegan"}, "🥕"
-    VEGETARIAN = {Language.DE: "Vegetarisch", Language.EN: "vegetarian"}, "🌽"
+    VEGAN = {Language.DE: "Vegan", Language.EN: "vegan"}, "🫑"
+    VEGETARIAN = {Language.DE: "Vegetarisch", Language.EN: "vegetarian"}, "🥕"
 
     def __lt__(self, other):
         if self.__class__ is other.__class__:
