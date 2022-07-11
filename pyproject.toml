@@ -35,8 +35,7 @@ pretty = true
 jobs = 1
 
 [tool.pylint.message_control]
-disable = ["print-statement",
-        "missing-function-docstring", # too much work
+disable = ["missing-function-docstring", # too much work
         "missing-module-docstring", # too much work
         "missing-class-docstring", # too much work
         "line-too-long", # we have another hook for this
@@ -46,7 +45,6 @@ disable = ["print-statement",
         "no-else-continue", # depending on dev this is an antipattern.. not touching this debate
         "no-else-break", # depending on dev this is an antipattern.. not touching this debate
         "invalid-name", # possible api-change.. DONT
-        "bad-continuation", # gives weird unreproducible bugs in ci but not locally; job is done by other hook
         "fixme", # prevents users from committing things with a TODO in comments. Having more frequent commits is desirable
         "pointless-string-statement", # those care "comments"
         "too-many-locals", # TODO code quality

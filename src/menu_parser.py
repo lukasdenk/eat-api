@@ -278,7 +278,6 @@ class StudentenwerkMenuParser(MenuParser):
         return self.get_available_dates_for_html(tree)
 
     # public for testing
-    # pylint: disable=no-self-use
     def get_available_dates_for_html(self, tree: html.Element) -> List[datetime.date]:
         dates: List[datetime.date] = []
         date_strings: List[str] = tree.xpath("//div[@class='c-schedule__item']//strong/text()")
@@ -292,8 +291,6 @@ class StudentenwerkMenuParser(MenuParser):
                 continue
             dates += [date]
         return dates
-
-    # pylint: enable=no-self-use
 
     @staticmethod
     def __get_daily_menus_as_html(page):
@@ -503,7 +500,6 @@ class FMIBistroMenuParser(MenuParser):
                 menus[date] = Menu(date, dishes)
         return menus
 
-    # pylint: disable=no-self-use
     def __extract_dish_title_part(self, line: str, weekday_index: int) -> Optional[str]:
         estimated_column_length = 49
         estimated_column_begin = weekday_index * estimated_column_length
@@ -568,8 +564,6 @@ class FMIBistroMenuParser(MenuParser):
         except IndexError:
             labels_str = ""
         return labels_str, price
-
-    # pylint: enable=no-self-use
 
 
 class IPPBistroMenuParser(MenuParser):
