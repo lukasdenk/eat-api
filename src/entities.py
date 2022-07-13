@@ -283,6 +283,17 @@ class Canteen(ApiRepresentable, Enum):
         None,
         OpenHours(("08:00", "16:00"), ("08:00", "16:00"), ("08:00", "16:00"), ("08:00", "16:00"), ("08:00", "15:00")),
     )
+    STUCAFE_CONNOLLYSTR = (
+        "StuCafé Connollystraße",
+        Location(
+            "Connollystraße 32, München",
+            48.179222,
+            11.546377,
+        ),
+        425,
+        None,
+        OpenHours(("09:00", "15:00"), ("09:00", "15:00"), ("09:00", "15:00"), ("09:00", "15:00"), ("09:00", "14:00")),
+    )
     STUCAFE_GARCHING = (
         "StuCafé in der Mensa Garching",
         Location(
