@@ -77,6 +77,7 @@ class StudentenwerkMenuParser(MenuParser):
         Canteen.STUCAFE_ADALBERTSTR,
         Canteen.STUCAFE_AKADEMIE_WEIHENSTEPHAN,
         Canteen.STUCAFE_BOLTZMANNSTR,
+        Canteen.STUCAFE_CONNOLLYSTR,
         Canteen.STUCAFE_GARCHING,
         Canteen.STUCAFE_KARLSTR,
         Canteen.STUCAFE_PASING,
