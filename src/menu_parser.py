@@ -98,7 +98,6 @@ class StudentenwerkMenuParser(MenuParser):
     # Meet and vegetarian base prices for Students, Staff, Guests
     class SelfServicePricePerUnitType(Enum):
         CLASSIC = 0.80, 1.00, 1.35
-        CLASSIC_INTERIM = 0.68, 0.83, 1.05  # for canteen Leopoldstraße
         SOUP_STEW = 0.33, 0.65, 1.35
 
         def __init__(self, students: float, staff: float, guests: float):
@@ -107,14 +106,6 @@ class StudentenwerkMenuParser(MenuParser):
             self.guests = guests
             self.unit = "100g"
 
-        @classmethod
-        def get_classic_price(cls, canteen: Canteen):  # type: ignore[no-untyped-def]
-            # ignore missing return annotation, as SelfServicePricePerUnitType is not supported by python
-            # Possible solutions are kind of hacky: https://stackoverflow.com/q/44640479
-            if canteen == Canteen.MENSA_LEOPOLDSTR:
-                return cls.CLASSIC_INTERIM
-            else:
-                return cls.CLASSIC
 
     _label_lookup: Dict[str, Set[Label]] = {
         "GQB": {Label.BAVARIA},
@@ -224,7 +215,7 @@ class StudentenwerkMenuParser(MenuParser):
         if dish[0] == "Studitopf":  # Soup or Stew
             price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.SOUP_STEW
         else:
-            price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.get_classic_price(canteen)
+            price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.CLASSIC
 
         if dish[0] != "Studitopf" and dish[4] == "0":  # Non-Vegetarian
             if "Fi" in dish[2]:
@@ -372,7 +363,7 @@ class StudentenwerkMenuParser(MenuParser):
                 # set classic prices without any base price
                 prices = StudentenwerkMenuParser.__get_self_service_prices(
                     StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN_SOUP_STEW,
-                    StudentenwerkMenuParser.SelfServicePricePerUnitType.get_classic_price(canteen),
+                    StudentenwerkMenuParser.SelfServicePricePerUnitType.CLASSIC,
                 )
             else:
                 # find prices
