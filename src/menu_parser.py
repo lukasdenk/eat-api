@@ -91,7 +91,8 @@ class StudentenwerkMenuParser(MenuParser):
         SAUSAGE = 0.5
         MEAT = 1.0
         FISH = 1.5
-        PIZZA = 4.0
+        PIZZA_PLAIN = 4.0
+        PIZZA_WITH_TOPINGS = 4.5
 
         def __init__(self, price):
             self.price = price
@@ -100,13 +101,13 @@ class StudentenwerkMenuParser(MenuParser):
     class SelfServicePricePerUnitType(Enum):
         CLASSIC = 0.80, 1.00, 1.35
         SOUP_STEW = 0.33, 0.65, 1.35
+        PIZZA = 0.0, 0.0, 0.0
 
         def __init__(self, students: float, staff: float, guests: float):
             self.students = students
             self.staff = staff
             self.guests = guests
             self.unit = "100g"
-
 
     _label_lookup: Dict[str, Set[Label]] = {
         "GQB": {Label.BAVARIA},
@@ -230,9 +231,11 @@ class StudentenwerkMenuParser(MenuParser):
             base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN_SOUP_STEW
 
         if dish[0] == "Pizza":
-            return base_price_type.price + StudentenwerkMenuParser.SelfServiceBasePriceType.PIZZA.price     # Baseprice for a pizza Margaritha + potential meat options
-
-
+            price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.PIZZA
+            if "argherita" in dish_name:
+                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.PIZZA_PLAIN
+            else:
+                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.PIZZA_WITH_TOPINGS
         return StudentenwerkMenuParser.__get_self_service_prices(base_price_type, price_per_unit_type)
 
     base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{url_id}_-de.html"
