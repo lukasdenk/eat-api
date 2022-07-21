@@ -85,17 +85,17 @@ class StudentenwerkMenuParser(MenuParser):
 
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
 
-    # Base price for sausage, meat, fish
+    # Base price for sausage, meat, fish, Price ist tha same for all meals except pizza - only the first values is used in the triplets which do not contain pizza.
     class SelfServiceBasePriceType(Enum):
-        VEGETARIAN_SOUP_STEW = 0
-        SAUSAGE = 0.5
-        MEAT = 1.0
-        FISH = 1.5
-        PIZZA_PLAIN = 4.0
-        PIZZA_WITH_TOPINGS = 4.5
+        VEGETARIAN_SOUP_STEW = (0, 0, 0)
+        SAUSAGE = (0.5, 0.5, 0.5)
+        MEAT = (1.0, 1.0, 1.0)
+        FISH = (1.5, 1.5, 1.5)
+        PIZZA_VEGIE = (4.0, 4.5, 5.0)
+        PIZZA_MEAT = (4.5, 5.0, 5.5)
 
-        def __init__(self, price):
-            self.price = price
+        def __init__(self, p1, p2, p3):
+            self.price = (p1, p2, p3)
 
     # Meet and vegetarian base prices for Students, Staff, Guests
     class SelfServicePricePerUnitType(Enum):
@@ -193,17 +193,17 @@ class StudentenwerkMenuParser(MenuParser):
         price_per_unit_type: SelfServicePricePerUnitType,
     ) -> Prices:
         students: Price = Price(
-            base_price_type.price,
+            base_price_type.price[0],
             price_per_unit_type.students,
             price_per_unit_type.unit,
         )
         staff: Price = Price(
-            base_price_type.price,
+            base_price_type.price[1],
             price_per_unit_type.staff,
             price_per_unit_type.unit,
         )
         guests: Price = Price(
-            base_price_type.price,
+            base_price_type.price[2],
             price_per_unit_type.guests,
             price_per_unit_type.unit,
         )
@@ -232,10 +232,10 @@ class StudentenwerkMenuParser(MenuParser):
 
         if dish[0] == "Pizza":
             price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.PIZZA
-            if "argherita" in dish_name:
-                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.PIZZA_PLAIN
+            if dish[4] == "0":
+                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.PIZZA_MEAT
             else:
-                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.PIZZA_WITH_TOPINGS
+                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.PIZZA_VEGIE
         return StudentenwerkMenuParser.__get_self_service_prices(base_price_type, price_per_unit_type)
 
     base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{url_id}_-de.html"
