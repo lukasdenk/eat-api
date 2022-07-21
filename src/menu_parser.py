@@ -85,7 +85,8 @@ class StudentenwerkMenuParser(MenuParser):
 
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
 
-    # Base price for sausage, meat, fish, Price ist tha same for all meals except pizza - only the first values is used in the triplets which do not contain pizza.
+    # Base price for sausage, meat, fish, Price ist tha same for all meals except pizza
+    # only the first values is used in the triplets which do not contain pizza.
     class SelfServiceBasePriceType(Enum):
         VEGETARIAN_SOUP_STEW = (0, 0, 0)
         SAUSAGE = (0.5, 0.5, 0.5)
