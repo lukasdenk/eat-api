@@ -557,23 +557,23 @@
         },
         {
           "name": "Pizza Funghi mit Champignons",
-          "prices": {
-            "students": {
-              "base_price": 0,
-              "price_per_unit": 0.80,
-              "unit": "100g"
-            },
-            "staff": {
-              "base_price": 0,
-              "price_per_unit": 1.00,
-              "unit": "100g"
-            },
-            "guests": {
-              "base_price": 0,
-              "price_per_unit": 1.35,
-              "unit": "100g"
-            }
-          },
+              "prices": {
+                "students": {
+                  "base_price": 4.00,
+                  "price_per_unit": 0.00,
+                  "unit": "100g"
+                },
+                "staff": {
+                  "base_price": 4.50,
+                  "price_per_unit": 0.00,
+                  "unit": "100g"
+                },
+                "guests": {
+                  "base_price": 5.00,
+                  "price_per_unit": 0.00,
+                  "unit": "100g"
+                }
+              },
           "labels": [
             "BARLEY",
             "CEREAL",
@@ -1512,23 +1512,23 @@
         },
         {
           "name": "Pizza Quattro Stagioni mit (Vorder-)Schinken, Paprika, Champignons und Oliven",
-          "prices": {
-            "students": {
-              "base_price": 1.0,
-              "price_per_unit": 0.80,
-              "unit": "100g"
-            },
-            "staff": {
-              "base_price": 1.0,
-              "price_per_unit": 1.00,
-              "unit": "100g"
-            },
-            "guests": {
-              "base_price": 1.0,
-              "price_per_unit": 1.35,
-              "unit": "100g"
-            }
-          },
+              "prices": {
+                "students": {
+                  "base_price": 4.50,
+                  "price_per_unit": 0.00,
+                  "unit": "100g"
+                },
+                "staff": {
+                  "base_price": 5.00,
+                  "price_per_unit": 0.00,
+                  "unit": "100g"
+                },
+                "guests": {
+                  "base_price": 5.50,
+                  "price_per_unit": 0.00,
+                  "unit": "100g"
+                }
+              },
           "labels": [
             "ANTIOXIDANTS",
             "BARLEY",
