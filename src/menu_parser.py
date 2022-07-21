@@ -85,36 +85,30 @@ class StudentenwerkMenuParser(MenuParser):
 
     # Prices taken from: https://www.studentenwerk-muenchen.de/mensa/mensa-preise/
 
-    # Base price for sausage, meat, fish
+    # Base price for sausage, meat and fish. The price is the same for all meals except pizza
+    # only the first values is used in the triplets which do not contain pizza.
     class SelfServiceBasePriceType(Enum):
-        VEGETARIAN_SOUP_STEW = 0
-        SAUSAGE = 0.5
-        MEAT = 1.0
-        FISH = 1.5
+        VEGETARIAN_SOUP_STEW = (0, 0, 0)
+        SAUSAGE = (0.5, 0.5, 0.5)
+        MEAT = (1.0, 1.0, 1.0)
+        FISH = (1.5, 1.5, 1.5)
+        PIZZA_VEGIE = (4.0, 4.5, 5.0)
+        PIZZA_MEAT = (4.5, 5.0, 5.5)
 
-        def __init__(self, price):
-            self.price = price
+        def __init__(self, p1, p2, p3):
+            self.price = (p1, p2, p3)
 
     # Meet and vegetarian base prices for Students, Staff, Guests
     class SelfServicePricePerUnitType(Enum):
         CLASSIC = 0.80, 1.00, 1.35
-        CLASSIC_INTERIM = 0.68, 0.83, 1.05  # for canteen Leopoldstraße
         SOUP_STEW = 0.33, 0.65, 1.35
+        PIZZA = 0.0, 0.0, 0.0
 
         def __init__(self, students: float, staff: float, guests: float):
             self.students = students
             self.staff = staff
             self.guests = guests
             self.unit = "100g"
-
-        @classmethod
-        def get_classic_price(cls, canteen: Canteen):  # type: ignore[no-untyped-def]
-            # ignore missing return annotation, as SelfServicePricePerUnitType is not supported by python
-            # Possible solutions are kind of hacky: https://stackoverflow.com/q/44640479
-            if canteen == Canteen.MENSA_LEOPOLDSTR:
-                return cls.CLASSIC_INTERIM
-            else:
-                return cls.CLASSIC
 
     _label_lookup: Dict[str, Set[Label]] = {
         "GQB": {Label.BAVARIA},
@@ -200,17 +194,17 @@ class StudentenwerkMenuParser(MenuParser):
         price_per_unit_type: SelfServicePricePerUnitType,
     ) -> Prices:
         students: Price = Price(
-            base_price_type.price,
+            base_price_type.price[0],
             price_per_unit_type.students,
             price_per_unit_type.unit,
         )
         staff: Price = Price(
-            base_price_type.price,
+            base_price_type.price[1],
             price_per_unit_type.staff,
             price_per_unit_type.unit,
         )
         guests: Price = Price(
-            base_price_type.price,
+            base_price_type.price[2],
             price_per_unit_type.guests,
             price_per_unit_type.unit,
         )
@@ -224,7 +218,7 @@ class StudentenwerkMenuParser(MenuParser):
         if dish[0] == "Studitopf":  # Soup or Stew
             price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.SOUP_STEW
         else:
-            price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.get_classic_price(canteen)
+            price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.CLASSIC
 
         if dish[0] != "Studitopf" and dish[4] == "0":  # Non-Vegetarian
             if "Fi" in dish[2]:
@@ -236,6 +230,13 @@ class StudentenwerkMenuParser(MenuParser):
                 base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.MEAT
         else:
             base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN_SOUP_STEW
+
+        if dish[0] == "Pizza":
+            price_per_unit_type = StudentenwerkMenuParser.SelfServicePricePerUnitType.PIZZA
+            if dish[4] == "0":
+                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.PIZZA_MEAT
+            else:
+                base_price_type = StudentenwerkMenuParser.SelfServiceBasePriceType.PIZZA_VEGIE
         return StudentenwerkMenuParser.__get_self_service_prices(base_price_type, price_per_unit_type)
 
     base_url: str = "http://www.studentenwerk-muenchen.de/mensa/speiseplan/speiseplan_{url_id}_-de.html"
@@ -372,7 +373,7 @@ class StudentenwerkMenuParser(MenuParser):
                 # set classic prices without any base price
                 prices = StudentenwerkMenuParser.__get_self_service_prices(
                     StudentenwerkMenuParser.SelfServiceBasePriceType.VEGETARIAN_SOUP_STEW,
-                    StudentenwerkMenuParser.SelfServicePricePerUnitType.get_classic_price(canteen),
+                    StudentenwerkMenuParser.SelfServicePricePerUnitType.CLASSIC,
                 )
             else:
                 # find prices
