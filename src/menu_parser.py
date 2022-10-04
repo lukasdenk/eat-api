@@ -248,7 +248,7 @@ class StudentenwerkMenuParser(MenuParser):
         menus = {}
         for date in self.__get_available_dates(canteen):
             page_link: str = self.base_url_with_date.format(url_id=canteen.url_id, date=date.strftime("%Y-%m-%d"))
-            page: requests.Response = requests.get(page_link)
+            page: requests.Response = requests.get(page_link, timeout=10.0)
             if page.ok:
                 try:
                     tree: html.Element = html.fromstring(page.content)
@@ -275,7 +275,7 @@ class StudentenwerkMenuParser(MenuParser):
 
     def __get_available_dates(self, canteen: Canteen) -> List[datetime.date]:
         page_link: str = self.base_url.format(url_id=canteen.url_id)
-        page: requests.Response = requests.get(page_link)
+        page: requests.Response = requests.get(page_link, timeout=10.0)
         tree: html.Element = html.fromstring(page.content)
         return self.get_available_dates_for_html(tree)
 
@@ -444,7 +444,7 @@ class FMIBistroMenuParser(MenuParser):
         menus = {}
         for year, calendar_week, _ in years_and_calendar_weeks:
             # get pdf
-            page = requests.get(self.url.format(calendar_week=calendar_week, year=year))
+            page = requests.get(self.url.format(calendar_week=calendar_week, year=year), timeout=10.0)
             if page.status_code == 200:
                 with tempfile.NamedTemporaryFile() as temp_pdf:
                     # download pdf
@@ -587,7 +587,7 @@ class IPPBistroMenuParser(MenuParser):
     dish_regex: Pattern[str] = re.compile(r"(.+?)(\d+,\d+|\?€)\s€[^)]")
 
     def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
-        page = requests.get(self.url)
+        page = requests.get(self.url, timeout=10.0)
         # get html tree
         tree = html.fromstring(page.content)
         # get url of current pdf menu
@@ -609,7 +609,7 @@ class IPPBistroMenuParser(MenuParser):
 
             with tempfile.NamedTemporaryFile() as temp_pdf:
                 # download pdf
-                response = requests.get(pdf_url)
+                response = requests.get(pdf_url, timeout=10.0)
                 temp_pdf.write(response.content)
                 with tempfile.NamedTemporaryFile() as temp_txt:
                     # convert pdf to text by calling pdftotext; only convert first page to txt (-l 1)
@@ -840,7 +840,7 @@ class MedizinerMensaMenuParser(MenuParser):
         return Dish(dish_str, dish_price, labels, "Tagesgericht")
 
     def parse(self, canteen: Canteen) -> Optional[Dict[datetime.date, Menu]]:
-        page = requests.get(self.startPageurl)
+        page = requests.get(self.startPageurl, timeout=10.0)
         # get html tree
         tree = html.fromstring(page.content)
         # get url of current pdf menu
@@ -868,7 +868,7 @@ class MedizinerMensaMenuParser(MenuParser):
 
         with tempfile.NamedTemporaryFile() as temp_pdf:
             # download pdf
-            response = requests.get(pdf_url)
+            response = requests.get(pdf_url, timeout=10.0)
             temp_pdf.write(response.content)
             with tempfile.NamedTemporaryFile() as temp_txt:
                 # convert pdf to text by calling pdftotext; only convert first page to txt (-l 1)
@@ -1033,7 +1033,7 @@ class StraubingMensaMenuParser(MenuParser):
         # As we don't know how many weeks we can fetch,
         # repeat until there are non-valid dates in the downloaded csv file
         while True:
-            page = requests.get(self.url.format(calendar_week=calendar_week))
+            page = requests.get(self.url.format(calendar_week=calendar_week), timeout=10.0)
             if page.ok:
                 decoded_content = page.content.decode("cp1252")
                 rows = self.parse_csv(decoded_content)
