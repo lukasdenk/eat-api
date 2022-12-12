@@ -255,6 +255,13 @@ class Canteen(ApiRepresentable, Enum):
         None,
         OpenHours(("09:00", "16:30"), ("09:00", "16:30"), ("09:00", "16:30"), ("09:00", "16:30"), ("09:00", "14:30")),
     )
+    STUBISTRO_MARTINSRIED = (
+        "StuBistro Martinsried",
+        Location("Großhadernerstr. 9a, 82152 Planegg-Martinsried", 48.1105075, 11.4574515),
+        415,
+        None,
+        OpenHours(("08:30", "14:30"), ("08:30", "14:30"), ("08:30", "14:30"), ("08:30", "14:30"), ("08:30", "14:30")),
+    )
     STUCAFE_ADALBERTSTR = (
         "StuCafé Adalbertstraße",
         Location("Adalbertstraße 5, München", 48.151507, 11.581033),
@@ -272,6 +279,17 @@ class Canteen(ApiRepresentable, Enum):
         526,
         None,
         OpenHours(("08:00", "14:30"), ("08:00", "14:30"), ("08:00", "14:30"), ("08:00", "14:30"), ("08:00", "14:00")),
+    )
+    STUCAFE_WEIHENSTEPHAN_MAXIMUS = (
+        "StuCafé Weihenstephan-Maximus",
+        Location(
+            "Maximus-von-Imhof-Forum 5, 85354 Freising",
+            48.3995014,
+            11.7210581,
+        ),
+        525,
+        None,
+        OpenHours(("08:30", "15:00"), ("08:30", "15:00"), ("08:30", "15:00"), ("08:30", "15:00"), ("08:30", "14:00")),
     )
     STUCAFE_BOLTZMANNSTR = (
         "StuCafé Boltzmannstraße",
