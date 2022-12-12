@@ -12,7 +12,7 @@ from utils import json_util
 
 class ApiRepresentable:
     def to_api_representation(self) -> Dict[str, object]:
-        pass
+        return {}
 
 
 class Price:
@@ -35,10 +35,9 @@ class Price:
             if isinstance(self.base_price, float):
                 return f"{self.base_price:.2f}€ + {self.price_per_unit:.2f} {self.unit}"
             return f"{self.base_price} + {self.price_per_unit} {self.unit}"
-        else:
-            if isinstance(self.base_price, float):
-                return f"{self.base_price:.2f}€"
-            return f"{self.base_price}"
+        if isinstance(self.base_price, float):
+            return f"{self.base_price:.2f}€"
+        return f"{self.base_price}"
 
     def __eq__(self, other: Any) -> bool:
         if isinstance(other, self.__class__):
@@ -213,7 +212,7 @@ class Canteen(ApiRepresentable, Enum):
     )
     STUBISTRO_ARCISSTR = (
         "StuBistro Arcisstraße",
-        Location("Leopoldstraße 13A, München", 48.156486, 11.581872),
+        Location("Arcisstraße 12, 80333 München", 48.156486, 11.581872),
         450,
         None,
         OpenHours(("09:00", "15:00"), ("09:00", "15:00"), ("09:00", "15:00"), ("09:00", "15:00"), ("09:00", "15:00")),
